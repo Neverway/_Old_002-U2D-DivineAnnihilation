@@ -7,6 +7,7 @@ public class scr_entity_character_movement : MonoBehaviour
     // Setup configurable variables
     public float movementSpeed = 5f;
     public Rigidbody2D Rigidbody;
+    public Animator characterAnimator;
 
     // Input variables
     Vector2 movement;
@@ -17,6 +18,10 @@ public class scr_entity_character_movement : MonoBehaviour
         // Input
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
+
+        characterAnimator.SetFloat("Horizontal", movement.x);
+        characterAnimator.SetFloat("Vertical", movement.y);
+        characterAnimator.SetFloat("Speed", movement.sqrMagnitude);
     }
 
     // Update is not tied to FPS but updates at a constant rate

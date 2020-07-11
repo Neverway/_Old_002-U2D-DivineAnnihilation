@@ -309,6 +309,7 @@ GameObject:
   - component: {fileID: 662347654}
   - component: {fileID: 662347656}
   - component: {fileID: 662347653}
+  - component: {fileID: 662347657}
   m_Layer: 0
   m_Name: obj_entity_character_fox_overworld
   m_TagString: Untagged
@@ -330,6 +331,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 2
   Rigidbody: {fileID: 662347656}
+  characterAnimator: {fileID: 662347657}
 --- !u!212 &662347654
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -415,6 +417,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!95 &662347657
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662347652}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 01903199d9ae63a23a9b172c3b5b2f9c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &792521558
 GameObject:
   m_ObjectHideFlags: 0
