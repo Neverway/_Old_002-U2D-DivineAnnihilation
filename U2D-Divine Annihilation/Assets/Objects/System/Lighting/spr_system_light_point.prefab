@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3034234071312196991}
   - component: {fileID: 3034234071312196990}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: spr_system_light_point
   m_TagString: Untagged
   m_Icon: {fileID: 0}

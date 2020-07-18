@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3957028519134933044}
   - component: {fileID: 3957028519134933045}
-  m_Layer: 0
-  m_Name: spr_system_light_directional 1
+  m_Layer: 8
+  m_Name: spr_system_light_directional
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
