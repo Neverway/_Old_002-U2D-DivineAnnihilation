@@ -60621,7 +60621,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e86c08b1e6d07c4bebbcf3cf4d3f5ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 4
+  walkSpeed: 5
+  sprintSpeed: 7
   Rigidbody: {fileID: 7088021438843368306}
   characterAnimator: {fileID: 7088021438843368307}
 --- !u!4 &7088021439130003610
