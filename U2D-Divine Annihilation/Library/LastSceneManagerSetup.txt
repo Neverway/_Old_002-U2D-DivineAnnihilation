@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Developer/scene_developer_testall.unity
+- path: Assets/Scenes/Chapter1/scn_chapter1_section1_hometown.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
