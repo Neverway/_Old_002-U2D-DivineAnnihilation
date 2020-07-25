@@ -1,4 +1,5 @@
 Base path: '/home/lizband_ucc/Documents/Apps/Unity/Unity/Hub/Editor/2019.4.3f1/Editor/Data', plugins path '/home/lizband_ucc/Documents/Apps/Unity/Unity/Hub/Editor/2019.4.3f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
-
-Quitting shader compiler process
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=18 insize=1957 outsize=6515 ok=1
