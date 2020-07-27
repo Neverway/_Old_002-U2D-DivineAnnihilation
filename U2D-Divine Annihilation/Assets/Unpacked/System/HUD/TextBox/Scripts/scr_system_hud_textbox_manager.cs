@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DialogueManager : MonoBehaviour
+public class scr_system_hud_textbox_manager : MonoBehaviour
 {
     public GameObject dialogueBox;
     public Text dialogueText;
@@ -29,7 +29,7 @@ public class DialogueManager : MonoBehaviour
     public void ShowBox(string dialogue)
     {
         dialogueActive = true;
-        dialogueBox.SetActive = true;
+        dialogueBox.SetActive(true);
         dialogueText.text = dialogue;
     }
 }

@@ -57,8 +57,9 @@
   <ItemGroup>
      <Compile Include="Assets\Unpacked\Entities\Characters\Fox\Scripts\scr_entity_character_movement.cs" />
      <Compile Include="Assets\Unpacked\Level Objects\Pickups\Scripts\scr_level_pickup.cs" />
+     <Compile Include="Assets\Unpacked\Level Objects\Triggers\Interact\Scripts\scr_level_trigger_interact.cs" />
      <Compile Include="Assets\Unpacked\Level Objects\Triggers\Warp\Scripts\scr_level_trigger_warp.cs" />
-     <Compile Include="Assets\Unpacked\System\HUD\TextBox\Scripts\scr_system_hud_textbox.cs" />
+     <Compile Include="Assets\Unpacked\System\HUD\TextBox\Scripts\oldscr_system_hud_textbox.cs" />
      <Compile Include="Assets\Unpacked\System\HUD\TextBox\Scripts\scr_system_hud_textbox_manager.cs" />
      <Compile Include="Assets\Unpacked\System\Menus\Scripts\scr_system_menu_arrowScrolling.cs" />
      <Compile Include="Assets\Unpacked\System\Required\Camera\Scripts\scr_system_required_camera.cs" />
