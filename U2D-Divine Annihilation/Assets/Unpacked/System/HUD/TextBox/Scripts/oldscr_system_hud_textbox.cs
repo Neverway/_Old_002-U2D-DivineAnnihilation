@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class scr_menu_dialogbox : MonoBehaviour
+public class oldscr_system_hud_textbox : MonoBehaviour
 {
     public GameObject dialogBox;
     public Text dialogText;
