@@ -55,15 +55,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\--OLD--\System\Scripts\Entities\character\scr_entity_character_movement.cs" />
-     <Compile Include="Assets\--OLD--\System\Scripts\Level\scr_level_pickup.cs" />
-     <Compile Include="Assets\--OLD--\System\Scripts\System\Menus &amp; Hud\DialogueManager.cs" />
-     <Compile Include="Assets\--OLD--\System\Scripts\System\Menus &amp; Hud\scr_menu_arrowScrolling.cs" />
-     <Compile Include="Assets\--OLD--\System\Scripts\System\Menus &amp; Hud\scr_menu_dialogbox.cs" />
-     <Compile Include="Assets\--OLD--\System\Scripts\System\Required\Camera\scr_system_required_camera_controller.cs" />
-     <Compile Include="Assets\--OLD--\System\Scripts\System\Trigger\scr_system_trigger_dialogue.cs" />
-     <Compile Include="Assets\--OLD--\System\Scripts\System\Trigger\scr_system_trigger_warp.cs" />
-     <None Include="Assets\--OLD--\System\Font\japanesefont\readme.txt" />
+     <Compile Include="Assets\Unpacked\Entities\Characters\Fox\Scripts\scr_entity_character_movement.cs" />
+     <Compile Include="Assets\Unpacked\Level Objects\Pickups\Scripts\scr_level_pickup.cs" />
+     <Compile Include="Assets\Unpacked\Level Objects\Triggers\Warp\Scripts\scr_level_trigger_warp.cs" />
+     <Compile Include="Assets\Unpacked\System\HUD\TextBox\Scripts\scr_system_hud_textbox.cs" />
+     <Compile Include="Assets\Unpacked\System\HUD\TextBox\Scripts\scr_system_hud_textbox_manager.cs" />
+     <Compile Include="Assets\Unpacked\System\Menus\Scripts\scr_system_menu_arrowScrolling.cs" />
+     <Compile Include="Assets\Unpacked\System\Required\Camera\Scripts\scr_system_required_camera.cs" />
+     <None Include="Assets\System\Fonts\japanesefont\readme.txt" />
  <Reference Include="UnityEngine">
  <HintPath>/home/lizband_ucc/Documents/Apps/Unity/Unity/Hub/Editor/2019.4.3f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
