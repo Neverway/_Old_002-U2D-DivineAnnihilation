@@ -8,6 +8,8 @@ public class scr_level_trigger_interact : MonoBehaviour
     public string dialogue;
     private scr_system_hud_textbox_manager DiaMan;
 
+    public string[] dialogueLines;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +23,13 @@ public class scr_level_trigger_interact : MonoBehaviour
 
             if(Input.GetKeyUp("z"))
             {
-                DiaMan.ShowBox(dialogue);
+                //DiaMan.ShowBox(dialogue);
+                if(!DiaMan.dialogueActive)
+                {
+                    DiaMan.dialogueLines = dialogueLines;
+                    DiaMan.currentLine = 0;
+                    DiaMan.ShowDialogue();
+                }
             }
         }
     }
