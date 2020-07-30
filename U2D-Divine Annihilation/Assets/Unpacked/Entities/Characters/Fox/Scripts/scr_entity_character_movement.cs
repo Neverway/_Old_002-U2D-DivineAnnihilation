@@ -13,7 +13,7 @@ public class scr_entity_character_movement : MonoBehaviour
     public Rigidbody2D Rigidbody;
     public Animator characterAnimator;
 
-    private scr_system_hud_textbox_manager DiaMan;
+    private scr_system_hud_textbox_manager DialogueManager;
 
     // Input variables
     Vector2 movement;
@@ -21,19 +21,19 @@ public class scr_entity_character_movement : MonoBehaviour
     void Start()
     {
         movementSpeed = walkSpeed;
-        DiaMan = FindObjectOfType<scr_system_hud_textbox_manager>();
+        DialogueManager = FindObjectOfType<scr_system_hud_textbox_manager>();
     }
 
     // Update is called once per frame (Speed is called by FPS)
     void Update()
     {
-        if(DiaMan.dialogueActive)
+        if(DialogueManager.dialogueBoxActive)
         {
             canMove = false;
             movementSpeed = 0;
         }
 
-        if(!DiaMan.dialogueActive)
+        if(!DialogueManager.dialogueBoxActive)
         {
             canMove = true;
         }
