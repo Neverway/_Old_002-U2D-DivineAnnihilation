@@ -6,14 +6,14 @@ public class scr_level_trigger_interact : MonoBehaviour
 {
 
     public string dialogue;
-    private scr_system_hud_textbox_manager DiaMan;
+    private scr_system_hud_textbox_manager DialogueManager;
 
     public string[] dialogueLines;
 
     // Start is called before the first frame update
     void Start()
     {
-        DiaMan = FindObjectOfType<scr_system_hud_textbox_manager>();
+        DialogueManager = FindObjectOfType<scr_system_hud_textbox_manager>();
     }
 
     void OnTriggerStay2D(Collider2D other)
@@ -24,11 +24,11 @@ public class scr_level_trigger_interact : MonoBehaviour
             if(Input.GetKeyUp("z"))
             {
                 //DiaMan.ShowBox(dialogue);
-                if(!DiaMan.dialogueActive)
+                if(!DialogueManager.dialogueBoxActive)
                 {
-                    DiaMan.dialogueLines = dialogueLines;
-                    DiaMan.currentLine = 0;
-                    DiaMan.ShowDialogue();
+                    DialogueManager.dialogueLines = dialogueLines;
+                    DialogueManager.currentLine = 0;
+                    DialogueManager.ShowDialogue();
                 }
             }
         }
