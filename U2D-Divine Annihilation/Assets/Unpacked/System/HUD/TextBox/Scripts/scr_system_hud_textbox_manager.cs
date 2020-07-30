@@ -6,9 +6,16 @@ using UnityEngine.UI;
 
 public class scr_system_hud_textbox_manager : MonoBehaviour
 {
+    // Referances
     public GameObject dialogueBoxObject;                     // A referance to the dialogue box object
     public Text dialogueTextObject;                          // A referance to the dialogue text object
+    public Text dialogueNameTextObject;
+    //public SpriteRenderer dialoguePortraitObject;
+
+    // Code set value referances
     public string[] dialogueLines;                           // An array of the text that should be drawn in the dialogue box
+    public string[] dialogueLineNames;
+    //public Sprite[] dialogueLinePortraits;
     public int currentLine;                                  // A number to check which set of text should be called from the text array
     public bool dialogueBoxActive;                           // A true or false statment of if the dialogue box is open
     private scr_entity_character_movement characterMovement; // A referance to the player movement so the dialogue box can freeze the player when it opens
@@ -29,7 +36,7 @@ public class scr_system_hud_textbox_manager : MonoBehaviour
         {
             currentLine += 1; // Advance the line count
         }
-
+       
         // End the dialogue when there are no more lines of text
         if (currentLine >= dialogueLines.Length)
         {
@@ -42,21 +49,10 @@ public class scr_system_hud_textbox_manager : MonoBehaviour
 
         // Set the text on screen the the current line text
         dialogueTextObject.text = dialogueLines[currentLine];
+        dialogueNameTextObject.text = dialogueLineNames[currentLine];
+        //dialoguePortraitObject.sprite = dialogueLinePortraits[currentLine];
+
     }
-
-
-    //internal static bool DialogueActive()
-    //{
-    //    throw new NotImplementedException();
-    //}
-
-
-    //public void ShowBox(string dialogue)
-    //{
-    //    dialogueActive = true;
-    //    dialogueBox.SetActive(true);
-    //    dialogueText.text = dialogue;
-    //}
 
 
     // Setup a function to enable the dialogue boxes
