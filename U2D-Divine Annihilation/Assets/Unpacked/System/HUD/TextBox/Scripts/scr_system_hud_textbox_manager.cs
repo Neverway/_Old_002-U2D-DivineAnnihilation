@@ -45,10 +45,10 @@ public class scr_system_hud_textbox_manager : MonoBehaviour
     }
 
 
-    internal static bool DialogueActive()
-    {
-        throw new NotImplementedException();
-    }
+    //internal static bool DialogueActive()
+    //{
+    //    throw new NotImplementedException();
+    //}
 
 
     //public void ShowBox(string dialogue)
@@ -59,9 +59,10 @@ public class scr_system_hud_textbox_manager : MonoBehaviour
     //}
 
 
+    // Setup a function to enable the dialogue boxes
     public void ShowDialogue()
     {
-        dialogueBoxActive = true;
-        dialogueBoxObject.SetActive(true);
+        dialogueBoxActive = true;          // Set the active state to true
+        dialogueBoxObject.SetActive(true); // Make the box appear
     }
 }
