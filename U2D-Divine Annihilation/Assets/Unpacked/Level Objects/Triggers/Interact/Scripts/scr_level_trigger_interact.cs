@@ -7,7 +7,7 @@ public class scr_level_trigger_interact : MonoBehaviour
     private scr_system_hud_textbox_manager DialogueManager;
     public string[] dialogueLines;
     public string[] dialogueLineNames;
-    //public Sprite[] dialogueLinePortraits;
+    public Sprite[] dialogueLinePortraits;
 
 
     // Start is called before the first frame update
@@ -31,7 +31,7 @@ public class scr_level_trigger_interact : MonoBehaviour
                 {
                     DialogueManager.dialogueLines = dialogueLines; // Pass the dialogue lines value to the manager (don't bother understanding this, it just works so I don't bother messing with it)
                     DialogueManager.dialogueLineNames = dialogueLineNames;
-                    //DialogueManager.dialogueLinePortraits = dialogueLinePortraits;
+                    DialogueManager.dialogueLinePortraits = dialogueLinePortraits;
                     DialogueManager.currentLine = 0;               // Reset the current line (in case the dialogue manager failes to)
                     DialogueManager.ShowDialogue();                // Execute the show dialogue function
                 }

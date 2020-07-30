@@ -25712,6 +25712,12 @@ MonoBehaviour:
   - Fox
   - Dragon Lord
   - Fox
+  dialogueLinePortraits:
+  - {fileID: 21300000, guid: 323e5a9daadfc106aa3fb3e6b2033318, type: 3}
+  - {fileID: 21300000, guid: 22a70327547b14c41b2ce9bb62577f1a, type: 3}
+  - {fileID: 21300000, guid: 323e5a9daadfc106aa3fb3e6b2033318, type: 3}
+  - {fileID: 21300000, guid: 22a70327547b14c41b2ce9bb62577f1a, type: 3}
+  - {fileID: 21300000, guid: 323e5a9daadfc106aa3fb3e6b2033318, type: 3}
 --- !u!1 &634643394
 GameObject:
   m_ObjectHideFlags: 0
@@ -26385,10 +26391,13 @@ MonoBehaviour:
   dialogueBoxObject: {fileID: 541544218}
   dialogueTextObject: {fileID: 1520397674}
   dialogueNameTextObject: {fileID: 2074203518}
+  dialoguePortraitObject: {fileID: 206145972}
   dialogueLines:
   - 
   dialogueLineNames:
   - 
+  dialogueLinePortraits:
+  - {fileID: 0}
   currentLine: 0
   dialogueBoxActive: 0
 --- !u!1 &833489567
@@ -26418,7 +26427,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 833489567}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.82, y: -3.28, z: 0}
+  m_LocalPosition: {x: 10.07, y: -3.28, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1442280338}
