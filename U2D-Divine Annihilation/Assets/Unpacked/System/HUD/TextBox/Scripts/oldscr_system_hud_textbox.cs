@@ -8,7 +8,7 @@ public class oldscr_system_hud_textbox : MonoBehaviour
     public GameObject dialogBox;
     public Text dialogText;
     public bool playerInRange;
-    public string sentance;
+    public string sentence;
 
     // Trigger input
     public List<dialog> Dialog;
@@ -18,7 +18,7 @@ public class oldscr_system_hud_textbox : MonoBehaviour
     {
         public Sprite Portraits;
         public string Name;
-        public string Sentances;
+        public string Sentences;
         public int Speed;
     }
 
@@ -41,13 +41,13 @@ public class oldscr_system_hud_textbox : MonoBehaviour
             {
                 dialogBox.SetActive(true);
                 StopAllCoroutines();
-                StartCoroutine(TypeSentance(sentance));
+                StartCoroutine(TypeSentance(sentence));
             }
         }
-        IEnumerator TypeSentance(string sentance)
+        IEnumerator TypeSentance(string sentence)
         {
             dialogText.text = "";
-            foreach(char letter in sentance.ToCharArray())
+            foreach(char letter in sentence.ToCharArray())
             {
                 dialogText.text += letter;
                 yield return null;

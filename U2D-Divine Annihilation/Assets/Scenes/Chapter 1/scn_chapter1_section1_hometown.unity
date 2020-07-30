@@ -25718,6 +25718,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 323e5a9daadfc106aa3fb3e6b2033318, type: 3}
   - {fileID: 21300000, guid: 22a70327547b14c41b2ce9bb62577f1a, type: 3}
   - {fileID: 21300000, guid: 323e5a9daadfc106aa3fb3e6b2033318, type: 3}
+  acceptingInput: 1
 --- !u!1 &634643394
 GameObject:
   m_ObjectHideFlags: 0
@@ -26398,6 +26399,7 @@ MonoBehaviour:
   - 
   dialogueLinePortraits:
   - {fileID: 0}
+  acceptingInput: 0
   currentLine: 0
   dialogueBoxActive: 0
 --- !u!1 &833489567
@@ -26448,19 +26450,19 @@ MonoBehaviour:
   dialogBox: {fileID: 1227612945}
   dialogText: {fileID: 2035859038}
   playerInRange: 0
-  sentance: HIYA!!! TORYA!!! ooooowwwWWWWWAAAAaaaaa!!!
+  sentence: 
   Dialog:
   - Portraits: {fileID: 0}
     Name: 1
-    Sentances: 1
+    Sentences: 
     Speed: 0
   - Portraits: {fileID: 0}
     Name: 1
-    Sentances: 1
+    Sentences: 
     Speed: 0
   - Portraits: {fileID: 0}
     Name: 1
-    Sentances: 1
+    Sentences: 
     Speed: 0
 --- !u!61 &833489570
 BoxCollider2D:
