@@ -31,7 +31,7 @@ public class scr_system_hud_textbox_manager : MonoBehaviour
 
     IEnumerator acceptInput()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.05f);
         acceptingInput = true;
     }
 
