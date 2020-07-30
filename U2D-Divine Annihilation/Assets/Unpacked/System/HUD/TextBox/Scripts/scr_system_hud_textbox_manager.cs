@@ -16,6 +16,7 @@ public class scr_system_hud_textbox_manager : MonoBehaviour
     public string[] dialogueLines;                           // An array of the text that should be drawn in the dialogue box
     public string[] dialogueLineNames;
     public Sprite[] dialogueLinePortraits;
+    public bool acceptingInput;
     public int currentLine;                                  // A number to check which set of text should be called from the text array
     public bool dialogueBoxActive;                           // A true or false statment of if the dialogue box is open
     private scr_entity_character_movement characterMovement; // A referance to the player movement so the dialogue box can freeze the player when it opens
@@ -28,13 +29,24 @@ public class scr_system_hud_textbox_manager : MonoBehaviour
     }
 
 
+    IEnumerator acceptInput()
+    {
+        yield return new WaitForSeconds(1);
+        acceptingInput = true;
+    }
+
+
     // Update is called once per frame
     void Update()
     {
         // Continue to next dialogue
         if (dialogueBoxActive && Input.GetKeyDown("z")) 
         {
-            currentLine += 1; // Advance the line count
+            if(acceptingInput)
+            {
+                currentLine += 1; // Advance the line count
+            }
+            StartCoroutine("acceptInput");
         }
        
         // End the dialogue when there are no more lines of text
@@ -43,6 +55,8 @@ public class scr_system_hud_textbox_manager : MonoBehaviour
             dialogueBoxObject.SetActive(false);                              // Make the box disappear
             dialogueBoxActive = false;                                       // Set the active state to false
             currentLine = 0;                                                 // Reset the current line count to zero
+            StopCoroutine("acceptInput");
+            acceptingInput = false;
             characterMovement.canMove = true;                                // Allow the player to move
             characterMovement.movementSpeed = characterMovement.storedSpeed; // Set the players speed so they won't get stuck with a movement speed of zero
         }

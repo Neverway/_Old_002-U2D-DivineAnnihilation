@@ -1,9 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Unpacked/Entities/Characters/Fox/Scripts/scr_entity_character_movement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Unpacked/System/HUD/TextBox/Scripts/scr_system_hud_textbox_manager.cs">
     <Files>
-      <File FileName="Assets/Unpacked/System/HUD/TextBox/Scripts/scr_system_hud_textbox_manager.cs" Line="51" Column="62" />
-      <File FileName="Assets/Unpacked/Level Objects/Triggers/Interact/Scripts/scr_level_trigger_interact.cs" Line="34" Column="83" />
-      <File FileName="Assets/Unpacked/System/HUD/TextBox/Scripts/oldscr_system_hud_textbox.cs" Line="19" Column="16" />
+      <File FileName="Assets/Unpacked/System/HUD/TextBox/Scripts/scr_system_hud_textbox_manager.cs" Line="35" Column="31" />
+      <File FileName="Assets/Unpacked/Level Objects/Triggers/Interact/Scripts/scr_level_trigger_interact.cs" Line="48" Column="50" />
       <File FileName="Assets/Unpacked/Entities/Characters/Fox/Scripts/scr_entity_character_movement.cs" Line="5" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
