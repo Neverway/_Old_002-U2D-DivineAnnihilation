@@ -64360,7 +64360,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1763824554
 RectTransform:
   m_ObjectHideFlags: 0
@@ -66489,6 +66489,7 @@ MonoBehaviour:
   inventoryCharacterObject: {fileID: 433981317}
   inventoryGoldObject: {fileID: 1885716608}
   inventorylevelObject: {fileID: 1982539563}
+  selectedButton: {fileID: 118708435}
   inventoryBoxActive: 0
   acceptingInput: 1
 --- !u!1 &2048690716
