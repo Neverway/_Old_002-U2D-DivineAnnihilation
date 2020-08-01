@@ -11,6 +11,7 @@ public class scr_system_menu_inventory_manager : MonoBehaviour
     public Image inventoryCharacterObject;  // A referance to the inventory character object
     public Text inventoryGoldObject;        // A referance to the inventory gold object
     public Text inventorylevelObject;       // A referance to the inventory level object
+    public Button selectedButton;
 
     public bool inventoryBoxActive;
     public bool acceptingInput;
@@ -21,6 +22,7 @@ public class scr_system_menu_inventory_manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        selectedButton.Select();
         characterMovement = FindObjectOfType<scr_entity_character_movement>(); // Find the character movment script
         global = FindObjectOfType<scr_system_required_config_manager>(); // Find the config script
     }
