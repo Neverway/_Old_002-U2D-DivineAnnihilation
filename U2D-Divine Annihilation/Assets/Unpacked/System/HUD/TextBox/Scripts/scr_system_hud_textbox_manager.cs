@@ -40,9 +40,9 @@ public class scr_system_hud_textbox_manager : MonoBehaviour
     void Update()
     {
         // Continue to next dialogue
-        if (dialogueBoxActive && Input.GetKeyDown("z")) 
+        if (dialogueBoxActive && Input.GetKeyDown("z"))
         {
-            if(acceptingInput)
+            if (acceptingInput)
             {
                 currentLine += 1; // Advance the line count
             }
