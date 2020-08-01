@@ -38,7 +38,8 @@ public class scr_system_menu_inventory_manager : MonoBehaviour
         if (inventoryBoxActive && Input.GetKeyDown("c"))
         {
             if (acceptingInput)
-            {
+            { 
+                characterMovement.movementSpeed = characterMovement.storedSpeed; // Set the players speed so they won't get stuck with a movement speed of zero
                 inventoryBoxActive = false;
                 inventoryBoxObject.SetActive(false); // Make the box disappear
                 acceptingInput = false;
