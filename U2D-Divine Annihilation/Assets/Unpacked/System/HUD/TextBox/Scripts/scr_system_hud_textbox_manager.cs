@@ -20,12 +20,14 @@ public class scr_system_hud_textbox_manager : MonoBehaviour
     public int currentLine;                                  // A number to check which set of text should be called from the text array
     public bool dialogueBoxActive;                           // A true or false statment of if the dialogue box is open
     private scr_entity_character_movement characterMovement; // A referance to the player movement so the dialogue box can freeze the player when it opens
+    private scr_system_required_config_manager global;
 
 
     // Start is called before the first frame update
     void Start()
     {
         characterMovement = FindObjectOfType<scr_entity_character_movement>(); // Find the character movment script
+        global = FindObjectOfType<scr_system_required_config_manager>(); // Find the config script
     }
 
 
@@ -72,7 +74,10 @@ public class scr_system_hud_textbox_manager : MonoBehaviour
     // Setup a function to enable the dialogue boxes
     public void ShowDialogue()
     {
-        dialogueBoxActive = true;          // Set the active state to true
-        dialogueBoxObject.SetActive(true); // Make the box appear
+        if (!global.menuActive)
+        {
+            dialogueBoxActive = true;          // Set the active state to true
+            dialogueBoxObject.SetActive(true); // Make the box appear
+        }
     }
 }

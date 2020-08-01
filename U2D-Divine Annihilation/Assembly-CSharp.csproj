@@ -64,6 +64,7 @@
      <Compile Include="Assets\Unpacked\System\Menus\Inventory\Scripts\scr_system_menu_inventory_manager.cs" />
      <Compile Include="Assets\Unpacked\System\Menus\Scripts\scr_system_menu_arrowScrolling.cs" />
      <Compile Include="Assets\Unpacked\System\Required\Camera\Scripts\scr_system_required_camera.cs" />
+     <Compile Include="Assets\Unpacked\System\Required\Config\Scripts\scr_system_required_config_manager.cs" />
      <None Include="Assets\System\Fonts\japanesefont\readme.txt" />
  <Reference Include="UnityEngine">
  <HintPath>/home/lizband_ucc/Documents/Apps/Unity/Unity/Hub/Editor/2019.4.3f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

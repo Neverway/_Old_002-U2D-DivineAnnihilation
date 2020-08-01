@@ -15,11 +15,14 @@ public class scr_system_menu_inventory_manager : MonoBehaviour
     public bool inventoryBoxActive;
     public bool acceptingInput;
     private scr_entity_character_movement characterMovement; // A referance to the player movement so the dialogue box can freeze the player when it opens
+    private scr_system_required_config_manager global;
+
 
     // Start is called before the first frame update
     void Start()
     {
         characterMovement = FindObjectOfType<scr_entity_character_movement>(); // Find the character movment script
+        global = FindObjectOfType<scr_system_required_config_manager>(); // Find the config script
     }
 
     IEnumerator acceptInput()
@@ -44,7 +47,7 @@ public class scr_system_menu_inventory_manager : MonoBehaviour
         }
 
         // Open inventory
-        if (!inventoryBoxActive && Input.GetKeyDown("c"))
+        if (!inventoryBoxActive && Input.GetKeyDown("c") && !global.menuActive)
         {
             if (acceptingInput)
             {
