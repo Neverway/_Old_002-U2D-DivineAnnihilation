@@ -30,16 +30,16 @@ public class scr_entity_character_movement : MonoBehaviour
     // Update is called once per frame (Speed is called by FPS)
     void Update()
     {
-        if(DialogueManager.dialogueBoxActive)
-        {
-            canMove = false;
-            movementSpeed = 0;
-        }
+        //if(DialogueManager.dialogueBoxActive)
+        //{
+        //    canMove = false;
+        //    movementSpeed = 0;
+       //}
 
-        if(!DialogueManager.dialogueBoxActive)
-        {
-            canMove = true;
-        }
+        //if(!DialogueManager.dialogueBoxActive)
+        //{
+        //    canMove = true;
+        //}
 
         // Input
         if(canMove)
@@ -58,12 +58,15 @@ public class scr_entity_character_movement : MonoBehaviour
                 movementSpeed = sprintSpeed;
                 storedSpeed = sprintSpeed;
             }
-        
             else if (Input.GetKeyUp("x"))
             {
                 movementSpeed = walkSpeed;
                 storedSpeed = sprintSpeed;
             }
+        }
+        if(!canMove)
+        {
+            movementSpeed = 0;
         }
     }
 

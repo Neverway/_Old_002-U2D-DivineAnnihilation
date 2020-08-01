@@ -11,6 +11,7 @@ public class scr_system_required_config_manager : MonoBehaviour
     // Referances
     private scr_system_hud_textbox_manager DialogueManager;
     private scr_system_menu_inventory_manager InventoryManager;
+    private scr_entity_character_movement characterMovement;
 
 
     // Start is called before the first frame update
@@ -19,6 +20,7 @@ public class scr_system_required_config_manager : MonoBehaviour
         menuActive = false;
         DialogueManager = FindObjectOfType<scr_system_hud_textbox_manager>();
         InventoryManager = FindObjectOfType<scr_system_menu_inventory_manager>();
+        characterMovement = FindObjectOfType<scr_entity_character_movement>();
     }
 
 
@@ -29,10 +31,15 @@ public class scr_system_required_config_manager : MonoBehaviour
         if(DialogueManager.dialogueBoxActive | InventoryManager.inventoryBoxActive)
         {
             menuActive = true;
+            characterMovement.canMove = false;
+            canMove = false;
         }
         else if(!DialogueManager.dialogueBoxActive && !InventoryManager.inventoryBoxActive)
         {
             menuActive = false;
+            characterMovement.canMove = true;
+            characterMovement.movementSpeed = characterMovement.storedSpeed; // Set the players speed so they won't get stuck with a movement speed of zero
+            canMove = true;
         }
     }
 }
