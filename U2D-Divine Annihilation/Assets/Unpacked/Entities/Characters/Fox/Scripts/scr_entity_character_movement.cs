@@ -4,16 +4,19 @@ using UnityEngine;
 
 public class scr_entity_character_movement : MonoBehaviour
 {
-    // Setup configurable variables
+    // Referances
     public bool canMove = true;
     public float walkSpeed = 5f;
     public float sprintSpeed = 5f;
+
+    // Code set value referances
     public float movementSpeed;
     public float storedSpeed;
     public Rigidbody2D Rigidbody;
     public Animator characterAnimator;
 
     private scr_system_hud_textbox_manager DialogueManager;
+    private scr_system_menu_inventory_manager InventoryManager;
 
     // Input variables
     Vector2 movement;
