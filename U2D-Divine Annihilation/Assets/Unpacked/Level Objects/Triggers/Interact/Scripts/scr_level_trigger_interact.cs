@@ -11,6 +11,8 @@ public class scr_level_trigger_interact : MonoBehaviour
     public Sprite[] dialogueLinePortraits;
     public bool acceptingInput;
 
+    private scr_system_required_config_manager global;
+
 
     // Start is called before the first frame update
     void Start()
