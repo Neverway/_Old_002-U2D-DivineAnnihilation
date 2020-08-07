@@ -1,9 +1,12 @@
-﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Unpacked/System/Required/Config/Scripts/scr_system_required_config_saveLoad.cs">
+﻿<Properties StartupConfiguration="{EECE0883-1734-A6AA-2784-08956EC7C977}|Unit Tests">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Unpacked/System/HUD/TextBox/Scripts/scr_system_hud_textbox_manager.cs">
     <Files>
-      <File FileName="Assets/Unpacked/System/Required/Config/Scripts/scr_system_required_config_saveLoad.cs" Line="10" Column="9" />
+      <File FileName="Assets/Unpacked/System/Menus/Scripts/scr_system_menu_arrowScrolling.cs" Line="1" Column="1" />
+      <File FileName="Assets/Unpacked/System/Menus/Scripts/scr_system_menu_control.cs" Line="71" Column="28" />
+      <File FileName="Assets/Unpacked/System/HUD/TextBox/Scripts/scr_system_hud_textbox_manager.cs" Line="7" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-Editor PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
