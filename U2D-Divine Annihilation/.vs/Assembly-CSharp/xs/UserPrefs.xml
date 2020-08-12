@@ -1,5 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Menus &amp; Hud/scr_hud_textboxManager.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Menus &amp; Hud/scr_menu_titleQuit.cs" Line="5" Column="14" />
+      <File FileName="Assets/Scripts/Menus &amp; Hud/scr_menu_control.cs" Line="15" Column="36" />
+      <File FileName="Assets/Scripts/Menus &amp; Hud/scr_hud_textboxManager.cs" Line="22" Column="8" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
