@@ -68,6 +68,7 @@
      <Compile Include="Assets\Scripts\Menus &amp; Hud\scr_menu_scroll.cs" />
      <Compile Include="Assets\Scripts\Menus &amp; Hud\scr_menu_titleQuit.cs" />
      <Compile Include="Assets\Scripts\System\scr_system_camera.cs" />
+     <Compile Include="Assets\Scripts\System\scr_system_configuration.cs" />
      <Compile Include="Assets\Scripts\System\scr_system_configurationManager.cs" />
      <Compile Include="Assets\Scripts\System\scr_system_saveLoad.cs" />
      <Compile Include="Assets\Scripts\Triggers\scr_trigger_interact.cs" />
