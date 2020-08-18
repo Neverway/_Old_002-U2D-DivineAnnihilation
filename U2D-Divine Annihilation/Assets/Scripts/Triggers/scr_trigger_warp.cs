@@ -3,7 +3,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class scr_level_trigger_warp : MonoBehaviour
+public class scr_trigger_warp : MonoBehaviour
 {
     public GameObject ExitTarget;
     public GameObject Player;

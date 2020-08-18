@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class scr_system_configuration : MonoBehaviour
 {
+    public string saveprofile;
+
     // Start is called before the first frame update
     void Start()
     {

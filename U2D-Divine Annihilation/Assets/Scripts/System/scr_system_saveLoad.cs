@@ -3,28 +3,37 @@ using System.IO;
 using System.Collections.Generic;
 using TigerForge;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class scr_system_required_config_saveLoad : MonoBehaviour
+public class scr_system_saveLoad : MonoBehaviour
 {
     EasyFileSave testFile;
+    public string fname;
+    public Text inventoryName;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        testFile = new EasyFileSave("test");
+        var dataPath = Application.dataPath + "/saves/";
+        Debug.Log("start ini");
+        Debug.Log("dataPath : " + dataPath);
+        testFile = new EasyFileSave("/temp/testing" + "saves");
     }
 
     // Update is called once per frame
     void Update()
     {
 
-
+        //Debug.Log("update ini");
         if (Input.GetKeyDown(KeyCode.F1))
         {
+            //Debug.Log("save ini");
             Save();
         }
         if (Input.GetKeyDown(KeyCode.F2))
         {
+            //Debug.Log("load ini");
             Load();
         }
     } 
@@ -60,6 +69,7 @@ public class scr_system_required_config_saveLoad : MonoBehaviour
         testFile.Add("partyMember3Health", 100);
 
         testFile.Save();
+        Debug.Log("Saved test file!");
     }
 
     private void Load()
@@ -93,8 +103,9 @@ public class scr_system_required_config_saveLoad : MonoBehaviour
         var partyMember3 = testFile.GetString("partyMember3");
         var partyMember3Health = testFile.GetInt("partyMember3Health");
 
-        testFile.Dispose();
-        Debug.Log(playerHealth);
-        Debug.Log(playerName);
+        Debug.Log("Test file results");
+        Debug.Log("Health : " + playerHealth);
+        Debug.Log("Name   : " + playerName);
+        //testFile.Dispose();
     }
 }
