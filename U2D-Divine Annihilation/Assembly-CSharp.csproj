@@ -70,10 +70,10 @@
      <Compile Include="Assets\Scripts\System\scr_system_camera.cs" />
      <Compile Include="Assets\Scripts\System\scr_system_configuration.cs" />
      <Compile Include="Assets\Scripts\System\scr_system_configurationManager.cs" />
+     <Compile Include="Assets\Scripts\System\scr_system_filetest.cs" />
      <Compile Include="Assets\Scripts\System\scr_system_saveLoad.cs" />
      <Compile Include="Assets\Scripts\Triggers\scr_trigger_interact.cs" />
      <Compile Include="Assets\Scripts\Triggers\scr_trigger_warp.cs" />
-     <None Include="Assets\Other\Saves\sav_file1.txt" />
      <None Include="Assets\Other\TigerForge\EasyPrefabBrowser\SetupGuide.txt" />
      <None Include="Assets\Other\Fonts\japanesefont\readme.txt" />
  <Reference Include="UnityEngine">

@@ -68,6 +68,78 @@ TextureImporter:
   - first:
       213: 8626672392820444336
     second: til_autumnForest_indoors_21
+  - first:
+      213: 7614737756121160480
+    second: tile_autumnForest_indoors_0
+  - first:
+      213: -3371156776852833146
+    second: tile_autumnForest_indoors_1
+  - first:
+      213: -7291412171309070310
+    second: tile_autumnForest_indoors_2
+  - first:
+      213: -488626139353028539
+    second: tile_autumnForest_indoors_3
+  - first:
+      213: -4951277298311210752
+    second: tile_autumnForest_indoors_4
+  - first:
+      213: 64206410429945140
+    second: tile_autumnForest_indoors_5
+  - first:
+      213: -4170598441403224998
+    second: tile_autumnForest_indoors_6
+  - first:
+      213: 3234053609217689208
+    second: tile_autumnForest_indoors_7
+  - first:
+      213: -197707352717639
+    second: tile_autumnForest_indoors_8
+  - first:
+      213: 7440703467489125971
+    second: tile_autumnForest_indoors_9
+  - first:
+      213: -7272120870984435684
+    second: tile_autumnForest_indoors_10
+  - first:
+      213: 7252793628273820091
+    second: tile_autumnForest_indoors_11
+  - first:
+      213: 6435993514357425859
+    second: tile_autumnForest_indoors_12
+  - first:
+      213: -5034872682610245757
+    second: tile_autumnForest_indoors_13
+  - first:
+      213: 78560850135018032
+    second: tile_autumnForest_indoors_14
+  - first:
+      213: -1150656022047351719
+    second: tile_autumnForest_indoors_15
+  - first:
+      213: -2203530340729417975
+    second: tile_autumnForest_indoors_16
+  - first:
+      213: 4632533743540268451
+    second: tile_autumnForest_indoors_17
+  - first:
+      213: -1631289998646953784
+    second: tile_autumnForest_indoors_18
+  - first:
+      213: -7937647856854170438
+    second: tile_autumnForest_indoors_19
+  - first:
+      213: -2248544064902864996
+    second: tile_autumnForest_indoors_20
+  - first:
+      213: -6596451725121072782
+    second: tile_autumnForest_indoors_21
+  - first:
+      213: -4264406886767991482
+    second: tile_autumnForest_indoors_22
+  - first:
+      213: -6788780028693978333
+    second: tile_autumnForest_indoors_23
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -153,7 +225,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: til_autumnForest_indoors_0
+      name: tile_autumnForest_indoors_0
       rect:
         serializedVersion: 2
         x: 0
@@ -167,14 +239,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf8e83c350a57ab30800000000000000
-      internalID: 4298503347880126716
+      spriteID: 02b5b5305abfca960800000000000000
+      internalID: 7614737756121160480
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: til_autumnForest_indoors_1
+      name: tile_autumnForest_indoors_1
       rect:
         serializedVersion: 2
         x: 64
@@ -188,14 +260,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64234cad7920d79d0800000000000000
-      internalID: -2775058944156749242
+      spriteID: 68c3989c5ce3731d0800000000000000
+      internalID: -3371156776852833146
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: til_autumnForest_indoors_2
+      name: tile_autumnForest_indoors_2
       rect:
         serializedVersion: 2
         x: 128
@@ -209,14 +281,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 179cc676ef7aed960800000000000000
-      internalID: 7628719529910913393
+      spriteID: a18c9220343bfca90800000000000000
+      internalID: -7291412171309070310
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: til_autumnForest_indoors_3
+      name: tile_autumnForest_indoors_3
       rect:
         serializedVersion: 2
         x: 192
@@ -230,14 +302,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0bdc3115cdd0f9730800000000000000
-      internalID: 4007937433287249328
+      spriteID: 54864e77d1d0839f0800000000000000
+      internalID: -488626139353028539
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: til_autumnForest_indoors_4
+      name: tile_autumnForest_indoors_4
       rect:
         serializedVersion: 2
         x: 256
@@ -251,14 +323,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9437dcecf17e2e570800000000000000
-      internalID: 8494605970973750089
+      spriteID: 00954b9b787894bb0800000000000000
+      internalID: -4951277298311210752
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: til_autumnForest_indoors_5
+      name: tile_autumnForest_indoors_5
       rect:
         serializedVersion: 2
         x: 0
@@ -272,14 +344,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea4c25d330295a2d0800000000000000
-      internalID: -3268045411976035154
+      spriteID: 435dafdd36b14e000800000000000000
+      internalID: 64206410429945140
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: til_autumnForest_indoors_6
+      name: tile_autumnForest_indoors_6
       rect:
         serializedVersion: 2
         x: 64
@@ -293,14 +365,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e9f2cbaeb7905460800000000000000
-      internalID: 7228444247110908393
+      spriteID: a5cec5770de0f16c0800000000000000
+      internalID: -4170598441403224998
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: til_autumnForest_indoors_7
+      name: tile_autumnForest_indoors_7
       rect:
         serializedVersion: 2
         x: 128
@@ -314,14 +386,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09b46350cce261eb0800000000000000
-      internalID: -4749557303219958896
+      spriteID: 8768df17f9aa1ec20800000000000000
+      internalID: 3234053609217689208
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: til_autumnForest_indoors_8
+      name: tile_autumnForest_indoors_8
       rect:
         serializedVersion: 2
         x: 192
@@ -335,14 +407,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b99a65b4bc5c8a1c0800000000000000
-      internalID: -4492123151369066085
+      spriteID: 9b6c87baf2c4ffff0800000000000000
+      internalID: -197707352717639
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: til_autumnForest_indoors_9
+      name: tile_autumnForest_indoors_9
       rect:
         serializedVersion: 2
         x: 256
@@ -356,14 +428,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c417a3e25e502f50800000000000000
-      internalID: 6854582342957601989
+      spriteID: 356e4b29160b24760800000000000000
+      internalID: 7440703467489125971
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: til_autumnForest_indoors_10
+      name: tile_autumnForest_indoors_10
       rect:
         serializedVersion: 2
         x: 0
@@ -377,14 +449,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d36549be13e46e80800000000000000
-      internalID: -8186168501555862567
+      spriteID: c18b441e89c341b90800000000000000
+      internalID: -7272120870984435684
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: til_autumnForest_indoors_11
+      name: tile_autumnForest_indoors_11
       rect:
         serializedVersion: 2
         x: 64
@@ -398,14 +470,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab85f9d87c8f3c6b0800000000000000
-      internalID: -5277100802389878598
+      spriteID: bb14a72c06917a460800000000000000
+      internalID: 7252793628273820091
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: til_autumnForest_indoors_12
+      name: tile_autumnForest_indoors_12
       rect:
         serializedVersion: 2
         x: 128
@@ -419,14 +491,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 640ad1b17116d9510800000000000000
-      internalID: 1557507798007128134
+      spriteID: 3c60eff700e315950800000000000000
+      internalID: 6435993514357425859
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: til_autumnForest_indoors_13
+      name: tile_autumnForest_indoors_13
       rect:
         serializedVersion: 2
         x: 192
@@ -440,14 +512,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b74cd51340746cbd0800000000000000
-      internalID: -2610320850680953733
+      spriteID: 38fb2b798f9802ab0800000000000000
+      internalID: -5034872682610245757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: til_autumnForest_indoors_14
+      name: tile_autumnForest_indoors_14
       rect:
         serializedVersion: 2
         x: 256
@@ -461,14 +533,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ded23c647ac1c0230800000000000000
-      internalID: 3606288906389237229
+      spriteID: 03aec8d4daa171100800000000000000
+      internalID: 78560850135018032
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: til_autumnForest_indoors_15
+      name: tile_autumnForest_indoors_15
       rect:
         serializedVersion: 2
         x: 0
@@ -482,14 +554,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46ef3906ed8a5a2d0800000000000000
-      internalID: -3268020281530909084
+      spriteID: 95c1433c17c0800f0800000000000000
+      internalID: -1150656022047351719
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: til_autumnForest_indoors_16
+      name: tile_autumnForest_indoors_16
       rect:
         serializedVersion: 2
         x: 64
@@ -503,14 +575,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f84e82954d9f4f60800000000000000
-      internalID: 8020802383507245297
+      spriteID: 90f070574dc7b61e0800000000000000
+      internalID: -2203530340729417975
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: til_autumnForest_indoors_17
+      name: tile_autumnForest_indoors_17
       rect:
         serializedVersion: 2
         x: 128
@@ -524,14 +596,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b15db9ee603f59ac0800000000000000
-      internalID: -3848903095419677413
+      spriteID: 3ad6ab145e01a4040800000000000000
+      internalID: 4632533743540268451
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: til_autumnForest_indoors_18
+      name: tile_autumnForest_indoors_18
       rect:
         serializedVersion: 2
         x: 192
@@ -545,14 +617,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3519f911cdd2ebe0800000000000000
-      internalID: -1449352308625697476
+      spriteID: 8c83001a36e7c59e0800000000000000
+      internalID: -1631289998646953784
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: til_autumnForest_indoors_19
+      name: tile_autumnForest_indoors_19
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab40114645fc7d190800000000000000
+      internalID: -7937647856854170438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile_autumnForest_indoors_20
       rect:
         serializedVersion: 2
         x: 0
@@ -566,14 +659,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7a9de4e52f427ab0800000000000000
-      internalID: -5011856411136779651
+      spriteID: c9fd6a516119bc0e0800000000000000
+      internalID: -2248544064902864996
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: til_autumnForest_indoors_20
+      name: tile_autumnForest_indoors_21
       rect:
         serializedVersion: 2
         x: 64
@@ -587,14 +680,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0a37d269c53c0ae0800000000000000
-      internalID: -1581830230050915830
+      spriteID: 27155220b12b474a0800000000000000
+      internalID: -6596451725121072782
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: til_autumnForest_indoors_21
+      name: tile_autumnForest_indoors_22
       rect:
         serializedVersion: 2
         x: 128
@@ -608,8 +701,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0bc4bbfc5d818b770800000000000000
-      internalID: 8626672392820444336
+      spriteID: 645e670c788c1d4c0800000000000000
+      internalID: -4264406886767991482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tile_autumnForest_indoors_23
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 323ed6b488869c1a0800000000000000
+      internalID: -6788780028693978333
       vertices: []
       indices: 
       edges: []

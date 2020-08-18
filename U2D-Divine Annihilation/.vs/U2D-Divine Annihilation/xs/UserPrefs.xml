@@ -1,9 +1,8 @@
 ﻿<Properties StartupConfiguration="{EECE0883-1734-A6AA-2784-08956EC7C977}|Unit Tests">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/System/scr_system_configurationManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/System/scr_system_filetest.cs">
     <Files>
-      <File FileName="Assets/Scripts/Entities/scr_character_movement.cs" Line="62" Column="14" />
-      <File FileName="Assets/Scripts/Menus &amp; Hud/scr_menu_control.cs" Line="20" Column="1" />
-      <File FileName="Assets/Scripts/System/scr_system_configurationManager.cs" Line="16" Column="5" />
+      <File FileName="Assets/Scripts/System/scr_system_saveLoad.cs" Line="4" Column="1" />
+      <File FileName="Assets/Scripts/System/scr_system_filetest.cs" Line="41" Column="57" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-Editor PreferredExecutionTarget="MonoDevelop.Default" />
