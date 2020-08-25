@@ -55,6 +55,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Other\Materials\scr_system_lightAffectedSprite.cs" />
      <Compile Include="Assets\Other\TigerForge\Demo\Demo.cs" />
      <Compile Include="Assets\Other\TigerForge\EasyFileSave\EasyFileSave.cs" />
      <Compile Include="Assets\Other\TigerForge\EasyFileSave\EasyFileSaveExtension.cs" />
