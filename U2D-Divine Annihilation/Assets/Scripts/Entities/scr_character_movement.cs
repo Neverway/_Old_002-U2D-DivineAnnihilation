@@ -1,53 +1,49 @@
-﻿using System.Collections;
+﻿// Included Libraries
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/* Textbox Manager class
+ * ---------------------
+ * This script is applied to the textbox manager object in a scene that uses textboxes
+ * It get the public variables filled in from things like the interaction triggers
+ * All of this is to display the textbox objects on screen properly, such as the box itself, the text & name in the box, as well as the textbox portrait
+*/
 public class scr_character_movement : MonoBehaviour
 {
-    // Referances
     public bool canMove = true;
     public float walkSpeed = 5f;
     public float sprintSpeed = 5f;
-
-    // Code set value referances
     public float movementSpeed;
     public float storedSpeed;
     public Rigidbody2D Rigidbody;
     public Animator characterAnimator;
 
+    // Other class references
     private scr_hud_textboxManager DialogueManager;
     private scr_menu_inventoryManager InventoryManager;
-
-    // Input variables
     Vector2 movement;
 
+
+    // Start is called before the first frame update
     void Start()
     {
-        movementSpeed = walkSpeed;
-        DialogueManager = FindObjectOfType<scr_hud_textboxManager>();
+        DialogueManager = FindObjectOfType<scr_hud_textboxManager>();   // Find the dialogue manager script
+        movementSpeed = walkSpeed;                                      // Set the starting movement speed
     }
 
-    // Update is called once per frame (Speed is called by FPS)
+
+    // Update is called once per frame
     void Update()
     {
-        //if(DialogueManager.dialogueBoxActive)
-        //{
-        //    canMove = false;
-        //    movementSpeed = 0;
-       //}
-
-        //if(!DialogueManager.dialogueBoxActive)
-        //{
-        //    canMove = true;
-        //}
-
-        // Input
-        if(canMove)
+        // Allow character input if the canMove variable is true
+        if (canMove)
         {
+            // Movement input
             movement.x = Input.GetAxisRaw("Horizontal");
             movement.y = Input.GetAxisRaw("Vertical");
         
-
+            // Character animator
             characterAnimator.SetFloat("Horizontal", movement.x);
             characterAnimator.SetFloat("Vertical", movement.y);
             characterAnimator.SetFloat("Speed", movement.sqrMagnitude);
@@ -56,24 +52,28 @@ public class scr_character_movement : MonoBehaviour
             if (Input.GetKeyDown("x"))
             {
                 movementSpeed = sprintSpeed;
-                storedSpeed = sprintSpeed;
             }
-            else if (Input.GetKeyUp("x"))
+
+            // Not sprinting
+            if (Input.GetKeyUp("x"))
             {
                 movementSpeed = walkSpeed;
-                storedSpeed = sprintSpeed;
             }
         }
-        if(!canMove)
+
+        // Stop character if the canMove variable is false
+        if (!canMove)
         {
-            movementSpeed = 0;
+            movement.x = 0;
+            movement.y = 0;
         }
+
     }
+
 
     // Update is not tied to FPS but updates at a constant rate
     void FixedUpdate()
     {
-        // Movement
-        Rigidbody.MovePosition(Rigidbody.position + movement * movementSpeed * Time.fixedDeltaTime);
+            Rigidbody.MovePosition(Rigidbody.position + movement * movementSpeed * Time.fixedDeltaTime);    // Update the movement for the character
     }
 }

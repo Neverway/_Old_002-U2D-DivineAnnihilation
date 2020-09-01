@@ -27,19 +27,18 @@ public class scr_system_configurationManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Set the global.menuActive state
+        // Menu active
         if(DialogueManager.dialogueBoxActive | InventoryManager.inventoryBoxActive)
         {
             menuActive = true;
             characterMovement.canMove = false;
-            canMove = false;
         }
+
+        // No Menu active
         else if(!DialogueManager.dialogueBoxActive && !InventoryManager.inventoryBoxActive)
         {
             menuActive = false;
             characterMovement.canMove = true;
-            characterMovement.movementSpeed = characterMovement.storedSpeed; // Set the players speed so they won't get stuck with a movement speed of zero
-            canMove = true;
         }
     }
 }
