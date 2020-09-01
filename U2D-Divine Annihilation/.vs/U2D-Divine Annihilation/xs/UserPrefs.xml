@@ -1,9 +1,10 @@
 ﻿<Properties StartupConfiguration="{EECE0883-1734-A6AA-2784-08956EC7C977}|Unit Tests">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Other/Materials/scr_system_lightAffectedSprite.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/System/scr_system_configurationManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/System/scr_system_saveLoad.cs" Line="4" Column="1" />
-      <File FileName="Assets/Scripts/System/scr_system_filetest.cs" Line="41" Column="57" />
-      <File FileName="Assets/Other/Materials/scr_system_lightAffectedSprite.cs" Line="6" Column="2" />
+      <File FileName="Assets/Scripts/Entities/scr_character_movement.cs" Line="50" Column="13" />
+      <File FileName="Assets/Scripts/Menus &amp; Hud/scr_hud_textboxManager.cs" Line="102" Column="92" />
+      <File FileName="Assets/Scripts/Triggers/scr_trigger_interact.cs" Line="28" Column="108" />
+      <File FileName="Assets/Scripts/System/scr_system_configurationManager.cs" Line="5" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-Editor PreferredExecutionTarget="MonoDevelop.Default" />
