@@ -11,13 +11,16 @@ using UnityEngine;
 */
 public class scr_character_movement : MonoBehaviour
 {
-    public bool canMove = true;
+
     public float walkSpeed = 5f;
     public float sprintSpeed = 5f;
     public float movementSpeed;
     public float storedSpeed;
+    public bool canMove = true;
+    public bool sprintDust = true;
     public Rigidbody2D Rigidbody;
     public Animator characterAnimator;
+    public ParticleSystem dustParticleSystem;
 
     // Other class references
     private scr_hud_textboxManager DialogueManager;
@@ -68,6 +71,18 @@ public class scr_character_movement : MonoBehaviour
             movement.y = 0;
         }
 
+        // Emmit dust when going fast
+        if (movementSpeed >= 7 && sprintDust)
+        {
+            if (!dustParticleSystem.isPlaying)
+            {
+                dustParticleSystem.Play();
+            }
+        }
+        else
+        {
+            dustParticleSystem.Stop();
+        }
     }
 
 
