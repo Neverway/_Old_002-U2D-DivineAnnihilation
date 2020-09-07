@@ -2,8 +2,6 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/System/scr_system_saveLoad.cs">
     <Files>
       <File FileName="Assets/Scripts/Menus &amp; Hud/scr_menu_titleQuit.cs" Line="5" Column="14" />
-      <File FileName="Assets/Saving/SaveData.cs" Line="14" Column="16" />
-      <File FileName="Assets/Saving/SaveManager.cs" Line="5" Column="14" />
       <File FileName="Assets/Scripts/System/scr_system_saveLoad.cs" Line="8" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
