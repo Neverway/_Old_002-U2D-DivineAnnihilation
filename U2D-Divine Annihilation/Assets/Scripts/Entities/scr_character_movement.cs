@@ -76,9 +76,13 @@ public class scr_character_movement : MonoBehaviour
         {
             if (!dustParticleSystem.isPlaying)
             {
-                dustParticleSystem.Play();
+                if (movement.x > 0 || movement.x < 0 || movement.y > 0 || movement.y < 0)
+                { 
+                    dustParticleSystem.Play();
+                }
             }
         }
+
         else
         {
             dustParticleSystem.Stop();
