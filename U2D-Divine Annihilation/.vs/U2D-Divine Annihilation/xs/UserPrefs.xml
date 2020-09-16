@@ -1,11 +1,10 @@
 ﻿<Properties StartupConfiguration="{EECE0883-1734-A6AA-2784-08956EC7C977}|Unit Tests">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Entities/scr_character_movement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Structures/scr_c1_pushbox.cs">
     <Files>
       <File FileName="Assets/Scripts/Menus &amp; Hud/scr_hud_textboxManager.cs" Line="71" Column="15" />
-      <File FileName="Assets/Scripts/Triggers/scr_trigger_interact.cs" Line="28" Column="108" />
-      <File FileName="Assets/Scripts/System/scr_system_configurationManager.cs" Line="23" Column="9" />
-      <File FileName="Assets/Scripts/Entities/scr_character_movement.cs" Line="77" Column="32" />
-      <File FileName="Assets/Scripts/Entities/scr_character_ghost.cs" Line="6" Column="2" />
+      <File FileName="Assets/Scripts/Triggers/scr_trigger_interact.cs" Line="58" Column="21" />
+      <File FileName="Assets/Scripts/Menus &amp; Hud/scr_battle_abz_control.cs" Line="29" Column="23" />
+      <File FileName="Assets/Scripts/Structures/scr_c1_pushbox.cs" Line="35" Column="13" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-Editor PreferredExecutionTarget="MonoDevelop.Default" />
