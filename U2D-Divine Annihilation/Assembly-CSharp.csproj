@@ -59,7 +59,7 @@
      <Compile Include="Assets\Other\TigerForge\Demo\Demo.cs" />
      <Compile Include="Assets\Other\TigerForge\EasyFileSave\EasyFileSave.cs" />
      <Compile Include="Assets\Other\TigerForge\EasyFileSave\EasyFileSaveExtension.cs" />
-     <Compile Include="Assets\Scripts\Entities\scr_character_ghost.cs" />
+     <Compile Include="Assets\Scripts\Entities\scr_character_effect_ghost.cs" />
      <Compile Include="Assets\Scripts\Entities\scr_character_movement.cs" />
      <Compile Include="Assets\Scripts\Entities\scr_character_movement_ghost.cs" />
      <Compile Include="Assets\Scripts\Items\scr_item_pickup.cs" />
