@@ -11,6 +11,10 @@ public class scr_trigger_warp : MonoBehaviour
     
     public void OnTriggerEnter2D(Collider2D other)
     {
-        Player.transform.position = new Vector2 (ExitTarget.transform.position.x, ExitTarget.transform.position.y);
+        // Check if that something is the player
+        //if (other.gameObject.name == "pre_entity_main_fox_overworld")
+        //{
+            other.transform.position = new Vector2(ExitTarget.transform.position.x, ExitTarget.transform.position.y);
+        //}
     }
 }
