@@ -254,6 +254,9 @@
  <Reference Include="UnityEditor.LinuxStandalone.Extensions">
  <HintPath>/home/lizband_ucc/Documents/Apps/Unity/Hub/Editor/2019.4.10f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
  </Reference>
+ <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Assets/Other/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+ </Reference>
  <Reference Include="ICSharpCode.NRefactory">
  <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/PackageCache/com.unity.render-pipelines.core@7.3.1/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
  </Reference>
@@ -745,6 +748,18 @@
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{7F02709D-F8E8-5D00-328F-5F803762FE16}</Project>
       <Name>Assembly-CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProject.csproj">
+      <Project>{BFA6E4C6-C434-87A8-8DD2-C87663AF9EDA}</Project>
+      <Name>AstarPathfindingProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="PackageToolsEditor.csproj">
+      <Project>{DB284C8A-2164-9AFB-8509-C2110FC1F82B}</Project>
+      <Name>PackageToolsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
+      <Project>{52A108CE-312A-7646-8A28-1F3B11C710B6}</Project>
+      <Name>AstarPathfindingProjectEditor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

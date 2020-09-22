@@ -1,12 +1,13 @@
-﻿<Properties StartupConfiguration="{EECE0883-1734-A6AA-2784-08956EC7C977}|Unit Tests">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Triggers/scr_trigger_warp.cs">
+﻿<Properties StartupConfiguration="{52A108CE-312A-7646-8A28-1F3B11C710B6}|Unit Tests">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Entities/scr_entity_follow.cs">
     <Files>
-      <File FileName="Assets/Scripts/Triggers/scr_trigger_warp.cs" Line="18" Column="12" />
-      <File FileName="Assets/Scripts/Triggers/scr_trigger_interact.cs" Line="42" Column="6" />
+      <File FileName="Assets/Scripts/Entities/scr_entity_follow.cs" Line="11" Column="36" />
+      <File FileName="Assets/Scripts/Entities/scr_entity_followFlip.cs" Line="13" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-Editor PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.AstarPathfindingProjectEditor PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

@@ -60,8 +60,12 @@
      <Compile Include="Assets\Other\TigerForge\EasyFileSave\EasyFileSave.cs" />
      <Compile Include="Assets\Other\TigerForge\EasyFileSave\EasyFileSaveExtension.cs" />
      <Compile Include="Assets\Scripts\Entities\scr_character_effect_ghost.cs" />
+     <Compile Include="Assets\Scripts\Entities\scr_character_follow.cs" />
      <Compile Include="Assets\Scripts\Entities\scr_character_movement.cs" />
      <Compile Include="Assets\Scripts\Entities\scr_character_movement_ghost.cs" />
+     <Compile Include="Assets\Scripts\Entities\scr_entity_dust.cs" />
+     <Compile Include="Assets\Scripts\Entities\scr_entity_follow.cs" />
+     <Compile Include="Assets\Scripts\Entities\scr_entity_followFlip.cs" />
      <Compile Include="Assets\Scripts\Items\scr_item_pickup.cs" />
      <Compile Include="Assets\Scripts\Menus &amp; Hud\#OLD#scr_system_hud_textbox.cs" />
      <Compile Include="Assets\Scripts\Menus &amp; Hud\#OLD#scr_system_menu_activebutton.cs" />
@@ -79,6 +83,7 @@
      <Compile Include="Assets\Scripts\System\scr_system_filetest.cs" />
      <Compile Include="Assets\Scripts\System\scr_system_saveLoad.cs" />
      <Compile Include="Assets\Scripts\Triggers\scr_trigger_interact.cs" />
+     <Compile Include="Assets\Scripts\Triggers\scr_trigger_partySet.cs" />
      <Compile Include="Assets\Scripts\Triggers\scr_trigger_warp.cs" />
      <None Include="Assets\Other\TigerForge\EasyPrefabBrowser\SetupGuide.txt" />
      <None Include="Assets\Other\Fonts\japanesefont\readme.txt" />
@@ -261,6 +266,9 @@
  </Reference>
  <Reference Include="UnityEditor">
  <HintPath>/home/lizband_ucc/Documents/Apps/Unity/Hub/Editor/2019.4.10f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Assets/Other/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>/home/lizband_ucc/Documents/Apps/Unity/Hub/Editor/2019.4.10f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -738,6 +746,18 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="AstarPathfindingProject.csproj">
+      <Project>{BFA6E4C6-C434-87A8-8DD2-C87663AF9EDA}</Project>
+      <Name>AstarPathfindingProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="PackageToolsEditor.csproj">
+      <Project>{DB284C8A-2164-9AFB-8509-C2110FC1F82B}</Project>
+      <Name>PackageToolsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
+      <Project>{52A108CE-312A-7646-8A28-1F3B11C710B6}</Project>
+      <Name>AstarPathfindingProjectEditor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
