@@ -1,12 +1,5 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Structures/scr_c1_pushbox.cs">
-    <Files>
-      <File FileName="Assets/Scripts/Structures/scr_c1_pushbox.cs" Line="27" Column="10" />
-      <File FileName="Assets/Scripts/Triggers/scr_trigger_interact.cs" Line="19" Column="32" />
-      <File FileName="Assets/Scripts/Entities/scr_character_movement.cs" Line="96" Column="70" />
-      <File FileName="Assets/Scripts/Menus &amp; Hud/#OLD#scr_system_hud_textbox.cs" Line="20" Column="28" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
