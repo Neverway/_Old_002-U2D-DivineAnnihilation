@@ -1,5 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Triggers/scr_trigger_interact.cs">
+    <Files>
+      <File FileName="Assets/Scripts/System/scr_system_saveManager.cs" Line="18" Column="16" />
+      <File FileName="Assets/Scripts/Triggers/scr_trigger_save.cs" Line="25" Column="32" />
+      <File FileName="Assets/Scripts/Triggers/scr_trigger_interact.cs" Line="40" Column="50" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
