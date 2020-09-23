@@ -74,7 +74,9 @@
      <Compile Include="Assets\Scripts\Menus &amp; Hud\scr_hud_textboxManager.cs" />
      <Compile Include="Assets\Scripts\Menus &amp; Hud\scr_menu_control.cs" />
      <Compile Include="Assets\Scripts\Menus &amp; Hud\scr_menu_inventoryManager.cs" />
+     <Compile Include="Assets\Scripts\Menus &amp; Hud\scr_menu_saveLoad.cs" />
      <Compile Include="Assets\Scripts\Menus &amp; Hud\scr_menu_scroll.cs" />
+     <Compile Include="Assets\Scripts\Menus &amp; Hud\scr_menu_scrollMinusControl.cs" />
      <Compile Include="Assets\Scripts\Menus &amp; Hud\scr_menu_titleQuit.cs" />
      <Compile Include="Assets\Scripts\Structures\scr_c1_pushbox.cs" />
      <Compile Include="Assets\Scripts\System\scr_system_camera.cs" />
@@ -82,8 +84,11 @@
      <Compile Include="Assets\Scripts\System\scr_system_configurationManager.cs" />
      <Compile Include="Assets\Scripts\System\scr_system_filetest.cs" />
      <Compile Include="Assets\Scripts\System\scr_system_saveLoad.cs" />
+     <Compile Include="Assets\Scripts\System\scr_system_saveManager.cs" />
      <Compile Include="Assets\Scripts\Triggers\scr_trigger_interact.cs" />
      <Compile Include="Assets\Scripts\Triggers\scr_trigger_partySet.cs" />
+     <Compile Include="Assets\Scripts\Triggers\scr_trigger_save.cs" />
+     <Compile Include="Assets\Scripts\Triggers\scr_trigger_savepoint.cs" />
      <Compile Include="Assets\Scripts\Triggers\scr_trigger_warp.cs" />
      <None Include="Assets\Other\TigerForge\EasyPrefabBrowser\SetupGuide.txt" />
      <None Include="Assets\Other\Fonts\japanesefont\readme.txt" />

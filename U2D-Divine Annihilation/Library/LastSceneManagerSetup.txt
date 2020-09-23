@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Battle/scn_battle_test.unity
+- path: Assets/Scenes/Chapter 1/scn_c1s1.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
