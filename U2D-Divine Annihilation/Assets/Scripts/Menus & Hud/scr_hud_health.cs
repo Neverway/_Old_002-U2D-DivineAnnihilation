@@ -22,5 +22,6 @@ public class scr_hud_health : MonoBehaviour
     void Update()
     {
         healthBar.sizeDelta = new Vector2(currentHealth, 8);
+        saveManager.activeSave.playerHealth = currentHealth;
     }
 }

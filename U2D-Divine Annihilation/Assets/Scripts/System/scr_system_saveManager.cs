@@ -4,6 +4,7 @@ using System.Xml.Serialization;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class scr_system_saveManager : MonoBehaviour
 {
@@ -29,7 +30,6 @@ public class scr_system_saveManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         saveManager = configTarget.GetComponent<scr_system_saveManager>();
     }
 
@@ -57,6 +57,7 @@ public class scr_system_saveManager : MonoBehaviour
     // Create a starting save profile
     public void CreateSave()
     {
+        activeSave.scene = "scn_c1s1";
         activeSave.playerSavePosition.x = (float)-16.75;
         activeSave.playerSavePosition.y = 43;
         activeSave.playerHealth = 100;
@@ -69,10 +70,10 @@ public class scr_system_saveManager : MonoBehaviour
     {
         string dataPath = Application.persistentDataPath;
         var serializer = new XmlSerializer(typeof(SaveData));
+        //activeSave.scene = SceneManager.GetActiveScene().name;
         var stream = new FileStream(dataPath + "/" + activeSave.saveProfileName + ".dasp", FileMode.Create);
         serializer.Serialize(stream, activeSave);
         stream.Close();
-
         Debug.Log("Saved information to .DASP");
     }
 
@@ -87,7 +88,6 @@ public class scr_system_saveManager : MonoBehaviour
             var stream = new FileStream(dataPath + "/" + activeSave.saveProfileName + ".dasp", FileMode.Open);
             activeSave = serializer.Deserialize(stream) as SaveData;
             stream.Close();
-
             Debug.Log("Loaded information from .DASP");
             hasLoaded = true;
         }
@@ -110,6 +110,7 @@ public class SaveData
 {
     // Player Data
     public string saveProfileName;
+    public string scene;
     public Vector2 playerSavePosition;
     public float playerHealth;
     public bool partyMemberOneFollowing;

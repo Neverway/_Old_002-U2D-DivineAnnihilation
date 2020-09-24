@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class scr_trigger_save : MonoBehaviour
 {
@@ -22,6 +23,7 @@ public class scr_trigger_save : MonoBehaviour
     {
         if (Input.GetKeyDown("z"))
         {
+            saveManager.activeSave.scene = SceneManager.GetActiveScene().name;
             saveManager.Save();
         }
     }
