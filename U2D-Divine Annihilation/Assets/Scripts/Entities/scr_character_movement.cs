@@ -25,6 +25,9 @@ public class scr_character_movement : MonoBehaviour
     // Other class references
     private scr_hud_textboxManager DialogueManager;
     private scr_menu_inventoryManager InventoryManager;
+    public GameObject configTarget;
+    private scr_system_saveManager saveManager;
+
     Vector2 movement;
 
 
@@ -32,7 +35,9 @@ public class scr_character_movement : MonoBehaviour
     void Start()
     {
         DialogueManager = FindObjectOfType<scr_hud_textboxManager>();   // Find the dialogue manager script
+        saveManager = configTarget.GetComponent<scr_system_saveManager>();
         movementSpeed = walkSpeed;                                      // Set the starting movement speed
+        transform.position = new Vector2(saveManager.activeSave.playerSavePosition.x, saveManager.activeSave.playerSavePosition.y);
     }
 
 

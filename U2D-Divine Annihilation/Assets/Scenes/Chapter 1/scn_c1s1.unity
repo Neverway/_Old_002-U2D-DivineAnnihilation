@@ -19189,6 +19189,7 @@ GameObject:
   - component: {fileID: 404380700}
   - component: {fileID: 404380702}
   - component: {fileID: 404380701}
+  - component: {fileID: 404380703}
   m_Layer: 5
   m_Name: Health
   m_TagString: Untagged
@@ -19252,6 +19253,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 404380699}
   m_CullTransparentMesh: 0
+--- !u!114 &404380703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404380699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b42aad14a21615139af23276d4db3acd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 404380700}
+  currentHealth: 10.99
+  configTarget: {fileID: 753451479731427413}
 --- !u!1 &420323189
 GameObject:
   m_ObjectHideFlags: 0
@@ -19280,8 +19296,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 578078931}
-  - {fileID: 1720059344}
   - {fileID: 749023862}
+  - {fileID: 1575631221958783351}
   - {fileID: 1589462364}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -61455,7 +61471,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 420323190}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &750794770
 GameObject:
@@ -95995,70 +96011,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1720059343
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1720059344}
-  - component: {fileID: 1720059345}
-  - component: {fileID: 1720059346}
-  m_Layer: 0
-  m_Name: Config
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1720059344
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1720059343}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 420323190}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1720059345
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1720059343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7aae9d0a57d77f308908e0b3bf838dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  menuActive: 1
-  canMove: 1
---- !u!114 &1720059346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1720059343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00031b4599fb2f5dfbee308ce5880adf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activeSave:
-    saveProfileName: 
-    playerSavePosition: {x: 0, y: 0}
-    playerHealth: 0
-    partyMemberOneFollowing: 0
-  hasLoaded: 0
 --- !u!1 &1727366776
 GameObject:
   m_ObjectHideFlags: 0
@@ -133484,6 +133436,20 @@ Transform:
   m_Father: {fileID: 782279334}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &377022362531611223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753451479731427413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7aae9d0a57d77f308908e0b3bf838dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuActive: 1
+  canMove: 1
 --- !u!61 &391389385388633023
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -133839,6 +133805,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
+--- !u!1 &753451479731427413
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1575631221958783351}
+  - component: {fileID: 377022362531611223}
+  - component: {fileID: 9216951496119902972}
+  m_Layer: 0
+  m_Name: Config
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &792181538415419726
 GameObject:
   m_ObjectHideFlags: 0
@@ -134682,6 +134666,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &1575631221958783351
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753451479731427413}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 420323190}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1639462843585614473
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -140411,6 +140409,7 @@ MonoBehaviour:
   Rigidbody: {fileID: 7088021438843368306}
   characterAnimator: {fileID: 7088021438843368307}
   dustParticleSystem: {fileID: 45354679}
+  configTarget: {fileID: 753451479731427413}
 --- !u!114 &7088021438843368320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142709,3 +142708,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &9216951496119902972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753451479731427413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00031b4599fb2f5dfbee308ce5880adf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeSave:
+    saveProfileName: 
+    playerSavePosition: {x: 0, y: 0}
+    playerHealth: 0
+    partyMemberOneFollowing: 0
+  hasLoaded: 0
+  loadFileOnCreation: 1
+  configTarget: {fileID: 753451479731427413}

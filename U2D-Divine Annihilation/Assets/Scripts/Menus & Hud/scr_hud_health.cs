@@ -6,12 +6,16 @@ using UnityEngine.UI;
 public class scr_hud_health : MonoBehaviour
 {
     public RectTransform healthBar;
-    public int currentHealth;
+    public float currentHealth;
+    public GameObject configTarget;
+    private scr_system_saveManager saveManager;
 
     // Start is called before the first frame update
     void Start()
     {
         healthBar = transform.GetComponent<RectTransform>();
+        saveManager = configTarget.GetComponent<scr_system_saveManager>();
+        currentHealth = saveManager.activeSave.playerHealth;
     }
 
     // Update is called once per frame
