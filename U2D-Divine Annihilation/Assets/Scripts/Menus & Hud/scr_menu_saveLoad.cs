@@ -51,15 +51,63 @@ public class scr_menu_saveLoad : MonoBehaviour
             }
             if (menu.currentFrame == 1)
             {
-                Debug.Log("Save Profile 2");
+                if (!System.IO.File.Exists(dataPath + "/" + "SlotTwo" + ".dasp"))
+                {
+                    saveManager.activeSave.saveProfileName = "SlotTwo";
+                    PlayerPrefs.SetString("Current Save Profile", saveManager.activeSave.saveProfileName);
+                    saveManager.CreateSave();
+                    saveManager.Save();
+                    saveManager.activeSave.scene = "scn_c1s1";
+                    SceneManager.LoadScene("scn_c1s1");
+                }
+
+                if (System.IO.File.Exists(dataPath + "/" + "SlotTwo" + ".dasp"))
+                {
+                    saveManager.activeSave.saveProfileName = "SlotTwo";
+                    PlayerPrefs.SetString("Current Save Profile", saveManager.activeSave.saveProfileName);
+                    saveManager.Load();
+                    SceneManager.LoadScene(saveManager.activeSave.scene);
+                }
             }
             if (menu.currentFrame == 2)
             {
-                Debug.Log("Save Profile 3");
+                if (!System.IO.File.Exists(dataPath + "/" + "SlotThree" + ".dasp"))
+                {
+                    saveManager.activeSave.saveProfileName = "SlotThree";
+                    PlayerPrefs.SetString("Current Save Profile", saveManager.activeSave.saveProfileName);
+                    saveManager.CreateSave();
+                    saveManager.Save();
+                    saveManager.activeSave.scene = "scn_c1s1";
+                    SceneManager.LoadScene("scn_c1s1");
+                }
+
+                if (System.IO.File.Exists(dataPath + "/" + "SlotThree" + ".dasp"))
+                {
+                    saveManager.activeSave.saveProfileName = "SlotThree";
+                    PlayerPrefs.SetString("Current Save Profile", saveManager.activeSave.saveProfileName);
+                    saveManager.Load();
+                    SceneManager.LoadScene(saveManager.activeSave.scene);
+                }
             }
             if (menu.currentFrame == 3)
             {
-                Debug.Log("Save Profile 4");
+                if (!System.IO.File.Exists(dataPath + "/" + "SlotFour" + ".dasp"))
+                {
+                    saveManager.activeSave.saveProfileName = "SlotFour";
+                    PlayerPrefs.SetString("Current Save Profile", saveManager.activeSave.saveProfileName);
+                    saveManager.CreateSave();
+                    saveManager.Save();
+                    saveManager.activeSave.scene = "scn_c1s1";
+                    SceneManager.LoadScene("scn_c1s1");
+                }
+
+                if (System.IO.File.Exists(dataPath + "/" + "SlotFour" + ".dasp"))
+                {
+                    saveManager.activeSave.saveProfileName = "SlotFour";
+                    PlayerPrefs.SetString("Current Save Profile", saveManager.activeSave.saveProfileName);
+                    saveManager.Load();
+                    SceneManager.LoadScene(saveManager.activeSave.scene);
+                }
             }
         }
     }
