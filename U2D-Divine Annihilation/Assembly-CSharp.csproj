@@ -83,6 +83,7 @@
      <Compile Include="Assets\Scripts\System\scr_system_configuration.cs" />
      <Compile Include="Assets\Scripts\System\scr_system_configurationManager.cs" />
      <Compile Include="Assets\Scripts\System\scr_system_filetest.cs" />
+     <Compile Include="Assets\Scripts\System\scr_system_persistantData.cs" />
      <Compile Include="Assets\Scripts\System\scr_system_saveLoad.cs" />
      <Compile Include="Assets\Scripts\System\scr_system_saveManager.cs" />
      <Compile Include="Assets\Scripts\Triggers\scr_trigger_interact.cs" />

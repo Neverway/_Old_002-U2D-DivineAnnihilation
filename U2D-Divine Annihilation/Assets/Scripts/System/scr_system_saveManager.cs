@@ -10,19 +10,27 @@ public class scr_system_saveManager : MonoBehaviour
     public static scr_system_saveManager instance;
     public SaveData activeSave;
     public bool hasLoaded;
+    public bool loadFileOnCreation = false;
+    public GameObject configTarget;
+    private scr_system_saveManager saveManager;
 
 
     private void Awake()
     {
         instance = this;
-        Load();
+        if (loadFileOnCreation)
+        {
+            activeSave.saveProfileName = PlayerPrefs.GetString("Current Save Profile");
+            Load();
+        }
     }
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
+        saveManager = configTarget.GetComponent<scr_system_saveManager>();
     }
 
 
@@ -46,6 +54,16 @@ public class scr_system_saveManager : MonoBehaviour
     }
 
 
+    // Create a starting save profile
+    public void CreateSave()
+    {
+        activeSave.playerSavePosition.x = (float)-16.75;
+        activeSave.playerSavePosition.y = 43;
+        activeSave.playerHealth = 100;
+        activeSave.partyMemberOneFollowing = false;
+    }
+
+
     // Save the game data to the current save profile
     public void Save()
     {
@@ -57,6 +75,7 @@ public class scr_system_saveManager : MonoBehaviour
 
         Debug.Log("Saved information to .DASP");
     }
+
 
     // Load the game data to the current save profile
     public void Load()
