@@ -61,6 +61,7 @@ public class scr_menu_saveLoad : MonoBehaviour
                     PlayerPrefs.SetString("Current Save Profile", saveManager.activeSave.saveProfileName);
                     saveManager.CreateSave();
                     saveManager.Save();
+                    loadingScreen.SetActive(true);
                     saveManager.activeSave.scene = "scn_c1s1";
                     SceneManager.LoadScene("scn_c1s1");
                 }
@@ -81,6 +82,7 @@ public class scr_menu_saveLoad : MonoBehaviour
                     PlayerPrefs.SetString("Current Save Profile", saveManager.activeSave.saveProfileName);
                     saveManager.CreateSave();
                     saveManager.Save();
+                    loadingScreen.SetActive(true);
                     saveManager.activeSave.scene = "scn_c1s1";
                     SceneManager.LoadScene("scn_c1s1");
                 }
@@ -101,6 +103,7 @@ public class scr_menu_saveLoad : MonoBehaviour
                     PlayerPrefs.SetString("Current Save Profile", saveManager.activeSave.saveProfileName);
                     saveManager.CreateSave();
                     saveManager.Save();
+                    loadingScreen.SetActive(true);
                     saveManager.activeSave.scene = "scn_c1s1";
                     SceneManager.LoadScene("scn_c1s1");
                 }
