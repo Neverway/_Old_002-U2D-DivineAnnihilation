@@ -73,7 +73,9 @@
      <Compile Include="Assets\Scripts\Menus &amp; Hud\scr_hud_health.cs" />
      <Compile Include="Assets\Scripts\Menus &amp; Hud\scr_hud_textboxManager.cs" />
      <Compile Include="Assets\Scripts\Menus &amp; Hud\scr_menu_control.cs" />
+     <Compile Include="Assets\Scripts\Menus &amp; Hud\scr_menu_erase.cs" />
      <Compile Include="Assets\Scripts\Menus &amp; Hud\scr_menu_inventoryManager.cs" />
+     <Compile Include="Assets\Scripts\Menus &amp; Hud\scr_menu_load.cs" />
      <Compile Include="Assets\Scripts\Menus &amp; Hud\scr_menu_saveLoad.cs" />
      <Compile Include="Assets\Scripts\Menus &amp; Hud\scr_menu_scroll.cs" />
      <Compile Include="Assets\Scripts\Menus &amp; Hud\scr_menu_scrollMinusControl.cs" />
