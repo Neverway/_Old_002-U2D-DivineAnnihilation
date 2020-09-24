@@ -37,7 +37,16 @@ public class scr_menu_saveLoad : MonoBehaviour
                     PlayerPrefs.SetString("Current Save Profile", saveManager.activeSave.saveProfileName);
                     saveManager.CreateSave();
                     saveManager.Save();
+                    saveManager.activeSave.scene = "scn_c1s1";
                     SceneManager.LoadScene("scn_c1s1");
+                }
+
+                if (System.IO.File.Exists(dataPath + "/" + "SlotOne" + ".dasp"))
+                {
+                    saveManager.activeSave.saveProfileName = "SlotOne";
+                    PlayerPrefs.SetString("Current Save Profile", saveManager.activeSave.saveProfileName);
+                    saveManager.Load();
+                    SceneManager.LoadScene(saveManager.activeSave.scene);
                 }
             }
             if (menu.currentFrame == 1)

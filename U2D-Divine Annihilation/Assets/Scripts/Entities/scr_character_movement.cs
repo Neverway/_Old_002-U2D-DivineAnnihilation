@@ -44,6 +44,9 @@ public class scr_character_movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Update save position
+        saveManager.activeSave.playerSavePosition.x = transform.position.x;
+        saveManager.activeSave.playerSavePosition.y = transform.position.y;
         // Allow character input if the canMove variable is true
         if (canMove)
         {

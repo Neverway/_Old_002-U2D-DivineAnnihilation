@@ -9358,6 +9358,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeSave:
     saveProfileName: 
+    scene: 
     playerSavePosition: {x: 0, y: 0}
     playerHealth: 0
     partyMemberOneFollowing: 0
