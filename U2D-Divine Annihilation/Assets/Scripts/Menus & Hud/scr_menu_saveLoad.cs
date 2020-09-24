@@ -7,6 +7,7 @@ public class scr_menu_saveLoad : MonoBehaviour
 {
     public GameObject selfTarget;
     public GameObject titleMenu;
+    public GameObject loadingScreen;
     public GameObject loadFileScreen;
     public GameObject configTarget;
     private scr_menu_scrollMinusControl menu;
@@ -39,6 +40,7 @@ public class scr_menu_saveLoad : MonoBehaviour
                     PlayerPrefs.SetString("Current Save Profile", saveManager.activeSave.saveProfileName);
                     saveManager.CreateSave();
                     saveManager.Save();
+                    loadingScreen.SetActive(true);
                     saveManager.activeSave.scene = "scn_c1s1";
                     SceneManager.LoadScene("scn_c1s1");
                 }
