@@ -2139,6 +2139,8 @@ GameObject:
   - component: {fileID: 180694907}
   - component: {fileID: 180694906}
   - component: {fileID: 180694905}
+  - component: {fileID: 180694909}
+  - component: {fileID: 180694908}
   m_Layer: 5
   m_Name: Load file
   m_TagString: Untagged
@@ -2172,7 +2174,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 180694903}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4fce56810dd3efb7fb201ad3ca6cbd1e, type: 3}
   m_Name: 
@@ -2227,6 +2229,41 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &180694908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180694903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13fe909550990dae0a170c4c70e377a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selfTarget: {fileID: 180694903}
+  eraseMenu: {fileID: 1385829508}
+  configTarget: {fileID: 2783863165288366732}
+--- !u!114 &180694909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180694903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c7748ef713675cb58b9ffaef987f07b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frames:
+  - {fileID: 21300000, guid: cf90a9a2198f5641790c75ce4b8b1410, type: 3}
+  - {fileID: 21300000, guid: 9848e6bf50a44f0c4bb77f29645ff7e9, type: 3}
+  spriteRenderer: {fileID: 180694907}
+  horizontalScrolling: 0
+  wrapAround: 0
+  canGoBack: 1
+  currentFrame: 0
 --- !u!1 &187035317
 GameObject:
   m_ObjectHideFlags: 0
@@ -6718,6 +6755,7 @@ GameObject:
   - component: {fileID: 1385829512}
   - component: {fileID: 1385829511}
   - component: {fileID: 1385829510}
+  - component: {fileID: 1385829513}
   m_Layer: 5
   m_Name: Overwrite file
   m_TagString: Untagged
@@ -6753,21 +6791,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1385829508}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4fce56810dd3efb7fb201ad3ca6cbd1e, type: 3}
+  m_Script: {fileID: 11500000, guid: 5c7748ef713675cb58b9ffaef987f07b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   frames:
   - {fileID: 21300000, guid: 089ebf622b10ceb81bd7d5f386c5de76, type: 3}
   - {fileID: 21300000, guid: cfe03ae9b0d69a57ab02bc1a77628cca, type: 3}
-  activateOnAction:
-  - {fileID: 180694903}
-  - {fileID: 5212962}
   spriteRenderer: {fileID: 1385829512}
   horizontalScrolling: 0
   wrapAround: 0
-  canGoBack: 0
-  activeOnBack: {fileID: 0}
-  menuGameobject: {fileID: 1385829508}
+  canGoBack: 1
   currentFrame: 0
 --- !u!222 &1385829511
 CanvasRenderer:
@@ -6806,6 +6839,22 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1385829513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385829508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f36fdaab6a53c01ab35f76a872adc75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selfTarget: {fileID: 1385829508}
+  loadMenu: {fileID: 180694903}
+  savesMenu: {fileID: 1718201558}
+  configTarget: {fileID: 2783863165288366732}
 --- !u!1 &1417262346
 GameObject:
   m_ObjectHideFlags: 0
@@ -8389,6 +8438,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selfTarget: {fileID: 1718201558}
+  titleMenu: {fileID: 5212962}
+  loadFileScreen: {fileID: 180694903}
   configTarget: {fileID: 2783863165288366732}
 --- !u!1 &1732967678
 GameObject:

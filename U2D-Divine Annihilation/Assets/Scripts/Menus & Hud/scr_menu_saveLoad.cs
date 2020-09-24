@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class scr_menu_saveLoad : MonoBehaviour
 {
     public GameObject selfTarget;
+    public GameObject titleMenu;
+    public GameObject loadFileScreen;
     public GameObject configTarget;
     private scr_menu_scrollMinusControl menu;
     private scr_system_saveManager saveManager;
@@ -45,8 +47,8 @@ public class scr_menu_saveLoad : MonoBehaviour
                 {
                     saveManager.activeSave.saveProfileName = "SlotOne";
                     PlayerPrefs.SetString("Current Save Profile", saveManager.activeSave.saveProfileName);
-                    saveManager.Load();
-                    SceneManager.LoadScene(saveManager.activeSave.scene);
+                    loadFileScreen.SetActive(true);
+                    selfTarget.SetActive(false);
                 }
             }
             if (menu.currentFrame == 1)
@@ -65,8 +67,8 @@ public class scr_menu_saveLoad : MonoBehaviour
                 {
                     saveManager.activeSave.saveProfileName = "SlotTwo";
                     PlayerPrefs.SetString("Current Save Profile", saveManager.activeSave.saveProfileName);
-                    saveManager.Load();
-                    SceneManager.LoadScene(saveManager.activeSave.scene);
+                    loadFileScreen.SetActive(true);
+                    selfTarget.SetActive(false);
                 }
             }
             if (menu.currentFrame == 2)
@@ -85,8 +87,8 @@ public class scr_menu_saveLoad : MonoBehaviour
                 {
                     saveManager.activeSave.saveProfileName = "SlotThree";
                     PlayerPrefs.SetString("Current Save Profile", saveManager.activeSave.saveProfileName);
-                    saveManager.Load();
-                    SceneManager.LoadScene(saveManager.activeSave.scene);
+                    loadFileScreen.SetActive(true);
+                    selfTarget.SetActive(false);
                 }
             }
             if (menu.currentFrame == 3)
@@ -105,10 +107,16 @@ public class scr_menu_saveLoad : MonoBehaviour
                 {
                     saveManager.activeSave.saveProfileName = "SlotFour";
                     PlayerPrefs.SetString("Current Save Profile", saveManager.activeSave.saveProfileName);
-                    saveManager.Load();
-                    SceneManager.LoadScene(saveManager.activeSave.scene);
+                    loadFileScreen.SetActive(true);
+                    selfTarget.SetActive(false);
                 }
             }
+        }
+
+        if (Input.GetKeyDown("x"))
+        {
+            titleMenu.SetActive(true);
+            selfTarget.SetActive(false);
         }
     }
 }
