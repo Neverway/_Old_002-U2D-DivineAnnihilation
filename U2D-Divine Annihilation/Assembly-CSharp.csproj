@@ -77,6 +77,8 @@
      <Compile Include="Assets\Scripts\Menus &amp; Hud\scr_menu_inventoryManager.cs" />
      <Compile Include="Assets\Scripts\Menus &amp; Hud\scr_menu_load.cs" />
      <Compile Include="Assets\Scripts\Menus &amp; Hud\scr_menu_saveLoad.cs" />
+     <Compile Include="Assets\Scripts\Menus &amp; Hud\scr_menu_saveOptions.cs" />
+     <Compile Include="Assets\Scripts\Menus &amp; Hud\scr_menu_saveSlotInfo.cs" />
      <Compile Include="Assets\Scripts\Menus &amp; Hud\scr_menu_scroll.cs" />
      <Compile Include="Assets\Scripts\Menus &amp; Hud\scr_menu_scrollMinusControl.cs" />
      <Compile Include="Assets\Scripts\Menus &amp; Hud\scr_menu_titleQuit.cs" />
