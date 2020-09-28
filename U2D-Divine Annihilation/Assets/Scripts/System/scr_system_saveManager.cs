@@ -37,20 +37,7 @@ public class scr_system_saveManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F1))
-        {
-            string dataPath = Application.persistentDataPath;
-            Debug.Log(dataPath);
-            Save();
-        }
-        if (Input.GetKeyDown(KeyCode.F2))
-        {
-            Load();
-        }
-        if (Input.GetKeyDown(KeyCode.F3))
-        {
-            DeleteSaveProfile();
-        }
+
     }
 
 

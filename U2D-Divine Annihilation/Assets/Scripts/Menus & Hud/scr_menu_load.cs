@@ -7,6 +7,7 @@ public class scr_menu_load : MonoBehaviour
 {
     public GameObject selfTarget;
     public GameObject eraseMenu;
+    public GameObject savesMenu;
     public GameObject configTarget;
     private scr_menu_scrollMinusControl menu;
     private scr_system_saveManager saveManager;
@@ -23,6 +24,12 @@ public class scr_menu_load : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown("x"))
+        {
+            selfTarget.SetActive(false);
+            savesMenu.SetActive(true);
+        }
+
         if (Input.GetKeyDown("z"))
         {
             if (menu.currentFrame == 0)
