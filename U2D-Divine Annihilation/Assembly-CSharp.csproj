@@ -61,42 +61,42 @@
      <Compile Include="Assets\**OLD**\Other\TigerForge\EasyFileSave\EasyFileSaveExtension.cs" />
      <Compile Include="Assets\**OLD**\Scripts\Menus &amp; Hud\#OLD#scr_system_hud_textbox.cs" />
      <Compile Include="Assets\**OLD**\Scripts\Menus &amp; Hud\#OLD#scr_system_menu_activebutton.cs" />
+     <Compile Include="Assets\**OLD**\Scripts\TriggerSavepoint.cs" />
      <Compile Include="Assets\**OLD**\Scripts\scr_system_filetest.cs" />
      <Compile Include="Assets\**OLD**\Scripts\scr_system_saveLoad.cs" />
-     <Compile Include="Assets\^Scripts\^Battle\BattlezoneControl.cs" />
-     <Compile Include="Assets\^Scripts\^Character\CharacterFollower.cs" />
-     <Compile Include="Assets\^Scripts\^Character\CharacterMovement.cs" />
-     <Compile Include="Assets\^Scripts\^Effects\CharacterGhost.cs" />
-     <Compile Include="Assets\^Scripts\^Effects\CharacterGhostMovement.cs" />
-     <Compile Include="Assets\^Scripts\^Effects\EntityDust.cs" />
-     <Compile Include="Assets\^Scripts\^Entity\EntityChase.cs" />
-     <Compile Include="Assets\^Scripts\^Entity\EntityFollowFlip.cs" />
-     <Compile Include="Assets\^Scripts\^Items, Objects, &amp; Puzzles\ItemPickup.cs" />
-     <Compile Include="Assets\^Scripts\^Items, Objects, &amp; Puzzles\PuzzlePushbox.cs" />
-     <Compile Include="Assets\^Scripts\^Menus\HudHealth.cs" />
-     <Compile Include="Assets\^Scripts\^Menus\HudInventory.cs" />
-     <Compile Include="Assets\^Scripts\^Menus\HudTextboxManager.cs" />
-     <Compile Include="Assets\^Scripts\^Menus\MenuControl.cs" />
-     <Compile Include="Assets\^Scripts\^Menus\MenuScrollControl.cs" />
-     <Compile Include="Assets\^Scripts\^Menus\MenuScrollMinusControl.cs" />
-     <Compile Include="Assets\^Scripts\^Menus\TitleErase.cs" />
-     <Compile Include="Assets\^Scripts\^Menus\TitleLoad.cs" />
-     <Compile Include="Assets\^Scripts\^Menus\TitleQuit.cs" />
-     <Compile Include="Assets\^Scripts\^Menus\TitleSaveInfo.cs" />
-     <Compile Include="Assets\^Scripts\^Menus\TitleSaveLoad.cs" />
-     <Compile Include="Assets\^Scripts\^Menus\TitleSaveOptions.cs" />
-     <Compile Include="Assets\^Scripts\^System\SaveManager.cs" />
-     <Compile Include="Assets\^Scripts\^System\SystemCamera.cs" />
-     <Compile Include="Assets\^Scripts\^System\SystemConfig.cs" />
-     <Compile Include="Assets\^Scripts\^System\SystemConfigManager.cs" />
-     <Compile Include="Assets\^Scripts\^System\SystemPersistantData.cs" />
-     <Compile Include="Assets\^Scripts\^Triggers\TriggerInteract.cs" />
-     <Compile Include="Assets\^Scripts\^Triggers\TriggerPartySet.cs" />
-     <Compile Include="Assets\^Scripts\^Triggers\TriggerSave.cs" />
-     <Compile Include="Assets\^Scripts\^Triggers\TriggerSavepoint.cs" />
-     <Compile Include="Assets\^Scripts\^Triggers\TriggerWarp.cs" />
-     <Compile Include="Assets\^Scripts\^Triggers\TriggerWarpLevel.cs" />
-     <None Include="Assets\^Other\Asset Packages\PrefabBrowser\SetupGuide.txt" />
+     <Compile Include="Assets\Scripts\^Battle\BattlezoneControl.cs" />
+     <Compile Include="Assets\Scripts\^Character\CharacterFollower.cs" />
+     <Compile Include="Assets\Scripts\^Character\CharacterMovement.cs" />
+     <Compile Include="Assets\Scripts\^Effects\CharacterGhost.cs" />
+     <Compile Include="Assets\Scripts\^Effects\CharacterGhostMovement.cs" />
+     <Compile Include="Assets\Scripts\^Effects\EntityDust.cs" />
+     <Compile Include="Assets\Scripts\^Entity\EntityChase.cs" />
+     <Compile Include="Assets\Scripts\^Entity\EntityFollowFlip.cs" />
+     <Compile Include="Assets\Scripts\^Items, Objects, &amp; Puzzles\ItemPickup.cs" />
+     <Compile Include="Assets\Scripts\^Items, Objects, &amp; Puzzles\PuzzlePushbox.cs" />
+     <Compile Include="Assets\Scripts\^Menus\HudHealth.cs" />
+     <Compile Include="Assets\Scripts\^Menus\HudInventory.cs" />
+     <Compile Include="Assets\Scripts\^Menus\HudTextboxManager.cs" />
+     <Compile Include="Assets\Scripts\^Menus\MenuControl.cs" />
+     <Compile Include="Assets\Scripts\^Menus\MenuScrollControl.cs" />
+     <Compile Include="Assets\Scripts\^Menus\MenuScrollMinusControl.cs" />
+     <Compile Include="Assets\Scripts\^Menus\TitleErase.cs" />
+     <Compile Include="Assets\Scripts\^Menus\TitleLoad.cs" />
+     <Compile Include="Assets\Scripts\^Menus\TitleQuit.cs" />
+     <Compile Include="Assets\Scripts\^Menus\TitleSaveInfo.cs" />
+     <Compile Include="Assets\Scripts\^Menus\TitleSaveLoad.cs" />
+     <Compile Include="Assets\Scripts\^Menus\TitleSaveOptions.cs" />
+     <Compile Include="Assets\Scripts\^System\SaveManager.cs" />
+     <Compile Include="Assets\Scripts\^System\SystemCamera.cs" />
+     <Compile Include="Assets\Scripts\^System\SystemConfig.cs" />
+     <Compile Include="Assets\Scripts\^System\SystemConfigManager.cs" />
+     <Compile Include="Assets\Scripts\^System\SystemPersistantData.cs" />
+     <Compile Include="Assets\Scripts\^Triggers\TriggerInteract.cs" />
+     <Compile Include="Assets\Scripts\^Triggers\TriggerPartySet.cs" />
+     <Compile Include="Assets\Scripts\^Triggers\TriggerSave.cs" />
+     <Compile Include="Assets\Scripts\^Triggers\TriggerWarp.cs" />
+     <Compile Include="Assets\Scripts\^Triggers\TriggerWarpLevel.cs" />
+     <None Include="Assets\Other\Asset Packages\PrefabBrowser\SetupGuide.txt" />
      <None Include="Assets\**OLD**\Other\Fonts\japanesefont\readme.txt" />
  <Reference Include="UnityEngine">
  <HintPath>/home/lizband_ucc/Documents/Apps/Unity/Hub/Editor/2019.4.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -279,7 +279,7 @@
  <HintPath>/home/lizband_ucc/Documents/Apps/Unity/Hub/Editor/2019.4.10f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
  </Reference>
  <Reference Include="Pathfinding.Ionic.Zip.Reduced">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Assets/^Other/Asset Packages/AstarPathfinding/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Assets/Other/Asset Packages/AstarPathfinding/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>/home/lizband_ucc/Documents/Apps/Unity/Hub/Editor/2019.4.10f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
