@@ -1,13 +1,5 @@
 ﻿<Properties StartupConfiguration="{52A108CE-312A-7646-8A28-1F3B11C710B6}|Unit Tests">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Menus &amp; Hud/scr_menu_load.cs">
-    <Files>
-      <File FileName="Assets/Scripts/Menus &amp; Hud/scr_menu_saveOptions.cs" Line="7" Column="2" />
-      <File FileName="Assets/Scripts/Menus &amp; Hud/scr_menu_saveSlotInfo.cs" Line="3" Column="19" />
-      <File FileName="Assets/Scripts/System/scr_system_saveLoad.cs" Line="21" Column="64" />
-      <File FileName="Assets/Scripts/System/scr_system_saveManager.cs" Line="24" Column="42" />
-      <File FileName="Assets/Scripts/Menus &amp; Hud/scr_menu_load.cs" Line="25" Column="6" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-Editor PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.AstarPathfindingProjectEditor PreferredExecutionTarget="MonoDevelop.Default" />
