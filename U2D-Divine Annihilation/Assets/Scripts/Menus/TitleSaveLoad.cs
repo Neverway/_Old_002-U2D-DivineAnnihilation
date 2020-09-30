@@ -41,8 +41,8 @@ public class TitleSaveLoad : MonoBehaviour
                     saveManager.CreateSave();
                     saveManager.Save();
                     loadingScreen.SetActive(true);
-                    saveManager.activeSave.scene = "scn_c1s1";
-                    SceneManager.LoadScene("scn_c1s1");
+                    saveManager.activeSave.scene = "SceneC1S1";
+                    SceneManager.LoadScene("SceneC1S1");
                 }
 
                 if (System.IO.File.Exists(dataPath + "/" + "SlotOne" + ".dasp"))
@@ -62,8 +62,8 @@ public class TitleSaveLoad : MonoBehaviour
                     saveManager.CreateSave();
                     saveManager.Save();
                     loadingScreen.SetActive(true);
-                    saveManager.activeSave.scene = "scn_c1s1";
-                    SceneManager.LoadScene("scn_c1s1");
+                    saveManager.activeSave.scene = "SceneC1S1";
+                    SceneManager.LoadScene("SceneC1S1");
                 }
 
                 if (System.IO.File.Exists(dataPath + "/" + "SlotTwo" + ".dasp"))
@@ -83,8 +83,8 @@ public class TitleSaveLoad : MonoBehaviour
                     saveManager.CreateSave();
                     saveManager.Save();
                     loadingScreen.SetActive(true);
-                    saveManager.activeSave.scene = "scn_c1s1";
-                    SceneManager.LoadScene("scn_c1s1");
+                    saveManager.activeSave.scene = "SceneC1S1";
+                    SceneManager.LoadScene("SceneC1S1");
                 }
 
                 if (System.IO.File.Exists(dataPath + "/" + "SlotThree" + ".dasp"))
