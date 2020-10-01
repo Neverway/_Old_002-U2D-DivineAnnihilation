@@ -41,7 +41,7 @@ public class TriggerInteract : MonoBehaviour
     void OnTriggerStay2D(Collider2D other)
     {
         // Check if that something is the player
-        if(other.gameObject.name == "pre_entity_fox")
+        if(other.gameObject.name == "Entity Fox")
         {
             // Check if the player has pressed the action key
             if(Input.GetKeyDown("z") && acceptingInput == true)
