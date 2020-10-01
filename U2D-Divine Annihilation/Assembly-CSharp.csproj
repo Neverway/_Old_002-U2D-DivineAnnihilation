@@ -64,6 +64,7 @@
      <Compile Include="Assets\**OLD**\Scripts\TriggerSavepoint.cs" />
      <Compile Include="Assets\**OLD**\Scripts\scr_system_filetest.cs" />
      <Compile Include="Assets\**OLD**\Scripts\scr_system_saveLoad.cs" />
+     <Compile Include="Assets\Scripts\Battle\BattleShelfAssignment.cs" />
      <Compile Include="Assets\Scripts\Battle\BattlezoneControl.cs" />
      <Compile Include="Assets\Scripts\Character\CharacterFollower.cs" />
      <Compile Include="Assets\Scripts\Character\CharacterMovement.cs" />

@@ -32,6 +32,7 @@ public class TitleSaveLoad : MonoBehaviour
         string dataPath = Application.persistentDataPath;
         if (Input.GetKeyDown("z"))
         {
+            // File 1
             if (menu.currentFrame == 0)
             {
                 if (!System.IO.File.Exists(dataPath + "/" + "SlotOne" + ".dasp"))
@@ -53,6 +54,8 @@ public class TitleSaveLoad : MonoBehaviour
                     selfTarget.SetActive(false);
                 }
             }
+
+            // File 2
             if (menu.currentFrame == 1)
             {
                 if (!System.IO.File.Exists(dataPath + "/" + "SlotTwo" + ".dasp"))
@@ -74,6 +77,8 @@ public class TitleSaveLoad : MonoBehaviour
                     selfTarget.SetActive(false);
                 }
             }
+
+            // File 3
             if (menu.currentFrame == 2)
             {
                 if (!System.IO.File.Exists(dataPath + "/" + "SlotThree" + ".dasp"))
@@ -95,6 +100,8 @@ public class TitleSaveLoad : MonoBehaviour
                     selfTarget.SetActive(false);
                 }
             }
+
+            // File 4
             if (menu.currentFrame == 3)
             {
                 if (!System.IO.File.Exists(dataPath + "/" + "SlotFour" + ".dasp"))
@@ -104,8 +111,8 @@ public class TitleSaveLoad : MonoBehaviour
                     saveManager.CreateSave();
                     saveManager.Save();
                     loadingScreen.SetActive(true);
-                    saveManager.activeSave.scene = "scn_c1s1";
-                    SceneManager.LoadScene("scn_c1s1");
+                    saveManager.activeSave.scene = "SceneC1S1";
+                    SceneManager.LoadScene("SceneC1S1");
                 }
 
                 if (System.IO.File.Exists(dataPath + "/" + "SlotFour" + ".dasp"))

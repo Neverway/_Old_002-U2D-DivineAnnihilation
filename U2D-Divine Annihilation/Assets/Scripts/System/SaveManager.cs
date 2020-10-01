@@ -44,7 +44,7 @@ public class SaveManager : MonoBehaviour
     // Create a starting save profile
     public void CreateSave()
     {
-        activeSave.scene = "scn_c1s1";
+        activeSave.scene = "SceneC1S1";
         activeSave.playerSavePosition.x = (float)-16.75;
         activeSave.playerSavePosition.y = 43;
         activeSave.playerHealth = 100;
