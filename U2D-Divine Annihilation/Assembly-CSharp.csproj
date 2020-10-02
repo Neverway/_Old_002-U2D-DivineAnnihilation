@@ -81,6 +81,7 @@
      <Compile Include="Assets\Scripts\Menus\MenuControl.cs" />
      <Compile Include="Assets\Scripts\Menus\MenuScrollControl.cs" />
      <Compile Include="Assets\Scripts\Menus\MenuScrollMinusControl.cs" />
+     <Compile Include="Assets\Scripts\Menus\OLDHudTextboxManager.cs" />
      <Compile Include="Assets\Scripts\Menus\TitleErase.cs" />
      <Compile Include="Assets\Scripts\Menus\TitleLoad.cs" />
      <Compile Include="Assets\Scripts\Menus\TitleQuit.cs" />
