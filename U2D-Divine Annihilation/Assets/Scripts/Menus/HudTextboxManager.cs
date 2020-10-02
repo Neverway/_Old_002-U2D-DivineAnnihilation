@@ -28,6 +28,10 @@ public class HudTextboxManager : MonoBehaviour
     public bool acceptingInput;                     // If the object is accepting key presses, used for a key press delay
     public bool dialogueBoxActive;                  // If the text box heirarchy is visible
     public bool isMonologue;                        // If the there is not a textbox
+      
+    public float textSpeed = 0.1f;
+    public string textContent;
+    public string textCurrent = ""; 
 
     // Other class references
     private CharacterMovement characterMovement;   // A reference to the character movement script, used to freeze the player when a textbox is up
@@ -49,14 +53,30 @@ public class HudTextboxManager : MonoBehaviour
         acceptingInput = true;                      // Allow input again
     }
 
+    IEnumerator ShowText()
+    {
+        for (int i = 0; i < textContent.Length+1; i++)
+        {
+            textCurrent = textContent.Substring(0, i);
+            yield return new WaitForSeconds(textSpeed);
+        }
+    }
+
 
     // Update is called once per frame
     void Update()
     {
+        if (dialogueBoxActive)
+        {
+            textContent = dialogueLines[currentLine];
+        }
+
         // Continue to next dialogue
         if (dialogueBoxActive && Input.GetKeyDown("z"))
         {
             if (acceptingInput) currentLine += 1;   // Advance the line count
+            StartCoroutine(ShowText());
+            textCurrent = "";
             StartCoroutine("acceptInput");          // Apply Key press delay
         }
        
@@ -67,8 +87,8 @@ public class HudTextboxManager : MonoBehaviour
             dialogueBoxActive = false;                                       // Set the active state to false
             currentLine = 0;                                                 // Reset the current line count to zero
             StopCoroutine("acceptInput");                                    // Reset the key delay
+            StopCoroutine("ShowText");
             acceptingInput = false;                                          // Set the accepting input value to false
-            //characterMovement.canMove = true;                                // Allow the player to move again
         }
 
         // Set text field mode to mono
@@ -86,8 +106,9 @@ public class HudTextboxManager : MonoBehaviour
         }
 
         // Set the text on screen the the current line text
-        dialogueTextObject.text = dialogueLines[currentLine];
-        monologueTextObject.text = dialogueLines[currentLine];
+
+        dialogueTextObject.text = textCurrent;
+        monologueTextObject.text = textCurrent;
         dialogueNameTextObject.text = dialogueLineNames[currentLine];
         dialoguePortraitObject.sprite = dialogueLinePortraits[currentLine];
     }
