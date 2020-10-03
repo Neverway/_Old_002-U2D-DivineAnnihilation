@@ -55,9 +55,15 @@ public class CharacterMovement : MonoBehaviour
             movement.y = Input.GetAxisRaw("Vertical");
         
             // Character animator
-            characterAnimator.SetFloat("Horizontal", movement.x);
-            characterAnimator.SetFloat("Vertical", movement.y);
-            characterAnimator.SetFloat("Speed", movement.sqrMagnitude);
+            characterAnimator.SetFloat("MoveX", movement.x);
+            characterAnimator.SetFloat("MoveY", movement.y);
+            if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1)
+            {
+                characterAnimator.SetFloat("LastMoveX", Input.GetAxisRaw("Horizontal"));
+                characterAnimator.SetFloat("LastMoveY", Input.GetAxisRaw("Vertical"));
+
+            }
+            //characterAnimator.SetFloat("Speed", movement.sqrMagnitude);
 
             // Sprinting
             if (Input.GetKeyDown("x"))
