@@ -92,6 +92,7 @@
      <Compile Include="Assets\Scripts\System\SystemCamera.cs" />
      <Compile Include="Assets\Scripts\System\SystemConfig.cs" />
      <Compile Include="Assets\Scripts\System\SystemConfigManager.cs" />
+     <Compile Include="Assets\Scripts\System\SystemFadeTransition.cs" />
      <Compile Include="Assets\Scripts\System\SystemPersistantData.cs" />
      <Compile Include="Assets\Scripts\Triggers\TriggerInteract.cs" />
      <Compile Include="Assets\Scripts\Triggers\TriggerPartySet.cs" />
