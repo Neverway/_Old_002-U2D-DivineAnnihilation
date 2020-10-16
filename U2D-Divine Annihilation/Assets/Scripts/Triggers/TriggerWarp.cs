@@ -34,10 +34,10 @@ public class TriggerWarp : MonoBehaviour
                 StartCoroutine("Teleport");
             }
 
-            else
-            {
+           else
+           {
                 Player.transform.position = new Vector2(ExitTarget.transform.position.x, ExitTarget.transform.position.y);
-            }
+           }
         }
     }
 }
