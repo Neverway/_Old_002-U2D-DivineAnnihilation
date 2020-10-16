@@ -64,6 +64,7 @@
      <Compile Include="Assets\**OLD**\Scripts\TriggerSavepoint.cs" />
      <Compile Include="Assets\**OLD**\Scripts\scr_system_filetest.cs" />
      <Compile Include="Assets\**OLD**\Scripts\scr_system_saveLoad.cs" />
+     <Compile Include="Assets\Scripts\Battle\BattleActionMenu.cs" />
      <Compile Include="Assets\Scripts\Battle\BattleShelfAssignment.cs" />
      <Compile Include="Assets\Scripts\Battle\BattlezoneControl.cs" />
      <Compile Include="Assets\Scripts\Character\CharacterFollower.cs" />
@@ -81,6 +82,7 @@
      <Compile Include="Assets\Scripts\Menus\MenuControl.cs" />
      <Compile Include="Assets\Scripts\Menus\MenuScrollControl.cs" />
      <Compile Include="Assets\Scripts\Menus\MenuScrollMinusControl.cs" />
+     <Compile Include="Assets\Scripts\Menus\MenuScrollString.cs" />
      <Compile Include="Assets\Scripts\Menus\OLDHudTextboxManager.cs" />
      <Compile Include="Assets\Scripts\Menus\TitleErase.cs" />
      <Compile Include="Assets\Scripts\Menus\TitleLoad.cs" />

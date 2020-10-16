@@ -11,6 +11,7 @@ public class CharacterFollower : MonoBehaviour
     public float nextWaypointDistance = 3f;
     public bool sprintDust = true;
     public Transform spriteGraphic;
+    public Animator characterAnimator;
     public ParticleSystem dustParticleSystem;
 
     Path path;
@@ -95,7 +96,6 @@ public class CharacterFollower : MonoBehaviour
         {
             Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rigidbody2d.position).normalized;
             Vector2 force = direction * speed * Time.deltaTime;
-
             rigidbody2d.AddForce(force);
 
             float distance = Vector2.Distance(rigidbody2d.position, path.vectorPath[currentWaypoint]);
@@ -105,14 +105,17 @@ public class CharacterFollower : MonoBehaviour
                 currentWaypoint++;
             }
 
-            if (rigidbody2d.velocity.x >= 0.01f)
+            // Character animator
+            characterAnimator.SetFloat("MoveX", direction.x);
+            characterAnimator.SetFloat("MoveY", direction.y);
+            /*if (rigidbody2d.velocity.x >= 0.01f)
             {
                 spriteGraphic.localScale = new Vector3(-1.5f, 1.5f, 1.5f);
             }
             else if (rigidbody2d.velocity.x <= -0.01f)
             {
                 spriteGraphic.localScale = new Vector3(1.5f, 1.5f, 1.5f);
-            }
+            }*/
         }
 
         if (Vector2.Distance(rigidbody2d.position, target.position) >= senseRange)
