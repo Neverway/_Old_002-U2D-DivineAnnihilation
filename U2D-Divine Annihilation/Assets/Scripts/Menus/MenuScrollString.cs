@@ -71,14 +71,7 @@ public class MenuScrollString : MonoBehaviour
             if (i != currentSelection)
             {
                 optionsUIReference[i].text = optionsBaseText[i];
-            }
-        }
-
-        for (int i = 0; i < optionsUIReference.Length; i++)
-        {
-            if (i != currentSelection)
-            {
-                optionsUIReference[i].color= baseColor;
+                optionsUIReference[i].color = baseColor;
             }
         }
 

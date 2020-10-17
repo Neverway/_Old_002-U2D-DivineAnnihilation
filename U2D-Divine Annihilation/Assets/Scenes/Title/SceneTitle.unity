@@ -2707,7 +2707,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: FOX
+  m_Text: Fox
 --- !u!222 &255514344
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5574,7 +5574,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: FOX
+  m_Text: Fox
 --- !u!222 &592688214
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6895,7 +6895,13 @@ MonoBehaviour:
     scene: 
     playerSavePosition: {x: 0, y: 0}
     playerHealth: 0
-    partyMemberOneFollowing: 0
+    playerItems: []
+    partyMemberOne: 
+    partyMemberOneHealth: 0
+    partyMemberTwo: 
+    partyMemberTwoHealth: 0
+    partyMemberThree: 
+    partyMemberThreeHealth: 0
   hasLoaded: 0
   loadFileOnCreation: 0
   configTarget: {fileID: 828494676}

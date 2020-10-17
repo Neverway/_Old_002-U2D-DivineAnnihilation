@@ -44,11 +44,22 @@ public class SaveManager : MonoBehaviour
     // Create a starting save profile
     public void CreateSave()
     {
+        // Player Data
         activeSave.scene = "SceneC1S1";
         activeSave.playerSavePosition.x = (float)-16.75;
         activeSave.playerSavePosition.y = 43;
         activeSave.playerHealth = 100;
-        activeSave.partyMemberOneFollowing = false;
+
+        // Player Items
+
+
+        // Party Data
+        activeSave.partyMemberOne = "NULL";
+        activeSave.partyMemberOneHealth = 100;
+        activeSave.partyMemberTwo = "NULL";
+        activeSave.partyMemberTwoHealth = 100;
+        activeSave.partyMemberThree = "NULL";
+        activeSave.partyMemberThreeHealth = 100;
     }
 
 
@@ -80,6 +91,45 @@ public class SaveManager : MonoBehaviour
         }
     }
 
+
+    // Save profile to temporary playerprefs
+    public void PlayerPrefSave()
+    {
+        // Player Data
+        PlayerPrefs.SetString("TempScene", activeSave.scene);
+        PlayerPrefs.SetFloat("TempPlayerSavePositionX", activeSave.playerSavePosition.x);
+        PlayerPrefs.SetFloat("TempPlayerSavePositionY", activeSave.playerSavePosition.y);
+        PlayerPrefs.SetFloat("TempPlayerHealth", activeSave.playerHealth);
+
+        // Party Data
+        PlayerPrefs.SetString("TempPartyMemberOne", activeSave.partyMemberOne);
+        PlayerPrefs.SetFloat("TempPartyMemberOneHealth", activeSave.partyMemberOneHealth);
+        PlayerPrefs.SetString("TempPartyMemberTwo", activeSave.partyMemberTwo);
+        PlayerPrefs.SetFloat("TempPartyMemberTwoHealth", activeSave.partyMemberTwoHealth);
+        PlayerPrefs.SetString("TempPartyMemberThree", activeSave.partyMemberThree);
+        PlayerPrefs.SetFloat("TempPartyMemberThreeHealth", activeSave.partyMemberThreeHealth);
+    }
+
+
+    // Save profile to temporary playerprefs
+    public void PlayerPrefLoad()
+    {
+        // Player Data
+        activeSave.scene = PlayerPrefs.GetString("TempScene");
+        activeSave.playerSavePosition.x = PlayerPrefs.GetFloat("TempPlayerSavePositionX");
+        activeSave.playerSavePosition.y = PlayerPrefs.GetFloat("TempPlayerSavePositionY");
+        activeSave.playerHealth = PlayerPrefs.GetFloat("TempPlayerHealth");
+
+        // Party Data
+        activeSave.partyMemberOne = PlayerPrefs.GetString("TempPartyMemberOne");
+        activeSave.partyMemberOneHealth = PlayerPrefs.GetFloat("TempPartyMemberOneHealth");
+        activeSave.partyMemberTwo = PlayerPrefs.GetString("TempPartyMemberTwo");
+        activeSave.partyMemberTwoHealth = PlayerPrefs.GetFloat("TempPartyMemberTwoHealth");
+        activeSave.partyMemberThree = PlayerPrefs.GetString("TempPartyMemberThree");
+        activeSave.partyMemberThreeHealth = PlayerPrefs.GetFloat("TempPartyMemberThreeHealth");
+    }
+
+
     public void DeleteSaveProfile()
     {
         string dataPath = Application.persistentDataPath;
@@ -100,7 +150,18 @@ public class SaveData
     public string scene;
     public Vector2 playerSavePosition;
     public float playerHealth;
-    public bool partyMemberOneFollowing;
+
+    // Player Items
+    public string[] playerItems;
+
+    // Party Data
+    public string partyMemberOne;
+    public float partyMemberOneHealth;
+    public string partyMemberTwo;
+    public float partyMemberTwoHealth;
+    public string partyMemberThree;
+    public float partyMemberThreeHealth;
+
 
     // Chapter Data
 
