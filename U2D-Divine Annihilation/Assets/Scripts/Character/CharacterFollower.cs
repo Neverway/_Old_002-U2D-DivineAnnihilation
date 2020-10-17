@@ -6,6 +6,7 @@ using Pathfinding;
 public class CharacterFollower : MonoBehaviour
 {
     public Transform target;
+    public string partyMemberID;
     public float senseRange = 20f;
     public float speed = 200f;
     public float nextWaypointDistance = 3f;
@@ -13,6 +14,8 @@ public class CharacterFollower : MonoBehaviour
     public Transform spriteGraphic;
     public Animator characterAnimator;
     public ParticleSystem dustParticleSystem;
+    public GameObject configTarget;
+    private SaveManager saveManager;
 
     Path path;
     int currentWaypoint = 0;
@@ -29,6 +32,7 @@ public class CharacterFollower : MonoBehaviour
         seeker = GetComponent<Seeker>();
         rigidbody2d = GetComponent<Rigidbody2D>();
         characterMovement = FindObjectOfType<CharacterMovement>();
+        saveManager = configTarget.GetComponent<SaveManager>();
 
         InvokeRepeating("UpdatePath", 0f, 0.5f);
     }
@@ -51,12 +55,11 @@ public class CharacterFollower : MonoBehaviour
             currentWaypoint = 0;
         }
     }
-
-
+    
     // Update is called once per frame
     void FixedUpdate()
     {
-        speed = characterMovement.movementSpeed*300;
+
 
         // Emmit dust when going fast
         if (speed >= 2000 && sprintDust)
@@ -92,35 +95,42 @@ public class CharacterFollower : MonoBehaviour
             reachedEndOfPath = false;
         }
 
-        if (Vector2.Distance(rigidbody2d.position, target.position) <= senseRange)
+        if (saveManager.activeSave.partyMemberOne == partyMemberID || saveManager.activeSave.partyMemberTwo == partyMemberID || saveManager.activeSave.partyMemberThree == partyMemberID)
         {
-            Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rigidbody2d.position).normalized;
-            Vector2 force = direction * speed * Time.deltaTime;
-            rigidbody2d.AddForce(force);
+            speed = characterMovement.movementSpeed * 300;
 
-            float distance = Vector2.Distance(rigidbody2d.position, path.vectorPath[currentWaypoint]);
-
-            if (distance < nextWaypointDistance)
+            // Move toward target
+            if (Vector2.Distance(rigidbody2d.position, target.position) <= senseRange)
             {
-                currentWaypoint++;
+                Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rigidbody2d.position).normalized;
+                Vector2 force = direction * speed * Time.deltaTime;
+                rigidbody2d.AddForce(force);
+
+                float distance = Vector2.Distance(rigidbody2d.position, path.vectorPath[currentWaypoint]);
+
+                if (distance < nextWaypointDistance)
+                {
+                    currentWaypoint++;
+                }
+
+                // Character animator
+                characterAnimator.SetFloat("MoveX", direction.x);
+                characterAnimator.SetFloat("MoveY", direction.y);
+                /*if (rigidbody2d.velocity.x >= 0.01f)
+                {
+                    spriteGraphic.localScale = new Vector3(-1.5f, 1.5f, 1.5f);
+                }
+                else if (rigidbody2d.velocity.x <= -0.01f)
+                {
+                    spriteGraphic.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+                }*/
             }
 
-            // Character animator
-            characterAnimator.SetFloat("MoveX", direction.x);
-            characterAnimator.SetFloat("MoveY", direction.y);
-            /*if (rigidbody2d.velocity.x >= 0.01f)
+            // Teleport to target if stuck
+            if (Vector2.Distance(rigidbody2d.position, target.position) >= senseRange)
             {
-                spriteGraphic.localScale = new Vector3(-1.5f, 1.5f, 1.5f);
+                rigidbody2d.transform.position = new Vector2(target.transform.position.x, target.transform.position.y);
             }
-            else if (rigidbody2d.velocity.x <= -0.01f)
-            {
-                spriteGraphic.localScale = new Vector3(1.5f, 1.5f, 1.5f);
-            }*/
-        }
-
-        if (Vector2.Distance(rigidbody2d.position, target.position) >= senseRange)
-        {
-            rigidbody2d.transform.position = new Vector2(target.transform.position.x, target.transform.position.y);
         }
     }
 }
