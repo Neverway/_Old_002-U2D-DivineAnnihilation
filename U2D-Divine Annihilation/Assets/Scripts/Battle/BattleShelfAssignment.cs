@@ -6,17 +6,14 @@ using UnityEngine.UI;
 public class BattleShelfAssignment : MonoBehaviour
 {
     public GameObject shelf1;
-    public Text shelf1Name;
-    public Image shelf1Icon;
-
     public GameObject shelf2;
-    public Text shelf2Name;
-    public Image shelf2Icon;
-
     public GameObject shelf3;
-    public Text shelf3Name;
+    public Image shelf1Icon;
+    public Image shelf2Icon;
     public Image shelf3Icon;
-
+    public Text shelf1Name;
+    public Text shelf2Name;
+    public Text shelf3Name;
     public Sprite iconFox;
     public Sprite iconMiyu;
     public Sprite iconSam;
