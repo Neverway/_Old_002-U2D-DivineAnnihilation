@@ -4204,6 +4204,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadRoom: SceneBattleTest
+  enemy0: Purple Cat
+  enemy1: Purple Cat
+  enemy2: Purple Cat
+  enemy3: Purple Cat
+  enemy1Percent: 70
+  enemy2Percent: 70
+  enemy3Percent: 50
   player: {fileID: 7729900035222608715}
   configTarget: {fileID: 1332162959}
 --- !u!114 &344616191
@@ -106516,6 +106523,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadRoom: SceneBattleTest
+  enemy0: Purple Cat
+  enemy1: NULL
+  enemy2: NULL
+  enemy3: NULL
+  enemy1Percent: 25
+  enemy2Percent: 25
+  enemy3Percent: 25
   player: {fileID: 7729900035222608715}
   configTarget: {fileID: 1332162959}
 --- !u!1 &1542328644
