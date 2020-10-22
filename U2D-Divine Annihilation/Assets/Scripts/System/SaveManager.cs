@@ -37,7 +37,10 @@ public class SaveManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (PlayerPrefs.GetFloat("LoadPlayerPref") >= 1)
+        {
+            PlayerPrefLoad();
+        }
     }
 
 
@@ -60,6 +63,9 @@ public class SaveManager : MonoBehaviour
         activeSave.partyMemberTwoHealth = 100;
         activeSave.partyMemberThree = "NULL";
         activeSave.partyMemberThreeHealth = 100;
+
+        // Safty data
+        PlayerPrefs.SetFloat("LoadPlayerPref", 0);
     }
 
 
@@ -108,6 +114,8 @@ public class SaveManager : MonoBehaviour
         PlayerPrefs.SetFloat("TempPartyMemberTwoHealth", activeSave.partyMemberTwoHealth);
         PlayerPrefs.SetString("TempPartyMemberThree", activeSave.partyMemberThree);
         PlayerPrefs.SetFloat("TempPartyMemberThreeHealth", activeSave.partyMemberThreeHealth);
+
+        PlayerPrefs.SetFloat("LoadPlayerPref", PlayerPrefs.GetFloat("LoadPlayerPref"));
     }
 
 
@@ -127,6 +135,10 @@ public class SaveManager : MonoBehaviour
         activeSave.partyMemberTwoHealth = PlayerPrefs.GetFloat("TempPartyMemberTwoHealth");
         activeSave.partyMemberThree = PlayerPrefs.GetString("TempPartyMemberThree");
         activeSave.partyMemberThreeHealth = PlayerPrefs.GetFloat("TempPartyMemberThreeHealth");
+        PlayerPrefs.SetFloat("LoadPlayerPref", PlayerPrefs.GetFloat("LoadPlayerPref"));
+
+        // Safty data
+        PlayerPrefs.SetFloat("LoadPlayerPref", PlayerPrefs.GetFloat("LoadPlayerPref")-1);
     }
 
 

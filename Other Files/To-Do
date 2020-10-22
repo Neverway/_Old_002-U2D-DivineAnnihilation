@@ -1,0 +1,22 @@
+High
+-----
+Fix battle finish not saving pre-battle coordinates
+Add item pickups
+Add inventory menus
+Add inventory scrolling
+Add inventory saving
+Add inventory inspection (Use, Inspect)
+Add inventory items to battle menu
+
+
+Medium
+-------
+Add options menu
+Fix enemy encounter collision
+
+
+Low
+----
+Add file selection icons
+Add Fox left and right walk animations
+Add battle encounter transtion

@@ -64,6 +64,7 @@
      <Compile Include="Assets\**OLD**\Scripts\TriggerSavepoint.cs" />
      <Compile Include="Assets\**OLD**\Scripts\scr_system_filetest.cs" />
      <Compile Include="Assets\**OLD**\Scripts\scr_system_saveLoad.cs" />
+     <Compile Include="Assets\Scripts\Battle\BattleActionFunctions.cs" />
      <Compile Include="Assets\Scripts\Battle\BattleActionMenu.cs" />
      <Compile Include="Assets\Scripts\Battle\BattleBackgroundLooper.cs" />
      <Compile Include="Assets\Scripts\Battle\BattleBackgroundMovement.cs" />
@@ -72,7 +73,7 @@
      <Compile Include="Assets\Scripts\Battle\BattleEnemyAssignment.cs" />
      <Compile Include="Assets\Scripts\Battle\BattleEntityAssignment.cs" />
      <Compile Include="Assets\Scripts\Battle\BattleShelfAssignment.cs" />
-     <Compile Include="Assets\Scripts\Battle\BattlezoneControl.cs" />
+     <Compile Include="Assets\Scripts\Battle\BattleZoneControl.cs" />
      <Compile Include="Assets\Scripts\Character\CharacterFollower.cs" />
      <Compile Include="Assets\Scripts\Character\CharacterMovement.cs" />
      <Compile Include="Assets\Scripts\Effects\CharacterGhost.cs" />

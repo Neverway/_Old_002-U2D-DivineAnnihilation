@@ -1,9 +1,11 @@
 ﻿<Properties StartupConfiguration="{52A108CE-312A-7646-8A28-1F3B11C710B6}|Unit Tests">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Menus/HudTextboxManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/DA SDK/Editor/ItemCreator.cs">
     <Files>
-      <File FileName="Assets/Scripts/Battle/BattleEnemyAssignment.cs" Line="27" Column="13" />
-      <File FileName="Assets/Scripts/Battle/BattleEncounter.cs" Line="22" Column="53" />
-      <File FileName="Assets/Scripts/Menus/HudTextboxManager.cs" Line="4" Column="34" />
+      <File FileName="Assets/Scripts/Battle/BattleActionFunctions.cs" Line="35" Column="13" />
+      <File FileName="Assets/Scripts/Battle/BattleEncounter.cs" Line="32" Column="73" />
+      <File FileName="Assets/Scripts/System/SaveManager.cs" Line="11" Column="40" />
+      <File FileName="Assets/DA SDK/Editor/ItemCreator.cs" Line="15" Column="46" />
+      <File FileName="Assets/Scripts/Triggers/TriggerInteract.cs" Line="13" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-Editor PreferredExecutionTarget="MonoDevelop.Default" />
