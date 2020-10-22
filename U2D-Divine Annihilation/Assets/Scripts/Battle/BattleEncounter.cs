@@ -13,6 +13,7 @@ public class BattleEncounter : MonoBehaviour
     public float enemy1Percent = 25;
     public float enemy2Percent = 25;
     public float enemy3Percent = 25;
+    public float fleePercent = 60;
     public GameObject player;
     public GameObject configTarget;
     private SaveManager saveManager;
@@ -33,6 +34,8 @@ public class BattleEncounter : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D other)
     {
+        PlayerPrefs.SetFloat("fleePercent", fleePercent);
+
         // Check if that something is the player
         if (other.gameObject.name == "Entity Fox")
         {

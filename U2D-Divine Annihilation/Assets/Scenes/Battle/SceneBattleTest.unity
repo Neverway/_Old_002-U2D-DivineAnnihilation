@@ -15435,6 +15435,7 @@ GameObject:
   - component: {fileID: 214270470}
   - component: {fileID: 214270469}
   - component: {fileID: 214270471}
+  - component: {fileID: 214270472}
   m_Layer: 5
   m_Name: Action Menu
   m_TagString: Untagged
@@ -15534,6 +15535,19 @@ MonoBehaviour:
   horizontalScrolling: 0
   wrapAround: 1
   currentSelection: 0
+--- !u!114 &214270472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214270467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6527aebace83102c48ae980a945e3588, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  configTarget: {fileID: 1474372793}
 --- !u!1 &233917147
 GameObject:
   m_ObjectHideFlags: 0

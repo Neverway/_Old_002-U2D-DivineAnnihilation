@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BattlezoneControl : MonoBehaviour
+public class BattleZoneControl : MonoBehaviour
 {
     public bool abzActive;
     public float speed;
