@@ -55,62 +55,51 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\**OLD**\Other\Materials\scr_system_lightAffectedSprite.cs" />
-     <Compile Include="Assets\**OLD**\Other\TigerForge\Demo\Demo.cs" />
-     <Compile Include="Assets\**OLD**\Other\TigerForge\EasyFileSave\EasyFileSave.cs" />
-     <Compile Include="Assets\**OLD**\Other\TigerForge\EasyFileSave\EasyFileSaveExtension.cs" />
-     <Compile Include="Assets\**OLD**\Scripts\Menus &amp; Hud\#OLD#scr_system_hud_textbox.cs" />
-     <Compile Include="Assets\**OLD**\Scripts\Menus &amp; Hud\#OLD#scr_system_menu_activebutton.cs" />
-     <Compile Include="Assets\**OLD**\Scripts\TriggerSavepoint.cs" />
-     <Compile Include="Assets\**OLD**\Scripts\scr_system_filetest.cs" />
-     <Compile Include="Assets\**OLD**\Scripts\scr_system_saveLoad.cs" />
-     <Compile Include="Assets\Scripts\Battle\BattleActionFunctions.cs" />
-     <Compile Include="Assets\Scripts\Battle\BattleActionMenu.cs" />
-     <Compile Include="Assets\Scripts\Battle\BattleBackgroundLooper.cs" />
-     <Compile Include="Assets\Scripts\Battle\BattleBackgroundMovement.cs" />
-     <Compile Include="Assets\Scripts\Battle\BattleController.cs" />
-     <Compile Include="Assets\Scripts\Battle\BattleEncounter.cs" />
-     <Compile Include="Assets\Scripts\Battle\BattleEnemyAssignment.cs" />
-     <Compile Include="Assets\Scripts\Battle\BattleEntityAssignment.cs" />
-     <Compile Include="Assets\Scripts\Battle\BattleShelfAssignment.cs" />
-     <Compile Include="Assets\Scripts\Battle\BattleZoneControl.cs" />
-     <Compile Include="Assets\Scripts\Character\CharacterFollower.cs" />
-     <Compile Include="Assets\Scripts\Character\CharacterMovement.cs" />
-     <Compile Include="Assets\Scripts\Effects\CharacterGhost.cs" />
-     <Compile Include="Assets\Scripts\Effects\CharacterGhostMovement.cs" />
-     <Compile Include="Assets\Scripts\Effects\EntityDust.cs" />
-     <Compile Include="Assets\Scripts\Entity\EntityChase.cs" />
-     <Compile Include="Assets\Scripts\Entity\EntityFollowFlip.cs" />
-     <Compile Include="Assets\Scripts\Items, Objects &amp; Puzzles\ItemPickup.cs" />
-     <Compile Include="Assets\Scripts\Items, Objects &amp; Puzzles\PuzzlePushbox.cs" />
-     <Compile Include="Assets\Scripts\Menus\HudHealth.cs" />
-     <Compile Include="Assets\Scripts\Menus\HudInventory.cs" />
-     <Compile Include="Assets\Scripts\Menus\HudTextboxManager.cs" />
-     <Compile Include="Assets\Scripts\Menus\MenuControl.cs" />
-     <Compile Include="Assets\Scripts\Menus\MenuScrollControl.cs" />
-     <Compile Include="Assets\Scripts\Menus\MenuScrollMinusControl.cs" />
-     <Compile Include="Assets\Scripts\Menus\MenuScrollString.cs" />
-     <Compile Include="Assets\Scripts\Menus\OLDHudTextboxManager.cs" />
-     <Compile Include="Assets\Scripts\Menus\TitleErase.cs" />
-     <Compile Include="Assets\Scripts\Menus\TitleLoad.cs" />
-     <Compile Include="Assets\Scripts\Menus\TitleQuit.cs" />
-     <Compile Include="Assets\Scripts\Menus\TitleSaveInfo.cs" />
-     <Compile Include="Assets\Scripts\Menus\TitleSaveLoad.cs" />
-     <Compile Include="Assets\Scripts\Menus\TitleSaveOptions.cs" />
-     <Compile Include="Assets\Scripts\System\SaveManager.cs" />
-     <Compile Include="Assets\Scripts\System\SystemCamera.cs" />
-     <Compile Include="Assets\Scripts\System\SystemConfig.cs" />
-     <Compile Include="Assets\Scripts\System\SystemConfigManager.cs" />
-     <Compile Include="Assets\Scripts\System\SystemEntityID.cs" />
-     <Compile Include="Assets\Scripts\System\SystemFadeTransition.cs" />
-     <Compile Include="Assets\Scripts\System\SystemPersistantData.cs" />
-     <Compile Include="Assets\Scripts\Triggers\TriggerInteract.cs" />
-     <Compile Include="Assets\Scripts\Triggers\TriggerPartySet.cs" />
-     <Compile Include="Assets\Scripts\Triggers\TriggerSave.cs" />
-     <Compile Include="Assets\Scripts\Triggers\TriggerWarp.cs" />
-     <Compile Include="Assets\Scripts\Triggers\TriggerWarpLevel.cs" />
-     <None Include="Assets\Other\Asset Packages\PrefabBrowser\SetupGuide.txt" />
-     <None Include="Assets\**OLD**\Other\Fonts\japanesefont\readme.txt" />
+     <Compile Include="Assets\4.Scripts\Battle\BattleActionFunctions.cs" />
+     <Compile Include="Assets\4.Scripts\Battle\BattleBackgroundLooper.cs" />
+     <Compile Include="Assets\4.Scripts\Battle\BattleBackgroundMovement.cs" />
+     <Compile Include="Assets\4.Scripts\Battle\BattleController.cs" />
+     <Compile Include="Assets\4.Scripts\Battle\BattleEncounter.cs" />
+     <Compile Include="Assets\4.Scripts\Battle\BattleEnemyAssignment.cs" />
+     <Compile Include="Assets\4.Scripts\Battle\BattleEntityAssignment.cs" />
+     <Compile Include="Assets\4.Scripts\Battle\BattleShelfAssignment.cs" />
+     <Compile Include="Assets\4.Scripts\Battle\BattleZoneControl.cs" />
+     <Compile Include="Assets\4.Scripts\Character\CharacterFollower.cs" />
+     <Compile Include="Assets\4.Scripts\Character\CharacterMovement.cs" />
+     <Compile Include="Assets\4.Scripts\Effects\CharacterGhost.cs" />
+     <Compile Include="Assets\4.Scripts\Effects\CharacterGhostMovement.cs" />
+     <Compile Include="Assets\4.Scripts\Effects\EntityDust.cs" />
+     <Compile Include="Assets\4.Scripts\Entity\EntityChase.cs" />
+     <Compile Include="Assets\4.Scripts\Entity\EntityFollowFlip.cs" />
+     <Compile Include="Assets\4.Scripts\Items, Objects &amp; Puzzles\ItemPickup.cs" />
+     <Compile Include="Assets\4.Scripts\Items, Objects &amp; Puzzles\PuzzlePushbox.cs" />
+     <Compile Include="Assets\4.Scripts\Menus\HudHealth.cs" />
+     <Compile Include="Assets\4.Scripts\Menus\HudInventory.cs" />
+     <Compile Include="Assets\4.Scripts\Menus\HudTextboxManager.cs" />
+     <Compile Include="Assets\4.Scripts\Menus\MenuControl.cs" />
+     <Compile Include="Assets\4.Scripts\Menus\MenuScrollControl.cs" />
+     <Compile Include="Assets\4.Scripts\Menus\MenuScrollMinusControl.cs" />
+     <Compile Include="Assets\4.Scripts\Menus\MenuScrollString.cs" />
+     <Compile Include="Assets\4.Scripts\Menus\OLDHudTextboxManager.cs" />
+     <Compile Include="Assets\4.Scripts\Menus\TitleErase.cs" />
+     <Compile Include="Assets\4.Scripts\Menus\TitleLoad.cs" />
+     <Compile Include="Assets\4.Scripts\Menus\TitleQuit.cs" />
+     <Compile Include="Assets\4.Scripts\Menus\TitleSaveInfo.cs" />
+     <Compile Include="Assets\4.Scripts\Menus\TitleSaveLoad.cs" />
+     <Compile Include="Assets\4.Scripts\Menus\TitleSaveOptions.cs" />
+     <Compile Include="Assets\4.Scripts\System\SaveManager.cs" />
+     <Compile Include="Assets\4.Scripts\System\SystemCamera.cs" />
+     <Compile Include="Assets\4.Scripts\System\SystemConfig.cs" />
+     <Compile Include="Assets\4.Scripts\System\SystemConfigManager.cs" />
+     <Compile Include="Assets\4.Scripts\System\SystemEntityID.cs" />
+     <Compile Include="Assets\4.Scripts\System\SystemFadeTransition.cs" />
+     <Compile Include="Assets\4.Scripts\System\SystemPersistantData.cs" />
+     <Compile Include="Assets\4.Scripts\Triggers\TriggerInteract.cs" />
+     <Compile Include="Assets\4.Scripts\Triggers\TriggerPartySet.cs" />
+     <Compile Include="Assets\4.Scripts\Triggers\TriggerSave.cs" />
+     <Compile Include="Assets\4.Scripts\Triggers\TriggerWarp.cs" />
+     <Compile Include="Assets\4.Scripts\Triggers\TriggerWarpLevel.cs" />
+     <None Include="Assets\6.Packages\PrefabBrowser\SetupGuide.txt" />
  <Reference Include="UnityEngine">
  <HintPath>/home/lizband_ucc/Documents/Apps/Unity/Hub/Editor/2019.4.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -292,7 +281,7 @@
  <HintPath>/home/lizband_ucc/Documents/Apps/Unity/Hub/Editor/2019.4.10f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
  </Reference>
  <Reference Include="Pathfinding.Ionic.Zip.Reduced">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Assets/Other/Asset Packages/AstarPathfinding/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Assets/6.Packages/AstarPathfinding/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>/home/lizband_ucc/Documents/Apps/Unity/Hub/Editor/2019.4.10f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -649,124 +638,127 @@
  <HintPath>/home/lizband_ucc/Documents/Apps/Unity/Hub/Editor/2019.4.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Cinemachine">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Animation.Runtime">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.PixelPerfect.Editor">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Universal.Shaders">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Core.Editor">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Core.Runtime">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.SpriteShape.Editor">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Path.Editor">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Universal.Runtime">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Universal.Editor">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Animation.Triangle.Runtime">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="PsdPlugin">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Postprocessing.Editor">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Mathematics">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Psdimporter.Editor">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.InternalAPIEngineBridge.001">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Common.Runtime">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Postprocessing.Runtime">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Tilemap.Editor">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.SpriteShape.Runtime">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.PixelPerfect">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Animation.Editor">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
  </Reference>
  <Reference Include="com.unity.cinemachine.editor">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ShaderGraph.Editor">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Mathematics.Editor">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.UI.Builder.Editor">
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.UI.Builder.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Common.Editor">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.InternalAPIEditorBridge.001">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/U2D-Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
