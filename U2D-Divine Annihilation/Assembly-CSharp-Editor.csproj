@@ -256,11 +256,11 @@
  <Reference Include="UnityEditor.LinuxStandalone.Extensions">
  <HintPath>/home/lizband_ucc/Documents/Apps/Unity/Hub/Editor/2019.4.10f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
  </Reference>
- <Reference Include="ICSharpCode.NRefactory">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/PackageCache/com.unity.render-pipelines.core@7.3.1/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
- </Reference>
  <Reference Include="Pathfinding.Ionic.Zip.Reduced">
  <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Assets/6.Packages/AstarPathfinding/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+ </Reference>
+ <Reference Include="ICSharpCode.NRefactory">
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/PackageCache/com.unity.render-pipelines.core@7.3.1/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
  <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>

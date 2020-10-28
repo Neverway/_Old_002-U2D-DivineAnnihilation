@@ -56,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\4.Scripts\Battle\BattleActionFunctions.cs" />
+     <Compile Include="Assets\4.Scripts\Battle\BattleActionManager.cs" />
      <Compile Include="Assets\4.Scripts\Battle\BattleBackgroundLooper.cs" />
      <Compile Include="Assets\4.Scripts\Battle\BattleBackgroundMovement.cs" />
      <Compile Include="Assets\4.Scripts\Battle\BattleController.cs" />
@@ -63,9 +64,11 @@
      <Compile Include="Assets\4.Scripts\Battle\BattleEnemyAssignment.cs" />
      <Compile Include="Assets\4.Scripts\Battle\BattleEntityAssignment.cs" />
      <Compile Include="Assets\4.Scripts\Battle\BattleShelfAssignment.cs" />
+     <Compile Include="Assets\4.Scripts\Battle\BattleTurnManager.cs" />
      <Compile Include="Assets\4.Scripts\Battle\BattleZoneControl.cs" />
      <Compile Include="Assets\4.Scripts\Character\CharacterFollower.cs" />
      <Compile Include="Assets\4.Scripts\Character\CharacterMovement.cs" />
+     <Compile Include="Assets\4.Scripts\Character\CharacterWakeUp.cs" />
      <Compile Include="Assets\4.Scripts\Effects\CharacterGhost.cs" />
      <Compile Include="Assets\4.Scripts\Effects\CharacterGhostMovement.cs" />
      <Compile Include="Assets\4.Scripts\Effects\EntityDust.cs" />
