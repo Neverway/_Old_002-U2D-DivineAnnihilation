@@ -23,20 +23,24 @@ public class TriggerPartySet : MonoBehaviour
         {
             if (addMember)
             {
-                // Add a entity as a party member
-                if (saveManager.activeSave.partyMemberOne == "NULL")
+                // Check to make sure they are not already in your party
+                if (saveManager.activeSave.partyMemberOne != partyMemberID && saveManager.activeSave.partyMemberTwo != partyMemberID && saveManager.activeSave.partyMemberThree != partyMemberID)
                 {
-                    saveManager.activeSave.partyMemberOne = partyMemberID;
-                }
-                // Add a entity as a party member
-                else if (saveManager.activeSave.partyMemberTwo == "NULL")
-                {
-                    saveManager.activeSave.partyMemberTwo = partyMemberID;
-                }
-                // Add a entity as a party member
-                else if (saveManager.activeSave.partyMemberThree == "NULL")
-                {
-                    saveManager.activeSave.partyMemberThree = partyMemberID;
+                    // Add a entity as a party member
+                    if (saveManager.activeSave.partyMemberOne == "NULL")
+                    {
+                        saveManager.activeSave.partyMemberOne = partyMemberID;
+                    }
+                    // Add a entity as a party member
+                    else if (saveManager.activeSave.partyMemberTwo == "NULL")
+                    {
+                        saveManager.activeSave.partyMemberTwo = partyMemberID;
+                    }
+                    // Add a entity as a party member
+                    else if (saveManager.activeSave.partyMemberThree == "NULL")
+                    {
+                        saveManager.activeSave.partyMemberThree = partyMemberID;
+                    }
                 }
             }
 

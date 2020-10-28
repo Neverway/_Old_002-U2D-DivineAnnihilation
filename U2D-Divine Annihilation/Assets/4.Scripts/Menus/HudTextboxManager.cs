@@ -28,12 +28,16 @@ public class HudTextboxManager : MonoBehaviour
     public bool acceptingInput;                     // If the object is accepting key presses, used for a key press delay
     public bool dialogueBoxActive;                  // If the text box heirarchy is visible
     public bool isMonologue;                        // If the there is not a textbox
-      
+    public bool destroyOnFinish;
+    public bool EventTrigger;
+    public bool EventActive;
+
     public float textSpeed = 0.1f;
     public string textContent;
-    public string textCurrent = ""; 
+    public string textCurrent = "";
 
     // Other class references
+    public GameObject targetTrigger;
     private CharacterMovement characterMovement;   // A reference to the character movement script, used to freeze the player when a textbox is up
     private SystemConfigManager global;     // A reference to the configuration manager script, used to set the global value of if a menu is active
 
@@ -72,14 +76,32 @@ public class HudTextboxManager : MonoBehaviour
         }
 
         // Continue to next dialogue
-        if (dialogueBoxActive && Input.GetKeyDown("z"))
+        if (dialogueBoxActive && Input.GetKeyDown("z") && !EventTrigger)
         {
             if (acceptingInput) currentLine += 1;   // Advance the line count
             StartCoroutine(ShowText());
             textCurrent = "";
             StartCoroutine("acceptInput");          // Apply Key press delay
         }
-       
+        // Continue to next dialogue
+        if (dialogueBoxActive && EventTrigger && !EventActive)
+        {
+            if (acceptingInput) currentLine += 1;   // Advance the line count
+            StartCoroutine(ShowText());
+            textCurrent = "";
+            StartCoroutine("acceptInput");          // Apply Key press delay
+            EventActive = true;
+        }
+        // Continue to next dialogue
+        else if (dialogueBoxActive && Input.GetKeyDown("z") && EventTrigger && EventActive)
+        {
+            if (acceptingInput) currentLine += 1;   // Advance the line count
+            StartCoroutine(ShowText());
+            textCurrent = "";
+            StartCoroutine("acceptInput");          // Apply Key press delay
+        }
+
+
         // End the dialogue when there are no more lines of text
         if (currentLine >= dialogueLines.Length)
         {
@@ -88,6 +110,16 @@ public class HudTextboxManager : MonoBehaviour
             currentLine = 0;                                                 // Reset the current line count to zero
             StopCoroutine("acceptInput");                                    // Reset the key delay
             StopCoroutine("ShowText");
+            if (destroyOnFinish)
+            {
+                targetTrigger.SetActive(false);
+            }
+
+            dialogueTextObject.text = "";
+            monologueTextObject.text = "";
+            dialogueNameTextObject.text = "";
+            dialoguePortraitObject.sprite = noPortrait;
+
             acceptingInput = false;                                          // Set the accepting input value to false
         }
 
