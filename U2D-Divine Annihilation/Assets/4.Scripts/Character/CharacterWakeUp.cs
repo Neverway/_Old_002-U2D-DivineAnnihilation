@@ -5,6 +5,7 @@ using UnityEngine;
 public class CharacterWakeUp : MonoBehaviour
 {
     public bool animationFinished;
+    public Animator animator;
     public GameObject playerCharacter;
     public GameObject playerCharacterShadow;
     public GameObject configTarget;
@@ -30,6 +31,10 @@ public class CharacterWakeUp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown("z"))
+        {
+            animator.SetFloat("animationSpeed", 1f);
+        }
         if (animationFinished)
         {
             configTarget.GetComponent<SystemConfigManager>().overrideCanMove = false;
