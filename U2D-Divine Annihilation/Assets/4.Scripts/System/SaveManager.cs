@@ -49,8 +49,8 @@ public class SaveManager : MonoBehaviour
     {
         // Player Data
         activeSave.scene = "SceneC1S1";
-        activeSave.playerSavePosition.x = (float)-16.75;
-        activeSave.playerSavePosition.y = 43;
+        activeSave.playerSavePosition.x = (float)-17.75;
+        activeSave.playerSavePosition.y = 44;
         activeSave.playerHealth = 100;
 
         // Player Items
@@ -63,6 +63,9 @@ public class SaveManager : MonoBehaviour
         activeSave.partyMemberTwoHealth = 100;
         activeSave.partyMemberThree = "NULL";
         activeSave.partyMemberThreeHealth = 100;
+
+        // Chapter Data
+        activeSave.hasWokenUp = false;
 
         // Safty data
         PlayerPrefs.SetFloat("LoadPlayerPref", 0);
@@ -174,7 +177,7 @@ public class SaveData
     public string partyMemberThree;
     public float partyMemberThreeHealth;
 
-
     // Chapter Data
+    public bool hasWokenUp;
 
 }

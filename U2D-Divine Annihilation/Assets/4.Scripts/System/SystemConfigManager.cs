@@ -7,6 +7,7 @@ public class SystemConfigManager : MonoBehaviour
     // Globals
     public bool menuActive;
     public bool canMove;
+    public bool overrideCanMove;
 
     // Referances
     private HudTextboxManager DialogueManager;
@@ -28,14 +29,14 @@ public class SystemConfigManager : MonoBehaviour
     void Update()
     {
         // Menu active
-        if(DialogueManager.dialogueBoxActive | InventoryManager.inventoryBoxActive)
+        if(DialogueManager.dialogueBoxActive | InventoryManager.inventoryBoxActive | overrideCanMove)
         {
             menuActive = true;
             characterMovement.canMove = false;
         }
 
         // No Menu active
-        else if(!DialogueManager.dialogueBoxActive && !InventoryManager.inventoryBoxActive)
+        else if(!DialogueManager.dialogueBoxActive && !InventoryManager.inventoryBoxActive && !overrideCanMove)
         {
             menuActive = false;
             characterMovement.canMove = true;
