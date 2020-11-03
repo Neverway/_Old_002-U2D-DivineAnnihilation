@@ -100,7 +100,7 @@ public class CharacterFollower : MonoBehaviour
             speed = characterMovement.movementSpeed * 300;
 
             // Move toward target
-            if (Vector2.Distance(rigidbody2d.position, target.position) <= senseRange)
+            if (Vector2.Distance(rigidbody2d.position, target.position) <= senseRange && Vector2.Distance(rigidbody2d.position, target.position) >= 0.5f)
             {
                 Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rigidbody2d.position).normalized;
                 Vector2 force = direction * speed * Time.deltaTime;

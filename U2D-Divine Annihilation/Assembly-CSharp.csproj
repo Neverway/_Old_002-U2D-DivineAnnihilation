@@ -68,7 +68,6 @@
      <Compile Include="Assets\4.Scripts\Battle\BattleZoneControl.cs" />
      <Compile Include="Assets\4.Scripts\Character\CharacterFollower.cs" />
      <Compile Include="Assets\4.Scripts\Character\CharacterMovement.cs" />
-     <Compile Include="Assets\4.Scripts\Character\CharacterWakeUp.cs" />
      <Compile Include="Assets\4.Scripts\Effects\CharacterGhost.cs" />
      <Compile Include="Assets\4.Scripts\Effects\CharacterGhostMovement.cs" />
      <Compile Include="Assets\4.Scripts\Effects\EntityDust.cs" />
@@ -87,6 +86,7 @@
      <Compile Include="Assets\4.Scripts\Menus\TitleErase.cs" />
      <Compile Include="Assets\4.Scripts\Menus\TitleLoad.cs" />
      <Compile Include="Assets\4.Scripts\Menus\TitleQuit.cs" />
+     <Compile Include="Assets\4.Scripts\Menus\TitleSaveIcons.cs" />
      <Compile Include="Assets\4.Scripts\Menus\TitleSaveInfo.cs" />
      <Compile Include="Assets\4.Scripts\Menus\TitleSaveLoad.cs" />
      <Compile Include="Assets\4.Scripts\Menus\TitleSaveOptions.cs" />
@@ -97,11 +97,14 @@
      <Compile Include="Assets\4.Scripts\System\SystemEntityID.cs" />
      <Compile Include="Assets\4.Scripts\System\SystemFadeTransition.cs" />
      <Compile Include="Assets\4.Scripts\System\SystemPersistantData.cs" />
+     <Compile Include="Assets\4.Scripts\Triggers\TriggerCutscene.cs" />
      <Compile Include="Assets\4.Scripts\Triggers\TriggerInteract.cs" />
      <Compile Include="Assets\4.Scripts\Triggers\TriggerPartySet.cs" />
      <Compile Include="Assets\4.Scripts\Triggers\TriggerSave.cs" />
      <Compile Include="Assets\4.Scripts\Triggers\TriggerWarp.cs" />
      <Compile Include="Assets\4.Scripts\Triggers\TriggerWarpLevel.cs" />
+     <Compile Include="Assets\OldEventStuff\Events\CharacterWakeUp.cs" />
+     <Compile Include="Assets\OldEventStuff\TriggerEvent.cs" />
      <None Include="Assets\6.Packages\PrefabBrowser\SetupGuide.txt" />
  <Reference Include="UnityEngine">
  <HintPath>/home/lizband_ucc/Documents/Apps/Unity/Hub/Editor/2019.4.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
