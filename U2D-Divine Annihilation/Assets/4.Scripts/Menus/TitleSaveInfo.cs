@@ -10,6 +10,8 @@ public class TitleSaveInfo : MonoBehaviour
     public Text fileName;
     public Text fileLevel;
     public Text fileChapter;
+    public Sprite saveBlankIcon;
+    public Sprite saveHasIcon;
     public GameObject configTarget;
     private SaveManager saveManager;
     private string saveFileSlot;
@@ -50,14 +52,15 @@ public class TitleSaveInfo : MonoBehaviour
 
             fileLevel.text = "Lvl. "+"000";
             fileChapter.text = "Chapter "+"1";
+            fileImage.sprite = saveHasIcon;
         }
 
         else if (!System.IO.File.Exists(dataPath + "/" + saveFileString + ".dasp"))
         {
             fileName.text = "-New File-";
-
             fileLevel.text = "";
             fileChapter.text = "";
+            fileImage.sprite = saveBlankIcon;
         }
     }
 }
