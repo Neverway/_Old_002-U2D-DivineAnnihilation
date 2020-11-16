@@ -9,11 +9,11 @@ EditorBuildSettings:
     path: Assets/4.Scenes/Title/SceneTitle.unity
     guid: 1a719740b93d86f7f9e0c59bccef4b46
   - enabled: 1
-    path: Assets/4.Scenes/Chapter 1/OLDC1S1.unity
-    guid: f1eba2f71ed91add0911f238aaae7e3d
+    path: Assets/4.Scenes/Chapter 1/SceneC1S1.unity
+    guid: 3e43d981640e604449565b2bb074fc89
   - enabled: 1
     path: Assets/4.Scenes/Chapter 1/SceneC1S2.unity
-    guid: ad11fb9e5b74e4522be85b2cc9fb56d8
+    guid: 0f7c1195c1efdda8881d0991f489b87a
   - enabled: 1
     path: Assets/4.Scenes/Battle/SceneBattleTest.unity
     guid: 0a6faba5c9bd4344a95ee515dcbcfbd7
