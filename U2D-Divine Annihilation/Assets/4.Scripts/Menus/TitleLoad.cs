@@ -26,6 +26,7 @@ public class TitleLoad : MonoBehaviour
     {
         if (Input.GetKeyDown("x"))
         {
+            menu.currentFrame = 0;
             selfTarget.SetActive(false);
             savesMenu.SetActive(true);
         }

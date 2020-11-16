@@ -47,10 +47,10 @@ public class HudInventory : MonoBehaviour
         {
             if (acceptingInput)
             {
-                items[currentFrame].sprite = notSelected;
-                equipment[currentFrame].sprite = notSelected;
-                currentFrame = 0;
-                inItems = true;
+                //items[currentFrame].sprite = notSelected;
+                //equipment[currentFrame].sprite = notSelected;
+                //currentFrame = 0;
+                //inItems = true;
                 characterMovement.movementSpeed = characterMovement.storedSpeed; // Set the players speed so they won't get stuck with a movement speed of zero
                 inventoryBoxActive = false;
                 inventoryBoxObject.SetActive(false); // Make the box disappear
@@ -73,7 +73,7 @@ public class HudInventory : MonoBehaviour
 
 
         // Vertical scrolling
-        if (inItems)
+        if (inItems && inventoryBoxActive)
         {
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
@@ -114,7 +114,7 @@ public class HudInventory : MonoBehaviour
         }
 
 
-        if (!inItems)
+        if (!inItems && inventoryBoxActive)
         {
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
