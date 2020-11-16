@@ -7,25 +7,38 @@ public class ItemPickup : MonoBehaviour
     // Variables
     [Header ("Item information")]
     public string itemName;
-    public string itemDescription;
-    public string itemPickupText;
+    public string description;
+    public string pickupText;
 
-    public Sprite itemIcon;
-    public bool itemDroppable;
+    public Sprite icon;
+    public bool canBeSold;
 
-    
-    public enum itemCategory {Item, Equipment}
-    [Header ("Item category")]
-    public itemCategory ItemCategory;
+    public enum ItemCategory {Item, Consumable, Armour, Weapon}
+    [Header("Item category")]
+    public ItemCategory itemCategory;
 
-    public enum itemTypeIfCatItem {Consumable, Crafting, KeyItem, Other, NULL}
-    [Header ("If category is item")]
-    public itemTypeIfCatItem ItemTypeIfCatItem;
-    public int itemHPGivenOnConsume;
+    [Header("Consumable")]
+    public float healthRestoration;
 
-    public enum itemTypeIfCatEquipment {Weapon, Armour, Other, NULL}
-    [Header ("If category is equipment")]
-    public itemTypeIfCatEquipment ItemTypeIfCatEquipment;
-    public int itemAtkIfTypeWeapon;
-    public int itemDefIfTypeArmour;
+    [Header("Armour")]
+    public float defencePower;
+
+    public enum WeaponType {Melee, Ranged, Explosive}
+    [Header("Weapon")]
+    public WeaponType weaponType;
+    public float attackPower;
+
+    public ItemPickup(string newItemName, string newDescription, string newPickupText, Sprite newIcon, bool newCanBeSold, ItemCategory newItemCategory, float newHealthRestoration, float newDefencePower, WeaponType newWeaponType, float newAttackPower)
+    {
+        itemName = newItemName;
+        description = newDescription;
+        pickupText = newPickupText;
+        icon = newIcon;
+        canBeSold = newCanBeSold;
+        itemCategory = newItemCategory;
+        healthRestoration = newHealthRestoration;
+        defencePower = newDefencePower;
+        weaponType = newWeaponType;
+        attackPower = newAttackPower;
+    }
 }

@@ -73,10 +73,13 @@
      <Compile Include="Assets\4.Scripts\Effects\EntityDust.cs" />
      <Compile Include="Assets\4.Scripts\Entity\EntityChase.cs" />
      <Compile Include="Assets\4.Scripts\Entity\EntityFollowFlip.cs" />
+     <Compile Include="Assets\4.Scripts\Items, Objects &amp; Puzzles\ItemHandler.cs" />
      <Compile Include="Assets\4.Scripts\Items, Objects &amp; Puzzles\ItemPickup.cs" />
+     <Compile Include="Assets\4.Scripts\Items, Objects &amp; Puzzles\ItemPickup2.cs" />
      <Compile Include="Assets\4.Scripts\Items, Objects &amp; Puzzles\PuzzlePushbox.cs" />
      <Compile Include="Assets\4.Scripts\Menus\HudHealth.cs" />
      <Compile Include="Assets\4.Scripts\Menus\HudInventory.cs" />
+     <Compile Include="Assets\4.Scripts\Menus\HudInventoryItemAssignment.cs" />
      <Compile Include="Assets\4.Scripts\Menus\HudTextboxManager.cs" />
      <Compile Include="Assets\4.Scripts\Menus\MenuControl.cs" />
      <Compile Include="Assets\4.Scripts\Menus\MenuScrollControl.cs" />

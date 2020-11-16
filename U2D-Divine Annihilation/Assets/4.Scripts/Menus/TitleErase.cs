@@ -25,6 +25,7 @@ public class TitleErase : MonoBehaviour
     {
         if (Input.GetKeyDown("x"))
         {
+            menu.currentFrame = 0;
             loadMenu.SetActive(true);
             selfTarget.SetActive(false);
         }

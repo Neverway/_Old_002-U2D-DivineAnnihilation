@@ -54,7 +54,7 @@ public class SaveManager : MonoBehaviour
         activeSave.playerHealth = 100;
 
         // Player Items
-
+        List<ItemPickup> items = new List<ItemPickup>();
 
         // Party Data
         activeSave.partyMemberOne = "NULL";
@@ -167,7 +167,7 @@ public class SaveData
     public float playerHealth;
 
     // Player Items
-    public string[] playerItems;
+    List<ItemPickup> items;
 
     // Party Data
     public string partyMemberOne;

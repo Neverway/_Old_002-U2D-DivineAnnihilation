@@ -127,6 +127,7 @@ public class TitleSaveLoad : MonoBehaviour
 
         if (Input.GetKeyDown("x"))
         {
+            menu.currentFrame = 0;
             titleMenu.SetActive(true);
             selfTarget.SetActive(false);
         }
