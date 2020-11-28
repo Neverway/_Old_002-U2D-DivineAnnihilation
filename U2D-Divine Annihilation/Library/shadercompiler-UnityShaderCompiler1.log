@@ -1,2 +1,40 @@
 Base path: '/home/lizband_ucc/Documents/Apps/Unity/Hub/Editor/2019.4.10f1/Editor/Data', plugins path '/home/lizband_ucc/Documents/Apps/Unity/Hub/Editor/2019.4.10f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=15 insize=18731 outsize=16381 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=18731 outsize=16386 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=18731 outsize=25716 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=18731 outsize=56090 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=1226 outsize=2229 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=1505 outsize=3714 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=5032 outsize=18640 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=5032 outsize=24708 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=1864 outsize=2045 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=1864 outsize=2489 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=3158 outsize=198943 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=11176 outsize=18224 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=11176 outsize=40696 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=11176 outsize=48021 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=2120 outsize=4124 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=2134 outsize=7107 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=3532 outsize=9805 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=3174 outsize=5636 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=1957 outsize=1588 ok=1

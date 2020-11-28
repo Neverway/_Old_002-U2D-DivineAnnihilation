@@ -1,11 +1,7 @@
 ﻿<Properties StartupConfiguration="{52A108CE-312A-7646-8A28-1F3B11C710B6}|Unit Tests">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/4.Scripts/Menus/HudInventoryItemAssignment.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/4.Scripts/Triggers/TriggerWarp.cs">
     <Files>
-      <File FileName="Assets/4.Scripts/Items, Objects &amp; Puzzles/ItemHandler.cs" Line="14" Column="14" />
-      <File FileName="Assets/4.Scripts/Items, Objects &amp; Puzzles/ItemPickup.cs" Line="29" Column="30" />
-      <File FileName="Assets/4.Scripts/System/SaveManager.cs" Line="169" Column="20" />
-      <File FileName="Assets/4.Scripts/Menus/HudInventory.cs" Line="20" Column="26" />
-      <File FileName="Assets/4.Scripts/Menus/HudInventoryItemAssignment.cs" Line="21" Column="6" />
+      <File FileName="Assets/4.Scripts/Triggers/TriggerWarp.cs" Line="29" Column="40" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-Editor PreferredExecutionTarget="MonoDevelop.Default" />
