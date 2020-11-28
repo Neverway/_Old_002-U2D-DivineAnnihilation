@@ -5,7 +5,7 @@ using UnityEngine;
 public class TriggerWarp : MonoBehaviour
 {
     public GameObject ExitTarget;
-    public GameObject Player;
+    private GameObject Player;
     public bool PlayTransition;
 
     // Other class references
@@ -26,8 +26,9 @@ public class TriggerWarp : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D other)
     {
         // Check if that something is the player
-        if (other.gameObject.name == "Entity Fox")
+        if (other.gameObject.tag == "Player")
         {
+            Player = other.gameObject;
             if (PlayTransition)
             {
                 Transition.StartCoroutine("TriggerFade");
