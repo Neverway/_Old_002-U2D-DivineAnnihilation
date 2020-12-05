@@ -55,10 +55,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\6.Packages\AstarPathfinding\PackageTools\Editor\EditorBase.cs" />
-     <Compile Include="Assets\6.Packages\AstarPathfinding\PackageTools\Editor\EditorGUIx.cs" />
-     <Compile Include="Assets\6.Packages\AstarPathfinding\PackageTools\Editor\EnumFlagDrawer.cs" />
-     <None Include="Assets\6.Packages\AstarPathfinding\PackageTools\Editor\PackageToolsEditor.asmdef" />
+     <Compile Include="Assets\Packages\AstarPathfinding\PackageTools\Editor\EditorBase.cs" />
+     <Compile Include="Assets\Packages\AstarPathfinding\PackageTools\Editor\EditorGUIx.cs" />
+     <Compile Include="Assets\Packages\AstarPathfinding\PackageTools\Editor\EnumFlagDrawer.cs" />
+     <None Include="Assets\Packages\AstarPathfinding\PackageTools\Editor\PackageToolsEditor.asmdef" />
  <Reference Include="UnityEngine">
  <HintPath>/home/lizband_ucc/Documents/Apps/Unity/Hub/Editor/2019.4.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -258,7 +258,7 @@
  <HintPath>/home/lizband_ucc/Documents/Apps/Unity/Hub/Editor/2019.4.10f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Pathfinding.Ionic.Zip.Reduced">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Assets/6.Packages/AstarPathfinding/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Assets/Packages/AstarPathfinding/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
  </Reference>
  <Reference Include="ICSharpCode.NRefactory">
  <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/PackageCache/com.unity.render-pipelines.core@7.3.1/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
