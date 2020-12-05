@@ -55,59 +55,56 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\4.Scripts\Battle\BattleActionFunctions.cs" />
-     <Compile Include="Assets\4.Scripts\Battle\BattleActionManager.cs" />
-     <Compile Include="Assets\4.Scripts\Battle\BattleBackgroundLooper.cs" />
-     <Compile Include="Assets\4.Scripts\Battle\BattleBackgroundMovement.cs" />
-     <Compile Include="Assets\4.Scripts\Battle\BattleController.cs" />
-     <Compile Include="Assets\4.Scripts\Battle\BattleEncounter.cs" />
-     <Compile Include="Assets\4.Scripts\Battle\BattleEnemyAssignment.cs" />
-     <Compile Include="Assets\4.Scripts\Battle\BattleEntityAssignment.cs" />
-     <Compile Include="Assets\4.Scripts\Battle\BattleShelfAssignment.cs" />
-     <Compile Include="Assets\4.Scripts\Battle\BattleTurnManager.cs" />
-     <Compile Include="Assets\4.Scripts\Battle\BattleZoneControl.cs" />
-     <Compile Include="Assets\4.Scripts\Character\CharacterFollower.cs" />
-     <Compile Include="Assets\4.Scripts\Character\CharacterMovement.cs" />
-     <Compile Include="Assets\4.Scripts\Effects\CharacterGhost.cs" />
-     <Compile Include="Assets\4.Scripts\Effects\CharacterGhostMovement.cs" />
-     <Compile Include="Assets\4.Scripts\Effects\EntityDust.cs" />
-     <Compile Include="Assets\4.Scripts\Entity\EntityChase.cs" />
-     <Compile Include="Assets\4.Scripts\Entity\EntityFollowFlip.cs" />
-     <Compile Include="Assets\4.Scripts\Items, Objects &amp; Puzzles\ItemHandler.cs" />
-     <Compile Include="Assets\4.Scripts\Items, Objects &amp; Puzzles\ItemPickup.cs" />
-     <Compile Include="Assets\4.Scripts\Items, Objects &amp; Puzzles\ItemPickup2.cs" />
-     <Compile Include="Assets\4.Scripts\Items, Objects &amp; Puzzles\PuzzlePushbox.cs" />
-     <Compile Include="Assets\4.Scripts\Menus\HudHealth.cs" />
-     <Compile Include="Assets\4.Scripts\Menus\HudInventory.cs" />
-     <Compile Include="Assets\4.Scripts\Menus\HudInventoryItemAssignment.cs" />
-     <Compile Include="Assets\4.Scripts\Menus\HudTextboxManager.cs" />
-     <Compile Include="Assets\4.Scripts\Menus\MenuControl.cs" />
-     <Compile Include="Assets\4.Scripts\Menus\MenuScrollControl.cs" />
-     <Compile Include="Assets\4.Scripts\Menus\MenuScrollMinusControl.cs" />
-     <Compile Include="Assets\4.Scripts\Menus\MenuScrollString.cs" />
-     <Compile Include="Assets\4.Scripts\Menus\OLDHudTextboxManager.cs" />
-     <Compile Include="Assets\4.Scripts\Menus\TitleErase.cs" />
-     <Compile Include="Assets\4.Scripts\Menus\TitleLoad.cs" />
-     <Compile Include="Assets\4.Scripts\Menus\TitleQuit.cs" />
-     <Compile Include="Assets\4.Scripts\Menus\TitleSaveIcons.cs" />
-     <Compile Include="Assets\4.Scripts\Menus\TitleSaveInfo.cs" />
-     <Compile Include="Assets\4.Scripts\Menus\TitleSaveLoad.cs" />
-     <Compile Include="Assets\4.Scripts\Menus\TitleSaveOptions.cs" />
-     <Compile Include="Assets\4.Scripts\System\SaveManager.cs" />
-     <Compile Include="Assets\4.Scripts\System\SystemCamera.cs" />
-     <Compile Include="Assets\4.Scripts\System\SystemConfig.cs" />
-     <Compile Include="Assets\4.Scripts\System\SystemConfigManager.cs" />
-     <Compile Include="Assets\4.Scripts\System\SystemEntityID.cs" />
-     <Compile Include="Assets\4.Scripts\System\SystemFadeTransition.cs" />
-     <Compile Include="Assets\4.Scripts\System\SystemPersistantData.cs" />
-     <Compile Include="Assets\4.Scripts\Triggers\TriggerCutscene.cs" />
-     <Compile Include="Assets\4.Scripts\Triggers\TriggerInteract.cs" />
-     <Compile Include="Assets\4.Scripts\Triggers\TriggerPartySet.cs" />
-     <Compile Include="Assets\4.Scripts\Triggers\TriggerSave.cs" />
-     <Compile Include="Assets\4.Scripts\Triggers\TriggerWarp.cs" />
-     <Compile Include="Assets\4.Scripts\Triggers\TriggerWarpLevel.cs" />
-     <Compile Include="Assets\OldEventStuff\Events\CharacterWakeUp.cs" />
-     <Compile Include="Assets\OldEventStuff\TriggerEvent.cs" />
+     <Compile Include="Assets\Scripts\Battle_ActionFunctions.cs" />
+     <Compile Include="Assets\Scripts\Battle_Background_Looper.cs" />
+     <Compile Include="Assets\Scripts\Battle_Background_Movement.cs" />
+     <Compile Include="Assets\Scripts\Battle_Controller.cs" />
+     <Compile Include="Assets\Scripts\Battle_Encounter.cs" />
+     <Compile Include="Assets\Scripts\Battle_Enemy_Assignment.cs" />
+     <Compile Include="Assets\Scripts\Battle_Entity_Assignment.cs" />
+     <Compile Include="Assets\Scripts\Battle_Shelf_Assignment.cs" />
+     <Compile Include="Assets\Scripts\Battle_Turn_Manager.cs" />
+     <Compile Include="Assets\Scripts\Battle_Zone_Control.cs" />
+     <Compile Include="Assets\Scripts\Entity_Character_Follower.cs" />
+     <Compile Include="Assets\Scripts\Entity_Character_Movement.cs" />
+     <Compile Include="Assets\Scripts\Entity_Chase.cs" />
+     <Compile Include="Assets\Scripts\Entity_Dust.cs" />
+     <Compile Include="Assets\Scripts\Entity_Effect_Character_Ghost.cs" />
+     <Compile Include="Assets\Scripts\Entity_Follow_Flip.cs" />
+     <Compile Include="Assets\Scripts\Hud_Health.cs" />
+     <Compile Include="Assets\Scripts\Hud_Inventory.cs" />
+     <Compile Include="Assets\Scripts\Hud_Textbox_Manager.cs" />
+     <Compile Include="Assets\Scripts\Menu_Control.cs" />
+     <Compile Include="Assets\Scripts\Menu_Scroll_Control.cs" />
+     <Compile Include="Assets\Scripts\Menu_Scroll_MinusControl.cs" />
+     <Compile Include="Assets\Scripts\Menu_Scroll_String.cs" />
+     <Compile Include="Assets\Scripts\System\SaveManager.cs" />
+     <Compile Include="Assets\Scripts\System\SystemCamera.cs" />
+     <Compile Include="Assets\Scripts\System\SystemConfig.cs" />
+     <Compile Include="Assets\Scripts\System\SystemEntityID.cs" />
+     <Compile Include="Assets\Scripts\System\SystemFadeTransition.cs" />
+     <Compile Include="Assets\Scripts\System\SystemPersistantData.cs" />
+     <Compile Include="Assets\Scripts\System_Config_Manager.cs" />
+     <Compile Include="Assets\Scripts\Title_Erase.cs" />
+     <Compile Include="Assets\Scripts\Title_Load.cs" />
+     <Compile Include="Assets\Scripts\Title_Quit.cs" />
+     <Compile Include="Assets\Scripts\Title_Save_Icons.cs" />
+     <Compile Include="Assets\Scripts\Title_Save_Info.cs" />
+     <Compile Include="Assets\Scripts\Title_Save_Load.cs" />
+     <Compile Include="Assets\Scripts\Title_Save_Options.cs" />
+     <Compile Include="Assets\Scripts\Trigger_Cutscene.cs" />
+     <Compile Include="Assets\Scripts\Trigger_Interact.cs" />
+     <Compile Include="Assets\Scripts\Trigger_PartySet.cs" />
+     <Compile Include="Assets\Scripts\Trigger_Save.cs" />
+     <Compile Include="Assets\Scripts\Trigger_Warp.cs" />
+     <Compile Include="Assets\Scripts\Trigger_Warp_Level.cs" />
+     <Compile Include="Assets\Scripts\Unused or Unknown\Entity_Effect_Character_Ghost_Movement.cs" />
+     <Compile Include="Assets\Scripts\Unused or Unknown\HudInventoryItemAssignment.cs" />
+     <Compile Include="Assets\Scripts\Unused or Unknown\ItemPickup.cs" />
+     <Compile Include="Assets\Scripts\Unused or Unknown\ItemPickup2.cs" />
+     <Compile Include="Assets\Scripts\Unused or Unknown\Item_Handler.cs" />
+     <Compile Include="Assets\Scripts\Unused or Unknown\OLDHudTextboxManager.cs" />
+     <Compile Include="Assets\Scripts\Unused or Unknown\PuzzlePushbox.cs" />
  <Reference Include="UnityEngine">
  <HintPath>/home/lizband_ucc/Documents/Apps/Unity/Hub/Editor/2019.4.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -289,7 +286,7 @@
  <HintPath>/home/lizband_ucc/Documents/Apps/Unity/Hub/Editor/2019.4.10f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
  </Reference>
  <Reference Include="Pathfinding.Ionic.Zip.Reduced">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Assets/6.Packages/AstarPathfinding/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Assets/Packages/AstarPathfinding/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>/home/lizband_ucc/Documents/Apps/Unity/Hub/Editor/2019.4.10f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
