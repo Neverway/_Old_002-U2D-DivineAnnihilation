@@ -13,8 +13,8 @@ public class Trigger_Warp_Level : MonoBehaviour
     public float nextRoomX;
     public float nextRoomY;
     public string loadRoom;
-    public GameObject Player;
-    public bool PlayTransition;
+    //public GameObject Player;
+    //public bool PlayTransition;
 
     public void Update()
     {
@@ -27,6 +27,8 @@ public class Trigger_Warp_Level : MonoBehaviour
     {
         if (other.gameObject.name == "Entity Fox")
         {
+            Debug.Log(PlayerPrefs.GetInt("LoadingNewRoom"));
+            PlayerPrefs.SetInt("LoadingNewRoom", 1);
             SceneManager.LoadScene(loadRoom);
         }
     }

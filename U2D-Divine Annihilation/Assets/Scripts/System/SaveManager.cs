@@ -27,6 +27,14 @@ public class SaveManager : MonoBehaviour
             activeSave.saveProfileName = PlayerPrefs.GetString("Current Save Profile");
             Load();
         }
+        Debug.Log(PlayerPrefs.GetInt("LoadingNewRoom"));
+        if (PlayerPrefs.GetInt("LoadingNewRoom") == 1)
+        {
+            Debug.Log("THE NEXT ROOM IS LOADING!!!!");
+            activeSave.playerSavePosition.x = PlayerPrefs.GetFloat("NextRoomX");
+            activeSave.playerSavePosition.y = PlayerPrefs.GetFloat("NextRoomY");
+            PlayerPrefs.SetInt("LoadingNewRoom", 0);
+        }
     }
 
 
@@ -81,6 +89,9 @@ public class SaveManager : MonoBehaviour
 
         // Safty data
         PlayerPrefs.SetFloat("LoadPlayerPref", 0);
+        PlayerPrefs.SetInt("LoadingNewRoom", 0);
+        PlayerPrefs.SetFloat("NextRoomX", 0);
+        PlayerPrefs.SetFloat("NextRoomY", 0);
     }
 
 
