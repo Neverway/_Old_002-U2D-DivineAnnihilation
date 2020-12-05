@@ -573,7 +573,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ExitTarget: {fileID: 972973870}
-  Player: {fileID: 7729900035222608715}
   PlayTransition: 1
 --- !u!212 &19580877
 SpriteRenderer:
@@ -2270,7 +2269,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ExitTarget: {fileID: 688807176}
-  Player: {fileID: 7729900035222608715}
   PlayTransition: 1
 --- !u!212 &110219410
 SpriteRenderer:
@@ -5089,7 +5087,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ExitTarget: {fileID: 1076718789}
-  Player: {fileID: 7729900035222608715}
   PlayTransition: 1
 --- !u!212 &262279585
 SpriteRenderer:
@@ -5403,8 +5400,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextRoomX: -10
   nextRoomY: -10
-  loadRoom: SceneC1S2
-  Player: {fileID: 0}
+  loadRoom: C1S2
+  Player: {fileID: 7729900035222608715}
   PlayTransition: 1
 --- !u!212 &320971673
 SpriteRenderer:
@@ -32687,7 +32684,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ExitTarget: {fileID: 1058244911}
-  Player: {fileID: 7729900035222608715}
   PlayTransition: 1
 --- !u!212 &937137472
 SpriteRenderer:
@@ -32812,7 +32808,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ExitTarget: {fileID: 834787122}
-  Player: {fileID: 7729900035222608715}
   PlayTransition: 1
 --- !u!212 &957314510
 SpriteRenderer:
@@ -76518,7 +76513,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ExitTarget: {fileID: 1123312205}
-  Player: {fileID: 7729900035222608715}
   PlayTransition: 1
 --- !u!212 &1185025745
 SpriteRenderer:
@@ -88002,6 +87996,16 @@ MonoBehaviour:
     scene: 
     playerSavePosition: {x: 0, y: 0}
     playerHealth: 0
+    item1: 
+    item2: 
+    item3: 
+    item4: 
+    item5: 
+    equipment1: 
+    equipment2: 
+    equipment3: 
+    equipment4: 
+    equipment5: 
     partyMemberOne: 
     partyMemberOneHealth: 0
     partyMemberTwo: 
@@ -119710,7 +119714,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ExitTarget: {fileID: 109064096}
-  Player: {fileID: 7729900035222608715}
   PlayTransition: 1
 --- !u!212 &1781314466
 SpriteRenderer:
@@ -140060,7 +140063,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ExitTarget: {fileID: 299995556}
-  Player: {fileID: 7729900035222608715}
   PlayTransition: 1
 --- !u!212 &2104530686
 SpriteRenderer:

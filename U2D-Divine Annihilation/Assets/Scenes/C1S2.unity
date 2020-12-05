@@ -66859,6 +66859,16 @@ MonoBehaviour:
     scene: 
     playerSavePosition: {x: 0, y: 0}
     playerHealth: 0
+    item1: 
+    item2: 
+    item3: 
+    item4: 
+    item5: 
+    equipment1: 
+    equipment2: 
+    equipment3: 
+    equipment4: 
+    equipment5: 
     partyMemberOne: 
     partyMemberOneHealth: 0
     partyMemberTwo: 
@@ -109996,7 +110006,7 @@ MonoBehaviour:
   movementSpeed: 0
   storedSpeed: 0
   canMove: 1
-  sprintDust: 0
+  sprintDust: 1
   Rigidbody: {fileID: 7729900035222608711}
   characterAnimator: {fileID: 7729900035222608716}
   dustParticleSystem: {fileID: 1757868181}
