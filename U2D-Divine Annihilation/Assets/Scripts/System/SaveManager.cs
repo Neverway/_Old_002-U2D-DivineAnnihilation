@@ -6,6 +6,7 @@
 //=============================================================================
 
 using System.IO;
+using System.Collections;
 using System.Xml.Serialization;
 using UnityEngine;
 
@@ -15,7 +16,7 @@ public class SaveManager : MonoBehaviour
     public SaveData activeSave;
     public bool hasLoaded;
     public bool loadFileOnCreation = false;
-    public GameObject configTarget;
+    private GameObject playerRef;
     private SaveManager saveManager;
 
 
@@ -31,6 +32,8 @@ public class SaveManager : MonoBehaviour
         if (PlayerPrefs.GetInt("LoadingNewRoom") == 1)
         {
             Debug.Log("THE NEXT ROOM IS LOADING!!!!");
+            playerRef = GameObject.FindWithTag("Player");
+            playerRef.transform.position = new Vector2(PlayerPrefs.GetFloat("NextRoomX"), PlayerPrefs.GetFloat("NextRoomY"));
             activeSave.playerSavePosition.x = PlayerPrefs.GetFloat("NextRoomX");
             activeSave.playerSavePosition.y = PlayerPrefs.GetFloat("NextRoomY");
             PlayerPrefs.SetInt("LoadingNewRoom", 0);
@@ -41,7 +44,14 @@ public class SaveManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        saveManager = configTarget.GetComponent<SaveManager>();
+        saveManager = FindObjectOfType<SaveManager>();
+    }
+
+
+    IEnumerator Teleport()
+    {
+        yield return new WaitForSeconds(0.6f);
+        PlayerPrefs.SetInt("LoadingNewRoom", 0);
     }
 
 
@@ -51,6 +61,17 @@ public class SaveManager : MonoBehaviour
         if (PlayerPrefs.GetFloat("LoadPlayerPref") >= 1)
         {
             PlayerPrefLoad();
+        }
+        if (PlayerPrefs.GetInt("LoadingNewRoom") == 1)
+        {
+            Debug.Log("THE NEXT ROOM IS LOADING!!!!");
+            playerRef = GameObject.FindWithTag("Player");
+            Debug.Log(PlayerPrefs.GetFloat("NextRoomX"));
+            Debug.Log(PlayerPrefs.GetFloat("NextRoomY"));
+            playerRef.transform.position = new Vector2(PlayerPrefs.GetFloat("NextRoomX"), PlayerPrefs.GetFloat("NextRoomY"));
+            activeSave.playerSavePosition.x = PlayerPrefs.GetFloat("NextRoomX");
+            activeSave.playerSavePosition.y = PlayerPrefs.GetFloat("NextRoomY");
+            StartCoroutine("Teleport");
         }
     }
 

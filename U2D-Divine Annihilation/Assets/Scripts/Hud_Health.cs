@@ -11,13 +11,12 @@ public class Hud_Health : MonoBehaviour
 {
     public RectTransform healthBar;
     public float currentHealth;
-    public GameObject configTarget;
     private SaveManager saveManager;
 
     void Start()
     {
         healthBar = transform.GetComponent<RectTransform>();
-        saveManager = configTarget.GetComponent<SaveManager>();
+        saveManager = FindObjectOfType<SaveManager>();
         currentHealth = saveManager.activeSave.playerHealth;
     }
 

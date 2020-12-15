@@ -1046,7 +1046,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 207.5, y: -34.5}
+  m_AnchoredPosition: {x: 208.75, y: -34.5}
   m_SizeDelta: {x: 108, y: 27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &69686844
@@ -1507,7 +1507,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 207.5, y: -118.5}
+  m_AnchoredPosition: {x: 208.75, y: -118.5}
   m_SizeDelta: {x: 108, y: 27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &76716567
@@ -4053,7 +4053,6 @@ MonoBehaviour:
   spriteGraphic: {fileID: 0}
   characterAnimator: {fileID: 0}
   dustParticleSystem: {fileID: 0}
-  configTarget: {fileID: 0}
 --- !u!61 &230974470
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21751,7 +21750,6 @@ MonoBehaviour:
   spriteGraphic: {fileID: 527636009}
   characterAnimator: {fileID: 527636013}
   dustParticleSystem: {fileID: 2077374746}
-  configTarget: {fileID: 1332162959}
 --- !u!114 &527636011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27567,7 +27565,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   partyMemberID: Miyu
   addMember: 1
-  configTarget: {fileID: 1332162959}
 --- !u!61 &568571374
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38646,7 +38643,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 1003831553}
   currentHealth: 10.99
-  configTarget: {fileID: 1332162959}
 --- !u!114 &1003831555
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88421,7 +88417,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1332162960
 Transform:
   m_ObjectHideFlags: 0
@@ -88472,7 +88468,6 @@ MonoBehaviour:
     hasWokenUp: 0
   hasLoaded: 0
   loadFileOnCreation: 1
-  configTarget: {fileID: 1332162959}
 --- !u!114 &1332162962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89872,7 +89867,6 @@ MonoBehaviour:
   spriteGraphic: {fileID: 0}
   characterAnimator: {fileID: 0}
   dustParticleSystem: {fileID: 0}
-  configTarget: {fileID: 0}
 --- !u!61 &1424258828
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -90704,7 +90698,7 @@ GameObject:
   - component: {fileID: 1483646122}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110928,7 +110922,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 207.5, y: -90.5}
+  m_AnchoredPosition: {x: 208.75, y: -90.5}
   m_SizeDelta: {x: 108, y: 27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1523586401
@@ -112784,7 +112778,6 @@ MonoBehaviour:
   spriteGraphic: {fileID: 1635424488}
   characterAnimator: {fileID: 1635424492}
   dustParticleSystem: {fileID: 1321873802}
-  configTarget: {fileID: 1332162959}
 --- !u!114 &1635424490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113067,7 +113060,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 207.5, y: -6.48}
+  m_AnchoredPosition: {x: 208.75, y: -6.48}
   m_SizeDelta: {x: 108, y: 27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1644246842
@@ -131611,7 +131604,6 @@ MonoBehaviour:
   spriteGraphic: {fileID: 1883151691}
   characterAnimator: {fileID: 1883151695}
   dustParticleSystem: {fileID: 1786711793}
-  configTarget: {fileID: 1332162959}
 --- !u!114 &1883151693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133146,7 +133138,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 207.5, y: -62.5}
+  m_AnchoredPosition: {x: 208.75, y: -62.5}
   m_SizeDelta: {x: 108, y: 27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1961765989
@@ -134296,7 +134288,6 @@ MonoBehaviour:
   spriteGraphic: {fileID: 0}
   characterAnimator: {fileID: 0}
   dustParticleSystem: {fileID: 0}
-  configTarget: {fileID: 0}
 --- !u!61 &2038882702
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -141770,7 +141761,6 @@ MonoBehaviour:
   Rigidbody: {fileID: 7729900035222608711}
   characterAnimator: {fileID: 7729900035222608716}
   dustParticleSystem: {fileID: 1757868181}
-  configTarget: {fileID: 1332162959}
 --- !u!1 &7729900035222608715
 GameObject:
   m_ObjectHideFlags: 0

@@ -21,14 +21,13 @@ public class Entity_Character_Movement : MonoBehaviour
 
     private Hud_Textbox_Manager DialogueManager;
     private Hud_Inventory InventoryManager;
-    public GameObject configTarget;
     private SaveManager saveManager;
     Vector2 movement;
 
     void Start()
     {
         DialogueManager = FindObjectOfType<Hud_Textbox_Manager>(); // Find the dialogue manager script
-        saveManager = configTarget.GetComponent<SaveManager>();
+        saveManager = FindObjectOfType<SaveManager>();
         movementSpeed = walkSpeed;                               // Set the starting movement speed
         transform.position = new Vector2(saveManager.activeSave.playerSavePosition.x, saveManager.activeSave.playerSavePosition.y);
     }

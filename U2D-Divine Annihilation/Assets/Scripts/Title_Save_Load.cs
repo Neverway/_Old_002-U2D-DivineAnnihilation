@@ -41,6 +41,7 @@ public class Title_Save_Load : MonoBehaviour
                     saveManager.CreateSave();
                     saveManager.Save();
                     loadingScreen.SetActive(true);
+                    saveManager.loadFileOnCreation = true;
                     saveManager.activeSave.scene = "C1S1";
                     SceneManager.LoadScene("C1S1");
                 }
@@ -50,6 +51,7 @@ public class Title_Save_Load : MonoBehaviour
                     saveManager.activeSave.saveProfileName = "SlotOne";
                     PlayerPrefs.SetString("Current Save Profile", saveManager.activeSave.saveProfileName);
                     loadFileScreen.SetActive(true);
+                    saveManager.loadFileOnCreation = true;
                     selfTarget.SetActive(false);
                 }
             }
