@@ -55,6 +55,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Item_Pickup.cs" />
      <Compile Include="Assets\Scripts\Battle_ActionFunctions.cs" />
      <Compile Include="Assets\Scripts\Battle_Background_Looper.cs" />
      <Compile Include="Assets\Scripts\Battle_Background_Movement.cs" />
@@ -100,11 +101,12 @@
      <Compile Include="Assets\Scripts\Trigger_Warp_Level.cs" />
      <Compile Include="Assets\Scripts\Unused or Unknown\Entity_Effect_Character_Ghost_Movement.cs" />
      <Compile Include="Assets\Scripts\Unused or Unknown\HudInventoryItemAssignment.cs" />
-     <Compile Include="Assets\Scripts\Unused or Unknown\ItemPickup.cs" />
      <Compile Include="Assets\Scripts\Unused or Unknown\ItemPickup2.cs" />
      <Compile Include="Assets\Scripts\Unused or Unknown\Item_Handler.cs" />
      <Compile Include="Assets\Scripts\Unused or Unknown\OLDHudTextboxManager.cs" />
+     <Compile Include="Assets\Scripts\Unused or Unknown\OLDItemPickup.cs" />
      <Compile Include="Assets\Scripts\Unused or Unknown\PuzzlePushbox.cs" />
+     <Compile Include="Assets\System_PersistentOnOverworld.cs" />
  <Reference Include="UnityEngine">
  <HintPath>/home/lizband_ucc/Documents/Apps/Unity/Hub/Editor/2019.4.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>

@@ -11,12 +11,11 @@ public class Trigger_PartySet : MonoBehaviour
 {
     public string partyMemberID;
     public bool addMember;
-    public GameObject configTarget;
     private SaveManager saveManager;
 
     void Start()
     {
-        saveManager = configTarget.GetComponent<SaveManager>();
+        saveManager = FindObjectOfType<SaveManager>();
     }
 
 

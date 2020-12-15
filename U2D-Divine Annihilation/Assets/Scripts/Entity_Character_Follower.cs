@@ -19,7 +19,6 @@ public class Entity_Character_Follower : MonoBehaviour
     public Transform spriteGraphic;
     public Animator characterAnimator;
     public ParticleSystem dustParticleSystem;
-    public GameObject configTarget;
     private SaveManager saveManager;
 
     Path path;
@@ -35,7 +34,7 @@ public class Entity_Character_Follower : MonoBehaviour
         seeker = GetComponent<Seeker>();
         rigidbody2d = GetComponent<Rigidbody2D>();
         characterMovement = FindObjectOfType<Entity_Character_Movement>();
-        saveManager = configTarget.GetComponent<SaveManager>();
+        saveManager = FindObjectOfType<SaveManager>();
 
         InvokeRepeating("UpdatePath", 0f, 0.5f);
     }
