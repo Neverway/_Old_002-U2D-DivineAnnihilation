@@ -27,7 +27,6 @@ public class Trigger_Warp_Level : MonoBehaviour
         {
             PlayerPrefs.SetFloat("NextRoomX", nextRoomX);
             PlayerPrefs.SetFloat("NextRoomY", nextRoomY);
-            Debug.Log(PlayerPrefs.GetInt("LoadingNewRoom"));
             PlayerPrefs.SetInt("LoadingNewRoom", 1);
             SceneManager.LoadScene(loadRoom);
         }

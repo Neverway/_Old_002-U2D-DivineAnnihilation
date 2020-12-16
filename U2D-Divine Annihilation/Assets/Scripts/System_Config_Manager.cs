@@ -28,8 +28,11 @@ public class System_Config_Manager : MonoBehaviour
 
     void Update()
     {
+        DialogueManager = FindObjectOfType<Hud_Textbox_Manager>();
+        InventoryManager = FindObjectOfType<Hud_Inventory>();
+        characterMovement = FindObjectOfType<Entity_Character_Movement>();
         // Menu active
-        if(DialogueManager.dialogueBoxActive | InventoryManager.inventoryBoxActive | overrideCanMove)
+        if (DialogueManager.dialogueBoxActive | InventoryManager.inventoryBoxActive | overrideCanMove)
         {
             menuActive = true;
             characterMovement.canMove = false;

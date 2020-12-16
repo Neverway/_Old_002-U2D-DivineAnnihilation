@@ -86,6 +86,7 @@
      <Compile Include="Assets\Scripts\System\SystemFadeTransition.cs" />
      <Compile Include="Assets\Scripts\System\SystemPersistantData.cs" />
      <Compile Include="Assets\Scripts\System_Config_Manager.cs" />
+     <Compile Include="Assets\Scripts\System_PersistentOnOverworld.cs" />
      <Compile Include="Assets\Scripts\Title_Erase.cs" />
      <Compile Include="Assets\Scripts\Title_Load.cs" />
      <Compile Include="Assets\Scripts\Title_Quit.cs" />
@@ -106,7 +107,6 @@
      <Compile Include="Assets\Scripts\Unused or Unknown\OLDHudTextboxManager.cs" />
      <Compile Include="Assets\Scripts\Unused or Unknown\OLDItemPickup.cs" />
      <Compile Include="Assets\Scripts\Unused or Unknown\PuzzlePushbox.cs" />
-     <Compile Include="Assets\System_PersistentOnOverworld.cs" />
  <Reference Include="UnityEngine">
  <HintPath>/home/lizband_ucc/Documents/Apps/Unity/Hub/Editor/2019.4.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>

@@ -20,10 +20,13 @@ public class Hud_Inventory : MonoBehaviour
     public bool acceptingInput;
     private Entity_Character_Movement characterMovement; // A referance to the player movement so the dialogue box can freeze the player when it opens
     private System_Config_Manager global;
+    private SaveManager saveManager;
 
     public bool inItems = true;
     public Image[] items;
     public Image[] equipment;
+    public Text[] itemNames;
+    public Text[] equipmentNames;
     public bool wrapAround;
     public int currentFrame;
     public Sprite selected;
@@ -34,6 +37,7 @@ public class Hud_Inventory : MonoBehaviour
         // selectedButton.Select();
         characterMovement = FindObjectOfType<Entity_Character_Movement>(); // Find the character movment script
         global = FindObjectOfType<System_Config_Manager>(); // Find the config script
+        saveManager = FindObjectOfType<SaveManager>();
         inItems = true;
     }
 
@@ -76,6 +80,21 @@ public class Hud_Inventory : MonoBehaviour
             }
         }
 
+        // Display item names
+        if (inventoryBoxActive)
+        {
+            itemNames[0].text = saveManager.activeSave.item1;
+            itemNames[1].text = saveManager.activeSave.item2;
+            itemNames[2].text = saveManager.activeSave.item3;
+            itemNames[3].text = saveManager.activeSave.item4;
+            itemNames[4].text = saveManager.activeSave.item5;
+
+            equipmentNames[0].text = saveManager.activeSave.equipment1;
+            equipmentNames[1].text = saveManager.activeSave.equipment2;
+            equipmentNames[2].text = saveManager.activeSave.equipment3;
+            equipmentNames[3].text = saveManager.activeSave.equipment4;
+            equipmentNames[4].text = saveManager.activeSave.equipment5;
+        }
 
         // Vertical scrolling
         if (inItems && inventoryBoxActive)
