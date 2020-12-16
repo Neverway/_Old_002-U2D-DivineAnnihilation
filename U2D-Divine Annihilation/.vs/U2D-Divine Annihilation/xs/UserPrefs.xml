@@ -1,14 +1,16 @@
 ﻿<Properties StartupConfiguration="{52A108CE-312A-7646-8A28-1F3B11C710B6}|Unit Tests">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/System_Config_Manager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Trigger_Interact.cs">
     <Files>
       <File FileName="Assets/Scripts/System/SaveManager.cs" Line="20" Column="37" />
-      <File FileName="Assets/Scripts/Trigger_Warp_Level.cs" Line="28" Column="58" />
-      <File FileName="Assets/Item_Pickup.cs" Line="31" Column="65" />
+      <File FileName="Assets/Scripts/Trigger_Warp_Level.cs" Line="1" Column="1" />
+      <File FileName="Assets/Item_Pickup.cs" Line="5" Column="41" />
       <File FileName="Assets/Scripts/Hud_Inventory.cs" Line="96" Column="27" />
       <File FileName="Assets/Scripts/Hud_Health.cs" Line="19" Column="55" />
       <File FileName="Assets/Scripts/Hud_Textbox_Manager.cs" Line="15" Column="16" />
       <File FileName="Assets/Scripts/Entity_Character_Movement.cs" Line="46" Column="57" />
-      <File FileName="Assets/Scripts/System_Config_Manager.cs" Line="24" Column="62" />
+      <File FileName="Assets/Scripts/System_Config_Manager.cs" Line="33" Column="75" />
+      <File FileName="Assets/Trigger_DoorLock.cs" Line="27" Column="13" />
+      <File FileName="Assets/Scripts/Trigger_Interact.cs" Line="11" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-Editor PreferredExecutionTarget="MonoDevelop.Default" />
