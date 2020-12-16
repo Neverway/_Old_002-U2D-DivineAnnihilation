@@ -28,10 +28,9 @@ public class SaveManager : MonoBehaviour
             activeSave.saveProfileName = PlayerPrefs.GetString("Current Save Profile");
             Load();
         }
-        Debug.Log(PlayerPrefs.GetInt("LoadingNewRoom"));
         if (PlayerPrefs.GetInt("LoadingNewRoom") == 1)
         {
-            Debug.Log("THE NEXT ROOM IS LOADING!!!!");
+            Debug.Log("[ID002 DA]: " + "A new scene is being loaded...");
             playerRef = GameObject.FindWithTag("Player");
             playerRef.transform.position = new Vector2(PlayerPrefs.GetFloat("NextRoomX"), PlayerPrefs.GetFloat("NextRoomY"));
             activeSave.playerSavePosition.x = PlayerPrefs.GetFloat("NextRoomX");
@@ -64,10 +63,8 @@ public class SaveManager : MonoBehaviour
         }
         if (PlayerPrefs.GetInt("LoadingNewRoom") == 1)
         {
-            Debug.Log("THE NEXT ROOM IS LOADING!!!!");
+            Debug.Log("[ID002 DA]: " + "A new scene is being loaded...");
             playerRef = GameObject.FindWithTag("Player");
-            Debug.Log(PlayerPrefs.GetFloat("NextRoomX"));
-            Debug.Log(PlayerPrefs.GetFloat("NextRoomY"));
             playerRef.transform.position = new Vector2(PlayerPrefs.GetFloat("NextRoomX"), PlayerPrefs.GetFloat("NextRoomY"));
             activeSave.playerSavePosition.x = PlayerPrefs.GetFloat("NextRoomX");
             activeSave.playerSavePosition.y = PlayerPrefs.GetFloat("NextRoomY");
@@ -113,6 +110,8 @@ public class SaveManager : MonoBehaviour
         PlayerPrefs.SetInt("LoadingNewRoom", 0);
         PlayerPrefs.SetFloat("NextRoomX", 0);
         PlayerPrefs.SetFloat("NextRoomY", 0);
+
+        Debug.Log("[ID002 DA]: " + "Created new .DASP under " + activeSave.saveProfileName);
     }
 
 
@@ -125,7 +124,7 @@ public class SaveManager : MonoBehaviour
         var stream = new FileStream(dataPath + "/" + activeSave.saveProfileName + ".dasp", FileMode.Create);
         serializer.Serialize(stream, activeSave);
         stream.Close();
-        Debug.Log("Saved information to .DASP");
+        Debug.Log("[ID002 DA]: " + "Saved information to .DASP");
     }
 
 
@@ -139,7 +138,7 @@ public class SaveManager : MonoBehaviour
             var stream = new FileStream(dataPath + "/" + activeSave.saveProfileName + ".dasp", FileMode.Open);
             activeSave = serializer.Deserialize(stream) as SaveData;
             stream.Close();
-            Debug.Log("Loaded information from .DASP");
+            Debug.Log("[ID002 DA]: " + "Loaded information from .DASP");
             hasLoaded = true;
         }
     }
@@ -195,8 +194,7 @@ public class SaveManager : MonoBehaviour
         if (System.IO.File.Exists(dataPath + "/" + activeSave.saveProfileName + ".dasp"))
         {
             File.Delete(dataPath + "/" + activeSave.saveProfileName + ".dasp");
-
-            Debug.Log("Deleted current .DASP");
+            Debug.Log("[ID002 DA]: " + "Deleted current .DASP");
         }
     }
 }

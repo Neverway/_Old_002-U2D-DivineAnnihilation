@@ -2343,18 +2343,10 @@ MonoBehaviour:
   inventoryBoxActive: 0
   acceptingInput: 1
   inItems: 0
-  items:
-  - {fileID: 378231600}
-  - {fileID: 680843212}
-  - {fileID: 120267368}
-  - {fileID: 136854516}
-  - {fileID: 1278231704}
-  equipment:
-  - {fileID: 55579643}
-  - {fileID: 1603864967}
-  - {fileID: 878654803}
-  - {fileID: 1215873657}
-  - {fileID: 1505626800}
+  items: []
+  equipment: []
+  itemNames: []
+  equipmentNames: []
   wrapAround: 0
   currentFrame: 0
   selected: {fileID: 21300000, guid: d9f78c2cfb89f15998a40ce0c93b8aee, type: 3}
