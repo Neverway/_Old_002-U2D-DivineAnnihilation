@@ -21,10 +21,10 @@ MonoBehaviour:
     y: 30
     width: 1360
     height: 626
-  m_MinSize: {x: 678, y: 492}
+  m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 20270
+  controlID: 45065
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -138,10 +138,10 @@ MonoBehaviour:
     y: 0
     width: 1030
     height: 626
-  m_MinSize: {x: 402, y: 492}
+  m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 20271
+  controlID: 45066
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -163,10 +163,10 @@ MonoBehaviour:
     y: 0
     width: 1030
     height: 355
-  m_MinSize: {x: 402, y: 221}
-  m_MaxSize: {x: 8002, y: 4021}
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 20272
+  controlID: 45067
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -186,8 +186,8 @@ MonoBehaviour:
     y: 0
     width: 344
     height: 355
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -224,21 +224,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 2247ffff0448ffff3a49ffff3c5effff6c60ffff646affff8a6cffff466dffff686fffff5e70ffff7a72ffffca7fffff4884ffffba8bffffa28cffff608effffe290ffff2692ffff5a93ffffe09affff2e9dffff3ea2ffff2eadffff5aadffff26aeffffeeb9fffffabaffffbabbffff46bdffffe2c4ffff98c8ffffd8d1ffff00d2ffffcad6ffff50dbffff3adeffff0ae0ffff30e0ffff36e1ffffd8e2ffff68e4ffff42e9ffff74e9ffffbcf7ffff30fbfffff4ffffffa25d00002a5e0000fa5e00002260000060610000386700007811010000120100f8130100361501000e1b0100fa4f0100ca50010066b00100eeb0010088f9010070fb010038fc01002a0d0200d40e0200843d02002e3f0200c64a0200e24c0200c24d02006c4f0200e24f0200dcd9020086db0200c8b20300d06204000ed20400ced90400e0d90400e2d90400082c0500c8330500da330500e6800500128105006c8105002083050028830500048405005684050020860500c08605000087050024880500aa880500d4880500208905008e8a0500ceac0500faac050054ad050008af050010af0500ecaf05003eb0050008b20500a8b20500e8b205000cb4050092b40500bcb4050008b5050076b60500d6c30500eec305002ec40500a8c50500b0c50500f0c5050022c605005cc70500b2c70500d6c70500a0c8050014c9050026c9050084ca05000ce205002ce40500
+      m_ExpandedIDs: 2403ffff5206ffff1c09ffffc414ffffea14ffff1815ffff1416ffffcc1affff4a1cffff781fffff7a26ffffe427ffff1628ffff6039ffffca3bffff303cffff5e3cffff0241ffff2e41ffffc042ffff0043ffff6043ffffd844ffff2247ffff0448ffff3a49ffff3c5effff6c60ffff646affff8a6cffff466dffff686fffff5e70ffff7a72ffffca7fffff4884ffffba8bffffa28cffff608effffe290ffff2692ffff5a93ffffe09affff2e9dffff3ea2ffff2eadffff5aadffff26aeffffeeb9fffffabaffffbabbffff46bdffffe2c4ffff98c8ffffd8d1ffff00d2ffffcad6ffff50dbffff3adeffff0ae0ffff30e0ffff36e1ffffd8e2ffff68e4ffff42e9ffff74e9ffffbcf7ffff30fbfffff4ffffffa25d00002a5e0000fa5e00002260000060610000386700007811010000120100f8130100361501000e1b0100fa4f0100ca50010066b00100eeb0010088f9010070fb010038fc01002a0d0200d40e0200843d02002e3f0200c64a0200e24c0200c24d02006c4f0200e24f0200dcd9020086db0200c8b20300d06204000ed20400ced90400e0d90400e2d90400082c0500c8330500da330500e6800500128105006c8105002083050028830500048405005684050020860500c08605000087050024880500aa880500d4880500208905008e8a0500ceac0500faac050054ad050008af050010af0500ecaf05003eb0050008b20500a8b20500e8b205000cb4050092b40500bcb4050008b5050076b60500d6c30500eec305002ec40500a8c50500b0c50500f0c5050022c605005cc70500b2c70500d6c70500a0c8050014c9050026c9050084ca05000ce205002ce405002e130600461306005613060066130600ba130600c2130600f6130600021406004c1406007a1406008a140600e61406000a1506001c1506003c150600aa150600821b0600b41b0600ee1c0600681d0600a61e0600f81e06008e280600e0280600aa2a06008a2b0600342d0600aa2d0600fa3006001231060052310600cc320600d4320600143306004633060080340600d6340600fa340600c4350600383606004a3606008a360600a8370600269b060046e70600744e0700e4900700229207007c94070068bd0700
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Equipment Slot 5
-        m_OriginalName: Equipment Slot 5
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 371962
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 5}
       m_SearchString: 
@@ -313,9 +313,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 7.044932, y: -2.5448751, z: -1.0167726}
+    m_Target: {x: -20.708614, y: 94.969246, z: -6.9804688}
     speed: 2
-    m_Value: {x: 7.044932, y: -2.5448751, z: -1.0167726}
+    m_Value: {x: -20.708614, y: 94.969246, z: -6.9804688}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -365,9 +365,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 3.329646
+    m_Target: 2.1684117
     speed: 2
-    m_Value: 3.329646
+    m_Value: 2.1684117
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -446,7 +446,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 161772
+  m_LastSelectedObjectID: 550120
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -466,8 +466,8 @@ MonoBehaviour:
     y: 355
     width: 1030
     height: 271
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}
@@ -516,10 +516,10 @@ MonoBehaviour:
     m_Folders:
     - Assets/Scenes
   m_ViewMode: 1
-  m_StartGridSize: 53
+  m_StartGridSize: 16
   m_LastFolders:
   - Assets/Scenes
-  m_LastFoldersGridSize: 53
+  m_LastFoldersGridSize: 16
   m_LastProjectPath: "/home/lizband_ucc/Documents/Neverway/Games/\u795E\u306E\u7D76\u6EC5
     Divine Annihilation/U2D-Divine Annihilation"
   m_LockTracker:
@@ -583,7 +583,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 544e0000
     m_LastClickedInstanceID: 20052
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: bea90000fe4b0200a6680000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -609,7 +609,7 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 53
+    m_GridSize: 16
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 193
 --- !u!114 &13
