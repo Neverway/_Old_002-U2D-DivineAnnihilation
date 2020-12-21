@@ -21,12 +21,11 @@ public class Battle_Encounter : MonoBehaviour
     public float fleePercent = 60;
 
     public GameObject player;
-    public GameObject configTarget;
     private SaveManager saveManager;
 
     void Start()
     {
-        saveManager = configTarget.GetComponent<SaveManager>(); // Set a reference to the SaveManager script on the Config object in the scene
+        saveManager = FindObjectOfType<SaveManager>(); // Set a reference to the SaveManager script on the Config object in the scene
     }
 
 

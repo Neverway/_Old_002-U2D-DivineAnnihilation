@@ -26,11 +26,7 @@ public class Battle_Entity_Assignment : MonoBehaviour
     void Start()
     {
         saveManager = configTarget.GetComponent<SaveManager>(); // Set a reference to the SaveManager script on the Config object in the scene
-    }
 
-
-    void Update()
-    {
         // PARTY SLOT 1
         if (saveManager.activeSave.partyMemberOne != "NULL") partyMember1.SetActive(true);
         else partyMember1.SetActive(false);
@@ -56,5 +52,10 @@ public class Battle_Entity_Assignment : MonoBehaviour
         if (saveManager.activeSave.partyMemberThree == "Miyu") partyMember3Sprite.sprite = idleSideMiyu;
         if (saveManager.activeSave.partyMemberThree == "Sam") partyMember3Sprite.sprite = idleSideSam;
         if (saveManager.activeSave.partyMemberThree == "Casey") partyMember3Sprite.sprite = idleSideCasey;
+    }
+
+
+    void Update()
+    {
     }
 }

@@ -55,7 +55,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Item_Pickup.cs" />
+     <Compile Include="Assets\Battle_Enemy_Selection.cs" />
      <Compile Include="Assets\Scripts\Battle_ActionFunctions.cs" />
      <Compile Include="Assets\Scripts\Battle_Background_Looper.cs" />
      <Compile Include="Assets\Scripts\Battle_Background_Movement.cs" />
@@ -75,6 +75,7 @@
      <Compile Include="Assets\Scripts\Hud_Health.cs" />
      <Compile Include="Assets\Scripts\Hud_Inventory.cs" />
      <Compile Include="Assets\Scripts\Hud_Textbox_Manager.cs" />
+     <Compile Include="Assets\Scripts\Item_Pickup.cs" />
      <Compile Include="Assets\Scripts\Menu_Control.cs" />
      <Compile Include="Assets\Scripts\Menu_Scroll_Control.cs" />
      <Compile Include="Assets\Scripts\Menu_Scroll_MinusControl.cs" />
@@ -95,6 +96,7 @@
      <Compile Include="Assets\Scripts\Title_Save_Load.cs" />
      <Compile Include="Assets\Scripts\Title_Save_Options.cs" />
      <Compile Include="Assets\Scripts\Trigger_Cutscene.cs" />
+     <Compile Include="Assets\Scripts\Trigger_DoorLock.cs" />
      <Compile Include="Assets\Scripts\Trigger_Interact.cs" />
      <Compile Include="Assets\Scripts\Trigger_PartySet.cs" />
      <Compile Include="Assets\Scripts\Trigger_Save.cs" />
@@ -107,7 +109,6 @@
      <Compile Include="Assets\Scripts\Unused or Unknown\OLDHudTextboxManager.cs" />
      <Compile Include="Assets\Scripts\Unused or Unknown\OLDItemPickup.cs" />
      <Compile Include="Assets\Scripts\Unused or Unknown\PuzzlePushbox.cs" />
-     <Compile Include="Assets\Trigger_DoorLock.cs" />
  <Reference Include="UnityEngine">
  <HintPath>/home/lizband_ucc/Documents/Apps/Unity/Hub/Editor/2019.4.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
