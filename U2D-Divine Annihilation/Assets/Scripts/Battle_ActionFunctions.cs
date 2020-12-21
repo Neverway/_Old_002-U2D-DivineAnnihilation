@@ -64,12 +64,14 @@ public class Battle_ActionFunctions : MonoBehaviour
     public void Attack()
     {
         enemySelectionMenu.SetActive(true); // 
+        StopAllCoroutines();
         actionMenu.SetActive(false);        // 
     }
 
 
     public void Defend()
     {
+        turnManager.SetMoveDefend();
         turnManager.NextTurn(); // 
     }
 

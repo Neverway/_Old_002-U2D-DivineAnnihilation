@@ -1227,7 +1227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saveFileString: SlotTwo
-  fileImage: {fileID: 1580758093}
+  fileImage: {fileID: 1432480199}
   fileName: {fileID: 1352398853}
   fileLevel: {fileID: 1324483400}
   fileChapter: {fileID: 1442123712}
@@ -9449,7 +9449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cab8c3481d1be162cb86bb628bab87da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onLoadScreen: 0
+  onLoadScreen: 1
   fileName: {fileID: 1541678283}
 --- !u!114 &1541678283
 MonoBehaviour:
@@ -10936,7 +10936,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saveFileString: SlotTwo
-  fileImage: {fileID: 1580758093}
+  fileImage: {fileID: 1117266833}
   fileName: {fileID: 490890568}
   fileLevel: {fileID: 1390882803}
   fileChapter: {fileID: 913953122}

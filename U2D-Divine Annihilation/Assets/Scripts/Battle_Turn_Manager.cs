@@ -31,11 +31,18 @@ public class Battle_Turn_Manager : MonoBehaviour
     public GameObject Enemy2;
     public GameObject Enemy3;
     public GameObject configTarget;
+
+    public string movesetPartyMember0 = "";
+    public string movesetPartyMember1 = "";
+    public string movesetPartyMember2 = "";
+    public string movesetPartyMember3 = "";
     private SaveManager saveManager;
+    private Battle_Zone_Control battleZone;
 
     void Start()
     {
         saveManager = configTarget.GetComponent<SaveManager>(); // Set a reference to the SaveManager script on the Config object in the scene
+        battleZone = FindObjectOfType<Battle_Zone_Control>();
     }
 
 
@@ -195,6 +202,55 @@ public class Battle_Turn_Manager : MonoBehaviour
             }
             StartCoroutine("acceptInput");                                  // Activate the keypress delay
 
+        }
+
+    }
+
+
+    public void SetMoveDefend()
+    {
+        if (partyTurnID == 0)
+        {
+            movesetPartyMember0 = "defend";
+        }
+
+        else if (partyTurnID == 1)
+        {
+            movesetPartyMember1 = "defend";
+        }
+
+        else if (partyTurnID == 2)
+        {
+            movesetPartyMember2 = "defend";
+        }
+
+        else if (partyTurnID == 3)
+        {
+            movesetPartyMember3 = "defend";
+        }
+    }
+
+
+    public void SetMoveAttack(int targetEnemySlot)
+    {
+        if (partyTurnID == 0)
+        {
+            //partyMember0.moveState = "attack";
+        }
+
+        else if (partyTurnID == 1)
+        {
+            //partyMember1.moveState = "attack";
+        }
+
+        else if (partyTurnID == 2)
+        {
+            //partyMember2.moveState = "attack";
+        }
+
+        else if (partyTurnID == 3)
+        {
+            //partyMember3.moveState = "attack";
         }
 
     }
