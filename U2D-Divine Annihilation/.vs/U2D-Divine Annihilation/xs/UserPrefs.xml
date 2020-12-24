@@ -1,7 +1,12 @@
 ﻿<Properties StartupConfiguration="{52A108CE-312A-7646-8A28-1F3B11C710B6}|Unit Tests">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/System/SaveManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/System_Config_Manager.cs">
     <Files>
-      <File FileName="Assets/Scripts/System/SaveManager.cs" Line="46" Column="39" />
+      <File FileName="Assets/Scripts/System/SaveManager.cs" Line="71" Column="40" />
+      <File FileName="Assets/Battle_Enemy_Selection.cs" Line="64" Column="46" />
+      <File FileName="Assets/Scripts/Battle_Turn_Manager.cs" Line="264" Column="45" />
+      <File FileName="Assets/Scripts/Battle_ActionFunctions.cs" Line="21" Column="45" />
+      <File FileName="Assets/Scripts/Battle_Entity_Assignment.cs" Line="57" Column="24" />
+      <File FileName="Assets/Scripts/System_Config_Manager.cs" Line="45" Column="46" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-Editor PreferredExecutionTarget="MonoDevelop.Default" />

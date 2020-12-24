@@ -15,8 +15,8 @@ public class Battle_ActionFunctions : MonoBehaviour
     public GameObject enemySelectionMenu;
     public GameObject configTarget;
     public GameObject battleControllerTarget;
+    public bool acceptingInput = true;
 
-    private bool acceptingInput = true;
     private SaveManager saveManager;
     private Battle_Turn_Manager turnManager;
     private Menu_Scroll_String menuScrollString;
