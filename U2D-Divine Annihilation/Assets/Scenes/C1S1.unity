@@ -29593,8 +29593,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueLines:
   - '*Hey Fox! Sorry, but I can''t sell you anything right now.'
-  - '*Come back around later and I will give you something to make up for it. '
-  - '*Thanks, I guess I will see you around then.'
+  - '*Come back later and I will give you something to make up for it. '
+  - '*Thanks, I guess I''ll see you around then.'
   - '*Be safe out there guys!'
   - '*Yeah, you too.'
   dialogueLineNames:
@@ -141602,12 +141602,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueLines:
-  - '*You pickup your Rusty Sword.'
+  - '*You pick up your Rusty Sword.'
   - '*You''ve had this thing for ages. It''s seen better days.'
   - '*Mabye trying to use it to chop down trees wasn''t such a good idea.'
   - '*You write yourself a reminder to take better care of it.'
   - '*You put the note along side a bunch of other reminders...'
-  - '*in your notebook where it promplty gets forgotten.'
+  - '*...in your notebook where it promptly gets forgotten.'
   dialogueLineNames:
   - 
   - 
