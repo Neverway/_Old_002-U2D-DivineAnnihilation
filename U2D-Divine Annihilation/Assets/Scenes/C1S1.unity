@@ -88465,6 +88465,7 @@ MonoBehaviour:
     partyMemberTwoHealth: 0
     partyMemberThree: 
     partyMemberThreeHealth: 0
+    saveChapter: 
     hasWokenUp: 0
   hasLoaded: 0
   loadFileOnCreation: 1
@@ -142530,6 +142531,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9db7b8b9bc4f1ba1b9d599fe4f2605cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  saveChapterName: C1 Hometown
 --- !u!4 &7809000852261256635
 Transform:
   m_ObjectHideFlags: 0

@@ -10,6 +10,7 @@ using UnityEngine.SceneManagement;
 
 public class Trigger_Save : MonoBehaviour
 {
+    public string saveChapterName = "???";
     private SaveManager saveManager;
 
     void Start()
@@ -29,6 +30,7 @@ public class Trigger_Save : MonoBehaviour
         if (Input.GetKeyDown("z"))
         {
             saveManager.activeSave.scene = SceneManager.GetActiveScene().name;
+            saveManager.activeSave.saveChapter = saveChapterName;
             saveManager.Save();
         }
     }

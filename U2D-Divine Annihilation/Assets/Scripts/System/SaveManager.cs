@@ -103,7 +103,7 @@ public class SaveManager : MonoBehaviour
         activeSave.partyMemberThreeHealth = 100;
 
         // Chapter Data
-        activeSave.saveChapter = "C1 Hometown";
+        activeSave.saveChapter = "C1 Begining";
         activeSave.hasWokenUp = false;
 
         // Safty data
