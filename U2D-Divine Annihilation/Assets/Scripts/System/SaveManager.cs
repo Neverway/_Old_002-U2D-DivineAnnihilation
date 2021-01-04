@@ -103,6 +103,7 @@ public class SaveManager : MonoBehaviour
         activeSave.partyMemberThreeHealth = 100;
 
         // Chapter Data
+        activeSave.saveChapter = "C1 Hometown";
         activeSave.hasWokenUp = false;
 
         // Safty data
@@ -197,6 +198,20 @@ public class SaveManager : MonoBehaviour
             Debug.Log("[ID002 DA]: " + "Deleted current .DASP");
         }
     }
+
+
+    public void ThrowData(string fileDataID)
+    {
+        string dataPath = Application.persistentDataPath;
+        if (System.IO.File.Exists(dataPath + "/" + fileDataID + ".dasp"))
+        {
+            var serializer = new XmlSerializer(typeof(SaveData));
+            var stream = new FileStream(dataPath + "/" + fileDataID + ".dasp", FileMode.Open);
+            activeSave = serializer.Deserialize(stream) as SaveData;
+            stream.Close();
+            Debug.Log("[ID002 DA]: " + "Menu Loaded information from .DASP");
+        }
+    }
 }
 
 
@@ -230,5 +245,6 @@ public class SaveData
     public float partyMemberThreeHealth;
 
     // Chapter Data
+    public string saveChapter;
     public bool hasWokenUp;
 }
