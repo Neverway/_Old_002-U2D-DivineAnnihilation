@@ -5,6 +5,9 @@
 //
 //=============================================================================
 
+using System.IO;
+using System.Collections;
+using System.Xml.Serialization;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -20,6 +23,9 @@ public class Title_Save_Info : MonoBehaviour
     public GameObject configTarget;
     private SaveManager saveManager;
     private string saveFileSlot;
+    public SaveData spacedata;
+    public string thisChapter;
+    public bool firstpass = true;
 
     void Start()
     {
@@ -29,32 +35,44 @@ public class Title_Save_Info : MonoBehaviour
 
     void Update()
     {
+        string dataPath = Application.persistentDataPath;
         // Set file number
-        if (saveFileString == "SlotOne")
+        if (saveFileString == "SlotOne" && firstpass)
         {
             saveFileSlot = "1";
+            saveManager.ThrowData(saveFileString);
+            spacedata = saveManager.activeSave;
+            firstpass = false;
         }
-        if (saveFileString == "SlotTwo")
+        if (saveFileString == "SlotTwo" && firstpass)
         {
             saveFileSlot = "2";
+            saveManager.ThrowData(saveFileString);
+            spacedata = saveManager.activeSave;
+            firstpass = false;
         }
-        if (saveFileString == "SlotThree")
+        if (saveFileString == "SlotThree" && firstpass)
         {
             saveFileSlot = "3";
+            saveManager.ThrowData(saveFileString);
+            spacedata = saveManager.activeSave;
+            firstpass = false;
         }
-        if (saveFileString == "SlotFour")
+        if (saveFileString == "SlotFour" && firstpass)
         {
             saveFileSlot = "4";
+            saveManager.ThrowData(saveFileString);
+            spacedata = saveManager.activeSave;
+            firstpass = false;
         }
 
         // Set file information
-        string dataPath = Application.persistentDataPath;
         if (System.IO.File.Exists(dataPath + "/" + saveFileString + ".dasp"))
         {
             fileName.text = "File " + saveFileSlot;
 
-            fileLevel.text = "Lvl. "+"000";
-            fileChapter.text = "Chapter "+"1";
+            fileLevel.text = "Lvl. "+"000"+" | "+spacedata.saveChapter;
+            fileChapter.text = ""+"";
             fileImage.sprite = saveHasIcon;
         }
 

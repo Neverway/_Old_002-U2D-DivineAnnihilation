@@ -1234,6 +1234,31 @@ MonoBehaviour:
   saveBlankIcon: {fileID: 21300000, guid: 6a675df401c5e1bbf9024af536a3f512, type: 3}
   saveHasIcon: {fileID: 21300000, guid: f45cb904eef2169e5bf96522ab54be32, type: 3}
   configTarget: {fileID: 828494676}
+  spacedata:
+    saveProfileName: 
+    scene: 
+    playerSavePosition: {x: 0, y: 0}
+    playerHealth: 0
+    item1: 
+    item2: 
+    item3: 
+    item4: 
+    item5: 
+    equipment1: 
+    equipment2: 
+    equipment3: 
+    equipment4: 
+    equipment5: 
+    partyMemberOne: 
+    partyMemberOneHealth: 0
+    partyMemberTwo: 
+    partyMemberTwoHealth: 0
+    partyMemberThree: 
+    partyMemberThreeHealth: 0
+    saveChapter: 
+    hasWokenUp: 0
+  thisChapter: 
+  firstpass: 1
 --- !u!1 &74516400
 GameObject:
   m_ObjectHideFlags: 0
@@ -2124,7 +2149,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -120.387665, y: -72.09151}
-  m_SizeDelta: {x: 217.16159, y: 40}
+  m_SizeDelta: {x: 217.16159, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &225728673
 MonoBehaviour:
@@ -2147,7 +2172,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 86aac021c69229352a4800c42c2f36bf, type: 3}
-    m_FontSize: 19
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -2155,7 +2180,7 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Lvl. 000
@@ -2583,7 +2608,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -120.387665, y: 29.9684}
-  m_SizeDelta: {x: 217.16159, y: 40}
+  m_SizeDelta: {x: 217.16159, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &338370474
 MonoBehaviour:
@@ -2606,7 +2631,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 86aac021c69229352a4800c42c2f36bf, type: 3}
-    m_FontSize: 19
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -2614,7 +2639,7 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Lvl. 000
@@ -4977,7 +5002,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -120.387665, y: 131.88834}
-  m_SizeDelta: {x: 217.16159, y: 40}
+  m_SizeDelta: {x: 217.16159, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &642063783
 MonoBehaviour:
@@ -5000,7 +5025,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 86aac021c69229352a4800c42c2f36bf, type: 3}
-    m_FontSize: 19
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -5008,7 +5033,7 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Lvl. 000
@@ -5540,6 +5565,31 @@ MonoBehaviour:
   saveBlankIcon: {fileID: 21300000, guid: 6a675df401c5e1bbf9024af536a3f512, type: 3}
   saveHasIcon: {fileID: 21300000, guid: f45cb904eef2169e5bf96522ab54be32, type: 3}
   configTarget: {fileID: 828494676}
+  spacedata:
+    saveProfileName: 
+    scene: 
+    playerSavePosition: {x: 0, y: 0}
+    playerHealth: 0
+    item1: 
+    item2: 
+    item3: 
+    item4: 
+    item5: 
+    equipment1: 
+    equipment2: 
+    equipment3: 
+    equipment4: 
+    equipment5: 
+    partyMemberOne: 
+    partyMemberOneHealth: 0
+    partyMemberTwo: 
+    partyMemberTwoHealth: 0
+    partyMemberThree: 
+    partyMemberThreeHealth: 0
+    saveChapter: 
+    hasWokenUp: 0
+  thisChapter: 
+  firstpass: 1
 --- !u!1 &789364034
 GameObject:
   m_ObjectHideFlags: 0
@@ -5872,6 +5922,31 @@ MonoBehaviour:
   saveBlankIcon: {fileID: 21300000, guid: 6a675df401c5e1bbf9024af536a3f512, type: 3}
   saveHasIcon: {fileID: 21300000, guid: f45cb904eef2169e5bf96522ab54be32, type: 3}
   configTarget: {fileID: 828494676}
+  spacedata:
+    saveProfileName: 
+    scene: 
+    playerSavePosition: {x: 0, y: 0}
+    playerHealth: 0
+    item1: 
+    item2: 
+    item3: 
+    item4: 
+    item5: 
+    equipment1: 
+    equipment2: 
+    equipment3: 
+    equipment4: 
+    equipment5: 
+    partyMemberOne: 
+    partyMemberOneHealth: 0
+    partyMemberTwo: 
+    partyMemberTwoHealth: 0
+    partyMemberThree: 
+    partyMemberThreeHealth: 0
+    saveChapter: 
+    hasWokenUp: 0
+  thisChapter: 
+  firstpass: 1
 --- !u!1 &828494676
 GameObject:
   m_ObjectHideFlags: 0
@@ -5938,6 +6013,7 @@ MonoBehaviour:
     partyMemberTwoHealth: 0
     partyMemberThree: 
     partyMemberThreeHealth: 0
+    saveChapter: 
     hasWokenUp: 0
   hasLoaded: 0
   loadFileOnCreation: 0
@@ -6308,7 +6384,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -120.387665, y: 29.9684}
-  m_SizeDelta: {x: 217.16159, y: 40}
+  m_SizeDelta: {x: 217.16159, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &914364059
 MonoBehaviour:
@@ -6331,7 +6407,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 86aac021c69229352a4800c42c2f36bf, type: 3}
-    m_FontSize: 19
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -6339,7 +6415,7 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Lvl. 000
@@ -6894,6 +6970,31 @@ MonoBehaviour:
   saveBlankIcon: {fileID: 21300000, guid: 6a675df401c5e1bbf9024af536a3f512, type: 3}
   saveHasIcon: {fileID: 21300000, guid: f45cb904eef2169e5bf96522ab54be32, type: 3}
   configTarget: {fileID: 828494676}
+  spacedata:
+    saveProfileName: 
+    scene: 
+    playerSavePosition: {x: 0, y: 0}
+    playerHealth: 0
+    item1: 
+    item2: 
+    item3: 
+    item4: 
+    item5: 
+    equipment1: 
+    equipment2: 
+    equipment3: 
+    equipment4: 
+    equipment5: 
+    partyMemberOne: 
+    partyMemberOneHealth: 0
+    partyMemberTwo: 
+    partyMemberTwoHealth: 0
+    partyMemberThree: 
+    partyMemberThreeHealth: 0
+    saveChapter: 
+    hasWokenUp: 0
+  thisChapter: 
+  firstpass: 1
 --- !u!1 &1098311052
 GameObject:
   m_ObjectHideFlags: 0
@@ -6929,7 +7030,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -120.387665, y: 131.88834}
-  m_SizeDelta: {x: 217.16159, y: 40}
+  m_SizeDelta: {x: 217.16159, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1098311054
 MonoBehaviour:
@@ -6952,7 +7053,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 86aac021c69229352a4800c42c2f36bf, type: 3}
-    m_FontSize: 19
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -6960,7 +7061,7 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Lvl. 000
@@ -7338,6 +7439,31 @@ MonoBehaviour:
   saveBlankIcon: {fileID: 21300000, guid: 6a675df401c5e1bbf9024af536a3f512, type: 3}
   saveHasIcon: {fileID: 21300000, guid: f45cb904eef2169e5bf96522ab54be32, type: 3}
   configTarget: {fileID: 828494676}
+  spacedata:
+    saveProfileName: 
+    scene: 
+    playerSavePosition: {x: 0, y: 0}
+    playerHealth: 0
+    item1: 
+    item2: 
+    item3: 
+    item4: 
+    item5: 
+    equipment1: 
+    equipment2: 
+    equipment3: 
+    equipment4: 
+    equipment5: 
+    partyMemberOne: 
+    partyMemberOneHealth: 0
+    partyMemberTwo: 
+    partyMemberTwoHealth: 0
+    partyMemberThree: 
+    partyMemberThreeHealth: 0
+    saveChapter: 
+    hasWokenUp: 0
+  thisChapter: 
+  firstpass: 1
 --- !u!1 &1194486483
 GameObject:
   m_ObjectHideFlags: 0
@@ -7373,7 +7499,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -120.387665, y: 131.88834}
-  m_SizeDelta: {x: 217.16159, y: 40}
+  m_SizeDelta: {x: 217.16159, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1194486485
 MonoBehaviour:
@@ -7396,7 +7522,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 86aac021c69229352a4800c42c2f36bf, type: 3}
-    m_FontSize: 19
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -7404,7 +7530,7 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Lvl. 000
@@ -8557,7 +8683,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -120.387665, y: 29.9684}
-  m_SizeDelta: {x: 217.16159, y: 40}
+  m_SizeDelta: {x: 217.16159, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1324483400
 MonoBehaviour:
@@ -8580,7 +8706,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 86aac021c69229352a4800c42c2f36bf, type: 3}
-    m_FontSize: 19
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -8588,7 +8714,7 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Lvl. 000
@@ -8791,7 +8917,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -120.387665, y: 29.9684}
-  m_SizeDelta: {x: 217.16159, y: 40}
+  m_SizeDelta: {x: 217.16159, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1390882803
 MonoBehaviour:
@@ -8814,7 +8940,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 86aac021c69229352a4800c42c2f36bf, type: 3}
-    m_FontSize: 19
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -8822,7 +8948,7 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Lvl. 000
@@ -9099,7 +9225,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -120.387665, y: -72.09151}
-  m_SizeDelta: {x: 217.16159, y: 40}
+  m_SizeDelta: {x: 217.16159, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1481763442
 MonoBehaviour:
@@ -9122,7 +9248,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 86aac021c69229352a4800c42c2f36bf, type: 3}
-    m_FontSize: 19
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -9130,7 +9256,7 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Lvl. 000
@@ -9177,7 +9303,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -120.387665, y: 29.9684}
-  m_SizeDelta: {x: 217.16159, y: 40}
+  m_SizeDelta: {x: 217.16159, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1490110710
 MonoBehaviour:
@@ -9200,7 +9326,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 86aac021c69229352a4800c42c2f36bf, type: 3}
-    m_FontSize: 19
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -9208,7 +9334,7 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Lvl. 000
@@ -9782,6 +9908,31 @@ MonoBehaviour:
   saveBlankIcon: {fileID: 21300000, guid: 6a675df401c5e1bbf9024af536a3f512, type: 3}
   saveHasIcon: {fileID: 21300000, guid: f45cb904eef2169e5bf96522ab54be32, type: 3}
   configTarget: {fileID: 828494676}
+  spacedata:
+    saveProfileName: 
+    scene: 
+    playerSavePosition: {x: 0, y: 0}
+    playerHealth: 0
+    item1: 
+    item2: 
+    item3: 
+    item4: 
+    item5: 
+    equipment1: 
+    equipment2: 
+    equipment3: 
+    equipment4: 
+    equipment5: 
+    partyMemberOne: 
+    partyMemberOneHealth: 0
+    partyMemberTwo: 
+    partyMemberTwoHealth: 0
+    partyMemberThree: 
+    partyMemberThreeHealth: 0
+    saveChapter: 
+    hasWokenUp: 0
+  thisChapter: 
+  firstpass: 1
 --- !u!1 &1600846738
 GameObject:
   m_ObjectHideFlags: 0
@@ -10152,7 +10303,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -120.387665, y: -72.09151}
-  m_SizeDelta: {x: 217.16159, y: 40}
+  m_SizeDelta: {x: 217.16159, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1626604528
 MonoBehaviour:
@@ -10175,7 +10326,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 86aac021c69229352a4800c42c2f36bf, type: 3}
-    m_FontSize: 19
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -10183,7 +10334,7 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Lvl. 000
@@ -10558,7 +10709,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -120.387665, y: 29.9684}
-  m_SizeDelta: {x: 217.16159, y: 40}
+  m_SizeDelta: {x: 217.16159, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1751322941
 MonoBehaviour:
@@ -10581,7 +10732,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 86aac021c69229352a4800c42c2f36bf, type: 3}
-    m_FontSize: 19
+    m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -10589,7 +10740,7 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Lvl. 000
@@ -10809,6 +10960,31 @@ MonoBehaviour:
   saveBlankIcon: {fileID: 21300000, guid: 6a675df401c5e1bbf9024af536a3f512, type: 3}
   saveHasIcon: {fileID: 21300000, guid: f45cb904eef2169e5bf96522ab54be32, type: 3}
   configTarget: {fileID: 828494676}
+  spacedata:
+    saveProfileName: 
+    scene: 
+    playerSavePosition: {x: 0, y: 0}
+    playerHealth: 0
+    item1: 
+    item2: 
+    item3: 
+    item4: 
+    item5: 
+    equipment1: 
+    equipment2: 
+    equipment3: 
+    equipment4: 
+    equipment5: 
+    partyMemberOne: 
+    partyMemberOneHealth: 0
+    partyMemberTwo: 
+    partyMemberTwoHealth: 0
+    partyMemberThree: 
+    partyMemberThreeHealth: 0
+    saveChapter: 
+    hasWokenUp: 0
+  thisChapter: 
+  firstpass: 1
 --- !u!1 &1783338464
 GameObject:
   m_ObjectHideFlags: 0
@@ -10943,6 +11119,31 @@ MonoBehaviour:
   saveBlankIcon: {fileID: 21300000, guid: 6a675df401c5e1bbf9024af536a3f512, type: 3}
   saveHasIcon: {fileID: 21300000, guid: f45cb904eef2169e5bf96522ab54be32, type: 3}
   configTarget: {fileID: 828494676}
+  spacedata:
+    saveProfileName: 
+    scene: 
+    playerSavePosition: {x: 0, y: 0}
+    playerHealth: 0
+    item1: 
+    item2: 
+    item3: 
+    item4: 
+    item5: 
+    equipment1: 
+    equipment2: 
+    equipment3: 
+    equipment4: 
+    equipment5: 
+    partyMemberOne: 
+    partyMemberOneHealth: 0
+    partyMemberTwo: 
+    partyMemberTwoHealth: 0
+    partyMemberThree: 
+    partyMemberThreeHealth: 0
+    saveChapter: 
+    hasWokenUp: 0
+  thisChapter: 
+  firstpass: 1
 --- !u!1 &1809563765
 GameObject:
   m_ObjectHideFlags: 0
@@ -11717,6 +11918,31 @@ MonoBehaviour:
   saveBlankIcon: {fileID: 21300000, guid: 6a675df401c5e1bbf9024af536a3f512, type: 3}
   saveHasIcon: {fileID: 21300000, guid: f45cb904eef2169e5bf96522ab54be32, type: 3}
   configTarget: {fileID: 828494676}
+  spacedata:
+    saveProfileName: 
+    scene: 
+    playerSavePosition: {x: 0, y: 0}
+    playerHealth: 0
+    item1: 
+    item2: 
+    item3: 
+    item4: 
+    item5: 
+    equipment1: 
+    equipment2: 
+    equipment3: 
+    equipment4: 
+    equipment5: 
+    partyMemberOne: 
+    partyMemberOneHealth: 0
+    partyMemberTwo: 
+    partyMemberTwoHealth: 0
+    partyMemberThree: 
+    partyMemberThreeHealth: 0
+    saveChapter: 
+    hasWokenUp: 0
+  thisChapter: 
+  firstpass: 1
 --- !u!1 &1962037833
 GameObject:
   m_ObjectHideFlags: 0
@@ -12723,6 +12949,31 @@ MonoBehaviour:
   saveBlankIcon: {fileID: 21300000, guid: 6a675df401c5e1bbf9024af536a3f512, type: 3}
   saveHasIcon: {fileID: 21300000, guid: f45cb904eef2169e5bf96522ab54be32, type: 3}
   configTarget: {fileID: 828494676}
+  spacedata:
+    saveProfileName: 
+    scene: 
+    playerSavePosition: {x: 0, y: 0}
+    playerHealth: 0
+    item1: 
+    item2: 
+    item3: 
+    item4: 
+    item5: 
+    equipment1: 
+    equipment2: 
+    equipment3: 
+    equipment4: 
+    equipment5: 
+    partyMemberOne: 
+    partyMemberOneHealth: 0
+    partyMemberTwo: 
+    partyMemberTwoHealth: 0
+    partyMemberThree: 
+    partyMemberThreeHealth: 0
+    saveChapter: 
+    hasWokenUp: 0
+  thisChapter: 
+  firstpass: 1
 --- !u!1 &2013261006
 GameObject:
   m_ObjectHideFlags: 0
@@ -13249,6 +13500,31 @@ MonoBehaviour:
   saveBlankIcon: {fileID: 21300000, guid: 6a675df401c5e1bbf9024af536a3f512, type: 3}
   saveHasIcon: {fileID: 21300000, guid: f45cb904eef2169e5bf96522ab54be32, type: 3}
   configTarget: {fileID: 828494676}
+  spacedata:
+    saveProfileName: 
+    scene: 
+    playerSavePosition: {x: 0, y: 0}
+    playerHealth: 0
+    item1: 
+    item2: 
+    item3: 
+    item4: 
+    item5: 
+    equipment1: 
+    equipment2: 
+    equipment3: 
+    equipment4: 
+    equipment5: 
+    partyMemberOne: 
+    partyMemberOneHealth: 0
+    partyMemberTwo: 
+    partyMemberTwoHealth: 0
+    partyMemberThree: 
+    partyMemberThreeHealth: 0
+    saveChapter: 
+    hasWokenUp: 0
+  thisChapter: 
+  firstpass: 1
 --- !u!1 &2122272836
 GameObject:
   m_ObjectHideFlags: 0
@@ -13433,6 +13709,31 @@ MonoBehaviour:
   saveBlankIcon: {fileID: 21300000, guid: 6a675df401c5e1bbf9024af536a3f512, type: 3}
   saveHasIcon: {fileID: 21300000, guid: f45cb904eef2169e5bf96522ab54be32, type: 3}
   configTarget: {fileID: 828494676}
+  spacedata:
+    saveProfileName: 
+    scene: 
+    playerSavePosition: {x: 0, y: 0}
+    playerHealth: 0
+    item1: 
+    item2: 
+    item3: 
+    item4: 
+    item5: 
+    equipment1: 
+    equipment2: 
+    equipment3: 
+    equipment4: 
+    equipment5: 
+    partyMemberOne: 
+    partyMemberOneHealth: 0
+    partyMemberTwo: 
+    partyMemberTwoHealth: 0
+    partyMemberThree: 
+    partyMemberThreeHealth: 0
+    saveChapter: 
+    hasWokenUp: 0
+  thisChapter: 
+  firstpass: 1
 --- !u!1 &2131618449
 GameObject:
   m_ObjectHideFlags: 0

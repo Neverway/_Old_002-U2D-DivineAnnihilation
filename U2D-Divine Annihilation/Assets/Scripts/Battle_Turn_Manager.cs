@@ -234,24 +234,28 @@ public class Battle_Turn_Manager : MonoBehaviour
         if (partyTurnID == 0)
         {
             movesetPartyMember0 = "defend";
+            actionMenu.SetActive(false);
             NextTurn();
         }
 
         else if (partyTurnID == 1)
         {
             movesetPartyMember1 = "defend";
+            actionMenu.SetActive(false);
             NextTurn();
         }
 
         else if (partyTurnID == 2)
         {
             movesetPartyMember2 = "defend";
+            actionMenu.SetActive(false);
             NextTurn();
         }
 
         else if (partyTurnID == 3)
         {
             movesetPartyMember3 = "defend";
+            actionMenu.SetActive(false);
             NextTurn();
         }
     }
