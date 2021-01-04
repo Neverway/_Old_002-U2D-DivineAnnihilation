@@ -13,11 +13,13 @@ public class Trigger_Warp_Level : MonoBehaviour
     public float nextRoomX;
     public float nextRoomY;
     public string loadRoom;
+    private SaveManager saveManager;
     //public GameObject Player;
     //public bool PlayTransition;
 
-    public void Update()
+    public void Start()
     {
+        saveManager = FindObjectOfType<SaveManager>();   // Find the dialogue manager script
     }
 
 
@@ -28,6 +30,7 @@ public class Trigger_Warp_Level : MonoBehaviour
             PlayerPrefs.SetFloat("NextRoomX", nextRoomX);
             PlayerPrefs.SetFloat("NextRoomY", nextRoomY);
             PlayerPrefs.SetInt("LoadingNewRoom", 1);
+            saveManager.activeSave.scene = loadRoom;
             SceneManager.LoadScene(loadRoom);
         }
     }
