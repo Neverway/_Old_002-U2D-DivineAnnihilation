@@ -71,7 +71,7 @@ public class Title_Save_Info : MonoBehaviour
         {
             fileName.text = "File " + saveFileSlot;
 
-            fileLevel.text = "Lvl. "+"000"+" | "+spacedata.saveChapter;
+            fileLevel.text = "Lvl. "+spacedata.playerLevel+" | "+spacedata.saveChapter;
             fileChapter.text = ""+"";
             fileImage.sprite = saveHasIcon;
         }

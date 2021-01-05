@@ -1239,6 +1239,7 @@ MonoBehaviour:
     scene: 
     playerSavePosition: {x: 0, y: 0}
     playerHealth: 0
+    playerLevel: 0
     item1: 
     item2: 
     item3: 
@@ -2183,7 +2184,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Lvl. 000
+  m_Text: 
 --- !u!222 &225728674
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2720,7 +2721,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: File 2
+  m_Text: Loading...
 --- !u!222 &338455329
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5570,6 +5571,7 @@ MonoBehaviour:
     scene: 
     playerSavePosition: {x: 0, y: 0}
     playerHealth: 0
+    playerLevel: 0
     item1: 
     item2: 
     item3: 
@@ -5659,7 +5661,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Chapter 1
+  m_Text: 
 --- !u!222 &789364037
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5927,6 +5929,7 @@ MonoBehaviour:
     scene: 
     playerSavePosition: {x: 0, y: 0}
     playerHealth: 0
+    playerLevel: 0
     item1: 
     item2: 
     item3: 
@@ -5997,6 +6000,7 @@ MonoBehaviour:
     scene: 
     playerSavePosition: {x: 0, y: 0}
     playerHealth: 0
+    playerLevel: 0
     item1: 
     item2: 
     item3: 
@@ -6901,7 +6905,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Chapter 1
+  m_Text: 
 --- !u!222 &1035660331
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6975,6 +6979,7 @@ MonoBehaviour:
     scene: 
     playerSavePosition: {x: 0, y: 0}
     playerHealth: 0
+    playerLevel: 0
     item1: 
     item2: 
     item3: 
@@ -7444,6 +7449,7 @@ MonoBehaviour:
     scene: 
     playerSavePosition: {x: 0, y: 0}
     playerHealth: 0
+    playerLevel: 0
     item1: 
     item2: 
     item3: 
@@ -7533,7 +7539,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Lvl. 000
+  m_Text: 
 --- !u!222 &1194486486
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8525,7 +8531,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: File 3
+  m_Text: Loading...
 --- !u!222 &1293187838
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8639,7 +8645,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: File 4
+  m_Text: Loading...
 --- !u!222 &1324317390
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9337,7 +9343,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Lvl. 000
+  m_Text: 
 --- !u!222 &1490110711
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9765,7 +9771,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Chapter 1
+  m_Text: 
 --- !u!222 &1575080220
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9913,6 +9919,7 @@ MonoBehaviour:
     scene: 
     playerSavePosition: {x: 0, y: 0}
     playerHealth: 0
+    playerLevel: 0
     item1: 
     item2: 
     item3: 
@@ -10555,7 +10562,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: File 1
+  m_Text: Loading...
 --- !u!222 &1733583352
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10743,7 +10750,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Lvl. 000
+  m_Text: 
 --- !u!222 &1751322942
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10965,6 +10972,7 @@ MonoBehaviour:
     scene: 
     playerSavePosition: {x: 0, y: 0}
     playerHealth: 0
+    playerLevel: 0
     item1: 
     item2: 
     item3: 
@@ -11124,6 +11132,7 @@ MonoBehaviour:
     scene: 
     playerSavePosition: {x: 0, y: 0}
     playerHealth: 0
+    playerLevel: 0
     item1: 
     item2: 
     item3: 
@@ -11923,6 +11932,7 @@ MonoBehaviour:
     scene: 
     playerSavePosition: {x: 0, y: 0}
     playerHealth: 0
+    playerLevel: 0
     item1: 
     item2: 
     item3: 
@@ -12954,6 +12964,7 @@ MonoBehaviour:
     scene: 
     playerSavePosition: {x: 0, y: 0}
     playerHealth: 0
+    playerLevel: 0
     item1: 
     item2: 
     item3: 
@@ -13043,7 +13054,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Chapter 1
+  m_Text: 
 --- !u!222 &2013261009
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13505,6 +13516,7 @@ MonoBehaviour:
     scene: 
     playerSavePosition: {x: 0, y: 0}
     playerHealth: 0
+    playerLevel: 0
     item1: 
     item2: 
     item3: 
@@ -13714,6 +13726,7 @@ MonoBehaviour:
     scene: 
     playerSavePosition: {x: 0, y: 0}
     playerHealth: 0
+    playerLevel: 0
     item1: 
     item2: 
     item3: 

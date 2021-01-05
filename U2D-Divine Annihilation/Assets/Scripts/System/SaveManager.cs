@@ -81,6 +81,7 @@ public class SaveManager : MonoBehaviour
         activeSave.playerSavePosition.x = (float)-17.75;
         activeSave.playerSavePosition.y = 44;
         activeSave.playerHealth = 100;
+        activeSave.playerLevel = 000;
 
         // Player Items
         activeSave.item1 = "---";
@@ -223,6 +224,7 @@ public class SaveData
     public string scene;
     public Vector2 playerSavePosition;
     public float playerHealth;
+    public int playerLevel;
 
     // Player Items
     public string item1;
