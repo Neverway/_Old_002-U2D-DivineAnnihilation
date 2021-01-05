@@ -10,8 +10,8 @@
       <File FileName="Assets/Battle_Enemy_Selection.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Title_Save_Info.cs" Line="37" Column="6" />
       <File FileName="Assets/Scripts/System/SaveManager.cs" Line="106" Column="48" />
-      <File FileName="Assets/Scripts/Trigger_Save.cs" Line="33" Column="66" />
-      <File FileName="Assets/Scripts/Trigger_Warp_Level.cs" Line="29" Column="58" />
+      <File FileName="Assets/Scripts/Trigger_Save.cs" Line="13" Column="43" />
+      <File FileName="Assets/Scripts/Trigger_Warp_Level.cs" Line="29" Column="10" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-Editor PreferredExecutionTarget="MonoDevelop.Default" />
