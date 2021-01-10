@@ -55,8 +55,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\6.Packages\DA SDK\Editor\DASceneCreator.cs" />
-     <Compile Include="Assets\6.Packages\DA SDK\Editor\TestSDK.cs" />
+     <Compile Include="Assets\Editor\Steamworks.NET\RedistCopy.cs" />
+     <Compile Include="Assets\Editor\Steamworks.NET\RedistInstall.cs" />
  <Reference Include="UnityEngine">
  <HintPath>/home/lizband_ucc/Documents/Apps/Unity/Hub/Editor/2019.4.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -256,7 +256,7 @@
  <HintPath>/home/lizband_ucc/Documents/Apps/Unity/Hub/Editor/2019.4.10f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Pathfinding.Ionic.Zip.Reduced">
- <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Assets/6.Packages/AstarPathfinding/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+ <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Assets/Packages/AstarPathfinding/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
  </Reference>
  <Reference Include="ICSharpCode.NRefactory">
  <HintPath>/home/lizband_ucc/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/Library/PackageCache/com.unity.render-pipelines.core@7.3.1/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
@@ -749,6 +749,10 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{CBC9D45B-B4B3-8682-6FA7-54FE9E95371B}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{7F02709D-F8E8-5D00-328F-5F803762FE16}</Project>
       <Name>Assembly-CSharp</Name>

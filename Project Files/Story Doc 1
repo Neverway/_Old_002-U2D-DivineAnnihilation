@@ -1,0 +1,22 @@
+Miyu wakes up Fox. Fox was going to help Miyu finish the design for the key tracker but they may have overslept a little.
+They stop by the library to do some reading on the gates. Miyu stays by the table reading the book while Fox is free to roam the library.
+
+1A.) After the librarian goes to the back, Fox can inspect the desk to find a page referencing a book they may have been looking for hidden in the catacombs beneeth the library (Examin the desk when the librarian is gone)
+    1A2.) After sneeking into the catacombs under the library, Fox and Miyu evade being caught and snag the book and a spell book. (If you get caught three times you get sent back to the point where you were in the library and the librarian will no longer move making the only choice to read three books)
+
+1B.) Fox and Miyu leave the library finding nothing of use that they haven't already examined to dust (read three books from the book shelf)
+
+
+Fox and Miyu decide to stop by the shops to gear up and warm up their battling skills before heading to the gate (player is granted a small sum of Gs from Miyu)
+
+Fox and Miyu traverse through the caves and forest to get to the gate, after some expositional dialogue and a repair the tracker mini-game the tracker is enabled.
+
+They follow the tracker back to the non-euclidan forest where a previously looping exit now leads to a abandon castle in the woods
+
+
+YOU ARE WORKING ON A TRIGGER TO DESTROY THE KNOCK PARTICLES!
+
+After that you need a trigger that will stop the player from leaving the house area unless they have talked to Miyu first. (save table checker trigger)
+
+
+

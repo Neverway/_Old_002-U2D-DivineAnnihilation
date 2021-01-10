@@ -41,28 +41,28 @@ public class Title_Save_Info : MonoBehaviour
         {
             saveFileSlot = "1";
             saveManager.ThrowData(saveFileString);
-            spacedata = saveManager.activeSave;
+            spacedata = saveManager.throwSave;
             firstpass = false;
         }
         if (saveFileString == "SlotTwo" && firstpass)
         {
             saveFileSlot = "2";
             saveManager.ThrowData(saveFileString);
-            spacedata = saveManager.activeSave;
+            spacedata = saveManager.throwSave;
             firstpass = false;
         }
         if (saveFileString == "SlotThree" && firstpass)
         {
             saveFileSlot = "3";
             saveManager.ThrowData(saveFileString);
-            spacedata = saveManager.activeSave;
+            spacedata = saveManager.throwSave;
             firstpass = false;
         }
         if (saveFileString == "SlotFour" && firstpass)
         {
             saveFileSlot = "4";
             saveManager.ThrowData(saveFileString);
-            spacedata = saveManager.activeSave;
+            spacedata = saveManager.throwSave;
             firstpass = false;
         }
 
