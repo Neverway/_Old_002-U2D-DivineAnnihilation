@@ -35,6 +35,18 @@ TextureImporter:
   - first:
       213: 6806079185061253406
     second: OtherShadows_10
+  - first:
+      213: -7218682707633793549
+    second: Other Shadows_0
+  - first:
+      213: -8641930154583671100
+    second: Other Shadows_1
+  - first:
+      213: 5378581414908656700
+    second: Other Shadows_2
+  - first:
+      213: 8594342786678636871
+    second: Other Shadows_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -346,6 +358,90 @@ TextureImporter:
       bones: []
       spriteID: e1191ca65fc047e50800000000000000
       internalID: 6806079185061253406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Other Shadows_0
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f59b39d25612db90800000000000000
+      internalID: -7218682707633793549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Other Shadows_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cebd42bf42b11880800000000000000
+      internalID: -8641930154583671100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Other Shadows_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3cf527cc4f84aa40800000000000000
+      internalID: 5378581414908656700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Other Shadows_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 741cbedca3d354770800000000000000
+      internalID: 8594342786678636871
       vertices: []
       indices: 
       edges: []

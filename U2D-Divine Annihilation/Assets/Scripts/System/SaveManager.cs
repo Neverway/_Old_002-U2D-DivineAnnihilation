@@ -14,6 +14,7 @@ public class SaveManager : MonoBehaviour
 {
     public static SaveManager instance;
     public SaveData activeSave;
+    public SaveData throwSave;
     public bool hasLoaded;
     public bool loadFileOnCreation = false;
     private GameObject playerRef;
@@ -105,7 +106,6 @@ public class SaveManager : MonoBehaviour
 
         // Chapter Data
         activeSave.saveChapter = "C1 Begining";
-        activeSave.hasWokenUp = false;
 
         // Safty data
         PlayerPrefs.SetFloat("LoadPlayerPref", 0);
@@ -208,7 +208,7 @@ public class SaveManager : MonoBehaviour
         {
             var serializer = new XmlSerializer(typeof(SaveData));
             var stream = new FileStream(dataPath + "/" + fileDataID + ".dasp", FileMode.Open);
-            activeSave = serializer.Deserialize(stream) as SaveData;
+            throwSave = serializer.Deserialize(stream) as SaveData;
             stream.Close();
             Debug.Log("[ID002 DA]: " + "Menu Loaded information from .DASP");
         }
@@ -247,6 +247,25 @@ public class SaveData
     public float partyMemberThreeHealth;
 
     // Chapter Data
+    // These are level specific flags to keep track of if a player has picked up items, killed an enemy, completed a cutscene, ect.
+    // By default these values will be boolean, meaning they can only be true (1) or false (0), but if they have a tag that looks like this: [0, 1, 2]
+    // then that means that it has several states, for example: if a player were to skip past an enemy the value would be 0, if they killed them the value would be 1
+    // and if they helped them or finished the fight in a peaceful way the value would be 2
     public string saveChapter;
-    public bool hasWokenUp;
+    public int c1s1_0; // Woken up
+    public int c1s1_1; // Answered door
+    public int c1s1_2; // Library event [0, 1, 2]
+    public int c1s1_3; // Unused
+    public int c1s1_4; // Unused
+    public int c1s1_5; // Unused
+    public int c1s1_6; // Unused
+    public int c1s1_7; // Unused
+    public int c1s1_8; // Unused
+    public int c1s1_9; // Unused
+    public int c1s1_10; // Unused
+    public int c1s1_11; // Unused
+    public int c1s1_12; // Unused
+    public int c1s1_13; // Unused
+    public int c1s1_14; // Unused
+    public int c1s1_15; // Unused
 }

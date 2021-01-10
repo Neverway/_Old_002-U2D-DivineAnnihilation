@@ -1,17 +1,8 @@
 ﻿<Properties StartupConfiguration="{52A108CE-312A-7646-8A28-1F3B11C710B6}|Unit Tests">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Trigger_Warp_Level.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Title_Save_Load.cs">
     <Files>
-      <File FileName="Assets/Scripts/Battle_Controller.cs" Line="20" Column="1" />
-      <File FileName="Assets/Scripts/Trigger_Interact.cs" Line="44" Column="13" />
-      <File FileName="Assets/Battle_Text_Events.cs" Line="52" Column="57" />
-      <File FileName="Assets/Scripts/Hud_Textbox_Manager.cs" Line="62" Column="6" />
-      <File FileName="Assets/Scripts/Battle_ActionFunctions.cs" Line="74" Column="37" />
-      <File FileName="Assets/Scripts/Battle_Turn_Manager.cs" Line="258" Column="41" />
-      <File FileName="Assets/Battle_Enemy_Selection.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Title_Save_Info.cs" Line="37" Column="6" />
-      <File FileName="Assets/Scripts/System/SaveManager.cs" Line="106" Column="48" />
-      <File FileName="Assets/Scripts/Trigger_Save.cs" Line="13" Column="43" />
-      <File FileName="Assets/Scripts/Trigger_Warp_Level.cs" Line="29" Column="10" />
+      <File FileName="Assets/Scripts/System/SaveManager.cs" Line="21" Column="37" />
+      <File FileName="Assets/Scripts/Title_Save_Load.cs" Line="20" Column="37" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-Editor PreferredExecutionTarget="MonoDevelop.Default" />

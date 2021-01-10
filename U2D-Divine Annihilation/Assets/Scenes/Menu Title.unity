@@ -185,7 +185,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3824068}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4fce56810dd3efb7fb201ad3ca6cbd1e, type: 3}
   m_Name: 
@@ -1257,7 +1257,22 @@ MonoBehaviour:
     partyMemberThree: 
     partyMemberThreeHealth: 0
     saveChapter: 
-    hasWokenUp: 0
+    c1s1_0: 0
+    c1s1_1: 0
+    c1s1_2: 0
+    c1s1_3: 0
+    c1s1_4: 0
+    c1s1_5: 0
+    c1s1_6: 0
+    c1s1_7: 0
+    c1s1_8: 0
+    c1s1_9: 0
+    c1s1_10: 0
+    c1s1_11: 0
+    c1s1_12: 0
+    c1s1_13: 0
+    c1s1_14: 0
+    c1s1_15: 0
   thisChapter: 
   firstpass: 1
 --- !u!1 &74516400
@@ -5589,7 +5604,22 @@ MonoBehaviour:
     partyMemberThree: 
     partyMemberThreeHealth: 0
     saveChapter: 
-    hasWokenUp: 0
+    c1s1_0: 0
+    c1s1_1: 0
+    c1s1_2: 0
+    c1s1_3: 0
+    c1s1_4: 0
+    c1s1_5: 0
+    c1s1_6: 0
+    c1s1_7: 0
+    c1s1_8: 0
+    c1s1_9: 0
+    c1s1_10: 0
+    c1s1_11: 0
+    c1s1_12: 0
+    c1s1_13: 0
+    c1s1_14: 0
+    c1s1_15: 0
   thisChapter: 
   firstpass: 1
 --- !u!1 &789364034
@@ -5947,7 +5977,22 @@ MonoBehaviour:
     partyMemberThree: 
     partyMemberThreeHealth: 0
     saveChapter: 
-    hasWokenUp: 0
+    c1s1_0: 0
+    c1s1_1: 0
+    c1s1_2: 0
+    c1s1_3: 0
+    c1s1_4: 0
+    c1s1_5: 0
+    c1s1_6: 0
+    c1s1_7: 0
+    c1s1_8: 0
+    c1s1_9: 0
+    c1s1_10: 0
+    c1s1_11: 0
+    c1s1_12: 0
+    c1s1_13: 0
+    c1s1_14: 0
+    c1s1_15: 0
   thisChapter: 
   firstpass: 1
 --- !u!1 &828494676
@@ -6018,7 +6063,61 @@ MonoBehaviour:
     partyMemberThree: 
     partyMemberThreeHealth: 0
     saveChapter: 
-    hasWokenUp: 0
+    c1s1_0: 0
+    c1s1_1: 0
+    c1s1_2: 0
+    c1s1_3: 0
+    c1s1_4: 0
+    c1s1_5: 0
+    c1s1_6: 0
+    c1s1_7: 0
+    c1s1_8: 0
+    c1s1_9: 0
+    c1s1_10: 0
+    c1s1_11: 0
+    c1s1_12: 0
+    c1s1_13: 0
+    c1s1_14: 0
+    c1s1_15: 0
+  throwSave:
+    saveProfileName: 
+    scene: 
+    playerSavePosition: {x: 0, y: 0}
+    playerHealth: 0
+    playerLevel: 0
+    item1: 
+    item2: 
+    item3: 
+    item4: 
+    item5: 
+    equipment1: 
+    equipment2: 
+    equipment3: 
+    equipment4: 
+    equipment5: 
+    partyMemberOne: 
+    partyMemberOneHealth: 0
+    partyMemberTwo: 
+    partyMemberTwoHealth: 0
+    partyMemberThree: 
+    partyMemberThreeHealth: 0
+    saveChapter: 
+    c1s1_0: 0
+    c1s1_1: 0
+    c1s1_2: 0
+    c1s1_3: 0
+    c1s1_4: 0
+    c1s1_5: 0
+    c1s1_6: 0
+    c1s1_7: 0
+    c1s1_8: 0
+    c1s1_9: 0
+    c1s1_10: 0
+    c1s1_11: 0
+    c1s1_12: 0
+    c1s1_13: 0
+    c1s1_14: 0
+    c1s1_15: 0
   hasLoaded: 0
   loadFileOnCreation: 0
 --- !u!114 &828494679
@@ -6997,7 +7096,22 @@ MonoBehaviour:
     partyMemberThree: 
     partyMemberThreeHealth: 0
     saveChapter: 
-    hasWokenUp: 0
+    c1s1_0: 0
+    c1s1_1: 0
+    c1s1_2: 0
+    c1s1_3: 0
+    c1s1_4: 0
+    c1s1_5: 0
+    c1s1_6: 0
+    c1s1_7: 0
+    c1s1_8: 0
+    c1s1_9: 0
+    c1s1_10: 0
+    c1s1_11: 0
+    c1s1_12: 0
+    c1s1_13: 0
+    c1s1_14: 0
+    c1s1_15: 0
   thisChapter: 
   firstpass: 1
 --- !u!1 &1098311052
@@ -7467,7 +7581,22 @@ MonoBehaviour:
     partyMemberThree: 
     partyMemberThreeHealth: 0
     saveChapter: 
-    hasWokenUp: 0
+    c1s1_0: 0
+    c1s1_1: 0
+    c1s1_2: 0
+    c1s1_3: 0
+    c1s1_4: 0
+    c1s1_5: 0
+    c1s1_6: 0
+    c1s1_7: 0
+    c1s1_8: 0
+    c1s1_9: 0
+    c1s1_10: 0
+    c1s1_11: 0
+    c1s1_12: 0
+    c1s1_13: 0
+    c1s1_14: 0
+    c1s1_15: 0
   thisChapter: 
   firstpass: 1
 --- !u!1 &1194486483
@@ -8275,7 +8404,6 @@ Transform:
   - {fileID: 1626370990}
   - {fileID: 2060854587}
   - {fileID: 1635519523}
-  - {fileID: 1282247895}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8432,36 +8560,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1279484289}
   m_CullTransparentMesh: 0
---- !u!1 &1282247894
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1282247895}
-  m_Layer: 0
-  m_Name: Audio Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1282247895
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1282247894}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1266473368}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1293187835
 GameObject:
   m_ObjectHideFlags: 0
@@ -9937,7 +10035,22 @@ MonoBehaviour:
     partyMemberThree: 
     partyMemberThreeHealth: 0
     saveChapter: 
-    hasWokenUp: 0
+    c1s1_0: 0
+    c1s1_1: 0
+    c1s1_2: 0
+    c1s1_3: 0
+    c1s1_4: 0
+    c1s1_5: 0
+    c1s1_6: 0
+    c1s1_7: 0
+    c1s1_8: 0
+    c1s1_9: 0
+    c1s1_10: 0
+    c1s1_11: 0
+    c1s1_12: 0
+    c1s1_13: 0
+    c1s1_14: 0
+    c1s1_15: 0
   thisChapter: 
   firstpass: 1
 --- !u!1 &1600846738
@@ -10990,7 +11103,22 @@ MonoBehaviour:
     partyMemberThree: 
     partyMemberThreeHealth: 0
     saveChapter: 
-    hasWokenUp: 0
+    c1s1_0: 0
+    c1s1_1: 0
+    c1s1_2: 0
+    c1s1_3: 0
+    c1s1_4: 0
+    c1s1_5: 0
+    c1s1_6: 0
+    c1s1_7: 0
+    c1s1_8: 0
+    c1s1_9: 0
+    c1s1_10: 0
+    c1s1_11: 0
+    c1s1_12: 0
+    c1s1_13: 0
+    c1s1_14: 0
+    c1s1_15: 0
   thisChapter: 
   firstpass: 1
 --- !u!1 &1783338464
@@ -11150,7 +11278,22 @@ MonoBehaviour:
     partyMemberThree: 
     partyMemberThreeHealth: 0
     saveChapter: 
-    hasWokenUp: 0
+    c1s1_0: 0
+    c1s1_1: 0
+    c1s1_2: 0
+    c1s1_3: 0
+    c1s1_4: 0
+    c1s1_5: 0
+    c1s1_6: 0
+    c1s1_7: 0
+    c1s1_8: 0
+    c1s1_9: 0
+    c1s1_10: 0
+    c1s1_11: 0
+    c1s1_12: 0
+    c1s1_13: 0
+    c1s1_14: 0
+    c1s1_15: 0
   thisChapter: 
   firstpass: 1
 --- !u!1 &1809563765
@@ -11950,7 +12093,22 @@ MonoBehaviour:
     partyMemberThree: 
     partyMemberThreeHealth: 0
     saveChapter: 
-    hasWokenUp: 0
+    c1s1_0: 0
+    c1s1_1: 0
+    c1s1_2: 0
+    c1s1_3: 0
+    c1s1_4: 0
+    c1s1_5: 0
+    c1s1_6: 0
+    c1s1_7: 0
+    c1s1_8: 0
+    c1s1_9: 0
+    c1s1_10: 0
+    c1s1_11: 0
+    c1s1_12: 0
+    c1s1_13: 0
+    c1s1_14: 0
+    c1s1_15: 0
   thisChapter: 
   firstpass: 1
 --- !u!1 &1962037833
@@ -12982,7 +13140,22 @@ MonoBehaviour:
     partyMemberThree: 
     partyMemberThreeHealth: 0
     saveChapter: 
-    hasWokenUp: 0
+    c1s1_0: 0
+    c1s1_1: 0
+    c1s1_2: 0
+    c1s1_3: 0
+    c1s1_4: 0
+    c1s1_5: 0
+    c1s1_6: 0
+    c1s1_7: 0
+    c1s1_8: 0
+    c1s1_9: 0
+    c1s1_10: 0
+    c1s1_11: 0
+    c1s1_12: 0
+    c1s1_13: 0
+    c1s1_14: 0
+    c1s1_15: 0
   thisChapter: 
   firstpass: 1
 --- !u!1 &2013261006
@@ -13534,7 +13707,22 @@ MonoBehaviour:
     partyMemberThree: 
     partyMemberThreeHealth: 0
     saveChapter: 
-    hasWokenUp: 0
+    c1s1_0: 0
+    c1s1_1: 0
+    c1s1_2: 0
+    c1s1_3: 0
+    c1s1_4: 0
+    c1s1_5: 0
+    c1s1_6: 0
+    c1s1_7: 0
+    c1s1_8: 0
+    c1s1_9: 0
+    c1s1_10: 0
+    c1s1_11: 0
+    c1s1_12: 0
+    c1s1_13: 0
+    c1s1_14: 0
+    c1s1_15: 0
   thisChapter: 
   firstpass: 1
 --- !u!1 &2122272836
@@ -13744,7 +13932,22 @@ MonoBehaviour:
     partyMemberThree: 
     partyMemberThreeHealth: 0
     saveChapter: 
-    hasWokenUp: 0
+    c1s1_0: 0
+    c1s1_1: 0
+    c1s1_2: 0
+    c1s1_3: 0
+    c1s1_4: 0
+    c1s1_5: 0
+    c1s1_6: 0
+    c1s1_7: 0
+    c1s1_8: 0
+    c1s1_9: 0
+    c1s1_10: 0
+    c1s1_11: 0
+    c1s1_12: 0
+    c1s1_13: 0
+    c1s1_14: 0
+    c1s1_15: 0
   thisChapter: 
   firstpass: 1
 --- !u!1 &2131618449

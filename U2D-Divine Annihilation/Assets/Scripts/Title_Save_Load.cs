@@ -5,6 +5,7 @@
 //
 //=============================================================================
 
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -25,6 +26,12 @@ public class Title_Save_Load : MonoBehaviour
         saveManager = configTarget.GetComponent<SaveManager>();
     }
 
+    IEnumerator DoubleCheck()
+    {
+        yield return new WaitForSeconds(0.6f);
+        saveManager.activeSave.saveProfileName = "SlotOne";
+    }
+
 
     void Update()
     {
@@ -37,6 +44,7 @@ public class Title_Save_Load : MonoBehaviour
                 if (!System.IO.File.Exists(dataPath + "/" + "SlotOne" + ".dasp"))
                 {
                     saveManager.activeSave.saveProfileName = "SlotOne";
+                    StartCoroutine("DoubleCheck");
                     PlayerPrefs.SetString("Current Save Profile", saveManager.activeSave.saveProfileName);
                     saveManager.CreateSave();
                     saveManager.Save();
