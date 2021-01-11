@@ -7,6 +7,7 @@
 
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Trigger_Interact : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class Trigger_Interact : MonoBehaviour
     public bool destroyOnFinish;
     private bool EventActive;
     public bool acceptingInput;
+    public UnityEvent onFinish;
 
     private System_Config_Manager global;
 
@@ -92,6 +94,13 @@ public class Trigger_Interact : MonoBehaviour
                     DialogueManager.ShowDialogue();                                 // Execute the show dialogue function
                     StartCoroutine("acceptInput");                                  // Activate the keypress delay
                 }
+            }
+
+
+            if (DialogueManager.currentLine >= dialogueLines.Length)
+            {
+                Debug.Log("FINISH");
+                onFinish.Invoke();
             }
         }
     }
