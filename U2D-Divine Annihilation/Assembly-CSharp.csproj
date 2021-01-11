@@ -73,6 +73,7 @@
      <Compile Include="Assets\Scripts\Entity_Dust.cs" />
      <Compile Include="Assets\Scripts\Entity_Effect_Character_Ghost.cs" />
      <Compile Include="Assets\Scripts\Entity_Follow_Flip.cs" />
+     <Compile Include="Assets\Scripts\Event\Event_WakeUp.cs" />
      <Compile Include="Assets\Scripts\Hud_Health.cs" />
      <Compile Include="Assets\Scripts\Hud_Inventory.cs" />
      <Compile Include="Assets\Scripts\Hud_Textbox_Manager.cs" />
@@ -89,6 +90,8 @@
      <Compile Include="Assets\Scripts\System\SystemFadeTransition.cs" />
      <Compile Include="Assets\Scripts\System\SystemPersistantData.cs" />
      <Compile Include="Assets\Scripts\System_Config_Manager.cs" />
+     <Compile Include="Assets\Scripts\System_LevelData_Manager.cs" />
+     <Compile Include="Assets\Scripts\System_LevelData_Receiver.cs" />
      <Compile Include="Assets\Scripts\System_PersistentOnOverworld.cs" />
      <Compile Include="Assets\Scripts\Title_Erase.cs" />
      <Compile Include="Assets\Scripts\Title_Load.cs" />

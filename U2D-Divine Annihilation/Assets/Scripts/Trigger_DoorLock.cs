@@ -17,7 +17,6 @@ public class Trigger_DoorLock : MonoBehaviour
     public GameObject lockObject;
 
     private bool unlocked;
-    private bool acceptingInput;
     private SaveManager saveManager;
 
     void Start()
@@ -36,13 +35,6 @@ public class Trigger_DoorLock : MonoBehaviour
             }
             lockObject.GetComponent<SpriteRenderer>().sprite = unlockedSprite;
         }
-    }
-
-
-    IEnumerator acceptInput()
-    {
-        yield return new WaitForSeconds(1);     // The delay until it is accepting input again
-        acceptingInput = true;                  // Allow input again
     }
 
 

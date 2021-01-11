@@ -106,6 +106,22 @@ public class SaveManager : MonoBehaviour
 
         // Chapter Data
         activeSave.saveChapter = "C1 Begining";
+        activeSave.c1s1_0 = 0;
+        activeSave.c1s1_1 = 0;
+        activeSave.c1s1_2 = 0;
+        activeSave.c1s1_3 = 0;
+        activeSave.c1s1_4 = 0;
+        activeSave.c1s1_5 = 0;
+        activeSave.c1s1_6 = 0;
+        activeSave.c1s1_7 = 0;
+        activeSave.c1s1_8 = 0;
+        activeSave.c1s1_9 = 0;
+        activeSave.c1s1_10 = 0;
+        activeSave.c1s1_11 = 0;
+        activeSave.c1s1_12 = 0;
+        activeSave.c1s1_13 = 0;
+        activeSave.c1s1_14 = 0;
+        activeSave.c1s1_15 = 0;
 
         // Safty data
         PlayerPrefs.SetFloat("LoadPlayerPref", 0);
@@ -237,7 +253,7 @@ public class SaveData
     public string equipment3;
     public string equipment4;
     public string equipment5;
-
+    
     // Party Data
     public string partyMemberOne;
     public float partyMemberOneHealth;
@@ -253,9 +269,9 @@ public class SaveData
     // and if they helped them or finished the fight in a peaceful way the value would be 2
     public string saveChapter;
     public int c1s1_0; // Woken up
-    public int c1s1_1; // Answered door
-    public int c1s1_2; // Library event [0, 1, 2]
-    public int c1s1_3; // Unused
+    public int c1s1_1; // Pickup rusty sword
+    public int c1s1_2; // Miyu join
+    public int c1s1_3; // Library event [0, 1, 2]
     public int c1s1_4; // Unused
     public int c1s1_5; // Unused
     public int c1s1_6; // Unused
