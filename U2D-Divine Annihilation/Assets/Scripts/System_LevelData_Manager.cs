@@ -17,6 +17,8 @@ public class System_LevelData_Manager : MonoBehaviour
     {
         if (levelDataID == "c1s1_0") saveManager.activeSave.c1s1_0 = newFlagValue;
         if (levelDataID == "c1s1_1") saveManager.activeSave.c1s1_1 = newFlagValue;
+        if (levelDataID == "c1s1_2") saveManager.activeSave.c1s1_2 = newFlagValue;
+        if (levelDataID == "c1s1_3") saveManager.activeSave.c1s1_3 = newFlagValue;
     }
 }
 

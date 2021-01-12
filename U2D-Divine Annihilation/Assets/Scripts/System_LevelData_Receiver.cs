@@ -19,5 +19,6 @@ public class System_LevelData_Receiver : MonoBehaviour
         if (levelDataID == "c1s1_0" && saveManager.activeSave.c1s1_0 == destructorFlagValue) { foreach (GameObject destructorTarget in destructorTargets) { Destroy(destructorTarget.gameObject); } }
         if (levelDataID == "c1s1_1" && saveManager.activeSave.c1s1_1 == destructorFlagValue) { foreach (GameObject destructorTarget in destructorTargets) { Destroy(destructorTarget.gameObject); } }
         if (levelDataID == "c1s1_2" && saveManager.activeSave.c1s1_2 == destructorFlagValue) { foreach (GameObject destructorTarget in destructorTargets) { Destroy(destructorTarget.gameObject); } }
+        if (levelDataID == "c1s1_3" && saveManager.activeSave.c1s1_3 == destructorFlagValue) { foreach (GameObject destructorTarget in destructorTargets) { Destroy(destructorTarget.gameObject); } }
     }
 }

@@ -19,6 +19,8 @@ public class Trigger_Interact : MonoBehaviour
     public bool destroyOnFinish;
     private bool EventActive;
     public bool acceptingInput;
+    public bool startDestroy;
+    public bool startDestroyTriggered;
     public UnityEvent onFinish;
 
     private System_Config_Manager global;
@@ -35,6 +37,17 @@ public class Trigger_Interact : MonoBehaviour
         acceptingInput = true;                  // Allow input again
     }
 
+    IEnumerator finishDestroy()
+    {
+        Debug.Log("FINISH");
+        onFinish.Invoke();
+        yield return new WaitForSeconds(.08f);     // The delay until it is accepting input again
+    }
+
+    public void Test()
+    {
+        Debug.Log("Method successfully invoked!");
+    }
 
     void OnTriggerStay2D(Collider2D other)
     {
@@ -42,6 +55,12 @@ public class Trigger_Interact : MonoBehaviour
         {
             DialogueManager.EventTrigger = EventTrigger;
             DialogueManager.EventActive = EventActive;
+            if (startDestroy && !startDestroyTriggered)
+            {
+                StartCoroutine("finishDestroy");
+                Debug.Log("Flag");
+                startDestroyTriggered = true;
+            }
 
             // Check if the player has pressed the action key
             if (Input.GetKeyDown("z") && acceptingInput == true && !EventTrigger)
@@ -94,13 +113,6 @@ public class Trigger_Interact : MonoBehaviour
                     DialogueManager.ShowDialogue();                                 // Execute the show dialogue function
                     StartCoroutine("acceptInput");                                  // Activate the keypress delay
                 }
-            }
-
-
-            if (DialogueManager.currentLine >= dialogueLines.Length)
-            {
-                Debug.Log("FINISH");
-                onFinish.Invoke();
             }
         }
     }
