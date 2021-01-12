@@ -106,7 +106,7 @@ public class Hud_Textbox_Manager : MonoBehaviour
             StopCoroutine("ShowText");
             if (destroyOnFinish)
             {
-                targetTrigger.SetActive(false);
+                targetTrigger.GetComponent<Trigger_Interact>().startDestroy = true;
             }
 
             dialogueTextObject.text = "";
