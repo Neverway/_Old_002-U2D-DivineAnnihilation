@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -10036,7 +10036,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 56b1ce145ad624a93900f4bec71189ee, type: 2}
+  - {fileID: 2100000, guid: 69a67f2ebe952e641a03c2c6dc630dc5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -27272,7 +27272,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 56b1ce145ad624a93900f4bec71189ee, type: 2}
+  - {fileID: 2100000, guid: 69a67f2ebe952e641a03c2c6dc630dc5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -27622,7 +27622,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 56b1ce145ad624a93900f4bec71189ee, type: 2}
+  - {fileID: 2100000, guid: 69a67f2ebe952e641a03c2c6dc630dc5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -27804,7 +27804,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 56b1ce145ad624a93900f4bec71189ee, type: 2}
+  - {fileID: 2100000, guid: 69a67f2ebe952e641a03c2c6dc630dc5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -33281,7 +33281,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 56b1ce145ad624a93900f4bec71189ee, type: 2}
+  - {fileID: 2100000, guid: 69a67f2ebe952e641a03c2c6dc630dc5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -34406,7 +34406,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 56b1ce145ad624a93900f4bec71189ee, type: 2}
+  - {fileID: 2100000, guid: 69a67f2ebe952e641a03c2c6dc630dc5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -40476,6 +40476,7 @@ MonoBehaviour:
     scene: 
     playerSavePosition: {x: 0, y: 0}
     playerHealth: 0
+    playerLevel: 0
     item1: 
     item2: 
     item3: 
@@ -40492,7 +40493,62 @@ MonoBehaviour:
     partyMemberTwoHealth: 0
     partyMemberThree: 
     partyMemberThreeHealth: 0
-    hasWokenUp: 0
+    saveChapter: 
+    c1s1_0: 0
+    c1s1_1: 0
+    c1s1_2: 0
+    c1s1_3: 0
+    c1s1_4: 0
+    c1s1_5: 0
+    c1s1_6: 0
+    c1s1_7: 0
+    c1s1_8: 0
+    c1s1_9: 0
+    c1s1_10: 0
+    c1s1_11: 0
+    c1s1_12: 0
+    c1s1_13: 0
+    c1s1_14: 0
+    c1s1_15: 0
+  throwSave:
+    saveProfileName: 
+    scene: 
+    playerSavePosition: {x: 0, y: 0}
+    playerHealth: 0
+    playerLevel: 0
+    item1: 
+    item2: 
+    item3: 
+    item4: 
+    item5: 
+    equipment1: 
+    equipment2: 
+    equipment3: 
+    equipment4: 
+    equipment5: 
+    partyMemberOne: 
+    partyMemberOneHealth: 0
+    partyMemberTwo: 
+    partyMemberTwoHealth: 0
+    partyMemberThree: 
+    partyMemberThreeHealth: 0
+    saveChapter: 
+    c1s1_0: 0
+    c1s1_1: 0
+    c1s1_2: 0
+    c1s1_3: 0
+    c1s1_4: 0
+    c1s1_5: 0
+    c1s1_6: 0
+    c1s1_7: 0
+    c1s1_8: 0
+    c1s1_9: 0
+    c1s1_10: 0
+    c1s1_11: 0
+    c1s1_12: 0
+    c1s1_13: 0
+    c1s1_14: 0
+    c1s1_15: 0
   hasLoaded: 0
   loadFileOnCreation: 0
 --- !u!114 &1474372796
@@ -41046,7 +41102,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 56b1ce145ad624a93900f4bec71189ee, type: 2}
+  - {fileID: 2100000, guid: 69a67f2ebe952e641a03c2c6dc630dc5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -47330,7 +47386,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 56b1ce145ad624a93900f4bec71189ee, type: 2}
+  - {fileID: 2100000, guid: 69a67f2ebe952e641a03c2c6dc630dc5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -49359,7 +49415,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 56b1ce145ad624a93900f4bec71189ee, type: 2}
+  - {fileID: 2100000, guid: 69a67f2ebe952e641a03c2c6dc630dc5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -54287,6 +54343,11 @@ MonoBehaviour:
   EventTrigger: 0
   destroyOnFinish: 0
   acceptingInput: 1
+  startDestroy: 0
+  startDestroyTriggered: 0
+  onFinish:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &1332983119061311958
 BoxCollider2D:
   m_ObjectHideFlags: 0
