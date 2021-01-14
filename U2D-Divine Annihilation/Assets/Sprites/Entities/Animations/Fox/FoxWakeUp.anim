@@ -87,7 +87,7 @@ AnimationClip:
     attribute: animationFinished
     path: 
     classID: 114
-    script: {fileID: 11500000, guid: 7ba923bc8ec056ea9b0a8d460a84c4dd, type: 3}
+    script: {fileID: 11500000, guid: 00bc9acb5df2ce929b662f6b5986d195, type: 3}
   m_PPtrCurves:
   - curve:
     - time: 0
@@ -121,7 +121,7 @@ AnimationClip:
     - serializedVersion: 2
       path: 0
       attribute: 2061678855
-      script: {fileID: 11500000, guid: 7ba923bc8ec056ea9b0a8d460a84c4dd, type: 3}
+      script: {fileID: 11500000, guid: 00bc9acb5df2ce929b662f6b5986d195, type: 3}
       typeID: 114
       customType: 0
       isPPtrCurve: 0
@@ -324,7 +324,7 @@ AnimationClip:
     attribute: animationFinished
     path: 
     classID: 114
-    script: {fileID: 11500000, guid: 7ba923bc8ec056ea9b0a8d460a84c4dd, type: 3}
+    script: {fileID: 11500000, guid: 00bc9acb5df2ce929b662f6b5986d195, type: 3}
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0

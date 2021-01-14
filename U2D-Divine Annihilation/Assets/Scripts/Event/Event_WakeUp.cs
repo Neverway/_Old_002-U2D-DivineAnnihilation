@@ -5,24 +5,25 @@ using UnityEngine;
 public class Event_WakeUp : MonoBehaviour
 {
     public bool animationFinished;
+    public Animator animator;
     public GameObject playerCharacter;
     public GameObject playerCharacterShadow;
-    private SaveManager saveManager;
     private System_Config_Manager configManager;
+    private SaveManager saveManager;
 
     // Start is called before the first frame update
     void Start()
     {
         saveManager = FindObjectOfType<SaveManager>();
         configManager = FindObjectOfType<System_Config_Manager>();
-        if (saveManager.activeSave.c1s1_0 == 0)
+        if (saveManager.activeSave.c1s1_0 == 1)
         {
             configManager.overrideCanMove = false;
             gameObject.SetActive(false);
         }
         else
         {
-            configManager.GetComponent<System_Config_Manager>().overrideCanMove = true;
+            configManager.overrideCanMove = true;
             playerCharacter.GetComponent<SpriteRenderer>().enabled = false;
             playerCharacterShadow.GetComponent<SpriteRenderer>().enabled = false;
         }
@@ -31,9 +32,13 @@ public class Event_WakeUp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown("z"))
+        {
+            animator.SetFloat("animationSpeed", 1f);
+        }
         if (animationFinished)
         {
-            configManager.GetComponent<System_Config_Manager>().overrideCanMove = false;
+            configManager.overrideCanMove = false;
             playerCharacter.GetComponent<SpriteRenderer>().enabled = true;
             playerCharacterShadow.GetComponent<SpriteRenderer>().enabled = true;
             gameObject.SetActive(false);
