@@ -15,6 +15,7 @@ public class System_Config_Manager : MonoBehaviour
 
     private Hud_Textbox_Manager DialogueManager;
     private Hud_Inventory InventoryManager;
+    private Hud_SI_Controller SIController;
     private Entity_Character_Movement characterMovement;
 
     void Start()
@@ -22,6 +23,7 @@ public class System_Config_Manager : MonoBehaviour
         menuActive = false;
         DialogueManager = FindObjectOfType<Hud_Textbox_Manager>();
         InventoryManager = FindObjectOfType<Hud_Inventory>();
+        SIController = FindObjectOfType<Hud_SI_Controller>();
         characterMovement = FindObjectOfType<Entity_Character_Movement>();
     }
 
@@ -30,16 +32,17 @@ public class System_Config_Manager : MonoBehaviour
     {
         DialogueManager = FindObjectOfType<Hud_Textbox_Manager>();
         InventoryManager = FindObjectOfType<Hud_Inventory>();
+        SIController = FindObjectOfType<Hud_SI_Controller>();
         characterMovement = FindObjectOfType<Entity_Character_Movement>();
         // Menu active
-        if (DialogueManager.dialogueBoxActive | InventoryManager.inventoryBoxActive | overrideCanMove)
+        if (DialogueManager.dialogueBoxActive | InventoryManager.inventoryBoxActive | SIController.siBoxActive | overrideCanMove)
         {
             menuActive = true;
             characterMovement.canMove = false;
         }
 
         // No Menu active
-        else if(!DialogueManager.dialogueBoxActive && !InventoryManager.inventoryBoxActive && !overrideCanMove)
+        else if(!DialogueManager.dialogueBoxActive && !InventoryManager.inventoryBoxActive && !SIController.siBoxActive && !overrideCanMove)
         {
             menuActive = false;
             characterMovement.canMove = true;

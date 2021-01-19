@@ -73,9 +73,14 @@
      <Compile Include="Assets\Scripts\Entity_Dust.cs" />
      <Compile Include="Assets\Scripts\Entity_Effect_Character_Ghost.cs" />
      <Compile Include="Assets\Scripts\Entity_Follow_Flip.cs" />
+     <Compile Include="Assets\Scripts\Event\Event_Library.cs" />
      <Compile Include="Assets\Scripts\Event\Event_WakeUp.cs" />
      <Compile Include="Assets\Scripts\Hud_Health.cs" />
      <Compile Include="Assets\Scripts\Hud_Inventory.cs" />
+     <Compile Include="Assets\Scripts\Hud_SI_Controller.cs" />
+     <Compile Include="Assets\Scripts\Hud_SI_hand_controller.cs" />
+     <Compile Include="Assets\Scripts\Hud_SI_object_Snapzone.cs" />
+     <Compile Include="Assets\Scripts\Hud_SI_object_highlight.cs" />
      <Compile Include="Assets\Scripts\Hud_Textbox_Manager.cs" />
      <Compile Include="Assets\Scripts\Item_Pickup.cs" />
      <Compile Include="Assets\Scripts\Menu_Control.cs" />
@@ -89,10 +94,12 @@
      <Compile Include="Assets\Scripts\System\SystemEntityID.cs" />
      <Compile Include="Assets\Scripts\System\SystemFadeTransition.cs" />
      <Compile Include="Assets\Scripts\System\SystemPersistantData.cs" />
+     <Compile Include="Assets\Scripts\System_Config_EventPasser.cs" />
      <Compile Include="Assets\Scripts\System_Config_Manager.cs" />
      <Compile Include="Assets\Scripts\System_LevelData_Manager.cs" />
      <Compile Include="Assets\Scripts\System_LevelData_Receiver.cs" />
      <Compile Include="Assets\Scripts\System_PersistentOnOverworld.cs" />
+     <Compile Include="Assets\Scripts\System_SnapToScreen.cs" />
      <Compile Include="Assets\Scripts\Title_Erase.cs" />
      <Compile Include="Assets\Scripts\Title_Load.cs" />
      <Compile Include="Assets\Scripts\Title_Quit.cs" />
@@ -106,6 +113,7 @@
      <Compile Include="Assets\Scripts\Trigger_Interact.cs" />
      <Compile Include="Assets\Scripts\Trigger_PartySet.cs" />
      <Compile Include="Assets\Scripts\Trigger_Save.cs" />
+     <Compile Include="Assets\Scripts\Trigger_SetActiveOnInteract.cs" />
      <Compile Include="Assets\Scripts\Trigger_Warp.cs" />
      <Compile Include="Assets\Scripts\Trigger_Warp_Level.cs" />
      <Compile Include="Assets\Scripts\Unused or Unknown\Entity_Effect_Character_Ghost_Movement.cs" />
@@ -115,6 +123,24 @@
      <Compile Include="Assets\Scripts\Unused or Unknown\OLDHudTextboxManager.cs" />
      <Compile Include="Assets\Scripts\Unused or Unknown\OLDItemPickup.cs" />
      <Compile Include="Assets\Scripts\Unused or Unknown\PuzzlePushbox.cs" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
  <Reference Include="UnityEngine">
  <HintPath>/home/lizband_ucc/Documents/Apps/Unity/Hub/Editor/2019.4.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>

@@ -11,6 +11,7 @@ public class Trigger_PartySet : MonoBehaviour
 {
     public string partyMemberID;
     public bool addMember;
+    public bool eventTrigger;
     private SaveManager saveManager;
 
     void Start()
@@ -21,48 +22,105 @@ public class Trigger_PartySet : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        // Set party on collision with trigger
-        if (other.gameObject.name == "Entity Fox")
+        if (eventTrigger)
         {
-            if (addMember)
+
+            // Set party on collision with trigger
+            if (other.gameObject.name == "Entity Fox")
             {
-                // Check to make sure they are not already in your party
-                if (saveManager.activeSave.partyMemberOne != partyMemberID && saveManager.activeSave.partyMemberTwo != partyMemberID && saveManager.activeSave.partyMemberThree != partyMemberID)
+                if (addMember)
+                {
+                    // Check to make sure they are not already in your party
+                    if (saveManager.activeSave.partyMemberOne != partyMemberID && saveManager.activeSave.partyMemberTwo != partyMemberID && saveManager.activeSave.partyMemberThree != partyMemberID)
+                    {
+                        // Add a entity as a party member
+                        if (saveManager.activeSave.partyMemberOne == "NULL")
+                        {
+                            saveManager.activeSave.partyMemberOne = partyMemberID;
+                        }
+                        // Add a entity as a party member
+                        else if (saveManager.activeSave.partyMemberTwo == "NULL")
+                        {
+                            saveManager.activeSave.partyMemberTwo = partyMemberID;
+                        }
+                        // Add a entity as a party member
+                        else if (saveManager.activeSave.partyMemberThree == "NULL")
+                        {
+                            saveManager.activeSave.partyMemberThree = partyMemberID;
+                        }
+                    }
+                }
+
+                if (!addMember)
                 {
                     // Add a entity as a party member
-                    if (saveManager.activeSave.partyMemberOne == "NULL")
+                    if (saveManager.activeSave.partyMemberOne == partyMemberID)
                     {
-                        saveManager.activeSave.partyMemberOne = partyMemberID;
+                        saveManager.activeSave.partyMemberOne = "NULL";
                     }
                     // Add a entity as a party member
-                    else if (saveManager.activeSave.partyMemberTwo == "NULL")
+                    else if (saveManager.activeSave.partyMemberTwo == partyMemberID)
                     {
-                        saveManager.activeSave.partyMemberTwo = partyMemberID;
+                        saveManager.activeSave.partyMemberTwo = "NULL";
                     }
                     // Add a entity as a party member
-                    else if (saveManager.activeSave.partyMemberThree == "NULL")
+                    else if (saveManager.activeSave.partyMemberThree == partyMemberID)
                     {
-                        saveManager.activeSave.partyMemberThree = partyMemberID;
+                        saveManager.activeSave.partyMemberThree = "NULL";
                     }
                 }
             }
+        }
+    }
 
-            if (!addMember)
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (!eventTrigger)
+        {
+
+            // Set party on collision with trigger
+            if (other.gameObject.name == "Entity Fox" && Input.GetKeyDown("z"))
             {
-                // Add a entity as a party member
-                if (saveManager.activeSave.partyMemberOne == partyMemberID)
+                if (addMember)
                 {
-                    saveManager.activeSave.partyMemberOne = "NULL";
+                    // Check to make sure they are not already in your party
+                    if (saveManager.activeSave.partyMemberOne != partyMemberID && saveManager.activeSave.partyMemberTwo != partyMemberID && saveManager.activeSave.partyMemberThree != partyMemberID)
+                    {
+                        // Add a entity as a party member
+                        if (saveManager.activeSave.partyMemberOne == "NULL")
+                        {
+                            saveManager.activeSave.partyMemberOne = partyMemberID;
+                        }
+                        // Add a entity as a party member
+                        else if (saveManager.activeSave.partyMemberTwo == "NULL")
+                        {
+                            saveManager.activeSave.partyMemberTwo = partyMemberID;
+                        }
+                        // Add a entity as a party member
+                        else if (saveManager.activeSave.partyMemberThree == "NULL")
+                        {
+                            saveManager.activeSave.partyMemberThree = partyMemberID;
+                        }
+                    }
                 }
-                // Add a entity as a party member
-                else if (saveManager.activeSave.partyMemberTwo == partyMemberID)
+
+                if (!addMember)
                 {
-                    saveManager.activeSave.partyMemberTwo = "NULL";
-                }
-                // Add a entity as a party member
-                else if (saveManager.activeSave.partyMemberThree == partyMemberID)
-                {
-                    saveManager.activeSave.partyMemberThree = "NULL";
+                    // Add a entity as a party member
+                    if (saveManager.activeSave.partyMemberOne == partyMemberID)
+                    {
+                        saveManager.activeSave.partyMemberOne = "NULL";
+                    }
+                    // Add a entity as a party member
+                    else if (saveManager.activeSave.partyMemberTwo == partyMemberID)
+                    {
+                        saveManager.activeSave.partyMemberTwo = "NULL";
+                    }
+                    // Add a entity as a party member
+                    else if (saveManager.activeSave.partyMemberThree == partyMemberID)
+                    {
+                        saveManager.activeSave.partyMemberThree = "NULL";
+                    }
                 }
             }
         }
