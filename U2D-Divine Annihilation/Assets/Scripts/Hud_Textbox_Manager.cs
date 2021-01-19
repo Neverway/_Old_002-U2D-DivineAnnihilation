@@ -80,6 +80,7 @@ public class Hud_Textbox_Manager : MonoBehaviour
         // Continue to next dialogue
         if (dialogueBoxActive && EventTrigger && !EventActive)
         {
+            Debug.Log("FIRED");
             if (acceptingInput) currentLine += 1;   // Advance the line count
             StartCoroutine(ShowText());
             textCurrent = "";

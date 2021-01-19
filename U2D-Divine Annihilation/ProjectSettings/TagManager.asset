@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - DestroyPresistentOverworldObjects
+  - SI Pickup
+  - SI Hand
   layers:
   - Default
   - TransparentFX

@@ -39,14 +39,13 @@ public class Trigger_Interact : MonoBehaviour
 
     IEnumerator finishDestroy()
     {
-        Debug.Log("FINISH");
         onFinish.Invoke();
         yield return new WaitForSeconds(.08f);     // The delay until it is accepting input again
     }
 
     public void Test()
     {
-        Debug.Log("Method successfully invoked!");
+
     }
 
     void OnTriggerStay2D(Collider2D other)
@@ -58,7 +57,6 @@ public class Trigger_Interact : MonoBehaviour
             if (startDestroy && !startDestroyTriggered)
             {
                 StartCoroutine("finishDestroy");
-                Debug.Log("Flag");
                 startDestroyTriggered = true;
             }
 
