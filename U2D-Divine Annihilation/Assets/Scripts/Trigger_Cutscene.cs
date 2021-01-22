@@ -15,7 +15,7 @@ public class Trigger_Cutscene : MonoBehaviour
 
     void Start()
     {
-        cutsceneTimeline = GetComponent<PlayableDirector>();
+        //cutsceneTimeline = GetComponent<PlayableDirector>();
     }
 
 
