@@ -1,8 +1,9 @@
 ﻿<Properties StartupConfiguration="{52A108CE-312A-7646-8A28-1F3B11C710B6}|Unit Tests">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/System/SaveManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Trigger_Cutscene.cs">
     <Files>
-      <File FileName="Assets/Scripts/System/SaveManager.cs" Line="273" Column="36" />
-      <File FileName="Assets/Scripts/System_LevelData_Manager.cs" Line="18" Column="83" />
+      <File FileName="Assets/Scripts/System/SaveManager.cs" Line="284" Column="34" />
+      <File FileName="Assets/Scripts/System_LevelData_Manager.cs" Line="22" Column="6" />
+      <File FileName="Assets/Scripts/Trigger_Cutscene.cs" Line="18" Column="61" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-Editor PreferredExecutionTarget="MonoDevelop.Default" />
