@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Event_WakeUp : MonoBehaviour
 {
+    public bool allowInput;
     public bool animationFinished;
     public Animator animator;
     public GameObject playerCharacter;
@@ -34,7 +35,10 @@ public class Event_WakeUp : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown("z"))
         {
-            animator.SetFloat("animationSpeed", 1f);
+            if (allowInput)
+            {
+                animator.SetFloat("animationSpeed", 1f);
+            }
         }
         if (animationFinished)
         {
