@@ -3,7 +3,7 @@
     <Files>
       <File FileName="Assets/Scripts/System/SaveManager.cs" Line="284" Column="34" />
       <File FileName="Assets/Scripts/System_LevelData_Manager.cs" Line="22" Column="6" />
-      <File FileName="Assets/Scripts/Trigger_Cutscene.cs" Line="18" Column="61" />
+      <File FileName="Assets/Scripts/Trigger_Cutscene.cs" Line="31" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-Editor PreferredExecutionTarget="MonoDevelop.Default" />
