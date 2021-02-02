@@ -1,9 +1,8 @@
-﻿<Properties StartupConfiguration="{52A108CE-312A-7646-8A28-1F3B11C710B6}|Unit Tests">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Trigger_Cutscene.cs">
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../NVGJ January 2021/Neverway Game Jam January 2021/Assets/Scripts/ToolPickup.cs">
     <Files>
-      <File FileName="Assets/Scripts/System/SaveManager.cs" Line="284" Column="34" />
-      <File FileName="Assets/Scripts/System_LevelData_Manager.cs" Line="22" Column="6" />
-      <File FileName="Assets/Scripts/Trigger_Cutscene.cs" Line="31" Column="1" />
+      <File FileName="../../NVGJ January 2021/Neverway Game Jam January 2021/Assets/Scripts/MouseLock.cs" Line="11" Column="20" />
+      <File FileName="../../NVGJ January 2021/Neverway Game Jam January 2021/Assets/Scripts/ToolPickup.cs" Line="9" Column="48" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-Editor PreferredExecutionTarget="MonoDevelop.Default" />
