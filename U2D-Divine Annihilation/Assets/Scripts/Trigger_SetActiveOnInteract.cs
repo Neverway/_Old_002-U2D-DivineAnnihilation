@@ -7,6 +7,7 @@
 
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Trigger_SetActiveOnInteract : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class Trigger_SetActiveOnInteract : MonoBehaviour
     public bool repeating;
     public float repeatDelay;
     private bool eventActive;
+    public UnityEvent onTriggered;
 
 
     IEnumerator resetVariables()
@@ -39,6 +41,9 @@ public class Trigger_SetActiveOnInteract : MonoBehaviour
                 {
                     obj.SetActive(false);
                 }
+
+                onTriggered.Invoke();
+
                 if (repeating)
                 {
                     StartCoroutine("resetVariables");
@@ -49,23 +54,28 @@ public class Trigger_SetActiveOnInteract : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-
-        // If the player collides with the trigger then activate
-        if (!eventActive && eventTrigger)
+        if (other.gameObject.name == "Entity Fox")
         {
-            foreach (var obj in activateObjects)
+            // If the player collides with the trigger then activate
+            if (!eventActive && eventTrigger)
             {
-                obj.SetActive(true);
+                foreach (var obj in activateObjects)
+                {
+                    obj.SetActive(true);
+                }
+                foreach (var obj in deactivateObjects)
+                {
+                    obj.SetActive(false);
+                }
+
+                onTriggered.Invoke();
+
+                if (repeating)
+                {
+                    StartCoroutine("resetVariables");
+                }
+                eventActive = true;
             }
-            foreach (var obj in deactivateObjects)
-            {
-                obj.SetActive(false);
-            }
-            if (repeating)
-            {
-                StartCoroutine("resetVariables");
-            }
-            eventActive = true;
         }
     }
 }

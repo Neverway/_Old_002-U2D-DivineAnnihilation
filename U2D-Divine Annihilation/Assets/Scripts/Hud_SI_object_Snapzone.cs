@@ -34,7 +34,7 @@ public class Hud_SI_object_Snapzone : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject == target)
+        if (other.gameObject == target && slotFilled)
         {
             slotFilled = false;
             onSlotEmpty.Invoke();
