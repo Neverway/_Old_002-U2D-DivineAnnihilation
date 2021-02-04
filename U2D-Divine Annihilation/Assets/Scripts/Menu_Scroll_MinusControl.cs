@@ -23,7 +23,7 @@ public class Menu_Scroll_MinusControl : MonoBehaviour
         // Vertical scrolling
         if (!horizontalScrolling)
         {
-            if (Input.GetKeyDown(KeyCode.UpArrow))
+            if (Input.GetButtonDown("Vertical") && Input.GetAxis("Vertical") > 0)
             {
                 if (currentFrame == 0 && wrapAround)
                 {
@@ -35,7 +35,7 @@ public class Menu_Scroll_MinusControl : MonoBehaviour
                     currentFrame -= 1; // Up arrow scrolling
                 }
             }
-            if (Input.GetKeyDown(KeyCode.DownArrow))
+            if (Input.GetButtonDown("Vertical") && Input.GetAxis("Vertical") < 0)
             {
                 if (currentFrame == frames.Length - 1 && wrapAround)
                 {
@@ -52,12 +52,12 @@ public class Menu_Scroll_MinusControl : MonoBehaviour
         // Horizontal scrolling
         else if (horizontalScrolling)
         {
-            if (Input.GetKeyDown(KeyCode.RightArrow))
+            if (Input.GetButtonDown("Horizontal") && Input.GetAxis("Horizontal") > 0)
             {
                 currentFrame += 1;
             }
 
-            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            if (Input.GetButtonDown("Horizontal") && Input.GetAxis("Horizontal") < 0)
             {
                 currentFrame -= 1;
             }

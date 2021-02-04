@@ -50,14 +50,14 @@ public class Battle_Enemy_Selection : MonoBehaviour
     public void Update()
     {
         // Go back to action menu
-        if (Input.GetKeyDown("x"))
+        if (Input.GetButtonDown("Action"))
         {
             ActionMenu.GetComponent<Battle_ActionFunctions>().acceptingInput = true;
             ActionMenu.SetActive(true);
             self.SetActive(false);
         }
 
-        if (Input.GetKeyDown("z"))
+        if (Input.GetButtonDown("Interact"))
         {
             if (menu.currentSelection == 0 && PlayerPrefs.GetString("Enemy0") != "NULL")
             {

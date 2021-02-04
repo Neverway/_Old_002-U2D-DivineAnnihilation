@@ -18,14 +18,15 @@ public class Menu_Scroll_String : MonoBehaviour
     public bool horizontalScrolling;
     public bool wrapAround;
     public int currentSelection;
+    public bool active = true;
 
     void Update()
     {
         // Vertical scrolling
-        if (!horizontalScrolling)
+        if (!horizontalScrolling && active)
         {
             // Up arrow
-            if (Input.GetKeyDown(KeyCode.UpArrow))
+            if (Input.GetButtonDown("Vertical") && Input.GetAxis("Vertical") > 0)
             {
                 if (currentSelection == 0 && wrapAround)
                 {
@@ -40,7 +41,7 @@ public class Menu_Scroll_String : MonoBehaviour
 
 
             // Up arrow
-            if (Input.GetKeyDown(KeyCode.DownArrow))
+            if (Input.GetButtonDown("Vertical") && Input.GetAxis("Vertical") < 0)
             {
                 if (currentSelection == optionsUIReference.Length - 1 && wrapAround)
                 {
@@ -56,14 +57,14 @@ public class Menu_Scroll_String : MonoBehaviour
 
 
         // Horizontal scrolling
-        else if (horizontalScrolling)
+        else if (horizontalScrolling && active)
         {
-            if (Input.GetKeyDown(KeyCode.RightArrow))
+            if (Input.GetButtonDown("Horizontal") && Input.GetAxis("Horizontal") > 0)
             {
                 currentSelection += 1;
             }
 
-            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            if (Input.GetButtonDown("Horizontal") && Input.GetAxis("Horizontal") < 0)
             {
                 currentSelection -= 1;
             }

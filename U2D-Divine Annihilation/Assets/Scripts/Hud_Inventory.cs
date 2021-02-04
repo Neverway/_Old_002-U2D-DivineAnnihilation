@@ -52,7 +52,7 @@ public class Hud_Inventory : MonoBehaviour
     void Update()
     {
         // Close inventory
-        if (inventoryBoxActive && Input.GetKeyDown("c"))
+        if (inventoryBoxActive && Input.GetButtonDown("Select"))
         {
             if (acceptingInput)
             {
@@ -69,7 +69,7 @@ public class Hud_Inventory : MonoBehaviour
         }
 
         // Open inventory
-        if (!inventoryBoxActive && Input.GetKeyDown("c") && !global.menuActive)
+        if (!inventoryBoxActive && Input.GetButtonDown("Select") && !global.menuActive)
         {
             if (acceptingInput)
             {
@@ -99,7 +99,7 @@ public class Hud_Inventory : MonoBehaviour
         // Vertical scrolling
         if (inItems && inventoryBoxActive)
         {
-            if (Input.GetKeyDown(KeyCode.UpArrow))
+            if (Input.GetAxis("Vertical") > 0) // up
             {
                 if (currentFrame == 0 && wrapAround)
                 {
@@ -113,7 +113,7 @@ public class Hud_Inventory : MonoBehaviour
                     items[currentFrame + 1].sprite = notSelected;
                 }
             }
-            if (Input.GetKeyDown(KeyCode.DownArrow))
+            if (Input.GetAxis("Vertical") < 0) // down
             {
                 if (currentFrame == items.Length - 1 && wrapAround)
                 {
@@ -130,7 +130,7 @@ public class Hud_Inventory : MonoBehaviour
             items[currentFrame].sprite = selected;
 
 
-            if (Input.GetKeyDown(KeyCode.RightArrow))
+            if (Input.GetAxis("Horizontal") > 0) // Right
             {
                 items[currentFrame].sprite = notSelected;
                 inItems = false;
@@ -140,7 +140,7 @@ public class Hud_Inventory : MonoBehaviour
 
         if (!inItems && inventoryBoxActive)
         {
-            if (Input.GetKeyDown(KeyCode.UpArrow))
+            if (Input.GetAxis("Vertical") > 0) // Up
             {
                 if (currentFrame == 0 && wrapAround)
                 {
@@ -154,7 +154,7 @@ public class Hud_Inventory : MonoBehaviour
                     equipment[currentFrame + 1].sprite = notSelected;
                 }
             }
-            if (Input.GetKeyDown(KeyCode.DownArrow))
+            if (Input.GetAxis("Vertical") < 0) // down
             {
                 if (currentFrame == equipment.Length - 1 && wrapAround)
                 {
@@ -171,7 +171,7 @@ public class Hud_Inventory : MonoBehaviour
             equipment[currentFrame].sprite = selected;
 
 
-            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            if (Input.GetAxis("Horizontal") < 0) // Left
             {
                 equipment[currentFrame].sprite = notSelected;
                 inItems = true;

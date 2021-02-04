@@ -79,7 +79,7 @@ public class Trigger_PartySet : MonoBehaviour
         {
 
             // Set party on collision with trigger
-            if (other.gameObject.name == "Entity Fox" && Input.GetKeyDown("z"))
+            if (other.gameObject.name == "Entity Fox" && Input.GetButtonDown("Interact"))
             {
                 if (addMember)
                 {

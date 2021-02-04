@@ -42,7 +42,7 @@ public class Trigger_DoorLock : MonoBehaviour
     {
         if (other.gameObject.name == "Entity Fox")
         {
-            if (Input.GetKeyDown("z") && !unlocked)
+            if (Input.GetButtonDown("Interact") && !unlocked)
             {
                 // Slot 1
                 if (saveManager.activeSave.item1 == keyItemName)

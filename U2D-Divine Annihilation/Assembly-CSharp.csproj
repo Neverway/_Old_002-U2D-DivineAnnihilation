@@ -102,6 +102,8 @@
      <Compile Include="Assets\Scripts\System_SnapToScreen.cs" />
      <Compile Include="Assets\Scripts\Title_Erase.cs" />
      <Compile Include="Assets\Scripts\Title_Load.cs" />
+     <Compile Include="Assets\Scripts\Title_Options.cs" />
+     <Compile Include="Assets\Scripts\Title_Options_Keybind.cs" />
      <Compile Include="Assets\Scripts\Title_Quit.cs" />
      <Compile Include="Assets\Scripts\Title_Save_Icons.cs" />
      <Compile Include="Assets\Scripts\Title_Save_Info.cs" />

@@ -27,7 +27,7 @@ public class Trigger_Save : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other)
     {
-        if (Input.GetKeyDown("z"))
+        if (Input.GetButtonDown("Interact"))
         {
             saveManager.activeSave.scene = SceneManager.GetActiveScene().name;
             saveManager.activeSave.saveChapter = saveChapterName;

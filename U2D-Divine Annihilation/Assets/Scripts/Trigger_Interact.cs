@@ -61,7 +61,7 @@ public class Trigger_Interact : MonoBehaviour
             }
 
             // Check if the player has pressed the action key
-            if (Input.GetKeyDown("z") && acceptingInput == true && !EventTrigger)
+            if (Input.GetButtonDown("Interact") && acceptingInput == true && !EventTrigger)
             {
                 acceptingInput = false;     // Enable the keypress delay
                 // Check if the dialogue box is already open
@@ -98,7 +98,7 @@ public class Trigger_Interact : MonoBehaviour
             }
 
             // Check if the player has pressed the action key
-            else if (Input.GetKeyDown("z") && acceptingInput == true && EventActive)
+            else if (Input.GetButtonDown("Interact") && acceptingInput == true && EventActive)
             {
                 acceptingInput = false;     // Enable the keypress delay
                 // Check if the dialogue box is already open
