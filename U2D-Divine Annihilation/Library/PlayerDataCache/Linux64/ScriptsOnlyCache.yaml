@@ -40,6 +40,8 @@ ScriptsOnlyBuild:
     - System_SnapToScreen
     - Title_Erase
     - Title_Load
+    - Title_Options
+    - Title_Options_Keybind
     - Title_Quit
     - Title_Save_Info
     - Title_Save_Load
@@ -167,6 +169,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Shadow
+    - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
@@ -485,7 +488,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 1839735485
       Script: {instanceID: 0}
-    Assets/Scenes/C1S2.unity:
+    Assets/Scenes/C1S4.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -555,6 +558,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13850}
     - Class: 114
+      Script: {instanceID: 13912}
+    - Class: 114
       Script: {instanceID: 13998}
     - Class: 114
       Script: {instanceID: 14032}
@@ -583,6 +588,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 17526}
     - Class: 114
+      Script: {instanceID: 17576}
+    - Class: 114
       Script: {instanceID: 17600}
     - Class: 114
       Script: {instanceID: 17698}
@@ -590,6 +597,123 @@ ScriptsOnlyBuild:
       Script: {instanceID: 17728}
     - Class: 114
       Script: {instanceID: 17878}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 156049354
+      Script: {instanceID: 0}
+    - Class: 483693784
+      Script: {instanceID: 0}
+    - Class: 1839735485
+      Script: {instanceID: 0}
+    Assets/Scenes/CFSF.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 72
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 946}
+    - Class: 114
+      Script: {instanceID: 11594}
+    - Class: 114
+      Script: {instanceID: 11596}
+    - Class: 114
+      Script: {instanceID: 11602}
+    - Class: 114
+      Script: {instanceID: 11606}
+    - Class: 114
+      Script: {instanceID: 11900}
+    - Class: 114
+      Script: {instanceID: 12248}
+    - Class: 114
+      Script: {instanceID: 12320}
+    - Class: 114
+      Script: {instanceID: 13134}
+    - Class: 114
+      Script: {instanceID: 13216}
+    - Class: 114
+      Script: {instanceID: 13326}
+    - Class: 114
+      Script: {instanceID: 13520}
+    - Class: 114
+      Script: {instanceID: 13672}
+    - Class: 114
+      Script: {instanceID: 13690}
+    - Class: 114
+      Script: {instanceID: 13722}
+    - Class: 114
+      Script: {instanceID: 13850}
+    - Class: 114
+      Script: {instanceID: 13998}
+    - Class: 114
+      Script: {instanceID: 14032}
+    - Class: 114
+      Script: {instanceID: 14540}
+    - Class: 114
+      Script: {instanceID: 14650}
+    - Class: 114
+      Script: {instanceID: 15184}
+    - Class: 114
+      Script: {instanceID: 15756}
+    - Class: 114
+      Script: {instanceID: 16232}
+    - Class: 114
+      Script: {instanceID: 16544}
+    - Class: 114
+      Script: {instanceID: 16566}
+    - Class: 114
+      Script: {instanceID: 17526}
+    - Class: 114
+      Script: {instanceID: 17600}
+    - Class: 114
+      Script: {instanceID: 17698}
+    - Class: 114
+      Script: {instanceID: 17728}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -800,9 +924,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 17736}
     - Class: 114
+      Script: {instanceID: 17788}
+    - Class: 114
       Script: {instanceID: 17922}
     - Class: 114
       Script: {instanceID: 17928}
+    - Class: 114
+      Script: {instanceID: 440014}
+    - Class: 114
+      Script: {instanceID: 511114}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1700,7 +1830,7 @@ ScriptsOnlyBuild:
     className: AutoExposure
   - hash:
       serializedVersion: 2
-      Hash: 972c45c22e8f0477cfbf55da8d33baff
+      Hash: a184e9ae8bf99a928a91ec7ef7679d94
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Menu_Scroll_String
@@ -2018,7 +2148,7 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: 62044d4932c0cc52edcdc7d8d0451a9b
+      Hash: 137d143b4c048d8ab8c73b28515022b3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Trigger_SetActiveOnInteract
@@ -2652,11 +2782,24 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 97107df9074a7cd2f9190ee159a4ab1c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Title_Options
+  - hash:
+      serializedVersion: 2
+      Hash: ccb27ad8da5b7f4b7f617754e1d9fb54
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Title_Options_Keybind
   platform: 24
   scenePathNames:
   - Assets/Scenes/Menu Title.unity
   - Assets/Scenes/C1S1.unity
-  - Assets/Scenes/C1S2.unity
+  - Assets/Scenes/C1S4.unity
   - Assets/Scenes/Battle Test.unity
+  - Assets/Scenes/CFSF.unity
   playerPath: "/home/lizband_ucc/Documents/Neverway/Games/\u795E\u306E\u7D76\u6EC5
-    Divine Annihilation/Other Files/Builds/PA9.5.0 test 2.x86_64"
+    Divine Annihilation/Other Files/Builds/PA9.5.2 Test Build 1.x86_64"

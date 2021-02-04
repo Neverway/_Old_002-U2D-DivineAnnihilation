@@ -1,20 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Hud_Textbox_Manager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/System_InputManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/Title_Options_Keybind.cs" Line="94" Column="56" />
-      <File FileName="Assets/Scripts/Menu_Scroll_String.cs" Line="65" Column="14" />
-      <File FileName="Assets/Scripts/Menu_Control.cs" Line="18" Column="27" />
-      <File FileName="Assets/Scripts/Menu_Scroll_MinusControl.cs" Line="30" Column="74" />
-      <File FileName="Assets/Scripts/Title_Save_Load.cs" Line="12" Column="14" />
-      <File FileName="Assets/Scripts/Title_Load.cs" Line="46" Column="14" />
-      <File FileName="Assets/Scripts/Title_Erase.cs" Line="45" Column="9" />
-      <File FileName="Assets/Scripts/Title_Options.cs" Line="84" Column="14" />
-      <File FileName="Assets/Scripts/Hud_Textbox_Manager.cs" Line="91" Column="68" />
+      <File FileName="Assets/Scripts/Title_Options_Keybind.cs" Line="173" Column="28" />
+      <File FileName="Assets/Scripts/System_InputManager.cs" Line="8" Column="83" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-Editor PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.AstarPathfindingProjectEditor PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
