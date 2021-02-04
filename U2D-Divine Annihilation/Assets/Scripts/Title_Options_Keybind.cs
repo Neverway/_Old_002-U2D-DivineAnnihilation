@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Events;
 
 public class Title_Options_Keybind : MonoBehaviour
 {
-    private Dictionary<string, KeyCode> controls = new Dictionary<string, KeyCode>();
+    public Dictionary<string, KeyCode> controls = new Dictionary<string, KeyCode>();
     public Text up, down, left, right, interact, action, select, menu, special1, special2, special3, special4;
     public GameObject upObject, downObject, leftObject, rightObject, interactObject, actionObject, selectObject, menuObject, special1Object, special2Object, special3Object, special4Object;
     public GameObject bindingScreen;
@@ -23,20 +22,20 @@ public class Title_Options_Keybind : MonoBehaviour
         menuScrollString = FindObjectOfType<Menu_Scroll_String>();
 
         // Controls
-        controls.Add("Up", KeyCode.UpArrow);
-        controls.Add("Down", KeyCode.DownArrow);
-        controls.Add("Left", KeyCode.LeftArrow);
-        controls.Add("Right", KeyCode.RightArrow);
+        controls.Add("Up", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Up", "UpArrow")));
+        controls.Add("Down", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Down", "DownArrow")));
+        controls.Add("Left", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Left", "LeftArrow")));
+        controls.Add("Right", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Right", "RightArrow")));
 
-        controls.Add("Interact", KeyCode.Z);
-        controls.Add("Action", KeyCode.X);
-        controls.Add("Select", KeyCode.C);
-        controls.Add("Menu", KeyCode.Escape);
+        controls.Add("Interact", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Interact", "Z")));
+        controls.Add("Action", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Action", "X")));
+        controls.Add("Select", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Select", "C")));
+        controls.Add("Menu", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Menu", "Escape")));
 
-        controls.Add("Special1", KeyCode.Z);
-        controls.Add("Special2", KeyCode.X);
-        controls.Add("Special3", KeyCode.C);
-        controls.Add("Special4", KeyCode.V);
+        controls.Add("Special1", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Special1", "Z")));
+        controls.Add("Special2", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Special2", "X")));
+        controls.Add("Special3", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Special3", "C")));
+        controls.Add("Special4", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Special4", "V")));
 
 
         // Display text
@@ -91,6 +90,11 @@ public class Title_Options_Keybind : MonoBehaviour
             if (menuScrollString.currentSelection == 10) { ChangeKey(special3Object); }
             if (menuScrollString.currentSelection == 11) { ChangeKey(special4Object); }
 
+            if (menuScrollString.currentSelection == 12)
+            {
+                ResetKeys();
+            }
+
             if (menuScrollString.currentSelection == 13)
             {
                 menuScrollString.currentSelection = 0;
@@ -108,6 +112,7 @@ public class Title_Options_Keybind : MonoBehaviour
             controls[currentKey.name] = Event.current.keyCode;
             bindingScreen.SetActive(false);
             StartCoroutine("Delay");
+            SaveKeys();
             currentKey.transform.GetChild(1).GetComponent<Text>().text = Event.current.keyCode.ToString();
             currentKey = null;
         }
@@ -121,5 +126,50 @@ public class Title_Options_Keybind : MonoBehaviour
         bindingScreen.SetActive(true);
         active = false;
         menuScrollString.active = false;
+    }
+
+
+    public void ResetKeys()
+    {
+        currentKey = upObject;
+        controls[currentKey.name] = KeyCode.UpArrow;
+        currentKey.transform.GetChild(1).GetComponent<Text>().text = KeyCode.UpArrow.ToString();
+        currentKey = downObject;
+        controls[currentKey.name] = KeyCode.DownArrow;
+        currentKey.transform.GetChild(1).GetComponent<Text>().text = KeyCode.DownArrow.ToString();
+        currentKey = leftObject;
+        controls[currentKey.name] = KeyCode.UpArrow;
+        currentKey.transform.GetChild(1).GetComponent<Text>().text = KeyCode.LeftArrow.ToString();
+        currentKey = rightObject;
+        controls[currentKey.name] = KeyCode.RightArrow;
+        currentKey.transform.GetChild(1).GetComponent<Text>().text = KeyCode.RightArrow.ToString();
+
+
+        currentKey = interactObject;
+        controls[currentKey.name] = KeyCode.Z;
+        currentKey.transform.GetChild(1).GetComponent<Text>().text = KeyCode.Z.ToString();
+        currentKey = actionObject;
+        controls[currentKey.name] = KeyCode.X;
+        currentKey.transform.GetChild(1).GetComponent<Text>().text = KeyCode.X.ToString();
+        currentKey = selectObject;
+        controls[currentKey.name] = KeyCode.C;
+        currentKey.transform.GetChild(1).GetComponent<Text>().text = KeyCode.C.ToString();
+        currentKey = menuObject;
+        controls[currentKey.name] = KeyCode.Escape;
+        currentKey.transform.GetChild(1).GetComponent<Text>().text = KeyCode.Escape.ToString();
+
+
+        SaveKeys();
+        currentKey = null;
+    }
+
+
+    public void SaveKeys()
+    {
+        foreach (var key in controls)
+        {
+            PlayerPrefs.SetString(key.Key, key.Value.ToString());
+        }
+        PlayerPrefs.Save();
     }
 }
