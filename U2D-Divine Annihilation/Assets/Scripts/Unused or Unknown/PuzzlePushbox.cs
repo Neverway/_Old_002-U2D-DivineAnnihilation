@@ -17,11 +17,11 @@ public class PuzzlePushbox : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown("z"))
+        if (Input.GetButtonDown("Interact"))
         {
             pulling = true;
         }
-        if (Input.GetKeyUp("z"))
+        if (Input.GetButtonUp("Interact"))
         {
             pulling = false;
         }

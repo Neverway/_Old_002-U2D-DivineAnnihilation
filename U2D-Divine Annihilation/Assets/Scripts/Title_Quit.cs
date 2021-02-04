@@ -23,7 +23,7 @@ public class Title_Quit : MonoBehaviour
         currentFrame = menuControl.currentFrame;
         if(currentFrame == 2)
         {
-            if (Input.GetKeyDown("z"))
+            if (Input.GetButtonDown("Interact"))
             {
                 Application.Quit();
                 Debug.Log("Quiting application...");

@@ -26,23 +26,24 @@ public class Title_Erase : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown("x"))
+        if (Input.GetButtonDown("Action"))
         {
             menu.currentFrame = 0;
             loadMenu.SetActive(true);
             selfTarget.SetActive(false);
         }
 
-        if (Input.GetKeyDown("z"))
+        if (Input.GetButtonDown("Interact"))
         {
             if (menu.currentFrame == 0)
             {
                 selfTarget.SetActive(false);
                 loadMenu.SetActive(true);
+                Debug.Log("I'm here");
             }
         }
 
-        if (Input.GetKeyDown("z"))
+        if (Input.GetButtonDown("Interact"))
         {
             if (menu.currentFrame == 1)
             {

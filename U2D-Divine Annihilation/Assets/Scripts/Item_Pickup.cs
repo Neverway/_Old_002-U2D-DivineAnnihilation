@@ -23,7 +23,7 @@ public class Item_Pickup : MonoBehaviour
     {
         if (other.gameObject.name == "Entity Fox")
         {
-            if (Input.GetKeyDown("z") && !triggered)
+            if (Input.GetButtonDown("Interact") && !triggered)
             {
                 if (itemCategory == "Item" || itemCategory == "Consumable" || itemCategory == "Puzzle")
                 {

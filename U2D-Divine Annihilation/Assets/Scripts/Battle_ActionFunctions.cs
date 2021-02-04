@@ -38,21 +38,21 @@ public class Battle_ActionFunctions : MonoBehaviour
 
     void Update()
     {
-        if (menuScrollString.currentSelection == 0 && Input.GetKeyDown("z") && acceptingInput == true)
+        if (menuScrollString.currentSelection == 0 && Input.GetButton("Interact") && acceptingInput == true)
         {
             acceptingInput = false;        // Allow input again
             Attack();                      // Execute the Attack class from this script
             StartCoroutine("acceptInput"); // Activate the keypress delay
         }
 
-        if (menuScrollString.currentSelection == 1 && Input.GetKeyDown("z") && acceptingInput == true)
+        if (menuScrollString.currentSelection == 1 && Input.GetButton("Interact") && acceptingInput == true)
         {
             acceptingInput = false;        // Allow input again
             Defend();                      // Execute the Defend class from this script
             StartCoroutine("acceptInput"); // Activate the keypress delay
         }
 
-        if (menuScrollString.currentSelection == 3 && Input.GetKeyDown("z") && acceptingInput == true)
+        if (menuScrollString.currentSelection == 3 && Input.GetButton("Interact") && acceptingInput == true)
         {
             acceptingInput = false;        // Allow input again
             Flee();                        // Execute the Flee class from this script

@@ -44,13 +44,13 @@ public class Entity_Effect_Character_Ghost_Movement : MonoBehaviour
             characterAnimator.SetFloat("Speed", movement.sqrMagnitude);
 
             // Sprinting
-            if (Input.GetKeyDown("x"))
+            if (Input.GetButtonDown("Action"))
             {
                 movementSpeed = sprintSpeed;
             }
 
             // Not sprinting
-            if (Input.GetKeyUp("x"))
+            if (Input.GetButtonUp("Action"))
             {
                 movementSpeed = walkSpeed;
             }

@@ -36,14 +36,14 @@ public class Hud_SI_hand_controller : MonoBehaviour
             movement.y = 0;
         }
 
-        if (Input.GetKeyDown("z") && isHovering)
+        if (Input.GetButtonDown("Interact") && isHovering)
         {
             if (!isGrabbing)
             {
                 isGrabbing = true;
             }
         }
-        if (Input.GetKeyUp("z"))
+        if (Input.GetButtonUp("Interact"))
         {
             isGrabbing = false;
         }

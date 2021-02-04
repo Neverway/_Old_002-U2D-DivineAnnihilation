@@ -22,7 +22,7 @@ public class Menu_Scroll_Control : MonoBehaviour
         if (!horizontalScrolling)
         {
             // Up arrow
-            if (Input.GetKeyDown(KeyCode.UpArrow))
+            if (Input.GetAxis("Vertical") > 0)
             {
                 if (currentSelection == 0 && wrapAround)
                 {
@@ -37,8 +37,8 @@ public class Menu_Scroll_Control : MonoBehaviour
 
 
             // Up arrow
-            if (Input.GetKeyDown(KeyCode.DownArrow))
-            {
+            if (Input.GetAxis("Vertical") < 0)
+                {
                 if (currentSelection == selections.Length - 1 && wrapAround)
                 {
                     currentSelection = -1; // Up arrow wrap around
@@ -55,12 +55,12 @@ public class Menu_Scroll_Control : MonoBehaviour
         // Horizontal scrolling
         else if (horizontalScrolling)
         {
-            if (Input.GetKeyDown(KeyCode.RightArrow))
+            if (Input.GetAxis("Horizontal") > 0)
             {
                 currentSelection += 1;
             }
 
-            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            if (Input.GetAxis("Horizontal") < 0)
             {
                 currentSelection -= 1;
             }

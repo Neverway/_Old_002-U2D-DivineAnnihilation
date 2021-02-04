@@ -70,7 +70,7 @@ public class Hud_Textbox_Manager : MonoBehaviour
         }
 
         // Continue to next dialogue
-        if (dialogueBoxActive && Input.GetKeyDown("z") && !EventTrigger)
+        if (dialogueBoxActive && Input.GetButtonDown("Interact") && !EventTrigger)
         {
             if (acceptingInput) currentLine += 1;   // Advance the line count
             StartCoroutine(ShowText());
@@ -88,7 +88,7 @@ public class Hud_Textbox_Manager : MonoBehaviour
             EventActive = true;
         }
         // Continue to next dialogue
-        else if (dialogueBoxActive && Input.GetKeyDown("z") && EventTrigger && EventActive)
+        else if (dialogueBoxActive && Input.GetButtonDown("Interact") && EventTrigger && EventActive)
         {
             if (acceptingInput) currentLine += 1;   // Advance the line count
             StartCoroutine(ShowText());

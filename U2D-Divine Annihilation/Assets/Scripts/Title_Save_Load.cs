@@ -36,7 +36,7 @@ public class Title_Save_Load : MonoBehaviour
     void Update()
     {
         string dataPath = Application.persistentDataPath;
-        if (Input.GetKeyDown("z"))
+        if (Input.GetButtonDown("Interact"))
         {
             // File 1
             if (menu.currentFrame == 0)
@@ -134,7 +134,7 @@ public class Title_Save_Load : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown("x"))
+        if (Input.GetButtonDown("Action"))
         {
             menu.currentFrame = 0;
             titleMenu.SetActive(true);

@@ -27,24 +27,21 @@ public class Title_Load : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown("x"))
+        if (Input.GetButtonDown("Action"))
         {
             menu.currentFrame = 0;
             selfTarget.SetActive(false);
             savesMenu.SetActive(true);
         }
 
-        if (Input.GetKeyDown("z"))
+        if (Input.GetButtonDown("Interact"))
         {
             if (menu.currentFrame == 0)
             {
                 saveManager.Load();
                 SceneManager.LoadScene(saveManager.activeSave.scene);
             }
-        }
 
-        if (Input.GetKeyDown("z"))
-        {
             if (menu.currentFrame == 1)
             {
                 selfTarget.SetActive(false);

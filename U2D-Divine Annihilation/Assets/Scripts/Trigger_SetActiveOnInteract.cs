@@ -31,7 +31,7 @@ public class Trigger_SetActiveOnInteract : MonoBehaviour
         if (other.gameObject.name == "Entity Fox")
         {
             // If the player has pressed the action key then activate
-            if (Input.GetKeyDown("z") && !eventTrigger)
+            if (Input.GetButtonDown("Interact") && !eventTrigger)
             {
                 foreach (var obj in activateObjects)
                 {
