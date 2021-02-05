@@ -2718,6 +2718,7 @@ MonoBehaviour:
   active: 1
   optionsGameObject: {fileID: 801108176}
   menuGameobject: {fileID: 187693410}
+  menuScrollString: {fileID: 0}
 --- !u!114 &187693414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8468,6 +8469,7 @@ GameObject:
   - component: {fileID: 828494679}
   - component: {fileID: 828494678}
   - component: {fileID: 828494680}
+  - component: {fileID: 828494681}
   m_Layer: 0
   m_Name: Config
   m_TagString: Untagged
@@ -8606,6 +8608,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6b66f407e090c2c4885b1f73f3c39ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &828494681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828494676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3db08758b7d7d7d499c23957302c7ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &848041407

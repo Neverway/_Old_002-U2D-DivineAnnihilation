@@ -34,6 +34,7 @@ ScriptsOnlyBuild:
     - SystemFadeTransition
     - System_Config_EventPasser
     - System_Config_Manager
+    - System_InputManager
     - System_LevelData_Manager
     - System_LevelData_Receiver
     - System_PersistentOnOverworld
@@ -69,6 +70,7 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
+    - UnityEditor.Tilemaps.GridBrushEditor
     - UnityEditor.Tilemaps.GridPaintPaletteClipboard
     - UnityEditor.Tilemaps.GridPaintPaletteWindow
     - UnityEditor.Tilemaps.GridPaintingState
@@ -933,6 +935,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 440014}
     - Class: 114
       Script: {instanceID: 511114}
+    - Class: 114
+      Script: {instanceID: 861546}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2794,6 +2798,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Title_Options_Keybind
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: System_InputManager
   platform: 24
   scenePathNames:
   - Assets/Scenes/Menu Title.unity
