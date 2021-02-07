@@ -15,11 +15,17 @@ public class Title_Options : MonoBehaviour
     public GameObject titleGameObject;
     public GameObject controlsGameObject;
     public GameObject menuGameobject;
+    private System_InputManager inputManager;
+
+    void Start()
+    {
+        inputManager = FindObjectOfType<System_InputManager>();
+    }
 
     void Update()
     {
         currentFrame = menuControl.currentSelection;
-        if (Input.GetButtonDown("Action"))
+        if (Input.GetKeyDown(inputManager.controls["Action"]))
         {
             menuControl.currentSelection = 0;
             menuControl2.currentSelection = 0;
@@ -28,14 +34,18 @@ public class Title_Options : MonoBehaviour
         }
         if (currentFrame == 0)
         {
-            if (Input.GetButtonDown("Horizontal"))
+            if (Input.GetKeyDown(inputManager.controls["Left"]))
+            {
+                Debug.Log("0");
+            }
+            if (Input.GetKeyDown(inputManager.controls["Right"]))
             {
                 Debug.Log("0");
             }
         }
         if (currentFrame == 1)
         {
-            if (Input.GetButtonDown("Interact"))
+            if (Input.GetKeyDown(inputManager.controls["Interact"]))
             {
                 menuControl.currentSelection = 0;
                 menuControl2.currentSelection = 0;
@@ -45,42 +55,58 @@ public class Title_Options : MonoBehaviour
         }
         if (currentFrame == 2)
         {
-            if (Input.GetButtonDown("Horizontal"))
+            if (Input.GetKeyDown(inputManager.controls["Left"]))
             {
-                Debug.Log("2");
+                Debug.Log("0");
+            }
+            if (Input.GetKeyDown(inputManager.controls["Right"]))
+            {
+                Debug.Log("0");
             }
         }
         if (currentFrame == 3)
         {
-            if (Input.GetButtonDown("Horizontal"))
+            if (Input.GetKeyDown(inputManager.controls["Left"]))
             {
-                Debug.Log("3");
+                Debug.Log("0");
+            }
+            if (Input.GetKeyDown(inputManager.controls["Right"]))
+            {
+                Debug.Log("0");
             }
         }
         if (currentFrame == 4)
         {
-            if (Input.GetButtonDown("Horizontal"))
+            if (Input.GetKeyDown(inputManager.controls["Left"]))
             {
-                Debug.Log("4");
+                Debug.Log("0");
+            }
+            if (Input.GetKeyDown(inputManager.controls["Right"]))
+            {
+                Debug.Log("0");
             }
         }
         if (currentFrame == 5)
         {
-            if (Input.GetButtonDown("Horizontal"))
+            if (Input.GetKeyDown(inputManager.controls["Left"]))
             {
-                Debug.Log("5");
+                Debug.Log("0");
+            }
+            if (Input.GetKeyDown(inputManager.controls["Right"]))
+            {
+                Debug.Log("0");
             }
         }
         if (currentFrame == 6)
         {
-            if (Input.GetButtonDown("Interact"))
+            if (Input.GetKeyDown(inputManager.controls["Interact"]))
             {
                 Debug.Log("6");
             }
         }
         if (currentFrame == 7)
         {
-            if (Input.GetButtonDown("Interact"))
+            if (Input.GetKeyDown(inputManager.controls["Interact"]))
             {
                 menuControl.currentSelection = 0;
                 menuControl2.currentSelection = 0;

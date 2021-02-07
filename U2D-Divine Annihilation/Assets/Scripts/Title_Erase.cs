@@ -13,12 +13,13 @@ public class Title_Erase : MonoBehaviour
     public GameObject loadMenu;
     public GameObject savesMenu;
     public GameObject configTarget;
+    private System_InputManager inputManager;
     private Menu_Scroll_MinusControl menu;
     private SaveManager saveManager;
 
     void Start()
     {
-
+        inputManager = FindObjectOfType<System_InputManager>();
         menu = selfTarget.GetComponent<Menu_Scroll_MinusControl>();
         saveManager = configTarget.GetComponent<SaveManager>();
     }
@@ -26,24 +27,23 @@ public class Title_Erase : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Action"))
+        if (Input.GetKeyDown(inputManager.controls["Action"]))
         {
             menu.currentFrame = 0;
             loadMenu.SetActive(true);
             selfTarget.SetActive(false);
         }
 
-        if (Input.GetButtonDown("Interact"))
+        if (Input.GetKeyDown(inputManager.controls["Interact"]))
         {
             if (menu.currentFrame == 0)
             {
                 selfTarget.SetActive(false);
                 loadMenu.SetActive(true);
-                Debug.Log("I'm here");
             }
         }
 
-        if (Input.GetButtonDown("Interact"))
+        if (Input.GetKeyDown(inputManager.controls["Interact"]))
         {
             if (menu.currentFrame == 1)
             {

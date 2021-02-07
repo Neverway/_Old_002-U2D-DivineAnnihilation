@@ -16,11 +16,13 @@ public class Title_Save_Load : MonoBehaviour
     public GameObject loadingScreen;
     public GameObject loadFileScreen;
     public GameObject configTarget;
+    private System_InputManager inputManager;
     private Menu_Scroll_MinusControl menu;
     private SaveManager saveManager;
 
     void Start()
     {
+        inputManager = FindObjectOfType<System_InputManager>();
         //DontDestroyOnLoad(selfTarget.gameObject);
         menu = selfTarget.GetComponent<Menu_Scroll_MinusControl>();
         saveManager = configTarget.GetComponent<SaveManager>();
@@ -36,7 +38,7 @@ public class Title_Save_Load : MonoBehaviour
     void Update()
     {
         string dataPath = Application.persistentDataPath;
-        if (Input.GetButtonDown("Interact"))
+        if (Input.GetKeyDown(inputManager.controls["Interact"]))
         {
             // File 1
             if (menu.currentFrame == 0)
@@ -134,7 +136,7 @@ public class Title_Save_Load : MonoBehaviour
             }
         }
 
-        if (Input.GetButtonDown("Action"))
+        if (Input.GetKeyDown(inputManager.controls["Action"]))
         {
             menu.currentFrame = 0;
             titleMenu.SetActive(true);

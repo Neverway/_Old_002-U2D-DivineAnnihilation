@@ -11,9 +11,11 @@ public class Title_Quit : MonoBehaviour
 {
     private Menu_Control menuControl;
     public int currentFrame;
+    private System_InputManager inputManager;
 
     void Start()
     {
+        inputManager = FindObjectOfType<System_InputManager>();
         menuControl = FindObjectOfType<Menu_Control>(); // Find the character movment script
     }
 
@@ -23,7 +25,7 @@ public class Title_Quit : MonoBehaviour
         currentFrame = menuControl.currentFrame;
         if(currentFrame == 2)
         {
-            if (Input.GetButtonDown("Interact"))
+            if (Input.GetKeyDown(inputManager.controls["Interact"]))
             {
                 Application.Quit();
                 Debug.Log("Quiting application...");

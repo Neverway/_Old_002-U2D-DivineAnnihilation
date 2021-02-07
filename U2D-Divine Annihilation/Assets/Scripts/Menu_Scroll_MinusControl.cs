@@ -15,15 +15,20 @@ public class Menu_Scroll_MinusControl : MonoBehaviour
     public bool horizontalScrolling;
     public bool wrapAround;
     public bool canGoBack;
-
     public int currentFrame;
+    private System_InputManager inputManager;
+
+    void Start()
+    {
+        inputManager = FindObjectOfType<System_InputManager>();
+    }
 
     void Update()
     {
         // Vertical scrolling
         if (!horizontalScrolling)
         {
-            if (Input.GetButtonDown("Vertical") && Input.GetAxis("Vertical") > 0)
+            if (Input.GetKeyDown(inputManager.controls["Up"]))
             {
                 if (currentFrame == 0 && wrapAround)
                 {
@@ -35,7 +40,7 @@ public class Menu_Scroll_MinusControl : MonoBehaviour
                     currentFrame -= 1; // Up arrow scrolling
                 }
             }
-            if (Input.GetButtonDown("Vertical") && Input.GetAxis("Vertical") < 0)
+            if (Input.GetKeyDown(inputManager.controls["Down"]))
             {
                 if (currentFrame == frames.Length - 1 && wrapAround)
                 {
@@ -52,12 +57,12 @@ public class Menu_Scroll_MinusControl : MonoBehaviour
         // Horizontal scrolling
         else if (horizontalScrolling)
         {
-            if (Input.GetButtonDown("Horizontal") && Input.GetAxis("Horizontal") > 0)
+            if (Input.GetKeyDown(inputManager.controls["Right"]))
             {
                 currentFrame += 1;
             }
 
-            if (Input.GetButtonDown("Horizontal") && Input.GetAxis("Horizontal") < 0)
+            if (Input.GetKeyDown(inputManager.controls["Left"]))
             {
                 currentFrame -= 1;
             }
