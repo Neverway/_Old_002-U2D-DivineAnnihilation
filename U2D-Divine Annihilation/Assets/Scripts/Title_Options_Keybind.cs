@@ -52,14 +52,14 @@ public class Title_Options_Keybind : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Action") && active)
+        if (Input.GetKeyDown(inputManager.controls["Action"]) && active)
         {
             menuScrollString.currentSelection = 0;
             optionsGameObject.SetActive(true);
             menuGameobject.SetActive(false);
         }
 
-        if (Input.GetButtonDown("Interact") && active)
+        if (Input.GetKeyDown(inputManager.controls["Interact"]) && active)
         {
             if (menuScrollString.currentSelection == 0) { ChangeKey(upObject); }
             else if (menuScrollString.currentSelection == 1) { ChangeKey(downObject); }

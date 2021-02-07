@@ -19,6 +19,7 @@ public class Entity_Character_Movement : MonoBehaviour
     public Animator characterAnimator;
     public ParticleSystem dustParticleSystem;
 
+    private System_InputManager inputManager;
     private Hud_Textbox_Manager DialogueManager;
     private Hud_Inventory InventoryManager;
     private SaveManager saveManager;
@@ -26,6 +27,7 @@ public class Entity_Character_Movement : MonoBehaviour
 
     void Start()
     {
+        inputManager = FindObjectOfType<System_InputManager>();
         DialogueManager = FindObjectOfType<Hud_Textbox_Manager>(); // Find the dialogue manager script
         saveManager = FindObjectOfType<SaveManager>();
         movementSpeed = walkSpeed;                               // Set the starting movement speed
@@ -42,29 +44,58 @@ public class Entity_Character_Movement : MonoBehaviour
         // Allow character input if the canMove variable is true
         if (canMove)
         {
+            Debug.Log("X: " + movement.x);
+            Debug.Log("y: " + Input.GetAxisRaw("Vertical"));
             // Movement input
-            movement.x = Input.GetAxisRaw("Horizontal");
-            movement.y = Input.GetAxisRaw("Vertical");
-        
+            //movement.x = Input.GetAxisRaw("Horizontal");
+            //movement.y = Input.GetAxisRaw("Vertical");
+
+            if (Input.GetKey(inputManager.controls["Right"]) && movement.x < 1)
+            {
+                movement.x += 1;
+            }
+            if (Input.GetKey(inputManager.controls["Left"]) && movement.x > -1)
+            {
+                movement.x -= 1;
+            }
+            if (!Input.GetKey(inputManager.controls["Left"]) && !Input.GetKey(inputManager.controls["Right"]))
+            {
+                movement.x = 0;
+            }
+
+
+            if (Input.GetKey(inputManager.controls["Up"]) && movement.y < 1)
+            {
+                movement.y += 1;
+            }
+            if (Input.GetKey(inputManager.controls["Down"]) && movement.y > -1)
+            {
+                movement.y -= 1;
+            }
+            if (!Input.GetKey(inputManager.controls["Down"]) && !Input.GetKey(inputManager.controls["Up"]))
+            {
+                movement.y = 0;
+            }
+
             // Character animator
             characterAnimator.SetFloat("MoveX", movement.x);
             characterAnimator.SetFloat("MoveY", movement.y);
-            if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1)
-            {
-                characterAnimator.SetFloat("LastMoveX", Input.GetAxisRaw("Horizontal"));
-                characterAnimator.SetFloat("LastMoveY", Input.GetAxisRaw("Vertical"));
+            //if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1)
+            //{
+            //    characterAnimator.SetFloat("LastMoveX", Input.GetAxisRaw("Horizontal"));
+            //    characterAnimator.SetFloat("LastMoveY", Input.GetAxisRaw("Vertical"));
 
-            }
+            //}
             //characterAnimator.SetFloat("Speed", movement.sqrMagnitude);
 
             // Sprinting
-            if (Input.GetButtonDown("Action"))
+            if (Input.GetKeyDown(inputManager.controls["Action"]))
             {
                 movementSpeed = sprintSpeed;
             }
 
             // Not sprinting
-            if (Input.GetButtonUp("Action"))
+            if (Input.GetKeyUp(inputManager.controls["Action"]))
             {
                 movementSpeed = walkSpeed;
             }

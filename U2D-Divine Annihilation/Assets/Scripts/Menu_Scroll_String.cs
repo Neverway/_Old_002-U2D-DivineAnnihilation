@@ -19,6 +19,12 @@ public class Menu_Scroll_String : MonoBehaviour
     public bool wrapAround;
     public int currentSelection;
     public bool active = true;
+    private System_InputManager inputManager;
+
+    void Start()
+    {
+        inputManager = FindObjectOfType<System_InputManager>();
+    }
 
     void Update()
     {
@@ -26,7 +32,7 @@ public class Menu_Scroll_String : MonoBehaviour
         if (!horizontalScrolling && active)
         {
             // Up arrow
-            if (Input.GetButtonDown("Vertical") && Input.GetAxis("Vertical") > 0)
+            if (Input.GetKeyDown(inputManager.controls["Up"]))
             {
                 if (currentSelection == 0 && wrapAround)
                 {
@@ -41,7 +47,7 @@ public class Menu_Scroll_String : MonoBehaviour
 
 
             // Up arrow
-            if (Input.GetButtonDown("Vertical") && Input.GetAxis("Vertical") < 0)
+            if (Input.GetKeyDown(inputManager.controls["Down"]))
             {
                 if (currentSelection == optionsUIReference.Length - 1 && wrapAround)
                 {
@@ -59,12 +65,12 @@ public class Menu_Scroll_String : MonoBehaviour
         // Horizontal scrolling
         else if (horizontalScrolling && active)
         {
-            if (Input.GetButtonDown("Horizontal") && Input.GetAxis("Horizontal") > 0)
+            if (Input.GetKeyDown(inputManager.controls["Right"]))
             {
                 currentSelection += 1;
             }
 
-            if (Input.GetButtonDown("Horizontal") && Input.GetAxis("Horizontal") < 0)
+            if (Input.GetKeyDown(inputManager.controls["Left"]))
             {
                 currentSelection -= 1;
             }

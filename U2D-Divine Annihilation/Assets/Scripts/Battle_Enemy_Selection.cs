@@ -18,9 +18,11 @@ public class Battle_Enemy_Selection : MonoBehaviour
     public GameObject ActionMenu;
     private Menu_Scroll_String menu;
     private Battle_Turn_Manager turnManager;
+    private System_InputManager inputManager;
 
     void Start()
     {
+        inputManager = FindObjectOfType<System_InputManager>();
         menu = self.GetComponent<Menu_Scroll_String>();
         turnManager = FindObjectOfType<Battle_Turn_Manager>();
         if (PlayerPrefs.GetString("Enemy0") != "NULL")
@@ -50,14 +52,14 @@ public class Battle_Enemy_Selection : MonoBehaviour
     public void Update()
     {
         // Go back to action menu
-        if (Input.GetButtonDown("Action"))
+        if (Input.GetKeyDown(inputManager.controls["Action"]))
         {
             ActionMenu.GetComponent<Battle_ActionFunctions>().acceptingInput = true;
             ActionMenu.SetActive(true);
             self.SetActive(false);
         }
 
-        if (Input.GetButtonDown("Interact"))
+        if (Input.GetKeyDown(inputManager.controls["Interact"]))
         {
             if (menu.currentSelection == 0 && PlayerPrefs.GetString("Enemy0") != "NULL")
             {

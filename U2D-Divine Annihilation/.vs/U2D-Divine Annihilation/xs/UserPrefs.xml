@@ -1,8 +1,15 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Title_Options_Keybind.cs">
     <Files>
-      <File FileName="Assets/Scripts/Title_Options_Keybind.cs" Line="158" Column="37" />
-      <File FileName="Assets/Scripts/System_InputManager.cs" Line="28" Column="121" />
+      <File FileName="Assets/Scripts/Entity_Character_Movement.cs" Line="48" Column="14" />
+      <File FileName="Assets/Scripts/Unused or Unknown/Entity_Effect_Character_Ghost_Movement.cs" Line="45" Column="1" />
+      <File FileName="Assets/Scripts/Event/Event_WakeUp.cs" Line="36" Column="19" />
+      <File FileName="Assets/Scripts/Hud_Inventory.cs" Line="55" Column="41" />
+      <File FileName="Assets/Scripts/Hud_SI_hand_controller.cs" Line="39" Column="19" />
+      <File FileName="Assets/Scripts/Hud_Textbox_Manager.cs" Line="73" Column="40" />
+      <File FileName="Assets/Scripts/Item_Pickup.cs" Line="26" Column="23" />
+      <File FileName="Assets/Scripts/System_InputManager.cs" Line="29" Column="9" />
+      <File FileName="Assets/Scripts/Title_Options_Keybind.cs" Line="6" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

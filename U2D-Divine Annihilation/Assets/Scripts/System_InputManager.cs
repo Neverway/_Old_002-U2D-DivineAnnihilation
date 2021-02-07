@@ -26,6 +26,7 @@ public class System_InputManager : MonoBehaviour
         controls.Add("Special 2", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Special 2", "Alpha2")));
         controls.Add("Special 3", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Special 3", "Alpha3")));
         controls.Add("Special 4", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Special 4", "Alpha4")));
+        
     }
 
     //void Update()
