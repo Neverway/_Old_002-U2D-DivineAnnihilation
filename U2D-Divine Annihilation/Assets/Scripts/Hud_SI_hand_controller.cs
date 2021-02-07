@@ -69,7 +69,7 @@ public class Hud_SI_hand_controller : MonoBehaviour
                 isGrabbing = true;
             }
         }
-        if (Input.GetKeyDown(inputManager.controls["Interact"]))
+        if (Input.GetKeyUp(inputManager.controls["Interact"]))
         {
             isGrabbing = false;
         }
