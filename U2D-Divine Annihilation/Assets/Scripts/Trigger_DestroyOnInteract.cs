@@ -13,13 +13,19 @@ public class Trigger_DestroyOnInteract : MonoBehaviour
     public GameObject[] targetObjects;
     public bool eventTrigger;
     private bool eventActive;
+    private System_InputManager inputManager;
+
+    void Start()
+    {
+        inputManager = FindObjectOfType<System_InputManager>();
+    }
 
     void OnTriggerStay2D(Collider2D other)
     {
         if (other.gameObject.name == "Entity Fox")
         {
             // If the player has pressed the action key then activate
-            if (Input.GetButtonDown("Interact") && !eventTrigger)
+            if (Input.GetKeyDown(inputManager.controls["Interact"]) && !eventTrigger)
             {
                 foreach (var obj in targetObjects)
                 {

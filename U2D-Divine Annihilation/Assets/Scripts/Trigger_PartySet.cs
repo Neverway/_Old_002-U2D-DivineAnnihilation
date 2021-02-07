@@ -12,10 +12,12 @@ public class Trigger_PartySet : MonoBehaviour
     public string partyMemberID;
     public bool addMember;
     public bool eventTrigger;
+    private System_InputManager inputManager;
     private SaveManager saveManager;
 
     void Start()
     {
+        inputManager = FindObjectOfType<System_InputManager>();
         saveManager = FindObjectOfType<SaveManager>();
     }
 
@@ -79,7 +81,7 @@ public class Trigger_PartySet : MonoBehaviour
         {
 
             // Set party on collision with trigger
-            if (other.gameObject.name == "Entity Fox" && Input.GetButtonDown("Interact"))
+            if (other.gameObject.name == "Entity Fox" && Input.GetKeyDown(inputManager.controls["Interact"]))
             {
                 if (addMember)
                 {

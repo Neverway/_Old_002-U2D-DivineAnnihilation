@@ -35,12 +35,14 @@ public class Hud_Textbox_Manager : MonoBehaviour
     public string textCurrent = "";
 
     public GameObject targetTrigger;
+    private System_InputManager inputManager;
     private Entity_Character_Movement characterMovement;   // A reference to the character movement script, used to freeze the player when a textbox is up
     private System_Config_Manager global;     // A reference to the configuration manager script, used to set the global value of if a menu is active
 
 
     void Start()
     {
+        inputManager = FindObjectOfType<System_InputManager>();
         characterMovement = FindObjectOfType<Entity_Character_Movement>();     // Find the character movment script
         global = FindObjectOfType<System_Config_Manager>();       // Find the configuration manager script
     }
@@ -70,7 +72,7 @@ public class Hud_Textbox_Manager : MonoBehaviour
         }
 
         // Continue to next dialogue
-        if (dialogueBoxActive && Input.GetButtonDown("Interact") && !EventTrigger)
+        if (dialogueBoxActive && Input.GetKeyDown(inputManager.controls["Interact"]) && !EventTrigger)
         {
             if (acceptingInput) currentLine += 1;   // Advance the line count
             StartCoroutine(ShowText());
@@ -88,7 +90,7 @@ public class Hud_Textbox_Manager : MonoBehaviour
             EventActive = true;
         }
         // Continue to next dialogue
-        else if (dialogueBoxActive && Input.GetButtonDown("Interact") && EventTrigger && EventActive)
+        else if (dialogueBoxActive && Input.GetKeyDown(inputManager.controls["Interact"]) && EventTrigger && EventActive)
         {
             if (acceptingInput) currentLine += 1;   // Advance the line count
             StartCoroutine(ShowText());

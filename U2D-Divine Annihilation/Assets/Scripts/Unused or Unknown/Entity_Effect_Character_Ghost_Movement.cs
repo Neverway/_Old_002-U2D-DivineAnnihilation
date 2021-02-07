@@ -18,12 +18,14 @@ public class Entity_Effect_Character_Ghost_Movement : MonoBehaviour
     public Animator characterAnimator;
     public GameObject ghost;
 
+    private System_InputManager inputManager;
     private Hud_Textbox_Manager DialogueManager;
     private Hud_Inventory InventoryManager;
     Vector2 movement;
 
     void Start()
     {
+        inputManager = FindObjectOfType<System_InputManager>();
         DialogueManager = FindObjectOfType<Hud_Textbox_Manager>();   // Find the dialogue manager script
         movementSpeed = walkSpeed;                                      // Set the starting movement speed
     }
@@ -35,22 +37,46 @@ public class Entity_Effect_Character_Ghost_Movement : MonoBehaviour
         if (canMove)
         {
             // Movement input
-            movement.x = Input.GetAxisRaw("Horizontal");
-            movement.y = Input.GetAxisRaw("Vertical");
-        
+            if (Input.GetKey(inputManager.controls["Right"]) && movement.x < 1)
+            {
+                movement.x += 1;
+            }
+            if (Input.GetKey(inputManager.controls["Left"]) && movement.x > -1)
+            {
+                movement.x -= 1;
+            }
+            if (!Input.GetKey(inputManager.controls["Left"]) && !Input.GetKey(inputManager.controls["Right"]))
+            {
+                movement.x = 0;
+            }
+
+
+            if (Input.GetKey(inputManager.controls["Up"]) && movement.y < 1)
+            {
+                movement.y += 1;
+            }
+            if (Input.GetKey(inputManager.controls["Down"]) && movement.y > -1)
+            {
+                movement.y -= 1;
+            }
+            if (!Input.GetKey(inputManager.controls["Down"]) && !Input.GetKey(inputManager.controls["Up"]))
+            {
+                movement.y = 0;
+            }
+
             // Character animator
             characterAnimator.SetFloat("Horizontal", movement.x);
             characterAnimator.SetFloat("Vertical", movement.y);
             characterAnimator.SetFloat("Speed", movement.sqrMagnitude);
 
             // Sprinting
-            if (Input.GetButtonDown("Action"))
+            if (Input.GetKeyDown(inputManager.controls["Action"]))
             {
                 movementSpeed = sprintSpeed;
             }
 
             // Not sprinting
-            if (Input.GetButtonUp("Action"))
+            if (Input.GetKeyUp(inputManager.controls["Action"]))
             {
                 movementSpeed = walkSpeed;
             }

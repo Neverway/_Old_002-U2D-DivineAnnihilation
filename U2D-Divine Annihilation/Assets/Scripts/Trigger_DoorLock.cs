@@ -17,10 +17,12 @@ public class Trigger_DoorLock : MonoBehaviour
     public GameObject lockObject;
 
     private bool unlocked;
+    private System_InputManager inputManager;
     private SaveManager saveManager;
 
     void Start()
     {
+        inputManager = FindObjectOfType<System_InputManager>();
         saveManager = FindObjectOfType<SaveManager>();
     }
 
@@ -42,7 +44,7 @@ public class Trigger_DoorLock : MonoBehaviour
     {
         if (other.gameObject.name == "Entity Fox")
         {
-            if (Input.GetButtonDown("Interact") && !unlocked)
+            if (Input.GetKeyDown(inputManager.controls["Interact"]) && !unlocked)
             {
                 // Slot 1
                 if (saveManager.activeSave.item1 == keyItemName)

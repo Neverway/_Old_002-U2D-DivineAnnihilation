@@ -11,10 +11,12 @@ public class Item_Pickup : MonoBehaviour
 
     private bool triggered;
     public UnityEvent onPickup;
+    private System_InputManager inputManager;
     private SaveManager saveManager;
 
     void Start()
     {
+        inputManager = FindObjectOfType<System_InputManager>();
         saveManager = FindObjectOfType<SaveManager>();
         triggered = false;
     }
@@ -23,7 +25,7 @@ public class Item_Pickup : MonoBehaviour
     {
         if (other.gameObject.name == "Entity Fox")
         {
-            if (Input.GetButtonDown("Interact") && !triggered)
+            if (Input.GetKeyDown(inputManager.controls["Interact"]) && !triggered)
             {
                 if (itemCategory == "Item" || itemCategory == "Consumable" || itemCategory == "Puzzle")
                 {

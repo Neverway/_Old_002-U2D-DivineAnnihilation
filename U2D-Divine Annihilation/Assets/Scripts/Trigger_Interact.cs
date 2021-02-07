@@ -23,10 +23,12 @@ public class Trigger_Interact : MonoBehaviour
     public bool startDestroyTriggered;
     public UnityEvent onFinish;
 
+    private System_InputManager inputManager;
     private System_Config_Manager global;
 
     void Start()
     {
+        inputManager = FindObjectOfType<System_InputManager>();
         DialogueManager = FindObjectOfType<Hud_Textbox_Manager>();   // Find the dialogue manager script
     }
 
@@ -61,7 +63,7 @@ public class Trigger_Interact : MonoBehaviour
             }
 
             // Check if the player has pressed the action key
-            if (Input.GetButtonDown("Interact") && acceptingInput == true && !EventTrigger)
+            if (Input.GetKeyDown(inputManager.controls["Interact"]) && acceptingInput == true && !EventTrigger)
             {
                 acceptingInput = false;     // Enable the keypress delay
                 // Check if the dialogue box is already open
@@ -98,7 +100,7 @@ public class Trigger_Interact : MonoBehaviour
             }
 
             // Check if the player has pressed the action key
-            else if (Input.GetButtonDown("Interact") && acceptingInput == true && EventActive)
+            else if (Input.GetKeyDown(inputManager.controls["Interact"]) && acceptingInput == true && EventActive)
             {
                 acceptingInput = false;     // Enable the keypress delay
                 // Check if the dialogue box is already open
