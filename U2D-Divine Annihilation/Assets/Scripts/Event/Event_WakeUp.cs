@@ -11,10 +11,12 @@ public class Event_WakeUp : MonoBehaviour
     public GameObject playerCharacterShadow;
     private System_Config_Manager configManager;
     private SaveManager saveManager;
+    private System_InputManager inputManager;
 
     // Start is called before the first frame update
     void Start()
     {
+        inputManager = FindObjectOfType<System_InputManager>();
         saveManager = FindObjectOfType<SaveManager>();
         configManager = FindObjectOfType<System_Config_Manager>();
         if (saveManager.activeSave.c1s1_0 == 1)
@@ -33,7 +35,7 @@ public class Event_WakeUp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Horizontal") || Input.GetButtonDown("Vertical") || Input.GetButtonDown("Interact"))
+        if (Input.GetKey(inputManager.controls["Up"]) || Input.GetKey(inputManager.controls["Down"]) || Input.GetKey(inputManager.controls["Left"]) || Input.GetKey(inputManager.controls["Right"]) || Input.GetKeyDown(inputManager.controls["Interact"]))
         {
             if (allowInput)
             {

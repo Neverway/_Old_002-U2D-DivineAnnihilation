@@ -18,6 +18,13 @@ public class Trigger_SetActiveOnInteract : MonoBehaviour
     public float repeatDelay;
     private bool eventActive;
     public UnityEvent onTriggered;
+    private System_InputManager inputManager;
+
+
+    void Start()
+    {
+        inputManager = FindObjectOfType<System_InputManager>();
+    }
 
 
     IEnumerator resetVariables()
@@ -31,7 +38,7 @@ public class Trigger_SetActiveOnInteract : MonoBehaviour
         if (other.gameObject.name == "Entity Fox")
         {
             // If the player has pressed the action key then activate
-            if (Input.GetButtonDown("Interact") && !eventTrigger)
+            if (Input.GetKeyDown(inputManager.controls["Interact"]) && !eventTrigger)
             {
                 foreach (var obj in activateObjects)
                 {

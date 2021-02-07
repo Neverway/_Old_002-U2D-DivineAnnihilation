@@ -8,20 +8,22 @@ public class PuzzlePushbox : MonoBehaviour
     public GameObject player;
     private bool pulling;
     private Transform target;
+    private System_InputManager inputManager;
 
     // Start is called before the first frame update
     void Start()
     {
+        inputManager = FindObjectOfType<System_InputManager>();
         target = player.GetComponent<Transform>();
     }
 
     void Update()
     {
-        if (Input.GetButtonDown("Interact"))
+        if (Input.GetKeyDown(inputManager.controls["Interact"]))
         {
             pulling = true;
         }
-        if (Input.GetButtonUp("Interact"))
+        if (Input.GetKeyDown(inputManager.controls["Interact"]))
         {
             pulling = false;
         }

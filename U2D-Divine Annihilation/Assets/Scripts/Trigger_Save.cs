@@ -11,10 +11,12 @@ using UnityEngine.SceneManagement;
 public class Trigger_Save : MonoBehaviour
 {
     public string saveChapterName = "???";
+    private System_InputManager inputManager;
     private SaveManager saveManager;
 
     void Start()
     {
+        inputManager = FindObjectOfType<System_InputManager>();
         saveManager = FindObjectOfType<SaveManager>();   // Find the dialogue manager script
     }
 
@@ -27,7 +29,7 @@ public class Trigger_Save : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other)
     {
-        if (Input.GetButtonDown("Interact"))
+        if (Input.GetKeyDown(inputManager.controls["Interact"]))
         {
             saveManager.activeSave.scene = SceneManager.GetActiveScene().name;
             saveManager.activeSave.saveChapter = saveChapterName;

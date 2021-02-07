@@ -11,11 +11,13 @@ public class Hud_SI_hand_controller : MonoBehaviour
     private bool isHovering;
     public bool isGrabbing;
     private GameObject target;
+    private System_InputManager inputManager;
 
     Vector2 movement;
 
     void Start()
     {
+        inputManager = FindObjectOfType<System_InputManager>();
     }
 
 
@@ -25,8 +27,32 @@ public class Hud_SI_hand_controller : MonoBehaviour
         if (canMove)
         {
             // Movement input
-            movement.x = Input.GetAxisRaw("Horizontal");
-            movement.y = Input.GetAxisRaw("Vertical");
+            if (Input.GetKey(inputManager.controls["Right"]) && movement.x < 1)
+            {
+                movement.x += 1;
+            }
+            if (Input.GetKey(inputManager.controls["Left"]) && movement.x > -1)
+            {
+                movement.x -= 1;
+            }
+            if (!Input.GetKey(inputManager.controls["Left"]) && !Input.GetKey(inputManager.controls["Right"]))
+            {
+                movement.x = 0;
+            }
+
+
+            if (Input.GetKey(inputManager.controls["Up"]) && movement.y < 1)
+            {
+                movement.y += 1;
+            }
+            if (Input.GetKey(inputManager.controls["Down"]) && movement.y > -1)
+            {
+                movement.y -= 1;
+            }
+            if (!Input.GetKey(inputManager.controls["Down"]) && !Input.GetKey(inputManager.controls["Up"]))
+            {
+                movement.y = 0;
+            }
         }
 
         // Stop character if the canMove variable is false
@@ -36,14 +62,14 @@ public class Hud_SI_hand_controller : MonoBehaviour
             movement.y = 0;
         }
 
-        if (Input.GetButtonDown("Interact") && isHovering)
+        if (Input.GetKeyDown(inputManager.controls["Interact"]) && isHovering)
         {
             if (!isGrabbing)
             {
                 isGrabbing = true;
             }
         }
-        if (Input.GetButtonUp("Interact"))
+        if (Input.GetKeyDown(inputManager.controls["Interact"]))
         {
             isGrabbing = false;
         }

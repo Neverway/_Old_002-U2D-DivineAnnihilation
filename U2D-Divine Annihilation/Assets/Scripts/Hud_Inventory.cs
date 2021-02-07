@@ -18,6 +18,7 @@ public class Hud_Inventory : MonoBehaviour
     public Text inventorylevelObject;       // A referance to the inventory level object
     public bool inventoryBoxActive;
     public bool acceptingInput;
+    private System_InputManager inputManager;
     private Entity_Character_Movement characterMovement; // A referance to the player movement so the dialogue box can freeze the player when it opens
     private System_Config_Manager global;
     private SaveManager saveManager;
@@ -34,6 +35,7 @@ public class Hud_Inventory : MonoBehaviour
 
     void Start()
     {
+        inputManager = FindObjectOfType<System_InputManager>();
         // selectedButton.Select();
         characterMovement = FindObjectOfType<Entity_Character_Movement>(); // Find the character movment script
         global = FindObjectOfType<System_Config_Manager>(); // Find the config script
@@ -52,7 +54,7 @@ public class Hud_Inventory : MonoBehaviour
     void Update()
     {
         // Close inventory
-        if (inventoryBoxActive && Input.GetButtonDown("Select"))
+        if (inventoryBoxActive && Input.GetKeyDown(inputManager.controls["Action"]))
         {
             if (acceptingInput)
             {
@@ -69,7 +71,7 @@ public class Hud_Inventory : MonoBehaviour
         }
 
         // Open inventory
-        if (!inventoryBoxActive && Input.GetButtonDown("Select") && !global.menuActive)
+        if (!inventoryBoxActive && Input.GetKeyDown(inputManager.controls["Select"]) && !global.menuActive)
         {
             if (acceptingInput)
             {
@@ -99,7 +101,7 @@ public class Hud_Inventory : MonoBehaviour
         // Vertical scrolling
         if (inItems && inventoryBoxActive)
         {
-            if (Input.GetAxis("Vertical") > 0) // up
+            if (Input.GetKeyDown(inputManager.controls["Up"])) // up
             {
                 if (currentFrame == 0 && wrapAround)
                 {
@@ -113,7 +115,7 @@ public class Hud_Inventory : MonoBehaviour
                     items[currentFrame + 1].sprite = notSelected;
                 }
             }
-            if (Input.GetAxis("Vertical") < 0) // down
+            if (Input.GetKeyDown(inputManager.controls["Down"])) // down
             {
                 if (currentFrame == items.Length - 1 && wrapAround)
                 {
@@ -130,7 +132,7 @@ public class Hud_Inventory : MonoBehaviour
             items[currentFrame].sprite = selected;
 
 
-            if (Input.GetAxis("Horizontal") > 0) // Right
+            if (Input.GetKeyDown(inputManager.controls["Right"])) // Right
             {
                 items[currentFrame].sprite = notSelected;
                 inItems = false;
@@ -140,7 +142,7 @@ public class Hud_Inventory : MonoBehaviour
 
         if (!inItems && inventoryBoxActive)
         {
-            if (Input.GetAxis("Vertical") > 0) // Up
+            if (Input.GetKeyDown(inputManager.controls["Up"])) // Up
             {
                 if (currentFrame == 0 && wrapAround)
                 {
@@ -154,7 +156,7 @@ public class Hud_Inventory : MonoBehaviour
                     equipment[currentFrame + 1].sprite = notSelected;
                 }
             }
-            if (Input.GetAxis("Vertical") < 0) // down
+            if (Input.GetKeyDown(inputManager.controls["Down"])) // down
             {
                 if (currentFrame == equipment.Length - 1 && wrapAround)
                 {
@@ -171,7 +173,7 @@ public class Hud_Inventory : MonoBehaviour
             equipment[currentFrame].sprite = selected;
 
 
-            if (Input.GetAxis("Horizontal") < 0) // Left
+            if (Input.GetKeyDown(inputManager.controls["Left"])) // Left
             {
                 equipment[currentFrame].sprite = notSelected;
                 inItems = true;
