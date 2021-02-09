@@ -52,13 +52,18 @@ public class Trigger_Interact : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other)
     {
-        if(other.gameObject.name == "Entity Fox")
+        if (DialogueManager.currentLine >= dialogueLines.Length)
+        {
+            StartCoroutine("finishDestroy");
+        }
+        if (other.gameObject.name == "Entity Fox")
         {
             DialogueManager.EventTrigger = EventTrigger;
             DialogueManager.EventActive = EventActive;
             if (startDestroy && !startDestroyTriggered)
             {
                 StartCoroutine("finishDestroy");
+                Debug.Log("Scream Again?");
                 startDestroyTriggered = true;
             }
 
