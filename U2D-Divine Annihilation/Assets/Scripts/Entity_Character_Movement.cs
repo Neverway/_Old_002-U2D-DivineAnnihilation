@@ -44,8 +44,6 @@ public class Entity_Character_Movement : MonoBehaviour
         // Allow character input if the canMove variable is true
         if (canMove)
         {
-            Debug.Log("X: " + movement.x);
-            Debug.Log("y: " + Input.GetAxisRaw("Vertical"));
             // Movement input
             //movement.x = Input.GetAxisRaw("Horizontal");
             //movement.y = Input.GetAxisRaw("Vertical");
@@ -80,12 +78,12 @@ public class Entity_Character_Movement : MonoBehaviour
             // Character animator
             characterAnimator.SetFloat("MoveX", movement.x);
             characterAnimator.SetFloat("MoveY", movement.y);
-            //if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1)
-            //{
-            //    characterAnimator.SetFloat("LastMoveX", Input.GetAxisRaw("Horizontal"));
-            //    characterAnimator.SetFloat("LastMoveY", Input.GetAxisRaw("Vertical"));
+            if (Input.GetKey(inputManager.controls["Up"]) || Input.GetKey(inputManager.controls["Down"]) || Input.GetKey(inputManager.controls["Left"]) || Input.GetKey(inputManager.controls["Right"]))
+            {
+                characterAnimator.SetFloat("LastMoveX", movement.x);
+                characterAnimator.SetFloat("LastMoveY", movement.y);
 
-            //}
+            }
             //characterAnimator.SetFloat("Speed", movement.sqrMagnitude);
 
             // Sprinting
