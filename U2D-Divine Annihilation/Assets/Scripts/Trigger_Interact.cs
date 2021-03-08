@@ -38,6 +38,7 @@ public class Trigger_Interact : MonoBehaviour
         yield return new WaitForSeconds(1);     // The delay until it is accepting input again
         acceptingInput = true;                  // Allow input again
     }
+   
 
     IEnumerator finishDestroy()
     {
@@ -52,10 +53,6 @@ public class Trigger_Interact : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other)
     {
-        if (DialogueManager.currentLine >= dialogueLines.Length)
-        {
-            StartCoroutine("finishDestroy");
-        }
         if (other.gameObject.name == "Entity Fox")
         {
             DialogueManager.EventTrigger = EventTrigger;
@@ -63,7 +60,6 @@ public class Trigger_Interact : MonoBehaviour
             if (startDestroy && !startDestroyTriggered)
             {
                 StartCoroutine("finishDestroy");
-                Debug.Log("Scream Again?");
                 startDestroyTriggered = true;
             }
 

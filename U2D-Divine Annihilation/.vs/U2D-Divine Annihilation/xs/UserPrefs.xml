@@ -1,6 +1,17 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/System_InputManager.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Trigger_Interact.cs" Line="63" Column="1" />
+      <File FileName="Assets/Scripts/Trigger_PlayerChoice.cs" Line="14" Column="5" />
+      <File FileName="Assets/Scripts/Hud_Choicebox_Manager.cs" Line="37" Column="14" />
+      <File FileName="Assets/Scripts/Title_Intro_Pretitle.cs" Line="36" Column="5" />
+      <File FileName="Assets/Scripts/Menu_Scroll_String.cs" Line="57" Column="64" />
+      <File FileName="Assets/Scripts/Title_Options_Keybind.cs" Line="36" Column="71" />
+      <File FileName="Assets/Scripts/System_InputManager.cs" Line="8" Column="85" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.AstarPathfindingProjectEditor PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

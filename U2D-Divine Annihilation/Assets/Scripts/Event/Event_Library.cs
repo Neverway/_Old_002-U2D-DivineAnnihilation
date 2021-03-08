@@ -9,6 +9,11 @@ public class Event_Library : MonoBehaviour
     private bool triggered;
     public UnityEvent booksFlagged;
 
+    void Start()
+    {
+        triggered = false;
+    }
+
     public void BookFlagAdd()
     {
         booksFlag += 1;
