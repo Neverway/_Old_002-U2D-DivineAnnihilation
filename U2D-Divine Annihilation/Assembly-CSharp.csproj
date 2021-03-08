@@ -75,6 +75,7 @@
      <Compile Include="Assets\Scripts\Entity_Follow_Flip.cs" />
      <Compile Include="Assets\Scripts\Event\Event_Library.cs" />
      <Compile Include="Assets\Scripts\Event\Event_WakeUp.cs" />
+     <Compile Include="Assets\Scripts\Hud_Choicebox_Manager.cs" />
      <Compile Include="Assets\Scripts\Hud_Health.cs" />
      <Compile Include="Assets\Scripts\Hud_Inventory.cs" />
      <Compile Include="Assets\Scripts\Hud_SI_Controller.cs" />
@@ -102,6 +103,7 @@
      <Compile Include="Assets\Scripts\System_PersistentOnOverworld.cs" />
      <Compile Include="Assets\Scripts\System_SnapToScreen.cs" />
      <Compile Include="Assets\Scripts\Title_Erase.cs" />
+     <Compile Include="Assets\Scripts\Title_Intro_Pretitle.cs" />
      <Compile Include="Assets\Scripts\Title_Load.cs" />
      <Compile Include="Assets\Scripts\Title_Options.cs" />
      <Compile Include="Assets\Scripts\Title_Options_Keybind.cs" />
@@ -110,11 +112,13 @@
      <Compile Include="Assets\Scripts\Title_Save_Info.cs" />
      <Compile Include="Assets\Scripts\Title_Save_Load.cs" />
      <Compile Include="Assets\Scripts\Title_Save_Options.cs" />
+     <Compile Include="Assets\Scripts\Trigger_ConditionCheck.cs" />
      <Compile Include="Assets\Scripts\Trigger_Cutscene.cs" />
      <Compile Include="Assets\Scripts\Trigger_DestroyOnInteract.cs" />
      <Compile Include="Assets\Scripts\Trigger_DoorLock.cs" />
      <Compile Include="Assets\Scripts\Trigger_Interact.cs" />
      <Compile Include="Assets\Scripts\Trigger_PartySet.cs" />
+     <Compile Include="Assets\Scripts\Trigger_PlayerChoice.cs" />
      <Compile Include="Assets\Scripts\Trigger_Save.cs" />
      <Compile Include="Assets\Scripts\Trigger_SetActiveOnInteract.cs" />
      <Compile Include="Assets\Scripts\Trigger_Warp.cs" />
