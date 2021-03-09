@@ -72,8 +72,8 @@ public class Title_Intro_Pretitle : MonoBehaviour
 
     IEnumerator fadeout()
     {
-        yield return new WaitForSeconds(0.01f);
-        fadeObject.color = new Color(255, 255, 255, fadeObject.color.a + TextFadeSpeed);
+        yield return new WaitForSeconds(0.001f);
+        fadeObject.color = new Color(0, 0, 0, fadeObject.color.a + (TextFadeSpeed + 0.04f));
         if (fadeObject.color.a < 1)
         {
             StartCoroutine("fadeout");
@@ -115,6 +115,7 @@ public class Title_Intro_Pretitle : MonoBehaviour
         {
             StopAllCoroutines();
             continueText.color = new Color(255, 255, 255, 1);
+            continueText.text = "Press [" + inputManager.controls["Interact"].ToString() + "] to continue";
             continueText.gameObject.GetComponent<Animator>().enabled = true;
             foreach (var obj in pretitleText)
             {
