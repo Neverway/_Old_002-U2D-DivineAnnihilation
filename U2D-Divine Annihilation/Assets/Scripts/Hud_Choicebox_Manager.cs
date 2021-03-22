@@ -68,4 +68,12 @@ public class Hud_Choicebox_Manager : MonoBehaviour
             }
         }
     }
+    public void disableChoiceBox()
+    {
+        if (global.menuActive && choiceBoxActive)
+        {
+            choiceBoxObject.SetActive(false);
+            choiceBoxActive = false;
+        }
+    }
 }

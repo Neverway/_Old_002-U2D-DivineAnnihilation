@@ -8,6 +8,7 @@ TagManager:
   - SI Pickup
   - SI Hand
   - UI Choice Box
+  - FX water
   layers:
   - Default
   - TransparentFX
