@@ -51,14 +51,14 @@ Material:
     m_Floats:
     - Distance: 1
     - Radius: 1
-    - _Distance: 10
+    - _Distance: 3.13
     - _EnableExternalAlpha: 0
-    - _Rad: 1
+    - _Rad: 0.09
     m_Colors:
     - Position: {r: 0.5, g: 0.5, b: 0, a: 0}
     - Ratio: {r: 1, g: 1, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _Position: {r: 0.5, g: 0.5, b: 0, a: 0}
-    - _Ratio: {r: 1.2, g: 1.2, b: 0, a: 0}
+    - _Ratio: {r: 0.38, g: 0.38, b: 0, a: 0}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}

@@ -11,7 +11,7 @@ public class Trigger_PlayerChoice : MonoBehaviour
     public UnityEvent onOption2;
     public UnityEvent onOption3;
     public UnityEvent onOption4;
-    private bool eventActive;
+    //private bool eventActive;
 
     private System_InputManager inputManager;
     private Hud_Choicebox_Manager choiceBoxManager;
@@ -26,31 +26,62 @@ public class Trigger_PlayerChoice : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (choiceBoxManager.choiceBoxActive)
+        {
+            if (Input.GetKeyDown(inputManager.controls["Interact"]) && choiceBoxManager.choiceBoxObject.GetComponent<Menu_Scroll_String>().currentSelection == 0)
+            {
+                onOption1.Invoke();
+            }
+            if (Input.GetKeyDown(inputManager.controls["Interact"]) && choiceBoxManager.choiceBoxObject.GetComponent<Menu_Scroll_String>().currentSelection == 1)
+            {
+                onOption2.Invoke();
+            }
+            if (Input.GetKeyDown(inputManager.controls["Interact"]) && choiceBoxManager.choiceBoxObject.GetComponent<Menu_Scroll_String>().currentSelection == 2)
+            {
+                onOption3.Invoke();
+            }
+            if (Input.GetKeyDown(inputManager.controls["Interact"]) && choiceBoxManager.choiceBoxObject.GetComponent<Menu_Scroll_String>().currentSelection == 3)
+            {
+                onOption4.Invoke();
+            }
+        }
     }
-
+    /*
     void OnTriggerStay2D(Collider2D other)
     {
         if (other.gameObject.name == "Entity Fox")
-        {// Check if the player has pressed the action key
+        {
+            if (options.Length > 4 || options.Length < 2)
+            {
+                Debug.LogWarning("[ID002 DA]: " + "In Trigger_PlayerChoice options length needs to be between 2-4!");
+            }
+
+            // Interact trigger
             if (Input.GetKeyDown(inputManager.controls["Interact"]) && !eventTrigger)
             {
-                if (options.Length > 4 || options.Length < 2)
-                {
-                    Debug.LogWarning("[ID002 DA]: " + "In Trigger_PlayerChoice options length needs to be between 2-4!");
-                }
                 choiceBoxManager.currentTarget = gameObject.GetComponent<Trigger_PlayerChoice>();
                 choiceBoxManager.enableChoiceBox();
             }
-            if (eventTrigger && !eventActive)
+
+            // Event trigger
+            if (eventTrigger)
             {
-                if (options.Length > 4 || options.Length < 2)
-                {
-                    Debug.LogWarning("[ID002 DA]: " + "In Trigger_PlayerChoice options length needs to be between 2-4!");
-                }
                 choiceBoxManager.currentTarget = gameObject.GetComponent<Trigger_PlayerChoice>();
                 choiceBoxManager.enableChoiceBox();
             }
         }
+    }
+    */
+    public void EnterChoiceBox()
+    {
+        choiceBoxManager.currentTarget = gameObject.GetComponent<Trigger_PlayerChoice>();
+        choiceBoxManager.enableChoiceBox();
+    }
+
+    public void ExitChoiceBox()
+    {
+        choiceBoxManager.currentTarget = null;
+        choiceBoxManager.disableChoiceBox();
+        gameObject.SetActive(false);
     }
 }

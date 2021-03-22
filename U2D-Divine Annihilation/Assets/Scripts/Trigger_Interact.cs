@@ -38,17 +38,12 @@ public class Trigger_Interact : MonoBehaviour
         yield return new WaitForSeconds(1);     // The delay until it is accepting input again
         acceptingInput = true;                  // Allow input again
     }
-   
+
 
     IEnumerator finishDestroy()
     {
         onFinish.Invoke();
         yield return new WaitForSeconds(.08f);     // The delay until it is accepting input again
-    }
-
-    public void Test()
-    {
-
     }
 
     void OnTriggerStay2D(Collider2D other)
@@ -116,5 +111,17 @@ public class Trigger_Interact : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void DisableTrigger()
+    {
+        acceptingInput = false;
+    }
+
+    public void RenableTrigger()
+    {
+        acceptingInput = true;
+        startDestroy = false;
+        startDestroyTriggered = false;
     }
 }

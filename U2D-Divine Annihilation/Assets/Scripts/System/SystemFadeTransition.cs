@@ -11,6 +11,7 @@ public class SystemFadeTransition : MonoBehaviour
 
     void Start()
     {
+        FadeTransitionObject.color = new Color(0, 0, 0, 1);
         StartCoroutine("TriggerFadeIn");
     }
 

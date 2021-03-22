@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Shader Graphs_WaterOver
+  m_Shader: {fileID: -6465566751694194690, guid: 09e50523175cdc7a2865be4677f48bc4,
+    type: 3}
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_812D8299:
+        m_Texture: {fileID: 2800000, guid: 62af4ac1e5e72dd04ba4c7334ad364cb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_C77E6032:
+        m_Texture: {fileID: 2800000, guid: 62af4ac1e5e72dd04ba4c7334ad364cb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_57417A33: 0
+    m_Colors:
+    - Vector2_5E7FDA63: {r: 0, g: 2, b: 0, a: 0}
+    - Vector3_3A31713B: {r: 0, g: 0, b: 0, a: 0}
