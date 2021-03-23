@@ -50,7 +50,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 56b1ce145ad624a93900f4bec71189ee, type: 2}
+  - {fileID: 2100000, guid: 69a67f2ebe952e641a03c2c6dc630dc5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -213,6 +213,11 @@ MonoBehaviour:
   EventTrigger: 0
   destroyOnFinish: 1
   acceptingInput: 1
+  startDestroy: 0
+  startDestroyTriggered: 0
+  onFinish:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &251175966919983183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -228,3 +233,6 @@ MonoBehaviour:
   itemName: Blue Gear
   itemIcon: {fileID: 21300000, guid: c8c5f9972301e11ec941f22b30758029, type: 3}
   itemCategory: Puzzle
+  onPickup:
+    m_PersistentCalls:
+      m_Calls: []
