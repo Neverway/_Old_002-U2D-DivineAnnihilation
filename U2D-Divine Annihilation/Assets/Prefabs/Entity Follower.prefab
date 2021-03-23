@@ -56,7 +56,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 56b1ce145ad624a93900f4bec71189ee, type: 2}
+  - {fileID: 2100000, guid: 69a67f2ebe952e641a03c2c6dc630dc5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -203,7 +203,6 @@ MonoBehaviour:
   spriteGraphic: {fileID: 5096077254929229235}
   characterAnimator: {fileID: 1409084549462933745}
   dustParticleSystem: {fileID: 4147401307220064768}
-  configTarget: {fileID: 0}
 --- !u!1 &5608731177992330145
 GameObject:
   m_ObjectHideFlags: 0
@@ -4913,7 +4912,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 56b1ce145ad624a93900f4bec71189ee, type: 2}
+  - {fileID: 0}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
