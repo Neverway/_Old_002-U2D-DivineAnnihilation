@@ -9,6 +9,8 @@ TagManager:
   - SI Hand
   - UI Choice Box
   - FX water
+  - Day Light
+  - Night Light
   layers:
   - Default
   - TransparentFX
