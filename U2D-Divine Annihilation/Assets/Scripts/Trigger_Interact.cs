@@ -48,7 +48,7 @@ public class Trigger_Interact : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other)
     {
-        if (other.gameObject.name == "Entity Fox")
+        if (other.gameObject.tag == "Player")
         {
             DialogueManager.EventTrigger = EventTrigger;
             DialogueManager.EventActive = EventActive;

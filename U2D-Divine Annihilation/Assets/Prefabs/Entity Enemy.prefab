@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5770614709940748212}
   - component: {fileID: 1345679552124620635}
   m_Layer: 0
-  m_Name: Enemy Template
+  m_Name: Entity Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -123,7 +123,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b69c7a8d634c772ff82495d071fa8c61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   senseRange: 6
   speed: 1200
   nextWaypointDistance: 1
@@ -140,7 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac6cd1755e1091d0b96e4ebfa702afae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadRoom: SceneBattleTest
+  loadRoom: Battle Test
   enemy0: Purple Cat
   enemy1: Purple Cat
   enemy2: Purple Cat
@@ -148,9 +147,7 @@ MonoBehaviour:
   enemy1Percent: 70
   enemy2Percent: 70
   enemy3Percent: 50
-  fleePercent: 60
-  player: {fileID: 0}
-  configTarget: {fileID: 0}
+  fleePercent: 100
 --- !u!1 &4591122100581330340
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,7 +197,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 56b1ce145ad624a93900f4bec71189ee, type: 2}
+  - {fileID: 2100000, guid: 69a67f2ebe952e641a03c2c6dc630dc5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
