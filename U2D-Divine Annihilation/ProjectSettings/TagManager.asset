@@ -11,6 +11,7 @@ TagManager:
   - FX water
   - Day Light
   - Night Light
+  - Loading Screen
   layers:
   - Default
   - TransparentFX

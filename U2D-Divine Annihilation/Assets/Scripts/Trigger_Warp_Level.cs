@@ -14,12 +14,14 @@ public class Trigger_Warp_Level : MonoBehaviour
     public float nextRoomY;
     public string loadRoom;
     private SaveManager saveManager;
+    private GameObject loadingScreen;
     //public GameObject Player;
     //public bool PlayTransition;
 
     public void Start()
     {
         saveManager = FindObjectOfType<SaveManager>();   // Find the dialogue manager script
+        loadingScreen = GameObject.FindWithTag("Loading Screen");
     }
 
 
@@ -27,6 +29,10 @@ public class Trigger_Warp_Level : MonoBehaviour
     {
         if (other.gameObject.name == "Entity Fox")
         {
+            if(loadingScreen != null)
+            {
+                loadingScreen.transform.GetChild(0).gameObject.SetActive(true);
+            }
             PlayerPrefs.SetFloat("NextRoomX", nextRoomX);
             PlayerPrefs.SetFloat("NextRoomY", nextRoomY);
             PlayerPrefs.SetInt("LoadingNewRoom", 1);

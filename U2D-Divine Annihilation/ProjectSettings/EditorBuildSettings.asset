@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Battle Test.unity
     guid: 0a6faba5c9bd4344a95ee515dcbcfbd7
+  - enabled: 1
+    path: Assets/Scenes/Gameover.unity
+    guid: 74293b6d39c92294cadf84ca90ccc2e0
   m_configObjects: {}
