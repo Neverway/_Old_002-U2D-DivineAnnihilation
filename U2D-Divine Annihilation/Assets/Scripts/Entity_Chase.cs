@@ -10,7 +10,7 @@ using Pathfinding;
 
 public class Entity_Chase : MonoBehaviour
 {
-    public Transform target;
+    private Transform target;
     public float senseRange = 20f;
     public float speed = 200f;
     public float nextWaypointDistance = 3f;
@@ -27,6 +27,13 @@ public class Entity_Chase : MonoBehaviour
     {
         seeker = GetComponent<Seeker>();
         rigidbody2d = GetComponent<Rigidbody2D>();
+
+        // Auto find the player in the scene
+        target = GameObject.FindWithTag("Player").transform;
+        if (target == null)
+        {
+            Debug.LogError("[ID002 DA]: " + "An enemy was unable to find the player target. Make sure your player has the tag 'Player' set.");
+        }
 
         InvokeRepeating("UpdatePath", 0f, 0.5f);
     }
@@ -89,11 +96,11 @@ public class Entity_Chase : MonoBehaviour
 
             if (rigidbody2d.velocity.x >= 0.01f)
             {
-                spriteGraphic.localScale = new Vector3(-1f, 1f, 1f);
+                //spriteGraphic.localScale = new Vector3(-1f, 1f, 1f);
             }
             else if (rigidbody2d.velocity.x <= -0.01f)
             {
-                spriteGraphic.localScale = new Vector3(1f, 1f, 1f);
+                //spriteGraphic.localScale = new Vector3(1f, 1f, 1f);
             }
         }
     }

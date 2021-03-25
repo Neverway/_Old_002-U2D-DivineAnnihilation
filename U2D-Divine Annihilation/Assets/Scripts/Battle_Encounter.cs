@@ -20,18 +20,26 @@ public class Battle_Encounter : MonoBehaviour
     public float enemy3Percent = 25;
     public float fleePercent = 60;
 
-    public GameObject player;
+    private GameObject player;
     private SaveManager saveManager;
 
     void Start()
     {
         saveManager = FindObjectOfType<SaveManager>(); // Set a reference to the SaveManager script on the Config object in the scene
+
+        // Auto find the player in the scene
+        player = GameObject.FindWithTag("Player");
+        if (player == null)
+        {
+            Debug.LogError("[ID002 DA]: " + "An enemy was unable to find the player target. Make sure your player has the tag 'Player' set.");
+        }
+
     }
 
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.name == "Entity Fox")
+        if (other.gameObject.tag == "Player")
         {
             // Set enemy party based off of percentages
             if (Random.Range(0, 100) <= enemy1Percent)
