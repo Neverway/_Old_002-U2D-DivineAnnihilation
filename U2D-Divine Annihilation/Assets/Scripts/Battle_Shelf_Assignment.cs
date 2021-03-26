@@ -11,6 +11,7 @@ using UnityEngine.UI;
 
 public class Battle_Shelf_Assignment : MonoBehaviour
 {
+    // Public Variabless
     public GameObject shelf1;
     public GameObject shelf2;
     public GameObject shelf3;
@@ -25,12 +26,12 @@ public class Battle_Shelf_Assignment : MonoBehaviour
     public Sprite iconSam;
     public Sprite iconCasey;
 
-    public GameObject configTarget;
+    // Private Variables
     private SaveManager saveManager;
 
     void Start()
     {
-        saveManager = configTarget.GetComponent<SaveManager>(); // Set a reference to the SaveManager script on the Config object in the scene
+        saveManager = FindObjectOfType<SaveManager>(); // Set a reference to the SaveManager script on the Config object in the scene
     }
 
 

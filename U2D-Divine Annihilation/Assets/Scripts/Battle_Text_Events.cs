@@ -9,7 +9,7 @@ using UnityEngine;
 
 public class Battle_Text_Events : MonoBehaviour
 {
-    private Hud_Textbox_Manager DialogueManager;
+    // Public Variabless
     [Header("Starting Text")]
     public string[] dialogueLinesStart;
     public string[] dialogueLineNamesStart;
@@ -25,7 +25,9 @@ public class Battle_Text_Events : MonoBehaviour
     public string[] dialogueLineNamesVictory;
     public Sprite[] dialogueLinePortraitsVictory;
 
-    // Start is called before the first frame update
+    // Private Variables
+    private Hud_Textbox_Manager DialogueManager;
+
     void Start()
     {
         DialogueManager = FindObjectOfType<Hud_Textbox_Manager>();   // Find the dialogue manager script

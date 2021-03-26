@@ -1,18 +1,16 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Entity_Chase.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Battle_Turn_Manager.cs">
     <Files>
-      <File FileName="Assets/Scripts/Trigger_Interact.cs" Line="47" Column="6" />
-      <File FileName="Assets/Scripts/Title_Intro_Pretitle.cs" Line="32" Column="58" />
-      <File FileName="Assets/Scripts/Trigger_PlayerChoice.cs" Line="80" Column="1" />
-      <File FileName="Assets/Scripts/Hud_Choicebox_Manager.cs" Line="74" Column="10" />
-      <File FileName="Assets/Scripts/System/SaveManager.cs" Line="132" Column="19" />
-      <File FileName="Assets/Scripts/System/SystemFadeTransition.cs" Line="60" Column="1" />
-      <File FileName="Assets/Scripts/Entity_Effect_Water.cs" Line="27" Column="6" />
-      <File FileName="Assets/Scripts/Trigger_Effect_Water.cs" Line="37" Column="2" />
-      <File FileName="Assets/Scripts/Menu_Scroll_String.cs" Line="18" Column="66" />
-      <File FileName="Assets/Scripts/Trigger_Warp_Level.cs" Line="37" Column="58" />
-      <File FileName="Assets/Scripts/Entity_Chase.cs" Line="29" Column="51" />
-      <File FileName="Assets/Scripts/Battle_Encounter.cs" Line="28" Column="134" />
+      <File FileName="Assets/Scripts/Battle_ActionFunctions.cs" Line="74" Column="37" />
+      <File FileName="Assets/Scripts/Battle_Encounter.cs" Line="22" Column="126" />
+      <File FileName="Assets/Scripts/Battle_Enemy_Assignment.cs" Line="23" Column="6" />
+      <File FileName="Assets/Scripts/Battle_Enemy_Selection.cs" Line="29" Column="22" />
+      <File FileName="Assets/Scripts/Battle_Entity_Assignment.cs" Line="39" Column="134" />
+      <File FileName="Assets/Scripts/Battle_Shelf_Assignment.cs" Line="33" Column="6" />
+      <File FileName="Assets/Scripts/Battle_Text_Events.cs" Line="26" Column="50" />
+      <File FileName="Assets/Scripts/Battle_Turn_Manager.cs" Line="80" Column="24" />
+      <File FileName="Assets/Scripts/Unused or Unknown/Battle_Controller.cs" Line="16" Column="39" />
+      <File FileName="Assets/Scripts/Battle_Zone_Control.cs" Line="10" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

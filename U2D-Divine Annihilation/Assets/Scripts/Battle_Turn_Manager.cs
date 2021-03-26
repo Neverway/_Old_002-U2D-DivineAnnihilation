@@ -10,36 +10,37 @@ using UnityEngine;
 
 public class Battle_Turn_Manager : MonoBehaviour
 {
+    // Public Variabless
     public int partyTurnID = 0;
     public bool playersTurn = true;
     public float YOffset = 5f;
+    public bool acceptingInput = true;
+
+    public GameObject turnArrow;
+    public GameObject actionMenu;
+    public GameObject enemySelectionMenu;
+
+    public string movesetPartyMember0 = "";
+    public string movesetPartyMember1 = "";
+    public string movesetPartyMember2 = "";
+    public string movesetPartyMember3 = "";
+
+    // Private Variables
+    private GameObject partyMember0;
+    private GameObject partyMember1;
+    private GameObject partyMember2;
+    private GameObject partyMember3;
+    private GameObject Enemy0;
+    private GameObject Enemy1;
+    private GameObject Enemy2;
+    private GameObject Enemy3;
     private bool playerPartyMember1;
     private bool playerPartyMember2;
     private bool playerPartyMember3;
     private bool enemyPartyMember1;
     private bool enemyPartyMember2;
     private bool enemyPartyMember3;
-    public bool acceptingInput = true;
-
-    public GameObject turnArrow;
-    public GameObject partyMember0;
-    public GameObject partyMember1;
-    public GameObject partyMember2;
-    public GameObject partyMember3;
-    public GameObject Enemy0;
-    public GameObject Enemy1;
-    public GameObject Enemy2;
-    public GameObject Enemy3;
-    public GameObject abzPlayer;
-
-    public GameObject configTarget;
-    public GameObject actionMenu;
-    public GameObject enemyMenu;
-
-    public string movesetPartyMember0 = "";
-    public string movesetPartyMember1 = "";
-    public string movesetPartyMember2 = "";
-    public string movesetPartyMember3 = "";
+    private GameObject abzPlayer;
     private SaveManager saveManager;
     private Battle_Zone_Control battleZone;
     private Battle_ActionFunctions actionFunctions;
@@ -47,10 +48,23 @@ public class Battle_Turn_Manager : MonoBehaviour
 
     void Start()
     {
-        saveManager = configTarget.GetComponent<SaveManager>(); // Set a reference to the SaveManager script on the Config object in the scene
+        abzPlayer = GameObject.FindGameObjectWithTag("Player");
+        //actionMenu = GameObject.Find("{Action Menu}");
+        //enemySelectionMenu = GameObject.Find("{Enemy Selection}");
+        saveManager = FindObjectOfType<SaveManager>(); // Set a reference to the SaveManager script on the Config object in the scene
         battleZone = FindObjectOfType<Battle_Zone_Control>();
         actionFunctions = FindObjectOfType<Battle_ActionFunctions>();
         entityAssignment = FindObjectOfType<Battle_Entity_Assignment>();
+
+        Enemy0 = GameObject.Find("{EP0}");
+        Enemy1 = GameObject.Find("{EP1}");
+        Enemy2 = GameObject.Find("{EP2}");
+        Enemy3 = GameObject.Find("{EP3}");
+
+        partyMember0 = GameObject.Find("{PM0}");
+        partyMember1 = GameObject.Find("{PM1}");
+        partyMember2 = GameObject.Find("{PM2}");
+        partyMember3 = GameObject.Find("{PM3}");
     }
 
 
@@ -65,11 +79,11 @@ public class Battle_Turn_Manager : MonoBehaviour
         yield return new WaitForSeconds(6); // The delay until it is accepting input again
         battleZone.abzActive = false;
         partyMember0.GetComponent<SpriteRenderer>().enabled = true;
-        partyMember1.GetComponent<SpriteRenderer>().enabled = true;
-        partyMember2.GetComponent<SpriteRenderer>().enabled = true;
-        partyMember3.GetComponent<SpriteRenderer>().enabled = true;
-        abzPlayer.GetComponent<SpriteRenderer>().enabled = false;
-        abzPlayer.GetComponent<Entity_Character_Movement>().enabled = false;
+        if (partyMember1 != null) partyMember1.GetComponent<SpriteRenderer>().enabled = true;
+        if (partyMember2 != null) partyMember2.GetComponent<SpriteRenderer>().enabled = true;
+        if (partyMember3 != null) partyMember3.GetComponent<SpriteRenderer>().enabled = true;
+        abzPlayer.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        abzPlayer.gameObject.GetComponent<Entity_Character_Movement>().enabled = false;
         NextTurn();
     }
 
@@ -268,7 +282,7 @@ public class Battle_Turn_Manager : MonoBehaviour
         {
             movesetPartyMember0 = "attack";
             battleZone.abzActive = true;
-            enemyMenu.SetActive(false);
+            enemySelectionMenu.SetActive(false);
             partyMember0.GetComponent<SpriteRenderer>().enabled = false;
 
             entityAssignment.AbzEntitySwap(0);
@@ -282,7 +296,7 @@ public class Battle_Turn_Manager : MonoBehaviour
         {
             movesetPartyMember1 = "attack";
             battleZone.abzActive = true;
-            enemyMenu.SetActive(false);
+            enemySelectionMenu.SetActive(false);
             partyMember1.GetComponent<SpriteRenderer>().enabled = false;
 
             entityAssignment.AbzEntitySwap(1);
@@ -296,7 +310,7 @@ public class Battle_Turn_Manager : MonoBehaviour
         {
             movesetPartyMember2 = "attack";
             battleZone.abzActive = true;
-            enemyMenu.SetActive(false);
+            enemySelectionMenu.SetActive(false);
             partyMember2.GetComponent<SpriteRenderer>().enabled = false;
 
             entityAssignment.AbzEntitySwap(2);
@@ -310,7 +324,7 @@ public class Battle_Turn_Manager : MonoBehaviour
         {
             movesetPartyMember3 = "attack";
             battleZone.abzActive = true;
-            enemyMenu.SetActive(false);
+            enemySelectionMenu.SetActive(false);
             partyMember3.GetComponent<SpriteRenderer>().enabled = false;
 
             entityAssignment.AbzEntitySwap(3);

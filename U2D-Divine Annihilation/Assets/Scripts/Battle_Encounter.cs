@@ -10,23 +10,23 @@ using UnityEngine.SceneManagement;
 
 public class Battle_Encounter : MonoBehaviour
 {
-    public string loadRoom;
-    public string enemy0 = "Purple Cat";
-    public string enemy1 = "NULL";
-    public string enemy2 = "NULL";
-    public string enemy3 = "NULL";
-    public float enemy1Percent = 25;
-    public float enemy2Percent = 25;
-    public float enemy3Percent = 25;
-    public float fleePercent = 60;
+    // Public Variabless
+    public string loadRoom;                 // The battle room you want to load
+    public string enemy0 = "Purple Cat";    // The enemy string ID that the player party is fighting
+    public string enemy1 = "NULL";          // The enemy string ID that the player party is fighting
+    public string enemy2 = "NULL";          // The enemy string ID that the player party is fighting
+    public string enemy3 = "NULL";          // The enemy string ID that the player party is fighting
+    public float enemy1Percent = 25;        // The chance, in precent of the enemys 1st party memeber to spawn
+    public float enemy2Percent = 25;        // The chance, in precent of the enemys 2nd party memeber to spawn
+    public float enemy3Percent = 25;        // The chance, in precent of the enemys 3rd party memeber to spawn
+    public float fleePercent = 60;          // The chance, in precent of the players party to be able to abscond from a fight
 
+    // Private Variables
     private GameObject player;
-    private SaveManager saveManager;
+    private SaveManager saveManager;        // Pull a reference to the savemanager so the players pre-battle state can be saved for later
 
     void Start()
     {
-        saveManager = FindObjectOfType<SaveManager>(); // Set a reference to the SaveManager script on the Config object in the scene
-
         // Auto find the player in the scene
         player = GameObject.FindWithTag("Player");
         if (player == null)
@@ -34,6 +34,7 @@ public class Battle_Encounter : MonoBehaviour
             Debug.LogError("[ID002 DA]: " + "An enemy was unable to find the player target. Make sure your player has the tag 'Player' set.");
         }
 
+        saveManager = FindObjectOfType<SaveManager>(); // Set a reference to the SaveManager script on the Config object in the scene
     }
 
 
@@ -78,7 +79,7 @@ public class Battle_Encounter : MonoBehaviour
             PlayerPrefs.SetFloat("PreBattleY", player.transform.position.y); // Save the player's pre-battle Y position
             PlayerPrefs.SetFloat("fleePercent", fleePercent);                // Passthrough variable for the party's flee chance
             PlayerPrefs.SetString("Enemy0", enemy0);                         // Passthrough for assigning enemy party leader
-            saveManager.PlayerPrefSave();                                    // Save the player prefs temporary save file
+            saveManager.PlayerPrefSave();                                    // Save the player prefs temporary save file for storage of the players pre-battle state
             SceneManager.LoadScene(loadRoom);                                // Load the battle room
         }
     }

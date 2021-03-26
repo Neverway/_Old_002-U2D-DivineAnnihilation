@@ -8,7 +8,8 @@
 using UnityEngine;
 
 public class Battle_Background_Movement : MonoBehaviour
-{    
+{
+    // Public Variables
     public float speed = 0.01f; // How fast the object will move
 
     void Update()
