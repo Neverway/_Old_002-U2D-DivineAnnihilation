@@ -9,15 +9,13 @@ using UnityEngine;
 
 public class Battle_Entity_Assignment : MonoBehaviour
 {
+    // Public Variabless
     public GameObject partyMember1;
     public GameObject partyMember2;
     public GameObject partyMember3;
     public SpriteRenderer partyMember1Sprite;
     public SpriteRenderer partyMember2Sprite;
     public SpriteRenderer partyMember3Sprite;
-    private RuntimeAnimatorController partyMember1SpriteAnimator;
-    private RuntimeAnimatorController partyMember2SpriteAnimator;
-    private RuntimeAnimatorController partyMember3SpriteAnimator;
 
     public RuntimeAnimatorController foxAnimator;
     public RuntimeAnimatorController miyuAnimator;
@@ -28,13 +26,18 @@ public class Battle_Entity_Assignment : MonoBehaviour
     public Sprite idleSideSam;
     public Sprite idleSideCasey;
 
-    public GameObject abzPlayer;
-    public GameObject configTarget;
+    // Private Variables
+    private RuntimeAnimatorController partyMember1SpriteAnimator;
+    private RuntimeAnimatorController partyMember2SpriteAnimator;
+    private RuntimeAnimatorController partyMember3SpriteAnimator;
+
+    private GameObject abzPlayer;
     private SaveManager saveManager;
 
     void Start()
     {
-        saveManager = configTarget.GetComponent<SaveManager>(); // Set a reference to the SaveManager script on the Config object in the scene
+        saveManager = FindObjectOfType<SaveManager>(); // Set a reference to the SaveManager script on the Config object in the scene
+        abzPlayer = GameObject.FindGameObjectWithTag("Player");
 
         // PARTY SLOT 1
         if (saveManager.activeSave.partyMemberOne != "NULL") partyMember1.SetActive(true);

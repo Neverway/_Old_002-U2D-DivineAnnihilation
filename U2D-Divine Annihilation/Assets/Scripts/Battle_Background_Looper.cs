@@ -9,6 +9,7 @@ using UnityEngine;
 
 public class Battle_Background_Looper : MonoBehaviour
 {
+    // Public Variables
     public float offset = 8; // How far back the background object be pushed
 
     public void OnTriggerEnter2D(Collider2D other)

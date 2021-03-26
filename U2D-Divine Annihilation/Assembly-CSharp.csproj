@@ -58,7 +58,6 @@
      <Compile Include="Assets\Scripts\Battle_ActionFunctions.cs" />
      <Compile Include="Assets\Scripts\Battle_Background_Looper.cs" />
      <Compile Include="Assets\Scripts\Battle_Background_Movement.cs" />
-     <Compile Include="Assets\Scripts\Battle_Controller.cs" />
      <Compile Include="Assets\Scripts\Battle_Encounter.cs" />
      <Compile Include="Assets\Scripts\Battle_Enemy_Assignment.cs" />
      <Compile Include="Assets\Scripts\Battle_Enemy_Selection.cs" />
@@ -125,6 +124,7 @@
      <Compile Include="Assets\Scripts\Trigger_SetActiveOnInteract.cs" />
      <Compile Include="Assets\Scripts\Trigger_Warp.cs" />
      <Compile Include="Assets\Scripts\Trigger_Warp_Level.cs" />
+     <Compile Include="Assets\Scripts\Unused or Unknown\Battle_Controller.cs" />
      <Compile Include="Assets\Scripts\Unused or Unknown\Entity_Effect_Character_Ghost_Movement.cs" />
      <Compile Include="Assets\Scripts\Unused or Unknown\HudInventoryItemAssignment.cs" />
      <Compile Include="Assets\Scripts\Unused or Unknown\ItemPickup2.cs" />

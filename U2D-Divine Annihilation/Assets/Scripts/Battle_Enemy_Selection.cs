@@ -1,7 +1,7 @@
 ﻿//=========== Written by Arthur W. Sheldon AKA Lizband_UCC ====================
 //
-// Purpose: Scroll through strings or text objects
-// Applied to: A menu parent object in a scene
+// Purpose: Show the names of the selectable enemies in a battle
+// Applied to: A enemy selection menu in a battle scene
 //
 //=============================================================================
 
@@ -10,12 +10,14 @@ using UnityEngine.UI;
 
 public class Battle_Enemy_Selection : MonoBehaviour
 {
+    // Public Variabless
     public Text enemy0;
     public Text enemy1;
     public Text enemy2;
     public Text enemy3;
-    public GameObject self;
     public GameObject ActionMenu;
+
+    // Private Variables
     private Menu_Scroll_String menu;
     private Battle_Turn_Manager turnManager;
     private System_InputManager inputManager;
@@ -23,7 +25,7 @@ public class Battle_Enemy_Selection : MonoBehaviour
     void Start()
     {
         inputManager = FindObjectOfType<System_InputManager>();
-        menu = self.GetComponent<Menu_Scroll_String>();
+        menu = gameObject.GetComponent<Menu_Scroll_String>();
         turnManager = FindObjectOfType<Battle_Turn_Manager>();
         if (PlayerPrefs.GetString("Enemy0") != "NULL")
         {
@@ -56,7 +58,7 @@ public class Battle_Enemy_Selection : MonoBehaviour
         {
             ActionMenu.GetComponent<Battle_ActionFunctions>().acceptingInput = true;
             ActionMenu.SetActive(true);
-            self.SetActive(false);
+            gameObject.SetActive(false);
         }
 
         if (Input.GetKeyDown(inputManager.controls["Interact"]))
