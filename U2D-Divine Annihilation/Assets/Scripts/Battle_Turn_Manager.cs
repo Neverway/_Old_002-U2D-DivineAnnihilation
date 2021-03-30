@@ -41,6 +41,7 @@ public class Battle_Turn_Manager : MonoBehaviour
     private bool enemyPartyMember2;
     private bool enemyPartyMember3;
     private GameObject abzPlayer;
+    private GameObject abzEnemy;
     private SaveManager saveManager;
     private Battle_Zone_Control battleZone;
     private Battle_ActionFunctions actionFunctions;
@@ -49,6 +50,7 @@ public class Battle_Turn_Manager : MonoBehaviour
     void Start()
     {
         abzPlayer = GameObject.FindGameObjectWithTag("Player");
+        abzEnemy = GameObject.FindGameObjectWithTag("ABZEnemy");
         //actionMenu = GameObject.Find("{Action Menu}");
         //enemySelectionMenu = GameObject.Find("{Enemy Selection}");
         saveManager = FindObjectOfType<SaveManager>(); // Set a reference to the SaveManager script on the Config object in the scene
@@ -74,16 +76,31 @@ public class Battle_Turn_Manager : MonoBehaviour
         acceptingInput = true;              // Allow input again
     }
 
+    IEnumerator correctABZPlayerPosition()
+    {
+        yield return new WaitForSeconds(0.1f); // The delay until it is accepting input again
+        abzPlayer.transform.position = new Vector2(-4, 1);
+    }
+
     IEnumerator attackWave()
     {
         yield return new WaitForSeconds(6); // The delay until it is accepting input again
         battleZone.abzActive = false;
+
         partyMember0.GetComponent<SpriteRenderer>().enabled = true;
         if (partyMember1 != null) partyMember1.GetComponent<SpriteRenderer>().enabled = true;
         if (partyMember2 != null) partyMember2.GetComponent<SpriteRenderer>().enabled = true;
         if (partyMember3 != null) partyMember3.GetComponent<SpriteRenderer>().enabled = true;
+
+        Enemy0.GetComponent<SpriteRenderer>().enabled = true;
+        if (Enemy1 != null) Enemy1.GetComponent<SpriteRenderer>().enabled = true;
+        if (Enemy2 != null) Enemy2.GetComponent<SpriteRenderer>().enabled = true;
+        if (Enemy3 != null) Enemy3.GetComponent<SpriteRenderer>().enabled = true;
+
         abzPlayer.gameObject.GetComponent<SpriteRenderer>().enabled = false;
         abzPlayer.gameObject.GetComponent<Entity_Character_Movement>().enabled = false;
+
+        abzEnemy.gameObject.GetComponent<SpriteRenderer>().enabled = false;
         NextTurn();
     }
 
@@ -283,12 +300,19 @@ public class Battle_Turn_Manager : MonoBehaviour
             movesetPartyMember0 = "attack";
             battleZone.abzActive = true;
             enemySelectionMenu.SetActive(false);
-            partyMember0.GetComponent<SpriteRenderer>().enabled = false;
 
             entityAssignment.AbzEntitySwap(0);
-            abzPlayer.transform.position = new Vector2(-4, 1);
+            partyMember0.GetComponent<SpriteRenderer>().enabled = false;
             abzPlayer.GetComponent<SpriteRenderer>().enabled = true;
             abzPlayer.GetComponent<Entity_Character_Movement>().enabled = true;
+            StartCoroutine("correctABZPlayerPosition");
+
+            abzEnemy.GetComponent<SpriteRenderer>().enabled = true;
+            if (targetEnemySlot == 0) abzEnemy.GetComponent<SpriteRenderer>().sprite = Enemy0.GetComponent<SpriteRenderer>().sprite;
+            if (targetEnemySlot == 1) abzEnemy.GetComponent<SpriteRenderer>().sprite = Enemy1.GetComponent<SpriteRenderer>().sprite;
+            if (targetEnemySlot == 2) abzEnemy.GetComponent<SpriteRenderer>().sprite = Enemy2.GetComponent<SpriteRenderer>().sprite;
+            if (targetEnemySlot == 3) abzEnemy.GetComponent<SpriteRenderer>().sprite = Enemy3.GetComponent<SpriteRenderer>().sprite;
+
             StartCoroutine("attackWave");
         }
 
@@ -297,12 +321,19 @@ public class Battle_Turn_Manager : MonoBehaviour
             movesetPartyMember1 = "attack";
             battleZone.abzActive = true;
             enemySelectionMenu.SetActive(false);
-            partyMember1.GetComponent<SpriteRenderer>().enabled = false;
 
             entityAssignment.AbzEntitySwap(1);
-            abzPlayer.transform.position = new Vector2(-4, 1);
+            partyMember1.GetComponent<SpriteRenderer>().enabled = false;
             abzPlayer.GetComponent<SpriteRenderer>().enabled = true;
             abzPlayer.GetComponent<Entity_Character_Movement>().enabled = true;
+            StartCoroutine("correctABZPlayerPosition");
+
+            abzEnemy.GetComponent<SpriteRenderer>().enabled = true;
+            if (targetEnemySlot == 0) abzEnemy.GetComponent<SpriteRenderer>().sprite = Enemy0.GetComponent<SpriteRenderer>().sprite;
+            if (targetEnemySlot == 1) abzEnemy.GetComponent<SpriteRenderer>().sprite = Enemy1.GetComponent<SpriteRenderer>().sprite;
+            if (targetEnemySlot == 2) abzEnemy.GetComponent<SpriteRenderer>().sprite = Enemy2.GetComponent<SpriteRenderer>().sprite;
+            if (targetEnemySlot == 3) abzEnemy.GetComponent<SpriteRenderer>().sprite = Enemy3.GetComponent<SpriteRenderer>().sprite;
+
             StartCoroutine("attackWave");
         }
 
@@ -311,12 +342,19 @@ public class Battle_Turn_Manager : MonoBehaviour
             movesetPartyMember2 = "attack";
             battleZone.abzActive = true;
             enemySelectionMenu.SetActive(false);
-            partyMember2.GetComponent<SpriteRenderer>().enabled = false;
 
             entityAssignment.AbzEntitySwap(2);
-            abzPlayer.transform.position = new Vector2(-4, 1);
+            partyMember2.GetComponent<SpriteRenderer>().enabled = false;
             abzPlayer.GetComponent<SpriteRenderer>().enabled = true;
             abzPlayer.GetComponent<Entity_Character_Movement>().enabled = true;
+            StartCoroutine("correctABZPlayerPosition");
+
+            abzEnemy.GetComponent<SpriteRenderer>().enabled = true;
+            if (targetEnemySlot == 0) abzEnemy.GetComponent<SpriteRenderer>().sprite = Enemy0.GetComponent<SpriteRenderer>().sprite;
+            if (targetEnemySlot == 1) abzEnemy.GetComponent<SpriteRenderer>().sprite = Enemy1.GetComponent<SpriteRenderer>().sprite;
+            if (targetEnemySlot == 2) abzEnemy.GetComponent<SpriteRenderer>().sprite = Enemy2.GetComponent<SpriteRenderer>().sprite;
+            if (targetEnemySlot == 3) abzEnemy.GetComponent<SpriteRenderer>().sprite = Enemy3.GetComponent<SpriteRenderer>().sprite;
+
             StartCoroutine("attackWave");
         }
 
@@ -325,12 +363,19 @@ public class Battle_Turn_Manager : MonoBehaviour
             movesetPartyMember3 = "attack";
             battleZone.abzActive = true;
             enemySelectionMenu.SetActive(false);
-            partyMember3.GetComponent<SpriteRenderer>().enabled = false;
 
             entityAssignment.AbzEntitySwap(3);
-            abzPlayer.transform.position = new Vector2(-4, 1);
+            partyMember3.GetComponent<SpriteRenderer>().enabled = false;
             abzPlayer.GetComponent<SpriteRenderer>().enabled = true;
             abzPlayer.GetComponent<Entity_Character_Movement>().enabled = true;
+            StartCoroutine("correctABZPlayerPosition");
+
+            abzEnemy.GetComponent<SpriteRenderer>().enabled = true;
+            if (targetEnemySlot == 0) abzEnemy.GetComponent<SpriteRenderer>().sprite = Enemy0.GetComponent<SpriteRenderer>().sprite;
+            if (targetEnemySlot == 1) abzEnemy.GetComponent<SpriteRenderer>().sprite = Enemy1.GetComponent<SpriteRenderer>().sprite;
+            if (targetEnemySlot == 2) abzEnemy.GetComponent<SpriteRenderer>().sprite = Enemy2.GetComponent<SpriteRenderer>().sprite;
+            if (targetEnemySlot == 3) abzEnemy.GetComponent<SpriteRenderer>().sprite = Enemy3.GetComponent<SpriteRenderer>().sprite;
+
             StartCoroutine("attackWave");
         }
 

@@ -1,16 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Battle_Turn_Manager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Hud_Textbox_Manager.cs">
     <Files>
-      <File FileName="Assets/Scripts/Battle_ActionFunctions.cs" Line="74" Column="37" />
-      <File FileName="Assets/Scripts/Battle_Encounter.cs" Line="22" Column="126" />
-      <File FileName="Assets/Scripts/Battle_Enemy_Assignment.cs" Line="23" Column="6" />
-      <File FileName="Assets/Scripts/Battle_Enemy_Selection.cs" Line="29" Column="22" />
-      <File FileName="Assets/Scripts/Battle_Entity_Assignment.cs" Line="39" Column="134" />
-      <File FileName="Assets/Scripts/Battle_Shelf_Assignment.cs" Line="33" Column="6" />
-      <File FileName="Assets/Scripts/Battle_Text_Events.cs" Line="26" Column="50" />
-      <File FileName="Assets/Scripts/Battle_Turn_Manager.cs" Line="80" Column="24" />
-      <File FileName="Assets/Scripts/Unused or Unknown/Battle_Controller.cs" Line="16" Column="39" />
-      <File FileName="Assets/Scripts/Battle_Zone_Control.cs" Line="10" Column="14" />
+      <File FileName="Assets/Scripts/Battle_ActionFunctions.cs" Line="42" Column="74" />
+      <File FileName="Assets/Scripts/Battle_Enemy_Selection.cs" Line="11" Column="14" />
+      <File FileName="Assets/Scripts/Battle_Turn_Manager.cs" Line="328" Column="80" />
+      <File FileName="Assets/Scripts/System/SaveManager.cs" Line="37" Column="14" />
+      <File FileName="Assets/Scripts/Battle_Encounter.cs" Line="54" Column="34" />
+      <File FileName="Assets/Scripts/Hud_Textbox_Manager.cs" Line="12" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

@@ -56,11 +56,11 @@ public class Hud_Textbox_Manager : MonoBehaviour
 
     IEnumerator ShowText()
     {
-        for (int i = 0; i < textContent.Length+1; i++)
-        {
-            textCurrent = textContent.Substring(0, i);
-            yield return new WaitForSeconds(textSpeed);
-        }
+            for (int i = 0; i < textContent.Length + 1; i++)
+            {
+                textCurrent = textContent.Substring(0, i);
+                yield return new WaitForSeconds(textSpeed);
+            }
     }
 
 
@@ -70,6 +70,11 @@ public class Hud_Textbox_Manager : MonoBehaviour
         {
             textContent = dialogueLines[currentLine];
         }
+        else
+        {
+            textContent = null;
+            textCurrent = "";
+        }
 
         // Continue to next dialogue
         if (dialogueBoxActive && Input.GetKeyDown(inputManager.controls["Interact"]) && !EventTrigger)
@@ -77,6 +82,8 @@ public class Hud_Textbox_Manager : MonoBehaviour
             if (acceptingInput) currentLine += 1;   // Advance the line count
             StartCoroutine(ShowText());
             textCurrent = "";
+            dialogueTextObject.text = "";
+            monologueTextObject.text = "";
             StartCoroutine("acceptInput");          // Apply Key press delay
         }
         // Continue to next dialogue
@@ -86,6 +93,8 @@ public class Hud_Textbox_Manager : MonoBehaviour
             if (acceptingInput) currentLine += 1;   // Advance the line count
             StartCoroutine(ShowText());
             textCurrent = "";
+            dialogueTextObject.text = "";
+            monologueTextObject.text = "";
             StartCoroutine("acceptInput");          // Apply Key press delay
             EventActive = true;
         }
@@ -95,6 +104,8 @@ public class Hud_Textbox_Manager : MonoBehaviour
             if (acceptingInput) currentLine += 1;   // Advance the line count
             StartCoroutine(ShowText());
             textCurrent = "";
+            dialogueTextObject.text = "";
+            monologueTextObject.text = "";
             StartCoroutine("acceptInput");          // Apply Key press delay
         }
 
@@ -148,6 +159,7 @@ public class Hud_Textbox_Manager : MonoBehaviour
     {
         if (!global.menuActive)
         {
+            textCurrent = "";
             dialogueBoxActive = true;          // Set the active state to true
             dialogueBoxObject.SetActive(true); // Make the dialogue box heirarchy disappear
         }

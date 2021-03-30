@@ -102,6 +102,7 @@
      <Compile Include="Assets\Scripts\System_LevelData_Receiver.cs" />
      <Compile Include="Assets\Scripts\System_PersistentOnOverworld.cs" />
      <Compile Include="Assets\Scripts\System_SnapToScreen.cs" />
+     <Compile Include="Assets\Scripts\System_Sound_Music_Manager.cs" />
      <Compile Include="Assets\Scripts\Title_Erase.cs" />
      <Compile Include="Assets\Scripts\Title_Intro_Pretitle.cs" />
      <Compile Include="Assets\Scripts\Title_Load.cs" />
