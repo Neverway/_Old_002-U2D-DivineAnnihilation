@@ -7,14 +7,15 @@
 
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Title_Name : MonoBehaviour
 {
     // Public Variable
     [Range(0, 2)]
-    public int row;
+    public int row = 2;
     [Range(0, 9)]
-    public int column;
+    public int column = 9;
     public int characterLimit = 12;
     public Text nameText;
     public Text row0;
@@ -23,54 +24,64 @@ public class Title_Name : MonoBehaviour
     public Text controls;
     public Color selected;
     public Color unselected;
+    public GameObject systemMessageScreen;
+    public Text message;
+    public Text actions;
+    public bool active;
+    public GameObject loadingScreen;
 
     // Private Variables
+    private string nameTakenError = "That user is already active in the system!";
     private System_InputManager inputManager;
+    private SaveManager saveManager;
 
     void Start()
     {
         inputManager = FindObjectOfType<System_InputManager>();
+        saveManager = FindObjectOfType<SaveManager>();
     }
 
 
     void Update()
     {
-         controls.text = "[" + inputManager.controls["Interact"] + "] Select   [" + inputManager.controls["Action"] + "] Backspace   [" + inputManager.controls["Select"] + "] Clear";
-         if (row == 0)
-         {
+        controls.text = "[" + inputManager.controls["Interact"] + "] Select   [" + inputManager.controls["Action"] + "] Backspace   [" + inputManager.controls["Select"] + "] Clear";
+        if (active)
+        {
+            if (row == 0)
+            {
                 if (Input.GetKeyDown(inputManager.controls["Up"])) { row = 2; }
                 if (Input.GetKeyDown(inputManager.controls["Down"])) { row += 1; }
-          }
-          else if (row == 2)
-          {
+            }
+            else if (row == 2)
+            {
                 if (Input.GetKeyDown(inputManager.controls["Up"])) { row -= 1; }
                 if (Input.GetKeyDown(inputManager.controls["Down"])) { row = 0; }
-          }
-          else
-          {
+            }
+            else
+            {
                 if (Input.GetKeyDown(inputManager.controls["Up"])) { row -= 1; }
                 if (Input.GetKeyDown(inputManager.controls["Down"])) { row += 1; }
-          }
+            }
 
 
-          if (column == 0)
-          {
+            if (column == 0)
+            {
                 if (Input.GetKeyDown(inputManager.controls["Left"])) { column = 9; }
                 if (Input.GetKeyDown(inputManager.controls["Right"])) { column += 1; }
-          }
-          else if (column == 9)
-          {
+            }
+            else if (column == 9)
+            {
                 if (Input.GetKeyDown(inputManager.controls["Left"])) { column -= 1; }
                 if (Input.GetKeyDown(inputManager.controls["Right"])) { column = 0; }
-          }
-          else
-          {
+            }
+            else
+            {
                 if (Input.GetKeyDown(inputManager.controls["Left"])) { column -= 1; }
                 if (Input.GetKeyDown(inputManager.controls["Right"])) { column += 1; }
-          }
-          UpdateKeys();
+            }
+            UpdateKeys();
+        }
     }
-
 
     public void UpdateKeys()
     {
@@ -133,7 +144,55 @@ public class Title_Name : MonoBehaviour
                 if (column == 6) { row2.text = "   U   V   W   X   Y   Z >!   ?   _   OK"; if (Input.GetKeyDown(inputManager.controls["Interact"])) { if (nameText.text.Length < characterLimit) nameText.text = nameText.text + "!"; } }
                 if (column == 7) { row2.text = "   U   V   W   X   Y   Z   ! >?   _   OK"; if (Input.GetKeyDown(inputManager.controls["Interact"])) { if (nameText.text.Length < characterLimit) nameText.text = nameText.text + "?"; } }
                 if (column == 8) { row2.text = "   U   V   W   X   Y   Z   !   ? >_   OK"; if (Input.GetKeyDown(inputManager.controls["Interact"])) { if (nameText.text.Length < characterLimit) nameText.text = nameText.text + "_"; } }
-                if (column == 9) { row2.text = "   U   V   W   X   Y   Z   !   ?   _ >OK"; if (Input.GetKeyDown(inputManager.controls["Interact"])) { Debug.Log("Confirmed Name"); } }
+                if (column == 9) { row2.text = "   U   V   W   X   Y   Z   !   ?   _ >OK"; if (Input.GetKeyDown(inputManager.controls["Interact"])) { AttemptConfirm(); } }
          }
-     }
+    }
+
+    public void AttemptConfirm()
+    {
+        if (nameText.text == "DEV_TSTR!")
+        {
+            systemMessageScreen.SetActive(true);
+            message.text = "Continue in developer mode?";
+            actions.text = "[" + inputManager.controls["Interact"] + "] Confirm   [" + inputManager.controls["Action"] + "] Cancel";
+            active = false;
+        }
+        else if (nameText.text == "MIYU")
+        {
+            systemMessageScreen.SetActive(true);
+            message.text = nameTakenError;
+            actions.text = "[" + inputManager.controls["Interact"] + "] OK";
+            active = false;
+        }
+        else if (nameText.text == "SAM")
+        {
+            systemMessageScreen.SetActive(true);
+            message.text = nameTakenError;
+            actions.text = "[" + inputManager.controls["Interact"] + "] OK";
+            active = false;
+        }
+        else if (nameText.text == "CASEY")
+        {
+            systemMessageScreen.SetActive(true);
+            message.text = nameTakenError;
+            actions.text = "[" + inputManager.controls["Interact"] + "] OK";
+            active = false;
+        }
+        else
+        {
+            AcceptConfirm();
+        }
+    }
+
+    public void AcceptConfirm()
+    {
+        PlayerPrefs.SetString("PlayerName", nameText.text);
+        saveManager.CreateSave();
+        saveManager.Save();
+        loadingScreen.SetActive(true);
+        saveManager.loadFileOnCreation = true;
+        saveManager.activeSave.scene = "C1S1";
+        SceneManager.LoadScene("C1S1");
+        gameObject.SetActive(false);
+    }
 }
