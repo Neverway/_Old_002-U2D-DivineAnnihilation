@@ -10,7 +10,7 @@ using UnityEngine;
 
 public class Battle_Turn_Manager : MonoBehaviour
 {
-    // Public Variabless
+    // Public Variables
     public int partyTurnID = 0;
     public bool playersTurn = true;
     public float YOffset = 5f;

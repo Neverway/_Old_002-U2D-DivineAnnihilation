@@ -106,6 +106,7 @@
      <Compile Include="Assets\Scripts\Title_Erase.cs" />
      <Compile Include="Assets\Scripts\Title_Intro_Pretitle.cs" />
      <Compile Include="Assets\Scripts\Title_Load.cs" />
+     <Compile Include="Assets\Scripts\Title_Name.cs" />
      <Compile Include="Assets\Scripts\Title_Options.cs" />
      <Compile Include="Assets\Scripts\Title_Options_Keybind.cs" />
      <Compile Include="Assets\Scripts\Title_Quit.cs" />
