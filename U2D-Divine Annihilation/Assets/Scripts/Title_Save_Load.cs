@@ -15,17 +15,17 @@ public class Title_Save_Load : MonoBehaviour
     public GameObject titleMenu;
     public GameObject loadingScreen;
     public GameObject loadFileScreen;
-    public GameObject configTarget;
     private System_InputManager inputManager;
     private Menu_Scroll_MinusControl menu;
     private SaveManager saveManager;
+    public Title_Name nameMenu;
 
     void Start()
     {
         inputManager = FindObjectOfType<System_InputManager>();
         //DontDestroyOnLoad(selfTarget.gameObject);
         menu = selfTarget.GetComponent<Menu_Scroll_MinusControl>();
-        saveManager = configTarget.GetComponent<SaveManager>();
+        saveManager = FindObjectOfType<SaveManager>();
     }
 
     IEnumerator DoubleCheck()
@@ -48,12 +48,8 @@ public class Title_Save_Load : MonoBehaviour
                     saveManager.activeSave.saveProfileName = "SlotOne";
                     StartCoroutine("DoubleCheck");
                     PlayerPrefs.SetString("Current Save Profile", saveManager.activeSave.saveProfileName);
-                    saveManager.CreateSave();
-                    saveManager.Save();
-                    loadingScreen.SetActive(true);
-                    saveManager.loadFileOnCreation = true;
-                    saveManager.activeSave.scene = "C1S1";
-                    SceneManager.LoadScene("C1S1");
+                    nameMenu.gameObject.SetActive(true);
+                    selfTarget.SetActive(false);
                 }
 
                 if (System.IO.File.Exists(dataPath + "/" + "SlotOne" + ".dasp"))
@@ -73,11 +69,8 @@ public class Title_Save_Load : MonoBehaviour
                 {
                     saveManager.activeSave.saveProfileName = "SlotTwo";
                     PlayerPrefs.SetString("Current Save Profile", saveManager.activeSave.saveProfileName);
-                    saveManager.CreateSave();
-                    saveManager.Save();
-                    loadingScreen.SetActive(true);
-                    saveManager.activeSave.scene = "C1S1";
-                    SceneManager.LoadScene("C1S1");
+                    nameMenu.gameObject.SetActive(true);
+                    selfTarget.SetActive(false);
                 }
 
                 if (System.IO.File.Exists(dataPath + "/" + "SlotTwo" + ".dasp"))
@@ -96,11 +89,8 @@ public class Title_Save_Load : MonoBehaviour
                 {
                     saveManager.activeSave.saveProfileName = "SlotThree";
                     PlayerPrefs.SetString("Current Save Profile", saveManager.activeSave.saveProfileName);
-                    saveManager.CreateSave();
-                    saveManager.Save();
-                    loadingScreen.SetActive(true);
-                    saveManager.activeSave.scene = "C1S1";
-                    SceneManager.LoadScene("C1S1");
+                    nameMenu.gameObject.SetActive(true);
+                    selfTarget.SetActive(false);
                 }
 
                 if (System.IO.File.Exists(dataPath + "/" + "SlotThree" + ".dasp"))
@@ -119,11 +109,8 @@ public class Title_Save_Load : MonoBehaviour
                 {
                     saveManager.activeSave.saveProfileName = "SlotFour";
                     PlayerPrefs.SetString("Current Save Profile", saveManager.activeSave.saveProfileName);
-                    saveManager.CreateSave();
-                    saveManager.Save();
-                    loadingScreen.SetActive(true);
-                    saveManager.activeSave.scene = "C1S1";
-                    SceneManager.LoadScene("C1S1");
+                    nameMenu.gameObject.SetActive(true);
+                    selfTarget.SetActive(false);
                 }
 
                 if (System.IO.File.Exists(dataPath + "/" + "SlotFour" + ".dasp"))
