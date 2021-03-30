@@ -12,6 +12,7 @@ TagManager:
   - Day Light
   - Night Light
   - Loading Screen
+  - ABZEnemy
   layers:
   - Default
   - TransparentFX

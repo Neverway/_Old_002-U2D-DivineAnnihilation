@@ -33,9 +33,12 @@ public class SaveManager : MonoBehaviour
         {
             Debug.Log("[ID002 DA]: " + "A new scene is being loaded...");
             playerRef = GameObject.FindWithTag("Player");
-            playerRef.transform.position = new Vector2(PlayerPrefs.GetFloat("NextRoomX"), PlayerPrefs.GetFloat("NextRoomY"));
-            activeSave.playerSavePosition.x = PlayerPrefs.GetFloat("NextRoomX");
-            activeSave.playerSavePosition.y = PlayerPrefs.GetFloat("NextRoomY");
+            if (playerRef != null)
+            {
+                playerRef.transform.position = new Vector2(PlayerPrefs.GetFloat("NextRoomX"), PlayerPrefs.GetFloat("NextRoomY"));
+                activeSave.playerSavePosition.x = PlayerPrefs.GetFloat("NextRoomX");
+                activeSave.playerSavePosition.y = PlayerPrefs.GetFloat("NextRoomY");
+            }
             PlayerPrefs.SetInt("LoadingNewRoom", 0);
         }
     }
