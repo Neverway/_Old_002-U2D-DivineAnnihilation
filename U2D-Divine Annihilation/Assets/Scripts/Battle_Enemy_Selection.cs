@@ -10,7 +10,7 @@ using UnityEngine.UI;
 
 public class Battle_Enemy_Selection : MonoBehaviour
 {
-    // Public Variabless
+    // Public Variables
     public Text enemy0;
     public Text enemy1;
     public Text enemy2;

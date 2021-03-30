@@ -10,7 +10,7 @@ using UnityEngine.SceneManagement;
 
 public class Battle_Encounter : MonoBehaviour
 {
-    // Public Variabless
+    // Public Variables
     public string loadRoom;                 // The battle room you want to load
     public string enemy0 = "Purple Cat";    // The enemy string ID that the player party is fighting
     public string enemy1 = "NULL";          // The enemy string ID that the player party is fighting
