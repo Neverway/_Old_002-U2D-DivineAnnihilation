@@ -69,7 +69,7 @@ public class Title_Save_Info : MonoBehaviour
         // Set file information
         if (System.IO.File.Exists(dataPath + "/" + saveFileString + ".dasp"))
         {
-            fileName.text = "File " + saveFileSlot;
+            fileName.text = "File " + saveFileSlot + "|" + spacedata.playerName;
 
             fileLevel.text = "Lvl. "+spacedata.playerLevel+" | "+spacedata.saveChapter;
             fileChapter.text = ""+"";
