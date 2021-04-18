@@ -31,6 +31,7 @@ public class Hud_Choicebox_Manager : MonoBehaviour
     {
         if (!global.menuActive && !choiceBoxActive)
         {
+            Debug.Log("enabledCB");
             choiceBoxObject.SetActive(true);
             choiceBoxActive = true;
             if (currentTarget.options.Length == 2)

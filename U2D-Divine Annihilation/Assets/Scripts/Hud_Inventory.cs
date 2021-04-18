@@ -8,6 +8,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEditor;
 
 public class Hud_Inventory : MonoBehaviour
 {
@@ -24,14 +25,17 @@ public class Hud_Inventory : MonoBehaviour
     private SaveManager saveManager;
 
     public bool inItems = true;
-    public Image[] items;
-    public Image[] equipment;
+    public Image[] itemSlots;
+    public Image[] itemIcons;
     public Text[] itemNames;
+    public Image[] equipmentSlots;
+    public Image[] equipmentIcons;
     public Text[] equipmentNames;
     public bool wrapAround;
     public int currentFrame;
     public Sprite selected;
     public Sprite notSelected;
+    public string test;
 
     void Start()
     {
@@ -62,6 +66,7 @@ public class Hud_Inventory : MonoBehaviour
                 //equipment[currentFrame].sprite = notSelected;
                 //currentFrame = 0;
                 //inItems = true;
+                Resources.UnloadUnusedAssets();
                 characterMovement.movementSpeed = characterMovement.storedSpeed; // Set the players speed so they won't get stuck with a movement speed of zero
                 inventoryBoxActive = false;
                 inventoryBoxObject.SetActive(false); // Make the box disappear
@@ -82,9 +87,23 @@ public class Hud_Inventory : MonoBehaviour
             }
         }
 
-        // Display item names
+
         if (inventoryBoxActive)
         {
+            // Display item icons
+            itemIcons[0].sprite = Resources.Load<Sprite>("Sprites/Items/" + saveManager.activeSave.item1Icon) as Sprite;
+            itemIcons[1].sprite = Resources.Load<Sprite>("Sprites/Items/" + saveManager.activeSave.item2Icon) as Sprite;
+            itemIcons[2].sprite = Resources.Load<Sprite>("Sprites/Items/" + saveManager.activeSave.item3Icon) as Sprite;
+            itemIcons[3].sprite = Resources.Load<Sprite>("Sprites/Items/" + saveManager.activeSave.item4Icon) as Sprite;
+            itemIcons[4].sprite = Resources.Load<Sprite>("Sprites/Items/" + saveManager.activeSave.item5Icon) as Sprite;
+
+            equipmentIcons[0].sprite = Resources.Load<Sprite>("Sprites/Items/" + saveManager.activeSave.equipment1Icon) as Sprite;
+            equipmentIcons[1].sprite = Resources.Load<Sprite>("Sprites/Items/" + saveManager.activeSave.equipment2Icon) as Sprite;
+            equipmentIcons[2].sprite = Resources.Load<Sprite>("Sprites/Items/" + saveManager.activeSave.equipment3Icon) as Sprite;
+            equipmentIcons[3].sprite = Resources.Load<Sprite>("Sprites/Items/" + saveManager.activeSave.equipment4Icon) as Sprite;
+            equipmentIcons[4].sprite = Resources.Load<Sprite>("Sprites/Items/" + saveManager.activeSave.equipment5Icon) as Sprite;
+
+            // Display item names
             itemNames[0].text = saveManager.activeSave.item1;
             itemNames[1].text = saveManager.activeSave.item2;
             itemNames[2].text = saveManager.activeSave.item3;
@@ -105,36 +124,36 @@ public class Hud_Inventory : MonoBehaviour
             {
                 if (currentFrame == 0 && wrapAround)
                 {
-                    currentFrame = items.Length; // Up arrow wrap around
-                    items[currentFrame + 1].sprite = notSelected;
+                    currentFrame = itemSlots.Length; // Up arrow wrap around
+                    itemSlots[currentFrame + 1].sprite = notSelected;
                 }
 
                 if (currentFrame != 0)
                 {
                     currentFrame -= 1; // Up arrow scrolling
-                    items[currentFrame + 1].sprite = notSelected;
+                    itemSlots[currentFrame + 1].sprite = notSelected;
                 }
             }
             if (Input.GetKeyDown(inputManager.controls["Down"])) // down
             {
-                if (currentFrame == items.Length - 1 && wrapAround)
+                if (currentFrame == itemSlots.Length - 1 && wrapAround)
                 {
                     currentFrame = -1; // Up arrow wrap around
-                    items[currentFrame - 1].sprite = notSelected;
+                    itemSlots[currentFrame - 1].sprite = notSelected;
                 }
 
-                if (currentFrame != items.Length - 1)
+                if (currentFrame != itemSlots.Length - 1)
                 {
                     currentFrame += 1; // Up arrow scrolling
-                    items[currentFrame - 1].sprite = notSelected;
+                    itemSlots[currentFrame - 1].sprite = notSelected;
                 }
             }
-            items[currentFrame].sprite = selected;
+            itemSlots[currentFrame].sprite = selected;
 
 
             if (Input.GetKeyDown(inputManager.controls["Right"])) // Right
             {
-                items[currentFrame].sprite = notSelected;
+                itemSlots[currentFrame].sprite = notSelected;
                 inItems = false;
             }
         }
@@ -146,36 +165,36 @@ public class Hud_Inventory : MonoBehaviour
             {
                 if (currentFrame == 0 && wrapAround)
                 {
-                    currentFrame = equipment.Length; // Up arrow wrap around
-                    equipment[currentFrame + 1].sprite = notSelected;
+                    currentFrame = equipmentSlots.Length; // Up arrow wrap around
+                    equipmentSlots[currentFrame + 1].sprite = notSelected;
                 }
 
                 if (currentFrame != 0)
                 {
                     currentFrame -= 1; // Up arrow scrolling
-                    equipment[currentFrame + 1].sprite = notSelected;
+                    equipmentSlots[currentFrame + 1].sprite = notSelected;
                 }
             }
             if (Input.GetKeyDown(inputManager.controls["Down"])) // down
             {
-                if (currentFrame == equipment.Length - 1 && wrapAround)
+                if (currentFrame == equipmentSlots.Length - 1 && wrapAround)
                 {
                     currentFrame = -1; // Up arrow wrap around
-                    equipment[currentFrame - 1].sprite = notSelected;
+                    equipmentSlots[currentFrame - 1].sprite = notSelected;
                 }
 
-                if (currentFrame != equipment.Length - 1)
+                if (currentFrame != equipmentSlots.Length - 1)
                 {
                     currentFrame += 1; // Up arrow scrolling
-                    equipment[currentFrame - 1].sprite = notSelected;
+                    equipmentSlots[currentFrame - 1].sprite = notSelected;
                 }
             }
-            equipment[currentFrame].sprite = selected;
+            equipmentSlots[currentFrame].sprite = selected;
 
 
             if (Input.GetKeyDown(inputManager.controls["Left"])) // Left
             {
-                equipment[currentFrame].sprite = notSelected;
+                equipmentSlots[currentFrame].sprite = notSelected;
                 inItems = true;
             }
         }

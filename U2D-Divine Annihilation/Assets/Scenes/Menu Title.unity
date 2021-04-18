@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1482,6 +1482,16 @@ MonoBehaviour:
     equipment3: 
     equipment4: 
     equipment5: 
+    item1Icon: 
+    item2Icon: 
+    item3Icon: 
+    item4Icon: 
+    item5Icon: 
+    equipment1Icon: 
+    equipment2Icon: 
+    equipment3Icon: 
+    equipment4Icon: 
+    equipment5Icon: 
     partyMemberOne: 
     partyMemberOneHealth: 0
     partyMemberTwo: 
@@ -3849,14 +3859,17 @@ MonoBehaviour:
   inventoryBoxActive: 0
   acceptingInput: 1
   inItems: 0
-  items: []
-  equipment: []
+  itemSlots: []
+  itemIcons: []
   itemNames: []
+  equipmentSlots: []
+  equipmentIcons: []
   equipmentNames: []
   wrapAround: 0
   currentFrame: 0
   selected: {fileID: 21300000, guid: d9f78c2cfb89f15998a40ce0c93b8aee, type: 3}
   notSelected: {fileID: 21300000, guid: 34d0d1f6f7abea601a8223a082e4da1a, type: 3}
+  test: 
 --- !u!1 &312830195
 GameObject:
   m_ObjectHideFlags: 0
@@ -8656,6 +8669,16 @@ MonoBehaviour:
     equipment3: 
     equipment4: 
     equipment5: 
+    item1Icon: 
+    item2Icon: 
+    item3Icon: 
+    item4Icon: 
+    item5Icon: 
+    equipment1Icon: 
+    equipment2Icon: 
+    equipment3Icon: 
+    equipment4Icon: 
+    equipment5Icon: 
     partyMemberOne: 
     partyMemberOneHealth: 0
     partyMemberTwo: 
@@ -9211,6 +9234,16 @@ MonoBehaviour:
     equipment3: 
     equipment4: 
     equipment5: 
+    item1Icon: 
+    item2Icon: 
+    item3Icon: 
+    item4Icon: 
+    item5Icon: 
+    equipment1Icon: 
+    equipment2Icon: 
+    equipment3Icon: 
+    equipment4Icon: 
+    equipment5Icon: 
     partyMemberOne: 
     partyMemberOneHealth: 0
     partyMemberTwo: 
@@ -9451,6 +9484,16 @@ MonoBehaviour:
     equipment3: 
     equipment4: 
     equipment5: 
+    item1Icon: 
+    item2Icon: 
+    item3Icon: 
+    item4Icon: 
+    item5Icon: 
+    equipment1Icon: 
+    equipment2Icon: 
+    equipment3Icon: 
+    equipment4Icon: 
+    equipment5Icon: 
     partyMemberOne: 
     partyMemberOneHealth: 0
     partyMemberTwo: 
@@ -9491,6 +9534,16 @@ MonoBehaviour:
     equipment3: 
     equipment4: 
     equipment5: 
+    item1Icon: 
+    item2Icon: 
+    item3Icon: 
+    item4Icon: 
+    item5Icon: 
+    equipment1Icon: 
+    equipment2Icon: 
+    equipment3Icon: 
+    equipment4Icon: 
+    equipment5Icon: 
     partyMemberOne: 
     partyMemberOneHealth: 0
     partyMemberTwo: 
@@ -9514,6 +9567,7 @@ MonoBehaviour:
     c1s1_13: 0
     c1s1_14: 0
     c1s1_15: 0
+  noPortrait: {fileID: 21300000, guid: 07689cd2c6f2e6721a7cd9b0576a9738, type: 3}
   hasLoaded: 0
   loadFileOnCreation: 0
 --- !u!114 &828494679
@@ -11438,6 +11492,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   message: {fileID: 388589550}
   actions: {fileID: 22341343}
+  acceptingInput: 0
 --- !u!1 &1097825659
 GameObject:
   m_ObjectHideFlags: 0
@@ -11515,6 +11570,16 @@ MonoBehaviour:
     equipment3: 
     equipment4: 
     equipment5: 
+    item1Icon: 
+    item2Icon: 
+    item3Icon: 
+    item4Icon: 
+    item5Icon: 
+    equipment1Icon: 
+    equipment2Icon: 
+    equipment3Icon: 
+    equipment4Icon: 
+    equipment5Icon: 
     partyMemberOne: 
     partyMemberOneHealth: 0
     partyMemberTwo: 
@@ -12294,6 +12359,16 @@ MonoBehaviour:
     equipment3: 
     equipment4: 
     equipment5: 
+    item1Icon: 
+    item2Icon: 
+    item3Icon: 
+    item4Icon: 
+    item5Icon: 
+    equipment1Icon: 
+    equipment2Icon: 
+    equipment3Icon: 
+    equipment4Icon: 
+    equipment5Icon: 
     partyMemberOne: 
     partyMemberOneHealth: 0
     partyMemberTwo: 
@@ -16295,6 +16370,16 @@ MonoBehaviour:
     equipment3: 
     equipment4: 
     equipment5: 
+    item1Icon: 
+    item2Icon: 
+    item3Icon: 
+    item4Icon: 
+    item5Icon: 
+    equipment1Icon: 
+    equipment2Icon: 
+    equipment3Icon: 
+    equipment4Icon: 
+    equipment5Icon: 
     partyMemberOne: 
     partyMemberOneHealth: 0
     partyMemberTwo: 
@@ -18009,6 +18094,16 @@ MonoBehaviour:
     equipment3: 
     equipment4: 
     equipment5: 
+    item1Icon: 
+    item2Icon: 
+    item3Icon: 
+    item4Icon: 
+    item5Icon: 
+    equipment1Icon: 
+    equipment2Icon: 
+    equipment3Icon: 
+    equipment4Icon: 
+    equipment5Icon: 
     partyMemberOne: 
     partyMemberOneHealth: 0
     partyMemberTwo: 
@@ -18339,6 +18434,16 @@ MonoBehaviour:
     equipment3: 
     equipment4: 
     equipment5: 
+    item1Icon: 
+    item2Icon: 
+    item3Icon: 
+    item4Icon: 
+    item5Icon: 
+    equipment1Icon: 
+    equipment2Icon: 
+    equipment3Icon: 
+    equipment4Icon: 
+    equipment5Icon: 
     partyMemberOne: 
     partyMemberOneHealth: 0
     partyMemberTwo: 
@@ -19435,6 +19540,16 @@ MonoBehaviour:
     equipment3: 
     equipment4: 
     equipment5: 
+    item1Icon: 
+    item2Icon: 
+    item3Icon: 
+    item4Icon: 
+    item5Icon: 
+    equipment1Icon: 
+    equipment2Icon: 
+    equipment3Icon: 
+    equipment4Icon: 
+    equipment5Icon: 
     partyMemberOne: 
     partyMemberOneHealth: 0
     partyMemberTwo: 
@@ -20887,6 +21002,16 @@ MonoBehaviour:
     equipment3: 
     equipment4: 
     equipment5: 
+    item1Icon: 
+    item2Icon: 
+    item3Icon: 
+    item4Icon: 
+    item5Icon: 
+    equipment1Icon: 
+    equipment2Icon: 
+    equipment3Icon: 
+    equipment4Icon: 
+    equipment5Icon: 
     partyMemberOne: 
     partyMemberOneHealth: 0
     partyMemberTwo: 
@@ -21685,6 +21810,16 @@ MonoBehaviour:
     equipment3: 
     equipment4: 
     equipment5: 
+    item1Icon: 
+    item2Icon: 
+    item3Icon: 
+    item4Icon: 
+    item5Icon: 
+    equipment1Icon: 
+    equipment2Icon: 
+    equipment3Icon: 
+    equipment4Icon: 
+    equipment5Icon: 
     partyMemberOne: 
     partyMemberOneHealth: 0
     partyMemberTwo: 
@@ -22065,6 +22200,16 @@ MonoBehaviour:
     equipment3: 
     equipment4: 
     equipment5: 
+    item1Icon: 
+    item2Icon: 
+    item3Icon: 
+    item4Icon: 
+    item5Icon: 
+    equipment1Icon: 
+    equipment2Icon: 
+    equipment3Icon: 
+    equipment4Icon: 
+    equipment5Icon: 
     partyMemberOne: 
     partyMemberOneHealth: 0
     partyMemberTwo: 
