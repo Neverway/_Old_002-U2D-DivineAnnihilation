@@ -52,6 +52,7 @@ public class Trigger_DoorLock : MonoBehaviour
                     if (removeFromInventory)
                     {
                         saveManager.activeSave.item1 = "---";
+                        saveManager.activeSave.item1Icon = "s_hud_inventory_blank";
                         gameObject.GetComponent<Trigger_Interact>().acceptingInput = true;
                     }
                     unlocked = true;
@@ -63,6 +64,7 @@ public class Trigger_DoorLock : MonoBehaviour
                     if (removeFromInventory)
                     {
                         saveManager.activeSave.item2 = "---";
+                        saveManager.activeSave.item2Icon = "s_hud_inventory_blank";
                         gameObject.GetComponent<Trigger_Interact>().acceptingInput = true;
                     }
                     unlocked = true;
@@ -74,6 +76,7 @@ public class Trigger_DoorLock : MonoBehaviour
                     if (removeFromInventory)
                     {
                         saveManager.activeSave.item3 = "---";
+                        saveManager.activeSave.item3Icon = "s_hud_inventory_blank";
                         gameObject.GetComponent<Trigger_Interact>().acceptingInput = true;
                     }
                     unlocked = true;
@@ -85,6 +88,7 @@ public class Trigger_DoorLock : MonoBehaviour
                     if (removeFromInventory)
                     {
                         saveManager.activeSave.item4 = "---";
+                        saveManager.activeSave.item4Icon = "s_hud_inventory_blank";
                         gameObject.GetComponent<Trigger_Interact>().acceptingInput = true;
                     }
                     unlocked = true;
@@ -96,6 +100,7 @@ public class Trigger_DoorLock : MonoBehaviour
                     if (removeFromInventory)
                     {
                         saveManager.activeSave.item5 = "---";
+                        saveManager.activeSave.item5Icon = "s_hud_inventory_blank";
                         gameObject.GetComponent<Trigger_Interact>().acceptingInput = true;
                     }
                     unlocked = true;

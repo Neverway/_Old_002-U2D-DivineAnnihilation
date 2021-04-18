@@ -6,7 +6,8 @@ using UnityEngine.Events;
 public class Trigger_PlayerChoice : MonoBehaviour
 {
     public string[] options;
-    public bool eventTrigger;
+    //public bool eventTrigger;
+    public bool active;
     public UnityEvent onOption1;
     public UnityEvent onOption2;
     public UnityEvent onOption3;
@@ -26,7 +27,7 @@ public class Trigger_PlayerChoice : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (choiceBoxManager.choiceBoxActive)
+        if (choiceBoxManager.choiceBoxActive && active)
         {
             if (Input.GetKeyDown(inputManager.controls["Interact"]) && choiceBoxManager.choiceBoxObject.GetComponent<Menu_Scroll_String>().currentSelection == 0)
             {
@@ -74,12 +75,16 @@ public class Trigger_PlayerChoice : MonoBehaviour
     */
     public void EnterChoiceBox()
     {
+        Debug.Log("EnteredCB");
+        active = true;
         choiceBoxManager.currentTarget = gameObject.GetComponent<Trigger_PlayerChoice>();
         choiceBoxManager.enableChoiceBox();
     }
 
     public void ExitChoiceBox()
     {
+        Debug.Log("ExitedCB");
+        active = false;
         choiceBoxManager.currentTarget = null;
         choiceBoxManager.disableChoiceBox();
         gameObject.SetActive(false);

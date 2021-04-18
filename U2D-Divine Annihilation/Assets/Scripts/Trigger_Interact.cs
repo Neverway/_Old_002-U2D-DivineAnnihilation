@@ -46,17 +46,22 @@ public class Trigger_Interact : MonoBehaviour
         yield return new WaitForSeconds(.08f);     // The delay until it is accepting input again
     }
 
+    void Update()
+    {
+        if (startDestroy && !startDestroyTriggered)
+        {
+            Debug.Log("OnFinish");
+            onFinish.Invoke();
+            startDestroyTriggered = true;
+        }
+    }
+
     void OnTriggerStay2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
         {
             DialogueManager.EventTrigger = EventTrigger;
             DialogueManager.EventActive = EventActive;
-            if (startDestroy && !startDestroyTriggered)
-            {
-                StartCoroutine("finishDestroy");
-                startDestroyTriggered = true;
-            }
 
             // Check if the player has pressed the action key
             if (Input.GetKeyDown(inputManager.controls["Interact"]) && acceptingInput == true && !EventTrigger)

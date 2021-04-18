@@ -13,6 +13,7 @@ public class Entity_Character_Follower : MonoBehaviour
     public Transform target;
     public string partyMemberID;
     public float senseRange = 20f;
+    public float stopRange = 1.5f;
     public float speed = 200f;
     public float nextWaypointDistance = 3f;
     public bool sprintDust = true;
@@ -102,7 +103,7 @@ public class Entity_Character_Follower : MonoBehaviour
             speed = characterMovement.movementSpeed * 300;
 
             // Move toward target
-            if (Vector2.Distance(rigidbody2d.position, target.position) <= senseRange && Vector2.Distance(rigidbody2d.position, target.position) >= 0.5f)
+            if (Vector2.Distance(rigidbody2d.position, target.position) <= senseRange && Vector2.Distance(rigidbody2d.position, target.position) >= stopRange)
             {
                 Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rigidbody2d.position).normalized;
                 Vector2 force = direction * speed * Time.deltaTime;

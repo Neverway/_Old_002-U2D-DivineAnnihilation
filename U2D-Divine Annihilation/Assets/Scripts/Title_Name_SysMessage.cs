@@ -5,6 +5,7 @@
 //
 //=============================================================================
 
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,6 +14,7 @@ public class Title_Name_SysMessage : MonoBehaviour
     // Public Variables
     public Text message;
     public Text actions;
+    public bool acceptingInput;
 
     // Private Variables
     private System_InputManager inputManager;

@@ -157,6 +157,20 @@ public class Title_Name : MonoBehaviour
             actions.text = "[" + inputManager.controls["Interact"] + "] Confirm   [" + inputManager.controls["Action"] + "] Cancel";
             active = false;
         }
+        else if (nameText.text == "DEV_SRV_HST!")
+        {
+            systemMessageScreen.SetActive(true);
+            message.text = "Continue in server host mode?";
+            actions.text = "[" + inputManager.controls["Interact"] + "] Confirm   [" + inputManager.controls["Action"] + "] Cancel";
+            active = false;
+        }
+        else if (nameText.text == "DEV_SRV_CLI!")
+        {
+            systemMessageScreen.SetActive(true);
+            message.text = "Continue in server client mode?";
+            actions.text = "[" + inputManager.controls["Interact"] + "] Confirm   [" + inputManager.controls["Action"] + "] Cancel";
+            active = false;
+        }
         else if (nameText.text == "MIYU")
         {
             systemMessageScreen.SetActive(true);
@@ -175,6 +189,34 @@ public class Title_Name : MonoBehaviour
         {
             systemMessageScreen.SetActive(true);
             message.text = nameTakenError;
+            actions.text = "[" + inputManager.controls["Interact"] + "] OK";
+            active = false;
+        }
+        else if (nameText.text == "FOX_IS_DEAD")
+        {
+            systemMessageScreen.SetActive(true);
+            message.text = "-_-";
+            actions.text = "[" + inputManager.controls["Interact"] + "] OK";
+            active = false;
+        }
+        else if (nameText.text == "ZOOSMELL")
+        {
+            systemMessageScreen.SetActive(true);
+            message.text = "Try again, smartass!";
+            actions.text = "[" + inputManager.controls["Interact"] + "] OK";
+            active = false;
+        }
+        else if (nameText.text == "POOPLORD")
+        {
+            systemMessageScreen.SetActive(true);
+            message.text = "Try again, smartass!";
+            actions.text = "[" + inputManager.controls["Interact"] + "] OK";
+            active = false;
+        }
+        else if (nameText.text == "")
+        {
+            systemMessageScreen.SetActive(true);
+            message.text = "The name can't be blank!";
             actions.text = "[" + inputManager.controls["Interact"] + "] OK";
             active = false;
         }

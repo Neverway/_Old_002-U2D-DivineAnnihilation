@@ -15,6 +15,7 @@ public class SaveManager : MonoBehaviour
     public static SaveManager instance;
     public SaveData activeSave;
     public SaveData throwSave;
+    public Sprite noPortrait;
     public bool hasLoaded;
     public bool loadFileOnCreation = false;
     private GameObject playerRef;
@@ -94,11 +95,21 @@ public class SaveManager : MonoBehaviour
         activeSave.item3 = "---";
         activeSave.item4 = "---";
         activeSave.item5 = "---";
+        activeSave.item1Icon = "s_hud_inventory_blank";
+        activeSave.item2Icon = "s_hud_inventory_blank";
+        activeSave.item3Icon = "s_hud_inventory_blank";
+        activeSave.item4Icon = "s_hud_inventory_blank";
+        activeSave.item5Icon = "s_hud_inventory_blank";
         activeSave.equipment1 = "---";
         activeSave.equipment2 = "---";
         activeSave.equipment3 = "---";
         activeSave.equipment4 = "---";
         activeSave.equipment5 = "---";
+        activeSave.equipment1Icon = "s_hud_inventory_blank";
+        activeSave.equipment2Icon = "s_hud_inventory_blank";
+        activeSave.equipment3Icon = "s_hud_inventory_blank";
+        activeSave.equipment4Icon = "s_hud_inventory_blank";
+        activeSave.equipment5Icon = "s_hud_inventory_blank";
 
         // Party Data
         activeSave.partyMemberOne = "NULL";
@@ -258,7 +269,17 @@ public class SaveData
     public string equipment3;
     public string equipment4;
     public string equipment5;
-    
+    public string item1Icon;
+    public string item2Icon;
+    public string item3Icon;
+    public string item4Icon;
+    public string item5Icon;
+    public string equipment1Icon;
+    public string equipment2Icon;
+    public string equipment3Icon;
+    public string equipment4Icon;
+    public string equipment5Icon;
+
     // Party Data
     public string partyMemberOne;
     public float partyMemberOneHealth;

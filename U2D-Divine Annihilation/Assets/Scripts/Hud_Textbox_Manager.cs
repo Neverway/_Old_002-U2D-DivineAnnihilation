@@ -34,6 +34,7 @@ public class Hud_Textbox_Manager : MonoBehaviour
     public string textContent;
     public string textCurrent = "";
 
+    private bool dialogueInitialized;
     public GameObject targetTrigger;
     private System_InputManager inputManager;
     private Entity_Character_Movement characterMovement;   // A reference to the character movement script, used to freeze the player when a textbox is up
@@ -76,17 +77,36 @@ public class Hud_Textbox_Manager : MonoBehaviour
             textCurrent = "";
         }
 
-        // Continue to next dialogue
+        // Continue to next dialogue or start dialogue
         if (dialogueBoxActive && Input.GetKeyDown(inputManager.controls["Interact"]) && !EventTrigger)
         {
-            if (acceptingInput) currentLine += 1;   // Advance the line count
-            StartCoroutine(ShowText());
-            textCurrent = "";
-            dialogueTextObject.text = "";
-            monologueTextObject.text = "";
-            StartCoroutine("acceptInput");          // Apply Key press delay
+            if (!dialogueInitialized)
+            {
+                if (acceptingInput) currentLine += 1;   // Advance the line count
+                StartCoroutine(ShowText());
+                textCurrent = "";
+                dialogueTextObject.text = "";
+                monologueTextObject.text = "";
+                StartCoroutine("acceptInput");          // Apply Key press delay
+                dialogueInitialized = true;
+            }
+            //else if (textCurrent != textContent)
+            //{
+            //    textCurrent = textContent;
+            //    StartCoroutine("acceptInput");          // Apply Key press delay
+            //}
+            else if (textCurrent == textContent)
+            {
+                if (acceptingInput) currentLine += 1;   // Advance the line count
+                StartCoroutine(ShowText());
+                textCurrent = "";
+                dialogueTextObject.text = "";
+                monologueTextObject.text = "";
+                StartCoroutine("acceptInput");          // Apply Key press delay
+            }
         }
-        // Continue to next dialogue
+
+        // Start dialogue if it's an event
         if (dialogueBoxActive && EventTrigger && !EventActive)
         {
             Debug.Log("FIRED");
@@ -98,15 +118,33 @@ public class Hud_Textbox_Manager : MonoBehaviour
             StartCoroutine("acceptInput");          // Apply Key press delay
             EventActive = true;
         }
-        // Continue to next dialogue
+        // Continue to next dialogue in an event trigger
         else if (dialogueBoxActive && Input.GetKeyDown(inputManager.controls["Interact"]) && EventTrigger && EventActive)
         {
-            if (acceptingInput) currentLine += 1;   // Advance the line count
-            StartCoroutine(ShowText());
-            textCurrent = "";
-            dialogueTextObject.text = "";
-            monologueTextObject.text = "";
-            StartCoroutine("acceptInput");          // Apply Key press delay
+            if (!dialogueInitialized)
+            {
+                if (acceptingInput) currentLine += 1;   // Advance the line count
+                StartCoroutine(ShowText());
+                textCurrent = "";
+                dialogueTextObject.text = "";
+                monologueTextObject.text = "";
+                StartCoroutine("acceptInput");          // Apply Key press delay
+                dialogueInitialized = true;
+            }
+            //else if (textCurrent != textContent)
+            //{
+            //    textCurrent = textContent;
+            //    StartCoroutine("acceptInput");          // Apply Key press delay
+            //}
+            else if (textCurrent == textContent)
+            {
+                if (acceptingInput) currentLine += 1;   // Advance the line count
+                StartCoroutine(ShowText());
+                textCurrent = "";
+                dialogueTextObject.text = "";
+                monologueTextObject.text = "";
+                StartCoroutine("acceptInput");          // Apply Key press delay
+            }
         }
 
 
@@ -128,6 +166,7 @@ public class Hud_Textbox_Manager : MonoBehaviour
             dialogueNameTextObject.text = "";
             dialoguePortraitObject.sprite = noPortrait;
 
+            dialogueInitialized = false;
             acceptingInput = false;                                          // Set the accepting input value to false
         }
 
