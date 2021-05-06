@@ -8,6 +8,7 @@ public class Event_Library : MonoBehaviour
     public int booksFlag;
     private bool triggered;
     public UnityEvent booksFlagged;
+    public UnityEvent booksUnflagged;
 
     void Start()
     {
@@ -22,6 +23,7 @@ public class Event_Library : MonoBehaviour
     public void BookFlagSubtract()
     {
         booksFlag -= 1;
+        booksUnflagged.Invoke();
     }
 
     public void Update()

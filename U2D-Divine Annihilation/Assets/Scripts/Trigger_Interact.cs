@@ -19,6 +19,7 @@ public class Trigger_Interact : MonoBehaviour
     public bool destroyOnFinish;
     private bool EventActive;
     public bool acceptingInput;
+    public bool disabled;
     public bool startDestroy;
     public bool startDestroyTriggered;
     public UnityEvent onFinish;
@@ -60,11 +61,14 @@ public class Trigger_Interact : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            DialogueManager.EventTrigger = EventTrigger;
-            DialogueManager.EventActive = EventActive;
+            if (!disabled) 
+            {
+                DialogueManager.EventTrigger = EventTrigger;
+                DialogueManager.EventActive = EventActive;
+            }
 
             // Check if the player has pressed the action key
-            if (Input.GetKeyDown(inputManager.controls["Interact"]) && acceptingInput == true && !EventTrigger)
+            if (Input.GetKeyDown(inputManager.controls["Interact"]) && acceptingInput == true && !EventTrigger && !disabled)
             {
                 acceptingInput = false;     // Enable the keypress delay
                 // Check if the dialogue box is already open
@@ -82,7 +86,7 @@ public class Trigger_Interact : MonoBehaviour
             }
 
             // Check if the player has pressed the action key
-            if (EventTrigger && !EventActive)
+            if (EventTrigger && !EventActive && !disabled)
             {
                 acceptingInput = false;     // Enable the keypress delay
                 // Check if the dialogue box is already open
@@ -101,7 +105,7 @@ public class Trigger_Interact : MonoBehaviour
             }
 
             // Check if the player has pressed the action key
-            else if (Input.GetKeyDown(inputManager.controls["Interact"]) && acceptingInput == true && EventActive)
+            else if (Input.GetKeyDown(inputManager.controls["Interact"]) && acceptingInput == true && EventActive && !disabled)
             {
                 acceptingInput = false;     // Enable the keypress delay
                 // Check if the dialogue box is already open
@@ -118,13 +122,36 @@ public class Trigger_Interact : MonoBehaviour
         }
     }
 
+    public void ForceTheDamnTriggerToActivate()
+    {
+        DialogueManager.ForceClearDialogue();
+
+        acceptingInput = false;     // Enable the keypress delay
+        Debug.Log("START THE TRIGGER PLEASE!!!!");
+
+        DialogueManager.EventTrigger = EventTrigger;
+        DialogueManager.EventActive = EventActive;
+
+        DialogueManager.dialogueLines = dialogueLines;                  // Pass the dialogue lines value to the manager (don't bother understanding this, it just works so I don't bother messing with it)
+        DialogueManager.dialogueLineNames = dialogueLineNames;          // Pass the dialogue line names value to the manager
+        DialogueManager.dialogueLinePortraits = dialogueLinePortraits;  // Pass the dialogue line portraits value to the manager
+        DialogueManager.currentLine = 0;                                // Reset the current line (in case the dialogue manager failes to)
+        DialogueManager.ShowDialogue();                                 // Execute the show dialogue function
+        EventActive = true;
+        StartCoroutine("acceptInput");                                  // Activate the keypress delay
+        DialogueManager.targetTrigger = gameObject;
+        DialogueManager.destroyOnFinish = destroyOnFinish;
+    }
+
     public void DisableTrigger()
     {
+        disabled = true;
         acceptingInput = false;
     }
 
     public void RenableTrigger()
     {
+        disabled = false;
         acceptingInput = true;
         startDestroy = false;
         startDestroyTriggered = false;
