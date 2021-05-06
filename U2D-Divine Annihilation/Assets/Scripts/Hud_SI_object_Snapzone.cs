@@ -8,7 +8,7 @@ public class Hud_SI_object_Snapzone : MonoBehaviour
     public string snapObjectsTag = "SI Pickup";
     public Transform snapPoint;
     private bool slotFilled;
-    private GameObject target;
+    public GameObject target;
     private Hud_SI_hand_controller handController;
     public UnityEvent onSlotFilled;
     public UnityEvent onSlotEmpty;
@@ -38,6 +38,7 @@ public class Hud_SI_object_Snapzone : MonoBehaviour
         {
             slotFilled = false;
             onSlotEmpty.Invoke();
+            target = null;
         }
     }
 }

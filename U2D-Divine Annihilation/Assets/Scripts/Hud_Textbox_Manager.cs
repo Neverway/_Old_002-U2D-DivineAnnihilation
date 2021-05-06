@@ -30,11 +30,13 @@ public class Hud_Textbox_Manager : MonoBehaviour
     public bool EventTrigger;
     public bool EventActive;
 
+    public float doublClickSpeed = 0.4f;
     public float textSpeed = 0.1f;
     public string textContent;
     public string textCurrent = "";
 
     private bool dialogueInitialized;
+    private float lastClickedTime;
     public GameObject targetTrigger;
     private System_InputManager inputManager;
     private Entity_Character_Movement characterMovement;   // A reference to the character movement script, used to freeze the player when a textbox is up
@@ -104,6 +106,25 @@ public class Hud_Textbox_Manager : MonoBehaviour
                 monologueTextObject.text = "";
                 StartCoroutine("acceptInput");          // Apply Key press delay
             }
+        }
+
+        // Skip dialogue
+        //if (dialogueBoxActive && Input.GetKeyDown(inputManager.controls["Interact"]) && !EventTrigger && textCurrent != textContent)
+        //{
+        //    float timeSinceLastClick = Time.time - lastClickedTime;
+        //    if (timeSinceLastClick <= doublClickSpeed)
+        //    {
+        //        textCurrent = textContent;
+        //        StopAllCoroutines();
+        //        StartCoroutine("acceptInput");          // Apply Key press delay
+        //    }
+        //    lastClickedTime = Time.time;
+        //}
+        if (dialogueBoxActive && Input.GetKeyDown(inputManager.controls["Action"]))
+        {
+                textCurrent = textContent;
+                StopAllCoroutines();
+                StartCoroutine("acceptInput");          // Apply Key press delay
         }
 
         // Start dialogue if it's an event
@@ -202,5 +223,27 @@ public class Hud_Textbox_Manager : MonoBehaviour
             dialogueBoxActive = true;          // Set the active state to true
             dialogueBoxObject.SetActive(true); // Make the dialogue box heirarchy disappear
         }
+    }
+
+    public void ForceClearDialogue()
+    {
+        Debug.Log("Clearing...");
+        dialogueBoxObject.SetActive(false);                              // Make the dialogue box heirarchy disappear
+        dialogueBoxActive = false;                                       // Set the active state to false
+        currentLine = 0;                                                 // Reset the current line count to zero
+        StopCoroutine("acceptInput");                                    // Reset the key delay
+        StopCoroutine("ShowText");
+        if (destroyOnFinish)
+        {
+            targetTrigger.GetComponent<Trigger_Interact>().startDestroy = true;
+        }
+
+        dialogueTextObject.text = "";
+        monologueTextObject.text = "";
+        dialogueNameTextObject.text = "";
+        dialoguePortraitObject.sprite = noPortrait;
+
+        dialogueInitialized = false;
+        acceptingInput = false;
     }
 }

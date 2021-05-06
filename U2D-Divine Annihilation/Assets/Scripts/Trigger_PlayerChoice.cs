@@ -87,6 +87,5 @@ public class Trigger_PlayerChoice : MonoBehaviour
         active = false;
         choiceBoxManager.currentTarget = null;
         choiceBoxManager.disableChoiceBox();
-        gameObject.SetActive(false);
     }
 }

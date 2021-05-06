@@ -58,16 +58,16 @@ public class Hud_Inventory : MonoBehaviour
     void Update()
     {
         // Close inventory
-        if (inventoryBoxActive && Input.GetKeyDown(inputManager.controls["Action"]))
+        if (inventoryBoxActive && Input.GetKeyDown(inputManager.controls["Select"]))
         {
             if (acceptingInput)
             {
-                //items[currentFrame].sprite = notSelected;
-                //equipment[currentFrame].sprite = notSelected;
-                //currentFrame = 0;
-                //inItems = true;
+                itemSlots[currentFrame].sprite = notSelected;
+                equipmentSlots[currentFrame].sprite = notSelected;
+                currentFrame = 0;
+                inItems = true;
                 Resources.UnloadUnusedAssets();
-                characterMovement.movementSpeed = characterMovement.storedSpeed; // Set the players speed so they won't get stuck with a movement speed of zero
+                characterMovement.movementSpeed = characterMovement.walkSpeed; // Set the players speed so they won't get stuck with a movement speed of zero
                 inventoryBoxActive = false;
                 inventoryBoxObject.SetActive(false); // Make the box disappear
                 acceptingInput = false;
