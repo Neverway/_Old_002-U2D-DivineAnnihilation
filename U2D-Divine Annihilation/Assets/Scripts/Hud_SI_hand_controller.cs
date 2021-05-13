@@ -10,7 +10,7 @@ public class Hud_SI_hand_controller : MonoBehaviour
     public Transform gripPoint;
     private bool isHovering;
     public bool isGrabbing;
-    private GameObject target;
+    public GameObject target;
     private System_InputManager inputManager;
 
     Vector2 movement;

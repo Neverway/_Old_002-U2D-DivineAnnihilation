@@ -81,6 +81,7 @@
      <Compile Include="Assets\Scripts\Hud_Name.cs" />
      <Compile Include="Assets\Scripts\Hud_SI_BookID.cs" />
      <Compile Include="Assets\Scripts\Hud_SI_Button.cs" />
+     <Compile Include="Assets\Scripts\Hud_SI_Cable.cs" />
      <Compile Include="Assets\Scripts\Hud_SI_Controller.cs" />
      <Compile Include="Assets\Scripts\Hud_SI_hand_controller.cs" />
      <Compile Include="Assets\Scripts\Hud_SI_object_Snapzone.cs" />
