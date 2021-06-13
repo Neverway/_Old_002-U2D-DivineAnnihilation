@@ -73,7 +73,7 @@
      <Compile Include="Assets\Scripts\Entity_Effect_Character_Ghost.cs" />
      <Compile Include="Assets\Scripts\Entity_Effect_Water.cs" />
      <Compile Include="Assets\Scripts\Entity_Follow_Flip.cs" />
-     <Compile Include="Assets\Scripts\Event\Event_Library.cs" />
+     <Compile Include="Assets\Scripts\Event\Event_SI_ConditionCounter.cs" />
      <Compile Include="Assets\Scripts\Event\Event_WakeUp.cs" />
      <Compile Include="Assets\Scripts\Hud_Choicebox_Manager.cs" />
      <Compile Include="Assets\Scripts\Hud_Health.cs" />
