@@ -1,44 +1,10 @@
 Base path: '/home/lizband_ucc/Documents/Apps/Unity/Hub/Editor/2019.4.10f1/Editor/Data', plugins path '/home/lizband_ucc/Documents/Apps/Unity/Hub/Editor/2019.4.10f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
-Cmd: compileComputeKernel
-  api=15 insize=18731 outsize=16381 ok=1
-Cmd: compileComputeKernel
-  api=15 insize=18731 outsize=16386 ok=1
-Cmd: compileComputeKernel
-  api=15 insize=18731 outsize=25716 ok=1
-Cmd: compileComputeKernel
-  api=18 insize=18731 outsize=34002 ok=1
-Cmd: compileComputeKernel
-  api=18 insize=18731 outsize=55838 ok=1
-Cmd: compileComputeKernel
-  api=15 insize=1226 outsize=2229 ok=1
-Cmd: compileComputeKernel
-  api=18 insize=1505 outsize=6787 ok=1
-Cmd: compileComputeKernel
-  api=15 insize=5032 outsize=8575 ok=1
-Cmd: compileComputeKernel
-  api=18 insize=5032 outsize=15628 ok=1
-Cmd: compileComputeKernel
-  api=18 insize=5032 outsize=17333 ok=1
-Cmd: compileComputeKernel
-  api=15 insize=1864 outsize=3833 ok=1
-Cmd: compileComputeKernel
-  api=15 insize=11176 outsize=22210 ok=1
-Cmd: compileComputeKernel
-  api=18 insize=11176 outsize=48021 ok=1
-Cmd: compileComputeKernel
-  api=18 insize=2120 outsize=4124 ok=1
-Cmd: compileComputeKernel
-  api=15 insize=2134 outsize=1026 ok=1
-Cmd: compileComputeKernel
-  api=18 insize=2134 outsize=1256 ok=1
-Cmd: compileComputeKernel
-  api=18 insize=3532 outsize=9805 ok=1
-Cmd: compileComputeKernel
-  api=15 insize=1957 outsize=1588 ok=1
-Cmd: compileComputeKernel
-  api=18 insize=1957 outsize=2487 ok=1
-Cmd: compileComputeKernel
-  api=15 insize=5591 outsize=13581 ok=1
-
-Quitting shader compiler process
+Cmd: compileSnippet
+  api=15 type=0 insize=19273 outsize=13605 kw=_ADDITIONAL_LIGHTS_VERTEX pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
+Cmd: compileSnippet
+  api=15 type=0 insize=19273 outsize=15005 kw=_MAIN_LIGHT_SHADOWS _ADDITIONAL_LIGHTS_VERTEX pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
+Cmd: compileSnippet
+  api=15 type=0 insize=17554 outsize=13321 kw=ETC1_EXTERNAL_ALPHA pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
+Cmd: compileSnippet
+  api=15 type=1 insize=16905 outsize=0 kw=ETC1_EXTERNAL_ALPHA pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
