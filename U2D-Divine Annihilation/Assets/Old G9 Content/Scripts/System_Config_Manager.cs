@@ -9,6 +9,7 @@ using UnityEngine;
 
 public class System_Config_Manager : MonoBehaviour
 {
+    public bool onTitleScreen;
     public bool menuActive;
     public bool canMove;
     public bool overrideCanMove;
@@ -37,18 +38,21 @@ public class System_Config_Manager : MonoBehaviour
         SIController = FindObjectOfType<Hud_SI_Controller>();
         ChoiceboxManager = FindObjectOfType<Hud_Choicebox_Manager>();
         characterMovement = FindObjectOfType<Entity_Character_Movement>();
-        // Menu active
-        if (DialogueManager.dialogueBoxActive | InventoryManager.inventoryBoxActive | SIController.siBoxActive | ChoiceboxManager.choiceBoxActive | overrideCanMove)
+        if (DialogueManager != null && InventoryManager != null)
         {
-            menuActive = true;
-            characterMovement.canMove = false;
-        }
+            // Menu active
+            if (DialogueManager.dialogueBoxActive | InventoryManager.inventoryBoxActive | SIController.siBoxActive | ChoiceboxManager.choiceBoxActive | overrideCanMove)
+            {
+                menuActive = true;
+                characterMovement.canMove = false;
+            }
 
-        // No Menu active
-        else if(!DialogueManager.dialogueBoxActive && !InventoryManager.inventoryBoxActive && !SIController.siBoxActive && !ChoiceboxManager.choiceBoxActive && !overrideCanMove)
-        {
-            menuActive = false;
-            characterMovement.canMove = true;
+            // No Menu active
+            else if (!DialogueManager.dialogueBoxActive && !InventoryManager.inventoryBoxActive && !SIController.siBoxActive && !ChoiceboxManager.choiceBoxActive && !overrideCanMove)
+            {
+                menuActive = false;
+                characterMovement.canMove = true;
+            }
         }
     }
 }
