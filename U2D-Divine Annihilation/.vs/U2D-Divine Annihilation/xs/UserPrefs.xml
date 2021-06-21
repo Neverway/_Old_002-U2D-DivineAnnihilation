@@ -1,9 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Editor/DASDK/DASDK_Menu_Control.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Depreciated &amp; Awaiting Update/Title_Intro_Pretitle.cs">
     <Files>
-      <File FileName="Assets/Scripts/DA_Menu_Control.cs" Line="68" Column="10" />
-      <File FileName="Assets/Scripts/DA_TestingScript.cs" Line="29" Column="45" />
-      <File FileName="Assets/Editor/DASDK/DASDK_Menu_Control.cs" Line="5" Column="23" />
+      <File FileName="Assets/Scripts/DA_Menu_Control.cs" Line="125" Column="14" />
+      <File FileName="Assets/Editor/DASDK/DASDK_Menu_Control.cs" Line="91" Column="55" />
+      <File FileName="Assets/Scripts/OLDG9/Menu_Scroll_String.cs" Line="79" Column="9" />
+      <File FileName="Assets/Scripts/Depreciated &amp; Awaiting Update/Title_Intro_Opening.cs" Line="49" Column="28" />
+      <File FileName="Assets/Scripts/Depreciated &amp; Awaiting Update/Title_Intro_Pretitle.cs" Line="13" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

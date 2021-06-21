@@ -49,7 +49,7 @@ public class Title_Intro_Opening : MonoBehaviour
             active = false;
         }
 
-        if (Input.GetKeyDown(inputManager.controls["Interact"]) && skippable)
+        if (Input.GetKeyDown(inputManager.controls["Interact"]) && skippable || Input.GetKeyDown(inputManager.controls["Action"]) && skippable)
         {
             bookAnimator.Play("title_book_appear_skip");
             skippable = false;
