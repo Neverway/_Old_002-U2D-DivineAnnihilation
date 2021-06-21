@@ -2,255 +2,133 @@
 //
 // Purpose: Scroll through and toggle menu objects
 // Applied to: A menu parent object in a scene
+// Editor script: DASDK_Menu_Control
 //
 //=============================================================================
 
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class DA_Menu_Control : MonoBehaviour
 {
     // Variables Scrolling
-    bool horizontalScrolling;
+    public bool horizontalScrolling;    // Switch from using up and down to move through a menu to left and right
+    public bool wrapAround;             // When trying to advance at the begining or end of a menu wrap around to the other side
+    public int selectionLength; 
+    public int currentSelection;
 
     // Variables Sprite Scrolling
-    bool scrollImages;
-    bool showScrollSprite;
-    public string[] testingString = new string[0];
+    public bool scrollSprites;  // Enable scrolling with sprites
+    public Sprite[] sprites;    // List of sprites to use for the menu (in order)
 
     // Variables String Scrolling
-    bool scrollStrings;
-    bool showTextObjectTargets;
-    bool showBaseText;
-    bool showHoveredText;
-}
+    public bool scrollStrings;                                      // Enable scrolling with strings
+    public Color hoverColor = new Vector4(1, 1, 1, 1);              // Color for when a menu object is selected
+    public Color baseColor = new Vector4(0.25f, 0.25f, 0.25f, 1);   // Color for when a menu object is not selected
+    public Text[] textTargetObjects;                                // The target text objects to change
+    public string[] baseText;                                       // The text that the menu options should be when not selected
+    public string[] hoveredText;                                    // The text that the menu options should be when selected
+
+    // Variables MenuControl
+    public bool menuControl;            // Enable menu control
+    public bool canGoBack;              // Allow the player to go to the previouse menu (if there was one)
+    public UnityEvent[] OnInteract;     // A unity event for use with the activation of the interact button
+    public UnityEvent onBack;           // A unity event for use with the activation of the back button if canGoBack is enabled
+
+    // Variables System
+    private System_InputManager inputManager;
 
 
-/*
-
-
-    // Variables for Custom Inspector Code
-    #region Editor
-
-    #if UNITY_EDITOR
-
-    [CustomEditor(typeof(DA_Menu_Control))]
-    [CanEditMultipleObjects]
-    public class MenuControlEditor : Editor
+    void Start()
     {
-        SerializedObject serializedObj;
-        DA_Menu_Control myClassScript;
-        SerializedProperty myArray;
-
-        void OnEnable()
-        {
-            serializedObj = new SerializedObject(target);
-            myClassScript = (DA_Menu_Control)target;
-            myArray = serializedObject.FindProperty("baseText2");
-        }
-
-        public override void OnInspectorGUI()
-        {
-
-            base.OnInspectorGUI();
-
-            // Serialize after base (otherwise the drawing in the inspector will break)
-            DA_Menu_Control menuControl = (DA_Menu_Control)target; // Set the current script to the target class
-
-            serializedObj.Update();
-            EditorGUILayout.PropertyField(myArray);
-            serializedObj.ApplyModifiedProperties();
-
-            if (menuControl.currentMenu == ItemType.scrollSprites)
-            {
-                DrawScrollImages(menuControl);
-                DrawImagesList(menuControl);
-            }
-
-            if (menuControl.currentMenu == ItemType.scrollStrings)
-            {
-
-                //DrawScrollStrings(menuControl);
-                //DrawTextObjectTargets(menuControl);
-                //DrawBaseText(menuControl);
-                //DrawHoveredText(menuControl);
-            }
-
-            if (menuControl.currentMenu == ItemType.menuControl)
-            {
-
-            }
-            //EditorApplication.MarkSceneDirty();
-        }
-
-        // Scroll Sprites
-        static void DrawScrollImages(DA_Menu_Control menuControl)
-        {
-            EditorGUILayout.Space();
-            menuControl.scrollImages = EditorGUILayout.Toggle("Scroll Sprites", menuControl.scrollImages);
-            EditorGUILayout.Space();
-            menuControl.horizontalScrolling = EditorGUILayout.Toggle("Horizontal Scrolling", menuControl.horizontalScrolling);
-        }
-
-        static void DrawImagesList(DA_Menu_Control menuControl)
-        {
-            menuControl.showScrollSprite = EditorGUILayout.Foldout(menuControl.showScrollSprite, "Scroll Sprites", true); // ######CHANGE ME######
-            if (menuControl.showScrollSprite) // ######CHANGE ME######
-            {
-                EditorGUI.indentLevel++;
-                List<GameObject> list = menuControl.scrollSprite; // ######CHANGE ME######
-                int listSize = Mathf.Max(0, EditorGUILayout.IntField("Size", list.Count)); // Size of List
-                                                                                           // Correct the size of list
-                while (listSize > list.Count)
-                {
-                    list.Add(null);
-                }
-                while (listSize < list.Count)
-                {
-                    list.RemoveAt(list.Count - 1);
-                }
-                // Serialize list
-                for (int i = 0; i < list.Count; i++)
-                {
-                    list[i] = EditorGUILayout.ObjectField("Element " + i, list[i], typeof(GameObject), true) as GameObject;
-                }
-                EditorGUI.indentLevel--;
-            }
-        }
-
-
-        // Scroll Strings
-        static void DrawScrollStrings(DA_Menu_Control menuControl)
-        {
-            EditorGUILayout.Space();
-            menuControl.scrollImages = EditorGUILayout.Toggle("Scroll Strings", menuControl.scrollImages);
-            EditorGUILayout.Space();
-            menuControl.horizontalScrolling = EditorGUILayout.Toggle("Horizontal Scrolling", menuControl.horizontalScrolling);
-        }
-
-        static void DrawTextObjectTargets(DA_Menu_Control menuControl)
-        {
-            menuControl.showScrollSprite = EditorGUILayout.Foldout(menuControl.showScrollSprite, "Text Object Targets", true); // ######CHANGE ME######
-            if (menuControl.showScrollSprite) // ######CHANGE ME######
-            {
-                EditorGUI.indentLevel++;
-                List<Text> list = menuControl.textObjectTargets; // ######CHANGE ME######
-                int listSize = Mathf.Max(0, EditorGUILayout.IntField("Size", list.Count)); // Size of List
-                                                                                           // Correct the size of list
-                while (listSize > list.Count)
-                {
-                    list.Add(null);
-                }
-                while (listSize < list.Count)
-                {
-                    list.RemoveAt(list.Count - 1);
-                }
-                // Serialize list
-                for (int i = 0; i < list.Count; i++)
-                {
-                    list[i] = EditorGUILayout.ObjectField("Element " + i, list[i], typeof(Text), true) as Text;
-                }
-                EditorGUI.indentLevel--;
-            }
-        }
-
-        static void DrawBaseText(DA_Menu_Control menuControl)
-        {
-            menuControl.showBaseText = EditorGUILayout.Foldout(menuControl.showBaseText, "Base Text", true); // ######CHANGE ME######
-            if (menuControl.showBaseText) // ######CHANGE ME######
-            {
-                EditorGUI.indentLevel++;
-                List<string> list = menuControl.baseText; // ######CHANGE ME######
-                int listSize = Mathf.Max(0, EditorGUILayout.IntField("Size", list.Count)); // Size of List
-                                                                                           // Correct the size of list
-                while (listSize > list.Count)
-                {
-                    list.Add(null);
-                }
-                while (listSize < list.Count)
-                {
-                    list.RemoveAt(list.Count - 1);
-                }
-                // Serialize list
-                for (int i = 0; i < list.Count; i++)
-                {
-                    list[i] = EditorGUILayout.TextField(list[i]) as string;
-                }
-                EditorGUI.indentLevel--;
-            }
-        }
-
-        static void DrawHoveredText(DA_Menu_Control menuControl)
-        {
-            menuControl.showHoveredText = EditorGUILayout.Foldout(menuControl.showHoveredText, "Hovered Text", true); // ######CHANGE ME######
-            if (menuControl.showHoveredText) // ######CHANGE ME######
-            {
-                EditorGUI.indentLevel++;
-                List<Text> list = menuControl.hoveredText; // ######CHANGE ME######
-                int listSize = Mathf.Max(0, EditorGUILayout.IntField("Size", list.Count)); // Size of List
-                                                                                           // Correct the size of list
-                while (listSize > list.Count)
-                {
-                    list.Add(null);
-                }
-                while (listSize < list.Count)
-                {
-                    list.RemoveAt(list.Count - 1);
-                }
-                // Serialize list
-                for (int i = 0; i < list.Count; i++)
-                {
-                    list[i] = EditorGUILayout.ObjectField("Element " + i, list[i], typeof(Text), true) as Text;
-                }
-                EditorGUI.indentLevel--;
-            }
-        }
-
+        inputManager = FindObjectOfType<System_InputManager>();
     }
 
-    #endif
 
-    #endregion
+    void Update()
+    {
+        // Vertical Scrolling
+        if (!horizontalScrolling)
+        {
+            // Up
+            if (Input.GetKeyDown(inputManager.controls["Up"]))
+            {
+                if (currentSelection == 0 && wrapAround) { currentSelection = selectionLength; }    // Wrap around
+                if (currentSelection != 0) { currentSelection -= 1; }                               // Go Up
+            }
 
+            // Down
+            if (Input.GetKeyDown(inputManager.controls["Down"]))
+            {
+                if (currentSelection == selectionLength && wrapAround) { currentSelection = 0; }    // Wrap around
+                if (currentSelection != selectionLength - 1) { currentSelection += 1; }                 // Go Down
+            }
+        }
+
+        // Horizontal Scrolling
+        else if (horizontalScrolling)
+        {
+            // Left
+            if (Input.GetKeyDown(inputManager.controls["Left"]))
+            {
+                if (currentSelection == 0 && wrapAround) { currentSelection = selectionLength; }    // Wrap around
+                if (currentSelection != 0) { currentSelection -= 1; }                               // Go Left
+            }
+
+            // Down
+            if (Input.GetKeyDown(inputManager.controls["Right"]))
+            {
+                if (currentSelection == selectionLength && wrapAround) { currentSelection = 0; }    // Wrap around
+                if (currentSelection != selectionLength - 1) { currentSelection += 1; }                 // Go Right
+            }
+        }
+
+        /*
+        if (scrollSprites && !scrollStrings)
+        {
+            for (int i = 0; i < selectionLength; i++)
+            {
+                if (i != currentSelection)
+                {
+                    optionsUIReference[i].text = optionsBaseText[i];
+                    optionsUIReference[i].color = baseColor;
+                }
+            }
+
+            optionsUIReference[currentSelection].text = optionsHoverText[currentSelection];
+            optionsUIReference[currentSelection].color = hoverColor;
+        }
+        */
+
+        if (scrollStrings && !scrollSprites)
+        {
+            selectionLength = textTargetObjects.Length;
+            for (int i = 0; i < selectionLength; i++)
+            {
+                if (i != currentSelection)
+                {
+                    textTargetObjects[i].text = baseText[i];
+                    textTargetObjects[i].color = baseColor;
+                }
+            }
+
+            textTargetObjects[currentSelection].text = hoveredText[currentSelection];
+            textTargetObjects[currentSelection].color = hoverColor;
+        }
+
+        if (menuControl)
+        {
+            if (Input.GetKeyDown(inputManager.controls["Interact"]))
+            {
+                OnInteract[currentSelection].Invoke();
+            }
+
+            if (Input.GetKeyDown(inputManager.controls["Action"]) && canGoBack)
+            {
+                onBack.Invoke();
+            }
+        }
+    }
 }
-
-
-/*
-    // Sprites
-    [Header ("Scrolling With Sprites - (Don't touch if left unchecked)")]
-    public bool scrollImages;
-
-    [ConditionalHide("scrollImages", true)]
-    public Sprite[] imageFrames;
-    [ConditionalHide("scrollImages", true)]
-    public bool horizontalScrollingImages;
-
-    // Strings
-    [Header("Scrolling With Strings - (Don't touch if left unchecked)")]
-    public bool scrollStrings;
-
-    [ConditionalHide("scrollStrings", true)]
-    public Text[] UIElements;
-    [ConditionalHide("scrollStrings", true)]
-    public string[] defaultText;
-    [ConditionalHide("scrollStrings", true)]
-    public string[] hoverText;
-    [ConditionalHide("scrollStrings", true)]
-    public bool horizontalScrollingString;
-
-    // Controlling
-    [Header ("Menu Control - (Don't touch if left unchecked)")]
-    public bool control;
-
-    [ConditionalHide("control", true)]
-    public bool wrapAround;
-
-    [ConditionalHide("control", true)]
-    public bool canGoBack;
-
-    [ConditionalHide("canGoBack", true)]
-    public GameObject activeOnBack;
-    [ConditionalHide("control", true)]
-    public GameObject selfMenuObject;*/
+ 

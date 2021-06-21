@@ -61,7 +61,6 @@
      <Compile Include="Assets\Scripts\DA_Entity_Chase.cs" />
      <Compile Include="Assets\Scripts\DA_Entity_Effects.cs" />
      <Compile Include="Assets\Scripts\DA_Menu_Control.cs" />
-     <Compile Include="Assets\Scripts\DA_TestingScript.cs" />
      <Compile Include="Assets\Scripts\DA_Trigger_Interact.cs" />
      <Compile Include="Assets\Scripts\DA_Trigger_ItemPickup.cs" />
      <Compile Include="Assets\Scripts\DA_Trigger_PartySet.cs" />
