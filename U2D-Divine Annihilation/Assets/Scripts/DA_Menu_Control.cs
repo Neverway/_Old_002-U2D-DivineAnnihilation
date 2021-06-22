@@ -37,12 +37,12 @@ public class DA_Menu_Control : MonoBehaviour
     public UnityEvent onBack;           // A unity event for use with the activation of the back button if canGoBack is enabled
 
     // Variables System
-    private System_InputManager inputManager;
+    private OTU_System_InputManager inputManager;
 
 
     void Start()
     {
-        inputManager = FindObjectOfType<System_InputManager>();
+        inputManager = FindObjectOfType<OTU_System_InputManager>();
     }
 
 
