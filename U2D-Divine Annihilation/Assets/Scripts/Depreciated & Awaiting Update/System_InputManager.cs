@@ -1,17 +1,22 @@
-﻿using System.Collections;
+﻿//=========== Written by Arthur W. Sheldon AKA Lizband_UCC =============================
+//
+// Purpose: Set the controls and store them to PlayerPrefs
+// Applied to: The config object in the title scene
+//
+//======================================================================================
+
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class System_InputManager : MonoBehaviour
 {
+    // Variables Script
     public Dictionary<string, KeyCode> controls = new Dictionary<string, KeyCode>();
 
 
-    // Start is called before the first frame update
+    // Load current keys that are being stored in memory, if there are not any, set some defaults
     void Start()
     {
-        // Load current keys that are being stored in memory, if there are not any, set some defaults
         controls.Add("Up", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Up", "UpArrow")));
         controls.Add("Down", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Down", "DownArrow")));
         controls.Add("Left", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Left", "LeftArrow")));
@@ -26,27 +31,5 @@ public class System_InputManager : MonoBehaviour
         controls.Add("Special 2", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Special 2", "Alpha2")));
         controls.Add("Special 3", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Special 3", "Alpha3")));
         controls.Add("Special 4", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Special 4", "Alpha4")));
-        
     }
-
-    //void Update()
-    //{
-    //    if (Input.GetKeyDown(KeyCode.F1))
-    //    {
-    //        Debug.Log("SIM Up = " + controls["Up"]);
-    //        Debug.Log("SIM Down = " + controls["Down"]);
-    //        Debug.Log("SIM Left = " + controls["Left"]);
-    //        Debug.Log("SIM Right = " + controls["Right"]);
-
-    //        Debug.Log("SIM Interact = " + controls["Interact"]);
-    //        Debug.Log("SIM Action = " + controls["Action"]);
-    //        Debug.Log("SIM Select = " + controls["Select"]);
-    //        Debug.Log("SIM Menu = " + controls["Menu"]);
-
-    //        Debug.Log("SIM Special 1 = " + controls["Special 1"]);
-    //        Debug.Log("SIM Special 2 = " + controls["Special 2"]);
-    //        Debug.Log("SIM Special 3 = " + controls["Special 3"]);
-    //        Debug.Log("SIM Special 4 = " + controls["Special 4"]);
-    //    }
-    //}
 }

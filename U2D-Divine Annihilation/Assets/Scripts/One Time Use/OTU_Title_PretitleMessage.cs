@@ -1,7 +1,7 @@
 ﻿//=========== Written by Arthur W. Sheldon AKA Lizband_UCC =============================
 //
 // Purpose: Animate the pre-title message and transition to the opening on a keypress
-// Applied to: Config object in a scene
+// Applied to: 
 // Notes: Needs comments
 //
 //======================================================================================
@@ -20,7 +20,7 @@ public class OTU_Title_PretitleMessage : MonoBehaviour
     private bool skippable = true;
 
     // Variables System
-    private System_InputManager inputManager;
+    private OTU_System_InputManager inputManager;
 
 
     IEnumerator DelayedStart()
@@ -37,7 +37,7 @@ public class OTU_Title_PretitleMessage : MonoBehaviour
 
     void Start()
     {
-        inputManager = FindObjectOfType<System_InputManager>();
+        inputManager = FindObjectOfType<OTU_System_InputManager>();
         StartCoroutine("DelayedStart");
     }
 
