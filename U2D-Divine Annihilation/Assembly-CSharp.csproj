@@ -56,23 +56,12 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\ConditionalHideAttribute.cs" />
-     <Compile Include="Assets\Scripts\DA_Character_Control.cs" />
-     <Compile Include="Assets\Scripts\DA_Character_Follower.cs" />
-     <Compile Include="Assets\Scripts\DA_Entity_Chase.cs" />
-     <Compile Include="Assets\Scripts\DA_Entity_Effects.cs" />
      <Compile Include="Assets\Scripts\DA_Menu_Control.cs" />
-     <Compile Include="Assets\Scripts\DA_Trigger_Interact.cs" />
-     <Compile Include="Assets\Scripts\DA_Trigger_ItemPickup.cs" />
-     <Compile Include="Assets\Scripts\DA_Trigger_PartySet.cs" />
-     <Compile Include="Assets\Scripts\DA_Trigger_Savepoint.cs" />
-     <Compile Include="Assets\Scripts\DA_Trigger_Warp.cs" />
      <Compile Include="Assets\Scripts\Depreciated &amp; Awaiting Update\SaveManager.cs" />
      <Compile Include="Assets\Scripts\Depreciated &amp; Awaiting Update\System_Config_Manager.cs" />
      <Compile Include="Assets\Scripts\Depreciated &amp; Awaiting Update\System_InputManager.cs" />
      <Compile Include="Assets\Scripts\Depreciated &amp; Awaiting Update\System_PersistentOnOverworld.cs" />
      <Compile Include="Assets\Scripts\Depreciated &amp; Awaiting Update\Title_Erase.cs" />
-     <Compile Include="Assets\Scripts\Depreciated &amp; Awaiting Update\Title_Intro_Opening.cs" />
-     <Compile Include="Assets\Scripts\Depreciated &amp; Awaiting Update\Title_Intro_Pretitle.cs" />
      <Compile Include="Assets\Scripts\Depreciated &amp; Awaiting Update\Title_Load.cs" />
      <Compile Include="Assets\Scripts\Depreciated &amp; Awaiting Update\Title_Name.cs" />
      <Compile Include="Assets\Scripts\Depreciated &amp; Awaiting Update\Title_Name_SysMessage.cs" />
@@ -150,6 +139,10 @@
      <Compile Include="Assets\Scripts\OLDG9\Unused or Unknown\OLDHudTextboxManager.cs" />
      <Compile Include="Assets\Scripts\OLDG9\Unused or Unknown\OLDItemPickup.cs" />
      <Compile Include="Assets\Scripts\OLDG9\Unused or Unknown\PuzzlePushbox.cs" />
+     <Compile Include="Assets\Scripts\One Time Use\OTU_Title_Opening.cs" />
+     <Compile Include="Assets\Scripts\One Time Use\OTU_Title_PretitleMessage.cs" />
+     <Compile Include="Assets\Scripts\Title_Intro_Opening.cs" />
+     <Compile Include="Assets\Scripts\Title_Intro_Pretitle.cs" />
      <None Include="Assets\Packages\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\Packages\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Packages\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
