@@ -19,6 +19,7 @@ public class DASDK_Menu_Control : Editor
     [HideInInspector] public GameObject player;
 
     // Variables Sprite Scrolling
+    SerializedProperty spriteTargetObject;
     SerializedProperty sprites;
 
     // Variables String Scrolling
@@ -31,12 +32,14 @@ public class DASDK_Menu_Control : Editor
     // Variables Menu Control
     SerializedProperty OnInteract;
     SerializedProperty onBack;
+    SerializedProperty currentSelection;
 
 
     // Find parent script variables
     void OnEnable()
     {
         // Find Sprite Scrolling variables
+        spriteTargetObject = serializedObject.FindProperty("spriteTargetObject");
         sprites = serializedObject.FindProperty("sprites");
 
         // Find String Scrolling variables
@@ -49,6 +52,7 @@ public class DASDK_Menu_Control : Editor
         // Find Menu Control variables
         OnInteract = serializedObject.FindProperty("OnInteract");
         onBack = serializedObject.FindProperty("onBack");
+        currentSelection = serializedObject.FindProperty("currentSelection");
     }
 
 
@@ -69,6 +73,7 @@ public class DASDK_Menu_Control : Editor
 
             // Draw and updated serialized variables
             serializedObject.Update();
+            EditorGUILayout.PropertyField(spriteTargetObject);
             EditorGUILayout.PropertyField(sprites);
             serializedObject.ApplyModifiedProperties();
         }
@@ -100,6 +105,7 @@ public class DASDK_Menu_Control : Editor
 
             // Draw and updated serialized variables
             serializedObject.Update();
+            EditorGUILayout.PropertyField(currentSelection);
             EditorGUILayout.PropertyField(OnInteract);
             EditorGUILayout.PropertyField(onBack);
             serializedObject.ApplyModifiedProperties();

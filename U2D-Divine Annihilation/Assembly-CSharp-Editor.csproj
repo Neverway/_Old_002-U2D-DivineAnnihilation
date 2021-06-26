@@ -57,6 +57,7 @@
   <ItemGroup>
      <Compile Include="Assets\Editor\ConditionalHidePropertyDrawer.cs" />
      <Compile Include="Assets\Editor\DASDK\DASDK_Menu_Control.cs" />
+     <Compile Include="Assets\Editor\DASDK\DASDK_System_SaveManager.cs" />
      <Compile Include="Assets\Editor\Steamworks.NET\RedistCopy.cs" />
      <Compile Include="Assets\Editor\Steamworks.NET\RedistInstall.cs" />
  <Reference Include="UnityEngine">
