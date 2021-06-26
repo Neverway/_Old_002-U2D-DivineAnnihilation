@@ -86,22 +86,6 @@ public class DA_Menu_Control : MonoBehaviour
             }
         }
 
-        /*
-        if (scrollSprites && !scrollStrings)
-        {
-            for (int i = 0; i < selectionLength; i++)
-            {
-                if (i != currentSelection)
-                {
-                    optionsUIReference[i].text = optionsBaseText[i];
-                    optionsUIReference[i].color = baseColor;
-                }
-            }
-
-            optionsUIReference[currentSelection].text = optionsHoverText[currentSelection];
-            optionsUIReference[currentSelection].color = hoverColor;
-        }
-        */
 
         if (scrollStrings && !scrollSprites)
         {
@@ -126,6 +110,7 @@ public class DA_Menu_Control : MonoBehaviour
 
         else if (!scrollStrings && scrollSprites)
         {
+            selectionLength = sprites.Length;
             if (spriteTargetObject.GetComponent<SpriteRenderer>() != null)
             {
                 spriteTargetObject.GetComponent<SpriteRenderer>().sprite = sprites[currentSelection];
