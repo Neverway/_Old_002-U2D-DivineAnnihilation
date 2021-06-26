@@ -413,6 +413,8 @@
 "Assets/Scripts/OLDG9/Unused or Unknown/OLDItemPickup.cs"
 "Assets/Scripts/OLDG9/Unused or Unknown/PuzzlePushbox.cs"
 "Assets/Scripts/One Time Use/OTU_System_InputManager.cs"
+"Assets/Scripts/One Time Use/OTU_System_MenuManager.cs"
+"Assets/Scripts/One Time Use/OTU_System_SaveManager.cs"
 "Assets/Scripts/One Time Use/OTU_Title_Events.cs"
 "Assets/Scripts/One Time Use/OTU_Title_Opening.cs"
 "Assets/Scripts/One Time Use/OTU_Title_PretitleMessage.cs"

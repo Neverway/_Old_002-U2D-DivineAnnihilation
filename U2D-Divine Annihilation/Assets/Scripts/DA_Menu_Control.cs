@@ -19,8 +19,9 @@ public class DA_Menu_Control : MonoBehaviour
     public int currentSelection;
 
     // Variables Sprite Scrolling
-    public bool scrollSprites;  // Enable scrolling with sprites
-    public Sprite[] sprites;    // List of sprites to use for the menu (in order)
+    public bool scrollSprites;              // Enable scrolling with sprites
+    public GameObject spriteTargetObject;   // The target sprite object to change
+    public Sprite[] sprites;                // List of sprites to use for the menu (in order)
 
     // Variables String Scrolling
     public bool scrollStrings;                                      // Enable scrolling with strings
@@ -43,6 +44,7 @@ public class DA_Menu_Control : MonoBehaviour
     void Start()
     {
         inputManager = FindObjectOfType<OTU_System_InputManager>();
+        ErrorCheck();
     }
 
 
@@ -54,15 +56,15 @@ public class DA_Menu_Control : MonoBehaviour
             // Up
             if (Input.GetKeyDown(inputManager.controls["Up"]))
             {
-                if (currentSelection == 0 && wrapAround) { currentSelection = selectionLength; }    // Wrap around
-                if (currentSelection != 0) { currentSelection -= 1; }                               // Go Up
+                if (currentSelection == 0 && wrapAround) { currentSelection = selectionLength - 1; }    // Wrap around
+                else if (currentSelection != 0) { currentSelection -= 1; }                              // Go Up
             }
 
             // Down
             if (Input.GetKeyDown(inputManager.controls["Down"]))
             {
-                if (currentSelection == selectionLength && wrapAround) { currentSelection = 0; }    // Wrap around
-                if (currentSelection != selectionLength - 1) { currentSelection += 1; }                 // Go Down
+                if (currentSelection == selectionLength - 1 && wrapAround) { currentSelection = 0; }    // Wrap around
+                else if (currentSelection != selectionLength - 1) { currentSelection += 1; }            // Go Down
             }
         }
 
@@ -72,15 +74,15 @@ public class DA_Menu_Control : MonoBehaviour
             // Left
             if (Input.GetKeyDown(inputManager.controls["Left"]))
             {
-                if (currentSelection == 0 && wrapAround) { currentSelection = selectionLength; }    // Wrap around
-                if (currentSelection != 0) { currentSelection -= 1; }                               // Go Left
+                if (currentSelection == 0 && wrapAround) { currentSelection = selectionLength - 1; }    // Wrap around
+                else if (currentSelection != 0) { currentSelection -= 1; }                              // Go Left
             }
 
-            // Down
+            // Right
             if (Input.GetKeyDown(inputManager.controls["Right"]))
             {
-                if (currentSelection == selectionLength && wrapAround) { currentSelection = 0; }    // Wrap around
-                if (currentSelection != selectionLength - 1) { currentSelection += 1; }                 // Go Right
+                if (currentSelection == selectionLength - 1 && wrapAround) { currentSelection = 0; }    // Wrap around
+                else if (currentSelection != selectionLength - 1) { currentSelection += 1; }            // Go Right
             }
         }
 
@@ -108,13 +110,67 @@ public class DA_Menu_Control : MonoBehaviour
             {
                 if (i != currentSelection)
                 {
-                    textTargetObjects[i].text = baseText[i];
+                    if (baseText.Length == textTargetObjects.Length)
+                    {
+                        textTargetObjects[i].text = baseText[i];
+                    }
                     textTargetObjects[i].color = baseColor;
                 }
             }
-
-            textTargetObjects[currentSelection].text = hoveredText[currentSelection];
+            if (hoveredText.Length == textTargetObjects.Length)
+            {
+                textTargetObjects[currentSelection].text = hoveredText[currentSelection];
+            }
             textTargetObjects[currentSelection].color = hoverColor;
+        }
+
+        else if (!scrollStrings && scrollSprites)
+        {
+            if (spriteTargetObject.GetComponent<SpriteRenderer>() != null)
+            {
+                spriteTargetObject.GetComponent<SpriteRenderer>().sprite = sprites[currentSelection];
+            }
+            else if (spriteTargetObject.GetComponent<Image>() != null)
+            {
+                spriteTargetObject.GetComponent<Image>().sprite = sprites[currentSelection];
+            }
+            else
+            {
+                Debug.LogError("DASDK: In [" + this.gameObject.name + "] under DA_Menu_Control, the spriteTargetObject did not have a SpriteRenderer or Image component attached! One of these is required for SpriteScrolling!");
+            }
+        }
+
+        else if (scrollStrings && scrollSprites)
+        {
+            selectionLength = textTargetObjects.Length;
+            for (int i = 0; i < selectionLength; i++)
+            {
+                if (i != currentSelection)
+                {
+                    if (baseText.Length == textTargetObjects.Length)
+                    {
+                        textTargetObjects[i].text = baseText[i];
+                    }
+                    textTargetObjects[i].color = baseColor;
+                }
+            }
+            if (hoveredText.Length == textTargetObjects.Length)
+            {
+                textTargetObjects[currentSelection].text = hoveredText[currentSelection];
+            }
+            textTargetObjects[currentSelection].color = hoverColor;
+            if (spriteTargetObject.GetComponent<SpriteRenderer>() != null)
+            {
+                spriteTargetObject.GetComponent<SpriteRenderer>().sprite = sprites[currentSelection];
+            }
+            else if (spriteTargetObject.GetComponent<Image>() != null)
+            {
+                spriteTargetObject.GetComponent<Image>().sprite = sprites[currentSelection];
+            }
+            else
+            {
+                Debug.LogError("DASDK: In the game object [" + this.gameObject.name + "] under DA_Menu_Control, the spriteTargetObject did not have a SpriteRenderer or Image component attached! One of these is required for SpriteScrolling!");
+            }
         }
 
         if (menuControl)
@@ -128,6 +184,15 @@ public class DA_Menu_Control : MonoBehaviour
             {
                 onBack.Invoke();
             }
+        }
+    }
+
+
+    void ErrorCheck()
+    {
+        if (textTargetObjects.Length != sprites.Length && scrollStrings && scrollSprites)
+        {
+            Debug.LogError("DASDK: In the game object [" + this.gameObject.name + "] under DA_Menu_Control, the length of Sprite Scrolling and Text Scrolling must be the same!");
         }
     }
 }

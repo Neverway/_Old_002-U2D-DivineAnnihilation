@@ -19,6 +19,7 @@ public class OTU_Title_Opening : MonoBehaviour
     public Text continueText;
     public UnityEvent OnCompletion;
     private bool active;
+    private bool firstPass = true;
 
     // Variables System
     private OTU_System_InputManager inputManager;
@@ -31,10 +32,11 @@ public class OTU_Title_Opening : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(inputManager.controls["Interact"]) && active)
+        if (Input.GetKeyDown(inputManager.controls["Interact"]) && active && firstPass)
         {
             openingAnimator.GetComponent<Animator>().enabled = false;
             bookAnimator.enabled = true;
+            firstPass = false;
         }
     }
 

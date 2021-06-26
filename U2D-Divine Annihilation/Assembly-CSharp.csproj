@@ -140,9 +140,12 @@
      <Compile Include="Assets\Scripts\OLDG9\Unused or Unknown\OLDItemPickup.cs" />
      <Compile Include="Assets\Scripts\OLDG9\Unused or Unknown\PuzzlePushbox.cs" />
      <Compile Include="Assets\Scripts\One Time Use\OTU_System_InputManager.cs" />
+     <Compile Include="Assets\Scripts\One Time Use\OTU_System_MenuManager.cs" />
+     <Compile Include="Assets\Scripts\One Time Use\OTU_System_SaveManager.cs" />
      <Compile Include="Assets\Scripts\One Time Use\OTU_Title_Events.cs" />
      <Compile Include="Assets\Scripts\One Time Use\OTU_Title_Opening.cs" />
      <Compile Include="Assets\Scripts\One Time Use\OTU_Title_PretitleMessage.cs" />
+     <Compile Include="Assets\Scripts\One Time Use\OTU_Title_SaveInfo.cs" />
      <None Include="Assets\Packages\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\Packages\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Packages\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
