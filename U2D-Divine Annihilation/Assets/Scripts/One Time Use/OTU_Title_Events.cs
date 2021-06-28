@@ -13,6 +13,7 @@ public class OTU_Title_Events : MonoBehaviour
 {
     public UnityEvent OnLoadFileDoesNotExists;
     public UnityEvent OnLoadFileExists;
+    public UnityEvent OnDeleteFileFinish;
 
     private OTU_System_SaveManager saveManager;
     private string dataPath;
@@ -42,9 +43,19 @@ public class OTU_Title_Events : MonoBehaviour
             saveManager.Save();
         }
 
-        if (System.IO.File.Exists(dataPath + "/" + fileName + ".dasp"))
+        else if (System.IO.File.Exists(dataPath + "/" + fileName + ".dasp"))
         {
             OnLoadFileExists.Invoke();
+        }
+    }
+
+
+    public void DeleteFile()
+    {
+        if (System.IO.File.Exists(dataPath + "/" + saveManager.activeSave2.saveProfileName + ".dasp"))
+        {
+            saveManager.DeleteSaveProfile();
+            OnDeleteFileFinish.Invoke();
         }
     }
 }
