@@ -239,6 +239,11 @@ public class DA_Menu_Control : MonoBehaviour
         }
     }
 
+    public void ResetCurrentSelection()
+    {
+        currentSelection = 0;
+    }
+
     void ErrorCheck()
     {
         if (textTargetObjects.Length != sprites.Length && scrollStrings && scrollSprites)
