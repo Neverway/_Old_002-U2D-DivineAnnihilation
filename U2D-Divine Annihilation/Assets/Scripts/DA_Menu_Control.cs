@@ -25,15 +25,19 @@ public class DA_Menu_Control : MonoBehaviour
 
     // Variables String Scrolling
     public bool scrollStrings;                                      // Enable scrolling with strings
+    public bool singleTextObjectScrolling;                          // Enable scrolling with a single text object (Base Text is not used in this case)
     public Color hoverColor = new Vector4(1, 1, 1, 1);              // Color for when a menu object is selected
     public Color baseColor = new Vector4(0.25f, 0.25f, 0.25f, 1);   // Color for when a menu object is not selected
     public Text[] textTargetObjects;                                // The target text objects to change
     public string[] baseText;                                       // The text that the menu options should be when not selected
     public string[] hoveredText;                                    // The text that the menu options should be when selected
+    public string disabledText;                                   // The text that the menu options should be when selected
 
     // Variables MenuControl
     public bool menuControl;            // Enable menu control
     public bool canGoBack;              // Allow the player to go to the previouse menu (if there was one)
+    public GameObject previousMenu;     // If you want to scroll to other menus then this would be the "previous" menu (Don't asign this unless, you want to wrap around, or this is not the first menu)
+    public GameObject nextMenu;         // If you want to scroll to other menus then this would be the "next" menu
     public UnityEvent[] OnInteract;     // A unity event for use with the activation of the interact button
     public UnityEvent onBack;           // A unity event for use with the activation of the back button if canGoBack is enabled
 
@@ -45,11 +49,19 @@ public class DA_Menu_Control : MonoBehaviour
     {
         inputManager = FindObjectOfType<OTU_System_InputManager>();
         ErrorCheck();
+        print("Ding!");
     }
-
 
     void Update()
     {
+        if (previousMenu != null)
+        {
+            previousMenu.GetComponent<DA_Menu_Control>().textTargetObjects[0].text = previousMenu.GetComponent<DA_Menu_Control>().baseText[0];
+        }
+        if (nextMenu != null)
+        {
+            nextMenu.GetComponent<DA_Menu_Control>().textTargetObjects[0].text = nextMenu.GetComponent<DA_Menu_Control>().baseText[0];
+        }
         // Vertical Scrolling
         if (!horizontalScrolling)
         {
@@ -65,6 +77,22 @@ public class DA_Menu_Control : MonoBehaviour
             {
                 if (currentSelection == selectionLength - 1 && wrapAround) { currentSelection = 0; }    // Wrap around
                 else if (currentSelection != selectionLength - 1) { currentSelection += 1; }            // Go Down
+            }
+
+            // Left
+            if (Input.GetKeyDown(inputManager.controls["Left"]) && previousMenu != null)
+            {
+                previousMenu.GetComponent<DA_Menu_Control>().enabled = true;
+                previousMenu.GetComponent<DA_Menu_Control>().currentSelection = gameObject.GetComponent<DA_Menu_Control>().currentSelection;
+                gameObject.GetComponent<DA_Menu_Control>().enabled = false;
+            }
+
+            // Right
+            if (Input.GetKeyDown(inputManager.controls["Right"]) && nextMenu != null)
+            {
+                nextMenu.GetComponent<DA_Menu_Control>().enabled = true;
+                nextMenu.GetComponent<DA_Menu_Control>().currentSelection = gameObject.GetComponent<DA_Menu_Control>().currentSelection;
+                gameObject.GetComponent<DA_Menu_Control>().enabled = false;
             }
         }
 
@@ -84,30 +112,56 @@ public class DA_Menu_Control : MonoBehaviour
                 if (currentSelection == selectionLength - 1 && wrapAround) { currentSelection = 0; }    // Wrap around
                 else if (currentSelection != selectionLength - 1) { currentSelection += 1; }            // Go Right
             }
+
+            // Up
+            if (Input.GetKeyDown(inputManager.controls["Up"]) && previousMenu != null)
+            {
+                previousMenu.GetComponent<DA_Menu_Control>().enabled = true;
+                previousMenu.GetComponent<DA_Menu_Control>().currentSelection = gameObject.GetComponent<DA_Menu_Control>().currentSelection;
+                gameObject.GetComponent<DA_Menu_Control>().enabled = false;
+            }
+
+            // Down
+            if (Input.GetKeyDown(inputManager.controls["Down"]) && nextMenu != null)
+            {
+                nextMenu.GetComponent<DA_Menu_Control>().enabled = true;
+                nextMenu.GetComponent<DA_Menu_Control>().currentSelection = gameObject.GetComponent<DA_Menu_Control>().currentSelection;
+                gameObject.GetComponent<DA_Menu_Control>().enabled = false;
+            }
         }
 
 
+        // Scrolling Strings & !Scrolling Sprites
         if (scrollStrings && !scrollSprites)
         {
-            selectionLength = textTargetObjects.Length;
-            for (int i = 0; i < selectionLength; i++)
+            if (!singleTextObjectScrolling)
             {
-                if (i != currentSelection)
+                selectionLength = textTargetObjects.Length;
+                for (int i = 0; i < selectionLength; i++)
                 {
-                    if (baseText.Length == textTargetObjects.Length)
+                    if (i != currentSelection)
                     {
-                        textTargetObjects[i].text = baseText[i];
+                        if (baseText.Length == textTargetObjects.Length)
+                        {
+                            textTargetObjects[i].text = baseText[i];
+                        }
+                        textTargetObjects[i].color = baseColor;
                     }
-                    textTargetObjects[i].color = baseColor;
                 }
+                if (hoveredText.Length == textTargetObjects.Length)
+                {
+                    textTargetObjects[currentSelection].text = hoveredText[currentSelection];
+                }
+                textTargetObjects[currentSelection].color = hoverColor;
             }
-            if (hoveredText.Length == textTargetObjects.Length)
+            else if (singleTextObjectScrolling)
             {
-                textTargetObjects[currentSelection].text = hoveredText[currentSelection];
+                selectionLength = hoveredText.Length;
+                textTargetObjects[0].text = hoveredText[currentSelection];
             }
-            textTargetObjects[currentSelection].color = hoverColor;
         }
 
+        // !Scrolling Strings & Scrolling Sprites
         else if (!scrollStrings && scrollSprites)
         {
             selectionLength = sprites.Length;
@@ -125,25 +179,36 @@ public class DA_Menu_Control : MonoBehaviour
             }
         }
 
+        // Scrolling Strings & Scrolling Sprites
         else if (scrollStrings && scrollSprites)
         {
-            selectionLength = textTargetObjects.Length;
-            for (int i = 0; i < selectionLength; i++)
+            if (!singleTextObjectScrolling)
             {
-                if (i != currentSelection)
+                selectionLength = textTargetObjects.Length;
+                for (int i = 0; i < selectionLength; i++)
                 {
-                    if (baseText.Length == textTargetObjects.Length)
+                    if (i != currentSelection)
                     {
-                        textTargetObjects[i].text = baseText[i];
+                        if (baseText.Length == textTargetObjects.Length)
+                        {
+                            textTargetObjects[i].text = baseText[i];
+                        }
+                        textTargetObjects[i].color = baseColor;
                     }
-                    textTargetObjects[i].color = baseColor;
                 }
+                if (hoveredText.Length == textTargetObjects.Length)
+                {
+                    textTargetObjects[currentSelection].text = hoveredText[currentSelection];
+                }
+                textTargetObjects[currentSelection].color = hoverColor;
             }
-            if (hoveredText.Length == textTargetObjects.Length)
+            else if (singleTextObjectScrolling)
             {
-                textTargetObjects[currentSelection].text = hoveredText[currentSelection];
+                selectionLength = hoveredText.Length;
+                textTargetObjects[0].text = hoveredText[currentSelection];
             }
-            textTargetObjects[currentSelection].color = hoverColor;
+
+
             if (spriteTargetObject.GetComponent<SpriteRenderer>() != null)
             {
                 spriteTargetObject.GetComponent<SpriteRenderer>().sprite = sprites[currentSelection];
@@ -158,6 +223,8 @@ public class DA_Menu_Control : MonoBehaviour
             }
         }
 
+
+        // Menu control
         if (menuControl)
         {
             if (Input.GetKeyDown(inputManager.controls["Interact"]))
@@ -171,7 +238,6 @@ public class DA_Menu_Control : MonoBehaviour
             }
         }
     }
-
 
     void ErrorCheck()
     {

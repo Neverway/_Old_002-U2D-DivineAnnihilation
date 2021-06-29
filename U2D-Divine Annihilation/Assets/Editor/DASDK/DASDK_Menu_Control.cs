@@ -32,6 +32,8 @@ public class DASDK_Menu_Control : Editor
     // Variables Menu Control
     SerializedProperty OnInteract;
     SerializedProperty onBack;
+    SerializedProperty previousMenu;
+    SerializedProperty nextMenu;
     SerializedProperty currentSelection;
 
 
@@ -52,6 +54,8 @@ public class DASDK_Menu_Control : Editor
         // Find Menu Control variables
         OnInteract = serializedObject.FindProperty("OnInteract");
         onBack = serializedObject.FindProperty("onBack");
+        previousMenu = serializedObject.FindProperty("previousMenu");
+        nextMenu = serializedObject.FindProperty("nextMenu");
         currentSelection = serializedObject.FindProperty("currentSelection");
     }
 
@@ -86,6 +90,7 @@ public class DASDK_Menu_Control : Editor
             menuControl.wrapAround = EditorGUILayout.Toggle("Wrap Around", menuControl.wrapAround);                             // Wrap Around bool
             EditorGUILayout.Space();                                                                                            // Add a divider
             menuControl.scrollStrings = EditorGUILayout.Toggle("Enable String Scrolling", menuControl.scrollStrings);           // Enable Scroll Strings
+            menuControl.singleTextObjectScrolling = EditorGUILayout.Toggle("Enable Single Text Object Scrolling", menuControl.singleTextObjectScrolling);           // Enable Scroll Strings
 
             // Draw and updated serialized variables
             serializedObject.Update();
@@ -105,6 +110,8 @@ public class DASDK_Menu_Control : Editor
 
             // Draw and updated serialized variables
             serializedObject.Update();
+            EditorGUILayout.PropertyField(previousMenu);
+            EditorGUILayout.PropertyField(nextMenu);
             EditorGUILayout.PropertyField(currentSelection);
             EditorGUILayout.PropertyField(OnInteract);
             EditorGUILayout.PropertyField(onBack);
