@@ -12,6 +12,7 @@ public class OTU_System_InputManager : MonoBehaviour
 {
     // Variables Script
     public Dictionary<string, KeyCode> controls = new Dictionary<string, KeyCode>();
+    public Dictionary<string, KeyCode> controlsBuffered = new Dictionary<string, KeyCode>();
 
 
     // Load current keys that are being stored in memory, if there are not any, set some defaults
@@ -31,5 +32,21 @@ public class OTU_System_InputManager : MonoBehaviour
         controls.Add("Special 2", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Special 2", "Alpha2")));
         controls.Add("Special 3", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Special 3", "Alpha3")));
         controls.Add("Special 4", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Special 4", "Alpha4")));
+
+
+        controlsBuffered.Add("UpBuffered", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Up", "UpArrow")));
+        controlsBuffered.Add("DownBuffered", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Down", "DownArrow")));
+        controlsBuffered.Add("LeftBuffered", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Left", "LeftArrow")));
+        controlsBuffered.Add("RightBuffered", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Right", "RightArrow")));
+
+        controlsBuffered.Add("InteractBuffered", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Interact", "Z")));
+        controlsBuffered.Add("ActionBuffered", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Action", "X")));
+        controlsBuffered.Add("SelectBuffered", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Select", "C")));
+        controlsBuffered.Add("MenuBuffered", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Menu", "Escape")));
+
+        controlsBuffered.Add("Special 1Buffered", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Special 1", "Alpha1")));
+        controlsBuffered.Add("Special 2Buffered", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Special 2", "Alpha2")));
+        controlsBuffered.Add("Special 3Buffered", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Special 3", "Alpha3")));
+        controlsBuffered.Add("Special 4Buffered", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Special 4", "Alpha4")));
     }
 }

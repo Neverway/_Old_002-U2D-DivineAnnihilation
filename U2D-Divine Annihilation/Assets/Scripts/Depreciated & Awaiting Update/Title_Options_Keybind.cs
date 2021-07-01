@@ -26,7 +26,7 @@ public class Title_Options_Keybind : MonoBehaviour
 
         // Display text
         up.text = inputManager.controls["Up"].ToString();
-        down.text = inputManager.controls["Down"].ToString();
+        down.text = inputManager.controls["Down"].ToString(); 
         left.text = inputManager.controls["Left"].ToString();
         right.text = inputManager.controls["Right"].ToString();
         interact.text = inputManager.controls["Interact"].ToString();

@@ -5,25 +5,23 @@
 //
 //=============================================================================
 
-using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Title_Name_SysMessage : MonoBehaviour
+public class OTU_Title_NameMessages : MonoBehaviour
 {
     // Public Variables
     public Text message;
     public Text actions;
-    public bool acceptingInput;
 
     // Private Variables
-    private System_InputManager inputManager;
-    private Title_Name nameMenu;
+    private OTU_System_InputManager inputManager;
+    private OTU_Title_NameSelect nameMenu;
 
     void Start()
     {
-        inputManager = FindObjectOfType<System_InputManager>();
-        nameMenu = FindObjectOfType<Title_Name>();
+        inputManager = FindObjectOfType<OTU_System_InputManager>();
+        nameMenu = FindObjectOfType<OTU_Title_NameSelect>();
     }
 
 
@@ -39,7 +37,7 @@ public class Title_Name_SysMessage : MonoBehaviour
 
             if (Input.GetKeyDown(inputManager.controls["Action"]))
             {
-                nameMenu.active = true;
+                nameMenu.enabled = true;
                 gameObject.SetActive(false);
             }
         }
@@ -48,7 +46,7 @@ public class Title_Name_SysMessage : MonoBehaviour
         {
             if (Input.GetKeyDown(inputManager.controls["Interact"]))
             {
-                nameMenu.active = true;
+                nameMenu.enabled = true;
                 gameObject.SetActive(false);
             }
         }
