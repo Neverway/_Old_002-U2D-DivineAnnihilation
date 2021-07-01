@@ -49,7 +49,6 @@ public class DA_Menu_Control : MonoBehaviour
     {
         inputManager = FindObjectOfType<OTU_System_InputManager>();
         ErrorCheck();
-        print("Ding!");
     }
 
     void Update()

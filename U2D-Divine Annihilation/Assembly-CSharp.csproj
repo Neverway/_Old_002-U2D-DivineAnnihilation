@@ -55,7 +55,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\ConditionalHideAttribute.cs" />
+     <Compile Include="Assets\Old G9 Content\ConditionalHideAttribute.cs" />
      <Compile Include="Assets\Scripts\DA_Menu_Control.cs" />
      <Compile Include="Assets\Scripts\DA_System_PersistentOnOverworld.cs" />
      <Compile Include="Assets\Scripts\Depreciated &amp; Awaiting Update\SaveManager.cs" />
@@ -64,7 +64,6 @@
      <Compile Include="Assets\Scripts\Depreciated &amp; Awaiting Update\Title_Erase.cs" />
      <Compile Include="Assets\Scripts\Depreciated &amp; Awaiting Update\Title_Load.cs" />
      <Compile Include="Assets\Scripts\Depreciated &amp; Awaiting Update\Title_Name.cs" />
-     <Compile Include="Assets\Scripts\Depreciated &amp; Awaiting Update\Title_Name_SysMessage.cs" />
      <Compile Include="Assets\Scripts\Depreciated &amp; Awaiting Update\Title_Options.cs" />
      <Compile Include="Assets\Scripts\Depreciated &amp; Awaiting Update\Title_Options_Keybind.cs" />
      <Compile Include="Assets\Scripts\Depreciated &amp; Awaiting Update\Title_Quit.cs" />
@@ -139,10 +138,13 @@
      <Compile Include="Assets\Scripts\OLDG9\Unused or Unknown\OLDHudTextboxManager.cs" />
      <Compile Include="Assets\Scripts\OLDG9\Unused or Unknown\OLDItemPickup.cs" />
      <Compile Include="Assets\Scripts\OLDG9\Unused or Unknown\PuzzlePushbox.cs" />
+     <Compile Include="Assets\Scripts\OTU_Title_NameMessages.cs" />
      <Compile Include="Assets\Scripts\One Time Use\OTU_System_InputManager.cs" />
      <Compile Include="Assets\Scripts\One Time Use\OTU_System_MenuManager.cs" />
      <Compile Include="Assets\Scripts\One Time Use\OTU_System_SaveManager.cs" />
      <Compile Include="Assets\Scripts\One Time Use\OTU_Title_Events.cs" />
+     <Compile Include="Assets\Scripts\One Time Use\OTU_Title_KeyBind.cs" />
+     <Compile Include="Assets\Scripts\One Time Use\OTU_Title_NameSelect.cs" />
      <Compile Include="Assets\Scripts\One Time Use\OTU_Title_Opening.cs" />
      <Compile Include="Assets\Scripts\One Time Use\OTU_Title_PretitleMessage.cs" />
      <Compile Include="Assets\Scripts\One Time Use\OTU_Title_SaveInfo.cs" />

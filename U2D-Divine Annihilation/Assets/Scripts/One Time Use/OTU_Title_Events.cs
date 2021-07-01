@@ -11,6 +11,8 @@ using UnityEngine.Events;
 
 public class OTU_Title_Events : MonoBehaviour
 {
+    public GameObject bindKeyMenu;
+
     public UnityEvent OnLoadFileDoesNotExists;
     public UnityEvent OnLoadFileExists;
     public UnityEvent OnDeleteFileFinish;
@@ -57,5 +59,10 @@ public class OTU_Title_Events : MonoBehaviour
             saveManager.DeleteSaveProfile();
             OnDeleteFileFinish.Invoke();
         }
+    }
+
+    public void BindKey()
+    {
+        bindKeyMenu.SetActive(true);
     }
 }
