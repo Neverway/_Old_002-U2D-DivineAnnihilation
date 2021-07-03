@@ -16,6 +16,38 @@ public class OTU_Title_KeyBind : MonoBehaviour
     void Start()
     {
         inputManager = FindObjectOfType<OTU_System_InputManager>();
+        UpdateControlScreen();
+    }
+
+    IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(0.05f);
+        onFinishKeybind.Invoke();
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.F5))
+        {
+            ResetControls();
+        }
+    }
+
+    void OnGUI()
+    {
+        if (currentKey != null && Event.current.isKey && Event.current.type == EventType.KeyDown)
+        {
+            inputManager.controlsBuffered[currentKey.name + "Buffered"] = Event.current.keyCode;
+            //SaveKeys();
+            bindingScreen.SetActive(false);
+            StartCoroutine("Delay");
+            currentKey.transform.GetChild(1).GetComponent<Text>().text = Event.current.keyCode.ToString();
+            currentKey = null;
+        }
+    }
+
+    public void UpdateControlScreen()
+    {
         controlTextObjects[0].text = inputManager.controls["Up"].ToString();
         controlTextObjects[1].text = inputManager.controls["Down"].ToString();
         controlTextObjects[2].text = inputManager.controls["Left"].ToString();
@@ -30,30 +62,11 @@ public class OTU_Title_KeyBind : MonoBehaviour
         controlTextObjects[11].text = inputManager.controls["Special 4"].ToString();
     }
 
-    IEnumerator Delay()
-    {
-        yield return new WaitForSeconds(0.05f);
-        onFinishKeybind.Invoke();
-    }
-
     public void ChangeKey(GameObject passKey)
     {
         bindingScreen.SetActive(true);
         currentKey = passKey;
         passKey.transform.GetChild(1).GetComponent<Text>().text = "...";
-    }
-
-    void OnGUI()
-    {
-        if (currentKey != null && Event.current.isKey && Event.current.type == EventType.KeyDown)
-        {
-            inputManager.controlsBuffered[currentKey.name + "Buffered"] = Event.current.keyCode;
-            //SaveKeys();
-            bindingScreen.SetActive(false);
-            StartCoroutine("Delay");
-            currentKey.transform.GetChild(1).GetComponent<Text>().text = Event.current.keyCode.ToString();
-            currentKey = null;
-        }
     }
 
     public void SaveKeys()
@@ -75,6 +88,24 @@ public class OTU_Title_KeyBind : MonoBehaviour
             PlayerPrefs.SetString(key.Key, key.Value.ToString());
         }
         PlayerPrefs.Save();
+    }
+
+    public void ResetControls()
+    {
+        inputManager.controlsBuffered["UpBuffered"] = KeyCode.UpArrow;
+        inputManager.controlsBuffered["DownBuffered"] = KeyCode.DownArrow;
+        inputManager.controlsBuffered["LeftBuffered"] = KeyCode.LeftArrow;
+        inputManager.controlsBuffered["RightBuffered"] = KeyCode.RightArrow;
+        inputManager.controlsBuffered["InteractBuffered"] = KeyCode.Z;
+        inputManager.controlsBuffered["ActionBuffered"] = KeyCode.X;
+        inputManager.controlsBuffered["SelectBuffered"] = KeyCode.C;
+        inputManager.controlsBuffered["MenuBuffered"] = KeyCode.Escape;
+        inputManager.controlsBuffered["Special 1Buffered"] = KeyCode.Alpha1;
+        inputManager.controlsBuffered["Special 2Buffered"] = KeyCode.Alpha2;
+        inputManager.controlsBuffered["Special 3Buffered"] = KeyCode.Alpha3;
+        inputManager.controlsBuffered["Special 4Buffered"] = KeyCode.Alpha4;
+        SaveKeys();
+        UpdateControlScreen();
     }
 
 }

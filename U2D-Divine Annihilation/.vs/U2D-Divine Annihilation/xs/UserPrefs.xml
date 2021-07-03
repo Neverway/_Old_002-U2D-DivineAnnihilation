@@ -1,18 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/One Time Use/OTU_System_InputManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/DA_Menu_Control.cs" Line="242" Column="12" />
-      <File FileName="Assets/Editor/DASDK/DASDK_Menu_Control.cs" Line="88" Column="37" />
-      <File FileName="Assets/Scripts/One Time Use/OTU_System_SaveManager.cs" Line="132" Column="51" />
-      <File FileName="Assets/Scripts/One Time Use/OTU_Title_SaveInfo.cs" Line="30" Column="6" />
-      <File FileName="Assets/Scripts/One Time Use/OTU_Title_Events.cs" Line="64" Column="26" />
-      <File FileName="Assets/Scripts/Depreciated &amp; Awaiting Update/Title_Save_Load.cs" Line="45" Column="14" />
-      <File FileName="Assets/Scripts/Depreciated &amp; Awaiting Update/SaveManager.cs" Line="162" Column="1" />
-      <File FileName="Assets/Scripts/One Time Use/OTU_Title_NameSelect.cs" Line="5" Column="34" />
-      <File FileName="Assets/Scripts/OTU_Title_NameMessages.cs" Line="49" Column="41" />
-      <File FileName="Assets/Scripts/Depreciated &amp; Awaiting Update/Title_Options_Keybind.cs" Line="44" Column="5" />
-      <File FileName="Assets/Scripts/One Time Use/OTU_Title_KeyBind.cs" Line="60" Column="6" />
-      <File FileName="Assets/Scripts/One Time Use/OTU_System_InputManager.cs" Line="15" Column="48" />
+      <File FileName="Assets/Scripts/One Time Use/OTU_Title_KeyBind.cs" Line="82" Column="59" />
+      <File FileName="Assets/Scripts/Depreciated &amp; Awaiting Update/Title_Options_Keybind.cs" Line="6" Column="14" />
+      <File FileName="Assets/Scripts/One Time Use/OTU_System_InputManager.cs" Line="11" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
