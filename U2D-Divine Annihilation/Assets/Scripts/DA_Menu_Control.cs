@@ -15,8 +15,8 @@ public class DA_Menu_Control : MonoBehaviour
     // Variables Scrolling
     public bool horizontalScrolling;    // Switch from using up and down to move through a menu to left and right
     public bool wrapAround;             // When trying to advance at the begining or end of a menu wrap around to the other side
-    public int selectionLength; 
-    public int currentSelection;
+    public int selectionLength;         // (Read only) A value to keep track of how long the menu is (This is assigned to by either the spritescrolling or stringscrolling loop depending on which one is active)
+    public int currentSelection;        // (Read only) A value to keep track of where you are in a menu (scrolling wise)
 
     // Variables Sprite Scrolling
     public bool scrollSprites;              // Enable scrolling with sprites
@@ -31,7 +31,7 @@ public class DA_Menu_Control : MonoBehaviour
     public Text[] textTargetObjects;                                // The target text objects to change
     public string[] baseText;                                       // The text that the menu options should be when not selected
     public string[] hoveredText;                                    // The text that the menu options should be when selected
-    public string disabledText;                                   // The text that the menu options should be when selected
+    //public string disabledText;                                   // I don't even think this gets used anywhere :/
 
     // Variables MenuControl
     public bool menuControl;            // Enable menu control
@@ -61,6 +61,7 @@ public class DA_Menu_Control : MonoBehaviour
         {
             nextMenu.GetComponent<DA_Menu_Control>().textTargetObjects[0].text = nextMenu.GetComponent<DA_Menu_Control>().baseText[0];
         }
+
         // Vertical Scrolling
         if (!horizontalScrolling)
         {
