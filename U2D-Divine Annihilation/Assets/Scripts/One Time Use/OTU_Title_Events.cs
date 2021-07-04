@@ -7,6 +7,7 @@
 
 using UnityEngine;
 using UnityEditor;
+using UnityEngine.UI;
 using UnityEngine.Events;
 
 public class OTU_Title_Events : MonoBehaviour

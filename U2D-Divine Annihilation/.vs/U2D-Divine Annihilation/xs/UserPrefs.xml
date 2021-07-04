@@ -1,11 +1,7 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/One Time Use/OTU_Title_NameSelect.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/One Time Use/OTU_Title_Events.cs">
     <Files>
-      <File FileName="Assets/Scripts/One Time Use/OTU_Title_KeyBind.cs" Line="107" Column="20" />
-      <File FileName="Assets/Scripts/Depreciated &amp; Awaiting Update/Title_Options_Keybind.cs" Line="6" Column="14" />
-      <File FileName="Assets/Scripts/One Time Use/OTU_System_InputManager.cs" Line="20" Column="6" />
-      <File FileName="Assets/Scripts/One Time Use/OTU_Title_NameSelect.cs" Line="29" Column="24" />
-      <File FileName="Assets/Scripts/Depreciated &amp; Awaiting Update/Title_Name.cs" Line="19" Column="36" />
+      <File FileName="Assets/Scripts/One Time Use/OTU_Title_Events.cs" Line="12" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
