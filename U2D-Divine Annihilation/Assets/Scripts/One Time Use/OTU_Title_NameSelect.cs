@@ -32,7 +32,10 @@ public class OTU_Title_NameSelect : MonoBehaviour
 
     public void EnterLetter(string letter)
     {
-        nameTextObject.text = nameTextObject.text + letter;
+        if (nameTextObject.text.Length < 12)
+        {
+            nameTextObject.text = nameTextObject.text + letter;
+        }
     }
 
 
