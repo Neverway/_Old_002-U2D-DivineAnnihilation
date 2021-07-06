@@ -1,5 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DA_System_PersistentOnOverworld.cs">
+    <Files>
+      <File FileName="Assets/Scripts/DA_Menu_Control.cs" Line="13" Column="14" />
+      <File FileName="Assets/Scripts/DA_System_PersistentOnOverworld.cs" Line="3" Column="15" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.AstarPathfindingProjectEditor PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

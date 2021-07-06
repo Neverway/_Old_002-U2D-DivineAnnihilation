@@ -12,18 +12,18 @@ using UnityEngine.Events;
 
 public class DA_Menu_Control : MonoBehaviour
 {
-    // Variables Scrolling
+    // Scrolling variables
     public bool horizontalScrolling;    // Switch from using up and down to move through a menu to left and right
     public bool wrapAround;             // When trying to advance at the begining or end of a menu wrap around to the other side
     public int selectionLength;         // (Read only) A value to keep track of how long the menu is (This is assigned to by either the spritescrolling or stringscrolling loop depending on which one is active)
     public int currentSelection;        // (Read only) A value to keep track of where you are in a menu (scrolling wise)
 
-    // Variables Sprite Scrolling
+    // Sprite scrolling variables
     public bool scrollSprites;              // Enable scrolling with sprites
     public GameObject spriteTargetObject;   // The target sprite object to change
     public Sprite[] sprites;                // List of sprites to use for the menu (in order)
 
-    // Variables String Scrolling
+    // String scrolling variables
     public bool scrollStrings;                                      // Enable scrolling with strings
     public bool singleTextObjectScrolling;                          // Enable scrolling with a single text object (Base Text is not used in this case)
     public Color hoverColor = new Vector4(1, 1, 1, 1);              // Color for when a menu object is selected
@@ -31,9 +31,8 @@ public class DA_Menu_Control : MonoBehaviour
     public Text[] textTargetObjects;                                // The target text objects to change
     public string[] baseText;                                       // The text that the menu options should be when not selected
     public string[] hoveredText;                                    // The text that the menu options should be when selected
-    //public string disabledText;                                   // I don't even think this gets used anywhere :/
 
-    // Variables MenuControl
+    // Menu control variables
     public bool menuControl;            // Enable menu control
     public bool canGoBack;              // Allow the player to go to the previouse menu (if there was one)
     public GameObject previousMenu;     // If you want to scroll to other menus then this would be the "previous" menu (Don't asign this unless, you want to wrap around, or this is not the first menu)
@@ -41,7 +40,7 @@ public class DA_Menu_Control : MonoBehaviour
     public UnityEvent[] OnInteract;     // A unity event for use with the activation of the interact button
     public UnityEvent onBack;           // A unity event for use with the activation of the back button if canGoBack is enabled
 
-    // Variables System
+    // Reference variables
     private OTU_System_InputManager inputManager;
 
 

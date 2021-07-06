@@ -34,6 +34,7 @@ public class OTU_System_InputManager : MonoBehaviour
         controls.Add("Special 4", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Special 4", "Alpha4")));
 
 
+        // Temporary storage of controls for the controler bindings menu
         controlsBuffered.Add("UpBuffered", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Up", "UpArrow")));
         controlsBuffered.Add("DownBuffered", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Down", "DownArrow")));
         controlsBuffered.Add("LeftBuffered", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Left", "LeftArrow")));
