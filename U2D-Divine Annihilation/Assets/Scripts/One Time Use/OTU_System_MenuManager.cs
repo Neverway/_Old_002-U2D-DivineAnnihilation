@@ -11,10 +11,10 @@ using UnityEngine;
 
 public class OTU_System_MenuManager : MonoBehaviour
 {
-    public bool onTitleScreen;
-    public bool menuActive;
-    public bool canMove;
+    // Public varaibles
+    public bool menuActive;     // A variable to keep track of whether or not the player is in a menu (If they are then stop them from moving and stuff)
 
+    // Private varaibles
     private Hud_Textbox_Manager DialogueManager;
     private Hud_Inventory InventoryManager;
     private Hud_SI_Controller SIController;
@@ -24,30 +24,14 @@ public class OTU_System_MenuManager : MonoBehaviour
 
     void Awake()
     {
-        DialogueManager = FindObjectOfType<Hud_Textbox_Manager>();
-        InventoryManager = FindObjectOfType<Hud_Inventory>();
-        SIController = FindObjectOfType<Hud_SI_Controller>();
-        ChoiceboxManager = FindObjectOfType<Hud_Choicebox_Manager>();
-        characterMovement = FindObjectOfType<Entity_Character_Movement>();
-    }
-
-
-    void Start()
-    {
         menuActive = false;
-        DialogueManager = FindObjectOfType<Hud_Textbox_Manager>();
-        InventoryManager = FindObjectOfType<Hud_Inventory>();
-        SIController = FindObjectOfType<Hud_SI_Controller>();
-        ChoiceboxManager = FindObjectOfType<Hud_Choicebox_Manager>();
-        characterMovement = FindObjectOfType<Entity_Character_Movement>();
+        FindReferenceObjects();
     }
-
 
     void Update()
     {
         CheckForActiveMenus();
     }
-
 
     public void CheckForActiveMenus()
     {
@@ -68,5 +52,14 @@ public class OTU_System_MenuManager : MonoBehaviour
                 characterMovement.canMove = true;
             }
         }
+    }
+
+    void FindReferenceObjects()
+    {
+        DialogueManager = FindObjectOfType<Hud_Textbox_Manager>();
+        InventoryManager = FindObjectOfType<Hud_Inventory>();
+        SIController = FindObjectOfType<Hud_SI_Controller>();
+        ChoiceboxManager = FindObjectOfType<Hud_Choicebox_Manager>();
+        characterMovement = FindObjectOfType<Entity_Character_Movement>();
     }
 }

@@ -138,6 +138,7 @@
      <Compile Include="Assets\Scripts\Depreciated &amp; Awaiting Update\Title_Save_Info.cs" />
      <Compile Include="Assets\Scripts\Depreciated &amp; Awaiting Update\Title_Save_Load.cs" />
      <Compile Include="Assets\Scripts\Depreciated &amp; Awaiting Update\Title_Save_Options.cs" />
+     <Compile Include="Assets\Scripts\One Time Use\NewBehaviourScript.cs" />
      <Compile Include="Assets\Scripts\One Time Use\OTU_System_InputManager.cs" />
      <Compile Include="Assets\Scripts\One Time Use\OTU_System_MenuManager.cs" />
      <Compile Include="Assets\Scripts\One Time Use\OTU_System_SaveManager.cs" />

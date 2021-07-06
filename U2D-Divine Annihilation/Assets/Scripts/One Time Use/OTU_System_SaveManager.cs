@@ -2,9 +2,13 @@
 //
 // Purpose: Manage saving and loading a profiles data
 // Applied to: The Config object in a scene
-// Notes: Needs comments and also I removed the playerpref saving thing for 
-// battles since it sucked. Also also none of the G9 scripts know how to talk
-// to this version of the save manager, so you are going to have to fix that.
+// Notes: 
+//  PastUCC: Needs comments and also I removed the playerpref saving thing for 
+//  battles since it sucked. Also also none of the G9 scripts know how to talk
+//  to this version of the save manager, so you are going to have to fix that.
+//
+//  FutureUCC: Wow this is a mess. Are all of these functions even neccisary? 
+//  If stuff breaks then don't blame me.
 //
 //=============================================================================
 
@@ -20,10 +24,10 @@ public class OTU_System_SaveManager : MonoBehaviour
     public SaveData2 throwSave2;                      // 
 
     // Variables Reference 
-    public Sprite noPortrait;
-    public bool hasLoaded;
-    public bool loadFileOnCreation = false;
-    private GameObject playerCharacter;
+    public Sprite noPortrait;                   //
+    public bool hasLoaded;                      //
+    public bool loadFileOnCreation = false;     //
+    private GameObject playerCharacter;         //
 
     // Variables Editor
     public int currentTab;
