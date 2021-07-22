@@ -55,11 +55,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Editor\ConditionalHidePropertyDrawer.cs" />
-     <Compile Include="Assets\Editor\DASDK\DASDK_Menu_Control.cs" />
-     <Compile Include="Assets\Editor\DASDK\DASDK_System_SaveManager.cs" />
-     <Compile Include="Assets\Editor\Steamworks.NET\RedistCopy.cs" />
-     <Compile Include="Assets\Editor\Steamworks.NET\RedistInstall.cs" />
+     <Compile Include="Assets\Resources\Scripts\Editor\ConditionalHidePropertyDrawer.cs" />
+     <Compile Include="Assets\Resources\Scripts\Editor\DASDK\DASDK_Entity_Control.cs" />
+     <Compile Include="Assets\Resources\Scripts\Editor\DASDK\DASDK_Menu_Control.cs" />
+     <Compile Include="Assets\Resources\Scripts\Editor\DASDK\DASDK_System_SaveManager.cs" />
+     <Compile Include="Assets\Resources\Scripts\Editor\DASDK\DASDK_Tool_AssetBrowser.cs" />
+     <Compile Include="Assets\Resources\Scripts\Editor\DASDK\DASDK_Tool_EntityEditor.cs" />
+     <Compile Include="Assets\Resources\Scripts\Editor\DASDK\DASDK_Tool_Help.cs" />
+     <Compile Include="Assets\Resources\Scripts\Editor\Steamworks.NET\RedistCopy.cs" />
+     <Compile Include="Assets\Resources\Scripts\Editor\Steamworks.NET\RedistInstall.cs" />
  <Reference Include="UnityEngine">
  <HintPath>/home/lizband_ucc/Documents/Apps/Unity/Hub/Editor/2019.4.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
