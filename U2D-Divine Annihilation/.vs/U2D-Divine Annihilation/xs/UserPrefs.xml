@@ -1,9 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/Scripts/Editor/DASDK/DASDK_Entity_Control.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/Scripts/DA_Entity_Control.cs">
     <Files>
       <File FileName="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Entity_Character_Movement.cs" Line="24" Column="44" />
-      <File FileName="Assets/Resources/Scripts/DA_Entity_Control.cs" Line="45" Column="31" />
-      <File FileName="Assets/Resources/Scripts/Editor/DASDK/DASDK_Entity_Control.cs" Line="16" Column="46" />
+      <File FileName="Assets/Resources/Scripts/DA_Entity_Control.cs" Line="119" Column="76" />
+      <File FileName="Assets/Resources/Scripts/Editor/DASDK/DASDK_Entity_Control.cs" Line="72" Column="6" />
       <File FileName="Assets/Resources/Scripts/Editor/DASDK/DASDK_Menu_Control.cs" Line="72" Column="143" />
       <File FileName="Assets/Resources/Scripts/DA_Menu_Control.cs" Line="13" Column="45" />
       <File FileName="Assets/Resources/Scripts/Editor/DASDK/DASDK_Tool_EntityEditor.cs" Line="8" Column="1" />

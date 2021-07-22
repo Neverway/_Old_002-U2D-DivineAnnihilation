@@ -391,7 +391,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6610495901420744674}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
@@ -558,7 +558,7 @@ Animator:
   m_GameObject: {fileID: 6610495901420744674}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3e75189684fc1a4b3a190287119ceaba, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -581,24 +581,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   entityName: 
   maxHealth: 100
-  IdleFront: {fileID: 0}
-  IdleBack: {fileID: 0}
-  IdleLeft: {fileID: 0}
-  IdleRight: {fileID: 0}
-  IdleFrontSprite: {fileID: 0}
-  IdleBackSprite: {fileID: 0}
-  IdleLeftSprite: {fileID: 0}
-  IdleRightSprite: {fileID: 0}
-  walkFront: {fileID: 0}
-  walkBack: {fileID: 0}
-  walkLeft: {fileID: 0}
-  walkRight: {fileID: 0}
+  entityAnimator: {fileID: 0}
+  useSpritesOverAnimator: 0
+  choiceValue: 0
+  idleUp: {fileID: 0}
+  idleDown: {fileID: 0}
+  idleLeft: {fileID: 0}
+  idleRight: {fileID: 0}
   walkSpeed: 5
-  sprintFront: {fileID: 0}
-  sprintBack: {fileID: 0}
-  sprintLeft: {fileID: 0}
-  sprintRight: {fileID: 0}
-  sprintSpeed: 5
+  sprintSpeed: 7
   shelfSprite: {fileID: 0}
   inventoryType: {fileID: 0}
   isFollower: 0
@@ -607,6 +598,7 @@ MonoBehaviour:
   goldDrop: 5
   expDrop: 5
   entityType: 
+  currentSpeed: 0
 --- !u!1 &6610495901674058811
 GameObject:
   m_ObjectHideFlags: 0
