@@ -7,9 +7,8 @@
 //
 //=============================================================================
 
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DA_Entity_Control : MonoBehaviour
 {
@@ -36,6 +35,7 @@ public class DA_Entity_Control : MonoBehaviour
     // Player variables
     public Sprite shelfSprite;
     public GameObject inventoryType;
+    public GameObject HUD;
     private Vector2 movement;
 
     // Character variables
@@ -54,6 +54,7 @@ public class DA_Entity_Control : MonoBehaviour
     private Animator animator;
     private Rigidbody2D Rigidbody;
     private OTU_System_InputManager inputManager;
+    private OTU_System_SaveManager saveManager;
 
 
     void Start()
@@ -85,6 +86,17 @@ public class DA_Entity_Control : MonoBehaviour
         if (choiceValue == 2)
         {
             entityType = "player";
+            if (HUD != null )
+            {
+                if (HUD.transform.GetChild(2).GetComponent<Text>() != null)
+                {
+                    HUD.transform.GetChild(2).GetComponent<Text>().text = entityName;
+                }
+                if (HUD.transform.GetChild(3).GetComponent<Image>() != null)
+                {
+                    HUD.transform.GetChild(3).GetComponent<Image>().sprite = shelfSprite;
+                }
+            }
         }
     }
 
@@ -153,6 +165,19 @@ public class DA_Entity_Control : MonoBehaviour
         // Entity animator
         animator.SetFloat("MoveX", movement.x);
         animator.SetFloat("MoveY", movement.y);
+
+        // Sprinting
+        if (Input.GetKey(inputManager.controls["Action"]))
+        {
+            currentSpeed = sprintSpeed;
+            animator.speed = 1.5f;
+        }
+        else
+        {
+            currentSpeed = walkSpeed;
+            animator.speed = 1;
+        }
+
     }
 
     void CharacterEntity()

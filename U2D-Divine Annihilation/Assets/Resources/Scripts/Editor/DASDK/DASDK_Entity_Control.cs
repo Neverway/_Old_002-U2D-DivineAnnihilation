@@ -28,6 +28,7 @@ public class DASDK_Entity_Control : Editor
 
     SerializedProperty shelfSprite;
     SerializedProperty inventoryType;
+    SerializedProperty HUD;
 
 
     // Find parent script variables
@@ -44,6 +45,7 @@ public class DASDK_Entity_Control : Editor
 
         shelfSprite = serializedObject.FindProperty("shelfSprite");
         inventoryType = serializedObject.FindProperty("inventoryType");
+        HUD = serializedObject.FindProperty("HUD");
     }
 
 
@@ -109,6 +111,7 @@ public class DASDK_Entity_Control : Editor
 
             EditorGUILayout.PropertyField(shelfSprite);
             EditorGUILayout.PropertyField(inventoryType);
+            EditorGUILayout.PropertyField(HUD);
 
             entityControl.choiceValue = 2;
         }

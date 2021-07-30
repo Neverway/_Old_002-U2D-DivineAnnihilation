@@ -34,6 +34,7 @@ public class DASDK_System_SaveManager : Editor
     SerializedProperty Chapter;
 
     // Variables Script Values
+    SerializedProperty startingScene;
     SerializedProperty noPortrait;
 
 
@@ -54,6 +55,7 @@ public class DASDK_System_SaveManager : Editor
         Chapter = serializedObject.FindProperty("activeSave2.Chapter");
 
         // Find Script Value variables
+        startingScene = serializedObject.FindProperty("startingScene");
         noPortrait = serializedObject.FindProperty("noPortrait");
     }
 
@@ -125,6 +127,7 @@ public class DASDK_System_SaveManager : Editor
 
             // Draw and updated serialized variables
             serializedObject.Update();
+            EditorGUILayout.PropertyField(startingScene);
             EditorGUILayout.PropertyField(noPortrait);
             saveManager.hasLoaded = EditorGUILayout.Toggle("hasLoaded", saveManager.hasLoaded);
             saveManager.loadFileOnCreation = EditorGUILayout.Toggle("loadFileOnCreation", saveManager.loadFileOnCreation);
