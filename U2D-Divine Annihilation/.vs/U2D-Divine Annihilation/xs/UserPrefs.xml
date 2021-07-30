@@ -1,12 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/Scripts/DA_Entity_Control.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/System/SystemFadeTransition.cs">
     <Files>
-      <File FileName="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Entity_Character_Movement.cs" Line="24" Column="44" />
-      <File FileName="Assets/Resources/Scripts/DA_Entity_Control.cs" Line="119" Column="76" />
-      <File FileName="Assets/Resources/Scripts/Editor/DASDK/DASDK_Entity_Control.cs" Line="72" Column="6" />
-      <File FileName="Assets/Resources/Scripts/Editor/DASDK/DASDK_Menu_Control.cs" Line="72" Column="143" />
-      <File FileName="Assets/Resources/Scripts/DA_Menu_Control.cs" Line="13" Column="45" />
-      <File FileName="Assets/Resources/Scripts/Editor/DASDK/DASDK_Tool_EntityEditor.cs" Line="8" Column="1" />
+      <File FileName="Assets/Resources/Scripts/Editor/DASDK/DASDK_Entity_Control.cs" Line="13" Column="14" />
+      <File FileName="Assets/Resources/Scripts/DA_Entity_Control.cs" Line="92" Column="18" />
+      <File FileName="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Trigger_Warp.cs" Line="14" Column="31" />
+      <File FileName="Assets/Resources/Scripts/DA_Trigger_Warp.cs" Line="37" Column="35" />
+      <File FileName="Assets/Resources/Scripts/One Time Use/OTU_System_TransitionManager.cs" Line="33" Column="6" />
+      <File FileName="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/System/SystemFadeTransition.cs" Line="39" Column="30" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

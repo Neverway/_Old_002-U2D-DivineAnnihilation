@@ -122,8 +122,7 @@ public class OTU_Title_NameSelect : MonoBehaviour
         saveManager.Save();
         loadingScreen.SetActive(true);
         saveManager.loadFileOnCreation = true;
-        saveManager.activeSave2.scene = "Template_Overworld";
-        SceneManager.LoadScene("Template_Overworld");
+        SceneManager.LoadScene(saveManager.activeSave2.scene);
         gameObject.SetActive(false);
     }
 }

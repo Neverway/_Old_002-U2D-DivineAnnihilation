@@ -24,6 +24,7 @@ public class OTU_System_SaveManager : MonoBehaviour
     public SaveData2 throwSave2;                      // 
 
     // Variables Reference 
+    public string startingScene;                //
     public Sprite noPortrait;                   //
     public bool hasLoaded;                      //
     public bool loadFileOnCreation = false;     //
@@ -97,7 +98,7 @@ public class OTU_System_SaveManager : MonoBehaviour
     public void CreateSave()
     {
         // Player Data
-        activeSave2.scene = "Template_Overworld";
+        activeSave2.scene = startingScene;
         activeSave2.playerName = PlayerPrefs.GetString("PlayerName");
         activeSave2.playerSavePosition = new Vector2(-17.75f, 44);
         activeSave2.playerHealth = 100;
