@@ -27,7 +27,7 @@ public class OTU_System_SaveManager : MonoBehaviour
     public string startingScene;                //
     public Sprite noPortrait;                   //
     public bool hasLoaded;                      //
-    public bool loadFileOnCreation = false;     //
+    public bool loadFileOnCreation;     //
     private GameObject playerCharacter;         //
 
     // Variables Editor
@@ -138,6 +138,7 @@ public class OTU_System_SaveManager : MonoBehaviour
         PlayerPrefs.SetInt("LoadingNewRoom", 0);
         PlayerPrefs.SetFloat("NextRoomX", 0);
         PlayerPrefs.SetFloat("NextRoomY", 0);
+        loadFileOnCreation = true;
 
         Debug.Log("[ID002 DA]: " + "Created new .DASP under " + activeSave2.saveProfileName);
     }
