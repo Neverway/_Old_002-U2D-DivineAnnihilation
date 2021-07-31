@@ -59,11 +59,25 @@ public class DA_Entity_Control : MonoBehaviour
 
     void Start()
     {
+        // Find references
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         animator = gameObject.GetComponent<Animator>();
         Rigidbody = gameObject.GetComponent<Rigidbody2D>();
-        inputManager = FindObjectOfType<OTU_System_InputManager>(); 
+        inputManager = FindObjectOfType<OTU_System_InputManager>();
+        saveManager = FindObjectOfType<OTU_System_SaveManager>();
         currentSpeed = walkSpeed;
+
+        // Spawn a failsafe config object if the proper one cannot be found (by default it will save to a failsafe save file labeled as SlotZero)
+        if (inputManager == null)
+        {
+            Instantiate(Resources.Load<GameObject>("Prefabs/Core/Config"), new Vector3(0,0,0), new Quaternion(0,0,0,0), GameObject.Find("[System]").transform);
+            inputManager = FindObjectOfType<OTU_System_InputManager>();
+            saveManager = FindObjectOfType<OTU_System_SaveManager>();
+            saveManager.gameObject.transform.SetParent(null);
+            saveManager.gameObject.name = "Config";
+            saveManager.activeSave2.saveProfileName = "SlotZero";
+            Debug.LogWarning("The scene was loaded abnormally and a failsafe save was created at the persitent data path! Please start the game from the title scene to fix this issue (unless you are just debugging stuff I guess.)");
+        }
 
         // Set entity type
         if (choiceValue == 0)
