@@ -1,16 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/Scripts/DA_Entity_Control.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/Scripts/One Time Use/OTU_System_TextboxManager.cs">
     <Files>
-      <File FileName="Assets/Resources/Scripts/Editor/DASDK/DASDK_Entity_Control.cs" Line="13" Column="14" />
-      <File FileName="Assets/Resources/Scripts/DA_Entity_Control.cs" Line="73" Column="10" />
-      <File FileName="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Trigger_Warp.cs" Line="14" Column="31" />
-      <File FileName="Assets/Resources/Scripts/DA_Trigger_Warp.cs" Line="27" Column="67" />
-      <File FileName="Assets/Resources/Scripts/One Time Use/OTU_System_TransitionManager.cs" Line="21" Column="36" />
-      <File FileName="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/System/SystemFadeTransition.cs" Line="15" Column="41" />
-      <File FileName="Assets/Resources/Scripts/One Time Use/OTU_System_SaveManager.cs" Line="141" Column="35" />
-      <File FileName="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/SaveManager.cs" Line="5" Column="3" />
-      <File FileName="Assets/Resources/Scripts/One Time Use/OTU_Title_NameSelect.cs" Line="1" Column="1" />
-      <File FileName="Assets/Resources/Scripts/One Time Use/OTU_Title_SaveInfo.cs" Line="37" Column="37" />
+      <File FileName="Assets/Resources/Scripts/One Time Use/OTU_System_TextboxManager.cs" Line="3" Column="13" />
+      <File FileName="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Hud_Textbox_Manager.cs" Line="70" Column="15" />
+      <File FileName="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Trigger_Interact.cs" Line="18" Column="30" />
+      <File FileName="Assets/Resources/Scripts/DA_Trigger_Interact.cs" Line="5" Column="14" />
     </Files>
     <Pads>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">

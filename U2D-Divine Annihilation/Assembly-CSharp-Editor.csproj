@@ -59,6 +59,7 @@
      <Compile Include="Assets\Resources\Scripts\Editor\DASDK\DASDK_Entity_Control.cs" />
      <Compile Include="Assets\Resources\Scripts\Editor\DASDK\DASDK_Menu_Control.cs" />
      <Compile Include="Assets\Resources\Scripts\Editor\DASDK\DASDK_System_SaveManager.cs" />
+     <Compile Include="Assets\Resources\Scripts\Editor\DASDK\DASDK_System_TextboxManager.cs" />
      <Compile Include="Assets\Resources\Scripts\Editor\DASDK\DASDK_Tool_AssetBrowser.cs" />
      <Compile Include="Assets\Resources\Scripts\Editor\DASDK\DASDK_Tool_EntityEditor.cs" />
      <Compile Include="Assets\Resources\Scripts\Editor\DASDK\DASDK_Tool_Help.cs" />
