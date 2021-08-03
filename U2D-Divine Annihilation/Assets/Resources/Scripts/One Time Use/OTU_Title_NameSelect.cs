@@ -11,7 +11,7 @@ public class OTU_Title_NameSelect : MonoBehaviour
     public Text actions;
     public GameObject loadingScreen;
 
-    private string nameTakenError = "";
+    private string nameTakenError = "That user is already active in the system!";
     private OTU_System_InputManager inputManager;
     private OTU_System_SaveManager saveManager;
 
@@ -78,14 +78,7 @@ public class OTU_Title_NameSelect : MonoBehaviour
         {
             systemMessageScreen.SetActive(true);
             message.text = nameTakenError;
-            actions.text = "[" + inputManager.controls["Interact"] + "] OK";
-            gameObject.GetComponent<OTU_Title_NameSelect>().enabled = false;
-        }
-        else if (nameTextObject.text == "")
-        {
-            systemMessageScreen.SetActive(true);
-            message.text = nameTakenError;
-            actions.text = "[" + inputManager.controls["Interact"] + "] OK";
+            actions.text = "[" + inputManager.controls["Interact"] + "] Confirm   [" + inputManager.controls["Action"] + "] Cancel";
             gameObject.GetComponent<OTU_Title_NameSelect>().enabled = false;
         }
         else if (nameTextObject.text == "FOX_IS_DEAD")

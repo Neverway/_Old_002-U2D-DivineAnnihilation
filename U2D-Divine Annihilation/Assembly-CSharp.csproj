@@ -59,6 +59,7 @@
      <Compile Include="Assets\Resources\Scripts\DA_Entity_Control.cs" />
      <Compile Include="Assets\Resources\Scripts\DA_Menu_Control.cs" />
      <Compile Include="Assets\Resources\Scripts\DA_System_PersistentOnOverworld.cs" />
+     <Compile Include="Assets\Resources\Scripts\DA_Trigger_Interact.cs" />
      <Compile Include="Assets\Resources\Scripts\DA_Trigger_Warp.cs" />
      <Compile Include="Assets\Resources\Scripts\DA_Trigger_WarpLevel.cs" />
      <Compile Include="Assets\Resources\Scripts\Depreciated &amp; Awaiting Update\OLDG9\Background Scripts\Hud_Health.cs" />
@@ -145,6 +146,7 @@
      <Compile Include="Assets\Resources\Scripts\One Time Use\OTU_System_InputManager.cs" />
      <Compile Include="Assets\Resources\Scripts\One Time Use\OTU_System_MenuManager.cs" />
      <Compile Include="Assets\Resources\Scripts\One Time Use\OTU_System_SaveManager.cs" />
+     <Compile Include="Assets\Resources\Scripts\One Time Use\OTU_System_TextboxManager.cs" />
      <Compile Include="Assets\Resources\Scripts\One Time Use\OTU_System_TransitionManager.cs" />
      <Compile Include="Assets\Resources\Scripts\One Time Use\OTU_Title_Events.cs" />
      <Compile Include="Assets\Resources\Scripts\One Time Use\OTU_Title_KeyBind.cs" />
