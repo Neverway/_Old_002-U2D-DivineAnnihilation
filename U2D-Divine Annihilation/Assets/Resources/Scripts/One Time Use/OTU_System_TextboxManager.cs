@@ -49,10 +49,12 @@ public class OTU_System_TextboxManager : MonoBehaviour
     public bool eventActive;
 
     // Reference variables
+    public Sprite noPortrait;
     public Text dialogueText;
     public Text monologueText;
     public Text dialogueName;
     public Image characterPortrait;
+    public GameObject targetTrigger;
     public OTU_System_InputManager inputManager;
 
 
@@ -63,6 +65,13 @@ public class OTU_System_TextboxManager : MonoBehaviour
         dialogueName = gameObject.transform.GetChild(0).GetChild(2).gameObject.GetComponent<Text>();
         characterPortrait = gameObject.transform.GetChild(0).GetChild(3).gameObject.GetComponent<Image>();
         inputManager = FindObjectOfType<OTU_System_InputManager>();
+    }
+
+
+    IEnumerator acceptInput()
+    {
+        yield return new WaitForSeconds(1);     // The delay until it is accepting input again
+        acceptingInput = true;                  // Allow input again
     }
 
 
@@ -85,17 +94,19 @@ public class OTU_System_TextboxManager : MonoBehaviour
         FinishTextbox();
 
         // Set text field mode to mono
-        if (characterPortrait.sprite == null && textboxActive == true)
+        if (characterPortrait.sprite == noPortrait && textboxActive == true)
         {
-            dialogueText.transform.parent.gameObject.SetActive(false);  // Hide the dialogue field
-            monologueText.transform.parent.gameObject.SetActive(true);  // Show the monologue field
+            Debug.Log("Mono");
+            dialogueText.gameObject.SetActive(false);  // Hide the dialogue field
+            monologueText.gameObject.SetActive(true);  // Show the monologue field
         }
 
         // Set text field mode to dia
-        if (characterPortrait.sprite != null && textboxActive == true)
+        if (characterPortrait.sprite != noPortrait && textboxActive == true)
         {
-            dialogueText.transform.parent.gameObject.SetActive(true);  // Hide the dialogue field
-            monologueText.transform.parent.gameObject.SetActive(false);  // Show the monologue field
+            Debug.Log("Dia");
+            dialogueText.gameObject.SetActive(true);  // Hide the dialogue field
+            monologueText.gameObject.SetActive(false);  // Show the monologue field
         }
 
         // Set the text on screen the the current line text
@@ -129,40 +140,41 @@ public class OTU_System_TextboxManager : MonoBehaviour
 
     void AdvanceTextbox()
     {
+        // Initialize textbox by clearing the textbox (just in case there is anything left from a previouse interaction) and drawing the first line
+        if (!textboxInitialized && textboxActive)
+        {
+            // Keypress delay
+            if (acceptingInput)
+            {
+                currentTextLine += 1;       // Advance the text line count
+                currentPortraitLine += 1;   // Advance the portrait line count
+            }
+            StartCoroutine(DrawText());     // Start drawing the first line
+            textCurrent = "";               // Clear the current text (just in case)
+            dialogueText.text = "";         // Clear the dialogue text (just in case)
+            monologueText.text = "";        // Clear the monologue text (just in case)
+            StartCoroutine(acceptInput());  // Apply Key press delay
+            textboxInitialized = true;      // Finish the initialization
+        }
+
         //  FutureUCC: I don't know what the purpose of having the intialization check is but I'm leaving it in for now because I don't want to break anything just yet
         if (textboxActive && Input.GetKeyDown(inputManager.controls["Interact"]) && !eventTrigger)
         {
-            // Initialize textbox by clearing the textbox (just in case there is anything left from a previouse interaction) and drawing the first line
-            if (!textboxInitialized)
-            {
-                // Keypress delay
-                if (acceptingInput) 
-                {
-                    currentTextLine += 1;       // Advance the text line count
-                    currentPortraitLine += 1;   // Advance the portrait line count
-                }
-                StartCoroutine(DrawText());     // Start drawing the first line
-                textCurrent = "";               // Clear the current text (just in case)
-                dialogueText.text = "";         // Clear the dialogue text (just in case)
-                monologueText.text = "";        // Clear the monologue text (just in case)
-                StartCoroutine("acceptInput");  // Apply Key press delay
-                textboxInitialized = true;      // Finish the initialization
-            }
 
             // Advance the text, on a player button press, if the character is done talking
-            else if (textCurrent == textContent)
+            if (textCurrent == textContent)
             {
                 // Keypress delay
                 if (acceptingInput)
                 {
                     currentTextLine += 1;       // Advance the text line count
                     currentPortraitLine += 1;   // Advance the portrait line count
+                    StartCoroutine(DrawText());     // Start drawing the first line
+                    textCurrent = "";
+                    dialogueText.text = "";         // Clear the dialogue text (just in case)
+                    monologueText.text = "";        // Clear the monologue text (just in case)
+                    StartCoroutine("acceptInput");  // Apply Key press delay
                 }
-                StartCoroutine(DrawText());     // Start drawing the first line
-                textCurrent = "";
-                dialogueText.text = "";         // Clear the dialogue text (just in case)
-                monologueText.text = "";        // Clear the monologue text (just in case)
-                StartCoroutine("acceptInput");  // Apply Key press delay
             }
         }
     }
@@ -173,7 +185,8 @@ public class OTU_System_TextboxManager : MonoBehaviour
         {
             textCurrent = textContent;
             StopAllCoroutines();
-            StartCoroutine("acceptInput");  // Apply Key press delay
+            acceptingInput = true;
+            //StartCoroutine("acceptInput");  // Apply Key press delay
         }
     }
 
@@ -243,6 +256,7 @@ public class OTU_System_TextboxManager : MonoBehaviour
             textboxActive = false;                                       // Set the active state to false
             currentTextLine = 0;                                                 // Reset the current line count to zero
             currentPortraitLine = 0;                                                 // Reset the current line count to zero
+            StopAllCoroutines();
             StopCoroutine("acceptInput");
             StopCoroutine("ShowText");
 
@@ -258,6 +272,7 @@ public class OTU_System_TextboxManager : MonoBehaviour
 
             textboxInitialized = false;
             acceptingInput = false;                                          // Set the accepting input value to false
+            targetTrigger.GetComponent<DA_Trigger_Interact>().OnFinish.Invoke();
         }
     }
 
