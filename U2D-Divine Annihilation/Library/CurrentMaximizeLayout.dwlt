@@ -21,10 +21,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 937
-  m_MinSize: {x: 678, y: 492}
-  m_MaxSize: {x: 14001, y: 14042}
+  m_MinSize: {x: 679, y: 471}
+  m_MaxSize: {x: 14001, y: 14021}
   vertical: 0
-  controlID: 16552
+  controlID: 17288
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -46,8 +46,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1705
-    y: 88
+    x: 340
+    y: 19
     width: 1129
     height: 645
   m_ViewDataDictionary: {fileID: 0}
@@ -138,10 +138,10 @@ MonoBehaviour:
     y: 0
     width: 1470
     height: 937
-  m_MinSize: {x: 403, y: 492}
-  m_MaxSize: {x: 10001, y: 14042}
+  m_MinSize: {x: 403, y: 471}
+  m_MaxSize: {x: 10000, y: 14021}
   vertical: 1
-  controlID: 16553
+  controlID: 17289
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 16554
+  controlID: 17290
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -813,8 +813,8 @@ MonoBehaviour:
     y: 0
     width: 450
     height: 937
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
