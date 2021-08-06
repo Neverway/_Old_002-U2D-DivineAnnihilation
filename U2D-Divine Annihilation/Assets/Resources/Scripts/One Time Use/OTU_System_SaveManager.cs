@@ -16,6 +16,8 @@ using System.IO;
 using System.Collections;
 using System.Xml.Serialization;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class OTU_System_SaveManager : MonoBehaviour
 {
@@ -29,6 +31,7 @@ public class OTU_System_SaveManager : MonoBehaviour
     public bool hasLoaded;                      //
     public bool loadFileOnCreation;     //
     private GameObject playerCharacter;         //
+    public GameObject loadingScreen;
 
     // Variables Editor
     public int currentTab;
@@ -40,11 +43,13 @@ public class OTU_System_SaveManager : MonoBehaviour
         System.Array.Resize(ref activeSave2.equipment, 5);
         System.Array.Resize(ref activeSave2.itemIcons, 5);
         System.Array.Resize(ref activeSave2.equipmentIcons, 5);
+        loadingScreen = GameObject.FindWithTag("Loading Screen");
     }
 
 
     private void Awake()
     {
+        loadingScreen = GameObject.FindWithTag("Loading Screen");
         if (loadFileOnCreation)
         {
             activeSave2.saveProfileName = PlayerPrefs.GetString("Current Save Profile");
@@ -184,6 +189,16 @@ public class OTU_System_SaveManager : MonoBehaviour
     }
 
 
+    public void LoadLevel()
+    {
+        loadingScreen.GetComponent<Image>().enabled = true;
+        loadingScreen.transform.GetChild(0).GetComponent<Image>().enabled = true;
+        loadingScreen.transform.GetChild(1).GetComponent<Text>().enabled = true;
+        loadFileOnCreation = true;
+        SceneManager.LoadScene(activeSave2.scene);
+    }
+
+
     public void ThrowData(string saveFile)
     {
         string dataPath = Application.persistentDataPath;
@@ -197,6 +212,7 @@ public class OTU_System_SaveManager : MonoBehaviour
         }
     }
 }
+
 
 
 [System.Serializable]
