@@ -186,7 +186,6 @@ public class OTU_System_TextboxManager : MonoBehaviour
             textCurrent = textContent;
             StopAllCoroutines();
             acceptingInput = true;
-            //StartCoroutine("acceptInput");  // Apply Key press delay
         }
     }
 
@@ -250,21 +249,18 @@ public class OTU_System_TextboxManager : MonoBehaviour
     void FinishTextbox()
     {
         // End the dialogue when there are no more lines of text
-        if (currentTextLine >= lineText.Length)
+        if (currentTextLine >= lineText.Length && Input.GetKeyDown(inputManager.controls["Interact"]))
         {
+            print("Finish");
             gameObject.transform.GetChild(0).gameObject.SetActive(false);                              // Make the dialogue box heirarchy disappear
             textboxActive = false;                                       // Set the active state to false
-            currentTextLine = 0;                                                 // Reset the current line count to zero
-            currentPortraitLine = 0;                                                 // Reset the current line count to zero
             StopAllCoroutines();
             StopCoroutine("acceptInput");
             StopCoroutine("ShowText");
 
-            //if (destroyOnFinish)
-            //{
-            //    targetTrigger.GetComponent<Trigger_Interact>().startDestroy = true;
-            //}
-
+            // Reset stored values
+            currentTextLine = 0;                                                 // Reset the current line count to zero
+            currentPortraitLine = 0;                                                 // Reset the current line count to zero
             dialogueText.text = "";
             monologueText.text = "";
             dialogueName.text = "";
@@ -272,6 +268,7 @@ public class OTU_System_TextboxManager : MonoBehaviour
 
             textboxInitialized = false;
             acceptingInput = false;                                          // Set the accepting input value to false
+            targetTrigger.GetComponent<DA_Trigger_Interact>().acceptingInput = false;
             targetTrigger.GetComponent<DA_Trigger_Interact>().OnFinish.Invoke();
         }
     }
