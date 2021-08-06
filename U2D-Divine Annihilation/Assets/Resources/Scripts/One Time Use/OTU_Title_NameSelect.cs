@@ -9,16 +9,17 @@ public class OTU_Title_NameSelect : MonoBehaviour
     public GameObject systemMessageScreen;
     public Text message;
     public Text actions;
-    public GameObject loadingScreen;
 
     private string nameTakenError = "That user is already active in the system!";
     private OTU_System_InputManager inputManager;
     private OTU_System_SaveManager saveManager;
+    private GameObject loadingScreen;
 
     void Start()
     {
         inputManager = FindObjectOfType<OTU_System_InputManager>();
         saveManager = FindObjectOfType<OTU_System_SaveManager>();
+        loadingScreen = GameObject.FindWithTag("Loading Screen");
     }
 
 
@@ -113,7 +114,9 @@ public class OTU_Title_NameSelect : MonoBehaviour
         PlayerPrefs.SetString("PlayerName", nameTextObject.text);
         saveManager.CreateSave();
         saveManager.Save();
-        loadingScreen.SetActive(true);
+        loadingScreen.GetComponent<Image>().enabled = true;
+        loadingScreen.transform.GetChild(0).GetComponent<Image>().enabled = true;
+        loadingScreen.transform.GetChild(1).GetComponent<Text>().enabled = true;
         saveManager.loadFileOnCreation = true;
         SceneManager.LoadScene(saveManager.activeSave2.scene);
         gameObject.SetActive(false);

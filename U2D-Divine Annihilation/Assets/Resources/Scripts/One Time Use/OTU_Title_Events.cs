@@ -49,6 +49,7 @@ public class OTU_Title_Events : MonoBehaviour
         else if (System.IO.File.Exists(dataPath + "/" + fileName + ".dasp"))
         {
             OnLoadFileExists.Invoke();
+            saveManager.Load();
         }
     }
 
