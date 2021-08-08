@@ -15,6 +15,9 @@ public class OTU_System_MenuManager : MonoBehaviour
     public bool menuActive; // A variable to keep track of whether or not the player is in a menu (If they are then stop them from moving and stuff)
 
     // Reference variables
+    private OTU_System_TextboxManager textboxManager;
+    private DA_Entity_Control characterController;
+    private GameObject player;
     //private OTU_HUD_DialogueManager DialogueManager;
     //private OTU_HUD_ChoiceboxManager ChoiceboxManager;
     //private OTU_HUD_InventoryManager InventoryManager;
@@ -24,41 +27,43 @@ public class OTU_System_MenuManager : MonoBehaviour
 
     void Awake()
     {
-        menuActive = false;
         FindReferenceObjects();
+        menuActive = false;
     }
 
     void Update()
     {
+        FindReferenceObjects();
         CheckForActiveMenus();
     }
 
     public void CheckForActiveMenus()
     {
-        //if (DialogueManager != null && InventoryManager != null)
-        //{
-        //    // A menu is active, so stop the player
-        //    if (DialogueManager.dialogueBoxActive | InventoryManager.inventoryBoxActive | SIManager.siBoxActive | ChoiceboxManager.choiceBoxActive)
-        //    {
-        //        menuActive = true;
-        //        CharacterController.canMove = false;
-        //    }
+        if (textboxManager != null && characterController != null)
+        {
+            // A menu is active, so stop the player
+            if (textboxManager.textboxActive)
+            {
+                menuActive = true;
+                characterController.canMove = false;
+            }
 
-        //    // No menus are active, allow the player to move
-        //    else if (!DialogueManager.dialogueBoxActive && !InventoryManager.inventoryBoxActive && !SIManager.siBoxActive && !ChoiceboxManager.choiceBoxActive)
-        //    {
-        //        menuActive = false;
-        //        CharacterController.canMove = true;
-        //    }
-        //}
+            // No menus are active, allow the player to move
+            else if (!textboxManager.textboxActive)
+            {
+                menuActive = false;
+                characterController.canMove = true;
+            }
+        }
     }
 
     void FindReferenceObjects()
     {
-        //DialogueManager = FindObjectOfType<OTU_HUD_DialogueManager>();
-        //ChoiceboxManager = FindObjectOfType<OTU_HUD_ChoiceboxManager>();
-        //InventoryManager = FindObjectOfType<OTU_HUD_InventoryManager>();
-        //SIManager = FindObjectOfType<OTU_HUD_SpecialInteractionsManager>();
-        //CharacterController = FindObjectOfType<DA_Entity_CharacterController>();
+        textboxManager = FindObjectOfType<OTU_System_TextboxManager>();
+        player = GameObject.FindWithTag("Player");
+        if (player != null)
+        {
+            characterController = player.GetComponent<DA_Entity_Control>();
+        }
     }
 }
