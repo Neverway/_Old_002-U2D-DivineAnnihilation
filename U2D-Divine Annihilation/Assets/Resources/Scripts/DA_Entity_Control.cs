@@ -36,6 +36,7 @@ public class DA_Entity_Control : MonoBehaviour
     public Sprite shelfSprite;
     public GameObject inventoryType;
     public GameObject HUD;
+    public bool canMove = true;
     private Vector2 movement;
 
     // Character variables
@@ -141,39 +142,47 @@ public class DA_Entity_Control : MonoBehaviour
 
     void PlayerEntity()
     {
-        // Horizontal control
-        if (Input.GetKey(inputManager.controls["Right"]) && movement.x < 1)
+        if (canMove)
         {
-            movement.x += 1;
+            // Horizontal control
+            if (Input.GetKey(inputManager.controls["Right"]) && movement.x < 1)
+            {
+                movement.x += 1;
+            }
+            if (Input.GetKey(inputManager.controls["Left"]) && movement.x > -1)
+            {
+                movement.x -= 1;
+            }
+            if (!Input.GetKey(inputManager.controls["Left"]) && !Input.GetKey(inputManager.controls["Right"]))
+            {
+                movement.x = 0;
+            }
+
+            // Vertical control
+            if (Input.GetKey(inputManager.controls["Up"]) && movement.y < 1)
+            {
+                movement.y += 1;
+            }
+            if (Input.GetKey(inputManager.controls["Down"]) && movement.y > -1)
+            {
+                movement.y -= 1;
+            }
+            if (!Input.GetKey(inputManager.controls["Down"]) && !Input.GetKey(inputManager.controls["Up"]))
+            {
+                movement.y = 0;
+            }
+
+            if (Input.GetKey(inputManager.controls["Up"]) || Input.GetKey(inputManager.controls["Down"]) || Input.GetKey(inputManager.controls["Left"]) || Input.GetKey(inputManager.controls["Right"]))
+            {
+                animator.SetFloat("LastX", movement.x);
+                animator.SetFloat("LastY", movement.y);
+
+            }
         }
-        if (Input.GetKey(inputManager.controls["Left"]) && movement.x > -1)
-        {
-            movement.x -= 1;
-        }
-        if (!Input.GetKey(inputManager.controls["Left"]) && !Input.GetKey(inputManager.controls["Right"]))
+        else
         {
             movement.x = 0;
-        }
-
-        // Vertical control
-        if (Input.GetKey(inputManager.controls["Up"]) && movement.y < 1)
-        {
-            movement.y += 1;
-        }
-        if (Input.GetKey(inputManager.controls["Down"]) && movement.y > -1)
-        {
-            movement.y -= 1;
-        }
-        if (!Input.GetKey(inputManager.controls["Down"]) && !Input.GetKey(inputManager.controls["Up"]))
-        {
             movement.y = 0;
-        }
-
-        if (Input.GetKey(inputManager.controls["Up"]) || Input.GetKey(inputManager.controls["Down"]) || Input.GetKey(inputManager.controls["Left"]) || Input.GetKey(inputManager.controls["Right"]))
-        {
-            animator.SetFloat("LastX", movement.x);
-            animator.SetFloat("LastY", movement.y);
-
         }
 
         // Entity animator
@@ -184,12 +193,12 @@ public class DA_Entity_Control : MonoBehaviour
         if (Input.GetKey(inputManager.controls["Action"]))
         {
             currentSpeed = sprintSpeed;
-            animator.speed = 1.5f;
+            //animator.speed = 1.5f;
         }
         else
         {
             currentSpeed = walkSpeed;
-            animator.speed = 1;
+            //animator.speed = 1;
         }
 
     }
