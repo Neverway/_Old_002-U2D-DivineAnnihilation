@@ -10,11 +10,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class OTU_System_InventoryManager : MonoBehaviour
 {
     // Public variables
     public bool inventoryOpen;
+
+    public Image playerSprite;
+    public Text playerName;
+
+    public Text playerGold;
+    public Text playerLevel;
+    public Text profileName;
 
     // Private variables
     public bool acceptingInput = true;
@@ -59,5 +67,11 @@ public class OTU_System_InventoryManager : MonoBehaviour
             gameObject.transform.GetChild(0).gameObject.SetActive(false);
             StartCoroutine(acceptInput());  // Apply Key press delay
         }
+    }
+
+    public void UpdatePlayerDescription(Sprite referencePlayerSprite, string referencePlayerName)
+    {
+        playerSprite.sprite = referencePlayerSprite;
+        playerName.text = referencePlayerName;
     }
 }
