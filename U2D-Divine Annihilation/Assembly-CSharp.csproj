@@ -144,6 +144,7 @@
      <Compile Include="Assets\Resources\Scripts\Depreciated &amp; Awaiting Update\Title_Save_Options.cs" />
      <Compile Include="Assets\Resources\Scripts\One Time Use\OTU_HUD_Reference.cs" />
      <Compile Include="Assets\Resources\Scripts\One Time Use\OTU_System_InputManager.cs" />
+     <Compile Include="Assets\Resources\Scripts\One Time Use\OTU_System_InventoryManager.cs" />
      <Compile Include="Assets\Resources\Scripts\One Time Use\OTU_System_MenuManager.cs" />
      <Compile Include="Assets\Resources\Scripts\One Time Use\OTU_System_SaveManager.cs" />
      <Compile Include="Assets\Resources\Scripts\One Time Use\OTU_System_TextboxManager.cs" />

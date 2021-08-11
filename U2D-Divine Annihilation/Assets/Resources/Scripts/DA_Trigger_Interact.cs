@@ -33,12 +33,14 @@ public class DA_Trigger_Interact : MonoBehaviour
     // Reference variables
     private OTU_System_InputManager inputManager;
     private OTU_System_TextboxManager textboxManager;
+    private OTU_System_MenuManager menuManager;
 
 
     void Start()
     {
         inputManager = FindObjectOfType<OTU_System_InputManager>();
         textboxManager = FindObjectOfType<OTU_System_TextboxManager>();
+        menuManager = FindObjectOfType<OTU_System_MenuManager>();
     }
 
 
@@ -51,7 +53,7 @@ public class DA_Trigger_Interact : MonoBehaviour
 
     void Update()
     {
-        if (inTrigger && Input.GetKeyDown(inputManager.controls["Interact"]) && acceptingInput == true && !initialized)
+        if (inTrigger && Input.GetKeyDown(inputManager.controls["Interact"]) && acceptingInput == true && !initialized && !menuManager.menuActive)
         {
             acceptingInput = false;     // Enable the keypress delay
                                         // Check if the dialogue box is already open

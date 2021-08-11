@@ -13,7 +13,7 @@ using UnityEditor;
 public class DASDK_Menu_Control : Editor
 {
     // Setup dropdown array
-    string[] _choices = new[] { "Scroll Sprites", "Scroll Strings", "Menu Control" };
+    string[] _choices = new[] { "Scroll Sprites", "Scroll Strings", "Scroll Events", "Menu Control" };
     int _choiceIndex;
     [HideInInspector] public string playerName;
     [HideInInspector] public GameObject player;
@@ -29,9 +29,13 @@ public class DASDK_Menu_Control : Editor
     SerializedProperty baseText;
     SerializedProperty hoveredText;
 
+    // Variables Event Scrolling
+    SerializedProperty events;
+
     // Variables Menu Control
     SerializedProperty OnInteract;
     SerializedProperty onBack;
+    SerializedProperty onMenuChange;
     SerializedProperty previousMenu;
     SerializedProperty nextMenu;
     SerializedProperty currentSelection;
@@ -51,9 +55,13 @@ public class DASDK_Menu_Control : Editor
         baseText = serializedObject.FindProperty("baseText");
         hoveredText = serializedObject.FindProperty("hoveredText");
 
+        // Find Event Scrolling variables
+        events = serializedObject.FindProperty("events");
+
         // Find Menu Control variables
         OnInteract = serializedObject.FindProperty("OnInteract");
         onBack = serializedObject.FindProperty("onBack");
+        onMenuChange = serializedObject.FindProperty("onMenuChange");
         previousMenu = serializedObject.FindProperty("previousMenu");
         nextMenu = serializedObject.FindProperty("nextMenu");
         currentSelection = serializedObject.FindProperty("currentSelection");
@@ -102,8 +110,23 @@ public class DASDK_Menu_Control : Editor
             serializedObject.ApplyModifiedProperties();
         }
 
-        // Menu control
+        // Scroll events
         if (_choiceIndex == 2)
+        {
+            EditorGUILayout.HelpBox("Cycle through a list of events using the directional buttons.", MessageType.None);         // Description
+            menuControl.horizontalScrolling = EditorGUILayout.Toggle("Horizontal Scrolling", menuControl.horizontalScrolling);  // Horizontal scrolling bool
+            menuControl.wrapAround = EditorGUILayout.Toggle("Wrap Around", menuControl.wrapAround);                             // Wrap Around bool
+            EditorGUILayout.Space();                                                                                            // Add a divider
+            menuControl.scrollEvents = EditorGUILayout.Toggle("Enable Event Scrolling", menuControl.scrollEvents);           // Enable Scroll Sprites
+
+            // Draw and updated serialized variables
+            serializedObject.Update();
+            EditorGUILayout.PropertyField(events);
+            serializedObject.ApplyModifiedProperties();
+        }
+
+        // Menu control
+        if (_choiceIndex == 3)
         {
             menuControl.menuControl = EditorGUILayout.Toggle("Enable Menu Control", menuControl.menuControl);   // Enable Menu Control
             menuControl.canGoBack = EditorGUILayout.Toggle("Can Go Back", menuControl.canGoBack);               // Can Go Back bool
@@ -115,6 +138,7 @@ public class DASDK_Menu_Control : Editor
             EditorGUILayout.PropertyField(currentSelection);
             EditorGUILayout.PropertyField(OnInteract);
             EditorGUILayout.PropertyField(onBack);
+            EditorGUILayout.PropertyField(onMenuChange);
             serializedObject.ApplyModifiedProperties();
         }
 
