@@ -16,13 +16,9 @@ public class OTU_System_MenuManager : MonoBehaviour
 
     // Reference variables
     private OTU_System_TextboxManager textboxManager;
+    private OTU_System_InventoryManager inventoryManager;
     private DA_Entity_Control characterController;
     private GameObject player;
-    //private OTU_HUD_DialogueManager DialogueManager;
-    //private OTU_HUD_ChoiceboxManager ChoiceboxManager;
-    //private OTU_HUD_InventoryManager InventoryManager;
-    //private OTU_HUD_SpecialInteractionsManager SIManager;
-    //private DA_Entity_CharacterController CharacterController;
 
 
     void Awake()
@@ -39,17 +35,17 @@ public class OTU_System_MenuManager : MonoBehaviour
 
     public void CheckForActiveMenus()
     {
-        if (textboxManager != null && characterController != null)
+        if (textboxManager != null && inventoryManager != null && characterController != null)
         {
             // A menu is active, so stop the player
-            if (textboxManager.textboxActive)
+            if (textboxManager.textboxActive || inventoryManager.inventoryOpen)
             {
                 menuActive = true;
                 characterController.canMove = false;
             }
 
             // No menus are active, allow the player to move
-            else if (!textboxManager.textboxActive)
+            else if (!textboxManager.textboxActive && !inventoryManager.inventoryOpen)
             {
                 menuActive = false;
                 characterController.canMove = true;
@@ -60,6 +56,7 @@ public class OTU_System_MenuManager : MonoBehaviour
     void FindReferenceObjects()
     {
         textboxManager = FindObjectOfType<OTU_System_TextboxManager>();
+        inventoryManager = FindObjectOfType<OTU_System_InventoryManager>();
         player = GameObject.FindWithTag("Player");
         if (player != null)
         {

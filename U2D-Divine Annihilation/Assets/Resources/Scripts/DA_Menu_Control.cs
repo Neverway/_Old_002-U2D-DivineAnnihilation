@@ -32,6 +32,10 @@ public class DA_Menu_Control : MonoBehaviour
     public string[] baseText;                                       // The text that the menu options should be when not selected
     public string[] hoveredText;                                    // The text that the menu options should be when selected
 
+    // Sprite scrolling variables
+    public bool scrollEvents;      // Enable scrolling with events
+    public UnityEvent[] events;     // List of events to use for the menu (in order)
+
     // Menu control variables
     public bool menuControl;            // Enable menu control
     public bool canGoBack;              // Allow the player to go to the previouse menu (if there was one)
@@ -39,6 +43,7 @@ public class DA_Menu_Control : MonoBehaviour
     public GameObject nextMenu;         // If you want to scroll to other menus then this would be the "next" menu
     public UnityEvent[] OnInteract;     // A unity event for use with the activation of the interact button
     public UnityEvent onBack;           // A unity event for use with the activation of the back button if canGoBack is enabled
+    public UnityEvent onMenuChange;     // A unity event for use with the activation of a new menu through the next/previouse fields
 
     // Reference variables
     private OTU_System_InputManager inputManager;
@@ -54,11 +59,17 @@ public class DA_Menu_Control : MonoBehaviour
     {
         if (previousMenu != null)
         {
-            previousMenu.GetComponent<DA_Menu_Control>().textTargetObjects[0].text = previousMenu.GetComponent<DA_Menu_Control>().baseText[0];
+            if (scrollStrings)
+            {
+                previousMenu.GetComponent<DA_Menu_Control>().textTargetObjects[0].text = previousMenu.GetComponent<DA_Menu_Control>().baseText[0];
+            }
         }
         if (nextMenu != null)
         {
-            nextMenu.GetComponent<DA_Menu_Control>().textTargetObjects[0].text = nextMenu.GetComponent<DA_Menu_Control>().baseText[0];
+            if (scrollStrings)
+            {
+                nextMenu.GetComponent<DA_Menu_Control>().textTargetObjects[0].text = nextMenu.GetComponent<DA_Menu_Control>().baseText[0];
+            }
         }
 
         // Vertical Scrolling
@@ -82,6 +93,7 @@ public class DA_Menu_Control : MonoBehaviour
             if (Input.GetKeyDown(inputManager.controls["Left"]) && previousMenu != null)
             {
                 previousMenu.GetComponent<DA_Menu_Control>().enabled = true;
+                previousMenu.GetComponent<DA_Menu_Control>().onMenuChange.Invoke();
                 previousMenu.GetComponent<DA_Menu_Control>().currentSelection = gameObject.GetComponent<DA_Menu_Control>().currentSelection;
                 gameObject.GetComponent<DA_Menu_Control>().enabled = false;
             }
@@ -90,6 +102,7 @@ public class DA_Menu_Control : MonoBehaviour
             if (Input.GetKeyDown(inputManager.controls["Right"]) && nextMenu != null)
             {
                 nextMenu.GetComponent<DA_Menu_Control>().enabled = true;
+                nextMenu.GetComponent<DA_Menu_Control>().onMenuChange.Invoke();
                 nextMenu.GetComponent<DA_Menu_Control>().currentSelection = gameObject.GetComponent<DA_Menu_Control>().currentSelection;
                 gameObject.GetComponent<DA_Menu_Control>().enabled = false;
             }
@@ -116,6 +129,7 @@ public class DA_Menu_Control : MonoBehaviour
             if (Input.GetKeyDown(inputManager.controls["Up"]) && previousMenu != null)
             {
                 previousMenu.GetComponent<DA_Menu_Control>().enabled = true;
+                previousMenu.GetComponent<DA_Menu_Control>().onMenuChange.Invoke();
                 previousMenu.GetComponent<DA_Menu_Control>().currentSelection = gameObject.GetComponent<DA_Menu_Control>().currentSelection;
                 gameObject.GetComponent<DA_Menu_Control>().enabled = false;
             }
@@ -124,11 +138,18 @@ public class DA_Menu_Control : MonoBehaviour
             if (Input.GetKeyDown(inputManager.controls["Down"]) && nextMenu != null)
             {
                 nextMenu.GetComponent<DA_Menu_Control>().enabled = true;
+                nextMenu.GetComponent<DA_Menu_Control>().onMenuChange.Invoke();
                 nextMenu.GetComponent<DA_Menu_Control>().currentSelection = gameObject.GetComponent<DA_Menu_Control>().currentSelection;
                 gameObject.GetComponent<DA_Menu_Control>().enabled = false;
             }
         }
 
+        // !Scrolling Events
+        if (scrollEvents)
+        {
+            selectionLength = events.Length;
+            events[currentSelection].Invoke();
+        }
 
         // Scrolling Strings & !Scrolling Sprites
         if (scrollStrings && !scrollSprites)

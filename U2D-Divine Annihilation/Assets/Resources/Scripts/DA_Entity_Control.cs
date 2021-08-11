@@ -178,6 +178,7 @@ public class DA_Entity_Control : MonoBehaviour
                 animator.SetFloat("LastY", movement.y);
 
             }
+
         }
         else
         {
