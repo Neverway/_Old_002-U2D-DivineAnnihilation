@@ -34,7 +34,6 @@ public class DA_Entity_Control : MonoBehaviour
 
     // Player variables
     public Sprite shelfSprite;
-    public GameObject inventoryType;
     public GameObject HUD;
     public bool canMove = true;
     private Vector2 movement;
@@ -55,6 +54,7 @@ public class DA_Entity_Control : MonoBehaviour
     private Animator animator;
     private Rigidbody2D Rigidbody;
     private OTU_System_InputManager inputManager;
+    private OTU_System_InventoryManager inventoryManager;
     private OTU_System_SaveManager saveManager;
 
 
@@ -65,6 +65,7 @@ public class DA_Entity_Control : MonoBehaviour
         animator = gameObject.GetComponent<Animator>();
         Rigidbody = gameObject.GetComponent<Rigidbody2D>();
         inputManager = FindObjectOfType<OTU_System_InputManager>();
+        inventoryManager = FindObjectOfType<OTU_System_InventoryManager>();
         saveManager = FindObjectOfType<OTU_System_SaveManager>();
         currentSpeed = walkSpeed;
 
@@ -111,6 +112,10 @@ public class DA_Entity_Control : MonoBehaviour
                 {
                     HUD.transform.GetChild(3).GetComponent<Image>().sprite = shelfSprite;
                 }
+            }
+            if (inventoryManager != null)
+            {
+                inventoryManager.UpdatePlayerDescription(spriteRenderer.sprite, entityName);
             }
         }
     }
