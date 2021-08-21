@@ -9,6 +9,7 @@
 
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DA_Entity_Control : MonoBehaviour
 {
@@ -72,6 +73,7 @@ public class DA_Entity_Control : MonoBehaviour
         // Spawn a failsafe config object if the proper one cannot be found (by default it will save to a failsafe save file labeled as SlotZero)
         if (inputManager == null)
         {
+            /*
             Instantiate(Resources.Load<GameObject>("Prefabs/Core/Config"), new Vector3(0,0,0), new Quaternion(0,0,0,0), GameObject.Find("[System]").transform);
             inputManager = FindObjectOfType<OTU_System_InputManager>();
             saveManager = FindObjectOfType<OTU_System_SaveManager>();
@@ -79,6 +81,9 @@ public class DA_Entity_Control : MonoBehaviour
             saveManager.gameObject.name = "Config";
             saveManager.activeSave2.saveProfileName = "SlotZero";
             Debug.LogWarning("The scene was loaded abnormally and a failsafe save was created at the persitent data path! Please start the game from the title scene to fix this issue (unless you are just debugging stuff I guess.)");
+            */
+            SceneManager.LoadScene("Main_Title");
+            Debug.LogWarning("The scene was loaded abnormally so the failsafe level was loaded! In the future, please start the game from the title scene to avoid this issue (unless you are just debugging stuff I guess.)");
         }
 
         // Set entity type

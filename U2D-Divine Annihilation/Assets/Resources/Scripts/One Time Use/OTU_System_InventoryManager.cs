@@ -26,16 +26,33 @@ public class OTU_System_InventoryManager : MonoBehaviour
 
     // Private variables
     public bool acceptingInput = true;
+    private GameObject[] itemSlots;
+    private GameObject[] equipmentSlots;
+    private GameObject inventoryRoot;
 
     // Reference variables
     private OTU_System_MenuManager menuManager;
     private OTU_System_InputManager inputManager;
+    private OTU_System_SaveManager saveManager;
 
 
     void Start()
     {
         menuManager = FindObjectOfType<OTU_System_MenuManager>();
         inputManager = FindObjectOfType<OTU_System_InputManager>();
+        saveManager = FindObjectOfType<OTU_System_SaveManager>();
+
+        inventoryRoot = gameObject.transform.GetChild(0).gameObject.transform.GetChild(2).gameObject;
+        profileName.text = saveManager.activeSave2.saveProfileName;
+        System.Array.Resize(ref itemSlots, 5);
+        System.Array.Resize(ref equipmentSlots, 5);
+
+        for (int i = 0; i < 4 + 1; i++)
+        {
+            itemSlots[i] = inventoryRoot.transform.GetChild(i).gameObject;
+            equipmentSlots[i] = inventoryRoot.transform.GetChild(i+5).gameObject;
+        }
+
     }
 
 
@@ -48,6 +65,7 @@ public class OTU_System_InventoryManager : MonoBehaviour
 
     void Update()
     {
+        UpdateInventory();
         // Open the inventory
         if (!inventoryOpen && !menuManager.menuActive && Input.GetKeyDown(inputManager.controls["Select"]) && acceptingInput)
         {
@@ -73,5 +91,16 @@ public class OTU_System_InventoryManager : MonoBehaviour
     {
         playerSprite.sprite = referencePlayerSprite;
         playerName.text = referencePlayerName;
+    }
+
+    void UpdateInventory()
+    {
+        for (int i = 0; i < 4 + 1; i++)
+        {
+            itemSlots[i].gameObject.transform.GetChild(1).GetComponent<Text>().text = saveManager.activeSave2.items[i];
+            itemSlots[i].gameObject.transform.GetChild(0).GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Items/" + saveManager.activeSave2.itemIcons[i]) as Sprite;
+            equipmentSlots[i].gameObject.transform.GetChild(1).GetComponent<Text>().text = saveManager.activeSave2.equipment[i];
+            equipmentSlots[i].gameObject.transform.GetChild(0).GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Items/" + saveManager.activeSave2.equipmentIcons[i]) as Sprite;
+        }
     }
 }
