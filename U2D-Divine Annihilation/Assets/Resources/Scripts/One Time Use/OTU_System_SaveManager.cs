@@ -40,9 +40,13 @@ public class OTU_System_SaveManager : MonoBehaviour
     private void Start()
     {
         System.Array.Resize(ref activeSave2.items, 5);
-        System.Array.Resize(ref activeSave2.equipment, 5);
         System.Array.Resize(ref activeSave2.itemIcons, 5);
+        System.Array.Resize(ref activeSave2.itemCategories, 5);
+        System.Array.Resize(ref activeSave2.itemDescriptions, 5);
+        System.Array.Resize(ref activeSave2.equipment, 5);
         System.Array.Resize(ref activeSave2.equipmentIcons, 5);
+        System.Array.Resize(ref activeSave2.equipmentCategories, 5);
+        System.Array.Resize(ref activeSave2.equipmentDescriptions, 5);
         loadingScreen = GameObject.FindWithTag("Loading Screen");
     }
 
@@ -113,9 +117,13 @@ public class OTU_System_SaveManager : MonoBehaviour
         for (int i = 0; i < activeSave2.items.Length; i++)
         {
             activeSave2.items[i] = "---";
-            activeSave2.itemIcons[i] = "s_hud_inventory_blank";
+            activeSave2.itemIcons[i] = "hud_inventory_blank";
+            activeSave2.itemCategories[i] = "";
+            activeSave2.itemDescriptions[i] = "";
             activeSave2.equipment[i] = "---";
-            activeSave2.equipmentIcons[i] = "s_hud_inventory_blank";
+            activeSave2.equipmentIcons[i] = "hud_inventory_blank";
+            activeSave2.equipmentCategories[i] = "";
+            activeSave2.equipmentDescriptions[i] = "";
         }
 
         //// Party Data
@@ -211,6 +219,18 @@ public class OTU_System_SaveManager : MonoBehaviour
             Debug.Log("[ID002 DA]: " + "Menu Loaded information from .DASP");
         }
     }
+
+    public void FindInventorySlot(bool isEquipment, int slotID, string slot)
+    {
+        if (!isEquipment)
+        {
+            slot = activeSave2.items[slotID];
+        }
+        if (isEquipment)
+        {
+            slot = activeSave2.equipment[slotID];
+        }
+    }
 }
 
 
@@ -228,9 +248,13 @@ public class SaveData2
 
     // Player Items
     public string[] items;
-    public string[] equipment;
     public string[] itemIcons;
+    public string[] itemCategories;
+    public string[] itemDescriptions;
+    public string[] equipment;
     public string[] equipmentIcons;
+    public string[] equipmentCategories;
+    public string[] equipmentDescriptions;
 
     // Party Data
     public string[] partyMembers;
