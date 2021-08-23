@@ -1,54 +1,12 @@
 ﻿<Properties StartupConfiguration="{52A108CE-312A-7646-8A28-1F3B11C710B6}|Unit Tests">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Background Scripts/Hud_Inventory.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/Scripts/DA_Menu_Control.cs">
     <Files>
       <File FileName="Assets/Resources/Scripts/DA_Trigger_ItemPickup.cs" Line="44" Column="14" />
-      <File FileName="Assets/Resources/Scripts/One Time Use/OTU_System_InventoryManager.cs" Line="99" Column="127" />
+      <File FileName="Assets/Resources/Scripts/One Time Use/OTU_System_InventoryManager.cs" Line="121" Column="101" />
       <File FileName="Assets/Resources/Scripts/DA_Entity_Control.cs" Line="123" Column="85" />
-      <File FileName="Assets/Resources/Scripts/One Time Use/OTU_System_SaveManager.cs" Line="22" Column="14" />
-      <File FileName="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Unused or Unknown/HudInventoryItemAssignment.cs" Line="9" Column="19" />
-      <File FileName="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Background Scripts/Hud_Inventory.cs" Line="93" Column="34" />
+      <File FileName="Assets/Resources/Scripts/One Time Use/OTU_System_SaveManager.cs" Line="45" Column="66" />
+      <File FileName="Assets/Resources/Scripts/DA_Menu_Control.cs" Line="13" Column="14" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="U2D-Divine Annihilation" expanded="True">
-            <Node name="Assembly-CSharp" expanded="True">
-              <Node name="Assets" expanded="True">
-                <Node name="Resources" expanded="True">
-                  <Node name="Scripts" expanded="True">
-                    <Node name="Depreciated &amp; Awaiting Update" expanded="True">
-                      <Node name="OLDG9" expanded="True">
-                        <Node name="Background Scripts" expanded="True">
-                          <Node name="Hud_Inventory.cs" selected="True" />
-                        </Node>
-                        <Node name="Unused or Unknown" expanded="True" />
-                      </Node>
-                    </Node>
-                    <Node name="One Time Use" expanded="True" />
-                  </Node>
-                </Node>
-              </Node>
-            </Node>
-            <Node name="Assembly-CSharp-Editor" expanded="True">
-              <Node name="Assets" expanded="True">
-                <Node name="Resources" expanded="True">
-                  <Node name="Scripts" expanded="True">
-                    <Node name="Editor" expanded="True">
-                      <Node name="DASDK" expanded="True" />
-                    </Node>
-                  </Node>
-                </Node>
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="U2D-Divine Annihilation" expanded="True" selected="True" />
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.AstarPathfindingProjectEditor PreferredExecutionTarget="MonoDevelop.Default" />
