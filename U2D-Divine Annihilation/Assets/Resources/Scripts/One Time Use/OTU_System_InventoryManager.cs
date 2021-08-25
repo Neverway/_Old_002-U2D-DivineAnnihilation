@@ -38,6 +38,7 @@ public class OTU_System_InventoryManager : MonoBehaviour
     private GameObject inventoryRoot;
     private DA_Menu_Control itemsMenuController;
     private DA_Menu_Control equipmentMenuController;
+    private string currentlySelecting;
 
 
     // Reference variables
@@ -116,11 +117,23 @@ public class OTU_System_InventoryManager : MonoBehaviour
         }
     }
 
+    public void CloseInspectionMenu()
+    {
+        if (currentlySelecting == "Items Menu")
+        {
+            itemsMenuController.enabled = true;
+        }
+        else if (currentlySelecting == "Equipment Menu")
+        {
+            equipmentMenuController.enabled = true;
+        }
+    }
+
     public void ItemInspectionMenu()
     {
         if (itemsMenuController.enabled && saveManager.activeSave2.items[itemsMenuController.currentSelection] != "---")
         {
-
+            currentlySelecting = "Items Menu";
             inspectionMenu.SetActive(true);
             gameObject.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.GetComponent<DA_Menu_Control>().enabled = false;
 
@@ -145,7 +158,7 @@ public class OTU_System_InventoryManager : MonoBehaviour
 
         if (equipmentMenuController.enabled && saveManager.activeSave2.equipment[equipmentMenuController.currentSelection] != "---")
         {
-
+            currentlySelecting = "Equipment Menu";
             inspectionMenu.SetActive(true);
             gameObject.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.transform.GetChild(1).gameObject.GetComponent<DA_Menu_Control>().enabled = false;
 
