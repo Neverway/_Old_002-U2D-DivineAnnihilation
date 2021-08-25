@@ -44,6 +44,7 @@ public class OTU_System_InventoryManager : MonoBehaviour
     // Reference variables
     private OTU_System_MenuManager menuManager;
     private OTU_System_InputManager inputManager;
+    private OTU_System_TextboxManager textboxManager;
     private OTU_System_SaveManager saveManager;
 
 
@@ -51,6 +52,7 @@ public class OTU_System_InventoryManager : MonoBehaviour
     {
         menuManager = FindObjectOfType<OTU_System_MenuManager>();
         inputManager = FindObjectOfType<OTU_System_InputManager>();
+        textboxManager = FindObjectOfType<OTU_System_TextboxManager>();
         saveManager = FindObjectOfType<OTU_System_SaveManager>();
 
         inventoryRoot = gameObject.transform.GetChild(0).gameObject.transform.GetChild(2).gameObject;
@@ -126,6 +128,38 @@ public class OTU_System_InventoryManager : MonoBehaviour
         else if (currentlySelecting == "Equipment Menu")
         {
             equipmentMenuController.enabled = true;
+        }
+    }
+
+    public void InventoryInspect()
+    {
+        if (currentlySelecting == "Items Menu")
+        {
+            System.Array.Resize(ref textboxManager.lineText, 1);
+            System.Array.Resize(ref textboxManager.lineName, 1);
+            System.Array.Resize(ref textboxManager.linePortrait, 1);
+            textboxManager.lineText[0] = saveManager.activeSave2.itemDescriptions[itemsMenuController.currentSelection];
+            textboxManager.lineName[0] = "";
+            textboxManager.linePortrait[0] = textboxManager.noPortrait;
+            textboxManager.currentTextLine = 0;                            // Reset the current line (in case the dialogue manager failes to)
+            textboxManager.ShowDialogue();                                 // Execute the show dialogue function
+            textboxManager.specialUseCase = "Inventory Inspect";
+            inspectionMenu.GetComponent<DA_Menu_Control>().enabled = false;
+            acceptingInput = false;
+        }
+        else if (currentlySelecting == "Equipment Menu")
+        {
+            System.Array.Resize(ref textboxManager.lineText, 1);
+            System.Array.Resize(ref textboxManager.lineName, 1);
+            System.Array.Resize(ref textboxManager.linePortrait, 1);
+            textboxManager.lineText[0] = saveManager.activeSave2.equipmentDescriptions[itemsMenuController.currentSelection];
+            textboxManager.lineName[0] = "";
+            textboxManager.linePortrait[0] = textboxManager.noPortrait;
+            textboxManager.currentTextLine = 0;                            // Reset the current line (in case the dialogue manager failes to)
+            textboxManager.ShowDialogue();                                 // Execute the show dialogue function
+            textboxManager.specialUseCase = "Inventory Inspect";
+            inspectionMenu.GetComponent<DA_Menu_Control>().enabled = false;
+            acceptingInput = false;
         }
     }
 

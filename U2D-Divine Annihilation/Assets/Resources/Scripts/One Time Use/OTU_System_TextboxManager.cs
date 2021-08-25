@@ -19,6 +19,7 @@ public class OTU_System_TextboxManager : MonoBehaviour
     public string[] lineText;
     public string[] lineName;
     public Sprite[] linePortrait;
+    public string specialUseCase;
 
     // Mark-up prefixes
     public string portraitPrefix = "{/p/}";         // Jump to the next portrait in the list
@@ -56,6 +57,7 @@ public class OTU_System_TextboxManager : MonoBehaviour
     public Image characterPortrait;
     public GameObject targetTrigger;
     public OTU_System_InputManager inputManager;
+    public OTU_System_InventoryManager inventoryManager;
 
 
     void Start()
@@ -65,6 +67,7 @@ public class OTU_System_TextboxManager : MonoBehaviour
         dialogueName = gameObject.transform.GetChild(0).GetChild(2).gameObject.GetComponent<Text>();
         characterPortrait = gameObject.transform.GetChild(0).GetChild(3).gameObject.GetComponent<Image>();
         inputManager = FindObjectOfType<OTU_System_InputManager>();
+        inventoryManager = FindObjectOfType<OTU_System_InventoryManager>();
     }
 
 
@@ -268,8 +271,17 @@ public class OTU_System_TextboxManager : MonoBehaviour
 
             textboxInitialized = false;
             acceptingInput = false;                                          // Set the accepting input value to false
-            targetTrigger.GetComponent<DA_Trigger_Interact>().acceptingInput = false;
-            targetTrigger.GetComponent<DA_Trigger_Interact>().OnFinish.Invoke();
+            if (targetTrigger != null)
+            {
+                targetTrigger.GetComponent<DA_Trigger_Interact>().acceptingInput = false;
+                targetTrigger.GetComponent<DA_Trigger_Interact>().OnFinish.Invoke();
+            }
+            if (specialUseCase == "Inventory Inspect")
+            {
+                inventoryManager.acceptingInput = true;
+                inventoryManager.inspectionMenu.GetComponent<DA_Menu_Control>().enabled = true;
+                Debug.Log("Re-enable inventory controls");
+            }
         }
     }
 
