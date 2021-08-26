@@ -2,7 +2,7 @@
 //
 // Purpose: Add an item to the players inventory on interaction
 // Applied to: An item pickup in an overworld scene
-// Editor script: DASDK_Trigger_ItemPickup
+// Editor script:
 // Notes: 
 //
 //=============================================================================
@@ -19,6 +19,7 @@ public class DA_Trigger_ItemPickup : MonoBehaviour
     public string itemCategory;
     public Sprite itemIcon;
     public string itemDescription;
+    public bool itemDiscardable;
     public UnityEvent OnPickup;
 
     // Private variables
@@ -50,6 +51,7 @@ public class DA_Trigger_ItemPickup : MonoBehaviour
                         saveManager.activeSave2.itemIcons[i] = itemIcon.name;
                         saveManager.activeSave2.itemCategories[i] = itemCategory;
                         saveManager.activeSave2.itemDescriptions[i] = itemDescription;
+                        saveManager.activeSave2.itemDiscardable[i] = itemDiscardable.ToString();
                         acceptingInput = false;
                         gameObject.SetActive(false);
                         print("An item was added to the inventory!");
@@ -67,6 +69,7 @@ public class DA_Trigger_ItemPickup : MonoBehaviour
                         saveManager.activeSave2.equipmentIcons[i] = itemIcon.name;
                         saveManager.activeSave2.equipmentCategories[i] = itemCategory;
                         saveManager.activeSave2.equipmentDescriptions[i] = itemDescription;
+                        saveManager.activeSave2.equipmentDiscardable[i] = itemDiscardable.ToString();
                         acceptingInput = false;
                         gameObject.SetActive(false);
                         print("Equipment was added to the inventory!");

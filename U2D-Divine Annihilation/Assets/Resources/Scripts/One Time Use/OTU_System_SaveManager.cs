@@ -43,10 +43,12 @@ public class OTU_System_SaveManager : MonoBehaviour
         System.Array.Resize(ref activeSave2.itemIcons, 5);
         System.Array.Resize(ref activeSave2.itemCategories, 5);
         System.Array.Resize(ref activeSave2.itemDescriptions, 5);
+        System.Array.Resize(ref activeSave2.itemDiscardable, 5);
         System.Array.Resize(ref activeSave2.equipment, 5);
         System.Array.Resize(ref activeSave2.equipmentIcons, 5);
         System.Array.Resize(ref activeSave2.equipmentCategories, 5);
         System.Array.Resize(ref activeSave2.equipmentDescriptions, 5);
+        System.Array.Resize(ref activeSave2.equipmentDiscardable, 5);
         loadingScreen = GameObject.FindWithTag("Loading Screen");
     }
 
@@ -120,10 +122,12 @@ public class OTU_System_SaveManager : MonoBehaviour
             activeSave2.itemIcons[i] = "hud_inventory_blank";
             activeSave2.itemCategories[i] = "";
             activeSave2.itemDescriptions[i] = "";
+            activeSave2.itemDiscardable[i] = "false";
             activeSave2.equipment[i] = "---";
             activeSave2.equipmentIcons[i] = "hud_inventory_blank";
             activeSave2.equipmentCategories[i] = "";
             activeSave2.equipmentDescriptions[i] = "";
+            activeSave2.equipmentDiscardable[i] = "false";
         }
 
         //// Party Data
@@ -251,10 +255,12 @@ public class SaveData2
     public string[] itemIcons;
     public string[] itemCategories;
     public string[] itemDescriptions;
+    public string[] itemDiscardable;
     public string[] equipment;
     public string[] equipmentIcons;
     public string[] equipmentCategories;
     public string[] equipmentDescriptions;
+    public string[] equipmentDiscardable;
 
     // Party Data
     public string[] partyMembers;
