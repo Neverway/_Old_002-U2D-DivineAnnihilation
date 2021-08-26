@@ -58,7 +58,7 @@ public class OTU_System_InventoryManager : MonoBehaviour
         inventoryRoot = gameObject.transform.GetChild(0).gameObject.transform.GetChild(2).gameObject;
         itemsMenuController = gameObject.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.GetComponent<DA_Menu_Control>();
         equipmentMenuController = gameObject.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.transform.GetChild(1).gameObject.GetComponent<DA_Menu_Control>();
-        profileName.text = saveManager.activeSave2.saveProfileName;
+        profileName.text = saveManager.activeSave2.playerName;
         System.Array.Resize(ref itemSlots, 5);
         System.Array.Resize(ref equipmentSlots, 5);
 
