@@ -8,7 +8,6 @@
 //=============================================================================
 
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -39,6 +38,7 @@ public class OTU_System_InventoryManager : MonoBehaviour
     private DA_Menu_Control itemsMenuController;
     private DA_Menu_Control equipmentMenuController;
     private string currentlySelecting;
+    private string layout;
 
 
     // Reference variables
@@ -81,6 +81,7 @@ public class OTU_System_InventoryManager : MonoBehaviour
     void Update()
     {
         UpdateInventory();
+        //InteractTriggerEventOverwriteFix();
         // Open the inventory
         if (!inventoryOpen && !menuManager.menuActive && Input.GetKeyDown(inputManager.controls["Select"]) && acceptingInput)
         {
@@ -102,12 +103,10 @@ public class OTU_System_InventoryManager : MonoBehaviour
         }
     }
 
-    public void UpdatePlayerDescription(Sprite referencePlayerSprite, string referencePlayerName)
-    {
-        playerSprite.sprite = referencePlayerSprite;
-        playerName.text = referencePlayerName;
-    }
 
+    // ========================
+    // Main inventory functions
+    // ========================
     void UpdateInventory()
     {
         for (int i = 0; i < 4 + 1; i++)
@@ -119,51 +118,15 @@ public class OTU_System_InventoryManager : MonoBehaviour
         }
     }
 
-    public void CloseInspectionMenu()
+
+    public void UpdatePlayerDescription(Sprite referencePlayerSprite, string referencePlayerName)
     {
-        if (currentlySelecting == "Items Menu")
-        {
-            itemsMenuController.enabled = true;
-        }
-        else if (currentlySelecting == "Equipment Menu")
-        {
-            equipmentMenuController.enabled = true;
-        }
+        playerSprite.sprite = referencePlayerSprite;
+        playerName.text = referencePlayerName;
     }
 
-    public void InventoryInspect()
-    {
-        if (currentlySelecting == "Items Menu")
-        {
-            System.Array.Resize(ref textboxManager.lineText, 1);
-            System.Array.Resize(ref textboxManager.lineName, 1);
-            System.Array.Resize(ref textboxManager.linePortrait, 1);
-            textboxManager.lineText[0] = saveManager.activeSave2.itemDescriptions[itemsMenuController.currentSelection];
-            textboxManager.lineName[0] = "";
-            textboxManager.linePortrait[0] = textboxManager.noPortrait;
-            textboxManager.currentTextLine = 0;                            // Reset the current line (in case the dialogue manager failes to)
-            textboxManager.ShowDialogue();                                 // Execute the show dialogue function
-            textboxManager.specialUseCase = "Inventory Inspect";
-            inspectionMenu.GetComponent<DA_Menu_Control>().enabled = false;
-            acceptingInput = false;
-        }
-        else if (currentlySelecting == "Equipment Menu")
-        {
-            System.Array.Resize(ref textboxManager.lineText, 1);
-            System.Array.Resize(ref textboxManager.lineName, 1);
-            System.Array.Resize(ref textboxManager.linePortrait, 1);
-            textboxManager.lineText[0] = saveManager.activeSave2.equipmentDescriptions[itemsMenuController.currentSelection];
-            textboxManager.lineName[0] = "";
-            textboxManager.linePortrait[0] = textboxManager.noPortrait;
-            textboxManager.currentTextLine = 0;                            // Reset the current line (in case the dialogue manager failes to)
-            textboxManager.ShowDialogue();                                 // Execute the show dialogue function
-            textboxManager.specialUseCase = "Inventory Inspect";
-            inspectionMenu.GetComponent<DA_Menu_Control>().enabled = false;
-            acceptingInput = false;
-        }
-    }
 
-    public void ItemInspectionMenu()
+    public void OpenInventoryInspect()
     {
         if (itemsMenuController.enabled && saveManager.activeSave2.items[itemsMenuController.currentSelection] != "---")
         {
@@ -173,15 +136,18 @@ public class OTU_System_InventoryManager : MonoBehaviour
 
             if (saveManager.activeSave2.itemCategories[itemsMenuController.currentSelection] == "Item")
             {
-                setInspectionMenu(3, itemText);
+                SetInventoryInspect(3, itemText);
+                layout = "Item";
             }
             if (saveManager.activeSave2.itemCategories[itemsMenuController.currentSelection] == "Consumable")
             {
-                setInspectionMenu(4, consumableText);
+                SetInventoryInspect(4, consumableText);
+                layout = "Consumable";
             }
             if (saveManager.activeSave2.itemCategories[itemsMenuController.currentSelection] == "Puzzle")
             {
-                setInspectionMenu(2, puzzleText);
+                SetInventoryInspect(2, puzzleText);
+                layout = "Puzzle";
             }
             if (itemsMenuController.currentSelection == 0) { inspectionMenu.transform.localPosition = new Vector2(165.5f, 22); }
             if (itemsMenuController.currentSelection == 1) { inspectionMenu.transform.localPosition = new Vector2(165.5f, -6); }
@@ -198,15 +164,18 @@ public class OTU_System_InventoryManager : MonoBehaviour
 
             if (saveManager.activeSave2.equipmentCategories[equipmentMenuController.currentSelection] == "Weapon")
             {
-                setInspectionMenu(4, weaponText);
+                SetInventoryInspect(4, weaponText);
+                layout = "Equipment";
             }
             if (saveManager.activeSave2.equipmentCategories[equipmentMenuController.currentSelection] == "Armour")
             {
-                setInspectionMenu(4, weaponText);
+                SetInventoryInspect(4, weaponText);
+                layout = "Equipment";
             }
             if (saveManager.activeSave2.equipmentCategories[equipmentMenuController.currentSelection] == "Magic")
             {
-                setInspectionMenu(4, weaponText);
+                SetInventoryInspect(4, weaponText);
+                layout = "Equipment";
             }
             if (equipmentMenuController.currentSelection == 0) { inspectionMenu.transform.localPosition = new Vector2(288, 22); }
             if (equipmentMenuController.currentSelection == 1) { inspectionMenu.transform.localPosition = new Vector2(288, -6); }
@@ -216,7 +185,41 @@ public class OTU_System_InventoryManager : MonoBehaviour
         }
     }
 
-    void setInspectionMenu(int length, string[] baseText)
+
+    public void CloseInventoryInspect()
+    {
+        inspectionMenu.GetComponent<DA_Menu_Control>().ResetCurrentSelection();
+        inspectionMenu.SetActive(false);
+        if (currentlySelecting == "Items Menu")
+        {
+            itemsMenuController.enabled = true;
+        }
+        else if (currentlySelecting == "Equipment Menu")
+        {
+            equipmentMenuController.enabled = true;
+        }
+    }
+
+    void InteractTriggerEventOverwriteFix()
+    {
+        if (textboxManager.currentlyOverlappedTrigger != null)
+        {
+            if (inspectionMenu.activeInHierarchy)
+            {
+                textboxManager.currentlyOverlappedTrigger.GetComponent<DA_Trigger_Interact>().enabled = false;
+            }
+            else if (!inspectionMenu.activeInHierarchy)
+            {
+                textboxManager.currentlyOverlappedTrigger.GetComponent<DA_Trigger_Interact>().enabled = true;
+            }
+        }
+    }
+
+
+    // ==============================
+    // Inventory inspect menu actions
+    // ==============================
+    void SetInventoryInspect(int length, string[] baseText)
     {
         inspectionMenu.gameObject.transform.GetChild(0).gameObject.GetComponent<Text>().enabled = false;
         inspectionMenu.gameObject.transform.GetChild(1).gameObject.GetComponent<Text>().enabled = false;
@@ -266,5 +269,144 @@ public class OTU_System_InventoryManager : MonoBehaviour
             inspectionMenu.GetComponent<DA_Menu_Control>().hoveredText = baseText;
         }
 
+    }
+
+    public void SetInspectionFunctions(int selectionID)
+    {
+        if (layout == "Item")
+        {
+            if (selectionID == 0)
+            {
+                print("Use");
+            }
+            else if (selectionID == 1)
+            {
+                ItemInspect();
+            }
+            else if (selectionID == 2)
+            {
+                print("Swap");
+            }
+        }
+        else if (layout == "Consumable")
+        {
+            if (selectionID == 0)
+            {
+                print("Use");
+            }
+            else if (selectionID == 1)
+            {
+                ItemInspect();
+            }
+            else if (selectionID == 2)
+            {
+                print("Swap");
+            }
+            else if (selectionID == 3)
+            {
+                ItemDiscard();
+            }
+        }
+        else if (layout == "Puzzle")
+        {
+            if (selectionID == 0)
+            {
+                ItemInspect();
+            }
+            else if (selectionID == 1)
+            {
+                print("Swap");
+            }
+        }
+        else if (layout == "Equipment")
+        {
+            if (selectionID == 0)
+            {
+                print("Equip");
+            }
+            else if (selectionID == 1)
+            {
+                ItemInspect();
+            }
+            else if (selectionID == 2)
+            {
+                print("Swap");
+            }
+            else if (selectionID == 3)
+            {
+                ItemDiscard();
+            }
+        }
+    }
+
+    public void ItemEquip()
+    {
+
+    }
+
+
+    public void ItemInspect()
+    {
+        if (currentlySelecting == "Items Menu")
+        {
+            System.Array.Resize(ref textboxManager.lineText, 1);
+            System.Array.Resize(ref textboxManager.lineName, 1);
+            System.Array.Resize(ref textboxManager.linePortrait, 1);
+            textboxManager.lineText[0] = saveManager.activeSave2.itemDescriptions[itemsMenuController.currentSelection];
+            textboxManager.lineName[0] = "";
+            textboxManager.linePortrait[0] = textboxManager.noPortrait;
+            textboxManager.currentTextLine = 0;                            // Reset the current line (in case the dialogue manager failes to)
+            textboxManager.ShowDialogue();                                 // Execute the show dialogue function
+            textboxManager.specialUseCase = "Inventory Inspect";
+            inspectionMenu.GetComponent<DA_Menu_Control>().enabled = false;
+            acceptingInput = false;
+        }
+        else if (currentlySelecting == "Equipment Menu")
+        {
+            System.Array.Resize(ref textboxManager.lineText, 1);
+            System.Array.Resize(ref textboxManager.lineName, 1);
+            System.Array.Resize(ref textboxManager.linePortrait, 1);
+            textboxManager.lineText[0] = saveManager.activeSave2.equipmentDescriptions[itemsMenuController.currentSelection];
+            textboxManager.lineName[0] = "";
+            textboxManager.linePortrait[0] = textboxManager.noPortrait;
+            textboxManager.currentTextLine = 0;                            // Reset the current line (in case the dialogue manager failes to)
+            textboxManager.ShowDialogue();                                 // Execute the show dialogue function
+            textboxManager.specialUseCase = "Inventory Inspect";
+            inspectionMenu.GetComponent<DA_Menu_Control>().enabled = false;
+            acceptingInput = false;
+        }
+    }
+
+
+    public void ItemSwap()
+    {
+
+    }
+
+
+    public void ItemDiscard()
+    {
+        if (currentlySelecting == "Items Menu")
+        {
+            if (saveManager.activeSave2.itemDiscardable[itemsMenuController.currentSelection] == "True")
+            {
+                print("You can discard this item.");
+            }
+            else
+            {
+                print("You can NOT discard this item.");
+            }
+        }
+        else if (currentlySelecting == "Equipment Menu")
+        {
+            if (saveManager.activeSave2.equipmentDiscardable[itemsMenuController.currentSelection] == "True")
+            {
+                print("You can discard this item.");
+            }
+            else
+            {
+                print("You can NOT discard this item.");
+            }
+        }
     }
 }

@@ -29,6 +29,7 @@ public class DA_Trigger_Interact : MonoBehaviour
     public bool inTrigger;
     public bool acceptingInput;
     public bool initialized;
+    public string[] testing;
 
     // Reference variables
     private OTU_System_InputManager inputManager;
@@ -41,6 +42,8 @@ public class DA_Trigger_Interact : MonoBehaviour
         inputManager = FindObjectOfType<OTU_System_InputManager>();
         textboxManager = FindObjectOfType<OTU_System_TextboxManager>();
         menuManager = FindObjectOfType<OTU_System_MenuManager>();
+        //testing = lineText;
+        Debug.Log("The start function of the interact triggers has been called!");
     }
 
 
@@ -55,6 +58,8 @@ public class DA_Trigger_Interact : MonoBehaviour
     {
         if (inTrigger && Input.GetKeyDown(inputManager.controls["Interact"]) && acceptingInput == true && !initialized && !menuManager.menuActive)
         {
+            print("An interact trigger has been activated. If you are reading this during the test, then you have found a bug.");
+            textboxManager.targetTrigger = gameObject;
             acceptingInput = false;     // Enable the keypress delay
                                         // Check if the dialogue box is already open
             if (!textboxManager.textboxActive)
@@ -68,7 +73,14 @@ public class DA_Trigger_Interact : MonoBehaviour
                 textboxManager.textboxActive = true;
                 //textboxManager.targetTrigger = gameObject;
                 //textboxManager.destroyOnFinish = destroyOnFinish;
+                print("Bink");
             }
+        }
+        if (testing[0] != lineText[0])
+        {
+            Debug.LogError(gameObject.name + ": SHIT'S BROKE! Something just overwrote an interaction triggers events!");
+            Debug.LogWarning("Logged: " + testing[0]);
+            Debug.LogWarning("Line: " + lineText[0]);
         }
     }
 
@@ -77,7 +89,7 @@ public class DA_Trigger_Interact : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            textboxManager.targetTrigger = gameObject;
+            textboxManager.currentlyOverlappedTrigger = gameObject;
             inTrigger = true;
         }
     }
@@ -86,6 +98,8 @@ public class DA_Trigger_Interact : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            textboxManager.targetTrigger = null;
+            textboxManager.currentlyOverlappedTrigger = null;
             inTrigger = false;
         }
     }
