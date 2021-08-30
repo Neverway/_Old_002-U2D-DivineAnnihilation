@@ -56,6 +56,7 @@ public class OTU_System_TextboxManager : MonoBehaviour
     public Text dialogueName;
     public Image characterPortrait;
     public GameObject targetTrigger;
+    public GameObject currentlyOverlappedTrigger;
     public OTU_System_InputManager inputManager;
     public OTU_System_InventoryManager inventoryManager;
 
@@ -116,8 +117,14 @@ public class OTU_System_TextboxManager : MonoBehaviour
 
         dialogueText.text = textCurrent;
         monologueText.text = textCurrent;
-        dialogueName.text = lineName[currentTextLine];
-        characterPortrait.sprite = linePortrait[currentPortraitLine];
+        if (lineName.Length != 0)
+        {
+            dialogueName.text = lineName[currentTextLine];
+        }
+        if (linePortrait.Length != 0)
+        {
+            characterPortrait.sprite = linePortrait[currentPortraitLine];
+        }
     }
 
 
@@ -252,7 +259,7 @@ public class OTU_System_TextboxManager : MonoBehaviour
     void FinishTextbox()
     {
         // End the dialogue when there are no more lines of text
-        if (currentTextLine >= lineText.Length && Input.GetKeyDown(inputManager.controls["Interact"]))
+        if (currentTextLine >= lineText.Length && Input.GetKeyDown(inputManager.controls["Interact"]) && lineText.Length != 0)
         {
             print("Finish");
             gameObject.transform.GetChild(0).gameObject.SetActive(false);                              // Make the dialogue box heirarchy disappear
@@ -268,9 +275,13 @@ public class OTU_System_TextboxManager : MonoBehaviour
             monologueText.text = "";
             dialogueName.text = "";
             characterPortrait.sprite = null;
+            System.Array.Resize(ref lineText, 0);
+            System.Array.Resize(ref lineName, 0);
+            System.Array.Resize(ref linePortrait, 0);
 
             textboxInitialized = false;
             acceptingInput = false;                                          // Set the accepting input value to false
+
             if (targetTrigger != null)
             {
                 targetTrigger.GetComponent<DA_Trigger_Interact>().acceptingInput = false;
@@ -280,8 +291,11 @@ public class OTU_System_TextboxManager : MonoBehaviour
             {
                 inventoryManager.acceptingInput = true;
                 inventoryManager.inspectionMenu.GetComponent<DA_Menu_Control>().enabled = true;
+                inventoryManager.CloseInventoryInspect();
+                specialUseCase = "";
                 Debug.Log("Re-enable inventory controls");
             }
+
         }
     }
 
