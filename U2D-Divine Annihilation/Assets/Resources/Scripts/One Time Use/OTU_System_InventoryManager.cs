@@ -42,6 +42,7 @@ public class OTU_System_InventoryManager : MonoBehaviour
 
 
     // Reference variables
+    public GameObject itemPickupPrefab;
     private OTU_System_MenuManager menuManager;
     private OTU_System_InputManager inputManager;
     private OTU_System_TextboxManager textboxManager;
@@ -137,7 +138,7 @@ public class OTU_System_InventoryManager : MonoBehaviour
             if (saveManager.activeSave2.itemCategories[itemsMenuController.currentSelection] == "Item")
             {
                 SetInventoryInspect(3, itemText);
-                layout = "Item";
+                layout = "Consumable";
             }
             if (saveManager.activeSave2.itemCategories[itemsMenuController.currentSelection] == "Consumable")
             {
@@ -383,6 +384,13 @@ public class OTU_System_InventoryManager : MonoBehaviour
             if (saveManager.activeSave2.itemDiscardable[itemsMenuController.currentSelection] == "True")
             {
                 print("You can discard this item.");
+                //Instantiate(itemPickupPrefab, GameObject.FindWithTag("Player").transform, false);
+
+                saveManager.activeSave2.items[itemsMenuController.currentSelection] = "---";
+                saveManager.activeSave2.itemIcons[itemsMenuController.currentSelection] = "hud_inventory_blank";
+                saveManager.activeSave2.itemCategories[itemsMenuController.currentSelection] = "";
+                saveManager.activeSave2.itemDescriptions[itemsMenuController.currentSelection] = "";
+                saveManager.activeSave2.itemDiscardable[itemsMenuController.currentSelection] = "false";
             }
             else
             {
@@ -394,6 +402,13 @@ public class OTU_System_InventoryManager : MonoBehaviour
             if (saveManager.activeSave2.equipmentDiscardable[itemsMenuController.currentSelection] == "True")
             {
                 print("You can discard this item.");
+                //Instantiate(itemPickupPrefab, GameObject.FindWithTag("Player").transform, true);
+
+                saveManager.activeSave2.equipment[equipmentMenuController.currentSelection] = "---";
+                saveManager.activeSave2.equipmentIcons[equipmentMenuController.currentSelection] = "hud_inventory_blank";
+                saveManager.activeSave2.equipmentCategories[equipmentMenuController.currentSelection] = "";
+                saveManager.activeSave2.equipmentDescriptions[equipmentMenuController.currentSelection] = "";
+                saveManager.activeSave2.equipmentDiscardable[equipmentMenuController.currentSelection] = "false";
             }
             else
             {
