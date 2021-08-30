@@ -137,8 +137,8 @@ public class OTU_System_InventoryManager : MonoBehaviour
 
             if (saveManager.activeSave2.itemCategories[itemsMenuController.currentSelection] == "Item")
             {
-                SetInventoryInspect(3, itemText);
-                layout = "Consumable";
+                SetInventoryInspect(4, itemText);
+                layout = "Item";
             }
             if (saveManager.activeSave2.itemCategories[itemsMenuController.currentSelection] == "Consumable")
             {
@@ -286,7 +286,11 @@ public class OTU_System_InventoryManager : MonoBehaviour
             }
             else if (selectionID == 2)
             {
-                print("Swap");
+                ItemSwap();
+            }
+            else if (selectionID == 3)
+            {
+                ItemDiscard();
             }
         }
         else if (layout == "Consumable")
@@ -301,7 +305,7 @@ public class OTU_System_InventoryManager : MonoBehaviour
             }
             else if (selectionID == 2)
             {
-                print("Swap");
+                ItemSwap();
             }
             else if (selectionID == 3)
             {
@@ -316,14 +320,14 @@ public class OTU_System_InventoryManager : MonoBehaviour
             }
             else if (selectionID == 1)
             {
-                print("Swap");
+                ItemSwap();
             }
         }
         else if (layout == "Equipment")
         {
             if (selectionID == 0)
             {
-                print("Equip");
+                ItemEquip();
             }
             else if (selectionID == 1)
             {
@@ -331,7 +335,7 @@ public class OTU_System_InventoryManager : MonoBehaviour
             }
             else if (selectionID == 2)
             {
-                print("Swap");
+                ItemSwap();
             }
             else if (selectionID == 3)
             {
@@ -342,29 +346,24 @@ public class OTU_System_InventoryManager : MonoBehaviour
 
     public void ItemEquip()
     {
-
+        textboxManager.TextboxNonarray("Item equipping is not yet available.", "", textboxManager.noPortrait);
+        textboxManager.specialUseCase = "Inventory Inspect";
+        inspectionMenu.GetComponent<DA_Menu_Control>().enabled = false;
+        acceptingInput = false;
     }
 
 
     public void ItemInspect()
     {
-        System.Array.Resize(ref textboxManager.lineText, 1);
-        System.Array.Resize(ref textboxManager.lineName, 1);
-        System.Array.Resize(ref textboxManager.linePortrait, 1);
-
         if (currentlySelecting == "Items Menu")
         {
-            textboxManager.lineText[0] = saveManager.activeSave2.itemDescriptions[itemsMenuController.currentSelection];
+            textboxManager.TextboxNonarray(saveManager.activeSave2.itemDescriptions[itemsMenuController.currentSelection], "", textboxManager.noPortrait);
         }
         else if (currentlySelecting == "Equipment Menu")
         {
-            textboxManager.lineText[0] = saveManager.activeSave2.equipmentDescriptions[equipmentMenuController.currentSelection];
+            textboxManager.TextboxNonarray(saveManager.activeSave2.equipmentDescriptions[equipmentMenuController.currentSelection], "", textboxManager.noPortrait);
         }
-        textboxManager.lineName[0] = "";
-        textboxManager.linePortrait[0] = textboxManager.noPortrait;
 
-        textboxManager.currentTextLine = 0;                            // Reset the current line (in case the dialogue manager failes to)
-        textboxManager.ShowDialogue();                                 // Execute the show dialogue function
         textboxManager.specialUseCase = "Inventory Inspect";
         inspectionMenu.GetComponent<DA_Menu_Control>().enabled = false;
         acceptingInput = false;
@@ -373,7 +372,10 @@ public class OTU_System_InventoryManager : MonoBehaviour
 
     public void ItemSwap()
     {
-
+        textboxManager.TextboxNonarray("Item swaping is not yet available.", "", textboxManager.noPortrait);
+        textboxManager.specialUseCase = "Inventory Inspect";
+        inspectionMenu.GetComponent<DA_Menu_Control>().enabled = false;
+        acceptingInput = false;
     }
 
 
@@ -383,7 +385,6 @@ public class OTU_System_InventoryManager : MonoBehaviour
         {
             if (saveManager.activeSave2.itemDiscardable[itemsMenuController.currentSelection] == "True")
             {
-                print("You can discard this item.");
                 //Instantiate(itemPickupPrefab, GameObject.FindWithTag("Player").transform, false);
 
                 saveManager.activeSave2.items[itemsMenuController.currentSelection] = "---";
@@ -391,17 +392,20 @@ public class OTU_System_InventoryManager : MonoBehaviour
                 saveManager.activeSave2.itemCategories[itemsMenuController.currentSelection] = "";
                 saveManager.activeSave2.itemDescriptions[itemsMenuController.currentSelection] = "";
                 saveManager.activeSave2.itemDiscardable[itemsMenuController.currentSelection] = "false";
+                CloseInventoryInspect();
             }
             else
             {
-                print("You can NOT discard this item.");
+                textboxManager.TextboxNonarray("This item can not be discarded!", "", textboxManager.noPortrait);
+                textboxManager.specialUseCase = "Inventory Inspect";
+                inspectionMenu.GetComponent<DA_Menu_Control>().enabled = false;
+                acceptingInput = false;
             }
         }
         else if (currentlySelecting == "Equipment Menu")
         {
             if (saveManager.activeSave2.equipmentDiscardable[itemsMenuController.currentSelection] == "True")
             {
-                print("You can discard this item.");
                 //Instantiate(itemPickupPrefab, GameObject.FindWithTag("Player").transform, true);
 
                 saveManager.activeSave2.equipment[equipmentMenuController.currentSelection] = "---";
@@ -409,10 +413,14 @@ public class OTU_System_InventoryManager : MonoBehaviour
                 saveManager.activeSave2.equipmentCategories[equipmentMenuController.currentSelection] = "";
                 saveManager.activeSave2.equipmentDescriptions[equipmentMenuController.currentSelection] = "";
                 saveManager.activeSave2.equipmentDiscardable[equipmentMenuController.currentSelection] = "false";
+                CloseInventoryInspect();
             }
             else
             {
-                print("You can NOT discard this item.");
+                textboxManager.TextboxNonarray("This equipment can not be discarded!", "", textboxManager.noPortrait);
+                textboxManager.specialUseCase = "Inventory Inspect";
+                inspectionMenu.GetComponent<DA_Menu_Control>().enabled = false;
+                acceptingInput = false;
             }
         }
     }
