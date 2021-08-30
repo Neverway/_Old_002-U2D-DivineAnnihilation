@@ -305,4 +305,28 @@ public class OTU_System_TextboxManager : MonoBehaviour
             textboxActive = true;          // Set the active state to true
             gameObject.transform.GetChild(0).gameObject.SetActive(true); // Make the dialogue box heirarchy disappear
     }
+
+    public void Textbox(string[] linetexts, string[] linenames, Sprite[] lineportraits)
+    {
+        System.Array.Resize(ref lineText, linetexts.Length);
+        System.Array.Resize(ref lineName, linenames.Length);
+        System.Array.Resize(ref linePortrait, lineportraits.Length);
+        lineText = linetexts;
+        lineName = linenames;
+        linePortrait = lineportraits;
+        currentTextLine = 0;                            // Reset the current line (in case the dialogue manager failes to)
+        ShowDialogue();                                 // Execute the show dialogue function
+    }
+
+    public void TextboxNonarray(string linetexts, string linenames, Sprite lineportraits)
+    {
+        System.Array.Resize(ref lineText, 1);
+        System.Array.Resize(ref lineName, 1);
+        System.Array.Resize(ref linePortrait, 1);
+        lineText[0] = linetexts;
+        lineName[0] = linenames;
+        linePortrait[0] = lineportraits;
+        currentTextLine = 0;                            // Reset the current line (in case the dialogue manager failes to)
+        ShowDialogue();                                 // Execute the show dialogue function
+    }
 }
