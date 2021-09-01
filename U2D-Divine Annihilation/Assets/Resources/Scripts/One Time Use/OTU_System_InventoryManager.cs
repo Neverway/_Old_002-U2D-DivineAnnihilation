@@ -39,9 +39,12 @@ public class OTU_System_InventoryManager : MonoBehaviour
     private DA_Menu_Control equipmentMenuController;
     private string currentlySelecting;
     private string layout;
+    private float iconX;
+    private float iconY;
 
 
     // Reference variables
+    public GameObject[] equipIcons;
     public GameObject itemPickupPrefab;
     private OTU_System_MenuManager menuManager;
     private OTU_System_InputManager inputManager;
@@ -346,13 +349,60 @@ public class OTU_System_InventoryManager : MonoBehaviour
 
     public void ItemEquip()
     {
-        textboxManager.TextboxNonarray("Item equipping is not yet available.", "", textboxManager.noPortrait);
-        textboxManager.specialUseCase = "Inventory Inspect";
-        inspectionMenu.GetComponent<DA_Menu_Control>().enabled = false;
-        acceptingInput = false;
+        if (saveManager.activeSave2.equipmentCategories[equipmentMenuController.currentSelection] == "Utility")
+        {
+            saveManager.activeSave2.equippedU = equipmentMenuController.currentSelection;
+            GetEquipIconPositions(out iconX, out iconY);
+            equipIcons[0].transform.localPosition = new Vector3(iconX, iconY, 0);
+        }
+        if (saveManager.activeSave2.equipmentCategories[equipmentMenuController.currentSelection] == "Weapon")
+        {
+            saveManager.activeSave2.equippedW = equipmentMenuController.currentSelection;
+            GetEquipIconPositions(out iconX, out iconY);
+            equipIcons[1].transform.localPosition = new Vector3(iconX, iconY, 0);
+        }
+        if (saveManager.activeSave2.equipmentCategories[equipmentMenuController.currentSelection] == "Magic")
+        {
+            saveManager.activeSave2.equippedM = equipmentMenuController.currentSelection;
+            GetEquipIconPositions(out iconX, out iconY);
+            equipIcons[2].transform.localPosition = new Vector3(iconX, iconY, 0);
+        }
+        if (saveManager.activeSave2.equipmentCategories[equipmentMenuController.currentSelection] == "Defense")
+        {
+            saveManager.activeSave2.equippedD = equipmentMenuController.currentSelection;
+            GetEquipIconPositions(out iconX, out iconY);
+            equipIcons[3].transform.localPosition = new Vector3(iconX, iconY, 0);
+        }
+        CloseInventoryInspect();
     }
 
-
+    void GetEquipIconPositions(out float iconXF, out float iconYF)
+    {
+        iconXF = 0;
+        iconYF = 0;
+        if (currentlySelecting == "Items Menu")
+        {
+            iconXF = 43;
+            if (itemsMenuController.currentSelection == 0) { iconYF = -6.5f; }
+            if (itemsMenuController.currentSelection == 1) { iconYF = -34.5f; }
+            if (itemsMenuController.currentSelection == 2) { iconYF = -62.5f; }
+            if (itemsMenuController.currentSelection == 3) { iconYF = -90.5f; }
+            if (itemsMenuController.currentSelection == 4) { iconYF = -118.5f; }
+        }
+        else if (currentlySelecting == "Equipment Menu")
+        {
+            iconXF = 167.25f;
+            if (equipmentMenuController.currentSelection == 0) { iconYF = -6.5f; }
+            if (equipmentMenuController.currentSelection == 1) { iconYF = -34.5f; }
+            if (equipmentMenuController.currentSelection == 2) { iconYF = -62.5f; }
+            if (equipmentMenuController.currentSelection == 3) { iconYF = -90.5f; }
+            if (equipmentMenuController.currentSelection == 4) { iconYF = -118.5f; }
+        }
+        else
+        {
+            print("failed collection");
+        }
+    }
     public void ItemInspect()
     {
         if (currentlySelecting == "Items Menu")

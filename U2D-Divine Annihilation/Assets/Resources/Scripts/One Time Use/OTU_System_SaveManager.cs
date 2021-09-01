@@ -261,6 +261,10 @@ public class SaveData2
     public string[] equipmentCategories;
     public string[] equipmentDescriptions;
     public string[] equipmentDiscardable;
+    public int equippedU;
+    public int equippedW;
+    public int equippedM;
+    public int equippedD;
 
     // Party Data
     public string[] partyMembers;
