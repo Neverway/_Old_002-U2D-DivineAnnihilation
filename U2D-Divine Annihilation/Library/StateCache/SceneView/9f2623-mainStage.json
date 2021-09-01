@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":-17.901729583740236,"y":42.25398254394531,"z":-4.106875896453857},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":7.910953521728516,"orthographic":true}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":-14.4833345413208,"y":44.239402770996097,"z":-0.32425299286842348},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":2.9951038360595705,"orthographic":true}
+>>>>>>> ae294533a (Added item equip functionality)
