@@ -1,8 +1,9 @@
 ﻿//=========== Written by Arthur W. Sheldon AKA Lizband_UCC ====================
 //
+// DA-SID: MRC
 // Purpose: Add an item to the players inventory on interaction
 // Applied to: An item pickup in an overworld scene
-// Editor script:
+// Editor script: 
 // Notes: 
 //
 //=============================================================================

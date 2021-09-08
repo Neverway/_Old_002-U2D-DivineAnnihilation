@@ -1,5 +1,6 @@
 ﻿//=========== Written by Arthur W. Sheldon AKA Lizband_UCC ====================
 //
+// DA-SID: MRC
 // Purpose: Give functionality to game entities
 // Applied to: The entity prefab
 // Editor script: DASDK_Tool_EntityEditor

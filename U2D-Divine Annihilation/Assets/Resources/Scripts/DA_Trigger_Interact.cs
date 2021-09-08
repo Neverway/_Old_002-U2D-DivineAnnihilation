@@ -1,5 +1,6 @@
 ﻿//=========== Written by Arthur W. Sheldon AKA Lizband_UCC ====================
 //
+// DA-SID: MRC
 // Purpose: Start a text event upon interaction
 // Applied to: An interaction trigger in an overworld scene
 // Editor script: 

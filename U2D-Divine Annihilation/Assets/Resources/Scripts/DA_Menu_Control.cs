@@ -1,8 +1,11 @@
 ﻿//=========== Written by Arthur W. Sheldon AKA Lizband_UCC ====================
 //
+// DA-SID: CAC
 // Purpose: Scroll through and toggle menu objects
 // Applied to: A menu parent object in a scene
 // Editor script: DASDK_Menu_Control
+// Notes: Possbile bug related to this script! Scrolling to fast in a multi-menu
+//  can lead to an index out-of-bounds error!
 //
 //=============================================================================
 

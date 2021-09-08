@@ -1,14 +1,10 @@
 ﻿//=========== Written by Arthur W. Sheldon AKA Lizband_UCC ====================
 //
+// DA-SID: MRC
 // Purpose: Manage saving and loading a profiles data
 // Applied to: The Config object in a scene
+// Editor script: 
 // Notes: 
-//  PastUCC: Needs comments and also I removed the playerpref saving thing for 
-//  battles since it sucked. Also also none of the G9 scripts know how to talk
-//  to this version of the save manager, so you are going to have to fix that.
-//
-//  FutureUCC: Wow this is a mess. Are all of these functions even neccisary? 
-//  If stuff breaks then don't blame me.
 //
 //=============================================================================
 
@@ -261,6 +257,10 @@ public class SaveData2
     public string[] equipmentCategories;
     public string[] equipmentDescriptions;
     public string[] equipmentDiscardable;
+    public int equippedU;
+    public int equippedW;
+    public int equippedM;
+    public int equippedD;
 
     // Party Data
     public string[] partyMembers;

@@ -1,5 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿//=========== Written by Arthur W. Sheldon AKA Lizband_UCC ====================
+//
+// DA-SID: AKC
+// Purpose: 
+// Applied to: 
+// Editor script: 
+// Notes: 
+//
+//=============================================================================
+
 using UnityEngine;
 
 public class DA_Trigger_WarpLevel : MonoBehaviour

@@ -1,9 +1,13 @@
 ﻿//=========== Written by Arthur W. Sheldon AKA Lizband_UCC ====================
 //
+// DA-SID: CAC
 // Purpose: Don't destroy objects on scene change
 // Applied to: Any object that should not be destroyed when changing scenes
+// Editor script: 
+// Notes: 
 //
 //=============================================================================
+
 
 using UnityEngine;
 

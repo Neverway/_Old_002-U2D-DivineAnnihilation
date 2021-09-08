@@ -1,9 +1,12 @@
-﻿//=========== Written by Arthur W. Sheldon AKA Lizband_UCC =============================
+﻿//=========== Written by Arthur W. Sheldon AKA Lizband_UCC ====================
 //
+// DA-SID: CAC
 // Purpose: Set the controls and store them to PlayerPrefs
 // Applied to: The config object in the title scene
+// Editor script: 
+// Notes: 
 //
-//======================================================================================
+//=============================================================================
 
 using System.Collections.Generic;
 using UnityEngine;

@@ -1,12 +1,13 @@
-﻿//=========== Written by Arthur W. Sheldon AKA Lizband_UCC =============================
+﻿//=========== Written by Arthur W. Sheldon AKA Lizband_UCC ====================
 //
+// DA-SID: MRC
 // Purpose: Checks if any menus are open and if so stop the player from moving
 // Applied to: Config object in a scene
-// Notes: Some variables names could probably be changed to make this script neater &
-// Comments need to be added.
+// Editor script: 
+// Notes: Some variables names could probably be changed to make this script
+//  neater & Comments need to be added.
 //
-//======================================================================================
-
+//=============================================================================
 using UnityEngine;
 
 public class OTU_System_MenuManager : MonoBehaviour
