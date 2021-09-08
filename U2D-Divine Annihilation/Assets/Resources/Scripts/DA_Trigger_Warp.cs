@@ -1,5 +1,6 @@
 ﻿//=========== Written by Arthur W. Sheldon AKA Lizband_UCC ====================
 //
+// DA-SID: AKC
 // Purpose: 
 // Applied to: 
 // Editor script: 

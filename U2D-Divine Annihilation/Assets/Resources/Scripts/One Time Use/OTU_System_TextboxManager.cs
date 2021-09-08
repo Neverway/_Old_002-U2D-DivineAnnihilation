@@ -1,12 +1,14 @@
 ﻿//=========== Written by Arthur W. Sheldon AKA Lizband_UCC ====================
 //
+// DA-SID: AKC
 // Purpose: To handle inputs from interact triggers and other text events
-//          so they can be displayed in a textbox
+//  so they can be displayed in a textbox
 // Applied to: A Dialogue Manager in an overworld scene
 // Editor script: DASDK_System_TextboxManager (currently not being used)
 // Notes: Still needs more comments, and a little bit of cleaning up
 //
 //=============================================================================
+
 
 using System.Collections;
 using System.Collections.Generic;
@@ -301,9 +303,14 @@ public class OTU_System_TextboxManager : MonoBehaviour
 
     public void ShowDialogue()
     {
-            textCurrent = "";
-            textboxActive = true;          // Set the active state to true
-            gameObject.transform.GetChild(0).gameObject.SetActive(true); // Make the dialogue box heirarchy disappear
+        textCurrent = "";
+        textboxActive = true;          // Set the active state to true
+        gameObject.transform.GetChild(0).gameObject.SetActive(true); // Make the dialogue box heirarchy disappear
+    }
+
+    public void CloseChoicebox()
+    {
+        gameObject.transform.GetChild(1).gameObject.SetActive(false); // Make the dialogue box heirarchy disappear
     }
 
     public void Textbox(string[] linetexts, string[] linenames, Sprite[] lineportraits)
