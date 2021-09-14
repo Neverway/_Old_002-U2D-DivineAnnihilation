@@ -40,6 +40,7 @@ public class OTU_System_TextboxManager : MonoBehaviour
     public int currentTextLine;
     public int currentPortraitLine;
     public bool textboxActive;
+    public bool choiceboxActive;
     public bool isMonologue;
     public bool eventTrigger;
     public float textScrollSpeed;
@@ -308,9 +309,19 @@ public class OTU_System_TextboxManager : MonoBehaviour
         gameObject.transform.GetChild(0).gameObject.SetActive(true); // Make the dialogue box heirarchy disappear
     }
 
+
+    public void ShowChoicebox(string choiceText)
+    {
+        gameObject.transform.GetChild(1).gameObject.SetActive(true);
+        gameObject.transform.GetChild(1).gameObject.transform.GetChild(0).GetComponent<Text>().text = choiceText;
+        choiceboxActive = true;
+    }
+
     public void CloseChoicebox()
     {
-        gameObject.transform.GetChild(1).gameObject.SetActive(false); // Make the dialogue box heirarchy disappear
+        gameObject.transform.GetChild(1).gameObject.SetActive(false);
+        gameObject.transform.GetChild(1).gameObject.transform.GetChild(0).GetComponent<Text>().text = "";
+        choiceboxActive = false;
     }
 
     public void Textbox(string[] linetexts, string[] linenames, Sprite[] lineportraits)

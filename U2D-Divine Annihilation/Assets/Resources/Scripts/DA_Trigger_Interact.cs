@@ -30,7 +30,6 @@ public class DA_Trigger_Interact : MonoBehaviour
     public bool inTrigger;
     public bool acceptingInput;
     public bool initialized;
-    public string[] testing;
 
     // Reference variables
     private OTU_System_InputManager inputManager;
@@ -74,14 +73,7 @@ public class DA_Trigger_Interact : MonoBehaviour
                 textboxManager.textboxActive = true;
                 //textboxManager.targetTrigger = gameObject;
                 //textboxManager.destroyOnFinish = destroyOnFinish;
-                print("Bink");
             }
-        }
-        if (testing[0] != lineText[0])
-        {
-            Debug.LogError(gameObject.name + ": SHIT'S BROKE! Something just overwrote an interaction triggers events!");
-            Debug.LogWarning("Logged: " + testing[0]);
-            Debug.LogWarning("Line: " + lineText[0]);
         }
     }
 

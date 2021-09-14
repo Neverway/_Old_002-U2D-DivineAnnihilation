@@ -39,14 +39,14 @@ public class OTU_System_MenuManager : MonoBehaviour
         if (textboxManager != null && inventoryManager != null && characterController != null)
         {
             // A menu is active, so stop the player
-            if (textboxManager.textboxActive || inventoryManager.inventoryOpen)
+            if (textboxManager.textboxActive || textboxManager.choiceboxActive || inventoryManager.inventoryOpen)
             {
                 menuActive = true;
                 characterController.canMove = false;
             }
 
             // No menus are active, allow the player to move
-            else if (!textboxManager.textboxActive && !inventoryManager.inventoryOpen)
+            else if (!textboxManager.textboxActive && !textboxManager.choiceboxActive && !inventoryManager.inventoryOpen)
             {
                 menuActive = false;
                 characterController.canMove = true;
