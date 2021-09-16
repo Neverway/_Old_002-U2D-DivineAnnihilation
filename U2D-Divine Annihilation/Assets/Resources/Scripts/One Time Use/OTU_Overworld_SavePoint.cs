@@ -14,12 +14,16 @@ using UnityEngine;
 
 public class OTU_Overworld_SavePoint : MonoBehaviour
 {
+    private bool inFinalTextbox;
+
+    private OTU_System_InputManager inputManager;
     private OTU_System_TextboxManager textboxManager;
     private OTU_System_SaveManager saveManager;
 
     // Start is called before the first frame update
     void Start()
     {
+        inputManager = FindObjectOfType<OTU_System_InputManager>();
         textboxManager = FindObjectOfType<OTU_System_TextboxManager>();
         saveManager = FindObjectOfType<OTU_System_SaveManager>();
     }
@@ -27,21 +31,28 @@ public class OTU_Overworld_SavePoint : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (inFinalTextbox && !textboxManager.textboxActive)
+        {
+            inFinalTextbox = false;
+            gameObject.transform.GetChild(0).gameObject.SetActive(true);
+            gameObject.transform.GetChild(0).GetComponent<DA_Trigger_Interact>().EnableTrigger();
+            gameObject.transform.GetChild(0).GetComponent<DA_Menu_Control>().enabled = false;
+        }
     }
 
     public void SaveNo()
     {
         textboxManager.CloseChoicebox();
-        gameObject.GetComponent<DA_Trigger_Interact>().EnableTrigger();
-        gameObject.GetComponent<DA_Menu_Control>().enabled = false;
+        gameObject.transform.GetChild(0).GetComponent<DA_Trigger_Interact>().EnableTrigger();
+        gameObject.transform.GetChild(0).GetComponent<DA_Menu_Control>().enabled = false;
     }
 
     public void SaveYes()
     {
-        textboxManager.CloseChoicebox();
+        print("SaveYes");
         saveManager.Save();
-        gameObject.GetComponent<DA_Trigger_Interact>().EnableTrigger();
-        gameObject.GetComponent<DA_Menu_Control>().enabled = false;
+        gameObject.transform.GetChild(0).GetComponent<DA_Menu_Control>().enabled = false;
+        textboxManager.CloseChoicebox();
+        inFinalTextbox = true;
     }
 }

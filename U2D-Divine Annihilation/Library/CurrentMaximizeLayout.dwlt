@@ -25,6 +25,7 @@ MonoBehaviour:
   m_MinSize: {x: 678, y: 321}
   m_MaxSize: {x: 12003, y: 8021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 8598
 =======
   m_MinSize: {x: 679, y: 492}
@@ -32,6 +33,9 @@ MonoBehaviour:
   vertical: 0
   controlID: 7555
 >>>>>>> ae294533a (Added item equip functionality)
+=======
+  controlID: 3467
+>>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -168,6 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 321}
   m_MaxSize: {x: 8002, y: 8021}
   vertical: 1
+<<<<<<< HEAD
   controlID: 8599
 =======
   m_MinSize: {x: 403, y: 492}
@@ -175,6 +180,9 @@ MonoBehaviour:
   vertical: 1
   controlID: 7556
 >>>>>>> ae294533a (Added item equip functionality)
+=======
+  controlID: 3468
+>>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -206,8 +214,12 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 7557
 >>>>>>> ae294533a (Added item equip functionality)
+=======
+  controlID: 3469
+>>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -269,6 +281,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
+<<<<<<< HEAD
       scrollPos: {x: 0, y: 420}
       m_SelectedIDs: 
       m_LastClickedID: 0
@@ -283,6 +296,12 @@ MonoBehaviour:
       m_LastClickedID: 0
       m_ExpandedIDs: 32fbffff424e00009c4f00007e5100007c520000ce5200003e530000d45300000054000040560000ce560000de57000042590000
 >>>>>>> ae294533a (Added item equip functionality)
+=======
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 2afbffff624c00005a4d0000be4f0000325400008654000092560000a0580000
+>>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -379,6 +398,7 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_Position:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: -17.90173, y: 42.253983, z: -4.106876}
     speed: 2
     m_Value: {x: -17.90173, y: 42.253983, z: -4.106876}
@@ -387,6 +407,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -14.483335, y: 44.239403, z: -0.324253}
 >>>>>>> ae294533a (Added item equip functionality)
+=======
+    m_Target: {x: -17.562304, y: 46.130127, z: -0.90671325}
+    speed: 2
+    m_Value: {x: -17.562304, y: 46.130127, z: -0.90671325}
+>>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -437,6 +462,7 @@ MonoBehaviour:
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: 7.9109535
     speed: 2
     m_Value: 7.9109535
@@ -445,6 +471,11 @@ MonoBehaviour:
     speed: 2
     m_Value: 2.9951038
 >>>>>>> ae294533a (Added item equip functionality)
+=======
+    m_Target: 6.1570487
+    speed: 2
+    m_Value: 6.1570487
+>>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -515,7 +546,11 @@ MonoBehaviour:
 <<<<<<< HEAD
     y: 579
     width: 1531
+<<<<<<< HEAD
     height: 370
+=======
+    height: 368
+>>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 12}
@@ -957,10 +992,14 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LastSelectedObjectID: 2179840
 =======
   m_LastSelectedObjectID: 21438
 >>>>>>> ae294533a (Added item equip functionality)
+=======
+  m_LastSelectedObjectID: 19926
+>>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1025,10 +1064,14 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LastInspectedObjectInstanceID: -1
 =======
   m_LastInspectedObjectInstanceID: 24664
 >>>>>>> ae294533a (Added item equip functionality)
+=======
+  m_LastInspectedObjectInstanceID: 19926
+>>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
   m_LastVerticalScrollValue: 0
 --- !u!114 &17
 MonoBehaviour:

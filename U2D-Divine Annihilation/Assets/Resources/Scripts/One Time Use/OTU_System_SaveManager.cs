@@ -10,6 +10,7 @@
 
 using System.IO;
 using System.Collections;
+using System.Collections.Generic;
 using System.Xml.Serialization;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -35,6 +36,7 @@ public class OTU_System_SaveManager : MonoBehaviour
 
     private void Start()
     {
+
         System.Array.Resize(ref activeSave2.items, 5);
         System.Array.Resize(ref activeSave2.itemIcons, 5);
         System.Array.Resize(ref activeSave2.itemCategories, 5);
@@ -107,7 +109,8 @@ public class OTU_System_SaveManager : MonoBehaviour
         // Player Data
         activeSave2.scene = startingScene;
         activeSave2.playerName = PlayerPrefs.GetString("PlayerName");
-        activeSave2.playerSavePosition = new Vector2(-17.75f, 44);
+        //activeSave2.playerSavePosition = new Vector2(-17.75f, 44);
+        activeSave2.playerSavePosition = new Vector2(0f, 0f);
         activeSave2.playerHealth = 100;
         activeSave2.playerLevel = 000;
 
@@ -199,6 +202,7 @@ public class OTU_System_SaveManager : MonoBehaviour
 
     public void LoadLevel()
     {
+        print("load level");
         loadingScreen.GetComponent<Image>().enabled = true;
         loadingScreen.transform.GetChild(0).GetComponent<Image>().enabled = true;
         loadingScreen.transform.GetChild(1).GetComponent<Text>().enabled = true;

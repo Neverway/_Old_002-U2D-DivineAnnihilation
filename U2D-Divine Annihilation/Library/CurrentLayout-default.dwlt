@@ -112,10 +112,17 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 949
+<<<<<<< HEAD
   m_MinSize: {x: 677, y: 321}
   m_MaxSize: {x: 12002, y: 8021}
   vertical: 0
   controlID: 105
+=======
+  m_MinSize: {x: 679, y: 342}
+  m_MaxSize: {x: 12004, y: 8042}
+  vertical: 0
+  controlID: 104
+>>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -135,12 +142,19 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1531
+    width: 1644
     height: 949
+<<<<<<< HEAD
   m_MinSize: {x: 402, y: 321}
   m_MaxSize: {x: 8002, y: 8021}
   vertical: 1
   controlID: 106
+=======
+  m_MinSize: {x: 403, y: 342}
+  m_MaxSize: {x: 8003, y: 8042}
+  vertical: 1
+  controlID: 105
+>>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -160,12 +174,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1531
     height: 578
   m_MinSize: {x: 402, y: 221}
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
   controlID: 107
+=======
+    width: 1644
+    height: 582
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
+  vertical: 0
+  controlID: 106
+>>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -183,8 +206,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 304
     height: 578
+=======
+    width: 286
+    height: 582
+>>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
@@ -207,10 +235,15 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 304
+    x: 286
     y: 0
+<<<<<<< HEAD
     width: 1227
     height: 578
+=======
+    width: 1358
+    height: 582
+>>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
@@ -236,9 +269,15 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 578
     width: 1531
     height: 371
+=======
+    y: 582
+    width: 1644
+    height: 367
+>>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
   m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 17}
@@ -264,9 +303,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1531
+    x: 1644
     y: 0
-    width: 389
+    width: 276
     height: 949
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
@@ -297,10 +336,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1670
     y: 83
     width: 1225
     height: 555
+=======
+    x: 1611
+    y: 83
+    width: 985
+    height: 560
+>>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -310,11 +356,15 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+<<<<<<< HEAD
   m_TargetSize: {x: 949, y: 534}
+=======
+  m_TargetSize: {x: 958, y: 539}
+>>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
-  m_MaximizeOnPlay: 1
+  m_MaximizeOnPlay: 0
   m_UseMipMap: 0
   m_VSyncEnabled: 0
   m_Gizmos: 0
@@ -325,10 +375,17 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
     m_HBaseRangeMin: -493.5
     m_HBaseRangeMax: 493.5
     m_VBaseRangeMin: -277.5
     m_VBaseRangeMax: 277.5
+=======
+    m_HBaseRangeMin: -492.5
+    m_HBaseRangeMax: 492.5
+    m_VBaseRangeMin: -277
+    m_VBaseRangeMax: 277
+>>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -346,16 +403,24 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 0
+<<<<<<< HEAD
       width: 1225
       height: 555
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 612.5, y: 277.5}
+=======
+      width: 985
+      height: 560
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 492.5, y: 280}
+>>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
       x: -612.5
       y: -277.5
       width: 1225
@@ -363,6 +428,15 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1225, y: 555}
+=======
+      x: -492.5
+      y: -280
+      width: 985
+      height: 560
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 985, y: 560}
+>>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -391,15 +465,24 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1366
     y: 83
+<<<<<<< HEAD
     width: 303
     height: 557
+=======
+    width: 285
+    height: 561
+>>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
+<<<<<<< HEAD
       m_ExpandedIDs: 3cfaffff
+=======
+      m_ExpandedIDs: 2afbffff
+>>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -444,10 +527,15 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1670
+    x: 1652
     y: 83
+<<<<<<< HEAD
     width: 1225
     height: 557
+=======
+    width: 1356
+    height: 561
+>>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 9f2623957571fc09bb8756dd7acc14bc
@@ -459,9 +547,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 17.441032, y: 7.800741, z: -1.624334}
     speed: 2
     m_Value: {x: 17.441032, y: 7.800741, z: -1.624334}
+=======
+    m_Target: {x: -23.901318, y: 50.995316, z: -2.061825}
+    speed: 2
+    m_Value: {x: -23.901318, y: 50.995316, z: -2.061825}
+>>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -511,9 +605,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
     m_Target: 16.670448
     speed: 2
     m_Value: 16.670448
+=======
+    m_Target: 17.707756
+    speed: 2
+    m_Value: 17.707756
+>>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -587,9 +687,15 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 1366
+<<<<<<< HEAD
     y: 659
     width: 1530
     height: 352
+=======
+    y: 664
+    width: 1231
+    height: 347
+>>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -604,11 +710,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/Resources
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
   - Assets/Resources
+=======
+    - Assets/Resources/Scenes
+  m_ViewMode: 1
+  m_StartGridSize: 16
+  m_LastFolders:
+  - Assets/Resources/Scenes
+>>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
   m_LastFoldersGridSize: 16
   m_LastProjectPath: "/home/lizband/Documents/Neverway/Games/\u795E\u306E\u7D76\u6EC5
     Divine Annihilation/U2D-Divine Annihilation"
@@ -616,9 +730,15 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
+<<<<<<< HEAD
     m_SelectedIDs: 1c620000
     m_LastClickedID: 25116
     m_ExpandedIDs: 00000000d84900004e62000050620000526200005462000056620000586200005a6200005c6200005e62000060620000626200006462000066620000686200006a6200006c620000
+=======
+    m_SelectedIDs: 92620000
+    m_LastClickedID: 25234
+    m_ExpandedIDs: 00000000a8490000a85a0000aa5a0000ac5a0000ae5a0000b05a0000b25a0000b45a0000b65a0000b85a0000ba5a0000bc5a0000be5a0000c05a0000c25a0000c45a0000c65a0000
+>>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -646,7 +766,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000d84900004e62000050620000526200005462000056620000586200005a6200005c6200005e62000060620000626200006462000066620000686200006a6200006c620000
+=======
+    m_ExpandedIDs: 00000000a8490000a85a0000aa5a0000ac5a0000ae5a0000b05a0000b25a0000b45a0000b65a0000b85a0000ba5a0000bc5a0000be5a0000c05a0000c25a0000c45a0000c65a0000
+>>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -671,9 +795,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 64bd0800
+    m_LastClickedInstanceID: 572772
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000e25500008ef0ffff7c5b0000b85b00000000000068600000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -724,9 +848,15 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 1366
+<<<<<<< HEAD
     y: 661
     width: 1530
     height: 350
+=======
+    y: 665
+    width: 1643
+    height: 346
+>>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &18
 MonoBehaviour:
@@ -956,7 +1086,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 2179840
+  m_LastSelectedObjectID: 19926
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -978,9 +1108,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2897
+    x: 3010
     y: 83
-    width: 388
+    width: 275
     height: 928
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
