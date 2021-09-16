@@ -155,6 +155,7 @@ public class DA_Entity_Control : MonoBehaviour
     {
         if (canMove)
         {
+            saveManager.activeSave2.playerSavePosition = gameObject.transform.position;
             // Horizontal control
             if (Input.GetKey(inputManager.controls["Right"]) && movement.x < 1)
             {

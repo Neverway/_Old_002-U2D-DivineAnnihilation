@@ -100,4 +100,9 @@ public class DA_Trigger_Interact : MonoBehaviour
     {
         StartCoroutine(acceptInput());                                 // Activate the keypress delay
     }
+    public void DisableTrigger()
+    {
+        StopAllCoroutines();
+        acceptingInput = false;
+    }
 }

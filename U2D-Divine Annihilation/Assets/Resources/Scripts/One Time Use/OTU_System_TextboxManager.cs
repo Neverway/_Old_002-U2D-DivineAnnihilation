@@ -347,4 +347,16 @@ public class OTU_System_TextboxManager : MonoBehaviour
         currentTextLine = 0;                            // Reset the current line (in case the dialogue manager failes to)
         ShowDialogue();                                 // Execute the show dialogue function
     }
+
+    public void TextboxSingleText(string linetexts)
+    {
+        System.Array.Resize(ref lineText, 1);
+        System.Array.Resize(ref lineName, 1);
+        System.Array.Resize(ref linePortrait, 1);
+        lineText[0] = linetexts;
+        lineName[0] = "";
+        linePortrait[0] = noPortrait;
+        currentTextLine = 0;                            // Reset the current line (in case the dialogue manager failes to)
+        ShowDialogue();                                 // Execute the show dialogue function
+    }
 }
