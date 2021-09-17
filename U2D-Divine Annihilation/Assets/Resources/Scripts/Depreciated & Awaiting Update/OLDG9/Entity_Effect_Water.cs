@@ -15,7 +15,6 @@ public class Entity_Effect_Water : MonoBehaviour
 
     public void EnterWater()
     {
-
         foreach (var obj in entityNotWaterFX)
         {
             obj.SetActive(false);

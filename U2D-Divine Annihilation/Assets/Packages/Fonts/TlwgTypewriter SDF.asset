@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: TlwgTypewriter Atlas Material
   m_Shader: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
-  m_ShaderKeywords: GLOW_ON
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA GLOW_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -115,7 +115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hashCode: 325558638
   material: {fileID: -397097039327394297}
-  materialHashCode: 1267393631
+  materialHashCode: 435761678
   m_Version: 1.1.0
   m_SourceFontFileGUID: 86aac021c69229352a4800c42c2f36bf
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 86aac021c69229352a4800c42c2f36bf,
@@ -123,6 +123,7 @@ MonoBehaviour:
   m_SourceFontFile: {fileID: 12800000, guid: 86aac021c69229352a4800c42c2f36bf, type: 3}
   m_AtlasPopulationMode: 1
   m_FaceInfo:
+    m_FaceIndex: 0
     m_FamilyName: Tlwg Typewriter
     m_StyleName: Regular
     m_PointSize: 90
@@ -669,6 +670,8 @@ MonoBehaviour:
   m_AtlasTextures:
   - {fileID: 5548300966614744160}
   m_AtlasTextureIndex: 0
+  m_IsMultiAtlasTexturesEnabled: 0
+  m_ClearDynamicDataOnBuild: 0
   m_UsedGlyphRects:
   - m_X: 0
     m_Y: 0

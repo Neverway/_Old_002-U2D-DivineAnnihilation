@@ -8,11 +8,10 @@ TagManager:
   - SI Pickup
   - SI Hand
   - UI Choice Box
-  - FX water
-  - Day Light
-  - Night Light
   - Loading Screen
   - ABZEnemy
+  - Effect Mask
+  - Entity Shadow
   layers:
   - Default
   - TransparentFX
