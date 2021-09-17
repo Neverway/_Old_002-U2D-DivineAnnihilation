@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":-17.901729583740236,"y":42.25398254394531,"z":-4.106875896453857},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":7.910953521728516,"orthographic":true}
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":-14.4833345413208,"y":44.239402770996097,"z":-0.32425299286842348},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":2.9951038360595705,"orthographic":true}
@@ -7,3 +8,6 @@
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":4.7726969718933109,"y":6.3419575691223148,"z":-3.870997428894043},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":4.6116838455200199,"orthographic":true}
 >>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":267.9681701660156,"y":-24.094804763793947,"z":-0.8532573580741882},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":6.100628852844238,"orthographic":true}
+>>>>>>> f3d2cd2d9 (Updated C1S1, Added water effect volumes)
