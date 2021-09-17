@@ -4,7 +4,6 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - DestroyPresistentOverworldObjects
   - SI Pickup
   - SI Hand
   - UI Choice Box
@@ -12,6 +11,7 @@ TagManager:
   - ABZEnemy
   - Effect Mask
   - Entity Shadow
+  - DestroyPersistentOverworldObjects
   layers:
   - Default
   - TransparentFX

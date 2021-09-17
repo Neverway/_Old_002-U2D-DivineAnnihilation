@@ -20,8 +20,9 @@ public class DA_System_PersistentOnOverworld : MonoBehaviour
 
     void Update()
     {
-        if (GameObject.FindWithTag("DestroyPresistentOverworldObjects"))
+        if (GameObject.FindWithTag("DestroyPersistentOverworldObjects"))
         {
+            print("Duplicate persistant object has been found and removed!");
             Destroy(this);  // Destroy any duplicates of this item
         }   
     }

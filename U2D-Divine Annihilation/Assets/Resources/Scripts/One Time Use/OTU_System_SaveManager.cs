@@ -21,6 +21,7 @@ public class OTU_System_SaveManager : MonoBehaviour
     // Variables Script 
     public SaveData2 activeSave2;                     //  
     public SaveData2 throwSave2;                      // 
+    public static OTU_System_SaveManager instance;
 
     // Variables Reference 
     public string startingScene;                //
@@ -53,6 +54,16 @@ public class OTU_System_SaveManager : MonoBehaviour
 
     private void Awake()
     {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(instance);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
         loadingScreen = GameObject.FindWithTag("Loading Screen");
         if (loadFileOnCreation)
         {

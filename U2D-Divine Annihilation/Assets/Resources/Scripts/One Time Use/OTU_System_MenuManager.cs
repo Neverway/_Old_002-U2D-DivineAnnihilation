@@ -18,6 +18,7 @@ public class OTU_System_MenuManager : MonoBehaviour
     // Reference variables
     private OTU_System_TextboxManager textboxManager;
     private OTU_System_InventoryManager inventoryManager;
+    private OTU_System_PauseManager pauseManager;
     private DA_Entity_Control characterController;
     private GameObject player;
 
@@ -39,14 +40,22 @@ public class OTU_System_MenuManager : MonoBehaviour
         if (textboxManager != null && inventoryManager != null && characterController != null)
         {
             // A menu is active, so stop the player
+<<<<<<< HEAD
             if (textboxManager.textboxActive || inventoryManager.inventoryOpen)
+=======
+            if (textboxManager.textboxActive || textboxManager.choiceboxActive || inventoryManager.inventoryOpen || pauseManager.pauseMenuOpen)
+>>>>>>> 4a203f01e (Added pause menu and back to title option)
             {
                 menuActive = true;
                 characterController.canMove = false;
             }
 
             // No menus are active, allow the player to move
+<<<<<<< HEAD
             else if (!textboxManager.textboxActive && !inventoryManager.inventoryOpen)
+=======
+            else if (!textboxManager.textboxActive && !textboxManager.choiceboxActive && !inventoryManager.inventoryOpen && !pauseManager.pauseMenuOpen)
+>>>>>>> 4a203f01e (Added pause menu and back to title option)
             {
                 menuActive = false;
                 characterController.canMove = true;
@@ -58,6 +67,7 @@ public class OTU_System_MenuManager : MonoBehaviour
     {
         textboxManager = FindObjectOfType<OTU_System_TextboxManager>();
         inventoryManager = FindObjectOfType<OTU_System_InventoryManager>();
+        pauseManager = FindObjectOfType<OTU_System_PauseManager>();
         player = GameObject.FindWithTag("Player");
         if (player != null)
         {
