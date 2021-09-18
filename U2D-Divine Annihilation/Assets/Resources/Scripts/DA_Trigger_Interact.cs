@@ -56,11 +56,29 @@ public class DA_Trigger_Interact : MonoBehaviour
 
     void Update()
     {
-        if (inTrigger && Input.GetKeyDown(inputManager.controls["Interact"]) && acceptingInput == true && !initialized && !menuManager.menuActive)
+        if (inTrigger && Input.GetKeyDown(inputManager.controls["Interact"]) && acceptingInput == true && !initialized && !menuManager.menuActive && !eventTrigger)
         {
-            print("An interact trigger has been activated. If you are reading this during the test, then you have found a bug.");
             textboxManager.targetTrigger = gameObject;
             acceptingInput = false;     // Enable the keypress delay
+                                        // Check if the dialogue box is already open
+            if (!textboxManager.textboxActive)
+            {
+                textboxManager.lineText = lineText;                  // Pass the dialogue lines value to the manager (don't bother understanding this, it just works so I don't bother messing with it)
+                textboxManager.lineName = lineName;          // Pass the dialogue line names value to the manager
+                textboxManager.linePortrait = linePortrait;  // Pass the dialogue line portraits value to the manager
+                textboxManager.currentTextLine = 0;                            // Reset the current line (in case the dialogue manager failes to)
+                textboxManager.ShowDialogue();                                 // Execute the show dialogue function
+                StartCoroutine(acceptInput());                                 // Activate the keypress delay
+                textboxManager.textboxActive = true;
+                //textboxManager.targetTrigger = gameObject;
+                //textboxManager.destroyOnFinish = destroyOnFinish;
+            }
+        }
+        if (inTrigger && acceptingInput == true && !initialized && !menuManager.menuActive && eventTrigger && !eventActive)
+        {
+            textboxManager.targetTrigger = gameObject;
+            acceptingInput = false;     // Enable the keypress delay
+            eventActive = true;
                                         // Check if the dialogue box is already open
             if (!textboxManager.textboxActive)
             {
@@ -94,6 +112,7 @@ public class DA_Trigger_Interact : MonoBehaviour
             textboxManager.targetTrigger = null;
             textboxManager.currentlyOverlappedTrigger = null;
             inTrigger = false;
+            eventActive = false;
         }
     }
     public void EnableTrigger()
