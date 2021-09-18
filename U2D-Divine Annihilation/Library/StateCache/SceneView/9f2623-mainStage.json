@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":-17.901729583740236,"y":42.25398254394531,"z":-4.106875896453857},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":7.910953521728516,"orthographic":true}
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":-14.4833345413208,"y":44.239402770996097,"z":-0.32425299286842348},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":2.9951038360595705,"orthographic":true}
@@ -19,3 +20,6 @@
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":6.910914897918701,"y":-1.2703291177749634,"z":-1.3830945491790772},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":6.805601119995117,"orthographic":true}
 >>>>>>> b6ad5fb96 (Fixed an issue where data could be lost when re-loading the title scene)
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":55.031044006347659,"y":-0.1474979966878891,"z":-4.909666061401367},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":12.813386917114258,"orthographic":true}
+>>>>>>> 2d8ae88a1 (Updated C1S1, Fixed interact event triggers)
