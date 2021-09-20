@@ -98,6 +98,7 @@ public class OTU_System_SaveManager : MonoBehaviour
 
     void Update()
     {
+        loadingScreen = GameObject.FindWithTag("Loading Screen");
         if (PlayerPrefs.GetFloat("LoadPlayerPref") >= 1)
         {
             //PlayerPrefLoad();
@@ -120,8 +121,8 @@ public class OTU_System_SaveManager : MonoBehaviour
         // Player Data
         activeSave2.scene = startingScene;
         activeSave2.playerName = PlayerPrefs.GetString("PlayerName");
-        //activeSave2.playerSavePosition = new Vector2(-17.75f, 44);
-        activeSave2.playerSavePosition = new Vector2(0f, 0f);
+        activeSave2.playerSavePosition = new Vector2(-17.75f, 44);
+        //activeSave2.playerSavePosition = new Vector2(0f, 0f);
         activeSave2.playerHealth = 100;
         activeSave2.playerLevel = 000;
 
