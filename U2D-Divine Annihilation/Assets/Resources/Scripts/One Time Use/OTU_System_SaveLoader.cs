@@ -21,6 +21,7 @@ public class OTU_System_SaveLoader : MonoBehaviour
 
     // Reference variables
     private OTU_System_SaveManager saveManager;
+    private OTU_System_InventoryManager inventoryManager;
 
 
 
@@ -34,12 +35,36 @@ public class OTU_System_SaveLoader : MonoBehaviour
     void Start()
     {
         saveManager = FindObjectOfType<OTU_System_SaveManager>();
+        inventoryManager = FindObjectOfType<OTU_System_InventoryManager>();
         if (!hasLoadedCurrentLevel)
         {
             // Load the players position
             GameObject.FindWithTag("Player").transform.position = saveManager.activeSave2.playerSavePosition;
 
             // Load the players currently equipped items
+            if (saveManager.activeSave2.equippedU == 1) { inventoryManager.SystemEquipItem(0, 1, true); }
+            if (saveManager.activeSave2.equippedU == 2) { inventoryManager.SystemEquipItem(0, 2, true); }
+            if (saveManager.activeSave2.equippedU == 3) { inventoryManager.SystemEquipItem(0, 3, true); }
+            if (saveManager.activeSave2.equippedU == 4) { inventoryManager.SystemEquipItem(0, 4, true); }
+            if (saveManager.activeSave2.equippedU == 5) { inventoryManager.SystemEquipItem(0, 5, true); }
+
+            if (saveManager.activeSave2.equippedW == 1) { inventoryManager.SystemEquipItem(1, 1, true); }
+            if (saveManager.activeSave2.equippedW == 2) { inventoryManager.SystemEquipItem(1, 2, true); }
+            if (saveManager.activeSave2.equippedW == 3) { inventoryManager.SystemEquipItem(1, 3, true); }
+            if (saveManager.activeSave2.equippedW == 4) { inventoryManager.SystemEquipItem(1, 4, true); }
+            if (saveManager.activeSave2.equippedW == 5) { inventoryManager.SystemEquipItem(1, 5, true); }
+
+            if (saveManager.activeSave2.equippedM == 1) { inventoryManager.SystemEquipItem(2, 1, true); }
+            if (saveManager.activeSave2.equippedM == 2) { inventoryManager.SystemEquipItem(2, 2, true); }
+            if (saveManager.activeSave2.equippedM == 3) { inventoryManager.SystemEquipItem(2, 3, true); }
+            if (saveManager.activeSave2.equippedM == 4) { inventoryManager.SystemEquipItem(2, 4, true); }
+            if (saveManager.activeSave2.equippedM == 5) { inventoryManager.SystemEquipItem(2, 5, true); }
+
+            if (saveManager.activeSave2.equippedD == 1) { inventoryManager.SystemEquipItem(2, 1, true); }
+            if (saveManager.activeSave2.equippedD == 2) { inventoryManager.SystemEquipItem(2, 2, true); }
+            if (saveManager.activeSave2.equippedD == 3) { inventoryManager.SystemEquipItem(2, 3, true); }
+            if (saveManager.activeSave2.equippedD == 4) { inventoryManager.SystemEquipItem(2, 4, true); }
+            if (saveManager.activeSave2.equippedD == 5) { inventoryManager.SystemEquipItem(2, 5, true); }
 
             // Load the level progression data
 

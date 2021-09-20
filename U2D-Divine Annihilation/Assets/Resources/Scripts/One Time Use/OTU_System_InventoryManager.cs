@@ -352,29 +352,48 @@ public class OTU_System_InventoryManager : MonoBehaviour
     {
         if (saveManager.activeSave2.equipmentCategories[equipmentMenuController.currentSelection] == "Utility")
         {
-            saveManager.activeSave2.equippedU = equipmentMenuController.currentSelection;
+            saveManager.activeSave2.equippedU = equipmentMenuController.currentSelection + 1;
             GetEquipIconPositions(out iconX, out iconY);
             equipIcons[0].transform.localPosition = new Vector3(iconX, iconY, 0);
         }
         if (saveManager.activeSave2.equipmentCategories[equipmentMenuController.currentSelection] == "Weapon")
         {
-            saveManager.activeSave2.equippedW = equipmentMenuController.currentSelection;
+            saveManager.activeSave2.equippedW = equipmentMenuController.currentSelection + 1;
             GetEquipIconPositions(out iconX, out iconY);
             equipIcons[1].transform.localPosition = new Vector3(iconX, iconY, 0);
         }
         if (saveManager.activeSave2.equipmentCategories[equipmentMenuController.currentSelection] == "Magic")
         {
-            saveManager.activeSave2.equippedM = equipmentMenuController.currentSelection;
+            saveManager.activeSave2.equippedM = equipmentMenuController.currentSelection + 1;
             GetEquipIconPositions(out iconX, out iconY);
             equipIcons[2].transform.localPosition = new Vector3(iconX, iconY, 0);
         }
         if (saveManager.activeSave2.equipmentCategories[equipmentMenuController.currentSelection] == "Defense")
         {
-            saveManager.activeSave2.equippedD = equipmentMenuController.currentSelection;
+            saveManager.activeSave2.equippedD = equipmentMenuController.currentSelection + 1;
             GetEquipIconPositions(out iconX, out iconY);
             equipIcons[3].transform.localPosition = new Vector3(iconX, iconY, 0);
         }
         CloseInventoryInspect();
+    }
+
+    public void SystemEquipItem(int UWMD, int slot, bool equipment)
+    {
+        if (equipment)
+        {
+            iconX = 167.25f;
+        }
+        else
+        {
+            iconX = 43;
+        }
+        if (slot == 1) { iconY = -6.5f; }
+        if (slot == 2) { iconY = -34.5f; }
+        if (slot == 3) { iconY = -62.5f; }
+        if (slot == 4) { iconY = -90.5f; }
+        if (slot == 5) { iconY = -118.5f; }
+
+        equipIcons[UWMD].transform.localPosition = new Vector3(iconX, iconY, 0);
     }
 
     void GetEquipIconPositions(out float iconXF, out float iconYF)

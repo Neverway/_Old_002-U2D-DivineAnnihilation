@@ -141,6 +141,11 @@ public class OTU_System_SaveManager : MonoBehaviour
             activeSave2.equipmentDiscardable[i] = "false";
         }
 
+        activeSave2.equippedU = 0;
+        activeSave2.equippedW = 0;
+        activeSave2.equippedM = 0;
+        activeSave2.equippedD = 0;
+
         //// Party Data
         for (int i = 0; i < activeSave2.partyMembers.Length; i++)
         {

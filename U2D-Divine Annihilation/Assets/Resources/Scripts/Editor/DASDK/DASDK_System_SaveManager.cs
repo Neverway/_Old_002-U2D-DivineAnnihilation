@@ -22,9 +22,20 @@ public class DASDK_System_SaveManager : Editor
 
     // Variables Inventory
     SerializedProperty items;
-    SerializedProperty equipment;
     SerializedProperty itemIcons;
+    SerializedProperty itemCategories;
+    SerializedProperty itemDescriptions;
+    SerializedProperty itemDiscardable;
+    SerializedProperty equipment;
     SerializedProperty equipmentIcons;
+    SerializedProperty equipmentCategories;
+    SerializedProperty equipmentDescriptions;
+    SerializedProperty equipmentDiscardable;
+
+    SerializedProperty equippedU;
+    SerializedProperty equippedW;
+    SerializedProperty equippedM;
+    SerializedProperty equippedD;
 
     // Variables Party
     SerializedProperty partyMembers;
@@ -43,9 +54,20 @@ public class DASDK_System_SaveManager : Editor
     {
         // Find Inventory variables
         items = serializedObject.FindProperty("activeSave2.items");
-        equipment = serializedObject.FindProperty("activeSave2.equipment");
         itemIcons = serializedObject.FindProperty("activeSave2.itemIcons");
+        itemCategories = serializedObject.FindProperty("activeSave2.itemCategories");
+        itemDescriptions = serializedObject.FindProperty("activeSave2.itemDescriptions");
+        itemDiscardable = serializedObject.FindProperty("activeSave2.itemDiscardable");
+        equipment = serializedObject.FindProperty("activeSave2.equipment");
         equipmentIcons = serializedObject.FindProperty("activeSave2.equipmentIcons");
+        equipmentCategories = serializedObject.FindProperty("activeSave2.equipmentCategories");
+        equipmentDescriptions = serializedObject.FindProperty("activeSave2.equipmentDescriptions");
+        equipmentDiscardable = serializedObject.FindProperty("activeSave2.equipmentDiscardable");
+
+        equippedU = serializedObject.FindProperty("activeSave2.equippedU");
+        equippedW = serializedObject.FindProperty("activeSave2.equippedW");
+        equippedM = serializedObject.FindProperty("activeSave2.equippedM");
+        equippedD = serializedObject.FindProperty("activeSave2.equippedD");
 
         // Find Party variables
         partyMembers = serializedObject.FindProperty("activeSave2.partyMembers");
@@ -90,9 +112,21 @@ public class DASDK_System_SaveManager : Editor
             // Draw and updated serialized variables
             serializedObject.Update();
             EditorGUILayout.PropertyField(items);
-            EditorGUILayout.PropertyField(equipment);
             EditorGUILayout.PropertyField(itemIcons);
+            EditorGUILayout.PropertyField(itemCategories);
+            EditorGUILayout.PropertyField(itemDiscardable);
+            EditorGUILayout.PropertyField(itemDescriptions);
+            EditorGUILayout.PropertyField(equipment);
             EditorGUILayout.PropertyField(equipmentIcons);
+            EditorGUILayout.PropertyField(equipmentCategories);
+            EditorGUILayout.PropertyField(equipmentDiscardable);
+            EditorGUILayout.PropertyField(equipmentDescriptions);
+
+            EditorGUILayout.Space();
+            EditorGUILayout.PropertyField(equippedU);
+            EditorGUILayout.PropertyField(equippedW);
+            EditorGUILayout.PropertyField(equippedM);
+            EditorGUILayout.PropertyField(equippedD);
             serializedObject.ApplyModifiedProperties();
         }
 
