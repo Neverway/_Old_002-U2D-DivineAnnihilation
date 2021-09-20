@@ -58,6 +58,7 @@ public class DA_Entity_Control : MonoBehaviour
     private OTU_System_InputManager inputManager;
     private OTU_System_InventoryManager inventoryManager;
     private OTU_System_SaveManager saveManager;
+    private OTU_System_SaveLoader saveLoader;
 
 
     void Start()
@@ -69,6 +70,7 @@ public class DA_Entity_Control : MonoBehaviour
         inputManager = FindObjectOfType<OTU_System_InputManager>();
         inventoryManager = FindObjectOfType<OTU_System_InventoryManager>();
         saveManager = FindObjectOfType<OTU_System_SaveManager>();
+        saveLoader = FindObjectOfType<OTU_System_SaveLoader>();
         currentSpeed = walkSpeed;
 
         // Spawn a failsafe config object if the proper one cannot be found (by default it will save to a failsafe save file labeled as SlotZero)
@@ -155,7 +157,10 @@ public class DA_Entity_Control : MonoBehaviour
     {
         if (canMove)
         {
-            saveManager.activeSave2.playerSavePosition = gameObject.transform.position;
+            if (saveLoader.hasLoadedCurrentLevel)
+            {
+                saveManager.activeSave2.playerSavePosition = gameObject.transform.position;
+            }
             // Horizontal control
             if (Input.GetKey(inputManager.controls["Right"]) && movement.x < 1)
             {

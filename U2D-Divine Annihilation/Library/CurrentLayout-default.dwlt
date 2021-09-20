@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 1366
+    x: 0
     y: 28
-    width: 1920
-    height: 999
+    width: 1366
+    height: 687
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 392}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 0
 --- !u!114 &2
@@ -44,9 +44,9 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
-    height: 999
-  m_MinSize: {x: 875, y: 542}
+    width: 1366
+    height: 687
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -65,7 +65,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
+    width: 1366
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -86,8 +86,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 979
-    width: 1920
+    y: 667
+    width: 1366
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -110,6 +110,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< HEAD
     width: 1920
     height: 949
 <<<<<<< HEAD
@@ -128,6 +129,14 @@ MonoBehaviour:
   vertical: 0
   controlID: 104
 >>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
+=======
+    width: 1366
+    height: 637
+  m_MinSize: {x: 679, y: 342}
+  m_MaxSize: {x: 12004, y: 8042}
+  vertical: 0
+  controlID: 21
+>>>>>>> 09a7c315c (Fixed file not loading players saved position)
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,6 +156,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1526
     height: 949
 <<<<<<< HEAD
@@ -165,6 +175,14 @@ MonoBehaviour:
   vertical: 1
   controlID: 105
 >>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
+=======
+    width: 1044
+    height: 637
+  m_MinSize: {x: 403, y: 342}
+  m_MaxSize: {x: 8003, y: 8042}
+  vertical: 1
+  controlID: 22
+>>>>>>> 09a7c315c (Fixed file not loading players saved position)
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -186,6 +204,7 @@ MonoBehaviour:
     y: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1531
     height: 578
   m_MinSize: {x: 402, y: 221}
@@ -204,6 +223,14 @@ MonoBehaviour:
   vertical: 0
   controlID: 106
 >>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
+=======
+    width: 1044
+    height: 397
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
+  vertical: 0
+  controlID: 23
+>>>>>>> 09a7c315c (Fixed file not loading players saved position)
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -223,6 +250,7 @@ MonoBehaviour:
     y: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 304
     height: 578
 =======
@@ -235,6 +263,12 @@ MonoBehaviour:
 >>>>>>> b6ad5fb96 (Fixed an issue where data could be lost when re-loading the title scene)
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
+=======
+    width: 207
+    height: 397
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> 09a7c315c (Fixed file not loading players saved position)
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -255,8 +289,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 236
+    x: 207
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     width: 1227
@@ -269,6 +304,10 @@ MonoBehaviour:
     width: 1290
     height: 662
 >>>>>>> b6ad5fb96 (Fixed an issue where data could be lost when re-loading the title scene)
+=======
+    width: 837
+    height: 397
+>>>>>>> 09a7c315c (Fixed file not loading players saved position)
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
@@ -288,12 +327,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     y: 578
@@ -315,13 +355,21 @@ MonoBehaviour:
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 16}
 >>>>>>> b6ad5fb96 (Fixed an issue where data could be lost when re-loading the title scene)
+=======
+    y: 397
+    width: 1044
+    height: 240
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 17}
+>>>>>>> 09a7c315c (Fixed file not loading players saved position)
   m_Panes:
   - {fileID: 16}
   - {fileID: 17}
   - {fileID: 18}
   - {fileID: 19}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -337,12 +385,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1526
+    x: 1044
     y: 0
-    width: 394
-    height: 949
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+    width: 322
+    height: 637
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -372,6 +420,7 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1670
     y: 83
     width: 1225
@@ -388,6 +437,12 @@ MonoBehaviour:
     width: 1021
     height: 556
 >>>>>>> b6ad5fb96 (Fixed an issue where data could be lost when re-loading the title scene)
+=======
+    x: 1594
+    y: 83
+    width: 1414
+    height: 807
+>>>>>>> 09a7c315c (Fixed file not loading players saved position)
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -399,6 +454,7 @@ MonoBehaviour:
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_TargetSize: {x: 949, y: 534}
 =======
   m_TargetSize: {x: 958, y: 539}
@@ -406,6 +462,9 @@ MonoBehaviour:
 =======
   m_TargetSize: {x: 951, y: 535}
 >>>>>>> b6ad5fb96 (Fixed an issue where data could be lost when re-loading the title scene)
+=======
+  m_TargetSize: {x: 1397, y: 786}
+>>>>>>> 09a7c315c (Fixed file not loading players saved position)
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -420,6 +479,7 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     m_HBaseRangeMin: -493.5
@@ -438,6 +498,12 @@ MonoBehaviour:
     m_VBaseRangeMin: -267.5
     m_VBaseRangeMax: 267.5
 >>>>>>> b6ad5fb96 (Fixed an issue where data could be lost when re-loading the title scene)
+=======
+    m_HBaseRangeMin: -698.5
+    m_HBaseRangeMax: 698.5
+    m_VBaseRangeMin: -393
+    m_VBaseRangeMax: 393
+>>>>>>> 09a7c315c (Fixed file not loading players saved position)
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -469,17 +535,22 @@ MonoBehaviour:
 >>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
 =======
       y: 21
-      width: 1021
-      height: 535
+      width: 1414
+      height: 786
     m_Scale: {x: 1, y: 1}
+<<<<<<< HEAD
     m_Translation: {x: 510.5, y: 267.5}
 >>>>>>> b6ad5fb96 (Fixed an issue where data could be lost when re-loading the title scene)
+=======
+    m_Translation: {x: 707, y: 393}
+>>>>>>> 09a7c315c (Fixed file not loading players saved position)
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       x: -612.5
@@ -507,6 +578,15 @@ MonoBehaviour:
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1021, y: 556}
 >>>>>>> b6ad5fb96 (Fixed an issue where data could be lost when re-loading the title scene)
+=======
+      x: -707
+      y: -393
+      width: 1414
+      height: 786
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 1414, y: 807}
+>>>>>>> 09a7c315c (Fixed file not loading players saved position)
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -533,8 +613,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1366
+    x: 0
     y: 83
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     width: 303
@@ -547,12 +628,17 @@ MonoBehaviour:
     width: 235
     height: 641
 >>>>>>> b6ad5fb96 (Fixed an issue where data could be lost when re-loading the title scene)
+=======
+    width: 206
+    height: 376
+>>>>>>> 09a7c315c (Fixed file not loading players saved position)
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: c65a0000
+      m_SelectedIDs: 54620200
       m_LastClickedID: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       m_ExpandedIDs: 3cfaffff
@@ -562,6 +648,9 @@ MonoBehaviour:
 =======
       m_ExpandedIDs: 5491fdffa09efdff20cdfdffdccdfdff60cefdfff4cefdff48d9fdff4ed9fdff8edafdfff4e4fdff0a51feffe057feff3858feff9c71feff06e4feffc8e8feffcee8feffba03ffffbe16ffff8c27fffff232ffffce3cffffbe5effff0866ffff0872ffff6a7dffffd699ffffac9fffffa0a6ffff96b5ffff12bbffff68c0ffff12c5ffff68cdffff5ce7ffff08ebffff2eeeffffdaf7ffff2afbfffff4ffffff6caf010094b20100bab401007eba0100a6bd0100ccbf01003cf301005ef301000cf5010098f60100c0f701008af8010088f901000cfb010060fb01009cfe010074ff01009eff0100b4ff01001c00020044000200360102008e020200ec020200f402020014030200ba030200ea410400e242040046450400ea470400ba4904000e4a0400224e04007c37050074380500d83a05008a3e05004c3f0500a03f0500b443050064c305005cc4050088cb05009ccf050080ae070078af0700dcb1070080b4070050b60700a4b60700b8ba0700362a08002e2b08005a3208006e360800fea40800f6a5080022ad080036b108001ee60a0016e70a007ae90a00f8ed0a004cee0a0060f20a00fcec0b00f4ed0b0058f00b00d6f40b002af50b003ef90b000a050d0002060d00380d0d004c110d0050130d003ea20d0036a30d006caa0d0080ae0d00bea8100032ad100012ac11000aad11006eaf1100e2b3110036b411004ab811007a90120072911200d69312007a9612004a9812009e981200b29c120052a813004aa9130076b013008ab41300ccd91600a4da1600ceda1600e4da1600ee291a00482e1a00d8311a00b0321a00da321a00f0321a00c2351a0040af1c00a2b31c0004e71d00e8e81d0036ee1d0028fe1d005efe1d00c0021e005ae32100bce721002cec21006cec2100
 >>>>>>> b6ad5fb96 (Fixed an issue where data could be lost when re-loading the title scene)
+=======
+      m_ExpandedIDs: 88e7ffff92f8ffff16f9ffffaaf9ffff2afbfffff4ffffff2e5d02005460020080620200
+>>>>>>> 09a7c315c (Fixed file not loading players saved position)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -606,8 +695,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1602
+    x: 207
     y: 83
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     width: 1225
@@ -620,6 +710,10 @@ MonoBehaviour:
     width: 1288
     height: 641
 >>>>>>> b6ad5fb96 (Fixed an issue where data could be lost when re-loading the title scene)
+=======
+    width: 835
+    height: 376
+>>>>>>> 09a7c315c (Fixed file not loading players saved position)
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 9f2623957571fc09bb8756dd7acc14bc
@@ -631,6 +725,7 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     m_Target: {x: 17.441032, y: 7.800741, z: -1.624334}
@@ -646,6 +741,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 294.33496, y: -29.839281, z: 0.00538937}
 >>>>>>> b6ad5fb96 (Fixed an issue where data could be lost when re-loading the title scene)
+=======
+    m_Target: {x: 27.462837, y: -10.29622, z: -9.158745}
+    speed: 2
+    m_Value: {x: 27.385118, y: -10.215175, z: -9.016006}
+>>>>>>> 09a7c315c (Fixed file not loading players saved position)
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -697,6 +797,7 @@ MonoBehaviour:
   m_Size:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: 16.670448
     speed: 2
     m_Value: 16.670448
@@ -710,6 +811,11 @@ MonoBehaviour:
     speed: 2
     m_Value: 12.53563
 >>>>>>> b6ad5fb96 (Fixed an issue where data could be lost when re-loading the title scene)
+=======
+    m_Target: 33.177593
+    speed: 2
+    m_Value: 31.748894
+>>>>>>> 09a7c315c (Fixed file not loading players saved position)
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -785,6 +891,7 @@ MonoBehaviour:
     x: 1366
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 659
     width: 1530
     height: 352
@@ -798,6 +905,11 @@ MonoBehaviour:
     width: 1525
     height: 266
 >>>>>>> b6ad5fb96 (Fixed an issue where data could be lost when re-loading the title scene)
+=======
+    y: 747
+    width: 1452
+    height: 264
+>>>>>>> 09a7c315c (Fixed file not loading players saved position)
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -812,6 +924,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     - Assets/Resources
@@ -833,12 +946,20 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Resources/Prefabs
 >>>>>>> b6ad5fb96 (Fixed an issue where data could be lost when re-loading the title scene)
+=======
+    - Assets/Resources/Scenes
+  m_ViewMode: 1
+  m_StartGridSize: 16
+  m_LastFolders:
+  - Assets/Resources/Scenes
+>>>>>>> 09a7c315c (Fixed file not loading players saved position)
   m_LastFoldersGridSize: 16
   m_LastProjectPath: "/home/lizband/Documents/Neverway/Games/\u795E\u306E\u7D76\u6EC5
     Divine Annihilation/U2D-Divine Annihilation"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
 <<<<<<< HEAD
     scrollPos: {x: 0, y: 79}
 <<<<<<< HEAD
@@ -856,6 +977,12 @@ MonoBehaviour:
     m_LastClickedID: 23238
     m_ExpandedIDs: 00000000a8490000a85a0000aa5a0000ac5a0000ae5a0000b05a0000b25a0000b45a0000b65a0000b85a0000ba5a0000bc5a0000be5a0000c05a0000c25a0000c45a0000c65a0000005b000000ca9a3b
 >>>>>>> b6ad5fb96 (Fixed an issue where data could be lost when re-loading the title scene)
+=======
+    scrollPos: {x: 0, y: 303}
+    m_SelectedIDs: 64560000
+    m_LastClickedID: 22116
+    m_ExpandedIDs: 00000000b0490000225600002456000026560000285600002a5600002c5600002e56000030560000325600003456000036560000385600003a5600003c5600003e5600004056000000ca9a3b
+>>>>>>> 09a7c315c (Fixed file not loading players saved position)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -884,10 +1011,14 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000d84900004e62000050620000526200005462000056620000586200005a6200005c6200005e62000060620000626200006462000066620000686200006a6200006c620000
 =======
     m_ExpandedIDs: 00000000a8490000a85a0000aa5a0000ac5a0000ae5a0000b05a0000b25a0000b45a0000b65a0000b85a0000ba5a0000bc5a0000be5a0000c05a0000c25a0000c45a0000c65a0000
 >>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
+=======
+    m_ExpandedIDs: 00000000b0490000225600002456000026560000285600002a5600002c5600002e56000030560000325600003456000036560000385600003a5600003c5600003e56000040560000
+>>>>>>> 09a7c315c (Fixed file not loading players saved position)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -918,15 +1049,15 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: c6230000e25500008ef0ffff7c5b0000b85b00000000000068600000145c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: OTU_System_SaveManager
-      m_OriginalName: OTU_System_SaveManager
+      m_Name: Scenes
+      m_OriginalName: Scenes
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 16560
+      m_UserData: 22116
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -964,6 +1095,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1366
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -980,6 +1112,12 @@ MonoBehaviour:
     width: 1525
     height: 266
 >>>>>>> b6ad5fb96 (Fixed an issue where data could be lost when re-loading the title scene)
+=======
+    x: 0
+    y: 480
+    width: 1043
+    height: 219
+>>>>>>> 09a7c315c (Fixed file not loading players saved position)
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &18
 MonoBehaviour:
@@ -1209,7 +1347,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 2173322
+  m_LastSelectedObjectID: 156244
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1231,10 +1369,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2892
+    x: 1044
     y: 83
-    width: 393
-    height: 928
+    width: 321
+    height: 616
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
   m_ObjectsLockedBeforeSerialization: []

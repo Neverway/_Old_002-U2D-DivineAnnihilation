@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿{"m_ExpandedPrefabGameObjectFileIDs":[],"m_ExpandedSceneGameObjectInstanceIDs":[-11004,-10998,-2750,20252,20286,20500,20606,21112,21772,22042,22236,22320,23122,23150,23346],"m_ScrollY":420.0,"m_LastClickedFileID":0,"m_LastClickedInstanceID":0}
 =======
 ﻿{"m_ExpandedPrefabGameObjectFileIDs":[],"m_ExpandedSceneGameObjectInstanceIDs":[-1230,20034,20380,20862,21116,21198,21310,21460,21504,22080,22222,22494,22850],"m_ScrollY":56.0,"m_LastClickedFileID":0,"m_LastClickedInstanceID":0}
@@ -23,3 +24,6 @@
 =======
 ﻿{"m_ExpandedPrefabGameObjectFileIDs":[],"m_ExpandedSceneGameObjectInstanceIDs":[-15524,-10054,-7840,-6696,-6270,-5124,-1238,-12,19566,20178,22740,60498,60636,61442,61668,61992,75186,101338,102144,102694,103006,104044,104182,104430,104988,105538,127600],"m_ScrollY":0.0,"m_LastClickedFileID":0,"m_LastClickedInstanceID":128914}
 >>>>>>> 2d8ae88a1 (Updated C1S1, Fixed interact event triggers)
+=======
+﻿{"m_ExpandedPrefabGameObjectFileIDs":[],"m_ExpandedSceneGameObjectInstanceIDs":[-5978,-4202,-3010,-2672,-2538,-1238,-12,34664,42808,75614,75678],"m_ScrollY":0.0,"m_LastClickedFileID":0,"m_LastClickedInstanceID":0}
+>>>>>>> 09a7c315c (Fixed file not loading players saved position)
