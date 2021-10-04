@@ -40,7 +40,7 @@ public class OTU_System_TextboxManager : MonoBehaviour
     public int currentTextLine;
     public int currentPortraitLine;
     public bool textboxActive;
-    public bool choiceboxActive;
+    public bool otherboxActive;
     public bool isMonologue;
     public bool eventTrigger;
     public float textScrollSpeed;
@@ -54,12 +54,15 @@ public class OTU_System_TextboxManager : MonoBehaviour
 
     // Reference variables
     public Sprite noPortrait;
+
     public Text dialogueText;
     public Text monologueText;
     public Text dialogueName;
     public Image characterPortrait;
+
     public GameObject targetTrigger;
     public GameObject currentlyOverlappedTrigger;
+
     public OTU_System_InputManager inputManager;
     public OTU_System_InventoryManager inventoryManager;
 
@@ -264,7 +267,6 @@ public class OTU_System_TextboxManager : MonoBehaviour
         // End the dialogue when there are no more lines of text
         if (currentTextLine >= lineText.Length && Input.GetKeyDown(inputManager.controls["Interact"]) && lineText.Length != 0)
         {
-            print("Finish");
             gameObject.transform.GetChild(0).gameObject.SetActive(false);                              // Make the dialogue box heirarchy disappear
             textboxActive = false;                                       // Set the active state to false
             StopAllCoroutines();
@@ -302,28 +304,68 @@ public class OTU_System_TextboxManager : MonoBehaviour
         }
     }
 
+    public void ForceCloseTextbox()
+    {
+        gameObject.transform.GetChild(0).gameObject.SetActive(false);                              // Make the dialogue box heirarchy disappear
+        textboxActive = false;                                       // Set the active state to false
+        StopAllCoroutines();
+        StopCoroutine("acceptInput");
+        StopCoroutine("ShowText");
+
+        // Reset stored values
+        currentTextLine = 0;                                                 // Reset the current line count to zero
+        currentPortraitLine = 0;                                                 // Reset the current line count to zero
+        dialogueText.text = "";
+        monologueText.text = "";
+        dialogueName.text = "";
+        characterPortrait.sprite = null;
+        System.Array.Resize(ref lineText, 0);
+        System.Array.Resize(ref lineName, 0);
+        System.Array.Resize(ref linePortrait, 0);
+
+        textboxInitialized = false;
+        acceptingInput = false;                                          // Set the accepting input value to false
+
+        if (targetTrigger != null)
+        {
+            targetTrigger.GetComponent<DA_Trigger_Interact>().acceptingInput = false;
+            targetTrigger.GetComponent<DA_Trigger_Interact>().OnFinish.Invoke();
+        }
+        if (specialUseCase == "Inventory Inspect")
+        {
+            inventoryManager.acceptingInput = true;
+            inventoryManager.inspectionMenu.GetComponent<DA_Menu_Control>().enabled = true;
+            inventoryManager.CloseInventoryInspect();
+            specialUseCase = "";
+            Debug.Log("Re-enable inventory controls");
+        }
+    }
+
     public void ShowDialogue()
     {
         textCurrent = "";
         textboxActive = true;          // Set the active state to true
-        gameObject.transform.GetChild(0).gameObject.SetActive(true); // Make the dialogue box heirarchy disappear
+        gameObject.transform.GetChild(0).gameObject.SetActive(true); // Make the dialogue box heirarchy appear
     }
 
 
+    // Choice box stuff
     public void ShowChoicebox(string choiceText)
     {
         gameObject.transform.GetChild(1).gameObject.SetActive(true);
         gameObject.transform.GetChild(1).gameObject.transform.GetChild(0).GetComponent<Text>().text = choiceText;
-        choiceboxActive = true;
+        otherboxActive = true;
     }
 
     public void CloseChoicebox()
     {
         gameObject.transform.GetChild(1).gameObject.SetActive(false);
         gameObject.transform.GetChild(1).gameObject.transform.GetChild(0).GetComponent<Text>().text = "";
-        choiceboxActive = false;
+        otherboxActive = false;
     }
 
+
+    // External textbox access
     public void Textbox(string[] linetexts, string[] linenames, Sprite[] lineportraits)
     {
         System.Array.Resize(ref lineText, linetexts.Length);

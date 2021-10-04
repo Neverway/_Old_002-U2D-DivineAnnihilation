@@ -42,8 +42,6 @@ public class DA_Trigger_Interact : MonoBehaviour
         inputManager = FindObjectOfType<OTU_System_InputManager>();
         textboxManager = FindObjectOfType<OTU_System_TextboxManager>();
         menuManager = FindObjectOfType<OTU_System_MenuManager>();
-        //testing = lineText;
-        Debug.Log("The start function of the interact triggers has been called!");
     }
 
 
