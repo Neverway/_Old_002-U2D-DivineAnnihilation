@@ -17,6 +17,7 @@ public class OTU_System_MenuManager : MonoBehaviour
 
     // Reference variables
     private OTU_System_TextboxManager textboxManager;
+    private OTU_Overworld_ShopboxManager shopboxManager;
     private OTU_System_InventoryManager inventoryManager;
     private OTU_System_PauseManager pauseManager;
     private DA_Entity_Control characterController;
@@ -37,14 +38,18 @@ public class OTU_System_MenuManager : MonoBehaviour
 
     public void CheckForActiveMenus()
     {
-        if (textboxManager != null && inventoryManager != null && characterController != null)
+        if (textboxManager != null && shopboxManager != null && inventoryManager != null && characterController != null)
         {
             // A menu is active, so stop the player
+<<<<<<< HEAD
 <<<<<<< HEAD
             if (textboxManager.textboxActive || inventoryManager.inventoryOpen)
 =======
             if (textboxManager.textboxActive || textboxManager.choiceboxActive || inventoryManager.inventoryOpen || pauseManager.pauseMenuOpen)
 >>>>>>> 4a203f01e (Added pause menu and back to title option)
+=======
+            if (textboxManager.textboxActive || shopboxManager.shopboxActive || textboxManager.otherboxActive || inventoryManager.inventoryOpen || pauseManager.pauseMenuOpen)
+>>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
             {
                 menuActive = true;
                 characterController.canMove = false;
@@ -52,10 +57,14 @@ public class OTU_System_MenuManager : MonoBehaviour
 
             // No menus are active, allow the player to move
 <<<<<<< HEAD
+<<<<<<< HEAD
             else if (!textboxManager.textboxActive && !inventoryManager.inventoryOpen)
 =======
             else if (!textboxManager.textboxActive && !textboxManager.choiceboxActive && !inventoryManager.inventoryOpen && !pauseManager.pauseMenuOpen)
 >>>>>>> 4a203f01e (Added pause menu and back to title option)
+=======
+            else if (!textboxManager.textboxActive && !shopboxManager.shopboxActive && !textboxManager.otherboxActive && !inventoryManager.inventoryOpen && !pauseManager.pauseMenuOpen)
+>>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
             {
                 menuActive = false;
                 characterController.canMove = true;
@@ -66,6 +75,7 @@ public class OTU_System_MenuManager : MonoBehaviour
     void FindReferenceObjects()
     {
         textboxManager = FindObjectOfType<OTU_System_TextboxManager>();
+        shopboxManager = FindObjectOfType<OTU_Overworld_ShopboxManager>();
         inventoryManager = FindObjectOfType<OTU_System_InventoryManager>();
         pauseManager = FindObjectOfType<OTU_System_PauseManager>();
         player = GameObject.FindWithTag("Player");

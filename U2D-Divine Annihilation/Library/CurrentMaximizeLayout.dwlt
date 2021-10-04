@@ -22,6 +22,7 @@ MonoBehaviour:
     width: 1920
     height: 949
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_MinSize: {x: 678, y: 321}
   m_MaxSize: {x: 12003, y: 8021}
   vertical: 0
@@ -36,6 +37,12 @@ MonoBehaviour:
 =======
   controlID: 3467
 >>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
+=======
+  m_MinSize: {x: 678, y: 492}
+  m_MaxSize: {x: 14001, y: 14042}
+  vertical: 0
+  controlID: 120
+>>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -57,6 +64,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 305
     y: 19
     width: 1225
@@ -65,6 +73,12 @@ MonoBehaviour:
 =======
     height: 557
 >>>>>>> ae294533a (Added item equip functionality)
+=======
+    x: 1690
+    y: 83
+    width: 1161
+    height: 635
+>>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -74,7 +88,11 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+<<<<<<< HEAD
   m_TargetSize: {x: 955, y: 537}
+=======
+  m_TargetSize: {x: 1092, y: 614}
+>>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -89,10 +107,17 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
     m_HBaseRangeMin: -477.5
     m_HBaseRangeMax: 477.5
     m_VBaseRangeMin: -268.5
     m_VBaseRangeMax: 268.5
+=======
+    m_HBaseRangeMin: -546
+    m_HBaseRangeMax: 546
+    m_VBaseRangeMin: -307
+    m_VBaseRangeMax: 307
+>>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -110,6 +135,7 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
+<<<<<<< HEAD
       width: 1225
 <<<<<<< HEAD
       height: 537
@@ -120,12 +146,19 @@ MonoBehaviour:
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 612.5, y: 268}
 >>>>>>> ae294533a (Added item equip functionality)
+=======
+      width: 1161
+      height: 614
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 580.5, y: 307}
+>>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
       x: -612.5
 <<<<<<< HEAD
       y: -268.5
@@ -142,6 +175,15 @@ MonoBehaviour:
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1225, y: 557}
 >>>>>>> ae294533a (Added item equip functionality)
+=======
+      x: -580.5
+      y: -307
+      width: 1161
+      height: 614
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 1161, y: 635}
+>>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -166,8 +208,9 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1531
+    width: 1493
     height: 949
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_MinSize: {x: 402, y: 321}
   m_MaxSize: {x: 8002, y: 8021}
@@ -183,6 +226,12 @@ MonoBehaviour:
 =======
   controlID: 3468
 >>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
+=======
+  m_MinSize: {x: 403, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
+  vertical: 1
+  controlID: 121
+>>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -202,6 +251,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1531
 <<<<<<< HEAD
     height: 579
@@ -220,6 +270,14 @@ MonoBehaviour:
 =======
   controlID: 3469
 >>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
+=======
+    width: 1493
+    height: 656
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
+  vertical: 0
+  controlID: 122
+>>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -237,6 +295,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 304
 <<<<<<< HEAD
     height: 579
@@ -244,6 +303,10 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
 =======
     height: 578
+=======
+    width: 330
+    height: 656
+>>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
 >>>>>>> ae294533a (Added item equip functionality)
@@ -273,11 +336,16 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1366
+    x: 1360
     y: 83
+<<<<<<< HEAD
     width: 303
 <<<<<<< HEAD
     height: 558
+=======
+    width: 329
+    height: 635
+>>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
@@ -300,8 +368,12 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
+<<<<<<< HEAD
       m_ExpandedIDs: 2afbffff624c00005a4d0000be4f0000325400008654000092560000a0580000
 >>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
+=======
+      m_ExpandedIDs: 2090ffffd290ffff2897ffff90a2ffffa8b3ffff18e0ffff98efffff2afbffff7e4c0000884d0000e24e00000a500000b8520000b8540000e854000032580000fe5800005a2f07001a330700d433070082270800fc2b0800
+>>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -340,14 +412,19 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 304
+    x: 330
     y: 0
+<<<<<<< HEAD
     width: 1227
 <<<<<<< HEAD
     height: 579
 =======
     height: 578
 >>>>>>> ae294533a (Added item equip functionality)
+=======
+    width: 1163
+    height: 656
+>>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 2}
@@ -378,14 +455,19 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1670
+    x: 1690
     y: 83
+<<<<<<< HEAD
     width: 1225
 <<<<<<< HEAD
     height: 558
 =======
     height: 557
 >>>>>>> ae294533a (Added item equip functionality)
+=======
+    width: 1161
+    height: 635
+>>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 9f2623957571fc09bb8756dd7acc14bc
@@ -397,6 +479,7 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     m_Target: {x: -17.90173, y: 42.253983, z: -4.106876}
@@ -412,6 +495,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -17.562304, y: 46.130127, z: -0.90671325}
 >>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
+=======
+    m_Target: {x: 0.6314394, y: -2.7992833, z: -56.329617}
+    speed: 2
+    m_Value: {x: 0.6314394, y: -2.7992833, z: -56.329617}
+>>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -463,6 +551,7 @@ MonoBehaviour:
   m_Size:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: 7.9109535
     speed: 2
     m_Value: 7.9109535
@@ -476,6 +565,11 @@ MonoBehaviour:
     speed: 2
     m_Value: 6.1570487
 >>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
+=======
+    m_Target: 5.7086263
+    speed: 2
+    m_Value: 5.7086263
+>>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -544,6 +638,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 579
     width: 1531
 <<<<<<< HEAD
@@ -562,6 +657,14 @@ MonoBehaviour:
   m_MaxSize: {x: 10000, y: 10000}
   m_ActualView: {fileID: 11}
 >>>>>>> ae294533a (Added item equip functionality)
+=======
+    y: 656
+    width: 1493
+    height: 293
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 11}
+>>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
   m_Panes:
   - {fileID: 11}
   - {fileID: 12}
@@ -590,6 +693,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1366
 <<<<<<< HEAD
     y: 662
@@ -600,6 +704,12 @@ MonoBehaviour:
     width: 1530
     height: 350
 >>>>>>> ae294533a (Added item equip functionality)
+=======
+    x: 1360
+    y: 739
+    width: 1492
+    height: 272
+>>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -615,6 +725,7 @@ MonoBehaviour:
     m_SearchArea: 1
     m_Folders:
 <<<<<<< HEAD
+<<<<<<< HEAD
     - Assets/Resources/Scripts/One Time Use
   m_ViewMode: 1
   m_StartGridSize: 16
@@ -627,12 +738,20 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Resources/Sprites/Items
 >>>>>>> ae294533a (Added item equip functionality)
+=======
+    - Assets/Resources/Scripts
+  m_ViewMode: 1
+  m_StartGridSize: 16
+  m_LastFolders:
+  - Assets/Resources/Scripts
+>>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
   m_LastFoldersGridSize: 16
   m_LastProjectPath: "/home/lizband/Documents/Neverway/Games/\u795E\u306E\u7D76\u6EC5
     Divine Annihilation/U2D-Divine Annihilation"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
 <<<<<<< HEAD
     scrollPos: {x: 0, y: 247}
     m_SelectedIDs: ac630000
@@ -644,6 +763,12 @@ MonoBehaviour:
     m_LastClickedID: 25302
     m_ExpandedIDs: 000000008849000006620000086200000a6200000c6200000e62000010620000126200001462000016620000186200001a6200001c6200001e62000020620000226200002462000000ca9a3b
 >>>>>>> ae294533a (Added item equip functionality)
+=======
+    scrollPos: {x: 0, y: 324}
+    m_SelectedIDs: 4a630000
+    m_LastClickedID: 25418
+    m_ExpandedIDs: 00000000b649000040630000426300004463000046630000486300004a6300004c6300004e63000050630000526300005463000056630000586300005a6300005c6300005e63000000ca9a3b
+>>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -672,10 +797,14 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000244d00004463000046630000486300004a6300004c6300004e63000050630000526300005463000056630000586300005a6300005c6300005e630000606300006263000000ca9a3b
 =======
     m_ExpandedIDs: 000000008849000006620000086200000a6200000c6200000e62000010620000126200001462000016620000186200001a6200001c6200001e62000020620000226200002462000000ca9a3b
 >>>>>>> ae294533a (Added item equip functionality)
+=======
+    m_ExpandedIDs: 00000000b649000040630000426300004463000046630000486300004a6300004c6300004e63000050630000526300005463000056630000586300005a6300005c6300005e630000
+>>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -703,7 +832,11 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
+<<<<<<< HEAD
     m_ExpandedInstanceIDs: c6230000e25500008ef0ffff7c5b0000b85b00000000000068600000
+=======
+    m_ExpandedInstanceIDs: c6230000e25500008ef0ffff7c5b0000b85b00000000000068600000145c0000
+>>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -719,7 +852,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 10}
+      m_ClientGUIView: {fileID: 0}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -752,6 +885,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1366
 <<<<<<< HEAD
     y: 662
@@ -762,6 +896,12 @@ MonoBehaviour:
     width: 1530
     height: 350
 >>>>>>> ae294533a (Added item equip functionality)
+=======
+    x: 1360
+    y: 739
+    width: 1492
+    height: 272
+>>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &13
 MonoBehaviour:
@@ -946,10 +1086,10 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 70ebd91cb82548a0aa718e0eabc5d1dc,
+  m_AnimatorController: {fileID: 9100000, guid: 3e75189684fc1a4b3a190287119ceaba,
     type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: 2066373182823137395, guid: 70ebd91cb82548a0aa718e0eabc5d1dc,
+  - m_Target: {fileID: -1297399999584036618, guid: 3e75189684fc1a4b3a190287119ceaba,
       type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
@@ -993,6 +1133,7 @@ MonoBehaviour:
     m_IsLocked: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LastSelectedObjectID: 2179840
 =======
   m_LastSelectedObjectID: 21438
@@ -1000,6 +1141,9 @@ MonoBehaviour:
 =======
   m_LastSelectedObjectID: 19926
 >>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
+=======
+  m_LastSelectedObjectID: 22550
+>>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1015,9 +1159,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1531
+    x: 1493
     y: 0
-    width: 389
+    width: 427
     height: 949
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
@@ -1048,9 +1192,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2897
+    x: 2853
     y: 83
-    width: 388
+    width: 426
     height: 928
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
@@ -1065,6 +1209,7 @@ MonoBehaviour:
   m_PreviewWindow: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LastInspectedObjectInstanceID: -1
 =======
   m_LastInspectedObjectInstanceID: 24664
@@ -1072,6 +1217,9 @@ MonoBehaviour:
 =======
   m_LastInspectedObjectInstanceID: 19926
 >>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
+=======
+  m_LastInspectedObjectInstanceID: -1
+>>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
   m_LastVerticalScrollValue: 0
 --- !u!114 &17
 MonoBehaviour:
@@ -1093,14 +1241,14 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2665
-    y: 84
-    width: 620
-    height: 915
+    x: 3039
+    y: 83
+    width: 240
+    height: 928
   m_ViewDataDictionary: {fileID: 0}
   m_PreviewResizer:
     m_CachedPref: -50
     m_ControlHash: 1964396721
     m_PrefName: Preview_TilemapBrushInspector
-  m_Palette: {fileID: 6294252873835015085, guid: c1ddc9ee070cea096b774a52f609acaa,
+  m_Palette: {fileID: 3980361803019378381, guid: 0226f454746a8202193380e0a07418c2,
     type: 3}

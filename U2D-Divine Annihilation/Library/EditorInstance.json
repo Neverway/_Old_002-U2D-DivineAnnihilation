@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	"process_id" : 46982,
 =======
 	"process_id" : 179054,
@@ -16,6 +17,9 @@
 =======
 	"process_id" : 2921,
 >>>>>>> 09a7c315c (Fixed file not loading players saved position)
+=======
+	"process_id" : 123296,
+>>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
 	"version" : "2019.4.29f1",
 	"app_path" : "/home/lizband/Unity/Hub/Editor/2019.4.29f1/Editor/Unity",
 	"app_contents_path" : "/home/lizband/Unity/Hub/Editor/2019.4.29f1/Editor/Data"
