@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Old G9 Content/Scenes/oC1S1.unity
+- path: Assets/Resources/Scenes/C1S1.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

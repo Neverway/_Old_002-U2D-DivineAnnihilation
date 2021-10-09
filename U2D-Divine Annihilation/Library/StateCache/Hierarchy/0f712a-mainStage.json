@@ -7,6 +7,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿{"m_ExpandedPrefabGameObjectFileIDs":[],"m_ExpandedSceneGameObjectInstanceIDs":[-11004,-10998,-2750,20252,20286,20500,20606,21112,21772,22042,22236,22320,23122,23150,23346],"m_ScrollY":420.0,"m_LastClickedFileID":0,"m_LastClickedInstanceID":0}
 =======
 ﻿{"m_ExpandedPrefabGameObjectFileIDs":[],"m_ExpandedSceneGameObjectInstanceIDs":[-1230,20034,20380,20862,21116,21198,21310,21460,21504,22080,22222,22494,22850],"m_ScrollY":56.0,"m_LastClickedFileID":0,"m_LastClickedInstanceID":0}
@@ -35,3 +36,6 @@
 =======
 ﻿{"m_ExpandedPrefabGameObjectFileIDs":[],"m_ExpandedSceneGameObjectInstanceIDs":[-21064,-1238],"m_ScrollY":0.0,"m_LastClickedFileID":0,"m_LastClickedInstanceID":0}
 >>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
+=======
+﻿{"m_ExpandedPrefabGameObjectFileIDs":[],"m_ExpandedSceneGameObjectInstanceIDs":[-133652,-132010,-119374,-103092,-101682,-65436,-63310,-63090,-60586,-3438,-1238,-12,19598,20264,20552,20720,20942,21242,21342,21530,21724,21778,22226,22768,22940,22958,23524,23684,521898,523094,524344,524406,525216,577774,578784,579944,579980,581230,581292,582102,838608,839422,839610,839804,840306,873530],"m_ScrollY":0.0,"m_LastClickedFileID":0,"m_LastClickedInstanceID":0}
+>>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)

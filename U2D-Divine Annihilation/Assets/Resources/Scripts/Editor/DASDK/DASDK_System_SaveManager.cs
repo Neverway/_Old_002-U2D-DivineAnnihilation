@@ -101,6 +101,7 @@ public class DASDK_System_SaveManager : Editor
             saveManager.activeSave2.playerSavePosition = EditorGUILayout.Vector2Field("playerSavePosition", saveManager.activeSave2.playerSavePosition);
             saveManager.activeSave2.playerHealth = EditorGUILayout.FloatField("playerHealth", saveManager.activeSave2.playerHealth);
             saveManager.activeSave2.playerLevel = EditorGUILayout.IntField("playerLevel", saveManager.activeSave2.playerLevel);
+            saveManager.activeSave2.playerGold = EditorGUILayout.IntField("playerGold", saveManager.activeSave2.playerGold);
             serializedObject.ApplyModifiedProperties();
         }
 

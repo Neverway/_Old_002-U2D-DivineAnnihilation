@@ -449,6 +449,43 @@ public class OTU_System_InventoryManager : MonoBehaviour
     }
 
 
+    public void ItemAdd(string itemName, string itemCategory, Sprite itemIcon, string itemDescription, bool itemDiscardable)
+    {
+            if (itemCategory == "Item" || itemCategory == "Consumable" || itemCategory == "Puzzle")
+            {
+                for (int i = 0; i < 5 + 1; i++)
+                {
+                    if (saveManager.activeSave2.items[i] == "---")
+                    {
+                        saveManager.activeSave2.items[i] = itemName;
+                        saveManager.activeSave2.itemIcons[i] = itemIcon.name;
+                        saveManager.activeSave2.itemCategories[i] = itemCategory;
+                        saveManager.activeSave2.itemDescriptions[i] = itemDescription;
+                        saveManager.activeSave2.itemDiscardable[i] = itemDiscardable.ToString();
+                        print("An item was added to the inventory!");
+                        break;
+                    }
+                }
+            }
+            else if (itemCategory == "Weapon" || itemCategory == "Armour" || itemCategory == "Magic")
+            {
+                for (int i = 0; i < 5 + 1; i++)
+                {
+                    if (saveManager.activeSave2.equipment[i] == "---")
+                    {
+                        saveManager.activeSave2.equipment[i] = itemName;
+                        saveManager.activeSave2.equipmentIcons[i] = itemIcon.name;
+                        saveManager.activeSave2.equipmentCategories[i] = itemCategory;
+                        saveManager.activeSave2.equipmentDescriptions[i] = itemDescription;
+                        saveManager.activeSave2.equipmentDiscardable[i] = itemDiscardable.ToString();
+                        print("Equipment was added to the inventory!");
+                        break;
+                    }
+                }
+            }
+    }
+
+
     public void ItemDiscard()
     {
         if (currentlySelecting == "Items Menu")

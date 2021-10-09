@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 392}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 0
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 999
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 392}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -138,12 +138,19 @@ MonoBehaviour:
 =======
     width: 1920
     height: 949
+<<<<<<< HEAD
   m_MinSize: {x: 677, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
 >>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
   vertical: 0
   controlID: 21
 >>>>>>> 09a7c315c (Fixed file not loading players saved position)
+=======
+  m_MinSize: {x: 679, y: 342}
+  m_MaxSize: {x: 12004, y: 8042}
+  vertical: 0
+  controlID: 7279
+>>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -163,6 +170,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     width: 1526
@@ -197,6 +205,14 @@ MonoBehaviour:
   vertical: 1
   controlID: 22
 >>>>>>> 09a7c315c (Fixed file not loading players saved position)
+=======
+    width: 1644
+    height: 949
+  m_MinSize: {x: 403, y: 342}
+  m_MaxSize: {x: 8003, y: 8042}
+  vertical: 1
+  controlID: 7280
+>>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -216,6 +232,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -252,6 +269,14 @@ MonoBehaviour:
   vertical: 0
   controlID: 23
 >>>>>>> 09a7c315c (Fixed file not loading players saved position)
+=======
+    width: 1644
+    height: 828
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
+  vertical: 0
+  controlID: 7281
+>>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -262,13 +287,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
+  m_Name: SceneHierarchyWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -295,6 +321,12 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
 >>>>>>> 09a7c315c (Fixed file not loading players saved position)
+=======
+    width: 272
+    height: 828
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+>>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -315,8 +347,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 253
+    x: 272
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -339,13 +372,16 @@ MonoBehaviour:
     width: 1263
     height: 555
 >>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
+=======
+    width: 1372
+    height: 828
+>>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
   - {fileID: 12}
-  - {fileID: 15}
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &10
@@ -358,12 +394,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -401,15 +438,22 @@ MonoBehaviour:
     height: 394
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
+=======
+    y: 828
+    width: 1644
+    height: 121
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+>>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
   m_ActualView: {fileID: 16}
 >>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
   m_Panes:
+  - {fileID: 15}
   - {fileID: 16}
   - {fileID: 17}
   - {fileID: 18}
-  - {fileID: 19}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -425,16 +469,16 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1516
+    x: 1644
     y: 0
-    width: 404
+    width: 276
     height: 949
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 20}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 19}
   m_Panes:
+  - {fileID: 19}
   - {fileID: 20}
-  - {fileID: 21}
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &12
@@ -458,6 +502,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -490,6 +535,12 @@ MonoBehaviour:
     width: 1261
     height: 729
 >>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
+=======
+    x: 273
+    y: 19
+    width: 1370
+    height: 807
+>>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -499,6 +550,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -516,10 +568,13 @@ MonoBehaviour:
 =======
   m_TargetSize: {x: 1259, y: 708}
 >>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
+=======
+  m_TargetSize: {x: 1370, y: 771}
+>>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
-  m_MaximizeOnPlay: 0
+  m_MaximizeOnPlay: 1
   m_UseMipMap: 0
   m_VSyncEnabled: 0
   m_Gizmos: 0
@@ -530,6 +585,7 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -562,6 +618,12 @@ MonoBehaviour:
     m_VBaseRangeMin: -354
     m_VBaseRangeMax: 354
 >>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
+=======
+    m_HBaseRangeMin: -808
+    m_HBaseRangeMax: 808
+    m_VBaseRangeMin: -454.5
+    m_VBaseRangeMax: 454.5
+>>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -593,9 +655,10 @@ MonoBehaviour:
 >>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
 =======
       y: 21
-      width: 1261
-      height: 708
+      width: 1920
+      height: 909
     m_Scale: {x: 1, y: 1}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     m_Translation: {x: 510.5, y: 267.5}
@@ -606,12 +669,16 @@ MonoBehaviour:
 =======
     m_Translation: {x: 630.5, y: 354}
 >>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
+=======
+    m_Translation: {x: 960, y: 454.5}
+>>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -659,6 +726,15 @@ MonoBehaviour:
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1261, y: 729}
 >>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
+=======
+      x: -960
+      y: -454.5
+      width: 1920
+      height: 909
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 1920, y: 930}
+>>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -691,6 +767,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 303
     height: 557
 =======
@@ -709,12 +786,17 @@ MonoBehaviour:
     width: 252
     height: 534
 >>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
+=======
+    width: 271
+    height: 807
+>>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 94660000
+      scrollPos: {x: 0, y: 158}
+      m_SelectedIDs: 
       m_LastClickedID: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -732,6 +814,9 @@ MonoBehaviour:
 =======
       m_ExpandedIDs: 80dbfeff08dcfeff92dcfeffd6ddfeff60defeff04dffeff76dffeff02e0feff8ce0feff502fffff8a39ffff263fffffdc6cffffcc7fffff4486fffffe98ffff6e9cffff24acffff32d1ffff66e4ffff2afbfffff4ffffff824c00000c4f000090530000ba54000028580000345800004c5800000a590000c2590000c4fa01003cfd01004cfe0100fa000200c6020200fc0202005a0602004c07020006bd0400b4bf040084c10400bac104006e3106001c340600ec350600223606008ead06003cb006000cb2060042b20600dcaf08008ab208005ab4080090b40800002c0900ae2e09007e300900b43009006ca00a001aa30a00eaa40a0020a50a00dab60e0088b90e0058bb0e00
 >>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
+=======
+      m_ExpandedIDs: 30c3ffff94d1ffffb4efffff32f1ffff2afbfffff24b0000244c00002a4c0000864c00008a4c00008e4c0000aa4c0000ba4c0000d64c0000e04c0000ea4c0000184d0000844d00008a4d0000984d0000aa4d0000d44d0000da4d0000e04d0000224e0000264e0000544e0000984e0000ac4e0000dc4e0000e24e0000104f0000284f00003a4f0000464f0000664f00008a4f0000b04f0000c24f0000065000001250000048500000f05000002c510000485100006e5100007c510000aa510000b6510000ca510000ce5100001e520000fa5200001c530000225300002e530000405300007c530000b0530000ce530000e0530000225400007a540000b8540000bc540000dc540000125500004055000054550000965500009c550000ae550000e8550000f2550000165600004e56000052560000a056000012570000325700005a5700007e570000965700007c580000825800008e58000092580000c4580000d0580000f058000012590000265900003c5900005e5900009c590000ae590000cc590000d0590000e0590000ec5900008a5a00000c5b0000125b0000c65b0000e45b00003a5c00004e5c0000765c0000845c0000885c0000f65c0000205d0000385d00004e5d0000565d0000765d0000dc5d0000e65d0000f45d00000c5e00003a5e0000c6480100324e0100e4500100c6520100fc52010044ae0400d8b20400ccb60400b8b70400f6b70400
+>>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -776,8 +861,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2173
+    x: 2192
     y: 83
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -800,6 +886,10 @@ MonoBehaviour:
     width: 1261
     height: 534
 >>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
+=======
+    width: 1370
+    height: 807
+>>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 9f2623957571fc09bb8756dd7acc14bc
@@ -811,6 +901,7 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -838,6 +929,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 69.95372, y: -16.21027, z: -9.013416}
 >>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
+=======
+    m_Target: {x: 36.747997, y: 52.075447, z: -84.979774}
+    speed: 2
+    m_Value: {x: 36.747997, y: 52.075447, z: -84.979774}
+>>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -891,6 +987,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: 16.670448
     speed: 2
     m_Value: 16.670448
@@ -914,6 +1011,11 @@ MonoBehaviour:
     speed: 2
     m_Value: 21.92654
 >>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
+=======
+    m_Target: 26.483562
+    speed: 2
+    m_Value: 26.483562
+>>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -939,33 +1041,6 @@ MonoBehaviour:
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
 --- !u!114 &15
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 924ffcbe75518854f97b48776d0f1939, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Fire1
-    m_Image: {fileID: 2800000, guid: 7129268cf102b2f45809905bcb27ce8b, type: 3}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 1670
-    y: 83
-    width: 1225
-    height: 554
-  m_ViewDataDictionary: {fileID: 0}
-  m_Selected: 8d05dcd6e3076f71b8867b0f595ccbc0
-  m_GraphObject: {fileID: 0}
---- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1011,10 +1086,14 @@ MonoBehaviour:
 >>>>>>> 09a7c315c (Fixed file not loading players saved position)
 =======
     x: 1920
-    y: 638
+    y: 634
     width: 1515
+<<<<<<< HEAD
     height: 373
 >>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
+=======
+    height: 377
+>>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -1029,6 +1108,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1066,6 +1146,13 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Old G9 Content/Scenes
 >>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
+=======
+    - Assets/Resources/Scenes
+  m_ViewMode: 1
+  m_StartGridSize: 16
+  m_LastFolders:
+  - Assets/Resources/Scenes
+>>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
   m_LastFoldersGridSize: 16
   m_LastProjectPath: "/home/lizband/Documents/Neverway/Games/\u795E\u306E\u7D76\u6EC5
     Divine Annihilation/U2D-Divine Annihilation"
@@ -1099,10 +1186,16 @@ MonoBehaviour:
 >>>>>>> 09a7c315c (Fixed file not loading players saved position)
 =======
     scrollPos: {x: 0, y: 79}
+<<<<<<< HEAD
     m_SelectedIDs: 50630000
     m_LastClickedID: 25424
     m_ExpandedIDs: 00000000b64900004c6300004e63000050630000526300005463000056630000586300005a6300005c6300005e63000060630000626300006463000066630000686300006a6300007c6300007e63000000ca9a3b
 >>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
+=======
+    m_SelectedIDs: 78db0000
+    m_LastClickedID: 56184
+    m_ExpandedIDs: 00000000b4490000e6630000e8630000ea630000ec630000ee630000f0630000f2630000f4630000f6630000f8630000fa630000fc630000fe630000006400000264000004640000066400000864000000ca9a3b
+>>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1127,6 +1220,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
@@ -1143,6 +1237,12 @@ MonoBehaviour:
 =======
     m_ExpandedIDs: 00000000b64900004c6300004e63000050630000526300005463000056630000586300005a6300005c6300005e63000060630000626300006463000066630000686300006a630000
 >>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
+=======
+    scrollPos: {x: 0, y: 4781}
+    m_SelectedIDs: e8690000
+    m_LastClickedID: 27112
+    m_ExpandedIDs: 00000000b4490000e6630000e8630000ea630000ec630000ee630000f0630000f2630000f4630000f6630000f8630000fa630000fc630000fe630000006400000264000004640000066400000864000000ca9a3b
+>>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1167,24 +1267,24 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000e25500008ef0ffff7c5b0000b85b00000000000068600000145c0000
+    m_SelectedInstanceIDs: 065a0100
+    m_LastClickedInstanceID: 88582
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: c6230000e25500008ef0ffff7c5b0000b85b00000000000068600000145c00001c6900002e670000e6690000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: AutumnForest Indoors
-      m_OriginalName: AutumnForest Indoors
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 25786
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_CreateAssetUtility:
@@ -1198,7 +1298,7 @@ MonoBehaviour:
     m_GridSize: 16
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 213
---- !u!114 &17
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1245,12 +1345,18 @@ MonoBehaviour:
 >>>>>>> 09a7c315c (Fixed file not loading players saved position)
 =======
     x: 1920
+<<<<<<< HEAD
     y: 638
     width: 1515
     height: 373
 >>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
+=======
+    y: 911
+    width: 1643
+    height: 100
+>>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
   m_ViewDataDictionary: {fileID: 0}
---- !u!114 &18
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1450,7 +1556,7 @@ MonoBehaviour:
   m_CurrentEditor: 1
   m_LayerEditor:
     m_SelectedLayerIndex: 0
---- !u!114 &19
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1478,8 +1584,8 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 21690
---- !u!114 &20
+  m_LastSelectedObjectID: 88582
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1500,9 +1606,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 3436
+    x: 3564
     y: 83
-    width: 403
+    width: 275
     height: 928
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
@@ -1517,7 +1623,7 @@ MonoBehaviour:
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
---- !u!114 &21
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1537,14 +1643,14 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 3039
+    x: 3436
     y: 83
-    width: 240
+    width: 403
     height: 928
   m_ViewDataDictionary: {fileID: 0}
   m_PreviewResizer:
     m_CachedPref: -50
     m_ControlHash: 1964396721
     m_PrefName: Preview_TilemapBrushInspector
-  m_Palette: {fileID: 3980361803019378381, guid: 0226f454746a8202193380e0a07418c2,
+  m_Palette: {fileID: 450183504417717160, guid: 65a78fb40139e5dd0838608d4ae7e21b,
     type: 3}
