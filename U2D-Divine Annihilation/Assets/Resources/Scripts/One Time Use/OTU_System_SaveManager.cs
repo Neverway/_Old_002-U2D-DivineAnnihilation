@@ -125,6 +125,7 @@ public class OTU_System_SaveManager : MonoBehaviour
         //activeSave2.playerSavePosition = new Vector2(0f, 0f);
         activeSave2.playerHealth = 100;
         activeSave2.playerLevel = 000;
+        activeSave2.playerGold = 000;
 
         // Player Items
         for (int i = 0; i < activeSave2.items.Length; i++)
@@ -266,6 +267,7 @@ public class SaveData2
     public Vector2 playerSavePosition;
     public float playerHealth;
     public int playerLevel;
+    public int playerGold;
 
     // Player Items
     public string[] items;

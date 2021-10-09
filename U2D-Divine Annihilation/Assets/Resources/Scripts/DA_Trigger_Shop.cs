@@ -25,6 +25,9 @@ public class DA_Trigger_Shop : MonoBehaviour
     public string buyName;
     public Sprite buyPortrait;
 
+    public GameObject[] buyableItems;
+    public int[] buyableCosts;
+
     [Header("Sell")]
     public string sellDialogue;
     public string sellName;
