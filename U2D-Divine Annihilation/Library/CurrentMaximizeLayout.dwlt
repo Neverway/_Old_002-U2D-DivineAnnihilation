@@ -24,6 +24,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_MinSize: {x: 678, y: 321}
   m_MaxSize: {x: 12003, y: 8021}
   vertical: 0
@@ -50,6 +51,12 @@ MonoBehaviour:
   vertical: 0
   controlID: 39862
 >>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
+=======
+  m_MinSize: {x: 677, y: 342}
+  m_MaxSize: {x: 12002, y: 8042}
+  vertical: 0
+  controlID: 42301
+>>>>>>> 333cda09f (Fixed a stupid typo that breaks store bought items)
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -73,6 +80,7 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 305
     y: 19
     width: 1225
@@ -91,6 +99,11 @@ MonoBehaviour:
     x: 2192
     y: 83
     width: 1370
+=======
+    x: 235
+    y: 19
+    width: 1168
+>>>>>>> 333cda09f (Fixed a stupid typo that breaks store bought items)
     height: 596
 >>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
   m_ViewDataDictionary: {fileID: 0}
@@ -162,6 +175,7 @@ MonoBehaviour:
       y: 21
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       width: 1225
 <<<<<<< HEAD
       height: 537
@@ -184,12 +198,19 @@ MonoBehaviour:
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 685, y: 287.5}
 >>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
+=======
+      width: 1168
+      height: 575
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 584, y: 287.5}
+>>>>>>> 333cda09f (Fixed a stupid typo that breaks store bought items)
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       x: -612.5
@@ -219,13 +240,20 @@ MonoBehaviour:
 >>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
 =======
       x: -685
+=======
+      x: -584
+>>>>>>> 333cda09f (Fixed a stupid typo that breaks store bought items)
       y: -287.5
-      width: 1370
+      width: 1168
       height: 575
     m_MinimalGUI: 1
   m_defaultScale: 1
+<<<<<<< HEAD
   m_LastWindowPixelSize: {x: 1370, y: 596}
 >>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
+=======
+  m_LastWindowPixelSize: {x: 1168, y: 596}
+>>>>>>> 333cda09f (Fixed a stupid typo that breaks store bought items)
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -250,8 +278,9 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1644
+    width: 1404
     height: 949
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -281,6 +310,12 @@ MonoBehaviour:
   vertical: 1
   controlID: 39825
 >>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
+=======
+  m_MinSize: {x: 402, y: 342}
+  m_MaxSize: {x: 8002, y: 8042}
+  vertical: 1
+  controlID: 42264
+>>>>>>> 333cda09f (Fixed a stupid typo that breaks store bought items)
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -300,6 +335,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     width: 1531
@@ -330,12 +366,19 @@ MonoBehaviour:
 >>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
 =======
     width: 1644
+=======
+    width: 1404
+>>>>>>> 333cda09f (Fixed a stupid typo that breaks store bought items)
     height: 617
-  m_MinSize: {x: 403, y: 221}
-  m_MaxSize: {x: 8003, y: 4021}
+  m_MinSize: {x: 402, y: 221}
+  m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 39807
 >>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
+=======
+  controlID: 42231
+>>>>>>> 333cda09f (Fixed a stupid typo that breaks store bought items)
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -353,6 +396,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     width: 304
@@ -373,6 +417,12 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
 >>>>>>> ae294533a (Added item equip functionality)
+=======
+    width: 234
+    height: 617
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> 333cda09f (Fixed a stupid typo that breaks store bought items)
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -403,6 +453,7 @@ MonoBehaviour:
     y: 83
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 303
 <<<<<<< HEAD
     height: 558
@@ -422,6 +473,9 @@ MonoBehaviour:
     height: 557
 =======
     width: 271
+=======
+    width: 233
+>>>>>>> 333cda09f (Fixed a stupid typo that breaks store bought items)
     height: 596
 >>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
   m_ViewDataDictionary: {fileID: 0}
@@ -438,6 +492,7 @@ MonoBehaviour:
       m_LastClickedID: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_ExpandedIDs: 2afbffff624c00005a4d0000be4f0000325400008654000092560000a0580000
 >>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
 =======
@@ -446,6 +501,9 @@ MonoBehaviour:
 =======
       m_ExpandedIDs: ecf5fdff56fcfdffb22dfeff4c6dfeffce72feff6400ffffb208ffff8e09ffff5613ffff92f2ffff2afbfffff4ffffff8e4c0000284f000048500000f0500000ce510000fa5200005e5300001a540000dc54000012550000d2560000f05800009c590000ae590000e45b0000845c0000aaf6070056fb07003800080076000800a0030800eed00800e0d4080068d908008cd908006ede0800acde0800d6e10800d0cb0c00fece0c00bacf0c007cd00c0072d20c003a540d00
 >>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
+=======
+      m_ExpandedIDs: 5ce0fdffecf5fdff56fcfdffb22dfeff4c6dfeffce72feff6400ffffb208ffff8e09ffff5613ffff92f2ffff2afbfffff4ffffff8e4c0000284f000048500000f0500000ce510000fa5200005e5300001a540000dc54000012550000d2560000d0580000f05800009c590000ae590000e45b0000845c0000aaf6070056fb07003800080076000800a0030800eed00800e0d4080068d908008cd908006ede0800acde0800d6e10800d0cb0c00fece0c00bacf0c007cd00c0072d20c003a540d0004890f00f88c0f0080910f00a4910f0088960f00c6960f00
+>>>>>>> 333cda09f (Fixed a stupid typo that breaks store bought items)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -484,8 +542,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 272
+    x: 234
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     width: 1227
@@ -500,6 +559,9 @@ MonoBehaviour:
 >>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
 =======
     width: 1372
+=======
+    width: 1170
+>>>>>>> 333cda09f (Fixed a stupid typo that breaks store bought items)
     height: 617
 >>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
   m_MinSize: {x: 202, y: 221}
@@ -531,8 +593,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2192
+    x: 2154
     y: 83
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     width: 1225
@@ -547,6 +610,9 @@ MonoBehaviour:
 >>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
 =======
     width: 1370
+=======
+    width: 1168
+>>>>>>> 333cda09f (Fixed a stupid typo that breaks store bought items)
     height: 596
 >>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
   m_ViewDataDictionary: {fileID: 0}
@@ -560,6 +626,7 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -587,6 +654,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 71.50589, y: 43.382126, z: -10.418533}
 >>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
+=======
+    m_Target: {x: -12.489815, y: 23.003119, z: -10.234634}
+    speed: 2
+    m_Value: {x: -12.489815, y: 23.003119, z: -10.234634}
+>>>>>>> 333cda09f (Fixed a stupid typo that breaks store bought items)
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -732,7 +804,7 @@ MonoBehaviour:
   m_MaxSize: {x: 10001, y: 10021}
 =======
     y: 617
-    width: 1644
+    width: 1404
     height: 332
   m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
@@ -1008,7 +1080,7 @@ MonoBehaviour:
 =======
     x: 1920
     y: 700
-    width: 1643
+    width: 1403
     height: 311
 >>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
   m_ViewDataDictionary: {fileID: 0}
@@ -1244,6 +1316,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LastSelectedObjectID: 2179840
 =======
   m_LastSelectedObjectID: 21438
@@ -1257,6 +1330,9 @@ MonoBehaviour:
 --- !u!114 &15
 =======
   m_LastSelectedObjectID: 870070
+=======
+  m_LastSelectedObjectID: 981112
+>>>>>>> 333cda09f (Fixed a stupid typo that breaks store bought items)
 --- !u!114 &14
 >>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
 MonoBehaviour:
@@ -1273,9 +1349,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1644
+    x: 1404
     y: 0
-    width: 276
+    width: 516
     height: 949
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
@@ -1306,9 +1382,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 3564
+    x: 3324
     y: 83
-    width: 275
+    width: 515
     height: 928
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
