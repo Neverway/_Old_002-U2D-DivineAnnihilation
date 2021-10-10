@@ -136,7 +136,7 @@ public class OTU_Overworld_ShopboxManager : MonoBehaviour
         DA_Trigger_ItemPickup itemToBuy = buyableItems[buyableCurrentSelection].GetComponent<DA_Trigger_ItemPickup>();
         if (buyableCosts[buyableCurrentSelection] <= saveManager.activeSave2.playerGold)
         {
-            inventoryManager.ItemAdd(itemToBuy.name, itemToBuy.itemCategory, itemToBuy.itemIcon, itemToBuy.itemDescription, itemToBuy.itemDiscardable);
+            inventoryManager.ItemAdd(itemToBuy.itemName, itemToBuy.itemCategory, itemToBuy.itemIcon, itemToBuy.itemDescription, itemToBuy.itemDiscardable);
             saveManager.activeSave2.playerGold -= buyableCosts[buyableCurrentSelection];
         }
         else
