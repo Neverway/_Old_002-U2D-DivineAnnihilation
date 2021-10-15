@@ -68,8 +68,12 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 5349
 >>>>>>> 50289e0ec (Updated lighting renderer, Updated Engine to Unity 2020.3.20f1)
+=======
+  controlID: 9519
+>>>>>>> bdbdfe3b2 (Fixed color space and ambient color causing lighting to be too bright)
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -91,6 +95,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -133,6 +138,12 @@ MonoBehaviour:
     width: 1273
     height: 648
 >>>>>>> 50289e0ec (Updated lighting renderer, Updated Engine to Unity 2020.3.20f1)
+=======
+    x: 214
+    y: 19
+    width: 1273
+    height: 657
+>>>>>>> bdbdfe3b2 (Fixed color space and ambient color causing lighting to be too bright)
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -261,16 +272,23 @@ MonoBehaviour:
 >>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)
 =======
       width: 1273
+<<<<<<< HEAD
       height: 627
     m_Scale: {x: 0.4354167, y: 0.43541667}
     m_Translation: {x: 636.5, y: 313.5}
 >>>>>>> 50289e0ec (Updated lighting renderer, Updated Engine to Unity 2020.3.20f1)
+=======
+      height: 636
+    m_Scale: {x: 0.44166666, y: 0.44166666}
+    m_Translation: {x: 636.5, y: 318}
+>>>>>>> bdbdfe3b2 (Fixed color space and ambient color causing lighting to be too bright)
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -328,13 +346,21 @@ MonoBehaviour:
 >>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)
 =======
       x: -1461.8181
+=======
+      x: -1441.1321
+>>>>>>> bdbdfe3b2 (Fixed color space and ambient color causing lighting to be too bright)
       y: -720
-      width: 2923.6362
+      width: 2882.2642
       height: 1440
     m_MinimalGUI: 1
+<<<<<<< HEAD
   m_defaultScale: 0.43541667
   m_LastWindowPixelSize: {x: 1273, y: 648}
 >>>>>>> 50289e0ec (Updated lighting renderer, Updated Engine to Unity 2020.3.20f1)
+=======
+  m_defaultScale: 0.44166666
+  m_LastWindowPixelSize: {x: 1273, y: 657}
+>>>>>>> bdbdfe3b2 (Fixed color space and ambient color causing lighting to be too bright)
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -409,8 +435,12 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
+<<<<<<< HEAD
   controlID: 5350
 >>>>>>> 50289e0ec (Updated lighting renderer, Updated Engine to Unity 2020.3.20f1)
+=======
+  controlID: 9520
+>>>>>>> bdbdfe3b2 (Fixed color space and ambient color causing lighting to be too bright)
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -490,8 +520,12 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 5351
 >>>>>>> 50289e0ec (Updated lighting renderer, Updated Engine to Unity 2020.3.20f1)
+=======
+  controlID: 9521
+>>>>>>> bdbdfe3b2 (Fixed color space and ambient color causing lighting to be too bright)
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -512,11 +546,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1488
-    height: 669
+    height: 678
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 5352
+  controlID: 9522
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -572,7 +606,7 @@ MonoBehaviour:
   m_ActualView: {fileID: 6}
 =======
     width: 213
-    height: 669
+    height: 678
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 7}
@@ -639,8 +673,12 @@ MonoBehaviour:
 >>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)
 =======
     width: 212
+<<<<<<< HEAD
     height: 648
 >>>>>>> 50289e0ec (Updated lighting renderer, Updated Engine to Unity 2020.3.20f1)
+=======
+    height: 657
+>>>>>>> bdbdfe3b2 (Fixed color space and ambient color causing lighting to be too bright)
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
@@ -651,6 +689,7 @@ MonoBehaviour:
 >>>>>>> ae294533a (Added item equip functionality)
 =======
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
       m_SelectedIDs: 
       m_LastClickedID: 0
@@ -677,6 +716,11 @@ MonoBehaviour:
       m_LastClickedID: 238274
       m_ExpandedIDs: 767cffff2886ffffb8abfffff4ffffff00c70000d2cd000000d3000006930200fa990200569b0300
 >>>>>>> 50289e0ec (Updated lighting renderer, Updated Engine to Unity 2020.3.20f1)
+=======
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 7e45ffff767cffff2886ffffb8abfffff4ffffff00c70000d2cd000000d3000006930200fa990200569b03000aa70500
+>>>>>>> bdbdfe3b2 (Fixed color space and ambient color causing lighting to be too bright)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -745,8 +789,12 @@ MonoBehaviour:
 >>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)
 =======
     width: 1275
+<<<<<<< HEAD
     height: 669
 >>>>>>> 50289e0ec (Updated lighting renderer, Updated Engine to Unity 2020.3.20f1)
+=======
+    height: 678
+>>>>>>> bdbdfe3b2 (Fixed color space and ambient color causing lighting to be too bright)
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 2}
@@ -806,12 +854,16 @@ MonoBehaviour:
 >>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)
 =======
     width: 1273
+<<<<<<< HEAD
     height: 648
 >>>>>>> 50289e0ec (Updated lighting renderer, Updated Engine to Unity 2020.3.20f1)
+=======
+    height: 657
+>>>>>>> bdbdfe3b2 (Fixed color space and ambient color causing lighting to be too bright)
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 9f2623957571fc09bb8756dd7acc14bc
-  m_Gizmos: 1
+  m_Gizmos: 0
   m_OverrideSceneCullingMask: 6917529027641081856
   m_SceneIsLit: 1
   m_SceneLighting: 1
@@ -820,6 +872,7 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -865,6 +918,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 3.3470912, y: 36.049282, z: -26.939138}
 >>>>>>> 50289e0ec (Updated lighting renderer, Updated Engine to Unity 2020.3.20f1)
+=======
+    m_Target: {x: -1.3171799, y: 50.74839, z: -52.393105}
+    speed: 2
+    m_Value: {x: -1.3171799, y: 50.74839, z: -52.393105}
+>>>>>>> bdbdfe3b2 (Fixed color space and ambient color causing lighting to be too bright)
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -901,13 +959,13 @@ MonoBehaviour:
       m_Size: {x: 1, y: 1}
     zGrid:
       m_Fade:
-        m_Target: 1
+        m_Target: 0
         speed: 2
-        m_Value: 1
+        m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
-    m_ShowGrid: 1
+    m_ShowGrid: 0
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
@@ -915,6 +973,7 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -954,6 +1013,11 @@ MonoBehaviour:
     speed: 2
     m_Value: 13.884929
 >>>>>>> 50289e0ec (Updated lighting renderer, Updated Engine to Unity 2020.3.20f1)
+=======
+    m_Target: 11.968169
+    speed: 2
+    m_Value: 11.968169
+>>>>>>> bdbdfe3b2 (Fixed color space and ambient color causing lighting to be too bright)
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -994,6 +1058,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1042,8 +1107,11 @@ MonoBehaviour:
 >>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)
 =======
     y: 669
+=======
+    y: 678
+>>>>>>> bdbdfe3b2 (Fixed color space and ambient color causing lighting to be too bright)
     width: 1488
-    height: 280
+    height: 271
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 11}
@@ -1099,6 +1167,7 @@ MonoBehaviour:
     x: 1920
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 700
     width: 1643
     height: 311
@@ -1113,6 +1182,11 @@ MonoBehaviour:
     width: 1487
     height: 259
 >>>>>>> 50289e0ec (Updated lighting renderer, Updated Engine to Unity 2020.3.20f1)
+=======
+    y: 761
+    width: 1487
+    height: 250
+>>>>>>> bdbdfe3b2 (Fixed color space and ambient color causing lighting to be too bright)
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -1289,6 +1363,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
@@ -1309,6 +1384,10 @@ MonoBehaviour:
 =======
     m_SelectedInstanceIDs: c2a20300
     m_LastClickedInstanceID: 238274
+=======
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+>>>>>>> bdbdfe3b2 (Fixed color space and ambient color causing lighting to be too bright)
     m_HadKeyboardFocusLastEvent: 0
 >>>>>>> 50289e0ec (Updated lighting renderer, Updated Engine to Unity 2020.3.20f1)
     m_ExpandedInstanceIDs: c6230000e25500008ef0ffff7c5b0000b85b00000000000068600000145c00001c6900002e670000e6690000
@@ -1634,6 +1713,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LastSelectedObjectID: 2179840
 =======
   m_LastSelectedObjectID: 21438
@@ -1657,6 +1737,9 @@ MonoBehaviour:
 >>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
 =======
   m_LastSelectedObjectID: 237732
+=======
+  m_LastSelectedObjectID: 368662
+>>>>>>> bdbdfe3b2 (Fixed color space and ambient color causing lighting to be too bright)
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1678,13 +1761,13 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 730
-    width: 1406
-    height: 250
+    x: 1920
+    y: 594
+    width: 1487
+    height: 417
   m_ViewDataDictionary: {fileID: 0}
   m_PosLeft: {x: 0, y: 0}
-  m_PosRight: {x: 0, y: 0}
+  m_PosRight: {x: 0, y: 1200}
   m_Scope: 1
   m_SplitterFlex: 0.2
 --- !u!114 &16
@@ -1714,9 +1797,8 @@ MonoBehaviour:
   - {fileID: 17}
   - {fileID: 18}
   - {fileID: 19}
-  - {fileID: 20}
   m_Selected: 0
-  m_LastSelected: 3
+  m_LastSelected: 2
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1796,10 +1878,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1407
+    x: 3408
     y: 83
-    width: 408
-    height: 897
+    width: 431
+    height: 928
   m_ViewDataDictionary: {fileID: 0}
   m_PreviewResizer:
     m_CachedPref: -50
@@ -1817,39 +1899,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95b8172b39a93e64981b6a57ccc39d67, type: 3}
+  m_Script: {fileID: 12079, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 256, y: 400}
+  m_MinSize: {x: 390, y: 390}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-    m_Text: Collaborate
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 1407
-    y: 83
-    width: 408
-    height: 897
-  m_ViewDataDictionary: {fileID: 0}
---- !u!114 &20
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12402, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 300, y: 150}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Services
-    m_Image: {fileID: 0}
+    m_Text: Lighting
+    m_Image: {fileID: -1347227620855488341, guid: 0000000000000000d000000000000000,
+      type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
