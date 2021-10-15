@@ -26,6 +26,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_MinSize: {x: 678, y: 321}
   m_MaxSize: {x: 12003, y: 8021}
   vertical: 0
@@ -74,6 +75,12 @@ MonoBehaviour:
 =======
   controlID: 9519
 >>>>>>> bdbdfe3b2 (Fixed color space and ambient color causing lighting to be too bright)
+=======
+  m_MinSize: {x: 794, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
+  vertical: 1
+  controlID: 9716
+>>>>>>> 7cb8d64d1 (Fixed shop gold counter)
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -393,6 +400,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_MinSize: {x: 402, y: 321}
   m_MaxSize: {x: 8002, y: 8021}
   vertical: 1
@@ -441,6 +449,12 @@ MonoBehaviour:
 =======
   controlID: 9520
 >>>>>>> bdbdfe3b2 (Fixed color space and ambient color causing lighting to be too bright)
+=======
+  m_MinSize: {x: 794, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
+  vertical: 0
+  controlID: 9717
+>>>>>>> 7cb8d64d1 (Fixed shop gold counter)
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -521,11 +535,15 @@ MonoBehaviour:
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 5351
 >>>>>>> 50289e0ec (Updated lighting renderer, Updated Engine to Unity 2020.3.20f1)
 =======
   controlID: 9521
 >>>>>>> bdbdfe3b2 (Fixed color space and ambient color causing lighting to be too bright)
+=======
+  controlID: 9718
+>>>>>>> 7cb8d64d1 (Fixed shop gold counter)
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -550,7 +568,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 9522
+  controlID: 9719
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -880,6 +898,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: -17.90173, y: 42.253983, z: -4.106876}
     speed: 2
     m_Value: {x: -17.90173, y: 42.253983, z: -4.106876}
@@ -923,6 +942,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -1.3171799, y: 50.74839, z: -52.393105}
 >>>>>>> bdbdfe3b2 (Fixed color space and ambient color causing lighting to be too bright)
+=======
+    m_Target: {x: 17.410389, y: 70.37752, z: -53.590725}
+    speed: 2
+    m_Value: {x: 17.410389, y: 70.37752, z: -53.590725}
+>>>>>>> 7cb8d64d1 (Fixed shop gold counter)
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -980,6 +1004,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: 7.9109535
     speed: 2
     m_Value: 7.9109535
@@ -1018,6 +1043,11 @@ MonoBehaviour:
     speed: 2
     m_Value: 11.968169
 >>>>>>> bdbdfe3b2 (Fixed color space and ambient color causing lighting to be too bright)
+=======
+    m_Target: 8.987654
+    speed: 2
+    m_Value: 8.987654
+>>>>>>> 7cb8d64d1 (Fixed shop gold counter)
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1781,7 +1811,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: LightingWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -1790,15 +1820,15 @@ MonoBehaviour:
     y: 0
     width: 432
     height: 949
-  m_MinSize: {x: 276, y: 71}
+  m_MinSize: {x: 391, y: 411}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 17}
+  m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 17}
   - {fileID: 18}
   - {fileID: 19}
-  m_Selected: 0
-  m_LastSelected: 2
+  m_Selected: 2
+  m_LastSelected: 0
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
