@@ -14,13 +14,14 @@ public class OTU_System_MenuManager : MonoBehaviour
 {
     // Public varaibles
     public bool menuActive; // A variable to keep track of whether or not the player is in a menu (If they are then stop them from moving and stuff)
+    public bool alternateMenuActive;
 
     // Reference variables
     private OTU_System_TextboxManager textboxManager;
     private OTU_Overworld_ShopboxManager shopboxManager;
     private OTU_System_InventoryManager inventoryManager;
     private OTU_System_PauseManager pauseManager;
-    private DA_Entity_Control characterController;
+    public DA_Entity_Control characterController;
     private GameObject player;
 
 
@@ -41,17 +42,17 @@ public class OTU_System_MenuManager : MonoBehaviour
         if (textboxManager != null && shopboxManager != null && inventoryManager != null && characterController != null)
         {
             // A menu is active, so stop the player
-            if (textboxManager.textboxActive || shopboxManager.shopboxActive || textboxManager.otherboxActive || inventoryManager.inventoryOpen || pauseManager.pauseMenuOpen)
+            if (textboxManager.textboxActive || shopboxManager.shopboxActive || textboxManager.otherboxActive || inventoryManager.inventoryOpen || pauseManager.pauseMenuOpen || alternateMenuActive)
             {
                 menuActive = true;
-                characterController.canMove = false;
+                //characterController.canMove = false;
             }
 
             // No menus are active, allow the player to move
-            else if (!textboxManager.textboxActive && !shopboxManager.shopboxActive && !textboxManager.otherboxActive && !inventoryManager.inventoryOpen && !pauseManager.pauseMenuOpen)
+            else if (!textboxManager.textboxActive && !shopboxManager.shopboxActive && !textboxManager.otherboxActive && !inventoryManager.inventoryOpen && !pauseManager.pauseMenuOpen && !alternateMenuActive)
             {
                 menuActive = false;
-                characterController.canMove = true;
+                //characterController.canMove = true;
             }
         }
     }

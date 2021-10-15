@@ -16,7 +16,7 @@ using UnityEngine.UI;
 public class DA_HUD_InfoGrabber : MonoBehaviour
 {
     // Public variables
-    public Text textTarget;
+    public GameObject UITarget;
     public string saveManagerInfoField;
 
     // Private variables
@@ -35,15 +35,16 @@ public class DA_HUD_InfoGrabber : MonoBehaviour
     {
         if (saveManagerInfoField == "playerHealth")
         {
-            textTarget.text = saveManager.activeSave2.playerHealth.ToString();
+            RectTransform rectTransform = UITarget.GetComponent<RectTransform>();
+            rectTransform.sizeDelta = new Vector2(saveManager.activeSave2.playerHealth, rectTransform.sizeDelta.y);
         }
         if (saveManagerInfoField == "playerLevel")
         {
-            textTarget.text = saveManager.activeSave2.playerLevel.ToString();
+            UITarget.GetComponent<Text>().text = saveManager.activeSave2.playerLevel.ToString();
         }
         if (saveManagerInfoField == "playerGold")
         {
-            textTarget.text = saveManager.activeSave2.playerGold.ToString();
+            UITarget.GetComponent<Text>().text = saveManager.activeSave2.playerGold.ToString();
         }
     }
 }
