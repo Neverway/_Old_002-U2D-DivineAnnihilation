@@ -9,6 +9,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":-17.901729583740236,"y":42.25398254394531,"z":-4.106875896453857},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":7.910953521728516,"orthographic":true}
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":-14.4833345413208,"y":44.239402770996097,"z":-0.32425299286842348},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":2.9951038360595705,"orthographic":true}
@@ -43,3 +44,6 @@
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":-29.78473663330078,"y":26.928260803222658,"z":-10.358236312866211},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":8.066871643066407,"orthographic":true}
 >>>>>>> 333cda09f (Fixed a stupid typo that breaks store bought items)
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":17.195676803588868,"y":42.44771957397461,"z":-21.62060546875},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":5.472729206085205,"orthographic":true}
+>>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)

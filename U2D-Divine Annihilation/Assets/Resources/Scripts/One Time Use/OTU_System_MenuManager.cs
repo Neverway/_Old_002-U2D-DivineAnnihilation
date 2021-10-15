@@ -14,13 +14,14 @@ public class OTU_System_MenuManager : MonoBehaviour
 {
     // Public varaibles
     public bool menuActive; // A variable to keep track of whether or not the player is in a menu (If they are then stop them from moving and stuff)
+    public bool alternateMenuActive;
 
     // Reference variables
     private OTU_System_TextboxManager textboxManager;
     private OTU_Overworld_ShopboxManager shopboxManager;
     private OTU_System_InventoryManager inventoryManager;
     private OTU_System_PauseManager pauseManager;
-    private DA_Entity_Control characterController;
+    public DA_Entity_Control characterController;
     private GameObject player;
 
 
@@ -43,6 +44,7 @@ public class OTU_System_MenuManager : MonoBehaviour
             // A menu is active, so stop the player
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (textboxManager.textboxActive || inventoryManager.inventoryOpen)
 =======
             if (textboxManager.textboxActive || textboxManager.choiceboxActive || inventoryManager.inventoryOpen || pauseManager.pauseMenuOpen)
@@ -50,12 +52,16 @@ public class OTU_System_MenuManager : MonoBehaviour
 =======
             if (textboxManager.textboxActive || shopboxManager.shopboxActive || textboxManager.otherboxActive || inventoryManager.inventoryOpen || pauseManager.pauseMenuOpen)
 >>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
+=======
+            if (textboxManager.textboxActive || shopboxManager.shopboxActive || textboxManager.otherboxActive || inventoryManager.inventoryOpen || pauseManager.pauseMenuOpen || alternateMenuActive)
+>>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)
             {
                 menuActive = true;
-                characterController.canMove = false;
+                //characterController.canMove = false;
             }
 
             // No menus are active, allow the player to move
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             else if (!textboxManager.textboxActive && !inventoryManager.inventoryOpen)
@@ -65,9 +71,12 @@ public class OTU_System_MenuManager : MonoBehaviour
 =======
             else if (!textboxManager.textboxActive && !shopboxManager.shopboxActive && !textboxManager.otherboxActive && !inventoryManager.inventoryOpen && !pauseManager.pauseMenuOpen)
 >>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
+=======
+            else if (!textboxManager.textboxActive && !shopboxManager.shopboxActive && !textboxManager.otherboxActive && !inventoryManager.inventoryOpen && !pauseManager.pauseMenuOpen && !alternateMenuActive)
+>>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)
             {
                 menuActive = false;
-                characterController.canMove = true;
+                //characterController.canMove = true;
             }
         }
     }

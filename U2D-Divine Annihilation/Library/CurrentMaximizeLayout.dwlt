@@ -25,6 +25,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_MinSize: {x: 678, y: 321}
   m_MaxSize: {x: 12003, y: 8021}
   vertical: 0
@@ -57,6 +58,12 @@ MonoBehaviour:
   vertical: 0
   controlID: 42301
 >>>>>>> 333cda09f (Fixed a stupid typo that breaks store bought items)
+=======
+  m_MinSize: {x: 678, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
+  vertical: 0
+  controlID: 31829
+>>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -78,6 +85,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -106,6 +114,12 @@ MonoBehaviour:
 >>>>>>> 333cda09f (Fixed a stupid typo that breaks store bought items)
     height: 596
 >>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
+=======
+    x: 2157
+    y: 83
+    width: 1164
+    height: 593
+>>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -117,6 +131,7 @@ MonoBehaviour:
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_TargetSize: {x: 955, y: 537}
 =======
   m_TargetSize: {x: 1092, y: 614}
@@ -124,6 +139,9 @@ MonoBehaviour:
 =======
   m_TargetSize: {x: 1022, y: 575}
 >>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
+=======
+  m_TargetSize: {x: 1017, y: 572}
+>>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -138,6 +156,7 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     m_HBaseRangeMin: -477.5
@@ -156,6 +175,12 @@ MonoBehaviour:
     m_VBaseRangeMin: -287.5
     m_VBaseRangeMax: 287.5
 >>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
+=======
+    m_HBaseRangeMin: -508.5
+    m_HBaseRangeMax: 508.5
+    m_VBaseRangeMin: -286
+    m_VBaseRangeMax: 286
+>>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -164,7 +189,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -173,6 +198,7 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -204,12 +230,19 @@ MonoBehaviour:
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 584, y: 287.5}
 >>>>>>> 333cda09f (Fixed a stupid typo that breaks store bought items)
+=======
+      width: 1164
+      height: 572
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 582, y: 286}
+>>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -254,6 +287,15 @@ MonoBehaviour:
 =======
   m_LastWindowPixelSize: {x: 1168, y: 596}
 >>>>>>> 333cda09f (Fixed a stupid typo that breaks store bought items)
+=======
+      x: -582
+      y: -286
+      width: 1164
+      height: 572
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 1164, y: 593}
+>>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -278,8 +320,9 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1404
+    width: 1403
     height: 949
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -316,6 +359,12 @@ MonoBehaviour:
   vertical: 1
   controlID: 42264
 >>>>>>> 333cda09f (Fixed a stupid typo that breaks store bought items)
+=======
+  m_MinSize: {x: 402, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
+  vertical: 1
+  controlID: 31830
+>>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -335,6 +384,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -379,6 +429,14 @@ MonoBehaviour:
 =======
   controlID: 42231
 >>>>>>> 333cda09f (Fixed a stupid typo that breaks store bought items)
+=======
+    width: 1403
+    height: 614
+  m_MinSize: {x: 402, y: 221}
+  m_MaxSize: {x: 8002, y: 4021}
+  vertical: 0
+  controlID: 31809
+>>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -396,6 +454,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -423,6 +482,12 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
 >>>>>>> 333cda09f (Fixed a stupid typo that breaks store bought items)
+=======
+    width: 237
+    height: 614
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+>>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -454,6 +519,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 303
 <<<<<<< HEAD
     height: 558
@@ -478,6 +544,10 @@ MonoBehaviour:
 >>>>>>> 333cda09f (Fixed a stupid typo that breaks store bought items)
     height: 596
 >>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
+=======
+    width: 236
+    height: 593
+>>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
@@ -493,6 +563,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_ExpandedIDs: 2afbffff624c00005a4d0000be4f0000325400008654000092560000a0580000
 >>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
 =======
@@ -504,6 +575,9 @@ MonoBehaviour:
 =======
       m_ExpandedIDs: 5ce0fdffecf5fdff56fcfdffb22dfeff4c6dfeffce72feff6400ffffb208ffff8e09ffff5613ffff92f2ffff2afbfffff4ffffff8e4c0000284f000048500000f0500000ce510000fa5200005e5300001a540000dc54000012550000d2560000d0580000f05800009c590000ae590000e45b0000845c0000aaf6070056fb07003800080076000800a0030800eed00800e0d4080068d908008cd908006ede0800acde0800d6e10800d0cb0c00fece0c00bacf0c007cd00c0072d20c003a540d0004890f00f88c0f0080910f00a4910f0088960f00c6960f00
 >>>>>>> 333cda09f (Fixed a stupid typo that breaks store bought items)
+=======
+      m_ExpandedIDs: 687cfeff5e81feffe8a3feff6ca4feff00a5feff48a6feffd0a6feff54a7feffd8a7feff5ca8feffe0a8feffc0aefeff2eaffeffa6affeff16b0feffaeb6feff0a10ffff8e10ffff1211ffffd814fffff816ffffe21dffff661effff5436ffff1a37ffffe237ffff6a38ffffee38ffffa439ffffaa3dffff2e3effffb23effffb83fffffcc40ffff5241ffff5842ffff1c43ffffe643ffff7844ffff0646ffffa046ffff2647ffffaa47ffff2e48ffffb448ffff3849ffffbc49ffff404affffc44affff484bffffd84cffff844dffffc04effff444fffffc84fffff4c50ffffd250ffff5651ffffda51ffff6252ffff2853ffffac53ffff3654ffffba54ffff3e55ffffc455ffff4856ffffcc56ffff5057ffffd657ffff5a58ffff025cffff885cffff285dffffac5dffff305effffba5effff4060ffffce60ffff5a61ffffe061ffff6862ffffec62ffff4664ffff1e70ffff3870fffffe70ffff7a73ffff1274ffff9674ffff2e75ffff3c7bffff487bffffe27bffffe47bffff247cffff287cfffff67cffff947dffff007effff847effff087fffff9c7fffff2080ffffa480ffff3887ffffd687ffff4288ffff049dffff889dffff0e9effffceb2ffffd4b5ffff72b6ffffa0b7ffff0cb8ffffe4bbffff68bcfffff4bcffffc8bdffff4ebeffff2afbffff34550000225a0000605a00008e5d000064db050018dc05001cdc050028dc0500b0250600c02506006426060068260600742606007e2606002c9706009c0407001c3f0700064b0700e85b07008c5c0700905c07009c5c0700a65c0700306307003a6307008e650700927507005c92070018a7070026a70700ecd80700f0d807000ad907001cd90700b0de070064e307008aed0700f8ef070054f107001af3070046f3070022f707007ef807003cff07004cff0700b0000800e2000800de0d0800520e0800800e0800840e0800b20e080024180800d81c08008e310800d632080008330800ce330800363408004a340800b2340800e0340800e434080012350800906f08009a6f0800be6f080032aa08009ead0800bee20900e4e909008aeb09005cf0090072310a002c910a00cc910a00e2910a00b0940a00989a0a00189c0a00229c0a0064c60a00
+>>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -542,8 +616,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 234
+    x: 237
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -564,6 +639,10 @@ MonoBehaviour:
 >>>>>>> 333cda09f (Fixed a stupid typo that breaks store bought items)
     height: 617
 >>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
+=======
+    width: 1166
+    height: 614
+>>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 2}
@@ -593,8 +672,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2154
+    x: 2157
     y: 83
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -615,6 +695,10 @@ MonoBehaviour:
 >>>>>>> 333cda09f (Fixed a stupid typo that breaks store bought items)
     height: 596
 >>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
+=======
+    width: 1164
+    height: 593
+>>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 9f2623957571fc09bb8756dd7acc14bc
@@ -626,6 +710,7 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -659,6 +744,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -12.489815, y: 23.003119, z: -10.234634}
 >>>>>>> 333cda09f (Fixed a stupid typo that breaks store bought items)
+=======
+    m_Target: {x: 18.352072, y: 38.810577, z: -20.628944}
+    speed: 2
+    m_Value: {x: 18.352072, y: 38.810577, z: -20.628944}
+>>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -688,19 +778,19 @@ MonoBehaviour:
       m_Fade:
         m_Target: 0
         speed: 2
-        m_Value: 0
+        m_Value: 1
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
     zGrid:
       m_Fade:
-        m_Target: 0
+        m_Target: 1
         speed: 2
         m_Value: 1
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 2, y: 2}
-    m_ShowGrid: 0
+      m_Size: {x: 1, y: 1}
+    m_ShowGrid: 1
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
@@ -708,6 +798,7 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -735,6 +826,11 @@ MonoBehaviour:
     speed: 2
     m_Value: 9.698212
 >>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
+=======
+    m_Target: 12.142525
+    speed: 2
+    m_Value: 12.142525
+>>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -769,12 +865,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -811,13 +908,21 @@ MonoBehaviour:
 >>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
   m_ActualView: {fileID: 11}
 >>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
+=======
+    y: 614
+    width: 1403
+    height: 335
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_ActualView: {fileID: 10}
+>>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)
   m_Panes:
   - {fileID: 10}
   - {fileID: 11}
   - {fileID: 12}
   - {fileID: 13}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -859,10 +964,16 @@ MonoBehaviour:
 >>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
 =======
     x: 1920
+<<<<<<< HEAD
     y: 700
     width: 1643
     height: 311
 >>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
+=======
+    y: 697
+    width: 1402
+    height: 314
+>>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -877,6 +988,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     - Assets/Resources/Scripts/One Time Use
@@ -898,12 +1010,20 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Resources/Scripts
 >>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
+=======
+    - Assets/Resources/Scenes
+  m_ViewMode: 1
+  m_StartGridSize: 16
+  m_LastFolders:
+  - Assets/Resources/Scenes
+>>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)
   m_LastFoldersGridSize: 16
   m_LastProjectPath: "/home/lizband/Documents/Neverway/Games/\u795E\u306E\u7D76\u6EC5
     Divine Annihilation/U2D-Divine Annihilation"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -929,6 +1049,12 @@ MonoBehaviour:
     m_LastClickedID: 25584
     m_ExpandedIDs: 00000000b4490000e6630000e8630000ea630000ec630000ee630000f0630000f2630000f4630000f6630000f8630000fa630000fc630000fe630000006400000264000004640000066400000864000000ca9a3b
 >>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
+=======
+    scrollPos: {x: 0, y: 90}
+    m_SelectedIDs: 1ec80500
+    m_LastClickedID: 378910
+    m_ExpandedIDs: 00000000b84900009e640000a0640000a2640000a4640000a6640000a8640000aa640000ac640000ae640000b0640000b2640000b4640000b6640000b8640000ba640000bc640000be640000c064000000ca9a3b
+>>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -970,8 +1096,12 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 4781}
     m_SelectedIDs: e8690000
     m_LastClickedID: 27112
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000b4490000e6630000e8630000ea630000ec630000ee630000f0630000f2630000f4630000f6630000f8630000fa630000fc630000fe630000006400000264000004640000066400000864000000ca9a3b
 >>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
+=======
+    m_ExpandedIDs: 00000000b84900009e640000a0640000a2640000a4640000a6640000a8640000aa640000ac640000ae640000b0640000b2640000b4640000b6640000b8640000ba640000bc640000be640000c064000000ca9a3b
+>>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -997,6 +1127,7 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
@@ -1009,6 +1140,11 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 8e730c00
     m_LastClickedInstanceID: 816014
     m_HadKeyboardFocusLastEvent: 0
+=======
+    m_SelectedInstanceIDs: 9ad30000
+    m_LastClickedInstanceID: 54170
+    m_HadKeyboardFocusLastEvent: 1
+>>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)
     m_ExpandedInstanceIDs: c6230000e25500008ef0ffff7c5b0000b85b00000000000068600000145c00001c6900002e670000e6690000
 >>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
     m_RenameOverlay:
@@ -1079,10 +1215,16 @@ MonoBehaviour:
 >>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
 =======
     x: 1920
+<<<<<<< HEAD
     y: 700
     width: 1403
     height: 311
 >>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
+=======
+    y: 697
+    width: 1402
+    height: 314
+>>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &12
 MonoBehaviour:
@@ -1105,10 +1247,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1366
-    y: 654
-    width: 1298
-    height: 345
+    x: 1920
+    y: 702
+    width: 1402
+    height: 309
   m_ViewDataDictionary: {fileID: 0}
   m_ViewTransforms:
     m_KeySerializationHelper:
@@ -1157,11 +1299,11 @@ MonoBehaviour:
     - e00: 0.9806528
       e01: 0
       e02: 0
-      e03: 16.957764
+      e03: -26.042227
       e10: 0
       e11: 0.9806528
       e12: 0
-      e13: 5.7085724
+      e13: -124.29144
       e20: 0
       e21: 0
       e22: 1
@@ -1186,14 +1328,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 0.8924499
+    - e00: 1.180265
       e01: 0
       e02: 0
-      e03: 38.737427
+      e03: -47.609253
       e10: 0
-      e11: 0.8924499
+      e11: 1.180265
       e12: 0
-      e13: 138.56908
+      e13: -62.846966
       e20: 0
       e21: 0
       e22: 1
@@ -1305,13 +1447,14 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1366
-    y: 654
-    width: 1298
-    height: 345
+    x: 1920
+    y: 702
+    width: 1402
+    height: 309
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1333,6 +1476,9 @@ MonoBehaviour:
 =======
   m_LastSelectedObjectID: 981112
 >>>>>>> 333cda09f (Fixed a stupid typo that breaks store bought items)
+=======
+  m_LastSelectedObjectID: -86556
+>>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)
 --- !u!114 &14
 >>>>>>> 4a1750bc7 (Added shop buy function, Fixed level and gold counters)
 MonoBehaviour:
@@ -1349,12 +1495,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1404
+    x: 1403
     y: 0
-    width: 516
+    width: 517
     height: 949
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -1382,9 +1528,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 3324
+    x: 3323
     y: 83
-    width: 515
+    width: 516
     height: 928
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
@@ -1400,6 +1546,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LastInspectedObjectInstanceID: -1
 =======
   m_LastInspectedObjectInstanceID: 24664
@@ -1410,6 +1557,9 @@ MonoBehaviour:
 =======
   m_LastInspectedObjectInstanceID: -1
 >>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
+=======
+  m_LastInspectedObjectInstanceID: 54170
+>>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)
   m_LastVerticalScrollValue: 0
 --- !u!114 &16
 MonoBehaviour:
@@ -1431,9 +1581,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 3436
+    x: 3323
     y: 83
-    width: 403
+    width: 516
     height: 928
   m_ViewDataDictionary: {fileID: 0}
   m_PreviewResizer:

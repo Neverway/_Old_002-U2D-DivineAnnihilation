@@ -12,6 +12,7 @@ TagManager:
   - Effect Mask
   - Entity Shadow
   - DestroyPersistentOverworldObjects
+  - FX water
   layers:
   - Default
   - TransparentFX
@@ -24,7 +25,7 @@ TagManager:
   - DA_trigger
   - DA_postprocessing
   - DA_colliders
-  - 
+  - DA_shadowcaster
   - 
   - 
   - 

@@ -26,8 +26,9 @@ public class DASDK_Entity_Control : Editor
     SerializedProperty choiceValue;
     DA_Entity_Control entityControl;
 
+
     SerializedProperty shelfSprite;
-    SerializedProperty inventory;
+    //SerializedProperty inventory;
     SerializedProperty HUD;
 
 
@@ -44,7 +45,7 @@ public class DASDK_Entity_Control : Editor
         choiceValue = serializedObject.FindProperty("choiceValue");
 
         shelfSprite = serializedObject.FindProperty("shelfSprite");
-        inventory = serializedObject.FindProperty("inventory");
+        //inventory = serializedObject.FindProperty("inventory");
         HUD = serializedObject.FindProperty("HUD");
     }
 
@@ -110,7 +111,7 @@ public class DASDK_Entity_Control : Editor
             BaseVaraibles();
 
             EditorGUILayout.PropertyField(shelfSprite);
-            EditorGUILayout.PropertyField(inventory);
+            //EditorGUILayout.PropertyField(inventory);
             EditorGUILayout.PropertyField(HUD);
 
             entityControl.choiceValue = 2;

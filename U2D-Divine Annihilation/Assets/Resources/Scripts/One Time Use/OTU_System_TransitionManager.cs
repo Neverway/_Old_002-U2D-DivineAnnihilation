@@ -11,6 +11,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class OTU_System_TransitionManager : MonoBehaviour
 {
@@ -20,52 +21,83 @@ public class OTU_System_TransitionManager : MonoBehaviour
     // Reference variables
     private Transform exitPointTarget;
     private Transform playerTarget;
-    private OTU_System_TransitionManager transitionManager;
+    private OTU_System_MenuManager menuManager;
 
-    public Image FadeTransitionObject;
-    public float FadeSpeed = 0.5f;
-    public float FadeStayDelay = 0.6f;
+    public Image fadeTransitionObject;
+    public Image deathTransitionObject1;
+    public Image deathTransitionObject2;
+    public float fadeSpeed = 0.5f;
+    public float deathFadeSpeed = 0.5f;
+    public float fadeStayDelay = 0.6f;
 
     void Start()
     {
-        FadeTransitionObject.color = new Color(0, 0, 0, 1);
+        menuManager = FindObjectOfType<OTU_System_MenuManager>();
+        fadeTransitionObject.color = new Color(0, 0, 0, 1);
+        if (deathTransitionObject1 != null)
+        {
+            deathTransitionObject1.color = new Color(255, 0, 0, 1);
+            deathTransitionObject1.canvasRenderer.SetAlpha(0.0f);
+            deathTransitionObject2.color = new Color(255, 0, 0, 1);
+            deathTransitionObject2.canvasRenderer.SetAlpha(0.0f);
+        }
         StartCoroutine("TriggerFadeIn");
     }
 
     IEnumerator TriggerFade()
     {
-        FadeTransitionObject.canvasRenderer.SetAlpha(0.0f);
+        fadeTransitionObject.canvasRenderer.SetAlpha(0.0f);
 
-        FadeIn();
-        yield return new WaitForSeconds(FadeStayDelay);
+        FadeIn("");
+        yield return new WaitForSeconds(fadeStayDelay);
         FadeOut();
-        yield return new WaitForSeconds(FadeStayDelay);
+        yield return new WaitForSeconds(fadeStayDelay);
     }
 
     IEnumerator TriggerFadeOut()
     {
-        FadeTransitionObject.canvasRenderer.SetAlpha(0.0f);
+        fadeTransitionObject.canvasRenderer.SetAlpha(0.0f);
 
-        FadeIn();
-        yield return new WaitForSeconds(FadeStayDelay);
+        FadeIn("");
+        yield return new WaitForSeconds(fadeStayDelay);
     }
 
     IEnumerator TriggerFadeIn()
     {
-        FadeTransitionObject.canvasRenderer.SetAlpha(1.0f);
+        fadeTransitionObject.canvasRenderer.SetAlpha(1.0f);
 
 
         FadeOut();
-        yield return new WaitForSeconds(FadeStayDelay);
+        yield return new WaitForSeconds(fadeStayDelay);
     }
 
-    void FadeIn()
+    IEnumerator DeathFadeOut()
     {
-        FadeTransitionObject.CrossFadeAlpha(1.0f, FadeSpeed, false);
+        yield return new WaitForSeconds(fadeStayDelay);
+        deathTransitionObject1.CrossFadeAlpha(0.0f, fadeSpeed, false);
+        deathTransitionObject2.CrossFadeAlpha(0.0f, fadeSpeed, false);
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene("Main_GameOver");
+    }
+
+    public void FadeIn(string specialMode)
+    {
+        if (specialMode == "knockout")
+        {
+            menuManager.characterController.SetCameraIdleNoise(0.00f);
+            fadeTransitionObject.CrossFadeAlpha(1.0f, deathFadeSpeed, false);
+            deathTransitionObject1.CrossFadeAlpha(1.0f, deathFadeSpeed, false);
+            deathTransitionObject2.CrossFadeAlpha(1.0f, deathFadeSpeed, false);
+            StartCoroutine(DeathFadeOut());
+        }
+        else
+        {
+            fadeTransitionObject.CrossFadeAlpha(1.0f, fadeSpeed, false);
+        }
     }
 
     void FadeOut()
     {
-        FadeTransitionObject.CrossFadeAlpha(0.0f, FadeSpeed, false);
+        fadeTransitionObject.CrossFadeAlpha(0.0f, fadeSpeed, false);
     }
 }

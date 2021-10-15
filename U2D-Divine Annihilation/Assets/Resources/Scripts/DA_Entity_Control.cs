@@ -11,6 +11,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Cinemachine;
 
 public class DA_Entity_Control : MonoBehaviour
 {
@@ -38,6 +39,7 @@ public class DA_Entity_Control : MonoBehaviour
     public Sprite shelfSprite;
     public GameObject HUD;
     public bool canMove = true;
+    public bool alternateCanMove = true;
     private Vector2 movement;
 
     // Character variables
@@ -52,11 +54,14 @@ public class DA_Entity_Control : MonoBehaviour
     // Private variables
     public string entityType;
     public float currentSpeed;
+    private bool firstPass = true;
     private SpriteRenderer spriteRenderer;
     private Animator animator;
     private Rigidbody2D Rigidbody;
     private OTU_System_InputManager inputManager;
     private OTU_System_InventoryManager inventoryManager;
+    private OTU_System_TransitionManager transitionManager;
+    private OTU_System_MenuManager menuManager;
     private OTU_System_SaveManager saveManager;
     private OTU_System_SaveLoader saveLoader;
 
@@ -69,6 +74,8 @@ public class DA_Entity_Control : MonoBehaviour
         Rigidbody = gameObject.GetComponent<Rigidbody2D>();
         inputManager = FindObjectOfType<OTU_System_InputManager>();
         inventoryManager = FindObjectOfType<OTU_System_InventoryManager>();
+        transitionManager = FindObjectOfType<OTU_System_TransitionManager>();
+        menuManager = FindObjectOfType<OTU_System_MenuManager>();
         saveManager = FindObjectOfType<OTU_System_SaveManager>();
         saveLoader = FindObjectOfType<OTU_System_SaveLoader>();
         currentSpeed = walkSpeed;
@@ -79,7 +86,7 @@ public class DA_Entity_Control : MonoBehaviour
             /*
             Instantiate(Resources.Load<GameObject>("Prefabs/Core/Config"), new Vector3(0,0,0), new Quaternion(0,0,0,0), GameObject.Find("[System]").transform);
             inputManager = FindObjectOfType<OTU_System_InputManager>();
-            saveManager = FindObjectOfType<OTU_System_SaveManager>();
+            saveManager = FindObjectOfType<OTU_SystemCinemachineBasicMultiChannelPerlin_SaveManager>();
             saveManager.gameObject.transform.SetParent(null);
             saveManager.gameObject.name = "Config";
             saveManager.activeSave2.saveProfileName = "SlotZero";
@@ -195,6 +202,14 @@ public class DA_Entity_Control : MonoBehaviour
                 animator.SetFloat("LastY", movement.y);
 
             }
+            if (Input.GetKey(inputManager.controls["Special 3"]) && saveManager.activeSave2.playerHealth >=0)
+            {
+                saveManager.activeSave2.playerHealth -= 1;
+            }
+            if (Input.GetKey(inputManager.controls["Special 4"]) && saveManager.activeSave2.playerHealth <= maxHealth)
+            {
+                saveManager.activeSave2.playerHealth += 1;
+            }
 
         }
         else
@@ -219,6 +234,26 @@ public class DA_Entity_Control : MonoBehaviour
             //animator.speed = 1;
         }
 
+
+        // can/can't move check
+        if (!menuManager.menuActive && alternateCanMove)
+        {
+            canMove = true;
+        }
+        else
+        {
+            canMove = false;
+        }
+
+        if (saveManager.activeSave2.playerHealth <= 0 && firstPass)
+        {
+            menuManager.alternateMenuActive = true;
+            animator.Play("Knockout");
+            transitionManager.FadeIn("knockout");
+            spriteRenderer.sortingLayerName = "UI";
+            spriteRenderer.sortingOrder = 5;
+            firstPass = false;
+        }
     }
 
     void CharacterEntity()
@@ -234,5 +269,13 @@ public class DA_Entity_Control : MonoBehaviour
     void EnemyEntity()
     {
 
+    }
+
+    public void SetCameraIdleNoise(float amplitude)
+    {
+        gameObject.transform.GetChild(0).gameObject.transform.localRotation = new Quaternion(0, 0, 0, 0);
+        CinemachineVirtualCamera vcam;
+        vcam = FindObjectOfType<CinemachineVirtualCamera>();
+        vcam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = amplitude;
     }
 }
