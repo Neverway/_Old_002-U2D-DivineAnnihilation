@@ -1,27 +1,24 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-      Annihilation/Packages/manifest.json"
+    m_FilePath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637698891430000000
-    m_Hash: 1339744319
+      ticks: 637702265350000000
+    m_Hash: 1982951383
   m_LockFileStatus:
-    m_FilePath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-      Annihilation/Packages/packages-lock.json"
+    m_FilePath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637698891430000000
-    m_Hash: 2283435115
+      ticks: 637702265350000000
+    m_Hash: 3414868641
 m_EmbeddedPackageManifests:
   m_ManifestsStatus:
-    "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine Annihilation/Packages/jp.keijiro.noiseshader/package.json":
-      m_FilePath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Packages/jp.keijiro.noiseshader/package.json"
+    /home/lizband/Desktop/DA/U2D-Divine Annihilation/Packages/jp.keijiro.noiseshader/package.json:
+      m_FilePath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Packages/jp.keijiro.noiseshader/package.json
       m_PathExists: 1
       m_ContentTrackingEnabled: 1
       m_ModificationDate:
@@ -36,8 +33,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 5.0.6
       source: 1
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.2d.animation@5.0.6"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.2d.animation@5.0.6
       assetPath: Packages/com.unity.2d.animation
       name: com.unity.2d.animation
       displayName: 2D Animation
@@ -185,8 +181,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 4.0.1
       source: 1
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.2d.pixel-perfect@4.0.1"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.2d.pixel-perfect@4.0.1
       assetPath: Packages/com.unity.2d.pixel-perfect
       name: com.unity.2d.pixel-perfect
       displayName: 2D Pixel Perfect
@@ -261,8 +256,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 4.1.0
       source: 1
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.2d.psdimporter@4.1.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.2d.psdimporter@4.1.0
       assetPath: Packages/com.unity.2d.psdimporter
       name: com.unity.2d.psdimporter
       displayName: 2D PSD Importer
@@ -384,8 +378,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.2d.sprite@1.0.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.2d.sprite@1.0.0
       assetPath: Packages/com.unity.2d.sprite
       name: com.unity.2d.sprite
       displayName: 2D Sprite
@@ -436,8 +429,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 5.1.4
       source: 1
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.2d.spriteshape@5.1.4"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.2d.spriteshape@5.1.4
       assetPath: Packages/com.unity.2d.spriteshape
       name: com.unity.2d.spriteshape
       displayName: 2D SpriteShape
@@ -580,8 +572,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.2d.tilemap@1.0.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.2d.tilemap@1.0.0
       assetPath: Packages/com.unity.2d.tilemap
       name: com.unity.2d.tilemap
       displayName: 2D Tilemap Editor
@@ -631,8 +622,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.6.0
       source: 1
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.cinemachine@2.6.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.cinemachine@2.6.0
       assetPath: Packages/com.unity.cinemachine
       name: com.unity.cinemachine
       displayName: Cinemachine
@@ -777,8 +767,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.11.2
       source: 1
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.collab-proxy@1.11.2"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.collab-proxy@1.11.2
       assetPath: Packages/com.unity.collab-proxy
       name: com.unity.collab-proxy
       displayName: Version Control
@@ -889,8 +878,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.7
       source: 1
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.ide.rider@2.0.7"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.ide.rider@2.0.7
       assetPath: Packages/com.unity.ide.rider
       name: com.unity.ide.rider
       displayName: JetBrains Rider Editor
@@ -997,8 +985,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.11
       source: 1
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.ide.visualstudio@2.0.11"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.ide.visualstudio@2.0.11
       assetPath: Packages/com.unity.ide.visualstudio
       name: com.unity.ide.visualstudio
       displayName: Visual Studio Editor
@@ -1085,8 +1072,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.2.4
       source: 1
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.ide.vscode@1.2.4"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.ide.vscode@1.2.4
       assetPath: Packages/com.unity.ide.vscode
       name: com.unity.ide.vscode
       displayName: Visual Studio Code Editor
@@ -1157,8 +1143,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.3.0
       source: 1
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.postprocessing@2.3.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.postprocessing@2.3.0
       assetPath: Packages/com.unity.postprocessing
       name: com.unity.postprocessing
       displayName: Post Processing
@@ -1238,13 +1223,12 @@ m_PackageAssets:
         url: git@github.com:Unity-Technologies/PostProcessing.git
         revision: e6de985c41f04a5fc7c7227dd67e3e73fac834e7
         path: 
-    - packageId: com.unity.render-pipelines.universal@10.6.0
+    - packageId: com.unity.render-pipelines.universal@10.7.0
       testable: 0
       isDirectDependency: 1
-      version: 10.6.0
+      version: 10.7.0
       source: 1
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.render-pipelines.universal@10.6.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.render-pipelines.universal@10.7.0
       assetPath: Packages/com.unity.render-pipelines.universal
       name: com.unity.render-pipelines.universal
       displayName: Universal RP
@@ -1310,22 +1294,26 @@ m_PackageAssets:
       - name: com.unity.mathematics
         version: 1.1.0
       - name: com.unity.render-pipelines.core
-        version: 10.6.0
+        version: 10.7.0
       - name: com.unity.shadergraph
-        version: 10.6.0
+        version: 10.7.0
       resolvedDependencies:
       - name: com.unity.mathematics
         version: 1.1.0
       - name: com.unity.render-pipelines.core
-        version: 10.6.0
+        version: 10.7.0
       - name: com.unity.ugui
         version: 1.0.0
       - name: com.unity.modules.ui
         version: 1.0.0
       - name: com.unity.modules.imgui
         version: 1.0.0
+      - name: com.unity.modules.physics
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
+        version: 1.0.0
       - name: com.unity.shadergraph
-        version: 10.6.0
+        version: 10.7.0
       - name: com.unity.searcher
         version: 4.3.2
       keywords:
@@ -1347,21 +1335,20 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637613661830000000
+      datePublishedTicks: 637678189980000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.com/Unity-Technologies/Graphics.git
-        revision: d645e6b498e293626bcb30ec32b652b9f584e9b5
+        revision: 65f895bbddc2d4875c1b605a1921764ddcb0f703
         path: 
     - packageId: com.unity.test-framework@1.1.29
       testable: 0
       isDirectDependency: 1
       version: 1.1.29
       source: 1
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.test-framework@1.1.29"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.test-framework@1.1.29
       assetPath: Packages/com.unity.test-framework
       name: com.unity.test-framework
       displayName: Test Framework
@@ -1452,8 +1439,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 3.0.6
       source: 1
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.textmeshpro@3.0.6"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.textmeshpro@3.0.6
       assetPath: Packages/com.unity.textmeshpro
       name: com.unity.textmeshpro
       displayName: TextMeshPro
@@ -1612,8 +1598,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.4.8
       source: 1
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.timeline@1.4.8"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.timeline@1.4.8
       assetPath: Packages/com.unity.timeline
       name: com.unity.timeline
       displayName: Timeline
@@ -1765,8 +1750,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 0.1.19-preview
       source: 1
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.toolchain.linux-x86_64@0.1.19-preview"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.toolchain.linux-x86_64@0.1.19-preview
       assetPath: Packages/com.unity.toolchain.linux-x86_64
       name: com.unity.toolchain.linux-x86_64
       displayName: Toolchain Linux x64
@@ -1849,8 +1833,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.ugui@1.0.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.ugui@1.0.0
       assetPath: Packages/com.unity.ugui
       name: com.unity.ugui
       displayName: Unity UI
@@ -1913,8 +1896,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0-preview.18
       source: 1
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.ui.builder@1.0.0-preview.18"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.ui.builder@1.0.0-preview.18
       assetPath: Packages/com.unity.ui.builder
       name: com.unity.ui.builder
       displayName: UI Builder
@@ -2039,14 +2021,13 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ui.builder.git
         revision: 544b3f4e85943bedbbcff734995e7b2a0ad85f9f
         path: 
-    - packageId: "jp.keijiro.noiseshader@file:/home/lizband/Desktop/R:NAS/Games/ID-002
-        \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine Annihilation/Packages/jp.keijiro.noiseshader"
+    - packageId: jp.keijiro.noiseshader@file:/home/lizband/Desktop/DA/U2D-Divine
+        Annihilation/Packages/jp.keijiro.noiseshader
       testable: 1
       isDirectDependency: 1
       version: 1.0.0
       source: 3
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Packages/jp.keijiro.noiseshader"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Packages/jp.keijiro.noiseshader
       assetPath: Packages/jp.keijiro.noiseshader
       name: jp.keijiro.noiseshader
       displayName: NoiseShader
@@ -2096,8 +2077,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.modules.ai@1.0.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.modules.ai@1.0.0
       assetPath: Packages/com.unity.modules.ai
       name: com.unity.modules.ai
       displayName: AI
@@ -2145,8 +2125,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.modules.androidjni@1.0.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.modules.androidjni@1.0.0
       assetPath: Packages/com.unity.modules.androidjni
       name: com.unity.modules.androidjni
       displayName: Android JNI
@@ -2194,8 +2173,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.modules.animation@1.0.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.modules.animation@1.0.0
       assetPath: Packages/com.unity.modules.animation
       name: com.unity.modules.animation
       displayName: Animation
@@ -2243,8 +2221,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.modules.assetbundle@1.0.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.modules.assetbundle@1.0.0
       assetPath: Packages/com.unity.modules.assetbundle
       name: com.unity.modules.assetbundle
       displayName: Asset Bundle
@@ -2292,8 +2269,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.modules.audio@1.0.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.modules.audio@1.0.0
       assetPath: Packages/com.unity.modules.audio
       name: com.unity.modules.audio
       displayName: Audio
@@ -2341,8 +2317,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.modules.cloth@1.0.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.modules.cloth@1.0.0
       assetPath: Packages/com.unity.modules.cloth
       name: com.unity.modules.cloth
       displayName: Cloth
@@ -2394,8 +2369,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.modules.director@1.0.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.modules.director@1.0.0
       assetPath: Packages/com.unity.modules.director
       name: com.unity.modules.director
       displayName: Director
@@ -2451,8 +2425,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.modules.imageconversion@1.0.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.modules.imageconversion@1.0.0
       assetPath: Packages/com.unity.modules.imageconversion
       name: com.unity.modules.imageconversion
       displayName: Image Conversion
@@ -2501,8 +2474,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.modules.imgui@1.0.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.modules.imgui@1.0.0
       assetPath: Packages/com.unity.modules.imgui
       name: com.unity.modules.imgui
       displayName: IMGUI
@@ -2550,8 +2522,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.modules.jsonserialize@1.0.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.modules.jsonserialize@1.0.0
       assetPath: Packages/com.unity.modules.jsonserialize
       name: com.unity.modules.jsonserialize
       displayName: JSONSerialize
@@ -2599,8 +2570,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.modules.particlesystem@1.0.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.modules.particlesystem@1.0.0
       assetPath: Packages/com.unity.modules.particlesystem
       name: com.unity.modules.particlesystem
       displayName: Particle System
@@ -2648,8 +2618,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.modules.physics@1.0.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.modules.physics@1.0.0
       assetPath: Packages/com.unity.modules.physics
       name: com.unity.modules.physics
       displayName: Physics
@@ -2697,8 +2666,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.modules.physics2d@1.0.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.modules.physics2d@1.0.0
       assetPath: Packages/com.unity.modules.physics2d
       name: com.unity.modules.physics2d
       displayName: Physics 2D
@@ -2746,8 +2714,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.modules.screencapture@1.0.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.modules.screencapture@1.0.0
       assetPath: Packages/com.unity.modules.screencapture
       name: com.unity.modules.screencapture
       displayName: Screen Capture
@@ -2799,8 +2766,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.modules.terrain@1.0.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.modules.terrain@1.0.0
       assetPath: Packages/com.unity.modules.terrain
       name: com.unity.modules.terrain
       displayName: Terrain
@@ -2848,8 +2814,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.modules.terrainphysics@1.0.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.modules.terrainphysics@1.0.0
       assetPath: Packages/com.unity.modules.terrainphysics
       name: com.unity.modules.terrainphysics
       displayName: Terrain Physics
@@ -2905,8 +2870,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.modules.tilemap@1.0.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.modules.tilemap@1.0.0
       assetPath: Packages/com.unity.modules.tilemap
       name: com.unity.modules.tilemap
       displayName: Tilemap
@@ -2958,8 +2922,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.modules.ui@1.0.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.modules.ui@1.0.0
       assetPath: Packages/com.unity.modules.ui
       name: com.unity.modules.ui
       displayName: UI
@@ -3007,8 +2970,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.modules.uielements@1.0.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.modules.uielements@1.0.0
       assetPath: Packages/com.unity.modules.uielements
       name: com.unity.modules.uielements
       displayName: UIElements
@@ -3072,8 +3034,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.modules.umbra@1.0.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.modules.umbra@1.0.0
       assetPath: Packages/com.unity.modules.umbra
       name: com.unity.modules.umbra
       displayName: Umbra
@@ -3121,8 +3082,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.modules.unityanalytics@1.0.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.modules.unityanalytics@1.0.0
       assetPath: Packages/com.unity.modules.unityanalytics
       name: com.unity.modules.unityanalytics
       displayName: Unity Analytics
@@ -3178,8 +3138,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.modules.unitywebrequest@1.0.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.modules.unitywebrequest@1.0.0
       assetPath: Packages/com.unity.modules.unitywebrequest
       name: com.unity.modules.unitywebrequest
       displayName: Unity Web Request
@@ -3227,8 +3186,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.modules.unitywebrequestassetbundle@1.0.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.modules.unitywebrequestassetbundle@1.0.0
       assetPath: Packages/com.unity.modules.unitywebrequestassetbundle
       name: com.unity.modules.unitywebrequestassetbundle
       displayName: Unity Web Request Asset Bundle
@@ -3284,8 +3242,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.modules.unitywebrequestaudio@1.0.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.modules.unitywebrequestaudio@1.0.0
       assetPath: Packages/com.unity.modules.unitywebrequestaudio
       name: com.unity.modules.unitywebrequestaudio
       displayName: Unity Web Request Audio
@@ -3341,8 +3298,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.modules.unitywebrequesttexture@1.0.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.modules.unitywebrequesttexture@1.0.0
       assetPath: Packages/com.unity.modules.unitywebrequesttexture
       name: com.unity.modules.unitywebrequesttexture
       displayName: Unity Web Request Texture
@@ -3398,8 +3354,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.modules.unitywebrequestwww@1.0.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.modules.unitywebrequestwww@1.0.0
       assetPath: Packages/com.unity.modules.unitywebrequestwww
       name: com.unity.modules.unitywebrequestwww
       displayName: Unity Web Request WWW
@@ -3471,8 +3426,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.modules.vehicles@1.0.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.modules.vehicles@1.0.0
       assetPath: Packages/com.unity.modules.vehicles
       name: com.unity.modules.vehicles
       displayName: Vehicles
@@ -3524,8 +3478,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.modules.video@1.0.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.modules.video@1.0.0
       assetPath: Packages/com.unity.modules.video
       name: com.unity.modules.video
       displayName: Video
@@ -3585,8 +3538,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.modules.vr@1.0.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.modules.vr@1.0.0
       assetPath: Packages/com.unity.modules.vr
       name: com.unity.modules.vr
       displayName: VR
@@ -3648,8 +3600,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.modules.wind@1.0.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.modules.wind@1.0.0
       assetPath: Packages/com.unity.modules.wind
       name: com.unity.modules.wind
       displayName: Wind
@@ -3697,8 +3648,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.modules.xr@1.0.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.modules.xr@1.0.0
       assetPath: Packages/com.unity.modules.xr
       name: com.unity.modules.xr
       displayName: XR
@@ -3758,8 +3708,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.0
       source: 2
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.modules.subsystems@1.0.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.modules.subsystems@1.0.0
       assetPath: Packages/com.unity.modules.subsystems
       name: com.unity.modules.subsystems
       displayName: Subsystems
@@ -3811,8 +3760,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.0
       source: 2
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.modules.uielementsnative@1.0.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.modules.uielementsnative@1.0.0
       assetPath: Packages/com.unity.modules.uielementsnative
       name: com.unity.modules.uielementsnative
       displayName: UIElements Native
@@ -3871,8 +3819,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 0.1.19-preview
       source: 1
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.sysroot@0.1.19-preview"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.sysroot@0.1.19-preview
       assetPath: Packages/com.unity.sysroot
       name: com.unity.sysroot
       displayName: Sysroot Base
@@ -3945,8 +3892,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 0.1.14-preview
       source: 1
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.sysroot.linux-x86_64@0.1.14-preview"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.sysroot.linux-x86_64@0.1.14-preview
       assetPath: Packages/com.unity.sysroot.linux-x86_64
       name: com.unity.sysroot.linux-x86_64
       displayName: Sysroot Linux x64
@@ -4018,8 +3964,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.6
       source: 1
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.ext.nunit@1.0.6"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.ext.nunit@1.0.6
       assetPath: Packages/com.unity.ext.nunit
       name: com.unity.ext.nunit
       displayName: Custom NUnit
@@ -4080,8 +4025,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.1.0
       source: 1
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.mathematics@1.1.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.mathematics@1.1.0
       assetPath: Packages/com.unity.mathematics
       name: com.unity.mathematics
       displayName: Mathematics
@@ -4153,13 +4097,12 @@ m_PackageAssets:
         url: git@github.com:Unity-Technologies/Unity.Mathematics.git
         revision: 0a3dfafaf606098ea681de4c4be60f3aac63b773
         path: 
-    - packageId: com.unity.render-pipelines.core@10.6.0
+    - packageId: com.unity.render-pipelines.core@10.7.0
       testable: 0
       isDirectDependency: 0
-      version: 10.6.0
+      version: 10.7.0
       source: 1
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.render-pipelines.core@10.6.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.render-pipelines.core@10.7.0
       assetPath: Packages/com.unity.render-pipelines.core
       name: com.unity.render-pipelines.core
       displayName: Core RP Library
@@ -4280,12 +4223,20 @@ m_PackageAssets:
       dependencies:
       - name: com.unity.ugui
         version: 1.0.0
+      - name: com.unity.modules.physics
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
+        version: 1.0.0
       resolvedDependencies:
       - name: com.unity.ugui
         version: 1.0.0
       - name: com.unity.modules.ui
         version: 1.0.0
       - name: com.unity.modules.imgui
+        version: 1.0.0
+      - name: com.unity.modules.physics
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
         version: 1.0.0
       keywords: []
       registry:
@@ -4300,21 +4251,20 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637613656840000000
+      datePublishedTicks: 637678188680000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.com/Unity-Technologies/Graphics.git
-        revision: d645e6b498e293626bcb30ec32b652b9f584e9b5
+        revision: 65f895bbddc2d4875c1b605a1921764ddcb0f703
         path: 
-    - packageId: com.unity.shadergraph@10.6.0
+    - packageId: com.unity.shadergraph@10.7.0
       testable: 0
       isDirectDependency: 0
-      version: 10.6.0
+      version: 10.7.0
       source: 1
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.shadergraph@10.6.0"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.shadergraph@10.7.0
       assetPath: Packages/com.unity.shadergraph
       name: com.unity.shadergraph
       displayName: Shader Graph
@@ -4431,17 +4381,21 @@ m_PackageAssets:
         verified: 10.6.0
       dependencies:
       - name: com.unity.render-pipelines.core
-        version: 10.6.0
+        version: 10.7.0
       - name: com.unity.searcher
         version: 4.3.2
       resolvedDependencies:
       - name: com.unity.render-pipelines.core
-        version: 10.6.0
+        version: 10.7.0
       - name: com.unity.ugui
         version: 1.0.0
       - name: com.unity.modules.ui
         version: 1.0.0
       - name: com.unity.modules.imgui
+        version: 1.0.0
+      - name: com.unity.modules.physics
+        version: 1.0.0
+      - name: com.unity.modules.jsonserialize
         version: 1.0.0
       - name: com.unity.searcher
         version: 4.3.2
@@ -4458,21 +4412,20 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 637613662270000000
+      datePublishedTicks: 637678188860000000
       documentationUrl: 
       hasRepository: 1
       repository:
         type: git
         url: https://github.com/Unity-Technologies/Graphics.git
-        revision: d645e6b498e293626bcb30ec32b652b9f584e9b5
+        revision: 65f895bbddc2d4875c1b605a1921764ddcb0f703
         path: 
     - packageId: com.unity.2d.common@4.0.3
       testable: 0
       isDirectDependency: 0
       version: 4.0.3
       source: 1
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.2d.common@4.0.3"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.2d.common@4.0.3
       assetPath: Packages/com.unity.2d.common
       name: com.unity.2d.common
       displayName: 2D Common
@@ -4559,8 +4512,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 4.0.2
       source: 1
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.2d.path@4.0.2"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.2d.path@4.0.2
       assetPath: Packages/com.unity.2d.path
       name: com.unity.2d.path
       displayName: 2D Path
@@ -4629,8 +4581,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 4.3.2
       source: 1
-      resolvedPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-        Annihilation/Library/PackageCache/com.unity.searcher@4.3.2"
+      resolvedPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.searcher@4.3.2
       assetPath: Packages/com.unity.searcher
       name: com.unity.searcher
       displayName: Searcher
@@ -4705,6 +4656,5 @@ m_PackageAssets:
         path: 
   m_LocalPackages:
     m_LocalFileStatus: []
-m_ProjectPath: "/home/lizband/Desktop/R:NAS/Games/ID-002 \u795E\u306E\u7D76\u6EC5DivineAnnihilation/U2D-Divine
-  Annihilation/Packages"
+m_ProjectPath: /home/lizband/Desktop/DA/U2D-Divine Annihilation/Packages
 m_EditorVersion: 2020.3.20f1 (41c4e627c95f)
