@@ -1,17 +1,19 @@
-﻿<Properties>
+﻿<Properties StartupConfiguration="{E8E908E2-34C1-686D-6F47-82B426D64E54}|Unit Tests">
   <MonoDevelop.Ide.ItemProperties.PackageToolsEditor PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/Scripts/One Time Use/OTU_GameOver_Events.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/Scripts/One Time Use/OTU_System_TransitionManager.cs">
     <Files>
-      <File FileName="Assets/Resources/Scripts/DA_Entity_Control.cs" Line="254" Column="45" />
-      <File FileName="Assets/Resources/Scripts/DA_Trigger_Shop.cs" Line="102" Column="1" />
-      <File FileName="Assets/Resources/Scripts/One Time Use/OTU_GameOver_Events.cs" Line="36" Column="49" />
-      <File FileName="Assets/Resources/Scripts/One Time Use/OTU_System_SaveManager.cs" Line="227" Column="35" />
-      <File FileName="Assets/Resources/Scripts/One Time Use/OTU_Title_Events.cs" Line="55" Column="5" />
+      <File FileName="Assets/Resources/Scripts/DA_Trigger_Warp.cs" Line="15" Column="14" />
+      <File FileName="Assets/Resources/Scripts/DA_Trigger_WarpLevel.cs" Line="25" Column="66" />
+      <File FileName="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Trigger_Warp_Level.cs" Line="17" Column="38" />
+      <File FileName="Assets/Resources/Scripts/DA_Trigger_Interact.cs" Line="23" Column="21" />
+      <File FileName="Assets/Resources/Scripts/One Time Use/OTU_System_SaveManager.cs" Line="24" Column="41" />
+      <File FileName="Assets/Resources/Scripts/One Time Use/OTU_System_TransitionManager.cs" Line="16" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-Editor PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.AstarPathfindingProjectEditor PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.Unity.Sysroot.Linux__x86__64 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.UnityEngine.TestRunner PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

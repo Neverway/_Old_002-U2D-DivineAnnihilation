@@ -47,28 +47,28 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@10.6.0\ShaderLibrary\ShaderTypes.cs" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.6.0\ShaderLibrary\UniversalDOTSInstancing.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.6.0\ShaderLibrary\DeclareNormalsTexture.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.6.0\ShaderLibrary\Input.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.6.0\ShaderLibrary\Core.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.6.0\ShaderLibrary\SSAO.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.6.0\ShaderLibrary\SurfaceInput.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.6.0\ShaderLibrary\UnityInput.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.6.0\ShaderLibrary\Lighting.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.6.0\ShaderLibrary\ParticlesInstancing.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.6.0\ShaderLibrary\SurfaceData.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.6.0\ShaderLibrary\Particles.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.6.0\ShaderLibrary\Deprecated.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.6.0\ShaderLibrary\ShaderVariablesFunctions.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.6.0\ShaderLibrary\DeclareOpaqueTexture.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.6.0\ShaderLibrary\ShaderGraphFunctions.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.6.0\ShaderLibrary\ShaderTypes.cs.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.6.0\ShaderLibrary\Unity.RenderPipelines.Universal.ShaderLibrary.asmdef" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.6.0\ShaderLibrary\UnityGBuffer.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.6.0\ShaderLibrary\Shadows.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.6.0\ShaderLibrary\MetaInput.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.6.0\ShaderLibrary\DeclareDepthTexture.hlsl" />
+     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@10.7.0\ShaderLibrary\ShaderTypes.cs" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.7.0\ShaderLibrary\UniversalDOTSInstancing.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.7.0\ShaderLibrary\DeclareNormalsTexture.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.7.0\ShaderLibrary\Input.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.7.0\ShaderLibrary\Core.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.7.0\ShaderLibrary\SSAO.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.7.0\ShaderLibrary\SurfaceInput.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.7.0\ShaderLibrary\UnityInput.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.7.0\ShaderLibrary\Lighting.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.7.0\ShaderLibrary\ParticlesInstancing.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.7.0\ShaderLibrary\SurfaceData.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.7.0\ShaderLibrary\Particles.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.7.0\ShaderLibrary\Deprecated.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.7.0\ShaderLibrary\ShaderVariablesFunctions.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.7.0\ShaderLibrary\DeclareOpaqueTexture.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.7.0\ShaderLibrary\ShaderGraphFunctions.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.7.0\ShaderLibrary\ShaderTypes.cs.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.7.0\ShaderLibrary\Unity.RenderPipelines.Universal.ShaderLibrary.asmdef" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.7.0\ShaderLibrary\UnityGBuffer.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.7.0\ShaderLibrary\Shadows.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.7.0\ShaderLibrary\MetaInput.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.universal@10.7.0\ShaderLibrary\DeclareDepthTexture.hlsl" />
  <Reference Include="UnityEngine">
  <HintPath>/home/lizband/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -291,26 +291,29 @@
  <Reference Include="UnityEditor.Graphs">
  <HintPath>/home/lizband/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEditor.WebGL.Extensions">
+ <HintPath>/home/lizband/Unity/Hub/Editor/2020.3.20f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.LinuxStandalone.Extensions">
  <HintPath>/home/lizband/Unity/Hub/Editor/2020.3.20f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Plastic.Newtonsoft.Json">
- <HintPath>/home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.collab-proxy@1.11.2/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+ <HintPath>/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Library/PackageCache/com.unity.collab-proxy@1.11.2/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Plastic.Antlr3.Runtime">
- <HintPath>/home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.collab-proxy@1.11.2/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+ <HintPath>/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Library/PackageCache/com.unity.collab-proxy@1.11.2/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Pathfinding.Ionic.Zip.Reduced">
- <HintPath>/home/lizband/Desktop/DA/U2D-Divine Annihilation/Assets/Packages/AstarPathfinding/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+ <HintPath>/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Packages/AstarPathfinding/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
  </Reference>
  <Reference Include="log4netPlastic">
- <HintPath>/home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.collab-proxy@1.11.2/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+ <HintPath>/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Library/PackageCache/com.unity.collab-proxy@1.11.2/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
  </Reference>
  <Reference Include="ICSharpCode.NRefactory">
- <HintPath>/home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.render-pipelines.core@10.6.0/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
+ <HintPath>/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Library/PackageCache/com.unity.render-pipelines.core@10.7.0/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
  </Reference>
  <Reference Include="unityplastic">
- <HintPath>/home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.collab-proxy@1.11.2/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
+ <HintPath>/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Library/PackageCache/com.unity.collab-proxy@1.11.2/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>/home/lizband/Unity/Hub/Editor/2020.3.20f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -657,17 +660,21 @@
  <Reference Include="mscorlib">
  <HintPath>/home/lizband/Unity/Hub/Editor/2020.3.20f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll</HintPath>
  </Reference>
- <Reference Include="UnityEditor.UI">
- <HintPath>/home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UI">
- <HintPath>/home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
- </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.RenderPipelines.Core.Runtime.csproj">
       <Project>{BD3EB677-471B-4C33-E930-79174EAA7E82}</Project>
       <Name>Unity.RenderPipelines.Core.Runtime</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{753C394C-2565-6A51-4248-600D337E2FDC}</Project>
+      <Name>UnityEditor.UI</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{003CF98C-9A04-3AEF-C110-0762CC2F8EEB}</Project>
+      <Name>UnityEngine.UI</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>

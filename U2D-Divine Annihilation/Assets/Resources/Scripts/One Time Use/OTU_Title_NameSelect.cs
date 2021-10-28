@@ -75,7 +75,14 @@ public class OTU_Title_NameSelect : MonoBehaviour
             actions.text = "[" + inputManager.controls["Interact"] + "] Confirm   [" + inputManager.controls["Action"] + "] Cancel";
             gameObject.GetComponent<OTU_Title_NameSelect>().enabled = false;
         }
-        else if (nameTextObject.text == "MIYU" || nameTextObject.text == "SAM" || nameTextObject.text == "CASEY" || nameTextObject.text == "NIRNA")
+        else if (nameTextObject.text == "FOX" || nameTextObject.text == "FOX_YUNAMORA" || nameTextObject.text == "YUNAMORA")
+        {
+            systemMessageScreen.SetActive(true);
+            message.text = "This will set the system to HARD MODE! Continue?";
+            actions.text = "[" + inputManager.controls["Interact"] + "] Confirm   [" + inputManager.controls["Action"] + "] Cancel";
+            gameObject.GetComponent<OTU_Title_NameSelect>().enabled = false;
+        }
+        else if (nameTextObject.text == "MIYU" || nameTextObject.text == "SAM" || nameTextObject.text == "CASEY" || nameTextObject.text == "NIRNA" || nameTextObject.text == "STRIKER" || nameTextObject.text == "LURURY")
         {
             systemMessageScreen.SetActive(true);
             message.text = nameTakenError;

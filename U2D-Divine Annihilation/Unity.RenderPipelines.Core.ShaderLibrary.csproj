@@ -47,58 +47,58 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\DummyShaderLibrary.cs" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\API\Validate.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\Debug.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\Sampling\SampleUVMappingInternal.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\Random.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\Refraction.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\UnityInstancing.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\SDF2D.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\EntityLighting.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\Color.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\Macros.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\Sampling\Fibonacci.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\CommonLighting.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\Sampling\SampleUVMapping.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\API\GLES3.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\CommonMaterial.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\Filtering.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\API\Metal.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\Sampling\Sampling.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\API\Vulkan.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\PhysicalCamera.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\Common.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\ACES.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\GraniteShaderLibBase.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\SpaceFillingCurves.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\Unity.RenderPipelines.Core.ShaderLibrary.asmdef" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\VolumeRendering.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\Version.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\NormalSurfaceGradient.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\ParallaxMapping.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\SpaceTransforms.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\API\GLCore.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\BC6H.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\API\GLES2.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\CommonShadow.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\API\Switch.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\TextureStack.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\Texture.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\UnityDOTSInstancing.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\Sampling\SampleUVMappingNormalInternal.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\PerPixelDisplacement.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\AreaLighting.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\Sampling\Hammersley.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\CommonDeprecated.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\API\D3D11.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\Packing.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\Tessellation.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\BSDF.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\ImageBasedLighting.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\GeometricTools.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\VirtualTexturing.hlsl" />
-     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.6.0\ShaderLibrary\Shadow\ShadowSamplingTent.hlsl" />
+     <Compile Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\DummyShaderLibrary.cs" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\API\Validate.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\Debug.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\Sampling\SampleUVMappingInternal.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\Random.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\Refraction.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\UnityInstancing.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\SDF2D.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\EntityLighting.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\Color.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\Macros.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\Sampling\Fibonacci.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\CommonLighting.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\Sampling\SampleUVMapping.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\API\GLES3.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\CommonMaterial.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\Filtering.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\API\Metal.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\Sampling\Sampling.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\API\Vulkan.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\PhysicalCamera.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\Common.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\ACES.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\GraniteShaderLibBase.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\SpaceFillingCurves.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\Unity.RenderPipelines.Core.ShaderLibrary.asmdef" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\VolumeRendering.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\Version.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\NormalSurfaceGradient.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\ParallaxMapping.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\SpaceTransforms.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\API\GLCore.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\BC6H.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\API\GLES2.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\CommonShadow.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\API\Switch.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\TextureStack.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\Texture.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\UnityDOTSInstancing.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\Sampling\SampleUVMappingNormalInternal.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\PerPixelDisplacement.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\AreaLighting.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\Sampling\Hammersley.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\CommonDeprecated.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\API\D3D11.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\Packing.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\Tessellation.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\BSDF.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\ImageBasedLighting.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\GeometricTools.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\VirtualTexturing.hlsl" />
+     <None Include="Library\PackageCache\com.unity.render-pipelines.core@10.7.0\ShaderLibrary\Shadow\ShadowSamplingTent.hlsl" />
  <Reference Include="UnityEngine">
  <HintPath>/home/lizband/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -321,26 +321,29 @@
  <Reference Include="UnityEditor.Graphs">
  <HintPath>/home/lizband/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEditor.WebGL.Extensions">
+ <HintPath>/home/lizband/Unity/Hub/Editor/2020.3.20f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.LinuxStandalone.Extensions">
  <HintPath>/home/lizband/Unity/Hub/Editor/2020.3.20f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Plastic.Newtonsoft.Json">
- <HintPath>/home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.collab-proxy@1.11.2/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+ <HintPath>/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Library/PackageCache/com.unity.collab-proxy@1.11.2/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Plastic.Antlr3.Runtime">
- <HintPath>/home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.collab-proxy@1.11.2/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+ <HintPath>/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Library/PackageCache/com.unity.collab-proxy@1.11.2/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Pathfinding.Ionic.Zip.Reduced">
- <HintPath>/home/lizband/Desktop/DA/U2D-Divine Annihilation/Assets/Packages/AstarPathfinding/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+ <HintPath>/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Packages/AstarPathfinding/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
  </Reference>
  <Reference Include="log4netPlastic">
- <HintPath>/home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.collab-proxy@1.11.2/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+ <HintPath>/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Library/PackageCache/com.unity.collab-proxy@1.11.2/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
  </Reference>
  <Reference Include="ICSharpCode.NRefactory">
- <HintPath>/home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.render-pipelines.core@10.6.0/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
+ <HintPath>/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Library/PackageCache/com.unity.render-pipelines.core@10.7.0/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
  </Reference>
  <Reference Include="unityplastic">
- <HintPath>/home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/PackageCache/com.unity.collab-proxy@1.11.2/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
+ <HintPath>/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Library/PackageCache/com.unity.collab-proxy@1.11.2/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>/home/lizband/Unity/Hub/Editor/2020.3.20f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -687,14 +690,18 @@
  <Reference Include="mscorlib">
  <HintPath>/home/lizband/Unity/Hub/Editor/2020.3.20f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll</HintPath>
  </Reference>
- <Reference Include="UnityEditor.UI">
- <HintPath>/home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UI">
- <HintPath>/home/lizband/Desktop/DA/U2D-Divine Annihilation/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
- </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{753C394C-2565-6A51-4248-600D337E2FDC}</Project>
+      <Name>UnityEditor.UI</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{003CF98C-9A04-3AEF-C110-0762CC2F8EEB}</Project>
+      <Name>UnityEngine.UI</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
