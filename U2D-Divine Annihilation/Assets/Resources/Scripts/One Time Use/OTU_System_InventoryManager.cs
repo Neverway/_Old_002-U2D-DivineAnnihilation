@@ -511,7 +511,7 @@ public class OTU_System_InventoryManager : MonoBehaviour
         }
         else if (currentlySelecting == "Equipment Menu")
         {
-            if (saveManager.activeSave2.equipmentDiscardable[itemsMenuController.currentSelection] == "True")
+            if (saveManager.activeSave2.equipmentDiscardable[equipmentMenuController.currentSelection] == "True")
             {
                 //Instantiate(itemPickupPrefab, GameObject.FindWithTag("Player").transform, true);
 
