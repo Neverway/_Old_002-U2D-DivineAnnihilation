@@ -14,6 +14,7 @@ using UnityEngine;
 
 public class OTU_Overworld_SavePoint : MonoBehaviour
 {
+    public string saveChapter;
     private bool inFinalTextbox;
 
     private OTU_System_InputManager inputManager;
@@ -50,6 +51,7 @@ public class OTU_Overworld_SavePoint : MonoBehaviour
     public void SaveYes()
     {
         print("SaveYes");
+        saveManager.activeSave2.saveChapter = saveChapter;
         saveManager.Save();
         gameObject.transform.GetChild(0).GetComponent<DA_Menu_Control>().enabled = false;
         textboxManager.CloseChoicebox();

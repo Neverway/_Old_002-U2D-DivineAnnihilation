@@ -26,6 +26,10 @@ public class DASDK_Entity_Control : Editor
     SerializedProperty choiceValue;
     DA_Entity_Control entityControl;
 
+    SerializedProperty maxHealth;
+    SerializedProperty walkSpeed;
+    SerializedProperty sprintSpeed;
+
 
     SerializedProperty shelfSprite;
     //SerializedProperty inventory;
@@ -43,6 +47,10 @@ public class DASDK_Entity_Control : Editor
         idleLeft = serializedObject.FindProperty("idleLeft");
         idleRight = serializedObject.FindProperty("idleRight");
         choiceValue = serializedObject.FindProperty("choiceValue");
+
+        maxHealth = serializedObject.FindProperty("maxHealth");
+        walkSpeed = serializedObject.FindProperty("walkSpeed");
+        sprintSpeed = serializedObject.FindProperty("sprintSpeed");
 
         shelfSprite = serializedObject.FindProperty("shelfSprite");
         //inventory = serializedObject.FindProperty("inventory");
@@ -122,7 +130,7 @@ public class DASDK_Entity_Control : Editor
     public void BaseVaraibles()
     {
         EditorGUILayout.PropertyField(entityName);  // Entity name
-        EditorGUILayout.FloatField("Max Health", entityControl.maxHealth); // Entity Health
+        EditorGUILayout.PropertyField(maxHealth); // Entity Health
         entityControl.useSpritesOverAnimator = EditorGUILayout.Toggle("Sprites Over Animator", entityControl.useSpritesOverAnimator);   // Sprites over animator
 
         // Animator
@@ -140,8 +148,8 @@ public class DASDK_Entity_Control : Editor
             EditorGUILayout.PropertyField(idleRight);
         }
 
-        EditorGUILayout.FloatField("Walk Speed", entityControl.walkSpeed); // Walk Speed
-        EditorGUILayout.FloatField("Sprint Speed", entityControl.sprintSpeed); // Sprint Speed
+        EditorGUILayout.PropertyField(walkSpeed); // Walk Speed
+        EditorGUILayout.PropertyField(sprintSpeed); // Sprint Speed
 
         EditorGUILayout.Space();                                                       // Add a divider
     }

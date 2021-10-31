@@ -9,6 +9,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	"process_id" : 46982,
 =======
 	"process_id" : 179054,
@@ -42,6 +43,9 @@
 =======
 	"process_id" : 2501,
 >>>>>>> 7814dd707 (Updated Template_Overworld, Added level warp triggers)
+=======
+	"process_id" : 144443,
+>>>>>>> 7df09d4b8 (Updated C1S2 to G10,  Fixed save chapter not updating properly, Fixed inventory discarding, Fixed entity variables being stuck as read only, Updated prefabs list, Fixed Solution file missing DASDK scripts)
 	"version" : "2020.3.20f1",
 	"app_path" : "/home/lizband/Unity/Hub/Editor/2020.3.20f1/Editor/Unity",
 	"app_contents_path" : "/home/lizband/Unity/Hub/Editor/2020.3.20f1/Editor/Data"

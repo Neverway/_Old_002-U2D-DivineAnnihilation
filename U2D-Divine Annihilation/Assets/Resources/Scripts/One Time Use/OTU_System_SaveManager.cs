@@ -155,7 +155,7 @@ public class OTU_System_SaveManager : MonoBehaviour
         }
 
         // Chapter Data
-        activeSave2.saveChapter = "C1 Begining";
+        activeSave2.saveChapter = "C1 Beginning";
         for (int i = 0; i < activeSave2.Chapter.Length; i++)
         {
             for (int ii = 0; ii < activeSave2.Chapter[i].Scene.Length; ii++)
