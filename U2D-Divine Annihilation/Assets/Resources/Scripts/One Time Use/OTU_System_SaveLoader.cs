@@ -39,7 +39,10 @@ public class OTU_System_SaveLoader : MonoBehaviour
         if (!hasLoadedCurrentLevel)
         {
             // Load the players position
-            GameObject.FindWithTag("Player").transform.position = saveManager.activeSave2.playerSavePosition;
+            if (GameObject.FindWithTag("Player"))
+            {
+                GameObject.FindWithTag("Player").transform.position = saveManager.activeSave2.playerSavePosition;
+            }
 
             // Load the players currently equipped items
             if (saveManager.activeSave2.equippedU == 1) { inventoryManager.SystemEquipItem(0, 1, true); }
