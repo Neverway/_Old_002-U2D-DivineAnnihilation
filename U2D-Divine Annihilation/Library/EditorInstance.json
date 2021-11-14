@@ -10,6 +10,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	"process_id" : 46982,
 =======
 	"process_id" : 179054,
@@ -50,4 +51,10 @@
 	"app_path" : "/home/lizband/Unity/Hub/Editor/2020.3.20f1/Editor/Unity",
 	"app_contents_path" : "/home/lizband/Unity/Hub/Editor/2020.3.20f1/Editor/Data"
 >>>>>>> 50289e0ec (Updated lighting renderer, Updated Engine to Unity 2020.3.20f1)
+=======
+	"process_id" : 30082,
+	"version" : "2020.3.22f1",
+	"app_path" : "/home/lizband/Unity/Hub/Editor/2020.3.22f1/Editor/Unity",
+	"app_contents_path" : "/home/lizband/Unity/Hub/Editor/2020.3.22f1/Editor/Data"
+>>>>>>> 741f5210d (Added battle encounters, Added dev menu, Added battle party setup, Updated Unity Editor version to 2020.3.22f1)
 }

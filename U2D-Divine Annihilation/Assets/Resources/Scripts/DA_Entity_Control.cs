@@ -8,6 +8,7 @@
 //
 //=============================================================================
 
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -46,8 +47,9 @@ public class DA_Entity_Control : MonoBehaviour
     public bool isFollower;
 
     // Enemy variables
+    public string[] enemysPartyMembers;
     public float senseRange = 20f;
-    public float attack = 15; 
+    //public float attack = 15; 
     public int goldDrop = 5;
     public float expDrop = 5;
 
@@ -269,6 +271,18 @@ public class DA_Entity_Control : MonoBehaviour
     void EnemyEntity()
     {
 
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Player" && entityType == "enemy") 
+        {
+            transitionManager.BattleTransition(0);
+            PlayerPrefs.SetString("EP0", entityName);
+            PlayerPrefs.SetString("EP1", enemysPartyMembers[0]);
+            PlayerPrefs.SetString("EP2", enemysPartyMembers[1]);
+            PlayerPrefs.SetString("EP3", enemysPartyMembers[2]);
+        }
     }
 
     public void SetCameraIdleNoise(float amplitude)

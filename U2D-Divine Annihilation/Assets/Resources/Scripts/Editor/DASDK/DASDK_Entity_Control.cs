@@ -34,6 +34,8 @@ public class DASDK_Entity_Control : Editor
     SerializedProperty shelfSprite;
     //SerializedProperty inventory;
     SerializedProperty HUD;
+    
+    SerializedProperty enemysPartyMembers;
 
 
     // Find parent script variables
@@ -55,6 +57,8 @@ public class DASDK_Entity_Control : Editor
         shelfSprite = serializedObject.FindProperty("shelfSprite");
         //inventory = serializedObject.FindProperty("inventory");
         HUD = serializedObject.FindProperty("HUD");
+
+        enemysPartyMembers = serializedObject.FindProperty("enemysPartyMembers");
     }
 
 
@@ -105,7 +109,7 @@ public class DASDK_Entity_Control : Editor
         {
             EditorGUILayout.HelpBox("Hostile NPC's that hunt down or attack the player", MessageType.None);     // Description
             BaseVaraibles();
-
+            EditorGUILayout.PropertyField(enemysPartyMembers);
             entityControl.choiceValue = 1;
         }
     }
@@ -121,7 +125,7 @@ public class DASDK_Entity_Control : Editor
             EditorGUILayout.PropertyField(shelfSprite);
             //EditorGUILayout.PropertyField(inventory);
             EditorGUILayout.PropertyField(HUD);
-
+            
             entityControl.choiceValue = 2;
         }
     }

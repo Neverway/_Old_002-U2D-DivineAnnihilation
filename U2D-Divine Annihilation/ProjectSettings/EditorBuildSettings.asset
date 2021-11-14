@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Resources/Scenes/Main_Title.unity
     guid: 9ab875f48a88256f59055c7a63a21385
   - enabled: 1
+    path: Assets/Resources/Scenes/Main_Battle.unity
+    guid: 13be3416da3ab8a3ab153296c53ce8bb
+  - enabled: 1
     path: Assets/Resources/Scenes/Main_GameOver.unity
     guid: 8d8f05e5bea28c90784291bdac3e617f
   - enabled: 1
@@ -23,7 +26,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Resources/Scenes/Template_Overworld.unity
     guid: 6bdfbc0ee95cef6c2ac8098e3ac4178e
-  - enabled: 1
-    path: Assets/Resources/Scenes/Template_Battle.unity
-    guid: 91b267d158c8daa6da493fa6fe33b262
   m_configObjects: {}

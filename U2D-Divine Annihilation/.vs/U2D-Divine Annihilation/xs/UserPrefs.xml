@@ -1,10 +1,6 @@
 ﻿<Properties>
   <MonoDevelop.Ide.ItemProperties.PackageToolsEditor PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/Scripts/Editor/DASDK/DASDK_Entity_Control.cs">
-    <Files>
-      <File FileName="Assets/Resources/Scripts/Editor/DASDK/DASDK_Entity_Control.cs" Line="24" Column="33" />
-      <File FileName="Assets/Resources/Scripts/DA_Entity_Control.cs" Line="24" Column="28" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -13,10 +9,8 @@
               <Node name="Assets" expanded="True">
                 <Node name="Resources" expanded="True">
                   <Node name="Scripts" expanded="True">
-                    <Node name="Editor" expanded="True">
-                      <Node name="DASDK" expanded="True">
-                        <Node name="DASDK_Entity_Control.cs" selected="True" />
-                      </Node>
+                    <Node name="One Time Use" expanded="True">
+                      <Node name="OTU_System_TransitionManager.cs" selected="True" />
                     </Node>
                   </Node>
                 </Node>
@@ -25,18 +19,14 @@
           </Node>
         </State>
       </Pad>
-      <Pad Id="ClassPad">
-        <State name="__root__">
-          <Node name="U2D-Divine Annihilation" expanded="True" selected="True" />
-        </State>
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Unity.PlasticSCM.Editor PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-Editor PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.AstarPathfindingProjectEditor PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.Unity.Sysroot.Linux__x86__64 PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.UnityEngine.TestRunner PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
