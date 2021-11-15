@@ -89,6 +89,13 @@ public class OTU_Title_NameSelect : MonoBehaviour
             actions.text = "[" + inputManager.controls["Interact"] + "] Confirm   [" + inputManager.controls["Action"] + "] Cancel";
             gameObject.GetComponent<OTU_Title_NameSelect>().enabled = false;
         }
+        else if (nameTextObject.text == "AAAAAAAAAAAA")
+        {
+            systemMessageScreen.SetActive(true);
+            message.text = "AAAAAAAA??? AAAAAAAAAAA!!!";
+            actions.text = "[" + inputManager.controls["Interact"] + "] Confirm   [" + inputManager.controls["Action"] + "] Cancel";
+            gameObject.GetComponent<OTU_Title_NameSelect>().enabled = false;
+        }
         else if (nameTextObject.text == "FOX_IS_DEAD")
         {
             systemMessageScreen.SetActive(true);

@@ -104,11 +104,15 @@ MonoBehaviour:
 >>>>>>> 7df09d4b8 (Updated C1S2 to G10,  Fixed save chapter not updating properly, Fixed inventory discarding, Fixed entity variables being stuck as read only, Updated prefabs list, Fixed Solution file missing DASDK scripts)
 =======
     height: 937
-  m_MinSize: {x: 679, y: 471}
-  m_MaxSize: {x: 14001, y: 14021}
+  m_MinSize: {x: 678, y: 342}
+  m_MaxSize: {x: 12003, y: 8042}
   vertical: 0
+<<<<<<< HEAD
   controlID: 10802
 >>>>>>> 741f5210d (Added battle encounters, Added dev menu, Added battle party setup, Updated Unity Editor version to 2020.3.22f1)
+=======
+  controlID: 16260
+>>>>>>> 7afa52c83 (Fixed fail-safe level not loading for some scenes, Added battle flavor text, Added battle moves placeholder text, Updated special file names list)
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -130,6 +134,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -205,6 +210,12 @@ MonoBehaviour:
     width: 1085
     height: 642
 >>>>>>> 741f5210d (Added battle encounters, Added dev menu, Added battle party setup, Updated Unity Editor version to 2020.3.22f1)
+=======
+    x: 228
+    y: 19
+    width: 1191
+    height: 638
+>>>>>>> 7afa52c83 (Fixed fail-safe level not loading for some scenes, Added battle flavor text, Added battle moves placeholder text, Updated special file names list)
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -212,6 +223,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -237,6 +249,9 @@ MonoBehaviour:
 =======
   m_TargetSize: {x: 1085, y: 610}
 >>>>>>> 741f5210d (Added battle encounters, Added dev menu, Added battle party setup, Updated Unity Editor version to 2020.3.22f1)
+=======
+  m_TargetSize: {x: 1097, y: 617}
+>>>>>>> 7afa52c83 (Fixed fail-safe level not loading for some scenes, Added battle flavor text, Added battle moves placeholder text, Updated special file names list)
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -251,6 +266,7 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -297,6 +313,12 @@ MonoBehaviour:
     m_VBaseRangeMin: -305
     m_VBaseRangeMax: 305
 >>>>>>> 741f5210d (Added battle encounters, Added dev menu, Added battle party setup, Updated Unity Editor version to 2020.3.22f1)
+=======
+    m_HBaseRangeMin: -548.5
+    m_HBaseRangeMax: 548.5
+    m_VBaseRangeMin: -308.5
+    m_VBaseRangeMax: 308.5
+>>>>>>> 7afa52c83 (Fixed fail-safe level not loading for some scenes, Added battle flavor text, Added battle moves placeholder text, Updated special file names list)
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -314,6 +336,7 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -393,12 +416,19 @@ MonoBehaviour:
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 542.5, y: 310.5}
 >>>>>>> 741f5210d (Added battle encounters, Added dev menu, Added battle party setup, Updated Unity Editor version to 2020.3.22f1)
+=======
+      width: 1191
+      height: 617
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 595.5, y: 308.5}
+>>>>>>> 7afa52c83 (Fixed fail-safe level not loading for some scenes, Added battle flavor text, Added battle moves placeholder text, Updated special file names list)
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -510,6 +540,15 @@ MonoBehaviour:
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1085, y: 642}
 >>>>>>> 741f5210d (Added battle encounters, Added dev menu, Added battle party setup, Updated Unity Editor version to 2020.3.22f1)
+=======
+      x: -595.5
+      y: -308.5
+      width: 1191
+      height: 617
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 1191, y: 638}
+>>>>>>> 7afa52c83 (Fixed fail-safe level not loading for some scenes, Added battle flavor text, Added battle moves placeholder text, Updated special file names list)
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -642,6 +681,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1531
 <<<<<<< HEAD
     height: 579
@@ -730,12 +770,19 @@ MonoBehaviour:
   controlID: 242
 =======
     width: 1359
+=======
+    width: 1420
+>>>>>>> 7afa52c83 (Fixed fail-safe level not loading for some scenes, Added battle flavor text, Added battle moves placeholder text, Updated special file names list)
     height: 937
-  m_MinSize: {x: 403, y: 471}
-  m_MaxSize: {x: 10000, y: 14021}
+  m_MinSize: {x: 403, y: 342}
+  m_MaxSize: {x: 8003, y: 8042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 10803
 >>>>>>> 741f5210d (Added battle encounters, Added dev menu, Added battle party setup, Updated Unity Editor version to 2020.3.22f1)
+=======
+  controlID: 16261
+>>>>>>> 7afa52c83 (Fixed fail-safe level not loading for some scenes, Added battle flavor text, Added battle moves placeholder text, Updated special file names list)
 --- !u!114 &4
 >>>>>>> 7df09d4b8 (Updated C1S2 to G10,  Fixed save chapter not updating properly, Fixed inventory discarding, Fixed entity variables being stuck as read only, Updated prefabs list, Fixed Solution file missing DASDK scripts)
 MonoBehaviour:
@@ -756,12 +803,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1359
-    height: 663
+    width: 1420
+    height: 659
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 10804
+  controlID: 16262
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -779,6 +826,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -844,6 +892,10 @@ MonoBehaviour:
     width: 272
     height: 663
 >>>>>>> 741f5210d (Added battle encounters, Added dev menu, Added battle party setup, Updated Unity Editor version to 2020.3.22f1)
+=======
+    width: 227
+    height: 659
+>>>>>>> 7afa52c83 (Fixed fail-safe level not loading for some scenes, Added battle flavor text, Added battle moves placeholder text, Updated special file names list)
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 6}
@@ -875,6 +927,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1816
     y: 83
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -935,6 +988,10 @@ MonoBehaviour:
     width: 271
     height: 642
 >>>>>>> 741f5210d (Added battle encounters, Added dev menu, Added battle party setup, Updated Unity Editor version to 2020.3.22f1)
+=======
+    width: 226
+    height: 638
+>>>>>>> 7afa52c83 (Fixed fail-safe level not loading for some scenes, Added battle flavor text, Added battle moves placeholder text, Updated special file names list)
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
@@ -949,6 +1006,7 @@ MonoBehaviour:
 <<<<<<< HEAD
       m_SelectedIDs: 
       m_LastClickedID: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -993,6 +1051,9 @@ MonoBehaviour:
 =======
       m_ExpandedIDs: e08afeff4c95feffbca1feff18a8feff72aefeffcabafeffe8bafeff44c1feff26cafeff98ecfeff6411ffff9211ffff7414ffff7614ffff7422ffffc62affff9633ffff9833fffff839ffffb03effff9241ffff9441fffff247ffff4c4fffffca57ffffcc57ffff385fffff9a65fffff06effffe29affff4ea1ffffa8a7ffff3ca8ffffd0a8ffff36afffff22bcffff36bfffffb8d2ffff14fbffff9254000066550000085600002056000074560000005700009c580000862201001a250100665901003a5a0100485b0100d45b010090610200826202001a690200046d02004c870200748702002a88020060880200ea890200dc8a02002c910200749102005e950200a6af0200ceaf020084b00200bab00200a4ba020096bb0200e6c102002ec2020018c602001ade020062e002008ae00200ece002000ce1020040e1020076e1020000e30200f2e302008aea020074ee0200802d0300722e0300c23403000a350300f438030062c2060036c30600f0c3060044c40600d0c40600
 >>>>>>> 741f5210d (Added battle encounters, Added dev menu, Added battle party setup, Updated Unity Editor version to 2020.3.22f1)
+=======
+      m_ExpandedIDs: ecfafdfffc18fefff61cfefff425feffbe67feff58c9feffd468ffff346fffff00b9fffffadfffffe2edffff5ceeffff94f2ffff9efaffff8655000060cf00008cd0000016d2000022d3000058d30000323e01002c3f0100bc3f0100c8400100c4ee01004ef001005af1010086790300107b03001c7c0300527c03006c6b0400666c0400026e0400381a0500c21a0500e81d050014200500ac290500222b05001c2c0500ac2c0500b82d0500642f05009c760500227805003a7805002c7905003879050040790500c4790500d07a0500
+>>>>>>> 7afa52c83 (Fixed fail-safe level not loading for some scenes, Added battle flavor text, Added battle moves placeholder text, Updated special file names list)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1031,8 +1092,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 272
+    x: 227
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1087,6 +1149,10 @@ MonoBehaviour:
     width: 1087
     height: 663
 >>>>>>> 741f5210d (Added battle encounters, Added dev menu, Added battle party setup, Updated Unity Editor version to 2020.3.22f1)
+=======
+    width: 1193
+    height: 659
+>>>>>>> 7afa52c83 (Fixed fail-safe level not loading for some scenes, Added battle flavor text, Added battle moves placeholder text, Updated special file names list)
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 2}
@@ -1117,8 +1183,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2088
+    x: 2043
     y: 83
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1173,6 +1240,10 @@ MonoBehaviour:
     width: 1085
     height: 642
 >>>>>>> 741f5210d (Added battle encounters, Added dev menu, Added battle party setup, Updated Unity Editor version to 2020.3.22f1)
+=======
+    width: 1191
+    height: 638
+>>>>>>> 7afa52c83 (Fixed fail-safe level not loading for some scenes, Added battle flavor text, Added battle moves placeholder text, Updated special file names list)
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 55094fe50bf2ff576811963c8c00f2e8
@@ -1185,6 +1256,7 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1266,6 +1338,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 91.82954, y: -37.641003, z: -15.880298}
 >>>>>>> 741f5210d (Added battle encounters, Added dev menu, Added battle party setup, Updated Unity Editor version to 2020.3.22f1)
+=======
+    m_Target: {x: 3.7218874, y: -5.0156193, z: 0}
+    speed: 2
+    m_Value: {x: 3.7218874, y: -5.0156193, z: 0}
+>>>>>>> 7afa52c83 (Fixed fail-safe level not loading for some scenes, Added battle flavor text, Added battle moves placeholder text, Updated special file names list)
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1316,6 +1393,7 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1391,6 +1469,11 @@ MonoBehaviour:
     speed: 2
     m_Value: 11.6734915
 >>>>>>> 741f5210d (Added battle encounters, Added dev menu, Added battle party setup, Updated Unity Editor version to 2020.3.22f1)
+=======
+    m_Target: 10
+    speed: 2
+    m_Value: 10
+>>>>>>> 7afa52c83 (Fixed fail-safe level not loading for some scenes, Added battle flavor text, Added battle moves placeholder text, Updated special file names list)
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1540,12 +1623,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1632,12 +1716,20 @@ MonoBehaviour:
 >>>>>>> 7df09d4b8 (Updated C1S2 to G10,  Fixed save chapter not updating properly, Fixed inventory discarding, Fixed entity variables being stuck as read only, Updated prefabs list, Fixed Solution file missing DASDK scripts)
   m_ActualView: {fileID: 11}
 >>>>>>> 50289e0ec (Updated lighting renderer, Updated Engine to Unity 2020.3.20f1)
+=======
+    y: 659
+    width: 1420
+    height: 278
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 12}
+>>>>>>> 7afa52c83 (Fixed fail-safe level not loading for some scenes, Added battle flavor text, Added battle moves placeholder text, Updated special file names list)
   m_Panes:
   - {fileID: 11}
   - {fileID: 12}
   - {fileID: 13}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1724,10 +1816,16 @@ MonoBehaviour:
 >>>>>>> 7df09d4b8 (Updated C1S2 to G10,  Fixed save chapter not updating properly, Fixed inventory discarding, Fixed entity variables being stuck as read only, Updated prefabs list, Fixed Solution file missing DASDK scripts)
 =======
     x: 1816
+<<<<<<< HEAD
     y: 746
     width: 1358
     height: 253
 >>>>>>> 741f5210d (Added battle encounters, Added dev menu, Added battle party setup, Updated Unity Editor version to 2020.3.22f1)
+=======
+    y: 742
+    width: 1419
+    height: 257
+>>>>>>> 7afa52c83 (Fixed fail-safe level not loading for some scenes, Added battle flavor text, Added battle moves placeholder text, Updated special file names list)
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -1840,6 +1938,7 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
 <<<<<<< HEAD
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1863,6 +1962,12 @@ MonoBehaviour:
     m_LastClickedID: 24250
     m_ExpandedIDs: 00000000a85e0000b85e000000ca9a3b
 >>>>>>> 741f5210d (Added battle encounters, Added dev menu, Added battle party setup, Updated Unity Editor version to 2020.3.22f1)
+=======
+    scrollPos: {x: 0, y: 53}
+    m_SelectedIDs: f2570000
+    m_LastClickedID: 22514
+    m_ExpandedIDs: 00000000d457000000ca9a3b
+>>>>>>> 7afa52c83 (Fixed fail-safe level not loading for some scenes, Added battle flavor text, Added battle moves placeholder text, Updated special file names list)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1922,6 +2027,7 @@ MonoBehaviour:
     m_LastClickedID: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000a66d000000ca9a3b
 >>>>>>> 800768207 (Added temporary day/night lighting, Added gameover functionality, Fixed text scroll speed)
 =======
@@ -1933,6 +2039,9 @@ MonoBehaviour:
 =======
     m_ExpandedIDs: 00000000a85e000000ca9a3b
 >>>>>>> 741f5210d (Added battle encounters, Added dev menu, Added battle party setup, Updated Unity Editor version to 2020.3.22f1)
+=======
+    m_ExpandedIDs: 00000000d457000000ca9a3b
+>>>>>>> 7afa52c83 (Fixed fail-safe level not loading for some scenes, Added battle flavor text, Added battle moves placeholder text, Updated special file names list)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2348,10 +2457,16 @@ MonoBehaviour:
     height: 353
 =======
     x: 1816
+<<<<<<< HEAD
     y: 746
     width: 1358
     height: 253
 >>>>>>> 741f5210d (Added battle encounters, Added dev menu, Added battle party setup, Updated Unity Editor version to 2020.3.22f1)
+=======
+    y: 742
+    width: 1419
+    height: 257
+>>>>>>> 7afa52c83 (Fixed fail-safe level not loading for some scenes, Added battle flavor text, Added battle moves placeholder text, Updated special file names list)
   m_ViewDataDictionary: {fileID: 0}
 <<<<<<< HEAD
   m_LockTracker:
@@ -2467,7 +2582,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 310256
+  m_LastSelectedObjectID: -124670
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -2485,9 +2600,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1359
+    x: 1420
     y: 0
-    width: 561
+    width: 500
     height: 937
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
@@ -2518,9 +2633,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 3175
+    x: 3236
     y: 83
-    width: 560
+    width: 499
     height: 916
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
