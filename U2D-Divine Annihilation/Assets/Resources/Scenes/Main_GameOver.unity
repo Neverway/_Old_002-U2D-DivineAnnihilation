@@ -4179,10 +4179,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec00b3ac1e4d8d5068ed19e545493cda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isBattleScene: 0
   playTransition: 1
   fadeTransitionObject: {fileID: 254942291}
   deathTransitionObject1: {fileID: 0}
   deathTransitionObject2: {fileID: 0}
+  battleTransitionObject: {fileID: 0}
   fadeSpeed: 5
   deathFadeSpeed: 0.1
   fadeStayDelay: 5
@@ -4550,9 +4552,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2006651110}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25444946602d5cca4a009ade4fbb1c7a, type: 3}
+  m_Script: {fileID: 11500000, guid: 481691106d9728d8a868c6113fc3b246, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasLoadedCurrentLevel: 0
 --- !u!1 &2014473708
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,6 +11,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class OTU_System_SaveLoader : MonoBehaviour
 {
@@ -36,6 +37,13 @@ public class OTU_System_SaveLoader : MonoBehaviour
     {
         saveManager = FindObjectOfType<OTU_System_SaveManager>();
         inventoryManager = FindObjectOfType<OTU_System_InventoryManager>();
+
+        if (saveManager == null)
+        {
+            SceneManager.LoadScene("Main_Title");
+            Debug.LogWarning("The scene was loaded abnormally so the failsafe level was loaded! In the future, please start the game from the title scene to avoid this issue (unless you are just debugging stuff I guess.)");
+        }
+
         if (!hasLoadedCurrentLevel)
         {
             // Load the players position
