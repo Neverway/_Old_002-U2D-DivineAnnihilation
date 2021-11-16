@@ -146,14 +146,7 @@ public class OTU_System_TextboxManager : MonoBehaviour
         if (textboxActive)
         {
             textContent = lineText[currentTextLine];
-
-            // Close the flavor text if it's open (Mainly used in battles)
-            if (otherboxActive && gameObject.transform.GetChild(3).gameObject != null)
-            {
-                gameObject.transform.GetChild(3).gameObject.SetActive(false);
-                gameObject.transform.GetChild(3).gameObject.transform.GetChild(1).GetComponent<Text>().text = "";
-                otherboxActive = false;
-            }
+            CloseFlavorText();
         }
         // Clear the variables for storing text when the textbox is not active
         // This helps to keep the textbox clean when the player interacts with a new object 
@@ -426,7 +419,14 @@ public class OTU_System_TextboxManager : MonoBehaviour
         otherboxActive = true;
     }
 
-    public void CloseAutoSingleText()
+    public void CloseFlavorText()
     {
+        // Close the flavor text if it's open (Mainly used in battles)
+        if (otherboxActive && gameObject.transform.GetChild(3).gameObject != null)
+        {
+            gameObject.transform.GetChild(3).gameObject.SetActive(false);
+            gameObject.transform.GetChild(3).gameObject.transform.GetChild(1).GetComponent<Text>().text = "";
+            otherboxActive = false;
+        }
     }
 }
