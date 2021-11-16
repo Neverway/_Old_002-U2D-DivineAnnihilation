@@ -20,8 +20,9 @@ public class OTU_Battle_WaveManager : MonoBehaviour
     // Public variables
     [Header ("Read only!")]
     public int currentWave = 0;
+    [Range (0,3)]
+    public int currentCharacterTurn = 0;
     public bool acceptingMenuInput;
-
 
     // Private variables
 
@@ -49,12 +50,14 @@ public class OTU_Battle_WaveManager : MonoBehaviour
 
     public void Attack()
     {
+        // Display character attack moves
+        dataHandler.getCurrentCharacterAttacks();
+        /*
         if (acceptingMenuInput)
         {
             textboxManager.TextboxSingleText("Attack > Move > Target > Execute minigame at end of party turn");
-            ExecuteEnemyAttack();
             acceptingMenuInput = false;
-        }
+        }*/
     }
 
     public void Action()
@@ -80,12 +83,14 @@ public class OTU_Battle_WaveManager : MonoBehaviour
         if (acceptingMenuInput)
         {
             textboxManager.TextboxSingleText("Skip party turn");
+            ExecuteEnemyAttack();
             acceptingMenuInput = false;
         }
     }
 
     public void ExecuteEnemyAttack()
     {
-        Instantiate(dataHandler.enemyAttackWave[currentWave], new Vector2(0,0), Quaternion.identity);
+        //dataHandler.activeBattleZone.GetComponent<Animator>().Play("FadeIn");
+        //Instantiate(dataHandler.enemyAttackWave[currentWave], new Vector2(0,0), Quaternion.identity);
     }
 }

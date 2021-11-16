@@ -16,6 +16,8 @@ using UnityEngine.Events;
 public class DA_Menu_Control : MonoBehaviour
 {
     // Scrolling variables
+    public bool menuEnabled = true;
+
     public bool horizontalScrolling;    // Switch from using up and down to move through a menu to left and right
     public bool wrapAround;             // When trying to advance at the begining or end of a menu wrap around to the other side
     public int selectionLength;         // (Read only) A value to keep track of how long the menu is (This is assigned to by either the spritescrolling or stringscrolling loop depending on which one is active)
@@ -60,204 +62,207 @@ public class DA_Menu_Control : MonoBehaviour
 
     void Update()
     {
-        if (previousMenu != null)
+        if (menuEnabled)
         {
-            if (scrollStrings)
+            if (previousMenu != null)
             {
-                previousMenu.GetComponent<DA_Menu_Control>().textTargetObjects[0].text = previousMenu.GetComponent<DA_Menu_Control>().baseText[0];
-            }
-        }
-        if (nextMenu != null)
-        {
-            if (scrollStrings)
-            {
-                nextMenu.GetComponent<DA_Menu_Control>().textTargetObjects[0].text = nextMenu.GetComponent<DA_Menu_Control>().baseText[0];
-            }
-        }
-
-        // Vertical Scrolling
-        if (!horizontalScrolling)
-        {
-            // Up
-            if (Input.GetKeyDown(inputManager.controls["Up"]))
-            {
-                if (currentSelection == 0 && wrapAround) { currentSelection = selectionLength - 1; }    // Wrap around
-                else if (currentSelection != 0) { currentSelection -= 1; }                              // Go Up
-            }
-
-            // Down
-            if (Input.GetKeyDown(inputManager.controls["Down"]))
-            {
-                if (currentSelection == selectionLength - 1 && wrapAround) { currentSelection = 0; }    // Wrap around
-                else if (currentSelection != selectionLength - 1) { currentSelection += 1; }            // Go Down
-            }
-
-            // Left
-            if (Input.GetKeyDown(inputManager.controls["Left"]) && previousMenu != null)
-            {
-                previousMenu.GetComponent<DA_Menu_Control>().enabled = true;
-                previousMenu.GetComponent<DA_Menu_Control>().onMenuChange.Invoke();
-                previousMenu.GetComponent<DA_Menu_Control>().currentSelection = gameObject.GetComponent<DA_Menu_Control>().currentSelection;
-                gameObject.GetComponent<DA_Menu_Control>().enabled = false;
-            }
-
-            // Right
-            if (Input.GetKeyDown(inputManager.controls["Right"]) && nextMenu != null)
-            {
-                nextMenu.GetComponent<DA_Menu_Control>().enabled = true;
-                nextMenu.GetComponent<DA_Menu_Control>().onMenuChange.Invoke();
-                nextMenu.GetComponent<DA_Menu_Control>().currentSelection = gameObject.GetComponent<DA_Menu_Control>().currentSelection;
-                gameObject.GetComponent<DA_Menu_Control>().enabled = false;
-            }
-        }
-
-        // Horizontal Scrolling
-        else if (horizontalScrolling)
-        {
-            // Left
-            if (Input.GetKeyDown(inputManager.controls["Left"]))
-            {
-                if (currentSelection == 0 && wrapAround) { currentSelection = selectionLength - 1; }    // Wrap around
-                else if (currentSelection != 0) { currentSelection -= 1; }                              // Go Left
-            }
-
-            // Right
-            if (Input.GetKeyDown(inputManager.controls["Right"]))
-            {
-                if (currentSelection == selectionLength - 1 && wrapAround) { currentSelection = 0; }    // Wrap around
-                else if (currentSelection != selectionLength - 1) { currentSelection += 1; }            // Go Right
-            }
-
-            // Up
-            if (Input.GetKeyDown(inputManager.controls["Up"]) && previousMenu != null)
-            {
-                previousMenu.GetComponent<DA_Menu_Control>().enabled = true;
-                previousMenu.GetComponent<DA_Menu_Control>().onMenuChange.Invoke();
-                previousMenu.GetComponent<DA_Menu_Control>().currentSelection = gameObject.GetComponent<DA_Menu_Control>().currentSelection;
-                gameObject.GetComponent<DA_Menu_Control>().enabled = false;
-            }
-
-            // Down
-            if (Input.GetKeyDown(inputManager.controls["Down"]) && nextMenu != null)
-            {
-                nextMenu.GetComponent<DA_Menu_Control>().enabled = true;
-                nextMenu.GetComponent<DA_Menu_Control>().onMenuChange.Invoke();
-                nextMenu.GetComponent<DA_Menu_Control>().currentSelection = gameObject.GetComponent<DA_Menu_Control>().currentSelection;
-                gameObject.GetComponent<DA_Menu_Control>().enabled = false;
-            }
-        }
-
-        // !Scrolling Events
-        if (scrollEvents)
-        {
-            selectionLength = events.Length;
-            events[currentSelection].Invoke();
-        }
-
-        // Scrolling Strings & !Scrolling Sprites
-        if (scrollStrings && !scrollSprites)
-        {
-            if (!singleTextObjectScrolling)
-            {
-                selectionLength = textTargetObjects.Length;
-                for (int i = 0; i < selectionLength; i++)
+                if (scrollStrings)
                 {
-                    if (i != currentSelection)
+                    previousMenu.GetComponent<DA_Menu_Control>().textTargetObjects[0].text = previousMenu.GetComponent<DA_Menu_Control>().baseText[0];
+                }
+            }
+            if (nextMenu != null)
+            {
+                if (scrollStrings)
+                {
+                    nextMenu.GetComponent<DA_Menu_Control>().textTargetObjects[0].text = nextMenu.GetComponent<DA_Menu_Control>().baseText[0];
+                }
+            }
+
+            // Vertical Scrolling
+            if (!horizontalScrolling)
+            {
+                // Up
+                if (Input.GetKeyDown(inputManager.controls["Up"]))
+                {
+                    if (currentSelection == 0 && wrapAround) { currentSelection = selectionLength - 1; }    // Wrap around
+                    else if (currentSelection != 0) { currentSelection -= 1; }                              // Go Up
+                }
+
+                // Down
+                if (Input.GetKeyDown(inputManager.controls["Down"]))
+                {
+                    if (currentSelection == selectionLength - 1 && wrapAround) { currentSelection = 0; }    // Wrap around
+                    else if (currentSelection != selectionLength - 1) { currentSelection += 1; }            // Go Down
+                }
+
+                // Left
+                if (Input.GetKeyDown(inputManager.controls["Left"]) && previousMenu != null)
+                {
+                    previousMenu.GetComponent<DA_Menu_Control>().enabled = true;
+                    previousMenu.GetComponent<DA_Menu_Control>().onMenuChange.Invoke();
+                    previousMenu.GetComponent<DA_Menu_Control>().currentSelection = gameObject.GetComponent<DA_Menu_Control>().currentSelection;
+                    gameObject.GetComponent<DA_Menu_Control>().enabled = false;
+                }
+
+                // Right
+                if (Input.GetKeyDown(inputManager.controls["Right"]) && nextMenu != null)
+                {
+                    nextMenu.GetComponent<DA_Menu_Control>().enabled = true;
+                    nextMenu.GetComponent<DA_Menu_Control>().onMenuChange.Invoke();
+                    nextMenu.GetComponent<DA_Menu_Control>().currentSelection = gameObject.GetComponent<DA_Menu_Control>().currentSelection;
+                    gameObject.GetComponent<DA_Menu_Control>().enabled = false;
+                }   
+            }
+
+            // Horizontal Scrolling
+            else if (horizontalScrolling)
+            {   
+                // Left
+                if (Input.GetKeyDown(inputManager.controls["Left"]))
+                {
+                    if (currentSelection == 0 && wrapAround) { currentSelection = selectionLength - 1; }    // Wrap around
+                    else if (currentSelection != 0) { currentSelection -= 1; }                              // Go Left
+                }
+
+                // Right
+                if (Input.GetKeyDown(inputManager.controls["Right"]))
+                {
+                    if (currentSelection == selectionLength - 1 && wrapAround) { currentSelection = 0; }    // Wrap around
+                    else if (currentSelection != selectionLength - 1) { currentSelection += 1; }            // Go Right
+                }
+
+                // Up
+                if (Input.GetKeyDown(inputManager.controls["Up"]) && previousMenu != null)
+                {
+                    previousMenu.GetComponent<DA_Menu_Control>().enabled = true;
+                    previousMenu.GetComponent<DA_Menu_Control>().onMenuChange.Invoke();
+                    previousMenu.GetComponent<DA_Menu_Control>().currentSelection = gameObject.GetComponent<DA_Menu_Control>().currentSelection;
+                    gameObject.GetComponent<DA_Menu_Control>().enabled = false;
+                }
+
+                // Down
+                if (Input.GetKeyDown(inputManager.controls["Down"]) && nextMenu != null)
+                {
+                    nextMenu.GetComponent<DA_Menu_Control>().enabled = true;
+                    nextMenu.GetComponent<DA_Menu_Control>().onMenuChange.Invoke();
+                    nextMenu.GetComponent<DA_Menu_Control>().currentSelection = gameObject.GetComponent<DA_Menu_Control>().currentSelection;
+                    gameObject.GetComponent<DA_Menu_Control>().enabled = false;
+                }
+            }
+
+            // !Scrolling Events
+            if (scrollEvents)
+            {
+                selectionLength = events.Length;
+                events[currentSelection].Invoke();
+            }
+    
+            // Scrolling Strings & !Scrolling Sprites
+            if (scrollStrings && !scrollSprites)
+            {
+                if (!singleTextObjectScrolling)
+                {
+                    selectionLength = textTargetObjects.Length;
+                    for (int i = 0; i < selectionLength; i++)
                     {
-                        if (baseText.Length == textTargetObjects.Length)
+                        if (i != currentSelection)
                         {
-                            textTargetObjects[i].text = baseText[i];
+                            if (baseText.Length == textTargetObjects.Length)
+                            {
+                                textTargetObjects[i].text = baseText[i];
+                            }
+                            textTargetObjects[i].color = baseColor;
                         }
-                        textTargetObjects[i].color = baseColor;
                     }
-                }
-                if (hoveredText.Length == textTargetObjects.Length)
-                {
-                    textTargetObjects[currentSelection].text = hoveredText[currentSelection];
-                }
-                textTargetObjects[currentSelection].color = hoverColor;
-            }
-            else if (singleTextObjectScrolling)
-            {
-                selectionLength = hoveredText.Length;
-                textTargetObjects[0].text = hoveredText[currentSelection];
-            }
-        }
-
-        // !Scrolling Strings & Scrolling Sprites
-        else if (!scrollStrings && scrollSprites)
-        {
-            selectionLength = sprites.Length;
-            if (spriteTargetObject.GetComponent<SpriteRenderer>() != null)
-            {
-                spriteTargetObject.GetComponent<SpriteRenderer>().sprite = sprites[currentSelection];
-            }
-            else if (spriteTargetObject.GetComponent<Image>() != null)
-            {
-                spriteTargetObject.GetComponent<Image>().sprite = sprites[currentSelection];
-            }
-            else
-            {
-                Debug.LogError("DASDK: In [" + this.gameObject.name + "] under DA_Menu_Control, the spriteTargetObject did not have a SpriteRenderer or Image component attached! One of these is required for SpriteScrolling!");
-            }
-        }
-
-        // Scrolling Strings & Scrolling Sprites
-        else if (scrollStrings && scrollSprites)
-        {
-            if (!singleTextObjectScrolling)
-            {
-                selectionLength = textTargetObjects.Length;
-                for (int i = 0; i < selectionLength; i++)
-                {
-                    if (i != currentSelection)
+                    if (hoveredText.Length == textTargetObjects.Length)
                     {
-                        if (baseText.Length == textTargetObjects.Length)
-                        {
-                            textTargetObjects[i].text = baseText[i];
-                        }
-                        textTargetObjects[i].color = baseColor;
+                        textTargetObjects[currentSelection].text = hoveredText[currentSelection];
                     }
-                }
-                if (hoveredText.Length == textTargetObjects.Length)
+                    textTargetObjects[currentSelection].color = hoverColor;
+                }   
+                else if (singleTextObjectScrolling)
                 {
-                    textTargetObjects[currentSelection].text = hoveredText[currentSelection];
+                    selectionLength = hoveredText.Length;
+                    textTargetObjects[0].text = hoveredText[currentSelection];
                 }
-                textTargetObjects[currentSelection].color = hoverColor;
             }
-            else if (singleTextObjectScrolling)
+
+            // !Scrolling Strings & Scrolling Sprites
+            else if (!scrollStrings && scrollSprites)
             {
-                selectionLength = hoveredText.Length;
-                textTargetObjects[0].text = hoveredText[currentSelection];
+                selectionLength = sprites.Length;
+                if (spriteTargetObject.GetComponent<SpriteRenderer>() != null)
+                {
+                    spriteTargetObject.GetComponent<SpriteRenderer>().sprite = sprites[currentSelection];
+                }
+                else if (spriteTargetObject.GetComponent<Image>() != null)
+                {
+                    spriteTargetObject.GetComponent<Image>().sprite = sprites[currentSelection];
+                }
+                else
+                {
+                    Debug.LogError("DASDK: In [" + this.gameObject.name + "] under DA_Menu_Control, the spriteTargetObject did not have a SpriteRenderer or Image component attached! One of these is required for SpriteScrolling!");
+                }
+            }
+
+            // Scrolling Strings & Scrolling Sprites
+            else if (scrollStrings && scrollSprites)
+            {
+                if (!singleTextObjectScrolling)
+                {
+                    selectionLength = textTargetObjects.Length;
+                    for (int i = 0; i < selectionLength; i++)
+                    {   
+                        if (i != currentSelection)
+                        {   
+                            if (baseText.Length == textTargetObjects.Length)
+                            {
+                                textTargetObjects[i].text = baseText[i];
+                            }
+                            textTargetObjects[i].color = baseColor;
+                        }
+                    }
+                    if (hoveredText.Length == textTargetObjects.Length)
+                    {
+                        textTargetObjects[currentSelection].text = hoveredText[currentSelection];
+                    }   
+                    textTargetObjects[currentSelection].color = hoverColor;
+                }
+                else if (singleTextObjectScrolling)
+                {
+                    selectionLength = hoveredText.Length;
+                    textTargetObjects[0].text = hoveredText[currentSelection];
+                }
+
+
+                if (spriteTargetObject.GetComponent<SpriteRenderer>() != null)
+                {
+                    spriteTargetObject.GetComponent<SpriteRenderer>().sprite = sprites[currentSelection];
+                }
+                else if (spriteTargetObject.GetComponent<Image>() != null)
+                {
+                    spriteTargetObject.GetComponent<Image>().sprite = sprites[currentSelection];
+                }
+                else
+                {
+                    Debug.LogError("DASDK: In the game object [" + this.gameObject.name + "] under DA_Menu_Control, the spriteTargetObject did not have a SpriteRenderer or Image component attached! One of these is required for SpriteScrolling!");
+                }
             }
 
 
-            if (spriteTargetObject.GetComponent<SpriteRenderer>() != null)
-            {
-                spriteTargetObject.GetComponent<SpriteRenderer>().sprite = sprites[currentSelection];
-            }
-            else if (spriteTargetObject.GetComponent<Image>() != null)
-            {
-                spriteTargetObject.GetComponent<Image>().sprite = sprites[currentSelection];
-            }
-            else
-            {
-                Debug.LogError("DASDK: In the game object [" + this.gameObject.name + "] under DA_Menu_Control, the spriteTargetObject did not have a SpriteRenderer or Image component attached! One of these is required for SpriteScrolling!");
-            }
-        }
+            // Menu control
+            if (menuControl)
+            {   
+                if (Input.GetKeyDown(inputManager.controls["Interact"]))
+                {
+                    OnInteract[currentSelection].Invoke();
+                }
 
-
-        // Menu control
-        if (menuControl)
-        {
-            if (Input.GetKeyDown(inputManager.controls["Interact"]))
-            {
-                OnInteract[currentSelection].Invoke();
-            }
-
-            if (Input.GetKeyDown(inputManager.controls["Action"]) && canGoBack)
-            {
-                onBack.Invoke();
+                if (Input.GetKeyDown(inputManager.controls["Action"]) && canGoBack)
+                {
+                    onBack.Invoke();
+                }
             }
         }
     }
@@ -272,6 +277,18 @@ public class DA_Menu_Control : MonoBehaviour
         if (textTargetObjects.Length != sprites.Length && scrollStrings && scrollSprites)
         {
             Debug.LogError("DASDK: In the game object [" + this.gameObject.name + "] under DA_Menu_Control, the length of Sprite Scrolling and Text Scrolling must be the same!");
+        }
+    }
+
+    public void DisableMenu(bool disableMenu)
+    {
+        if (!disableMenu)
+        {
+            menuEnabled = true;
+        }
+        if (disableMenu)
+        {
+            menuEnabled = false;
         }
     }
 }
