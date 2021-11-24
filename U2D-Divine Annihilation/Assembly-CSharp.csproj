@@ -79,7 +79,7 @@
      <Compile Include="Assets/Resources/Scripts/DA_Trigger_Interact.cs" />
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Battle_Text_Events.cs" />
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Menu_Scroll_MinusControl.cs" />
-     <Compile Include="Assets/Resources/Scripts/One Time Use/OTU_Battle_WaveManager.cs" />
+     <Compile Include="Assets/Resources/Scripts/One Time Use/OTU_Battle_Manager.cs" />
      <Compile Include="Assets/Old G9 Content/ConditionalHideAttribute.cs" />
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Hud_SI_BookID.cs" />
      <Compile Include="Assets/Resources/Scripts/DA_Trigger_Warp.cs" />
@@ -151,6 +151,7 @@
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/System/SystemEntityID.cs" />
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Trigger_DestroyOnInteract.cs" />
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/System/SystemPersistantData.cs" />
+     <Compile Include="Assets/Resources/Scripts/One Time Use/OTU_Battle_EnemyTarget.cs" />
      <None Include="Assets/Packages/TextMesh Pro/Resources/Shaders/TMPro.cginc" />
      <None Include="Assets/Packages/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets/Packages/TextMesh Pro/Resources/Shaders/TMP_Bitmap.shader" />

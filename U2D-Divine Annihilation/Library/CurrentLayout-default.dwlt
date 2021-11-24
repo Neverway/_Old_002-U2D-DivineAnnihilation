@@ -14,39 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 1816
-    y: 28
+    x: 0
+    y: 25
     width: 1920
     height: 987
   m_ShowMode: 4
-  m_Title: Project
-  m_RootView: {fileID: 3}
+  m_Title: Hierarchy
+  m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12060, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 30
-    width: 1920
-    height: 937
-  m_MinSize: {x: 200, y: 223}
-  m_MaxSize: {x: 4000, y: 4023}
-  m_ActualView: {fileID: 6}
---- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -59,9 +37,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 4}
-  - {fileID: 2}
+  - {fileID: 3}
   - {fileID: 5}
+  - {fileID: 4}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -74,7 +52,7 @@ MonoBehaviour:
   m_TopViewHeight: 30
   m_UseBottomView: 1
   m_BottomViewHeight: 20
---- !u!114 &4
+--- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -96,10 +74,10 @@ MonoBehaviour:
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LoadedToolbars:
-  - {fileID: 7}
-  m_MainToolbar: {fileID: 7}
+  - {fileID: 21}
+  m_MainToolbar: {fileID: 21}
   m_LastLoadedLayoutName: 
---- !u!114 &5
+--- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,6 +99,9 @@ MonoBehaviour:
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,6 +122,7 @@ MonoBehaviour:
     x: 0
     y: 30
     width: 1920
+<<<<<<< HEAD
 <<<<<<< HEAD
     height: 949
   m_MinSize: {x: 679, y: 492}
@@ -213,6 +195,13 @@ MonoBehaviour:
 =======
   controlID: 63
 >>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)
+=======
+    height: 937
+  m_MinSize: {x: 679, y: 342}
+  m_MaxSize: {x: 12004, y: 8042}
+  vertical: 0
+  controlID: 20
+>>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
 --- !u!114 &6
 =======
     y: 0
@@ -744,18 +733,162 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
+<<<<<<< HEAD
+=======
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 7}
+  - {fileID: 10}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1644
+    height: 937
+  m_MinSize: {x: 403, y: 342}
+  m_MaxSize: {x: 8003, y: 8042}
+  vertical: 1
+  controlID: 21
+--- !u!114 &7
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 8}
+  - {fileID: 9}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1644
+    height: 654
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
+  vertical: 0
+  controlID: 22
+--- !u!114 &8
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 201
+    height: 654
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 13}
+  m_Panes:
+  - {fileID: 13}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &9
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: GameView
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 201
+    y: 0
+    width: 1443
+    height: 654
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 12}
+  m_Panes:
+  - {fileID: 14}
+  - {fileID: 12}
+  - {fileID: 15}
+  m_Selected: 1
+  m_LastSelected: 0
+--- !u!114 &10
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: ConsoleWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 654
+    width: 1644
+    height: 283
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 17}
+  m_Panes:
+  - {fileID: 16}
+  - {fileID: 17}
+  - {fileID: 18}
+  m_Selected: 1
+  m_LastSelected: 0
+--- !u!114 &11
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+>>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: InspectorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1359
     y: 0
     width: 561
     height: 937
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
+=======
+    x: 1644
+    y: 0
+    width: 276
+    height: 937
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -771,8 +904,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
+<<<<<<< HEAD
 =======
 >>>>>>> 7afa52c83 (Fixed fail-safe level not loading for some scenes, Added battle flavor text, Added battle moves placeholder text, Updated special file names list)
+=======
+>>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
   m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -785,6 +921,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -866,6 +1003,12 @@ MonoBehaviour:
     width: 1920
     height: 918
 >>>>>>> 7afa52c83 (Fixed fail-safe level not loading for some scenes, Added battle flavor text, Added battle moves placeholder text, Updated special file names list)
+=======
+    x: 201
+    y: 83
+    width: 1441
+    height: 633
+>>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -873,6 +1016,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -918,6 +1062,9 @@ MonoBehaviour:
 =======
   m_TargetSize: {x: 1595, y: 897}
 >>>>>>> 7afa52c83 (Fixed fail-safe level not loading for some scenes, Added battle flavor text, Added battle moves placeholder text, Updated special file names list)
+=======
+  m_TargetSize: {x: 1088, y: 612}
+>>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -932,6 +1079,7 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1012,6 +1160,12 @@ MonoBehaviour:
     m_VBaseRangeMin: -448.5
     m_VBaseRangeMax: 448.5
 >>>>>>> 7afa52c83 (Fixed fail-safe level not loading for some scenes, Added battle flavor text, Added battle moves placeholder text, Updated special file names list)
+=======
+    m_HBaseRangeMin: -544
+    m_HBaseRangeMax: 544
+    m_VBaseRangeMin: -306
+    m_VBaseRangeMax: 306
+>>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1020,7 +1174,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -1043,6 +1197,7 @@ MonoBehaviour:
 >>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
 =======
       y: 21
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       width: 1164
@@ -1090,12 +1245,19 @@ MonoBehaviour:
 =======
     m_Translation: {x: 960, y: 448.5}
 >>>>>>> 7afa52c83 (Fixed fail-safe level not loading for some scenes, Added battle flavor text, Added battle moves placeholder text, Updated special file names list)
+=======
+      width: 1441
+      height: 612
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 720.5, y: 306}
+>>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1206,12 +1368,24 @@ MonoBehaviour:
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1920, y: 918}
 >>>>>>> 7afa52c83 (Fixed fail-safe level not loading for some scenes, Added battle flavor text, Added battle moves placeholder text, Updated special file names list)
+=======
+      x: -720.5
+      y: -306
+      width: 1441
+      height: 612
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 1441, y: 633}
+>>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
   m_ClearInEditMode: 1
-  m_NoCameraWarning: 1
+  m_NoCameraWarning: 0
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1233,6 +1407,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1816
     y: 83
 <<<<<<< HEAD
@@ -1316,10 +1491,17 @@ MonoBehaviour:
     width: 271
     height: 627
 >>>>>>> 741f5210d (Added battle encounters, Added dev menu, Added battle party setup, Updated Unity Editor version to 2020.3.22f1)
+=======
+    x: 0
+    y: 83
+    width: 200
+    height: 633
+>>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1352,6 +1534,11 @@ MonoBehaviour:
       m_LastClickedID: 0
       m_ExpandedIDs: e08afeff4c95feffbca1feff18a8feff72aefeffcabafeffe8bafeff44c1feff26cafeff98ecfeff6411ffff9211ffff7414ffff7614ffff7422ffffc62affff9633ffff9833fffff839ffffb03effff9241ffff9441fffff247ffff4c4fffffca57ffffcc57ffff385fffff9a65fffff06effffe29affff4ea1ffffa8a7ffff3ca8ffffd0a8ffff36afffff22bcffff36bfffffb8d2ffff14fbffff9254000066550000085600002056000074560000005700009c580000862201001a250100665901003a5a0100485b0100d45b010090610200826202001a690200046d02004c870200748702002a88020060880200ea890200dc8a02002c910200749102005e950200a6af0200ceaf020084b00200bab00200a4ba020096bb0200e6c102002ec2020018c602001ade020062e002008ae00200ece002000ce1020040e1020076e1020000e30200f2e302008aea020074ee0200802d0300722e0300c23403000a350300f438030062c2060036c30600f0c3060044c40600d0c40600
 >>>>>>> 741f5210d (Added battle encounters, Added dev menu, Added battle party setup, Updated Unity Editor version to 2020.3.22f1)
+=======
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 14fbffffba570000
+>>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1396,6 +1583,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 2088
     y: 83
 <<<<<<< HEAD
@@ -1453,6 +1641,12 @@ MonoBehaviour:
     width: 1085
     height: 627
 >>>>>>> 741f5210d (Added battle encounters, Added dev menu, Added battle party setup, Updated Unity Editor version to 2020.3.22f1)
+=======
+    x: 201
+    y: 107
+    width: 1441
+    height: 616
+>>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 55094fe50bf2ff576811963c8c00f2e8
@@ -1465,6 +1659,7 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1534,6 +1729,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 91.82954, y: -37.641003, z: -15.880298}
 >>>>>>> 741f5210d (Added battle encounters, Added dev menu, Added battle party setup, Updated Unity Editor version to 2020.3.22f1)
+=======
+    m_Target: {x: 0.91331524, y: -1.6163869, z: -33.73168}
+    speed: 2
+    m_Value: {x: 0.91331524, y: -1.6163869, z: -33.73168}
+>>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1584,6 +1784,7 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1653,6 +1854,11 @@ MonoBehaviour:
     speed: 2
     m_Value: 11.6734915
 >>>>>>> 741f5210d (Added battle encounters, Added dev menu, Added battle party setup, Updated Unity Editor version to 2020.3.22f1)
+=======
+    m_Target: 9.62238
+    speed: 2
+    m_Value: 9.62238
+>>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1698,10 +1904,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 2121
     y: 83
     width: 1371
     height: 657
+=======
+    x: 2043
+    y: 83
+    width: 1191
+    height: 610
+>>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
   m_ViewDataDictionary: {fileID: 0}
   m_ViewTransforms:
     m_KeySerializationHelper:
@@ -1709,6 +1922,10 @@ MonoBehaviour:
     - {fileID: -1297399999584036618, guid: 3e75189684fc1a4b3a190287119ceaba, type: 2}
     - {fileID: -6313624972319152173, guid: 3e75189684fc1a4b3a190287119ceaba, type: 2}
     - {fileID: 6884617211588994161, guid: 7745758154f2a3489b8165546ef53e8a, type: 2}
+<<<<<<< HEAD
+=======
+    - {fileID: -3991085534816252364, guid: ad3ac7cd914b00528aa4cff878905cb4, type: 2}
+>>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
     m_ValueSerializationHelper:
     - e00: 0.8429848
       e01: 0
@@ -1726,6 +1943,7 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
+<<<<<<< HEAD
     - e00: 0.9663158
       e01: 0
       e02: 0
@@ -1734,6 +1952,16 @@ MonoBehaviour:
       e11: 0.9663158
       e12: 0
       e13: 85.05789
+=======
+    - e00: 0.79052633
+      e01: 0
+      e02: 0
+      e03: -24.526337
+      e10: 0
+      e11: 0.79052633
+      e12: 0
+      e13: 155.06316
+>>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
       e20: 0
       e21: 0
       e22: 1
@@ -1774,6 +2002,25 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
+<<<<<<< HEAD
+=======
+    - e00: 0.79052633
+      e01: 0
+      e02: 0
+      e03: -24.526337
+      e10: 0
+      e11: 0.79052633
+      e12: 0
+      e13: 174.82632
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+>>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
   m_PreviewAnimator: {fileID: 0}
   m_AnimatorController: {fileID: 9100000, guid: 20643ad5d94b55f99ac6b9834dea13fa,
     type: 2}
@@ -1813,6 +2060,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1879,6 +2127,12 @@ MonoBehaviour:
     width: 1358
     height: 268
 >>>>>>> 741f5210d (Added battle encounters, Added dev menu, Added battle party setup, Updated Unity Editor version to 2020.3.22f1)
+=======
+    x: 0
+    y: 736
+    width: 1456
+    height: 263
+>>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -1893,6 +2147,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2010,18 +2265,26 @@ MonoBehaviour:
 =======
     - Assets/Resources/Scenes
 >>>>>>> 7814dd707 (Updated Template_Overworld, Added level warp triggers)
+=======
+    - Assets/Resources
+>>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
+<<<<<<< HEAD
   - Assets/Resources/Scenes
+=======
+  - Assets/Resources
+>>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
   m_LastFoldersGridSize: 16
   m_LastProjectPath: /home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine
     Annihilation
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2048,6 +2311,12 @@ MonoBehaviour:
     m_LastClickedID: 24250
     m_ExpandedIDs: 00000000a85e0000b85e000000ca9a3b
 >>>>>>> 741f5210d (Added battle encounters, Added dev menu, Added battle party setup, Updated Unity Editor version to 2020.3.22f1)
+=======
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: ee6d0000
+    m_LastClickedID: 28142
+    m_ExpandedIDs: 00000000ea5f0000
+>>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2072,6 +2341,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     scrollPos: {x: 0, y: 0}
@@ -2122,6 +2392,12 @@ MonoBehaviour:
 =======
     m_ExpandedIDs: 00000000a85e000000ca9a3b
 >>>>>>> 741f5210d (Added battle encounters, Added dev menu, Added battle party setup, Updated Unity Editor version to 2020.3.22f1)
+=======
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 00000000ea5f0000
+>>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2148,8 +2424,13 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
+<<<<<<< HEAD
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
+=======
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c62300004c560000000000009e5d0000
+>>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2198,6 +2479,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2492,6 +2774,12 @@ MonoBehaviour:
     width: 1358
     height: 253
 >>>>>>> 741f5210d (Added battle encounters, Added dev menu, Added battle party setup, Updated Unity Editor version to 2020.3.22f1)
+=======
+    x: 0
+    y: 737
+    width: 1643
+    height: 262
+>>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &18
 MonoBehaviour:
@@ -2514,6 +2802,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1920
     y: 761
     width: 1573
@@ -2522,6 +2811,16 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_LastSelectedObjectID: 310256
+=======
+    x: 1816
+    y: 742
+    width: 1627
+    height: 257
+  m_ViewDataDictionary: {fileID: 0}
+  m_LockTracker:
+    m_IsLocked: 0
+  m_LastSelectedObjectID: 21856
+>>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -2543,9 +2842,15 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 3175
     y: 83
     width: 560
+=======
+    x: 1644
+    y: 83
+    width: 275
+>>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
     height: 916
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
@@ -2593,9 +2898,12 @@ MonoBehaviour:
     type: 3}
   m_DrawGizmos: 0
 --- !u!114 &21
+<<<<<<< HEAD
 =======
 --- !u!114 &7
 >>>>>>> 7afa52c83 (Fixed fail-safe level not loading for some scenes, Added battle flavor text, Added battle moves placeholder text, Updated special file names list)
+=======
+>>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

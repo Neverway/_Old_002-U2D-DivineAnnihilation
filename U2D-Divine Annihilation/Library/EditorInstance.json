@@ -12,6 +12,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	"process_id" : 46982,
 =======
 	"process_id" : 179054,
@@ -57,6 +58,9 @@
 =======
 	"process_id" : 10530,
 >>>>>>> 7afa52c83 (Fixed fail-safe level not loading for some scenes, Added battle flavor text, Added battle moves placeholder text, Updated special file names list)
+=======
+	"process_id" : 146951,
+>>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
 	"version" : "2020.3.22f1",
 	"app_path" : "/home/lizband/Unity/Hub/Editor/2020.3.22f1/Editor/Unity",
 	"app_contents_path" : "/home/lizband/Unity/Hub/Editor/2020.3.22f1/Editor/Data"
