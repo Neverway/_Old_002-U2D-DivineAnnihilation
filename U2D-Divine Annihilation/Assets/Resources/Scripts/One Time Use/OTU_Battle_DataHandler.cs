@@ -22,8 +22,14 @@ public class OTU_Battle_DataHandler : MonoBehaviour
     public GameObject[] playerPartyEntities;
     public GameObject[] playerPartyUIShelves;
     public GameObject[] enemyPartyEntities;
+
     public GameObject battleUIRoot;
     public GameObject activeBattleZone;
+
+    public GameObject attackSelection;
+    public GameObject actionSelection;
+    public GameObject targetSelection;
+    public GameObject targetingRetical;
 
     [Header ("System")]
     public GameObject[] enemyAttackWave;
@@ -32,12 +38,14 @@ public class OTU_Battle_DataHandler : MonoBehaviour
     // Reference variables
     private OTU_System_SaveManager saveManager;
     private OTU_System_TextboxManager textboxManager;
+    private OTU_Battle_Manager battleManager;
 
 
     void Start()
     {
         saveManager = FindObjectOfType<OTU_System_SaveManager>();
         textboxManager = FindObjectOfType<OTU_System_TextboxManager>();
+        battleManager = FindObjectOfType<OTU_Battle_Manager>();
         setupPlayerParty();
         setupEnemyParty();
     }
@@ -50,6 +58,10 @@ public class OTU_Battle_DataHandler : MonoBehaviour
 
     void setupPlayerParty()
     {
+        System.Array.Resize(ref battleManager.partyAction, saveManager.activeSave2.partyMembers.Length+1);
+        System.Array.Resize(ref battleManager.partySubaction, saveManager.activeSave2.partyMembers.Length+1);
+        System.Array.Resize(ref battleManager.partyTarget, saveManager.activeSave2.partyMembers.Length+1);
+
         // Entities and shelves
         for (int i = 0; i < saveManager.activeSave2.partyMembers.Length; i++)
         {
@@ -58,7 +70,7 @@ public class OTU_Battle_DataHandler : MonoBehaviour
                 playerPartyEntities[i].SetActive(false);
                 playerPartyUIShelves[i].SetActive(false);
             }
-            
+        
             else
             {
                 Debug.Log("The member " + saveManager.activeSave2.partyMembers[i] + ", in party slot " + i + " was not found! Please add it to OTU_Battle_Setup, or choose a valid entity name.");
@@ -66,6 +78,23 @@ public class OTU_Battle_DataHandler : MonoBehaviour
                 playerPartyUIShelves[i].SetActive(false);
             }
         }
+
+        if (playerPartyEntities[0].name == "NULL")
+        {
+            battleManager.partySize = 1;
+        }
+        else if (playerPartyEntities[1].name == "NULL")
+        {
+            battleManager.partySize = 2;
+        }
+        else if (playerPartyEntities[2].name == "NULL")
+        {
+            battleManager.partySize = 3;
+        }
+        // else
+        // {
+        //     battleManager.partySize = 4;
+        // }
     }
 
     void setupEnemyParty()
@@ -107,6 +136,19 @@ public class OTU_Battle_DataHandler : MonoBehaviour
                 textboxManager.TextboxAutoSingleText("*An enemy draws near!");
             }
         }
+
+        if (enemyPartyEntities[1].name == "NULL")
+        {
+            System.Array.Resize(ref enemyPartyEntities, 1);
+        }
+        else if (enemyPartyEntities[2].name == "NULL")
+        {
+            System.Array.Resize(ref enemyPartyEntities, 2);
+        }
+        else if (enemyPartyEntities[3].name == "NULL")
+        {
+            System.Array.Resize(ref enemyPartyEntities, 3);
+        }
     }
 
 
@@ -131,9 +173,9 @@ public class OTU_Battle_DataHandler : MonoBehaviour
             }
 
 
-            if (currentlyEquippedWeapon == "---")
+            else if (currentlyEquippedWeapon == "---")
             {
-                Debug.LogWarning("No weapon is currently equipped! (But the system reports that the equppied item is not zero?)");
+                Debug.LogWarning("No weapon is currently equipped! (But the system reports that the equipped item is not zero?)");
                 cleanMenuArray(battleUIRoot.transform.GetChild(2).gameObject.GetComponent<DA_Menu_Control>());
                 resizeMenuArray(battleUIRoot.transform.GetChild(2).gameObject.GetComponent<DA_Menu_Control>(), 1);
 
@@ -141,7 +183,8 @@ public class OTU_Battle_DataHandler : MonoBehaviour
                 battleUIRoot.transform.GetChild(2).gameObject.GetComponent<DA_Menu_Control>().baseText[0] = "M-Melee";
             }
 
-            /*
+            // THIS CODE Doesn't SUCK! do USE UNLESS YOU CAN break IT DUMBASS
+            
             else
             {
                 print(currentlyEquippedWeapon);
@@ -152,7 +195,7 @@ public class OTU_Battle_DataHandler : MonoBehaviour
 
                 // Attack names
                 battleUIRoot.transform.GetChild(2).gameObject.GetComponent<DA_Menu_Control>().baseText[0] = "M-Melee";
-            }*/
+            }
             setHoveredText(battleUIRoot.transform.GetChild(2).gameObject.GetComponent<DA_Menu_Control>());
         }
 
@@ -170,7 +213,7 @@ public class OTU_Battle_DataHandler : MonoBehaviour
     }
 
 
-    void cleanMenuArray(DA_Menu_Control menu)
+    public void cleanMenuArray(DA_Menu_Control menu)
     {
         System.Array.Resize(ref menu.textTargetObjects, 4);
         System.Array.Resize(ref menu.baseText, 4);
@@ -179,16 +222,19 @@ public class OTU_Battle_DataHandler : MonoBehaviour
         {
             menu.textTargetObjects[i] = menu.gameObject.transform.GetChild(i).gameObject.GetComponent<Text>();
             menu.baseText[i] = " ";
+            menu.textTargetObjects[i].text = " ";
         }
         setHoveredText(menu);
     }
 
-    void resizeMenuArray(DA_Menu_Control menu, int size)
+
+    public void resizeMenuArray(DA_Menu_Control menu, int size)
     {
         System.Array.Resize(ref menu.textTargetObjects, size);
         System.Array.Resize(ref menu.baseText, size);
         System.Array.Resize(ref menu.hoveredText, size);
     }
+
 
     void setHoveredText(DA_Menu_Control menu)
     {

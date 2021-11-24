@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Resources/Scenes/Main_GameOver.unity
+- path: Assets/Resources/Scenes/Main_Battle.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
