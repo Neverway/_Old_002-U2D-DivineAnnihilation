@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 1920
     height: 987
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Console
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 392}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 987
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 392}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -74,8 +74,8 @@ MonoBehaviour:
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LoadedToolbars:
-  - {fileID: 21}
-  m_MainToolbar: {fileID: 21}
+  - {fileID: 20}
+  m_MainToolbar: {fileID: 20}
   m_LastLoadedLayoutName: 
 --- !u!114 &4
 MonoBehaviour:
@@ -197,11 +197,15 @@ MonoBehaviour:
 >>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)
 =======
     height: 937
-  m_MinSize: {x: 677, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MinSize: {x: 679, y: 342}
+  m_MaxSize: {x: 12004, y: 8042}
   vertical: 0
+<<<<<<< HEAD
   controlID: 20
 >>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
+=======
+  controlID: 8402
+>>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
 --- !u!114 &6
 =======
     y: 0
@@ -745,12 +749,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1644
+    width: 1396
     height: 937
-  m_MinSize: {x: 401, y: 492}
-  m_MaxSize: {x: 10001, y: 14042}
+  m_MinSize: {x: 403, y: 342}
+  m_MaxSize: {x: 8003, y: 8042}
   vertical: 1
-  controlID: 21
+  controlID: 8403
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -770,12 +774,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1644
-    height: 666
-  m_MinSize: {x: 401, y: 221}
-  m_MaxSize: {x: 8001, y: 4021}
+    width: 1396
+    height: 659
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 22
+  controlID: 8404
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -793,8 +797,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 201
-    height: 666
+    width: 421
+    height: 659
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
@@ -812,24 +816,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
+  m_Name: GameView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 201
+    x: 421
     y: 0
-    width: 1443
-    height: 666
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 14}
+    width: 975
+    height: 659
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 12}
   m_Panes:
-  - {fileID: 14}
-  - {fileID: 12}
   - {fileID: 15}
-  m_Selected: 0
-  m_LastSelected: 1
+  - {fileID: 12}
+  - {fileID: 14}
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -840,24 +844,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 666
-    width: 1644
-    height: 271
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 16}
+    y: 659
+    width: 1396
+    height: 278
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 16}
   - {fileID: 17}
-  - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -875,6 +878,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1359
     y: 0
     width: 561
@@ -883,8 +887,11 @@ MonoBehaviour:
   m_MaxSize: {x: 4001, y: 4021}
 =======
     x: 1644
+=======
+    x: 1396
+>>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
     y: 0
-    width: 276
+    width: 524
     height: 937
 <<<<<<< HEAD
   m_MinSize: {x: 275, y: 50}
@@ -893,11 +900,15 @@ MonoBehaviour:
 =======
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
+<<<<<<< HEAD
 >>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
   m_ActualView: {fileID: 19}
+=======
+  m_ActualView: {fileID: 18}
+>>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
   m_Panes:
+  - {fileID: 18}
   - {fileID: 19}
-  - {fileID: 20}
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &12
@@ -926,6 +937,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1021,6 +1033,12 @@ MonoBehaviour:
     width: 1441
     height: 606
 >>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
+=======
+    x: 421
+    y: 83
+    width: 973
+    height: 638
+>>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -1028,6 +1046,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1081,10 +1100,13 @@ MonoBehaviour:
 =======
   m_TargetSize: {x: 1040, y: 585}
 >>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
+=======
+  m_TargetSize: {x: 973, y: 547}
+>>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
-  m_MaximizeOnPlay: 1
+  m_MaximizeOnPlay: 0
   m_UseMipMap: 0
   m_VSyncEnabled: 1
   m_Gizmos: 0
@@ -1095,6 +1117,7 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1189,6 +1212,12 @@ MonoBehaviour:
     m_VBaseRangeMin: -292.5
     m_VBaseRangeMax: 292.5
 >>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
+=======
+    m_HBaseRangeMin: -486.5
+    m_HBaseRangeMax: 486.5
+    m_VBaseRangeMin: -273.5
+    m_VBaseRangeMax: 273.5
+>>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1197,7 +1226,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -1220,6 +1249,7 @@ MonoBehaviour:
 >>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
 =======
       y: 21
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1278,12 +1308,19 @@ MonoBehaviour:
 =======
     m_Translation: {x: 720.5, y: 292.5}
 >>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
+=======
+      width: 973
+      height: 617
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 486.5, y: 308.5}
+>>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1408,6 +1445,15 @@ MonoBehaviour:
 =======
   m_LastWindowPixelSize: {x: 1441, y: 606}
 >>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
+=======
+      x: -486.5
+      y: -308.5
+      width: 973
+      height: 617
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 973, y: 638}
+>>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
   m_ClearInEditMode: 1
   m_NoCameraWarning: 0
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -1525,6 +1571,7 @@ MonoBehaviour:
 =======
     x: 0
     y: 83
+<<<<<<< HEAD
     width: 200
 <<<<<<< HEAD
     height: 633
@@ -1532,10 +1579,15 @@ MonoBehaviour:
 =======
     height: 645
 >>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
+=======
+    width: 420
+    height: 638
+>>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1580,20 +1632,25 @@ MonoBehaviour:
       m_LastClickedID: 0
       m_ExpandedIDs: 14fbffffba62000018630000
 >>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
+=======
+      m_SelectedIDs: b0b70300
+      m_LastClickedID: 0
+      m_ExpandedIDs: 245efeff4688feff7ea1feff1ab0feffe2bbfeff5c4fffff467effff909dffffb8dcffff9aeaffff14fbffffbe6200001c630000bcbb000022bc000020f8000086f800006a2a0100ce2d01008a340100f0340100047101006a710100f8d001005ed101002e4902009449020048850200ae85020062c10200c8c102007cfd0200e2fd0200f46e0300b075030016760300
+>>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Entity Fox
+        m_OriginalName: Entity Fox
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 181632
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -1611,6 +1668,7 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+<<<<<<< HEAD
   m_EditorHideFlags: 1
   m_Script: {fileID: 12013, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -1948,6 +2006,8 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+=======
+>>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
   m_EditorHideFlags: 0
   m_Script: {fileID: 12914, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -1963,6 +2023,7 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 2121
     y: 83
     width: 1371
@@ -1975,8 +2036,11 @@ MonoBehaviour:
 >>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
 =======
     x: 441
+=======
+    x: 421
+>>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
     y: 83
-    width: 1201
+    width: 973
     height: 638
 >>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
   m_ViewDataDictionary: {fileID: 0}
@@ -1995,7 +2059,11 @@ MonoBehaviour:
     - {fileID: 6601914946622214437, guid: 89ad8ef3336ee59f1983f6a47cf341e1, type: 2}
     - {fileID: 7758909991381457702, guid: 89ad8ef3336ee59f1983f6a47cf341e1, type: 2}
     - {fileID: -4047934083166289752, guid: 89ad8ef3336ee59f1983f6a47cf341e1, type: 2}
+<<<<<<< HEAD
 >>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
+=======
+    - {fileID: -5653624978984808096, guid: 3e75189684fc1a4b3a190287119ceaba, type: 2}
+>>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
     m_ValueSerializationHelper:
     - e00: 0.8429848
       e01: 0
@@ -2015,6 +2083,7 @@ MonoBehaviour:
       e33: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     - e00: 0.9663158
       e01: 0
       e02: 0
@@ -2028,18 +2097,25 @@ MonoBehaviour:
 =======
     - e00: 2.1224155
 >>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
+=======
+    - e00: 0.16
+>>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
       e01: 0
       e02: 0
-      e03: -344.71393
+      e03: 7
       e10: 0
-      e11: 2.1224155
+      e11: 0.16
       e12: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
       e13: 155.06316
 >>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
 =======
       e13: -85.68994
 >>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
+=======
+      e13: 273.1
+>>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
       e20: 0
       e21: 0
       e22: 1
@@ -2099,16 +2175,20 @@ MonoBehaviour:
       e32: 0
       e33: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
 =======
     - e00: 1
+=======
+    - e00: 0.85603964
+>>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
       e01: 0
       e02: 0
-      e03: 0
+      e03: -256.8119
       e10: 0
-      e11: 1
+      e11: 0.85603964
       e12: 0
-      e13: 0
+      e13: 161.8719
       e20: 0
       e21: 0
       e22: 1
@@ -2117,14 +2197,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 1
+    - e00: 0.614125
       e01: 0
       e02: 0
-      e03: 85.25
+      e03: -38.416462
       e10: 0
-      e11: 1
+      e11: 0.614125
       e12: 0
-      e13: 187
+      e13: 240.72717
       e20: 0
       e21: 0
       e22: 1
@@ -2133,14 +2213,30 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 1
+    - e00: 0.8121803
       e01: 0
       e02: 0
-      e03: 85.25
+      e03: 4.345905
       e10: 0
-      e11: 1
+      e11: 0.8121803
       e12: 0
-      e13: 187
+      e13: 198.57784
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.59059167
+      e01: 0
+      e02: 0
+      e03: -35.270206
+      e10: 0
+      e11: 0.59059167
+      e12: 0
+      e13: 198.4075
       e20: 0
       e21: 0
       e22: 1
@@ -2151,10 +2247,13 @@ MonoBehaviour:
       e33: 1
 >>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 3e75189684fc1a4b3a190287119ceaba,
+  m_AnimatorController: {fileID: 9100000, guid: 89ad8ef3336ee59f1983f6a47cf341e1,
     type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: -1297399999584036618, guid: 3e75189684fc1a4b3a190287119ceaba,
+  - m_Target: {fileID: 6601914946622214437, guid: 89ad8ef3336ee59f1983f6a47cf341e1,
+      type: 2}
+    m_ScrollPosition: {x: 0, y: 0}
+  - m_Target: {fileID: -4047934083166289752, guid: 89ad8ef3336ee59f1983f6a47cf341e1,
       type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
@@ -2168,6 +2267,123 @@ MonoBehaviour:
   m_CurrentEditor: 0
   m_LayerEditor:
     m_SelectedLayerIndex: 0
+--- !u!114 &15
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12013, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Scene
+    m_Image: {fileID: 2593428753322112591, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 421
+    y: 83
+    width: 973
+    height: 638
+  m_ViewDataDictionary: {fileID: 0}
+  m_ShowContextualTools: 0
+  m_WindowGUID: 55094fe50bf2ff576811963c8c00f2e8
+  m_Gizmos: 1
+  m_OverrideSceneCullingMask: 6917529027641081856
+  m_SceneIsLit: 1
+  m_SceneLighting: 1
+  m_2DMode: 1
+  m_isRotationLocked: 0
+  m_PlayAudio: 0
+  m_AudioPlay: 0
+  m_Position:
+    m_Target: {x: 0.43769127, y: -1.9159236, z: -56.10054}
+    speed: 2
+    m_Value: {x: 0.43769127, y: -1.9159236, z: -56.10054}
+  m_RenderMode: 0
+  m_CameraMode:
+    drawMode: 0
+    name: Shaded
+    section: Shading Mode
+  m_ValidateTrueMetals: 0
+  m_DoValidateTrueMetals: 0
+  m_ExposureSliderValue: 0
+  m_SceneViewState:
+    m_AlwaysRefresh: 0
+    showFog: 1
+    showSkybox: 1
+    showFlares: 1
+    showImageEffects: 1
+    showParticleSystems: 1
+    showVisualEffectGraphs: 1
+    m_FxEnabled: 1
+  m_Grid:
+    xGrid:
+      m_Fade:
+        m_Target: 0
+        speed: 2
+        m_Value: 0
+      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
+      m_Pivot: {x: 0, y: 0, z: 0}
+      m_Size: {x: 0, y: 0}
+    yGrid:
+      m_Fade:
+        m_Target: 0
+        speed: 2
+        m_Value: 0
+      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
+      m_Pivot: {x: 0, y: 0, z: 0}
+      m_Size: {x: 1, y: 1}
+    zGrid:
+      m_Fade:
+        m_Target: 1
+        speed: 2
+        m_Value: 1
+      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
+      m_Pivot: {x: 0, y: 0, z: 0}
+      m_Size: {x: 1, y: 1}
+    m_ShowGrid: 1
+    m_GridAxis: 1
+    m_gridOpacity: 0.5
+  m_Rotation:
+    m_Target: {x: 0, y: 0, z: 0, w: 1}
+    speed: 2
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
+  m_Size:
+    m_Target: 5.830764
+    speed: 2
+    m_Value: 5.830764
+  m_Ortho:
+    m_Target: 1
+    speed: 2
+    m_Value: 1
+  m_CameraSettings:
+    m_Speed: 1
+    m_SpeedNormalized: 0.5
+    m_SpeedMin: 0.001
+    m_SpeedMax: 2
+    m_EasingEnabled: 1
+    m_EasingDuration: 0.4
+    m_AccelerationEnabled: 1
+    m_FieldOfViewHorizontalOrVertical: 60
+    m_NearClip: 0.03
+    m_FarClip: 10000
+    m_DynamicClip: 1
+    m_OcclusionCulling: 0
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewOrtho: 0
+  m_ReplacementShader: {fileID: 0}
+  m_ReplacementString: 
+  m_SceneVisActive: 1
+  m_LastLockedObject: {fileID: 0}
+  m_ViewIsLockedToObject: 0
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -2259,6 +2475,7 @@ MonoBehaviour:
 =======
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 736
     width: 1456
     height: 263
@@ -2268,6 +2485,11 @@ MonoBehaviour:
     width: 1643
     height: 250
 >>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
+=======
+    y: 742
+    width: 1395
+    height: 257
+>>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -2282,6 +2504,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2407,11 +2630,15 @@ MonoBehaviour:
 =======
     - Assets/Resources/Scripts
 >>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
+=======
+    - Assets/Resources/Sprites/Entities
+>>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   - Assets/Resources/Scenes
@@ -2421,12 +2648,16 @@ MonoBehaviour:
 =======
   - Assets/Resources/Scripts
 >>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
+=======
+  - Assets/Resources/Sprites/Entities
+>>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
   m_LastFoldersGridSize: 16
   m_LastProjectPath: /home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine
     Annihilation
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2467,6 +2698,12 @@ MonoBehaviour:
     m_LastClickedID: 29544
     m_ExpandedIDs: 000000002a73000064730000687300007673000000ca9a3b
 >>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
+=======
+    scrollPos: {x: 0, y: 83}
+    m_SelectedIDs: 76920000
+    m_LastClickedID: 37494
+    m_ExpandedIDs: 000000002e7300006c7300007873000000ca9a3b
+>>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2531,6 +2768,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 0000000016d9000000ca9a3b
 >>>>>>> 800768207 (Added temporary day/night lighting, Added gameover functionality, Fixed text scroll speed)
 =======
@@ -2552,6 +2790,9 @@ MonoBehaviour:
 =======
     m_ExpandedIDs: 000000002a730000
 >>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
+=======
+    m_ExpandedIDs: 000000002e73000000ca9a3b
+>>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2576,12 +2817,17 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
 <<<<<<< HEAD
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
 =======
+=======
+    m_SelectedInstanceIDs: b0b70300
+    m_LastClickedInstanceID: 243632
+>>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
     m_HadKeyboardFocusLastEvent: 1
 <<<<<<< HEAD
     m_ExpandedInstanceIDs: c62300004c560000000000009e5d0000
@@ -2591,18 +2837,18 @@ MonoBehaviour:
 >>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: TestScript
-      m_OriginalName: TestScript
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 33988
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_CreateAssetUtility:
@@ -2612,10 +2858,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 101}
+    m_ScrollPosition: {x: 0, y: 247}
     m_GridSize: 16
   m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 215
+  m_DirectoriesAreaWidth: 110
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -2935,6 +3181,7 @@ MonoBehaviour:
 =======
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 737
     width: 1643
     height: 262
@@ -2981,10 +3228,13 @@ MonoBehaviour:
 =======
     x: 0
 >>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
+=======
+>>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
     y: 742
-    width: 1643
+    width: 1395
     height: 257
   m_ViewDataDictionary: {fileID: 0}
+<<<<<<< HEAD
   m_LockTracker:
     m_IsLocked: 0
 <<<<<<< HEAD
@@ -2994,6 +3244,9 @@ MonoBehaviour:
   m_LastSelectedObjectID: 25618
 >>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
 --- !u!114 &19
+=======
+--- !u!114 &18
+>>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3015,6 +3268,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 3175
     y: 83
     width: 560
@@ -3023,6 +3277,11 @@ MonoBehaviour:
     y: 83
     width: 275
 >>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
+=======
+    x: 1396
+    y: 83
+    width: 523
+>>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
     height: 916
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
@@ -3037,7 +3296,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &20
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3069,6 +3328,7 @@ MonoBehaviour:
   m_Palette: {fileID: 6294252873835015085, guid: c1ddc9ee070cea096b774a52f609acaa,
     type: 3}
   m_DrawGizmos: 0
+<<<<<<< HEAD
 --- !u!114 &21
 <<<<<<< HEAD
 =======
@@ -3076,6 +3336,9 @@ MonoBehaviour:
 >>>>>>> 7afa52c83 (Fixed fail-safe level not loading for some scenes, Added battle flavor text, Added battle moves placeholder text, Updated special file names list)
 =======
 >>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
+=======
+--- !u!114 &20
+>>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
