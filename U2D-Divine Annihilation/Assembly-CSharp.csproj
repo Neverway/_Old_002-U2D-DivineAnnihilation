@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Hud_Name.cs" />
+     <Compile Include="Assets/Resources/Scripts/One Time Use/OTU_Battle_EnemyTarget.cs" />
      <Compile Include="Assets/Resources/Scripts/One Time Use/OTU_System_PauseManager.cs" />
      <Compile Include="Assets/Resources/Scripts/DA_System_PersistentOnOverworld.cs" />
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Entity_Effect_Character_Ghost.cs" />
@@ -96,6 +97,7 @@
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/Title_Save_Options.cs" />
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Trigger_Interact.cs" />
      <Compile Include="Assets/Resources/Scripts/One Time Use/OTU_Title_Opening.cs" />
+     <Compile Include="Assets/Resources/Scripts/DA_Trigger_PartySet.cs" />
      <Compile Include="Assets/Resources/Scripts/One Time Use/OTU_Overworld_ShopboxManager.cs" />
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Event/Event_WakeUp.cs" />
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Battle_Encounter.cs" />
@@ -109,6 +111,7 @@
      <Compile Include="Assets/Resources/Scripts/One Time Use/OTU_Title_Events.cs" />
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Trigger_PartySet.cs" />
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Hud_Textbox_Manager.cs" />
+     <Compile Include="Assets/Resources/Scripts/DA_Trigger_Event.cs" />
      <Compile Include="Assets/Resources/Scripts/One Time Use/OTU_System_SaveLoader.cs" />
      <Compile Include="Assets/Resources/Scripts/One Time Use/OTU_HUD_Reference.cs" />
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Menu_Scroll_Control.cs" />
@@ -145,13 +148,13 @@
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/Title_Quit.cs" />
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Unused or Unknown/OLDItemPickup.cs" />
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Battle_Turn_Manager.cs" />
+     <Compile Include="Assets/Resources/Scripts/DA_Testing.cs" />
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Hud_SI_hand_controller.cs" />
      <Compile Include="Assets/Resources/Scripts/One Time Use/OTU_Title_PretitleMessage.cs" />
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Battle_ActionFunctions.cs" />
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/System/SystemEntityID.cs" />
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Trigger_DestroyOnInteract.cs" />
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/System/SystemPersistantData.cs" />
-     <Compile Include="Assets/Resources/Scripts/One Time Use/OTU_Battle_EnemyTarget.cs" />
      <None Include="Assets/Packages/TextMesh Pro/Resources/Shaders/TMPro.cginc" />
      <None Include="Assets/Packages/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets/Packages/TextMesh Pro/Resources/Shaders/TMP_Bitmap.shader" />

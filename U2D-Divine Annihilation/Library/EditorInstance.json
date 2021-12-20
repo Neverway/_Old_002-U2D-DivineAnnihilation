@@ -13,6 +13,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	"process_id" : 46982,
 =======
 	"process_id" : 179054,
@@ -61,6 +62,9 @@
 =======
 	"process_id" : 146951,
 >>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
+=======
+	"process_id" : 617585,
+>>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
 	"version" : "2020.3.22f1",
 	"app_path" : "/home/lizband/Unity/Hub/Editor/2020.3.22f1/Editor/Unity",
 	"app_contents_path" : "/home/lizband/Unity/Hub/Editor/2020.3.22f1/Editor/Data"

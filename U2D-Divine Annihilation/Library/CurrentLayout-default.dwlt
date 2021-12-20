@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 1920
     height: 987
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Project
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 987
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -197,8 +197,8 @@ MonoBehaviour:
 >>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)
 =======
     height: 937
-  m_MinSize: {x: 679, y: 342}
-  m_MaxSize: {x: 12004, y: 8042}
+  m_MinSize: {x: 677, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
   controlID: 20
 >>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
@@ -747,8 +747,8 @@ MonoBehaviour:
     y: 0
     width: 1644
     height: 937
-  m_MinSize: {x: 403, y: 342}
-  m_MaxSize: {x: 8003, y: 8042}
+  m_MinSize: {x: 401, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
   controlID: 21
 --- !u!114 &7
@@ -771,9 +771,9 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1644
-    height: 654
-  m_MinSize: {x: 403, y: 221}
-  m_MaxSize: {x: 8003, y: 4021}
+    height: 666
+  m_MinSize: {x: 401, y: 221}
+  m_MaxSize: {x: 8001, y: 4021}
   vertical: 0
   controlID: 22
 --- !u!114 &8
@@ -794,9 +794,9 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 201
-    height: 654
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+    height: 666
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -812,7 +812,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -820,16 +820,16 @@ MonoBehaviour:
     x: 201
     y: 0
     width: 1443
-    height: 654
+    height: 666
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 12}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
   - {fileID: 12}
   - {fileID: 15}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -840,24 +840,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 654
+    y: 666
     width: 1644
-    height: 283
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 17}
+    height: 271
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
   - {fileID: 17}
   - {fileID: 18}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -886,9 +886,14 @@ MonoBehaviour:
     y: 0
     width: 276
     height: 937
+<<<<<<< HEAD
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
 >>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
+=======
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+>>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -921,6 +926,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1009,6 +1015,12 @@ MonoBehaviour:
     width: 1441
     height: 633
 >>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
+=======
+    x: 202
+    y: 19
+    width: 1441
+    height: 606
+>>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -1016,6 +1028,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1065,6 +1078,9 @@ MonoBehaviour:
 =======
   m_TargetSize: {x: 1088, y: 612}
 >>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
+=======
+  m_TargetSize: {x: 1040, y: 585}
+>>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1079,6 +1095,7 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1166,6 +1183,12 @@ MonoBehaviour:
     m_VBaseRangeMin: -306
     m_VBaseRangeMax: 306
 >>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
+=======
+    m_HBaseRangeMin: -520
+    m_HBaseRangeMax: 520
+    m_VBaseRangeMin: -292.5
+    m_VBaseRangeMax: 292.5
+>>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1174,7 +1197,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -1247,10 +1270,14 @@ MonoBehaviour:
 >>>>>>> 7afa52c83 (Fixed fail-safe level not loading for some scenes, Added battle flavor text, Added battle moves placeholder text, Updated special file names list)
 =======
       width: 1441
-      height: 612
+      height: 585
     m_Scale: {x: 1, y: 1}
+<<<<<<< HEAD
     m_Translation: {x: 720.5, y: 306}
 >>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
+=======
+    m_Translation: {x: 720.5, y: 292.5}
+>>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -1370,13 +1397,17 @@ MonoBehaviour:
 >>>>>>> 7afa52c83 (Fixed fail-safe level not loading for some scenes, Added battle flavor text, Added battle moves placeholder text, Updated special file names list)
 =======
       x: -720.5
-      y: -306
+      y: -292.5
       width: 1441
-      height: 612
+      height: 585
     m_MinimalGUI: 1
   m_defaultScale: 1
+<<<<<<< HEAD
   m_LastWindowPixelSize: {x: 1441, y: 633}
 >>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
+=======
+  m_LastWindowPixelSize: {x: 1441, y: 606}
+>>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
   m_ClearInEditMode: 1
   m_NoCameraWarning: 0
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -1495,12 +1526,17 @@ MonoBehaviour:
     x: 0
     y: 83
     width: 200
+<<<<<<< HEAD
     height: 633
 >>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
+=======
+    height: 645
+>>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1539,6 +1575,11 @@ MonoBehaviour:
       m_LastClickedID: 0
       m_ExpandedIDs: 14fbffffba570000
 >>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
+=======
+      m_SelectedIDs: c4840000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 14fbffffba62000018630000
+>>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1643,22 +1684,27 @@ MonoBehaviour:
 >>>>>>> 741f5210d (Added battle encounters, Added dev menu, Added battle party setup, Updated Unity Editor version to 2020.3.22f1)
 =======
     x: 201
-    y: 107
+    y: 83
     width: 1441
+<<<<<<< HEAD
     height: 616
 >>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
+=======
+    height: 645
+>>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 55094fe50bf2ff576811963c8c00f2e8
   m_Gizmos: 1
   m_OverrideSceneCullingMask: 6917529027641081856
-  m_SceneIsLit: 0
+  m_SceneIsLit: 1
   m_SceneLighting: 1
   m_2DMode: 1
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1734,6 +1780,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0.91331524, y: -1.6163869, z: -33.73168}
 >>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
+=======
+    m_Target: {x: 6.508935, y: -3.5423226, z: -55.156704}
+    speed: 2
+    m_Value: {x: 6.508935, y: -3.5423226, z: -55.156704}
+>>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1784,6 +1835,7 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1859,6 +1911,11 @@ MonoBehaviour:
     speed: 2
     m_Value: 9.62238
 >>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
+=======
+    m_Target: 14.733267
+    speed: 2
+    m_Value: 14.733267
+>>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1905,6 +1962,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 2121
     y: 83
     width: 1371
@@ -1915,6 +1973,12 @@ MonoBehaviour:
     width: 1191
     height: 610
 >>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
+=======
+    x: 441
+    y: 83
+    width: 1201
+    height: 638
+>>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
   m_ViewDataDictionary: {fileID: 0}
   m_ViewTransforms:
     m_KeySerializationHelper:
@@ -1925,7 +1989,13 @@ MonoBehaviour:
 <<<<<<< HEAD
 =======
     - {fileID: -3991085534816252364, guid: ad3ac7cd914b00528aa4cff878905cb4, type: 2}
+<<<<<<< HEAD
 >>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
+=======
+    - {fileID: 6601914946622214437, guid: 89ad8ef3336ee59f1983f6a47cf341e1, type: 2}
+    - {fileID: 7758909991381457702, guid: 89ad8ef3336ee59f1983f6a47cf341e1, type: 2}
+    - {fileID: -4047934083166289752, guid: 89ad8ef3336ee59f1983f6a47cf341e1, type: 2}
+>>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
     m_ValueSerializationHelper:
     - e00: 0.8429848
       e01: 0
@@ -1944,6 +2014,7 @@ MonoBehaviour:
       e32: 0
       e33: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
     - e00: 0.9663158
       e01: 0
       e02: 0
@@ -1954,14 +2025,21 @@ MonoBehaviour:
       e13: 85.05789
 =======
     - e00: 0.79052633
+=======
+    - e00: 2.1224155
+>>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
       e01: 0
       e02: 0
-      e03: -24.526337
+      e03: -344.71393
       e10: 0
-      e11: 0.79052633
+      e11: 2.1224155
       e12: 0
+<<<<<<< HEAD
       e13: 155.06316
 >>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
+=======
+      e13: -85.68994
+>>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
       e20: 0
       e21: 0
       e22: 1
@@ -2020,12 +2098,63 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
+<<<<<<< HEAD
 >>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
+=======
+    - e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 1
+      e01: 0
+      e02: 0
+      e03: 85.25
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 187
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 1
+      e01: 0
+      e02: 0
+      e03: 85.25
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 187
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+>>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 20643ad5d94b55f99ac6b9834dea13fa,
+  m_AnimatorController: {fileID: 9100000, guid: 3e75189684fc1a4b3a190287119ceaba,
     type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: -8493769904253502078, guid: 20643ad5d94b55f99ac6b9834dea13fa,
+  - m_Target: {fileID: -1297399999584036618, guid: 3e75189684fc1a4b3a190287119ceaba,
       type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
@@ -2129,10 +2258,16 @@ MonoBehaviour:
 >>>>>>> 741f5210d (Added battle encounters, Added dev menu, Added battle party setup, Updated Unity Editor version to 2020.3.22f1)
 =======
     x: 0
+<<<<<<< HEAD
     y: 736
     width: 1456
     height: 263
 >>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
+=======
+    y: 749
+    width: 1643
+    height: 250
+>>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -2147,6 +2282,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2268,22 +2404,30 @@ MonoBehaviour:
 =======
     - Assets/Resources
 >>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
+=======
+    - Assets/Resources/Scripts
+>>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - Assets/Resources/Scenes
 =======
   - Assets/Resources
 >>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
+=======
+  - Assets/Resources/Scripts
+>>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
   m_LastFoldersGridSize: 16
   m_LastProjectPath: /home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine
     Annihilation
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2317,6 +2461,12 @@ MonoBehaviour:
     m_LastClickedID: 28142
     m_ExpandedIDs: 00000000ea5f0000
 >>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
+=======
+    scrollPos: {x: 0, y: 138}
+    m_SelectedIDs: 68730000
+    m_LastClickedID: 29544
+    m_ExpandedIDs: 000000002a73000064730000687300007673000000ca9a3b
+>>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2396,8 +2546,12 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000ea5f0000
 >>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
+=======
+    m_ExpandedIDs: 000000002a730000
+>>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2429,22 +2583,26 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: c6230000
 =======
     m_HadKeyboardFocusLastEvent: 1
+<<<<<<< HEAD
     m_ExpandedInstanceIDs: c62300004c560000000000009e5d0000
 >>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
+=======
+    m_ExpandedInstanceIDs: c62300004c560000000000009e5d00002c6b0000
+>>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: TestScript
+      m_OriginalName: TestScript
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 33988
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_CreateAssetUtility:
@@ -2454,7 +2612,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 101}
     m_GridSize: 16
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 215
@@ -2776,10 +2934,16 @@ MonoBehaviour:
 >>>>>>> 741f5210d (Added battle encounters, Added dev menu, Added battle party setup, Updated Unity Editor version to 2020.3.22f1)
 =======
     x: 0
+<<<<<<< HEAD
     y: 737
     width: 1643
     height: 262
 >>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
+=======
+    y: 717
+    width: 1475
+    height: 282
+>>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &18
 MonoBehaviour:
@@ -2803,6 +2967,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1920
     y: 761
     width: 1573
@@ -2813,14 +2978,21 @@ MonoBehaviour:
   m_LastSelectedObjectID: 310256
 =======
     x: 1816
+=======
+    x: 0
+>>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
     y: 742
-    width: 1627
+    width: 1643
     height: 257
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
+<<<<<<< HEAD
   m_LastSelectedObjectID: 21856
 >>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
+=======
+  m_LastSelectedObjectID: 25618
+>>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -2885,16 +3057,16 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 3501
+    x: 1644
     y: 83
-    width: 338
-    height: 928
+    width: 275
+    height: 916
   m_ViewDataDictionary: {fileID: 0}
   m_PreviewResizer:
     m_CachedPref: 50
     m_ControlHash: 1964396721
     m_PrefName: Preview_TilemapBrushInspector
-  m_Palette: {fileID: 2253050186751905654, guid: 6f880886b5116e6afafee3e7fd2dab36,
+  m_Palette: {fileID: 6294252873835015085, guid: c1ddc9ee070cea096b774a52f609acaa,
     type: 3}
   m_DrawGizmos: 0
 --- !u!114 &21
