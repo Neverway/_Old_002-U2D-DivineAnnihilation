@@ -21,6 +21,7 @@ public class DA_Testing : MonoBehaviour
     public float senseRange = 20f;
 
     public float stopRange = 1.5f;
+    public float slowdownMultiplier = 1;
     public float repathRate = 1.5f;
     Path path;
     int currentWaypoint = 0;
@@ -111,7 +112,14 @@ public class DA_Testing : MonoBehaviour
                 // Draw direction based off A* point vector
                 direction = ((Vector2)path.vectorPath[currentWaypoint+1] - rigidbody2d.position).normalized;
 
-                rigidbody2d.MovePosition(rigidbody2d.position + direction * currentSpeed * Time.fixedDeltaTime);    // Update the movement for the character
+                if (Vector2.Distance(rigidbody2d.position, target.position) <= stopRange+0.5f)
+                {
+                    rigidbody2d.MovePosition(rigidbody2d.position + direction * (currentSpeed-slowdownMultiplier) * Time.fixedDeltaTime);    // Update the movement for the character
+                }
+                else
+                {
+                    rigidbody2d.MovePosition(rigidbody2d.position + direction * currentSpeed * Time.fixedDeltaTime);    // Update the movement for the character
+                }
 
                 float distance = Vector2.Distance(rigidbody2d.position, path.vectorPath[currentWaypoint]);
 
@@ -186,11 +194,6 @@ public class DA_Testing : MonoBehaviour
             if (Vector2.Distance(rigidbody2d.position, target.position) >= senseRange)
             {
                 rigidbody2d.transform.position = new Vector2(target.transform.position.x, target.transform.position.y);
-            }
-
-            if (Vector2.Distance(rigidbody2d.position, target.position) <= 1.5)
-            {
-                
             }
         }
     }
