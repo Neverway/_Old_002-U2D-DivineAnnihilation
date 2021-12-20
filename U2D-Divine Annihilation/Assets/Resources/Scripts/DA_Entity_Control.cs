@@ -13,6 +13,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Cinemachine;
+using Pathfinding;
 
 public class DA_Entity_Control : MonoBehaviour
 {
@@ -35,6 +36,16 @@ public class DA_Entity_Control : MonoBehaviour
 
     // Base sprint variables
     public float sprintSpeed = 7f;
+
+    // Follower variables
+    private Transform target;
+    Path path;
+    int currentWaypoint = 0;
+    bool reachedEndOfPath = false;
+    Seeker seeker;
+    Rigidbody2D rigidbody2d;
+    public float stopRange = 1.5f;
+    public float nextWaypointDistance = 3f;
 
     // Player variables
     public Sprite shelfSprite;
@@ -105,6 +116,12 @@ public class DA_Entity_Control : MonoBehaviour
             if (isFollower)
             {
                 entityType = "follower";
+                seeker = GetComponent<Seeker>();
+                rigidbody2d = GetComponent<Rigidbody2D>();
+                //characterMovement = FindObjectOfType<Entity_Character_Movement>();
+                saveManager = FindObjectOfType<OTU_System_SaveManager>();
+
+                InvokeRepeating("UpdatePath", 0f, 0.5f);
             }
             else
             {
@@ -137,6 +154,26 @@ public class DA_Entity_Control : MonoBehaviour
             }
         }
     }
+
+
+    void UpdatePath()
+    {
+        if (seeker.IsDone())
+        {
+            seeker.StartPath(rigidbody2d.position, target.position, OnPathComplete);
+        }
+    }
+
+
+    void OnPathComplete(Path p)
+    {
+        if (!p.error)
+        {
+            path = p;
+            currentWaypoint = 0;
+        }
+    }
+
 
     void Update()
     {
@@ -266,7 +303,53 @@ public class DA_Entity_Control : MonoBehaviour
 
     void FollowerEntity()
     {
+        target = GameObject.FindWithTag("Player").transform;
 
+        if (path == null)
+        {
+            return;
+        }
+
+        if (reachedEndOfPath)
+        {
+            // This is not currently in use but the if statment get rid of a warning in the log
+        }
+
+        if (currentWaypoint >= path.vectorPath.Count)
+        {
+            reachedEndOfPath = true;
+            return;
+        }
+
+        else
+        {
+            reachedEndOfPath = false;
+        }
+
+        if (saveManager.activeSave2.partyMembers[0] == entityName || saveManager.activeSave2.partyMembers[1] == entityName || saveManager.activeSave2.partyMembers[2] == entityName)
+        {
+            // Move towards the target (usually the party leader)
+            if (Vector2.Distance(rigidbody2d.position, target.position) <= senseRange && Vector2.Distance(rigidbody2d.position, target.position) >= stopRange)
+            {
+                Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rigidbody2d.position).normalized;
+                Vector2 force = direction * walkSpeed * Time.deltaTime;
+                rigidbody2d.AddForce(force);
+
+                float distance = Vector2.Distance(rigidbody2d.position, path.vectorPath[currentWaypoint]);
+
+                if (distance < nextWaypointDistance)
+                {
+                    currentWaypoint++;
+                }
+
+            }
+
+            // Teleport to target if stuck
+            if (Vector2.Distance(rigidbody2d.position, target.position) >= senseRange)
+            {
+                rigidbody2d.transform.position = new Vector2(target.transform.position.x, target.transform.position.y);
+            }
+        }
     }
 
     void EnemyEntity()

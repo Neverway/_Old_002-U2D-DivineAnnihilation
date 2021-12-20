@@ -32,7 +32,6 @@ public class OTU_Title_Events : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
-        EditorApplication.isPlaying = false;
     }
 
 

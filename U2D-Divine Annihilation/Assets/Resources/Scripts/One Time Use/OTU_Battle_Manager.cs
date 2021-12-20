@@ -23,6 +23,7 @@ public class OTU_Battle_Manager : MonoBehaviour
     public int currentWave = 0;
     [Range (0,3)]
     public int currentCharacterTurn = 1;
+    public int currentExecutionTurn = 1;
     [Range (1,4)]
     public int partySize = 1;
 
@@ -127,7 +128,7 @@ public class OTU_Battle_Manager : MonoBehaviour
     {
         if (acceptingMenuInput)
         {
-            textboxManager.TextboxSingleText("Item > Target > Skip");
+            textboxManager.TextboxSingleText("This feature has not been implemented yet, sorry! -Liz");
             acceptingMenuInput = false;
         }
     }
