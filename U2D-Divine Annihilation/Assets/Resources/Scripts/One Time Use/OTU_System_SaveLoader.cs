@@ -37,7 +37,7 @@ public class OTU_System_SaveLoader : MonoBehaviour
     {
         saveManager = FindObjectOfType<OTU_System_SaveManager>();
         inventoryManager = FindObjectOfType<OTU_System_InventoryManager>();
-
+        
         if (saveManager == null)
         {
             SceneManager.LoadScene("Main_Title");

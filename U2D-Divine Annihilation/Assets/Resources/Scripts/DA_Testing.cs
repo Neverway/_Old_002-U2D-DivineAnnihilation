@@ -17,7 +17,9 @@ public class DA_Testing : MonoBehaviour
 {
     // Public variables
     public string entityName;
+    public int partyPosition;
     public float currentSpeed;
+    public bool usingAnimator;
     public float senseRange = 20f;
 
     public float stopRange = 1.5f;
@@ -34,6 +36,7 @@ public class DA_Testing : MonoBehaviour
 
     // Private variables
     private Transform target;
+    public DA_Testing[] targets;
     private Animator characterAnimator;
     private Rigidbody2D rigidbody2d;
 
@@ -74,8 +77,7 @@ public class DA_Testing : MonoBehaviour
 
     void FixedUpdate()
     {
-
-            target = GameObject.FindWithTag("Player").transform;
+        target = GameObject.FindWithTag("Player").transform;
         if (path == null)
         {
             return;
@@ -100,7 +102,39 @@ public class DA_Testing : MonoBehaviour
 
         if (saveManager.activeSave2.partyMembers[0] == entityName || saveManager.activeSave2.partyMembers[1] == entityName || saveManager.activeSave2.partyMembers[2] == entityName)
         {
-            target = GameObject.FindWithTag("Player").transform;
+            if (saveManager.activeSave2.partyMembers[0] == entityName)
+            {
+                partyPosition = 1;
+                target = GameObject.FindWithTag("Player").transform;
+            }
+            else if (saveManager.activeSave2.partyMembers[1] == entityName)
+            {
+                partyPosition = 2;
+                targets = GameObject.FindObjectsOfType<DA_Testing>();
+                for (int i = 0; i < targets.Length; i++)
+                {
+                    if (targets[i].partyPosition == 1)
+                    {
+                        target = targets[i].gameObject.transform;
+                    }
+                }
+            }
+            else if (saveManager.activeSave2.partyMembers[2] == entityName)
+            {
+                partyPosition = 3;
+                targets = GameObject.FindObjectsOfType<DA_Testing>();
+                for (int i = 0; i < targets.Length; i++)
+                {
+                    if (targets[i].partyPosition == 2)
+                    {
+                        target = targets[i].gameObject.transform;
+                    }
+                }
+            }
+            else
+            {
+                Debug.LogError("The target could not be properly set for the follower " + gameObject.name);
+            }
             currentSpeed = GameObject.FindWithTag("Player").GetComponent<DA_Entity_Control>().currentSpeed+0.5f;
             gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
 
@@ -138,54 +172,57 @@ public class DA_Testing : MonoBehaviour
                 
                 
             // Character animator
-            if (isMoving)
+            if (usingAnimator)
             {
-                if (direction.x > 0.5)
+                if (isMoving)
                 {
-                    characterAnimator.SetFloat("MoveX", 0.2f);
-                    characterAnimator.SetFloat("MoveY", 0.0f);
-                    testvector.x = 0.2f;
+                    if (direction.x > 0.5)
+                    {
+                        characterAnimator.SetFloat("MoveX", 0.2f);
+                        characterAnimator.SetFloat("MoveY", 0.0f);
+                        testvector.x = 0.2f;
+                    }
+                    else if (direction.x < -0.5)
+                    {
+                        characterAnimator.SetFloat("MoveX", -0.2f);
+                        characterAnimator.SetFloat("MoveY", 0.0f);
+                        testvector.x = -0.2f;
+                    }
+                    if (direction.y > 0.5)
+                    {
+                        characterAnimator.SetFloat("MoveY", 0.2f);
+                        testvector.y = 0.2f;
+                    }
+                    else if (direction.y < -0.5)
+                    {
+                        characterAnimator.SetFloat("MoveY", -0.2f);
+                        testvector.y = -0.2f;
+                    }
                 }
-                else if (direction.x < -0.5)
+                else if (!isMoving)
                 {
-                    characterAnimator.SetFloat("MoveX", -0.2f);
-                    characterAnimator.SetFloat("MoveY", 0.0f);
-                    testvector.x = -0.2f;
-                }
-                if (direction.y > 0.5)
-                {
-                    characterAnimator.SetFloat("MoveY", 0.2f);
-                    testvector.y = 0.2f;
-                }
-                else if (direction.y < -0.5)
-                {
-                    characterAnimator.SetFloat("MoveY", -0.2f);
-                    testvector.y = -0.2f;
-                }
-            }
-            else if (!isMoving)
-            {
-                if (direction.x > 0.5)
-                {
-                    characterAnimator.SetFloat("MoveX", 0.1f);
-                    characterAnimator.SetFloat("MoveY", 0.0f);
-                    testvector.x = 0.1f;
-                }
-                else if (direction.x < -0.5)
-                {
-                    characterAnimator.SetFloat("MoveX", -0.1f);
-                    characterAnimator.SetFloat("MoveY", 0.0f);
-                    testvector.x = -0.1f;
-                }
-                if (direction.y > 0.5)
-                {
-                    characterAnimator.SetFloat("MoveY", 0.1f);
-                    testvector.y = 0.1f;
-                }
-                else if (direction.y < -0.5)
-                {
-                    characterAnimator.SetFloat("MoveY", -0.1f);
-                    testvector.y = -0.1f;
+                    if (direction.x > 0.5)
+                    {
+                        characterAnimator.SetFloat("MoveX", 0.1f);
+                        characterAnimator.SetFloat("MoveY", 0.0f);
+                        testvector.x = 0.1f;
+                    }
+                    else if (direction.x < -0.5)
+                    {
+                        characterAnimator.SetFloat("MoveX", -0.1f);
+                        characterAnimator.SetFloat("MoveY", 0.0f);
+                        testvector.x = -0.1f;
+                    }
+                    if (direction.y > 0.5)
+                    {
+                        characterAnimator.SetFloat("MoveY", 0.1f);
+                        testvector.y = 0.1f;
+                    }
+                    else if (direction.y < -0.5)
+                    {
+                        characterAnimator.SetFloat("MoveY", -0.1f);
+                        testvector.y = -0.1f;
+                    }
                 }
             }
             

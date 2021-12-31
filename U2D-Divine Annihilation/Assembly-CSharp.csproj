@@ -123,6 +123,7 @@
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Background Scripts/Hud_Health.cs" />
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/Title_Options.cs" />
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Entity_Character_Follower.cs" />
+     <Compile Include="Assets/Resources/Scripts/Test.cs" />
      <Compile Include="Assets/Resources/Scripts/One Time Use/OTU_GameOver_Events.cs" />
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Entity_Effect_Water.cs" />
      <Compile Include="Assets/Resources/Scripts/One Time Use/OTU_Title_KeyBind.cs" />
@@ -131,6 +132,7 @@
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Battle_Shelf_Assignment.cs" />
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Unused or Unknown/ItemPickup2.cs" />
      <Compile Include="Assets/Resources/Scripts/One Time Use/OTU_System_TextboxManager.cs" />
+     <Compile Include="Assets/Packages/SU3DJPFont/Demo/SampleScene.cs" />
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/System/SystemConfig.cs" />
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/System_Sound_Music_Manager.cs" />
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/System_LevelData_Manager.cs" />
@@ -155,10 +157,15 @@
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/System/SystemEntityID.cs" />
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Trigger_DestroyOnInteract.cs" />
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/System/SystemPersistantData.cs" />
+     <Compile Include="Assets/Resources/Scripts/DA_Trigger_EventT2.cs" />
      <None Include="Assets/Packages/TextMesh Pro/Resources/Shaders/TMPro.cginc" />
      <None Include="Assets/Packages/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets/Packages/TextMesh Pro/Resources/Shaders/TMP_Bitmap.shader" />
+     <None Include="Assets/Packages/SU3DJPFont/Fonts/MPlusTestflight63a/LICENSE_E.txt" />
+     <None Include="Assets/Packages/SU3DJPFont/TextMeshProFont/school-characters-list.txt" />
      <None Include="Assets/Packages/TextMesh Pro/Resources/Shaders/TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets/Packages/SU3DJPFont/Fonts/MPlusTestflight63a/README_J.txt" />
+     <None Include="Assets/Packages/SU3DJPFont/readme_jp.txt" />
      <None Include="Assets/Packages/TextMesh Pro/Resources/Shaders/TMP_SDF-Surface.shader" />
      <None Include="Assets/Packages/TextMesh Pro/Sprites/EmojiOne Attribution.txt" />
      <None Include="Assets/Packages/TextMesh Pro/Resources/Shaders/TMP_Bitmap-Custom-Atlas.shader" />
@@ -166,13 +173,16 @@
      <None Include="Assets/Packages/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" />
      <None Include="Assets/Packages/TextMesh Pro/Resources/Shaders/TMPro_Properties.cginc" />
      <None Include="Assets/Packages/TextMesh Pro/Resources/Shaders/TMPro_Surface.cginc" />
+     <None Include="Assets/Packages/SU3DJPFont/readme.txt" />
      <None Include="Assets/Packages/TigerForge/EasyPrefabBrowser/SetupGuide.txt" />
      <None Include="Assets/Packages/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
+     <None Include="Assets/Packages/SU3DJPFont/Fonts/MPlusTestflight63a/README_E.txt" />
      <None Include="Assets/Packages/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets/Packages/TextMesh Pro/Resources/Shaders/TMP_SDF Overlay.shader" />
      <None Include="Assets/Packages/TextMesh Pro/Resources/Shaders/TMP_Bitmap-Mobile.shader" />
      <None Include="Assets/Packages/TextMesh Pro/Fonts/LiberationSans - OFL.txt" />
      <None Include="Assets/Packages/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile.shader" />
+     <None Include="Assets/Packages/SU3DJPFont/Fonts/MPlusTestflight63a/LICENSE_J.txt" />
      <None Include="Assets/Packages/TextMesh Pro/Resources/Shaders/TMP_Sprite.shader" />
     <Reference Include="UnityEngine">
         <HintPath>/home/lizband/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
