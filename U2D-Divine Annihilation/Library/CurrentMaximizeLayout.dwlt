@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 3}
-  - {fileID: 13}
+  - {fileID: 15}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -104,9 +104,10 @@ MonoBehaviour:
 >>>>>>> 7df09d4b8 (Updated C1S2 to G10,  Fixed save chapter not updating properly, Fixed inventory discarding, Fixed entity variables being stuck as read only, Updated prefabs list, Fixed Solution file missing DASDK scripts)
 =======
     height: 937
-  m_MinSize: {x: 679, y: 342}
-  m_MaxSize: {x: 12004, y: 8042}
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -129,6 +130,9 @@ MonoBehaviour:
 =======
   controlID: 44
 >>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
+=======
+  controlID: 67
+>>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -150,6 +154,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -260,6 +265,12 @@ MonoBehaviour:
     width: 1441
     height: 639
 >>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
+=======
+    x: 296
+    y: 83
+    width: 1012
+    height: 630
+>>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -267,6 +278,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -312,6 +324,9 @@ MonoBehaviour:
 =======
   m_TargetSize: {x: 1099, y: 618}
 >>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
+=======
+  m_TargetSize: {x: 1012, y: 569}
+>>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -326,6 +341,7 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -407,6 +423,12 @@ MonoBehaviour:
     m_VBaseRangeMin: -309
     m_VBaseRangeMax: 309
 >>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
+=======
+    m_HBaseRangeMin: -506
+    m_HBaseRangeMax: 506
+    m_VBaseRangeMin: -284.5
+    m_VBaseRangeMax: 284.5
+>>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -424,6 +446,7 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -535,12 +558,19 @@ MonoBehaviour:
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 720.5, y: 309}
 >>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
+=======
+      width: 1012
+      height: 609
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 506, y: 304.5}
+>>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -696,6 +726,15 @@ MonoBehaviour:
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1441, y: 639}
 >>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
+=======
+      x: -506
+      y: -304.5
+      width: 1012
+      height: 609
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 1012, y: 630}
+>>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
   m_ClearInEditMode: 1
   m_NoCameraWarning: 0
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -814,11 +853,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 4}
-  - {fileID: 10}
+  - {fileID: 12}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -932,10 +972,14 @@ MonoBehaviour:
 =======
     width: 1644
 >>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
+=======
+    width: 1310
+>>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
     height: 937
-  m_MinSize: {x: 403, y: 342}
-  m_MaxSize: {x: 8003, y: 8042}
+  m_MinSize: {x: 403, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -958,6 +1002,9 @@ MonoBehaviour:
 =======
   controlID: 45
 >>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
+=======
+  controlID: 68
+>>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
 --- !u!114 &4
 >>>>>>> 7df09d4b8 (Updated C1S2 to G10,  Fixed save chapter not updating properly, Fixed inventory discarding, Fixed entity variables being stuck as read only, Updated prefabs list, Fixed Solution file missing DASDK scripts)
 MonoBehaviour:
@@ -978,12 +1025,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1644
-    height: 660
+    width: 1310
+    height: 651
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 46
+  controlID: 69
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1001,6 +1048,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1094,6 +1142,12 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
 >>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
+=======
+    width: 296
+    height: 651
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+>>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
   m_ActualView: {fileID: 6}
 >>>>>>> 7df09d4b8 (Updated C1S2 to G10,  Fixed save chapter not updating properly, Fixed inventory discarding, Fixed entity variables being stuck as read only, Updated prefabs list, Fixed Solution file missing DASDK scripts)
   m_Panes:
@@ -1123,6 +1177,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 83
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1207,6 +1262,10 @@ MonoBehaviour:
     width: 200
     height: 639
 >>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
+=======
+    width: 295
+    height: 630
+>>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
@@ -1256,6 +1315,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_ExpandedIDs: 7e45ffff767cffff2886ffffb8abfffff4ffffff00c70000d2cd000000d3000006930200fa990200569b03000aa70500
 >>>>>>> bdbdfe3b2 (Fixed color space and ambient color causing lighting to be too bright)
 =======
@@ -1285,6 +1345,9 @@ MonoBehaviour:
 =======
       m_ExpandedIDs: 14fbffff
 >>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
+=======
+      m_ExpandedIDs: acbafefffadafefffcdafeff04dbfeff10dbfeff12dbfeff0adcfeffb0dcfeffcaddfeffea69ffff766affff14fbffff7c55000010580000cc5f0000d0640000ba6600005c6700008868000072cc01008ccc010092cc0100f4cc0100f8cc010014cd010048cd010052cd010064cd010092cd0100c0cd0100cecd0100f4cd0100facd010008ce01001ace010044ce01004ece010054ce010086ce010092ce0100c8ce0100dece0100eece010026cf010032cf010056cf010060cf010066cf0100accf0100c8cf0100eecf0100f4cf010000d0010020d0010040d001005ed001007ad00100aed00100c2d0010068d101007ad10100bed10100dad10100f8d1010038d201004cd201005ed2010062d2010086d20100c8d2010026d301004cd30100ccd30100d2d30100d8d30100ead3010036d401003ad401006ad4010088d401009ad40100c8d4010040d501007ad501007ed50100f0d5010004d6010018d601005ad6010060d60100a4d60100aed60100dad6010026d701002ad701007ed70100f0d7010014d8010034d801004cd8010062d801008ed8010066d901006cd9010086d9010098d90100c2d90100c8d9010000da010024da010032da01004ada010094da0100bada0100c6da0100ccda010080db0100fedb010004dc010052dc010088dc0100b2dc0100b6dc010004dd010010dd01002add010038dd01003cdd01008add0100b0dd010014e1010046e1010056e10100aee20100d0e20100dee2010060e40100a80203002c260300362603007c260300
+>>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1323,8 +1386,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 201
+    x: 296
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1412,12 +1476,20 @@ MonoBehaviour:
     height: 660
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
+=======
+    width: 1014
+    height: 651
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+>>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
   m_ActualView: {fileID: 2}
 >>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
   m_Panes:
   - {fileID: 8}
   - {fileID: 2}
   - {fileID: 9}
+  - {fileID: 10}
+  - {fileID: 11}
   m_Selected: 1
   m_LastSelected: 0
 --- !u!114 &8
@@ -1446,14 +1518,14 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 421
+    x: 296
     y: 83
-    width: 973
-    height: 638
+    width: 1012
+    height: 630
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 55094fe50bf2ff576811963c8c00f2e8
-  m_Gizmos: 1
+  m_Gizmos: 0
   m_OverrideSceneCullingMask: 6917529027641081856
   m_SceneIsLit: 1
   m_SceneLighting: 1
@@ -1462,9 +1534,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.43769127, y: -1.9159236, z: -56.10054}
+    m_Target: {x: 105.43474, y: 49.57501, z: -55.211823}
     speed: 2
-    m_Value: {x: 0.43769127, y: -1.9159236, z: -56.10054}
+    m_Value: {x: 105.43474, y: 49.57501, z: -55.211823}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1515,9 +1587,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 5.830764
+    m_Target: 10.492852
     speed: 2
-    m_Value: 5.830764
+    m_Value: 10.492852
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -2170,14 +2242,78 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f817a38900380be47942905e17e7d39b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Timeline
+    m_Image: {fileID: -9173288242387172643, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 417
+    y: 83
+    width: 1130
+    height: 645
+  m_ViewDataDictionary: {fileID: 0}
+  m_Preferences:
+    playRangeLoopMode: 1
+    editType: 0
+    timeReferenceMode: 0
+  m_LockTracker:
+    m_IsLocked: 0
+  m_SequenceHierarchy: {fileID: 0}
+  m_HierarchySplitterPerc: 0.2
+  m_SequencePath:
+    m_SelectionRoot: 0
+    m_SubElements: []
+--- !u!114 &11
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12111, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 455, y: 354}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Asset Store
+    m_Image: {fileID: -8693916549880196297, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 417
+    y: 83
+    width: 1130
+    height: 645
+  m_ViewDataDictionary: {fileID: 0}
+--- !u!114 &12
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2303,12 +2439,20 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 12}
 >>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
+=======
+    y: 651
+    width: 1310
+    height: 286
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 13}
+>>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
   m_Panes:
-  - {fileID: 11}
-  - {fileID: 12}
-  m_Selected: 1
-  m_LastSelected: 0
---- !u!114 &11
+  - {fileID: 13}
+  - {fileID: 14}
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2414,6 +2558,7 @@ MonoBehaviour:
 =======
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 736
     width: 1456
     height: 263
@@ -2423,6 +2568,11 @@ MonoBehaviour:
     width: 1395
     height: 257
 >>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
+=======
+    y: 734
+    width: 1309
+    height: 265
+>>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -2437,6 +2587,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2489,11 +2640,15 @@ MonoBehaviour:
 =======
     - Assets/Resources/Sprites/Entities
 >>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
+=======
+    - Assets/Resources/Sprites/Items
+>>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
-  m_StartGridSize: 16
+  m_StartGridSize: 74
   m_LastFolders:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2561,11 +2716,16 @@ MonoBehaviour:
   - Assets/Resources/Sprites/Entities
 >>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
   m_LastFoldersGridSize: 16
+=======
+  - Assets/Resources/Sprites/Items
+  m_LastFoldersGridSize: 74
+>>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
   m_LastProjectPath: /home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine
     Annihilation
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2624,6 +2784,12 @@ MonoBehaviour:
     m_LastClickedID: 37494
     m_ExpandedIDs: 0000000030730000
 >>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
+=======
+    scrollPos: {x: 0, y: 367}
+    m_SelectedIDs: e07c0000
+    m_LastClickedID: 31968
+    m_ExpandedIDs: 000000004c730000a6760000527a0000987e000084800000328300008894000000ca9a3b
+>>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2639,7 +2805,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 10}
+      m_ClientGUIView: {fileID: 12}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -2687,6 +2853,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000a66d000000ca9a3b
 >>>>>>> 800768207 (Added temporary day/night lighting, Added gameover functionality, Fixed text scroll speed)
 =======
@@ -2710,6 +2877,9 @@ MonoBehaviour:
 =======
     m_ExpandedIDs: 0000000030730000
 >>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
+=======
+    m_ExpandedIDs: 000000004c730000
+>>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2734,6 +2904,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2812,22 +2983,28 @@ MonoBehaviour:
 >>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
     m_ExpandedInstanceIDs: c62300004c560000000000009e5d00002c6b0000
 >>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
+=======
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c62300004c560000000000009e5d00002c6b000004710000
+>>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: TlwgTypewriter SDF
+      m_OriginalName: TlwgTypewriter SDF
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 35648
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 10}
+      m_ClientGUIView: {fileID: 12}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -2835,6 +3012,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2854,9 +3032,13 @@ MonoBehaviour:
 >>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
     m_GridSize: 16
 >>>>>>> 741f5210d (Added battle encounters, Added dev menu, Added battle party setup, Updated Unity Editor version to 2020.3.22f1)
+=======
+    m_ScrollPosition: {x: 0, y: 9}
+    m_GridSize: 74
+>>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 110
---- !u!114 &12
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3301,6 +3483,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 742
     width: 1474
     height: 257
@@ -3309,8 +3492,13 @@ MonoBehaviour:
     width: 1643
     height: 256
 >>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
+=======
+    y: 734
+    width: 1665
+    height: 265
+>>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
   m_ViewDataDictionary: {fileID: 0}
---- !u!114 &13
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3327,19 +3515,20 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1644
+    x: 1310
     y: 0
-    width: 276
+    width: 610
     height: 937
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 14}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 16}
   m_Panes:
-  - {fileID: 14}
-  - {fileID: 15}
+  - {fileID: 16}
+  - {fileID: 17}
+  - {fileID: 18}
   m_Selected: 0
   m_LastSelected: 1
---- !u!114 &14
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3360,9 +3549,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1644
+    x: 1310
     y: 83
-    width: 275
+    width: 609
     height: 916
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
@@ -3420,7 +3609,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
---- !u!114 &15
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3440,9 +3629,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1644
+    x: 1310
     y: 83
-    width: 275
+    width: 609
     height: 916
   m_ViewDataDictionary: {fileID: 0}
   m_PreviewResizer:
@@ -3452,3 +3641,28 @@ MonoBehaviour:
   m_Palette: {fileID: 6294252873835015085, guid: c1ddc9ee070cea096b774a52f609acaa,
     type: 3}
   m_DrawGizmos: 0
+--- !u!114 &18
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12402, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 300, y: 150}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Services
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1549
+    y: 83
+    width: 370
+    height: 916
+  m_ViewDataDictionary: {fileID: 0}
