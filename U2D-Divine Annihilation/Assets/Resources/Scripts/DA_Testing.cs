@@ -21,6 +21,7 @@ public class DA_Testing : MonoBehaviour
     public float currentSpeed;
     public bool usingAnimator;
     public float senseRange = 20f;
+    public bool loneWolf;
 
     public float stopRange = 1.5f;
     public float slowdownMultiplier = 1;
@@ -35,7 +36,7 @@ public class DA_Testing : MonoBehaviour
     public Vector2 direction;
 
     // Private variables
-    private Transform target;
+    public Transform target;
     public DA_Testing[] targets;
     private Animator characterAnimator;
     private Rigidbody2D rigidbody2d;
@@ -53,6 +54,7 @@ public class DA_Testing : MonoBehaviour
         saveManager = FindObjectOfType<OTU_System_SaveManager>();
         characterAnimator = gameObject.GetComponent<Animator>();
         InvokeRepeating("UpdatePath", 0f, repathRate);
+        target = GameObject.FindWithTag("Player").transform;
     }
 
 
@@ -77,7 +79,6 @@ public class DA_Testing : MonoBehaviour
 
     void FixedUpdate()
     {
-        target = GameObject.FindWithTag("Player").transform;
         if (path == null)
         {
             return;
@@ -102,6 +103,7 @@ public class DA_Testing : MonoBehaviour
 
         if (saveManager.activeSave2.partyMembers[0] == entityName || saveManager.activeSave2.partyMembers[1] == entityName || saveManager.activeSave2.partyMembers[2] == entityName)
         {
+            loneWolf = false;
             if (saveManager.activeSave2.partyMembers[0] == entityName)
             {
                 partyPosition = 1;
@@ -110,6 +112,7 @@ public class DA_Testing : MonoBehaviour
             else if (saveManager.activeSave2.partyMembers[1] == entityName)
             {
                 partyPosition = 2;
+                targets = null;
                 targets = GameObject.FindObjectsOfType<DA_Testing>();
                 for (int i = 0; i < targets.Length; i++)
                 {
@@ -122,6 +125,7 @@ public class DA_Testing : MonoBehaviour
             else if (saveManager.activeSave2.partyMembers[2] == entityName)
             {
                 partyPosition = 3;
+                targets = null;
                 targets = GameObject.FindObjectsOfType<DA_Testing>();
                 for (int i = 0; i < targets.Length; i++)
                 {
@@ -231,6 +235,103 @@ public class DA_Testing : MonoBehaviour
             if (Vector2.Distance(rigidbody2d.position, target.position) >= senseRange)
             {
                 rigidbody2d.transform.position = new Vector2(target.transform.position.x, target.transform.position.y);
+            }
+        }
+
+        else if (loneWolf)
+        {            
+            // Move toward target
+            if (Vector2.Distance(rigidbody2d.position, target.position) <= senseRange && Vector2.Distance(rigidbody2d.position, target.position) >= stopRange)
+            {
+
+                // Draw direction based off A* point vector
+                direction = ((Vector2)path.vectorPath[currentWaypoint+1] - rigidbody2d.position).normalized;
+
+                if (Vector2.Distance(rigidbody2d.position, target.position) <= stopRange+0.5f)
+                {
+                    rigidbody2d.MovePosition(rigidbody2d.position + direction * (currentSpeed-slowdownMultiplier) * Time.fixedDeltaTime);    // Update the movement for the character
+                }
+                else
+                {
+                    rigidbody2d.MovePosition(rigidbody2d.position + direction * currentSpeed * Time.fixedDeltaTime);    // Update the movement for the character
+                }
+
+                float distance = Vector2.Distance(rigidbody2d.position, path.vectorPath[currentWaypoint]);
+
+                if (distance < nextWaypointDistance)
+                {
+                    currentWaypoint++;
+                }
+
+                isMoving = true;
+            }
+            else
+            {
+                isMoving = false;
+            }
+
+                
+                
+            // Character animator
+            if (usingAnimator)
+            {
+                if (isMoving)
+                {
+                    if (direction.x > 0.5)
+                    {
+                        characterAnimator.SetFloat("MoveX", 0.2f);
+                        characterAnimator.SetFloat("MoveY", 0.0f);
+                        testvector.x = 0.2f;
+                    }
+                    else if (direction.x < -0.5)
+                    {
+                        characterAnimator.SetFloat("MoveX", -0.2f);
+                        characterAnimator.SetFloat("MoveY", 0.0f);
+                        testvector.x = -0.2f;
+                    }
+                    if (direction.y > 0.5)
+                    {
+                        characterAnimator.SetFloat("MoveY", 0.2f);
+                        testvector.y = 0.2f;
+                    }
+                    else if (direction.y < -0.5)
+                    {
+                        characterAnimator.SetFloat("MoveY", -0.2f);
+                        testvector.y = -0.2f;
+                    }
+                }
+                else if (!isMoving)
+                {
+                    if (direction.x > 0.5)
+                    {
+                        characterAnimator.SetFloat("MoveX", 0.1f);
+                        characterAnimator.SetFloat("MoveY", 0.0f);
+                        testvector.x = 0.1f;
+                    }
+                    else if (direction.x < -0.5)
+                    {
+                        characterAnimator.SetFloat("MoveX", -0.1f);
+                        characterAnimator.SetFloat("MoveY", 0.0f);
+                        testvector.x = -0.1f;
+                    }
+                    if (direction.y > 0.5)
+                    {
+                        characterAnimator.SetFloat("MoveY", 0.1f);
+                        testvector.y = 0.1f;
+                    }
+                    else if (direction.y < -0.5)
+                    {
+                        characterAnimator.SetFloat("MoveY", -0.1f);
+                        testvector.y = -0.1f;
+                    }
+                }
+            }
+            
+
+            // Teleport to target if stuck
+            if (Vector2.Distance(rigidbody2d.position, target.position) >= senseRange)
+            {
+                //rigidbody2d.transform.position = new Vector2(target.transform.position.x, target.transform.position.y);
             }
         }
     }
