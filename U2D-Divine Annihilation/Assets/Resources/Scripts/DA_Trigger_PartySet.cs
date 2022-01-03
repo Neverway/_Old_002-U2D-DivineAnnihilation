@@ -32,6 +32,7 @@ public class DA_Trigger_PartySet : MonoBehaviour
 
     // // Private variables
     private bool inTrigger;
+    public DA_Testing[] targets;
 
     // Reference variables
     private OTU_System_SaveManager saveManager;
@@ -104,6 +105,14 @@ public class DA_Trigger_PartySet : MonoBehaviour
         // Clear current slot
         if (saveManager.activeSave2.partyMembers[0] == partyMemberID)
         {
+            targets = GameObject.FindObjectsOfType<DA_Testing>();
+            for (int i = 0; i < targets.Length; i++)
+            {
+                if (targets[i].partyPosition == 1)
+                {
+                    targets[i].GetComponent<DA_Testing>().partyPosition = 0;
+                }
+            }
             saveManager.activeSave2.partyMembers[0] = "NULL";
             saveManager.activeSave2.partyMembers[0] = saveManager.activeSave2.partyMembers[1];
             saveManager.activeSave2.partyMembers[1] = saveManager.activeSave2.partyMembers[2];
@@ -111,58 +120,32 @@ public class DA_Trigger_PartySet : MonoBehaviour
         }
         if (saveManager.activeSave2.partyMembers[1] == partyMemberID)
         {
+            targets = GameObject.FindObjectsOfType<DA_Testing>();
+            for (int i = 0; i < targets.Length; i++)
+            {
+                if (targets[i].partyPosition == 2)
+                {
+                    targets[i].GetComponent<DA_Testing>().partyPosition = 0;
+                }
+            }
             saveManager.activeSave2.partyMembers[1] = "NULL";
             saveManager.activeSave2.partyMembers[1] = saveManager.activeSave2.partyMembers[2];
             saveManager.activeSave2.partyMembers[2] = "NULL";
         }
         if (saveManager.activeSave2.partyMembers[2] == partyMemberID)
         {
+            targets = GameObject.FindObjectsOfType<DA_Testing>();
+            for (int i = 0; i < targets.Length; i++)
+            {
+                if (targets[i].partyPosition == 3)
+                {
+                    targets[i].GetComponent<DA_Testing>().partyPosition = 0;
+                }
+            }
             saveManager.activeSave2.partyMembers[2] = "NULL";
         }
+        OnFinish.Invoke();
     }
-
-    void CollapseParty()
-    {
-        // if (saveManager.activeSave2.partyMembers[partyPosition+0] != "NULL")
-        // {
-        //     saveManager.activeSave2.partyMembers[partyPosition-1] = saveManager.activeSave2.partyMembers[partyPosition+0];
-        // }
-    }
-
-    // void PartyAdd()
-    // {
-    //     if (inTrigger && eventTrigger && addMember)
-    //     {
-    //         if (partyPosition == 0)swswasdwadwadwasdwadwadwadwasdadwa
-    //         {
-    //             if (saveManager.activeSave2.partyMembers[0] == "NULL") { saveManager.activeSave2.partyMembers[0] = partyMemberID; OnFinish.Invoke();}
-    //             else if (saveManager.activeSave2.partyMembers[1] == "NULL") { saveManager.activeSave2.partyMembers[1] = partyMemberID; OnFinish.Invoke();}
-    //             else if (saveManager.activeSave2.partyMembers[2] == "NULL") { saveManager.activeSave2.partyMembers[2] = partyMemberID; OnFinish.Invoke();}
-    //             else { Debug.Log("In " + gameObject.name + ", the party is currently full!"); }
-    //         }
-    //         else if (partyPosition == 1) { saveManager.activeSave2.partyMembers[0] = partyMemberID; OnFinish.Invoke();}
-    //         else if (partyPosition == 2) { saveManager.activeSave2.partyMembers[1] = partyMemberID; OnFinish.Invoke();}
-    //         else if (partyPosition == 3) { saveManager.activeSave2.partyMembers[2] = partyMemberID; OnFinish.Invoke();}
-    //     }
-    // }
-
-
-    // void PartySubtract()
-    // {
-    //     if (inTrigger && eventTrigger && !addMember)
-    //     {
-    //         if (partyPosition == 0)
-    //         {
-    //             if (saveManager.activeSave2.partyMembers[0] == "NULL") { saveManager.activeSave2.partyMembers[0] = partyMemberID; OnFinish.Invoke();}
-    //             else if (saveManager.activeSave2.partyMembers[1] == "NULL") { saveManager.activeSave2.partyMembers[1] = partyMemberID; OnFinish.Invoke();}
-    //             else if (saveManager.activeSave2.partyMembers[2] == "NULL") { saveManager.activeSave2.partyMembers[2] = partyMemberID; OnFinish.Invoke();}
-    //             else { Debug.Log("In " + gameObject.name + ", the party is currently full!"); }
-    //         }
-    //         else if (partyPosition == 1) { saveManager.activeSave2.partyMembers[0] = partyMemberID; OnFinish.Invoke();}
-    //         else if (partyPosition == 2) { saveManager.activeSave2.partyMembers[1] = partyMemberID; OnFinish.Invoke();}
-    //         else if (partyPosition == 3) { saveManager.activeSave2.partyMembers[2] = partyMemberID; OnFinish.Invoke();}
-    //     }
-    // }
 
 
     void OnTriggerEnter2D(Collider2D other)

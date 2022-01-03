@@ -15,11 +15,11 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
     x: 0
-    y: 25
+    y: 28
     width: 1920
     height: 987
   m_ShowMode: 4
-  m_Title: Console
+  m_Title: Project
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 987
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -197,8 +197,8 @@ MonoBehaviour:
 >>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)
 =======
     height: 937
-  m_MinSize: {x: 678, y: 342}
-  m_MaxSize: {x: 12003, y: 8042}
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -753,10 +753,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1644
+    width: 1532
     height: 937
-  m_MinSize: {x: 402, y: 342}
-  m_MaxSize: {x: 8002, y: 8042}
+  m_MinSize: {x: 403, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
   controlID: 21
 --- !u!114 &7
@@ -778,10 +778,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1644
-    height: 632
-  m_MinSize: {x: 402, y: 221}
-  m_MaxSize: {x: 8002, y: 4021}
+    width: 1532
+    height: 634
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
   controlID: 22
 --- !u!114 &8
@@ -801,10 +801,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 201
-    height: 632
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+    width: 282
+    height: 634
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -825,10 +825,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 201
+    x: 282
     y: 0
-    width: 1443
-    height: 632
+    width: 1250
+    height: 634
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
@@ -850,23 +850,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 632
-    width: 1644
-    height: 305
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 19}
+    y: 634
+    width: 1532
+    height: 303
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
   - {fileID: 19}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -886,6 +886,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1359
     y: 0
     width: 561
@@ -900,9 +901,13 @@ MonoBehaviour:
 =======
     x: 1644
 >>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
+=======
+    x: 1532
+>>>>>>> f7ee3c9dd (Added game event trigger entity targeting, Added g. event trigger entity animation, Fixed party disbanding not clearing follower targets)
     y: 0
-    width: 276
+    width: 388
     height: 937
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_MinSize: {x: 275, y: 50}
@@ -920,6 +925,10 @@ MonoBehaviour:
 =======
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
+=======
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+>>>>>>> f7ee3c9dd (Added game event trigger entity targeting, Added g. event trigger entity animation, Fixed party disbanding not clearing follower targets)
   m_ActualView: {fileID: 20}
 >>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
   m_Panes:
@@ -1160,6 +1169,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_HBaseRangeMin: -493.5
     m_HBaseRangeMax: 493.5
     m_VBaseRangeMin: -277.5
@@ -1253,6 +1263,12 @@ MonoBehaviour:
     m_VBaseRangeMin: -295
     m_VBaseRangeMax: 295
 >>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
+=======
+    m_HBaseRangeMin: -543
+    m_HBaseRangeMax: 543
+    m_VBaseRangeMin: -305.5
+    m_VBaseRangeMax: 305.5
+>>>>>>> f7ee3c9dd (Added game event trigger entity targeting, Added g. event trigger entity animation, Fixed party disbanding not clearing follower targets)
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1269,6 +1285,7 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
       y: 0
 <<<<<<< HEAD
@@ -1351,11 +1368,18 @@ MonoBehaviour:
     m_Translation: {x: 486.5, y: 308.5}
 >>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
 =======
+=======
+      y: 0
+>>>>>>> f7ee3c9dd (Added game event trigger entity targeting, Added g. event trigger entity animation, Fixed party disbanding not clearing follower targets)
       width: 1441
-      height: 590
+      height: 611
     m_Scale: {x: 1, y: 1}
+<<<<<<< HEAD
     m_Translation: {x: 720.5, y: 295}
 >>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
+=======
+    m_Translation: {x: 720.5, y: 305.5}
+>>>>>>> f7ee3c9dd (Added game event trigger entity targeting, Added g. event trigger entity animation, Fixed party disbanding not clearing follower targets)
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -1499,9 +1523,9 @@ MonoBehaviour:
 >>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
 =======
       x: -720.5
-      y: -295
+      y: -305.5
       width: 1441
-      height: 590
+      height: 611
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1441, y: 611}
@@ -1623,6 +1647,7 @@ MonoBehaviour:
 =======
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 83
 <<<<<<< HEAD
     width: 200
@@ -1701,6 +1726,18 @@ MonoBehaviour:
       m_LastClickedID: 233992
       m_ExpandedIDs: 5218feff8c25feff027ffeff06a9feff9ae7feff2a0affffd212ffff72a9ffff14fbfffff4ffffff84550000ce5600001457000050570000a6570000e657000074e4000074480200a6480200
 >>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
+=======
+    y: 83
+    width: 281
+    height: 613
+  m_ViewDataDictionary: {fileID: 0}
+  m_SceneHierarchy:
+    m_TreeViewState:
+      scrollPos: {x: 0, y: 112}
+      m_SelectedIDs: 80180000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 908bffffaaa7ffff14fbffffa45500001c5700006a5700009c570000f25700004a580000
+>>>>>>> f7ee3c9dd (Added game event trigger entity targeting, Added g. event trigger entity animation, Fixed party disbanding not clearing follower targets)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1749,6 +1786,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     x: 2088
@@ -1827,6 +1865,12 @@ MonoBehaviour:
     y: 1163
     width: 1441
     height: 611
+=======
+    x: 282
+    y: 83
+    width: 1248
+    height: 613
+>>>>>>> f7ee3c9dd (Added game event trigger entity targeting, Added g. event trigger entity animation, Fixed party disbanding not clearing follower targets)
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 55094fe50bf2ff576811963c8c00f2e8
@@ -1840,6 +1884,7 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1927,6 +1972,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 139.20905, y: 47.814587, z: -11.313888}
 >>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
+=======
+    m_Target: {x: 135.86177, y: 50.78206, z: -32.414055}
+    speed: 2
+    m_Value: {x: 135.99612, y: 50.88874, z: -32.36437}
+>>>>>>> f7ee3c9dd (Added game event trigger entity targeting, Added g. event trigger entity animation, Fixed party disbanding not clearing follower targets)
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1977,6 +2027,7 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2064,6 +2115,11 @@ MonoBehaviour:
     speed: 2
     m_Value: 6.1745276
 >>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
+=======
+    m_Target: 11.5380945
+    speed: 2
+    m_Value: 11.041239
+>>>>>>> f7ee3c9dd (Added game event trigger entity targeting, Added g. event trigger entity animation, Fixed party disbanding not clearing follower targets)
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -2082,10 +2138,14 @@ MonoBehaviour:
     m_DynamicClip: 1
     m_OcclusionCulling: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
 =======
   m_LastSceneViewRotation: {x: -0.050163586, y: 0.3815648, z: -0.020742606, w: -0.92274916}
 >>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
+=======
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+>>>>>>> f7ee3c9dd (Added game event trigger entity targeting, Added g. event trigger entity animation, Fixed party disbanding not clearing follower targets)
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -2520,6 +2580,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 736
     width: 1456
     height: 263
@@ -2539,6 +2600,11 @@ MonoBehaviour:
     width: 1643
     height: 284
 >>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
+=======
+    y: 717
+    width: 1531
+    height: 282
+>>>>>>> f7ee3c9dd (Added game event trigger entity targeting, Added g. event trigger entity animation, Fixed party disbanding not clearing follower targets)
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -2765,10 +2831,16 @@ MonoBehaviour:
 >>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
 =======
     scrollPos: {x: 0, y: 44}
+<<<<<<< HEAD
     m_SelectedIDs: 2c710000
     m_LastClickedID: 28972
     m_ExpandedIDs: 00000000f47000002a71000000ca9a3b
 >>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
+=======
+    m_SelectedIDs: 06b80000
+    m_LastClickedID: 47110
+    m_ExpandedIDs: 000000005871000004b8000000ca9a3b
+>>>>>>> f7ee3c9dd (Added game event trigger entity targeting, Added g. event trigger entity animation, Fixed party disbanding not clearing follower targets)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2851,6 +2923,7 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000ea5f0000
 >>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
 =======
@@ -2862,6 +2935,9 @@ MonoBehaviour:
 =======
     m_ExpandedIDs: 00000000f4700000
 >>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
+=======
+    m_ExpandedIDs: 0000000058710000
+>>>>>>> f7ee3c9dd (Added game event trigger entity targeting, Added g. event trigger entity animation, Fixed party disbanding not clearing follower targets)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2888,6 +2964,7 @@ MonoBehaviour:
   m_ListAreaState:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
 <<<<<<< HEAD
@@ -2909,6 +2986,11 @@ MonoBehaviour:
     m_SelectedInstanceIDs: f0540000
     m_LastClickedInstanceID: 21744
     m_HadKeyboardFocusLastEvent: 0
+=======
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 1
+>>>>>>> f7ee3c9dd (Added game event trigger entity targeting, Added g. event trigger entity animation, Fixed party disbanding not clearing follower targets)
     m_ExpandedInstanceIDs: c62300004c560000000000009e5d00002c6b000004710000
 >>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
     m_RenameOverlay:
@@ -3304,6 +3386,7 @@ MonoBehaviour:
 =======
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
 =======
 >>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
@@ -3328,6 +3411,11 @@ MonoBehaviour:
     y: 1795
     width: 1643
     height: 284
+=======
+    y: 717
+    width: 1531
+    height: 282
+>>>>>>> f7ee3c9dd (Added game event trigger entity targeting, Added g. event trigger entity animation, Fixed party disbanding not clearing follower targets)
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &20
 >>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
@@ -3354,6 +3442,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 3175
     y: 83
     width: 560
@@ -3372,6 +3461,11 @@ MonoBehaviour:
     y: 1163
     width: 275
 >>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
+=======
+    x: 1532
+    y: 83
+    width: 387
+>>>>>>> f7ee3c9dd (Added game event trigger entity targeting, Added g. event trigger entity animation, Fixed party disbanding not clearing follower targets)
     height: 916
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
