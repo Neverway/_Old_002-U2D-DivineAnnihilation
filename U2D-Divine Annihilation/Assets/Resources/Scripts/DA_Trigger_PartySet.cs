@@ -32,7 +32,7 @@ public class DA_Trigger_PartySet : MonoBehaviour
 
     // // Private variables
     private bool inTrigger;
-    public DA_Testing[] targets;
+    public DA_Entity_Follower[] targets;
 
     // Reference variables
     private OTU_System_SaveManager saveManager;
@@ -105,12 +105,12 @@ public class DA_Trigger_PartySet : MonoBehaviour
         // Clear current slot
         if (saveManager.activeSave2.partyMembers[0] == partyMemberID)
         {
-            targets = GameObject.FindObjectsOfType<DA_Testing>();
+            targets = GameObject.FindObjectsOfType<DA_Entity_Follower>();
             for (int i = 0; i < targets.Length; i++)
             {
                 if (targets[i].partyPosition == 1)
                 {
-                    targets[i].GetComponent<DA_Testing>().partyPosition = 0;
+                    targets[i].GetComponent<DA_Entity_Follower>().partyPosition = 0;
                 }
             }
             saveManager.activeSave2.partyMembers[0] = "NULL";
@@ -120,12 +120,12 @@ public class DA_Trigger_PartySet : MonoBehaviour
         }
         if (saveManager.activeSave2.partyMembers[1] == partyMemberID)
         {
-            targets = GameObject.FindObjectsOfType<DA_Testing>();
+            targets = GameObject.FindObjectsOfType<DA_Entity_Follower>();
             for (int i = 0; i < targets.Length; i++)
             {
                 if (targets[i].partyPosition == 2)
                 {
-                    targets[i].GetComponent<DA_Testing>().partyPosition = 0;
+                    targets[i].GetComponent<DA_Entity_Follower>().partyPosition = 0;
                 }
             }
             saveManager.activeSave2.partyMembers[1] = "NULL";
@@ -134,12 +134,12 @@ public class DA_Trigger_PartySet : MonoBehaviour
         }
         if (saveManager.activeSave2.partyMembers[2] == partyMemberID)
         {
-            targets = GameObject.FindObjectsOfType<DA_Testing>();
+            targets = GameObject.FindObjectsOfType<DA_Entity_Follower>();
             for (int i = 0; i < targets.Length; i++)
             {
                 if (targets[i].partyPosition == 3)
                 {
-                    targets[i].GetComponent<DA_Testing>().partyPosition = 0;
+                    targets[i].GetComponent<DA_Entity_Follower>().partyPosition = 0;
                 }
             }
             saveManager.activeSave2.partyMembers[2] = "NULL";

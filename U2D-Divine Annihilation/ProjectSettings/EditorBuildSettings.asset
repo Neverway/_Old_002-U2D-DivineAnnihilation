@@ -21,9 +21,9 @@ EditorBuildSettings:
     path: Assets/Resources/Scenes/C1S2.unity
     guid: 7c19cc2fe7b025e2287fd71d03b9748d
   - enabled: 1
-    path: Assets/Resources/Scenes/Template_Menu.unity
-    guid: 87f7c08bfa9255a5ca11dd6c629b2197
+    path: Assets/Resources/Scenes/Testing_Overworld.unity
+    guid: 74c051bdd1c38e2c6b7ac6738c253654
   - enabled: 1
-    path: Assets/Resources/Scenes/Template_Overworld.unity
-    guid: 6bdfbc0ee95cef6c2ac8098e3ac4178e
+    path: Assets/Resources/Scenes/Testing_Events.unity
+    guid: 12cb021b0868d89d58fe656622ba923d
   m_configObjects: {}
