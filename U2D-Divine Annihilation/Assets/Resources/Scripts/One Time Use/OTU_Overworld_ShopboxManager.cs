@@ -102,9 +102,9 @@ public class OTU_Overworld_ShopboxManager : MonoBehaviour
         gameObject.transform.GetChild(2).transform.GetChild(1).gameObject.SetActive(true);
         for (int i = 0; i < buyableItems.Length; i++)
         {
-            buyableIcons[i].sprite = buyableItems[i].GetComponent<DA_Trigger_ItemPickup>().itemIcon;
-            gameObject.transform.GetChild(2).transform.GetChild(1).gameObject.GetComponent<DA_Menu_Control>().baseText[i] = "    G" + buyableCosts[i] + " - " + buyableItems[i].GetComponent<DA_Trigger_ItemPickup>().itemName;
-            gameObject.transform.GetChild(2).transform.GetChild(1).gameObject.GetComponent<DA_Menu_Control>().hoveredText[i] = "    G" + buyableCosts[i] + " - " + buyableItems[i].GetComponent<DA_Trigger_ItemPickup>().itemName;
+            buyableIcons[i].sprite = buyableItems[i].GetComponent<DA_Trigger_PickupItem>().itemIcon;
+            gameObject.transform.GetChild(2).transform.GetChild(1).gameObject.GetComponent<DA_Menu_Control>().baseText[i] = "    G" + buyableCosts[i] + " - " + buyableItems[i].GetComponent<DA_Trigger_PickupItem>().itemName;
+            gameObject.transform.GetChild(2).transform.GetChild(1).gameObject.GetComponent<DA_Menu_Control>().hoveredText[i] = "    G" + buyableCosts[i] + " - " + buyableItems[i].GetComponent<DA_Trigger_PickupItem>().itemName;
         }
     }
 
@@ -133,7 +133,7 @@ public class OTU_Overworld_ShopboxManager : MonoBehaviour
     public void BuyItem()
     {
         int buyableCurrentSelection = gameObject.transform.GetChild(2).transform.GetChild(1).gameObject.GetComponent<DA_Menu_Control>().currentSelection;
-        DA_Trigger_ItemPickup itemToBuy = buyableItems[buyableCurrentSelection].GetComponent<DA_Trigger_ItemPickup>();
+        DA_Trigger_PickupItem itemToBuy = buyableItems[buyableCurrentSelection].GetComponent<DA_Trigger_PickupItem>();
         if (buyableCosts[buyableCurrentSelection] <= saveManager.activeSave2.playerGold)
         {
             inventoryManager.ItemAdd(itemToBuy.itemName, itemToBuy.itemCategory, itemToBuy.itemIcon, itemToBuy.itemDescription, itemToBuy.itemDiscardable);

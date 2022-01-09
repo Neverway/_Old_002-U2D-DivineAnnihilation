@@ -17,6 +17,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	"process_id" : 46982,
 =======
 	"process_id" : 179054,
@@ -77,6 +78,9 @@
 =======
 	"process_id" : 13305,
 >>>>>>> f7ee3c9dd (Added game event trigger entity targeting, Added g. event trigger entity animation, Fixed party disbanding not clearing follower targets)
+=======
+	"process_id" : 115411,
+>>>>>>> 9b6d5a586 (Finished event triggers (Way too much stuff to type here), Cleaned-up prefabs, Added dev tileset)
 	"version" : "2020.3.22f1",
 	"app_path" : "/home/lizband/Unity/Hub/Editor/2020.3.22f1/Editor/Unity",
 	"app_contents_path" : "/home/lizband/Unity/Hub/Editor/2020.3.22f1/Editor/Data"
