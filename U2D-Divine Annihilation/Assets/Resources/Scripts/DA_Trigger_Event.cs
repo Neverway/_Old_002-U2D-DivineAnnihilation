@@ -33,6 +33,8 @@ public class DA_Trigger_Event : MonoBehaviour
     // Private variables
     private bool inTrigger;
     private Animator animator;
+    private bool eventActive;
+    private int playerEntityFollow = -1;
 
     // Reference variables
     private OTU_System_MenuManager menuManager;
@@ -48,8 +50,8 @@ public class DA_Trigger_Event : MonoBehaviour
     IEnumerator TimerCountdown(float timer)
     {
         yield return new WaitForSeconds(timer);     // The delay until it is accepting input again
-        print("Exit case: Timer");
         eventStep[currentStep].OnTimerExpired.Invoke();
+        Debug.Log("Exit case: Timer expired!");
     }
 
 
@@ -80,8 +82,9 @@ public class DA_Trigger_Event : MonoBehaviour
     private void ExecuteStep()
     {
         // Run the current event step
-        if (inTrigger && currentStep != completedSteps)
+        if (inTrigger && currentStep != completedSteps || eventActive && currentStep != completedSteps)
         {
+            eventActive = true; // Allow the event loop to continue even if the player leaves the event trigger
             // Run one micro step per standard step (this acts like a one-time start function for the step)
             if (currentStep != completedMicroSteps)
             {
@@ -92,13 +95,25 @@ public class DA_Trigger_Event : MonoBehaviour
                 // Move entities
                 if (eventStep[currentStep].targetPosition.Length > 0 && eventStep[currentStep].targetPosition.Length == eventStep[currentStep].targetEntity.Length)
                 {
-                    print("Target position detected!");
                     for (int i = 0; i < eventStep[currentStep].targetPosition.Length; i++)
                     {
                         if (eventStep[currentStep].targetPosition[i] != null)
                         {
-                            eventStep[currentStep].targetEntity[i].GetComponent<DA_Entity_Follower>().loneWolf = true;
-                            eventStep[currentStep].targetEntity[i].GetComponent<DA_Entity_Follower>().target = eventStep[currentStep].targetPosition[i];
+                            if (eventStep[currentStep].targetEntity[i].GetComponent<DA_Entity_Follower>())
+                            {
+                                eventStep[currentStep].targetEntity[i].GetComponent<DA_Entity_Follower>().loneWolf = true;
+                                eventStep[currentStep].targetEntity[i].GetComponent<DA_Entity_Follower>().target = eventStep[currentStep].targetPosition[i];
+                                if (eventStep[currentStep].targetEntity[i].GetComponent<DA_Entity_Follower>().gameObject.tag == "Player")
+                                {
+                                    eventStep[currentStep].targetEntity[i].GetComponent<DA_Entity_Follower>().followingEnabled = true;
+                                    
+                                }
+                            }
+
+                            if (eventStep[currentStep].teleportToDestination)
+                            {
+                                eventStep[currentStep].targetEntity[eventStep[currentStep].destinationTarget-1].transform.position = eventStep[currentStep].targetPosition[eventStep[currentStep].destinationTarget-1].transform.position;
+                            }
                             /*
                             if (eventStep[currentStep].destinationTarget > 0)
                             {
@@ -116,11 +131,11 @@ public class DA_Trigger_Event : MonoBehaviour
                 // Animate entities
                 if (eventStep[currentStep].animation.Length > 0 && eventStep[currentStep].animation.Length == eventStep[currentStep].targetEntity.Length)
                 {
-                    print("Animation detected!");
                     for (int i = 0; i < eventStep[currentStep].animation.Length; i++)
                     {
                         if (eventStep[currentStep].animation[i] != "")
                         {
+                            print(eventStep[currentStep].animation[i] + " is the target animation");
                             animator = eventStep[currentStep].targetEntity[i].GetComponent<Animator>();
                             animator.Play(eventStep[currentStep].animation[i]);
                         }
@@ -134,7 +149,10 @@ public class DA_Trigger_Event : MonoBehaviour
                 }
 
                 // Countdown timer
-                StartCoroutine(TimerCountdown(eventStep[currentStep].timer));
+                if (eventStep[currentStep].timer != 0)
+                {
+                    StartCoroutine(TimerCountdown(eventStep[currentStep].timer));
+                }
 
                 completedMicroSteps = currentStep; // End the loop
             }
@@ -145,10 +163,13 @@ public class DA_Trigger_Event : MonoBehaviour
                 CheckDestinationReached();
             }
             
-            if (eventStep[currentStep].stepText.GetComponent<DA_Trigger_Interact>().completionBlip)
+            if (eventStep[currentStep].stepText)
             {
-                eventStep[currentStep].OnDialogueCompleted.Invoke();
-                    print("Trigger done");
+                if (eventStep[currentStep].stepText.GetComponent<DA_Trigger_Interact>().completionBlip)
+                {
+                    eventStep[currentStep].OnDialogueCompleted.Invoke();
+                    Debug.Log("Exit case: Dialougue complete!");
+                }
             }
         }
     }
@@ -159,8 +180,8 @@ public class DA_Trigger_Event : MonoBehaviour
         {
             if (Vector2.Distance(eventStep[currentStep].targetEntity[eventStep[currentStep].destinationTarget-1].transform.position, eventStep[currentStep].targetPosition[eventStep[currentStep].destinationTarget-1].position) <= 0.15)
             {
-                print("Target reached their destination!");
                 eventStep[currentStep].OnDestinationReached.Invoke();
+                Debug.Log("Exit case: Destination reached!");
             }
         }
     }
@@ -169,12 +190,14 @@ public class DA_Trigger_Event : MonoBehaviour
     public void CompleteStep()
     {
         completedSteps = currentStep; // End the loop
+        print("step completed!");
     }
 
 
     public void StepForward()
     {
         currentStep++;
+        print("steping forward!");
     }
 
 
@@ -182,24 +205,46 @@ public class DA_Trigger_Event : MonoBehaviour
     {
         currentStep = 0;
         completedSteps = -1;
+        playerEntityFollow = -1;
     }
     
+
+    public void StopFollowing(int _targetEntity)
+    {
+        eventStep[currentStep].targetEntity[_targetEntity].GetComponent<DA_Entity_Follower>().followingEnabled = false;
+    }
+
     
     public void UnfreezePlayerInput()
     {
         menuManager.alternateMenuActive = false;
     }
 
+    
+    public void PrintDebugMessage(string message)
+    {
+        if (message != "")
+        {
+            Debug.Log(message);
+        }
+        else
+        {
+            Debug.Log("The step executed successfully!");
+        }
+    }
+
 
     [System.Serializable]
     public class EventStep
     {
+        public string stepSummary; // Just a description tag to help me remember what a particular step does. There is no code attached for this.
         public GameObject[] targetEntity;
         public Transform[] targetPosition;
         public string[] animation;
         public bool freezePlayerInput = true;
         public GameObject stepText;
         public bool waitForDestination;
+        public bool teleportToDestination;
         public int destinationTarget;
         public float timer;
         [Header ("0 = All entities")]

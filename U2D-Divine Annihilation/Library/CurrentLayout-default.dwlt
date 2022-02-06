@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 0
-    y: 25
-    width: 1920
-    height: 987
+    x: 1920
+    y: 28
+    width: 1366
+    height: 715
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Console
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -44,9 +44,9 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
-    height: 987
-  m_MinSize: {x: 875, y: 300}
+    width: 1366
+    height: 715
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -69,7 +69,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
+    width: 1366
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -93,8 +93,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 967
-    width: 1920
+    y: 695
+    width: 1366
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -121,6 +121,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< HEAD
     width: 1920
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -231,6 +232,14 @@ MonoBehaviour:
   controlID: 10941
 =======
 >>>>>>> 7afa52c83 (Fixed fail-safe level not loading for some scenes, Added battle flavor text, Added battle moves placeholder text, Updated special file names list)
+=======
+    width: 1366
+    height: 665
+  m_MinSize: {x: 678, y: 342}
+  m_MaxSize: {x: 12003, y: 8042}
+  vertical: 0
+  controlID: 55
+>>>>>>> e88ebeb9e (Pre G11 commit)
 --- !u!114 &6
 >>>>>>> 7df09d4b8 (Updated C1S2 to G10,  Fixed save chapter not updating properly, Fixed inventory discarding, Fixed entity variables being stuck as read only, Updated prefabs list, Fixed Solution file missing DASDK scripts)
 MonoBehaviour:
@@ -753,12 +762,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1644
-    height: 937
+    width: 1091
+    height: 665
   m_MinSize: {x: 403, y: 342}
   m_MaxSize: {x: 8003, y: 8042}
   vertical: 1
-  controlID: 21
+  controlID: 56
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -778,12 +787,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1644
-    height: 656
+    width: 1091
+    height: 468
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 22
+  controlID: 57
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -801,10 +810,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 201
-    height: 656
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+    width: 200
+    height: 468
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -825,10 +834,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 201
+    x: 200
     y: 0
-    width: 1443
-    height: 656
+    width: 891
+    height: 468
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
@@ -856,9 +865,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 656
-    width: 1644
-    height: 281
+    y: 468
+    width: 1091
+    height: 197
   m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 19}
@@ -883,6 +892,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -933,6 +943,14 @@ MonoBehaviour:
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
 >>>>>>> f7ee3c9dd (Added game event trigger entity targeting, Added g. event trigger entity animation, Fixed party disbanding not clearing follower targets)
+=======
+    x: 1091
+    y: 0
+    width: 275
+    height: 665
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> e88ebeb9e (Pre G11 commit)
   m_ActualView: {fileID: 20}
 >>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
   m_Panes:
@@ -967,6 +985,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1080,6 +1099,12 @@ MonoBehaviour:
 =======
     height: 635
 >>>>>>> 9b6d5a586 (Finished event triggers (Way too much stuff to type here), Cleaned-up prefabs, Added dev tileset)
+=======
+    x: 327
+    y: 83
+    width: 1067
+    height: 638
+>>>>>>> e88ebeb9e (Pre G11 commit)
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -1087,6 +1112,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1152,6 +1178,9 @@ MonoBehaviour:
 =======
   m_TargetSize: {x: 1092, y: 614}
 >>>>>>> 9b6d5a586 (Finished event triggers (Way too much stuff to type here), Cleaned-up prefabs, Added dev tileset)
+=======
+  m_TargetSize: {x: 1067, y: 600}
+>>>>>>> e88ebeb9e (Pre G11 commit)
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1166,6 +1195,7 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1288,6 +1318,12 @@ MonoBehaviour:
     m_VBaseRangeMin: -307
     m_VBaseRangeMax: 307
 >>>>>>> 9b6d5a586 (Finished event triggers (Way too much stuff to type here), Cleaned-up prefabs, Added dev tileset)
+=======
+    m_HBaseRangeMin: -533.5
+    m_HBaseRangeMax: 533.5
+    m_VBaseRangeMin: -300
+    m_VBaseRangeMax: 300
+>>>>>>> e88ebeb9e (Pre G11 commit)
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1296,7 +1332,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -1393,6 +1429,7 @@ MonoBehaviour:
 >>>>>>> f7ee3c9dd (Added game event trigger entity targeting, Added g. event trigger entity animation, Fixed party disbanding not clearing follower targets)
 =======
       y: 21
+<<<<<<< HEAD
 >>>>>>> 9b6d5a586 (Finished event triggers (Way too much stuff to type here), Cleaned-up prefabs, Added dev tileset)
       width: 1441
       height: 614
@@ -1407,12 +1444,19 @@ MonoBehaviour:
 =======
     m_Translation: {x: 720.5, y: 307}
 >>>>>>> 9b6d5a586 (Finished event triggers (Way too much stuff to type here), Cleaned-up prefabs, Added dev tileset)
+=======
+      width: 1067
+      height: 617
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 533.5, y: 308.5}
+>>>>>>> e88ebeb9e (Pre G11 commit)
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1561,6 +1605,15 @@ MonoBehaviour:
 =======
   m_LastWindowPixelSize: {x: 1441, y: 635}
 >>>>>>> 9b6d5a586 (Finished event triggers (Way too much stuff to type here), Cleaned-up prefabs, Added dev tileset)
+=======
+      x: -533.5
+      y: -308.5
+      width: 1067
+      height: 617
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 1067, y: 638}
+>>>>>>> e88ebeb9e (Pre G11 commit)
   m_ClearInEditMode: 1
   m_NoCameraWarning: 0
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -1591,6 +1644,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
     x: 1816
     y: 83
@@ -1758,9 +1812,12 @@ MonoBehaviour:
       m_ExpandedIDs: 5218feff8c25feff027ffeff06a9feff9ae7feff2a0affffd212ffff72a9ffff14fbfffff4ffffff84550000ce5600001457000050570000a6570000e657000074e4000074480200a6480200
 >>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
 =======
+=======
+    x: 1920
+>>>>>>> e88ebeb9e (Pre G11 commit)
     y: 83
-    width: 200
-    height: 635
+    width: 199
+    height: 447
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
@@ -1768,11 +1825,15 @@ MonoBehaviour:
       m_SelectedIDs: 
       m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_ExpandedIDs: 908bffffaaa7ffff14fbffffa45500001c5700006a5700009c570000f25700004a580000
 >>>>>>> f7ee3c9dd (Added game event trigger entity targeting, Added g. event trigger entity animation, Fixed party disbanding not clearing follower targets)
 =======
       m_ExpandedIDs: 62f1ffff14fbffff005600003c580000f4580000
 >>>>>>> 9b6d5a586 (Finished event triggers (Way too much stuff to type here), Cleaned-up prefabs, Added dev tileset)
+=======
+      m_ExpandedIDs: 14fbffff04560000e257000042580000fa580000
+>>>>>>> e88ebeb9e (Pre G11 commit)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1821,6 +1882,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1914,9 +1976,12 @@ MonoBehaviour:
 >>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
 =======
     x: 201
+=======
+    x: 2120
+>>>>>>> e88ebeb9e (Pre G11 commit)
     y: 83
-    width: 1441
-    height: 635
+    width: 889
+    height: 447
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 55094fe50bf2ff576811963c8c00f2e8
@@ -1930,6 +1995,7 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2029,6 +2095,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 161.52469, y: 44.44382, z: -11.518711}
 >>>>>>> 9b6d5a586 (Finished event triggers (Way too much stuff to type here), Cleaned-up prefabs, Added dev tileset)
+=======
+    m_Target: {x: 115.44742, y: 43.906548, z: -47.580513}
+    speed: 2
+    m_Value: {x: 115.44742, y: 43.906548, z: -47.580513}
+>>>>>>> e88ebeb9e (Pre G11 commit)
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -2079,6 +2150,7 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2178,6 +2250,11 @@ MonoBehaviour:
     speed: 2
     m_Value: 12.240585
 >>>>>>> 9b6d5a586 (Finished event triggers (Way too much stuff to type here), Cleaned-up prefabs, Added dev tileset)
+=======
+    m_Target: 12.451123
+    speed: 2
+    m_Value: 12.451123
+>>>>>>> e88ebeb9e (Pre G11 commit)
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -2240,6 +2317,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 2121
     y: 83
     width: 1371
@@ -2265,6 +2343,12 @@ MonoBehaviour:
     width: 1320
     height: 748
 >>>>>>> 9b6d5a586 (Finished event triggers (Way too much stuff to type here), Cleaned-up prefabs, Added dev tileset)
+=======
+    x: 292
+    y: 83
+    width: 905
+    height: 635
+>>>>>>> e88ebeb9e (Pre G11 commit)
   m_ViewDataDictionary: {fileID: 0}
   m_ViewTransforms:
     m_KeySerializationHelper:
@@ -2399,6 +2483,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
 =======
     - e00: 1
@@ -2408,13 +2493,16 @@ MonoBehaviour:
 =======
     - e00: 1
 >>>>>>> 9b6d5a586 (Finished event triggers (Way too much stuff to type here), Cleaned-up prefabs, Added dev tileset)
+=======
+    - e00: 1.4205083
+>>>>>>> e88ebeb9e (Pre G11 commit)
       e01: 0
       e02: 0
-      e03: 41
+      e03: -189.09396
       e10: 0
-      e11: 1
+      e11: 1.4205083
       e12: 0
-      e13: 132
+      e13: 66.36903
       e20: 0
       e21: 0
       e22: 1
@@ -2473,10 +2561,10 @@ MonoBehaviour:
       e33: 1
 >>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 89ad8ef3336ee59f1983f6a47cf341e1,
+  m_AnimatorController: {fileID: 9100000, guid: 3e75189684fc1a4b3a190287119ceaba,
     type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: 6601914946622214437, guid: 89ad8ef3336ee59f1983f6a47cf341e1,
+  - m_Target: {fileID: -1297399999584036618, guid: 3e75189684fc1a4b3a190287119ceaba,
       type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
@@ -2648,6 +2736,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 736
     width: 1456
     height: 263
@@ -2677,6 +2766,11 @@ MonoBehaviour:
     width: 1522
     height: 261
 >>>>>>> 9b6d5a586 (Finished event triggers (Way too much stuff to type here), Cleaned-up prefabs, Added dev tileset)
+=======
+    y: 743
+    width: 1643
+    height: 256
+>>>>>>> e88ebeb9e (Pre G11 commit)
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -2691,6 +2785,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2828,11 +2923,15 @@ MonoBehaviour:
 =======
     - Assets/Resources/Scripts/One Time Use
 >>>>>>> 9b6d5a586 (Finished event triggers (Way too much stuff to type here), Cleaned-up prefabs, Added dev tileset)
+=======
+    - Assets/Resources/Scripts
+>>>>>>> e88ebeb9e (Pre G11 commit)
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2855,6 +2954,9 @@ MonoBehaviour:
 >>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
 =======
   - Assets/Resources/Scripts/One Time Use
+=======
+  - Assets/Resources/Scripts
+>>>>>>> e88ebeb9e (Pre G11 commit)
   m_LastFoldersGridSize: 16
 >>>>>>> 9b6d5a586 (Finished event triggers (Way too much stuff to type here), Cleaned-up prefabs, Added dev tileset)
   m_LastProjectPath: /home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine
@@ -2862,6 +2964,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2929,6 +3032,12 @@ MonoBehaviour:
     m_LastClickedID: 29702
     m_ExpandedIDs: 00000000c2730000
 >>>>>>> 9b6d5a586 (Finished event triggers (Way too much stuff to type here), Cleaned-up prefabs, Added dev tileset)
+=======
+    scrollPos: {x: 0, y: 71}
+    m_SelectedIDs: 42740000
+    m_LastClickedID: 29762
+    m_ExpandedIDs: 00000000ec7300004074000000ca9a3b
+>>>>>>> e88ebeb9e (Pre G11 commit)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -3013,6 +3122,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000ea5f0000
 >>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
 =======
@@ -3030,6 +3140,9 @@ MonoBehaviour:
 =======
     m_ExpandedIDs: 00000000c2730000
 >>>>>>> 9b6d5a586 (Finished event triggers (Way too much stuff to type here), Cleaned-up prefabs, Added dev tileset)
+=======
+    m_ExpandedIDs: 00000000ec730000
+>>>>>>> e88ebeb9e (Pre G11 commit)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -3054,6 +3167,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3088,6 +3202,11 @@ MonoBehaviour:
 >>>>>>> 9b6d5a586 (Finished event triggers (Way too much stuff to type here), Cleaned-up prefabs, Added dev tileset)
     m_HadKeyboardFocusLastEvent: 1
 >>>>>>> f7ee3c9dd (Added game event trigger entity targeting, Added g. event trigger entity animation, Fixed party disbanding not clearing follower targets)
+=======
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 0
+>>>>>>> e88ebeb9e (Pre G11 commit)
     m_ExpandedInstanceIDs: c62300004c560000000000009e5d00002c6b000004710000
 >>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
     m_RenameOverlay:
@@ -3113,7 +3232,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 37}
+    m_ScrollPosition: {x: 0, y: 7.5}
     m_GridSize: 16
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 110
@@ -3138,6 +3257,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3519,6 +3639,12 @@ MonoBehaviour:
     width: 1643
     height: 260
 >>>>>>> 9b6d5a586 (Finished event triggers (Way too much stuff to type here), Cleaned-up prefabs, Added dev tileset)
+=======
+    x: 1920
+    y: 551
+    width: 1090
+    height: 176
+>>>>>>> e88ebeb9e (Pre G11 commit)
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &20
 >>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
@@ -3542,6 +3668,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3576,6 +3703,12 @@ MonoBehaviour:
     width: 275
 >>>>>>> 9b6d5a586 (Finished event triggers (Way too much stuff to type here), Cleaned-up prefabs, Added dev tileset)
     height: 916
+=======
+    x: 3011
+    y: 83
+    width: 274
+    height: 644
+>>>>>>> e88ebeb9e (Pre G11 commit)
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 

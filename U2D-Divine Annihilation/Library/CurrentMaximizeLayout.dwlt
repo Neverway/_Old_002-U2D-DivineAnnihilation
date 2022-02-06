@@ -21,6 +21,7 @@ MonoBehaviour:
     y: 30
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1920
 <<<<<<< HEAD
     height: 949
@@ -151,6 +152,14 @@ MonoBehaviour:
   vertical: 0
   controlID: 27718
 >>>>>>> 9b6d5a586 (Finished event triggers (Way too much stuff to type here), Cleaned-up prefabs, Added dev tileset)
+=======
+    width: 1366
+    height: 625
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
+  vertical: 0
+  controlID: 466
+>>>>>>> e88ebeb9e (Pre G11 commit)
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,6 +181,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -765,9 +775,12 @@ MonoBehaviour:
 =======
     x: 284
 >>>>>>> 9b6d5a586 (Finished event triggers (Way too much stuff to type here), Cleaned-up prefabs, Added dev tileset)
+=======
+    x: 265
+>>>>>>> e88ebeb9e (Pre G11 commit)
     y: 83
-    width: 1178
-    height: 634
+    width: 635
+    height: 333
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -775,7 +788,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1090, y: 613}
+  m_TargetSize: {x: 555, y: 312}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -881,10 +894,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -545
-    m_HBaseRangeMax: 545
-    m_VBaseRangeMin: -306.5
-    m_VBaseRangeMax: 306.5
+    m_HBaseRangeMin: -277.5
+    m_HBaseRangeMax: 277.5
+    m_VBaseRangeMin: -156
+    m_VBaseRangeMax: 156
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -902,23 +915,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1178
-      height: 613
+      width: 635
+      height: 312
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 589, y: 306.5}
+    m_Translation: {x: 317.5, y: 156}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -589
-      y: -306.5
-      width: 1178
-      height: 613
+      x: -317.5
+      y: -156
+      width: 635
+      height: 312
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1178, y: 634}
+  m_LastWindowPixelSize: {x: 635, y: 333}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 0
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -1043,6 +1056,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1208,6 +1222,14 @@ MonoBehaviour:
   vertical: 1
   controlID: 27719
 >>>>>>> 9b6d5a586 (Finished event triggers (Way too much stuff to type here), Cleaned-up prefabs, Added dev tileset)
+=======
+    width: 902
+    height: 625
+  m_MinSize: {x: 403, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
+  vertical: 1
+  controlID: 467
+>>>>>>> e88ebeb9e (Pre G11 commit)
 --- !u!114 &4
 >>>>>>> 7df09d4b8 (Updated C1S2 to G10,  Fixed save chapter not updating properly, Fixed inventory discarding, Fixed entity variables being stuck as read only, Updated prefabs list, Fixed Solution file missing DASDK scripts)
 MonoBehaviour:
@@ -1228,12 +1250,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1464
-    height: 655
+    width: 902
+    height: 354
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 27720
+  controlID: 468
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1251,6 +1273,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1339,6 +1362,10 @@ MonoBehaviour:
     width: 207
     height: 659
 >>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
+=======
+    width: 265
+    height: 354
+>>>>>>> e88ebeb9e (Pre G11 commit)
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
 =======
@@ -1390,6 +1417,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 83
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1489,6 +1517,10 @@ MonoBehaviour:
     width: 283
     height: 634
 >>>>>>> 9b6d5a586 (Finished event triggers (Way too much stuff to type here), Cleaned-up prefabs, Added dev tileset)
+=======
+    width: 264
+    height: 333
+>>>>>>> e88ebeb9e (Pre G11 commit)
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
@@ -1499,6 +1531,7 @@ MonoBehaviour:
 >>>>>>> ae294533a (Added item equip functionality)
 =======
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1583,6 +1616,11 @@ MonoBehaviour:
       m_LastClickedID: 0
       m_ExpandedIDs: de20feff162cfeffcc3cfeff8c50feff6cdbfeff3a07ffff503affff42b7ffffa8b7ffffb6b7ffffbeb7ffffd2b7ffff14fbffff92800000c2800000dc800000ec800000fc80000016810000528100007081000078810000b0810000c88100003c8200004482000068820000a2820000c08200001a8300004c8300007e830000a4830000048400002e84000074840000a0840000a8840000bc840000c0840000c8840000b013010030160100161701003279010002c70100fac701000ec901007aca0100a4ca010060cb0100accb010066cc0100cecc0200e2cd02004ecf020096cf020034d002003ad10200d8ee020058f102003ef20200e21003006213030048140300ec3203006c35030052360300
 >>>>>>> 9b6d5a586 (Finished event triggers (Way too much stuff to type here), Cleaned-up prefabs, Added dev tileset)
+=======
+      m_SelectedIDs: ae620000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 72f7ffff14fbffff3c750000027600009c820000f2820000
+>>>>>>> e88ebeb9e (Pre G11 commit)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1621,8 +1659,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 284
+    x: 265
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1724,6 +1763,10 @@ MonoBehaviour:
     width: 1180
     height: 655
 >>>>>>> 9b6d5a586 (Finished event triggers (Way too much stuff to type here), Cleaned-up prefabs, Added dev tileset)
+=======
+    width: 637
+    height: 354
+>>>>>>> e88ebeb9e (Pre G11 commit)
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
 >>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
@@ -1736,7 +1779,7 @@ MonoBehaviour:
   - {fileID: 10}
   - {fileID: 11}
   m_Selected: 1
-  m_LastSelected: 0
+  m_LastSelected: 2
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1763,10 +1806,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 284
+    x: 201
     y: 83
-    width: 1178
-    height: 634
+    width: 887
+    height: 417
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 55094fe50bf2ff576811963c8c00f2e8
@@ -1779,9 +1822,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 182.40106, y: 47.59291, z: -7.5922995}
+    m_Target: {x: -8.169151, y: 42.56388, z: -49.039227}
     speed: 2
-    m_Value: {x: 182.40106, y: 47.59291, z: -7.5922995}
+    m_Value: {x: -8.169151, y: 42.56388, z: -49.039227}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1832,9 +1875,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 7.6658974
+    m_Target: 8.4617815
     speed: 2
-    m_Value: 7.6658974
+    m_Value: 8.4617815
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1881,6 +1924,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2272,6 +2316,12 @@ MonoBehaviour:
     y: 83
     width: 421
     height: 638
+=======
+    x: 265
+    y: 83
+    width: 635
+    height: 333
+>>>>>>> e88ebeb9e (Pre G11 commit)
   m_ViewDataDictionary: {fileID: 0}
 =======
 >>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
@@ -3578,6 +3628,7 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
+<<<<<<< HEAD
     - e00: 1.2352248
       e01: 0
       e02: 0
@@ -3586,6 +3637,16 @@ MonoBehaviour:
       e11: 1.2352248
       e12: 0
       e13: 73.521225
+=======
+    - e00: 0.614125
+      e01: 0
+      e02: 0
+      e03: -5.1611476
+      e10: 0
+      e11: 0.614125
+      e12: 0
+      e13: 68.501465
+>>>>>>> e88ebeb9e (Pre G11 commit)
       e20: 0
       e21: 0
       e22: 1
@@ -3787,12 +3848,71 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
+<<<<<<< HEAD
     m_Text: Project Settings
     m_Image: {fileID: -5712115415447495865, guid: 0000000000000000d000000000000000,
+=======
+    m_Text: Asset Store
+    m_Image: {fileID: -8693916549880196297, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+    x: 417
+    y: 83
+    width: 1130
+    height: 645
+  m_ViewDataDictionary: {fileID: 0}
+--- !u!114 &12
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: ProjectBrowser
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 354
+    width: 902
+    height: 271
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 13}
+  m_Panes:
+  - {fileID: 13}
+  - {fileID: 14}
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &13
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_TitleContent:
+    m_Text: Project
+    m_Image: {fileID: -5467254957812901981, guid: 0000000000000000d000000000000000,
+>>>>>>> e88ebeb9e (Pre G11 commit)
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+<<<<<<< HEAD
     x: 1920
     y: 594
     width: 1487
@@ -3804,6 +3924,127 @@ MonoBehaviour:
   m_SplitterFlex: 0.2
 --- !u!114 &16
 >>>>>>> 50289e0ec (Updated lighting renderer, Updated Engine to Unity 2020.3.20f1)
+=======
+    x: 0
+    y: 437
+    width: 901
+    height: 250
+  m_ViewDataDictionary: {fileID: 0}
+  m_SearchFilter:
+    m_NameFilter: 
+    m_ClassNames: []
+    m_AssetLabels: []
+    m_AssetBundleNames: []
+    m_VersionControlStates: []
+    m_SoftLockControlStates: []
+    m_ReferencingInstanceIDs: 
+    m_SceneHandles: 
+    m_ShowAllHits: 0
+    m_SkipHidden: 0
+    m_SearchArea: 1
+    m_Folders:
+    - Assets/Resources/Scenes
+    m_Globs: []
+    m_OriginalText: 
+  m_ViewMode: 1
+  m_StartGridSize: 16
+  m_LastFolders:
+  - Assets/Resources/Scenes
+  m_LastFoldersGridSize: 16
+  m_LastProjectPath: /home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine
+    Annihilation
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 126}
+    m_SelectedIDs: 46740000
+    m_LastClickedID: 29766
+    m_ExpandedIDs: 00000000e67300003a7400003e74000000ca9a3b
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 12}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_AssetTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 00000000e6730000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 0}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_ListAreaState:
+    m_SelectedInstanceIDs: ae620000
+    m_LastClickedInstanceID: 25262
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: c62300004c560000000000009e5d00002c6b000004710000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 12}
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+    m_NewAssetIndexInList: -1
+    m_ScrollPosition: {x: 0, y: 0}
+    m_GridSize: 16
+  m_SkipHiddenPackages: 0
+  m_DirectoriesAreaWidth: 110
+--- !u!114 &14
+>>>>>>> e88ebeb9e (Pre G11 commit)
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3832,6 +4073,7 @@ MonoBehaviour:
     x: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 742
     width: 1474
     height: 257
@@ -3855,6 +4097,11 @@ MonoBehaviour:
     width: 1463
     height: 261
 >>>>>>> 9b6d5a586 (Finished event triggers (Way too much stuff to type here), Cleaned-up prefabs, Added dev tileset)
+=======
+    y: 437
+    width: 901
+    height: 250
+>>>>>>> e88ebeb9e (Pre G11 commit)
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &15
 MonoBehaviour:
@@ -3873,10 +4120,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1464
+    x: 902
     y: 0
-    width: 456
-    height: 937
+    width: 464
+    height: 625
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
@@ -3907,10 +4154,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1464
+    x: 902
     y: 83
-    width: 455
-    height: 916
+    width: 463
+    height: 604
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
@@ -3961,12 +4208,16 @@ MonoBehaviour:
 =======
   m_LastInspectedObjectInstanceID: -1
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
   m_LastVerticalScrollValue: 0
 >>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
 =======
   m_LastVerticalScrollValue: 1373
 >>>>>>> 9b6d5a586 (Finished event triggers (Way too much stuff to type here), Cleaned-up prefabs, Added dev tileset)
+=======
+  m_LastVerticalScrollValue: 0
+>>>>>>> e88ebeb9e (Pre G11 commit)
   m_GlobalObjectId: 
   m_LockTracker:
     m_IsLocked: 0
