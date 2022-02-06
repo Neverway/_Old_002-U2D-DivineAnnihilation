@@ -7057,7 +7057,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventStep:
-  - targetEntity:
+  - stepSummary: 
+    targetEntity:
     - {fileID: 908646146992181631}
     targetPosition:
     - {fileID: 1840589064}
@@ -7065,6 +7066,7 @@ MonoBehaviour:
     freezePlayerInput: 1
     stepText: {fileID: 0}
     waitForDestination: 1
+    teleportToDestination: 0
     destinationTarget: 1
     timer: 0
     OnDestinationReached:
@@ -7112,12 +7114,14 @@ MonoBehaviour:
     OnDialogueCompleted:
       m_PersistentCalls:
         m_Calls: []
-  - targetEntity: []
+  - stepSummary: 
+    targetEntity: []
     targetPosition: []
     animation: []
     freezePlayerInput: 0
     stepText: {fileID: 3379434}
     waitForDestination: 0
+    teleportToDestination: 0
     destinationTarget: 1
     timer: 0
     OnDestinationReached:
@@ -10306,12 +10310,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventStep:
-  - targetEntity: []
+  - stepSummary: 
+    targetEntity: []
     targetPosition: []
     animation: []
     freezePlayerInput: 0
     stepText: {fileID: 1728992180}
     waitForDestination: 0
+    teleportToDestination: 0
     destinationTarget: 0
     timer: 0
     OnDestinationReached:
@@ -17161,12 +17167,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventStep:
-  - targetEntity: []
+  - stepSummary: 
+    targetEntity: []
     targetPosition: []
     animation: []
     freezePlayerInput: 0
     stepText: {fileID: 1728992180}
     waitForDestination: 0
+    teleportToDestination: 0
     destinationTarget: 0
     timer: 0
     OnDestinationReached:
@@ -17202,12 +17210,14 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - targetEntity: []
+  - stepSummary: 
+    targetEntity: []
     targetPosition: []
     animation: []
     freezePlayerInput: 0
     stepText: {fileID: 2136200451}
     waitForDestination: 0
+    teleportToDestination: 0
     destinationTarget: 0
     timer: 0
     OnDestinationReached:
@@ -21463,6 +21473,7 @@ GameObject:
   - component: {fileID: 999614624}
   - component: {fileID: 999614623}
   - component: {fileID: 999614622}
+  - component: {fileID: 999614626}
   m_Layer: 8
   m_Name: Trigger Event
   m_TagString: Untagged
@@ -21477,13 +21488,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 999614621}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a2d6cd614baa51398b8b33f12299a063, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   eventStep:
-  - targetEntity:
+  - stepSummary: 
+    targetEntity:
     - {fileID: 908646146992181631}
     targetPosition:
     - {fileID: 199730108}
@@ -21491,6 +21503,7 @@ MonoBehaviour:
     freezePlayerInput: 0
     stepText: {fileID: 0}
     waitForDestination: 0
+    teleportToDestination: 0
     destinationTarget: 0
     timer: 0
     OnDestinationReached:
@@ -21598,6 +21611,38 @@ Transform:
   m_Father: {fileID: 1988998549}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &999614626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999614621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f04cec1d8a710f4191a2c1cb67bec4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventSteps:
+  - stepSummary: Miyu go to location
+    targetEntity: {fileID: 908646146992181631}
+    targetDestination: {fileID: 199730108}
+    animation: 
+    remoteTextbox: {fileID: 0}
+    countdownTimer: -1
+    OnTimerExpired:
+      m_PersistentCalls:
+        m_Calls: []
+    OnDestinationReached:
+      m_PersistentCalls:
+        m_Calls: []
+    OnTextboxFinish:
+      m_PersistentCalls:
+        m_Calls: []
+  freezePlayerInput: 0
+  requiresInteraction: 0
+  currentStep: 0
+  completedSteps: 0
 --- !u!1 &1030945034
 GameObject:
   m_ObjectHideFlags: 0
@@ -31424,12 +31469,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventStep:
-  - targetEntity: []
+  - stepSummary: 
+    targetEntity: []
     targetPosition: []
     animation: []
     freezePlayerInput: 1
     stepText: {fileID: 0}
     waitForDestination: 0
+    teleportToDestination: 0
     destinationTarget: 0
     timer: 1
     OnDestinationReached:
@@ -31477,12 +31524,14 @@ MonoBehaviour:
     OnDialogueCompleted:
       m_PersistentCalls:
         m_Calls: []
-  - targetEntity: []
+  - stepSummary: 
+    targetEntity: []
     targetPosition: []
     animation: []
     freezePlayerInput: 0
     stepText: {fileID: 342464021}
     waitForDestination: 0
+    teleportToDestination: 0
     destinationTarget: 0
     timer: 0
     OnDestinationReached:
@@ -33618,6 +33667,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6cf8942564701a88a2f4f597cb9931b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  followingEnabled: 0
   entityName: Sam
   partyPosition: 0
   currentSpeed: 5
@@ -34043,6 +34093,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6cf8942564701a88a2f4f597cb9931b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  followingEnabled: 0
   entityName: Casey
   partyPosition: 0
   currentSpeed: 5
@@ -40652,7 +40703,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventStep:
-  - targetEntity:
+  - stepSummary: 
+    targetEntity:
     - {fileID: 908646146992181631}
     targetPosition: []
     animation:
@@ -40660,6 +40712,7 @@ MonoBehaviour:
     freezePlayerInput: 0
     stepText: {fileID: 0}
     waitForDestination: 0
+    teleportToDestination: 0
     destinationTarget: 0
     timer: 0
     OnDestinationReached:
@@ -57847,6 +57900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6cf8942564701a88a2f4f597cb9931b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  followingEnabled: 0
   entityName: Miyu
   partyPosition: 0
   currentSpeed: 5

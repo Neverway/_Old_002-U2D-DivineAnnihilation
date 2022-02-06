@@ -16,6 +16,7 @@ using Pathfinding;
 public class DA_Entity_Follower : MonoBehaviour
 {
     // Public variables
+    public bool followingEnabled;
     public string entityName;
     public int partyPosition;
     public float currentSpeed;
@@ -79,259 +80,262 @@ public class DA_Entity_Follower : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (path == null)
+        if (followingEnabled)
         {
-            return;
-        }
-
-        if (reachedEndOfPath)
-        {
-            // This is not currently in use but the if statment get rid of a warning in the log
-        }
-
-        if (currentWaypoint >= path.vectorPath.Count)
-        {
-            reachedEndOfPath = true;
-            return;
-        }
-
-        else
-        {
-            reachedEndOfPath = false;
-        }
-
-
-        if (saveManager.activeSave2.partyMembers[0] == entityName || saveManager.activeSave2.partyMembers[1] == entityName || saveManager.activeSave2.partyMembers[2] == entityName)
-        {
-            loneWolf = false;
-            if (saveManager.activeSave2.partyMembers[0] == entityName)
+            if (path == null)
             {
-                partyPosition = 1;
-                target = GameObject.FindWithTag("Player").transform;
+                return;
             }
-            else if (saveManager.activeSave2.partyMembers[1] == entityName)
+
+            if (reachedEndOfPath)
             {
-                partyPosition = 2;
-                targets = null;
-                targets = GameObject.FindObjectsOfType<DA_Entity_Follower>();
-                for (int i = 0; i < targets.Length; i++)
-                {
-                    if (targets[i].partyPosition == 1)
-                    {
-                        target = targets[i].gameObject.transform;
-                    }
-                }
+                // This is not currently in use but the if statment get rid of a warning in the log
             }
-            else if (saveManager.activeSave2.partyMembers[2] == entityName)
+
+            if (currentWaypoint >= path.vectorPath.Count)
             {
-                partyPosition = 3;
-                targets = null;
-                targets = GameObject.FindObjectsOfType<DA_Entity_Follower>();
-                for (int i = 0; i < targets.Length; i++)
-                {
-                    if (targets[i].partyPosition == 2)
-                    {
-                        target = targets[i].gameObject.transform;
-                    }
-                }
+                reachedEndOfPath = true;
+                return;
             }
+
             else
             {
-                Debug.LogError("The target could not be properly set for the follower " + gameObject.name);
+                reachedEndOfPath = false;
             }
-            currentSpeed = GameObject.FindWithTag("Player").GetComponent<DA_Entity_Control>().currentSpeed+0.5f;
-            gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
 
 
-            // Move toward target
-            if (Vector2.Distance(rigidbody2d.position, target.position) <= senseRange && Vector2.Distance(rigidbody2d.position, target.position) >= stopRange)
+            if (saveManager.activeSave2.partyMembers[0] == entityName || saveManager.activeSave2.partyMembers[1] == entityName || saveManager.activeSave2.partyMembers[2] == entityName)
             {
-
-                // Draw direction based off A* point vector
-                direction = ((Vector2)path.vectorPath[currentWaypoint+1] - rigidbody2d.position).normalized;
-
-                if (Vector2.Distance(rigidbody2d.position, target.position) <= stopRange+0.5f)
+                loneWolf = false;
+                if (saveManager.activeSave2.partyMembers[0] == entityName)
                 {
-                    rigidbody2d.MovePosition(rigidbody2d.position + direction * (currentSpeed-slowdownMultiplier) * Time.fixedDeltaTime);    // Update the movement for the character
+                    partyPosition = 1;
+                    target = GameObject.FindWithTag("Player").transform;
+                }
+                else if (saveManager.activeSave2.partyMembers[1] == entityName)
+                {
+                    partyPosition = 2;
+                    targets = null;
+                    targets = GameObject.FindObjectsOfType<DA_Entity_Follower>();
+                    for (int i = 0; i < targets.Length; i++)
+                    {
+                        if (targets[i].partyPosition == 1)
+                        {
+                            target = targets[i].gameObject.transform;
+                        }
+                    }
+                }
+                else if (saveManager.activeSave2.partyMembers[2] == entityName)
+                {
+                    partyPosition = 3;
+                    targets = null;
+                    targets = GameObject.FindObjectsOfType<DA_Entity_Follower>();
+                    for (int i = 0; i < targets.Length; i++)
+                    {
+                        if (targets[i].partyPosition == 2)
+                        {
+                            target = targets[i].gameObject.transform;
+                        }
+                    }
                 }
                 else
                 {
-                    rigidbody2d.MovePosition(rigidbody2d.position + direction * currentSpeed * Time.fixedDeltaTime);    // Update the movement for the character
+                    Debug.LogError("The target could not be properly set for the follower " + gameObject.name);
                 }
+                currentSpeed = GameObject.FindWithTag("Player").GetComponent<DA_Entity_Control>().currentSpeed+0.5f;
+                gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
 
-                float distance = Vector2.Distance(rigidbody2d.position, path.vectorPath[currentWaypoint]);
 
-                if (distance < nextWaypointDistance)
+                // Move toward target
+                if (Vector2.Distance(rigidbody2d.position, target.position) <= senseRange && Vector2.Distance(rigidbody2d.position, target.position) >= stopRange)
                 {
-                    currentWaypoint++;
-                }
 
-                isMoving = true;
-            }
-            else
-            {
-                isMoving = false;
-            }
+                    // Draw direction based off A* point vector
+                    direction = ((Vector2)path.vectorPath[currentWaypoint+1] - rigidbody2d.position).normalized;
 
-                
-                
-            // Character animator
-            if (usingAnimator)
-            {
-                if (isMoving)
-                {
-                    if (direction.x > 0.5)
+                    if (Vector2.Distance(rigidbody2d.position, target.position) <= stopRange+0.5f)
                     {
-                        characterAnimator.SetFloat("MoveX", 0.2f);
-                        characterAnimator.SetFloat("MoveY", 0.0f);
-                        testvector.x = 0.2f;
+                        rigidbody2d.MovePosition(rigidbody2d.position + direction * (currentSpeed-slowdownMultiplier) * Time.fixedDeltaTime);    // Update the movement for the character
                     }
-                    else if (direction.x < -0.5)
+                    else
                     {
-                        characterAnimator.SetFloat("MoveX", -0.2f);
-                        characterAnimator.SetFloat("MoveY", 0.0f);
-                        testvector.x = -0.2f;
+                        rigidbody2d.MovePosition(rigidbody2d.position + direction * currentSpeed * Time.fixedDeltaTime);    // Update the movement for the character
                     }
-                    if (direction.y > 0.5)
-                    {
-                        characterAnimator.SetFloat("MoveY", 0.2f);
-                        testvector.y = 0.2f;
-                    }
-                    else if (direction.y < -0.5)
-                    {
-                        characterAnimator.SetFloat("MoveY", -0.2f);
-                        testvector.y = -0.2f;
-                    }
-                }
-                else if (!isMoving)
-                {
-                    if (direction.x > 0.5)
-                    {
-                        characterAnimator.SetFloat("MoveX", 0.1f);
-                        characterAnimator.SetFloat("MoveY", 0.0f);
-                        testvector.x = 0.1f;
-                    }
-                    else if (direction.x < -0.5)
-                    {
-                        characterAnimator.SetFloat("MoveX", -0.1f);
-                        characterAnimator.SetFloat("MoveY", 0.0f);
-                        testvector.x = -0.1f;
-                    }
-                    if (direction.y > 0.5)
-                    {
-                        characterAnimator.SetFloat("MoveY", 0.1f);
-                        testvector.y = 0.1f;
-                    }
-                    else if (direction.y < -0.5)
-                    {
-                        characterAnimator.SetFloat("MoveY", -0.1f);
-                        testvector.y = -0.1f;
-                    }
-                }
-            }
-            
 
-            // Teleport to target if stuck
-            if (Vector2.Distance(rigidbody2d.position, target.position) >= senseRange)
-            {
-                rigidbody2d.transform.position = new Vector2(target.transform.position.x, target.transform.position.y);
-            }
-        }
+                    float distance = Vector2.Distance(rigidbody2d.position, path.vectorPath[currentWaypoint]);
 
-        else if (loneWolf)
-        {            
-            // Move toward target
-            if (Vector2.Distance(rigidbody2d.position, target.position) >= stopRange-stopRange+0.1)
-            {
+                    if (distance < nextWaypointDistance)
+                    {
+                        currentWaypoint++;
+                    }
 
-                // Draw direction based off A* point vector
-                direction = ((Vector2)path.vectorPath[currentWaypoint+1] - rigidbody2d.position).normalized;
-
-                if (Vector2.Distance(rigidbody2d.position, target.position) <= stopRange+0.5f)
-                {
-                    rigidbody2d.MovePosition(rigidbody2d.position + direction * (currentSpeed-slowdownMultiplier) * Time.fixedDeltaTime);    // Update the movement for the character
+                    isMoving = true;
                 }
                 else
                 {
-                    rigidbody2d.MovePosition(rigidbody2d.position + direction * currentSpeed * Time.fixedDeltaTime);    // Update the movement for the character
+                    isMoving = false;
                 }
 
-                float distance = Vector2.Distance(rigidbody2d.position, path.vectorPath[currentWaypoint]);
-
-                if (distance < nextWaypointDistance)
+                    
+                    
+                // Character animator
+                if (usingAnimator)
                 {
-                    currentWaypoint++;
+                    if (isMoving)
+                    {
+                        if (direction.x > 0.5)
+                        {
+                            characterAnimator.SetFloat("MoveX", 0.2f);
+                            characterAnimator.SetFloat("MoveY", 0.0f);
+                            testvector.x = 0.2f;
+                        }
+                        else if (direction.x < -0.5)
+                        {
+                            characterAnimator.SetFloat("MoveX", -0.2f);
+                            characterAnimator.SetFloat("MoveY", 0.0f);
+                            testvector.x = -0.2f;
+                        }
+                        if (direction.y > 0.5)
+                        {
+                            characterAnimator.SetFloat("MoveY", 0.2f);
+                            testvector.y = 0.2f;
+                        }
+                        else if (direction.y < -0.5)
+                        {
+                            characterAnimator.SetFloat("MoveY", -0.2f);
+                            testvector.y = -0.2f;
+                        }
+                    }
+                    else if (!isMoving)
+                    {
+                        if (direction.x > 0.5)
+                        {
+                            characterAnimator.SetFloat("MoveX", 0.1f);
+                            characterAnimator.SetFloat("MoveY", 0.0f);
+                            testvector.x = 0.1f;
+                        }
+                        else if (direction.x < -0.5)
+                        {
+                            characterAnimator.SetFloat("MoveX", -0.1f);
+                            characterAnimator.SetFloat("MoveY", 0.0f);
+                            testvector.x = -0.1f;
+                        }
+                        if (direction.y > 0.5)
+                        {
+                            characterAnimator.SetFloat("MoveY", 0.1f);
+                            testvector.y = 0.1f;
+                        }
+                        else if (direction.y < -0.5)
+                        {
+                            characterAnimator.SetFloat("MoveY", -0.1f);
+                            testvector.y = -0.1f;
+                        }
+                    }
                 }
-
-                isMoving = true;
-            }
-            else
-            {
-                isMoving = false;
-            }
-
                 
-                
-            // Character animator
-            if (usingAnimator)
-            {
-                if (isMoving)
+
+                // Teleport to target if stuck
+                if (Vector2.Distance(rigidbody2d.position, target.position) >= senseRange)
                 {
-                    if (direction.x > 0.5)
-                    {
-                        characterAnimator.SetFloat("MoveX", 0.2f);
-                        characterAnimator.SetFloat("MoveY", 0.0f);
-                        testvector.x = 0.2f;
-                    }
-                    else if (direction.x < -0.5)
-                    {
-                        characterAnimator.SetFloat("MoveX", -0.2f);
-                        characterAnimator.SetFloat("MoveY", 0.0f);
-                        testvector.x = -0.2f;
-                    }
-                    if (direction.y > 0.5)
-                    {
-                        characterAnimator.SetFloat("MoveY", 0.2f);
-                        testvector.y = 0.2f;
-                    }
-                    else if (direction.y < -0.5)
-                    {
-                        characterAnimator.SetFloat("MoveY", -0.2f);
-                        testvector.y = -0.2f;
-                    }
-                }
-                else if (!isMoving)
-                {
-                    if (direction.x > 0.5)
-                    {
-                        characterAnimator.SetFloat("MoveX", 0.1f);
-                        characterAnimator.SetFloat("MoveY", 0.0f);
-                        testvector.x = 0.1f;
-                    }
-                    else if (direction.x < -0.5)
-                    {
-                        characterAnimator.SetFloat("MoveX", -0.1f);
-                        characterAnimator.SetFloat("MoveY", 0.0f);
-                        testvector.x = -0.1f;
-                    }
-                    if (direction.y > 0.5)
-                    {
-                        characterAnimator.SetFloat("MoveY", 0.1f);
-                        testvector.y = 0.1f;
-                    }
-                    else if (direction.y < -0.5)
-                    {
-                        characterAnimator.SetFloat("MoveY", -0.1f);
-                        testvector.y = -0.1f;
-                    }
+                    rigidbody2d.transform.position = new Vector2(target.transform.position.x, target.transform.position.y);
                 }
             }
-            
 
-            // Teleport to target if stuck
-            if (Vector2.Distance(rigidbody2d.position, target.position) >= senseRange)
-            {
-                //rigidbody2d.transform.position = new Vector2(target.transform.position.x, target.transform.position.y);
+            else if (loneWolf)
+            {            
+                // Move toward target
+                if (Vector2.Distance(rigidbody2d.position, target.position) >= stopRange-stopRange+0.1)
+                {
+
+                    // Draw direction based off A* point vector
+                    direction = ((Vector2)path.vectorPath[currentWaypoint+1] - rigidbody2d.position).normalized;
+
+                    if (Vector2.Distance(rigidbody2d.position, target.position) <= stopRange+0.5f)
+                    {
+                        rigidbody2d.MovePosition(rigidbody2d.position + direction * (currentSpeed-slowdownMultiplier) * Time.fixedDeltaTime);    // Update the movement for the character
+                    }
+                    else
+                    {
+                        rigidbody2d.MovePosition(rigidbody2d.position + direction * currentSpeed * Time.fixedDeltaTime);    // Update the movement for the character
+                    }
+
+                    float distance = Vector2.Distance(rigidbody2d.position, path.vectorPath[currentWaypoint]);
+
+                    if (distance < nextWaypointDistance)
+                    {
+                        currentWaypoint++;
+                    }
+
+                    isMoving = true;
+                }
+                else
+                {
+                    isMoving = false;
+                }
+
+                    
+                    
+                // Character animator
+                if (usingAnimator)
+                {
+                    if (isMoving)
+                    {
+                        if (direction.x > 0.5)
+                        {
+                            characterAnimator.SetFloat("MoveX", 0.2f);
+                            characterAnimator.SetFloat("MoveY", 0.0f);
+                            testvector.x = 0.2f;
+                        }
+                        else if (direction.x < -0.5)
+                        {
+                            characterAnimator.SetFloat("MoveX", -0.2f);
+                            characterAnimator.SetFloat("MoveY", 0.0f);
+                            testvector.x = -0.2f;
+                        }
+                        if (direction.y > 0.5)
+                        {
+                            characterAnimator.SetFloat("MoveY", 0.2f);
+                            testvector.y = 0.2f;
+                        }
+                        else if (direction.y < -0.5)
+                        {
+                            characterAnimator.SetFloat("MoveY", -0.2f);
+                            testvector.y = -0.2f;
+                        }
+                    }
+                    else if (!isMoving)
+                    {
+                        if (direction.x > 0.5)
+                        {
+                            characterAnimator.SetFloat("MoveX", 0.1f);
+                            characterAnimator.SetFloat("MoveY", 0.0f);
+                            testvector.x = 0.1f;
+                        }
+                        else if (direction.x < -0.5)
+                        {
+                            characterAnimator.SetFloat("MoveX", -0.1f);
+                            characterAnimator.SetFloat("MoveY", 0.0f);
+                            testvector.x = -0.1f;
+                        }
+                        if (direction.y > 0.5)
+                        {
+                            characterAnimator.SetFloat("MoveY", 0.1f);
+                            testvector.y = 0.1f;
+                        }
+                        else if (direction.y < -0.5)
+                        {
+                            characterAnimator.SetFloat("MoveY", -0.1f);
+                            testvector.y = -0.1f;
+                        }
+                    }
+                }
+                
+
+                // Teleport to target if stuck
+                if (Vector2.Distance(rigidbody2d.position, target.position) >= senseRange)
+                {
+                    //rigidbody2d.transform.position = new Vector2(target.transform.position.x, target.transform.position.y);
+                }
             }
         }
     }

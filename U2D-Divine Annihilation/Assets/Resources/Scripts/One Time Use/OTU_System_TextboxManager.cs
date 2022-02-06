@@ -106,7 +106,6 @@ public class OTU_System_TextboxManager : MonoBehaviour
         // Set text field mode to mono
         if (characterPortrait.sprite == noPortrait && textboxActive == true)
         {
-            Debug.Log("Mono");
             dialogueText.gameObject.SetActive(false);  // Hide the dialogue field
             monologueText.gameObject.SetActive(true);  // Show the monologue field
         }
@@ -114,7 +113,6 @@ public class OTU_System_TextboxManager : MonoBehaviour
         // Set text field mode to dia
         if (characterPortrait.sprite != noPortrait && textboxActive == true)
         {
-            Debug.Log("Dia");
             dialogueText.gameObject.SetActive(true);  // Hide the dialogue field
             monologueText.gameObject.SetActive(false);  // Show the monologue field
         }

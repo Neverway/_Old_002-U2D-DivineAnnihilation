@@ -66,6 +66,7 @@
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Battle_Entity_Assignment.cs" />
      <Compile Include="Assets/Resources/Scripts/DA_Trigger_WarpLevel.cs" />
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Hud_SI_Cable.cs" />
+     <Compile Include="Assets/Resources/Scripts/DA_Trigger_Effect_Force.cs" />
      <Compile Include="Assets/Resources/Scripts/One Time Use/OTU_System_TransitionManager.cs" />
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Entity_Chase.cs" />
      <Compile Include="Assets/Resources/Scripts/DA_Menu_Control.cs" />
@@ -141,6 +142,7 @@
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Hud_Choicebox_Manager.cs" />
      <Compile Include="Assets/Resources/Scripts/DA_Trigger_Event.cs" />
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Steamworks.NET/SteamManager.cs" />
+     <Compile Include="Assets/Resources/Scripts/DA_Trigger_GameEvent.cs" />
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Battle_Background_Movement.cs" />
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Unused or Unknown/Item_Handler.cs" />
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/Removed/Title_Load.cs" />
@@ -156,7 +158,7 @@
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/System/SystemEntityID.cs" />
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Trigger_DestroyOnInteract.cs" />
      <Compile Include="Assets/Resources/Scripts/Depreciated &amp; Awaiting Update/OLDG9/System/SystemPersistantData.cs" />
-     <Compile Include="Assets/Resources/Scripts/DA_Trigger_Effect_Force.cs" />
+     <Compile Include="Assets/Resources/Scripts/DA_Entity_Player.cs" />
      <None Include="Assets/Packages/TextMesh Pro/Resources/Shaders/TMPro.cginc" />
      <None Include="Assets/Packages/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets/Packages/TextMesh Pro/Resources/Shaders/TMP_Bitmap.shader" />
