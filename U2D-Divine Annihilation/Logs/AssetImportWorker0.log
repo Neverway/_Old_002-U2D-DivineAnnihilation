@@ -1,0 +1,1849 @@
+Unity Editor version:    2020.3.22f1 (e1a7f79fd887)
+Branch:                  2020.3/staging
+Build type:              Release
+Batch mode:              YES
+System name:             Linux
+Distro version:          #1 SMP Debian 5.10.84-1 (2021-12-08)
+Kernel version:          5.10.0-10-amd64
+Architecture:            x86_64
+Available memory:        15992 MB
+Using pre-set license
+Pro License: NO
+Desktop is 3286 x 1080 @ 60 Hz
+
+COMMAND LINE ARGUMENTS:
+Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+33781
+Successfully changed project path to: /home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 108.98 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.22f1 (e1a7f79fd887)
+[Subsystems] Discovering subsystems at path /home/lizband/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets
+GLX Extensions: GLX_ARB_get_proc_address GLX_ARB_multisample GLX_EXT_visual_info GLX_EXT_visual_rating GLX_EXT_import_context GLX_SGI_video_sync GLX_SGIX_fbconfig GLX_SGIX_pbuffer GLX_SGI_swap_control GLX_EXT_swap_control GLX_EXT_swap_control_tear GLX_EXT_buffer_age GLX_ARB_create_context GLX_ARB_create_context_profile GLX_NV_float_buffer GLX_ARB_fbconfig_float GLX_EXT_texture_from_pixmap GLX_EXT_framebuffer_sRGB GLX_NV_copy_image GLX_EXT_create_context_es_profile GLX_EXT_create_context_es2_profile GLX_ARB_create_context_no_error GLX_ARB_create_context_robustness GLX_NV_delay_before_swap GLX_EXT_stereo_tree GLX_ARB_context_flush_control GLX_NV_robustness_video_memory_purge GLX_NV_multigpu_context 
+Renderer: NVIDIA GeForce GTX 1070 Ti/PCIe/SSE2
+Vendor:   NVIDIA Corporation
+Version:  4.5.0 NVIDIA 470.86
+GLES:     0
+ GL_AMD_multi_draw_indirect GL_AMD_seamless_cubemap_per_texture GL_AMD_vertex_shader_viewport_index GL_AMD_vertex_shader_layer GL_ARB_arrays_of_arrays GL_ARB_base_instance GL_ARB_bindless_texture GL_ARB_blend_func_extended GL_ARB_buffer_storage GL_ARB_clear_buffer_object GL_ARB_clear_texture GL_ARB_clip_control GL_ARB_color_buffer_float GL_ARB_compressed_texture_pixel_storage GL_ARB_conservative_depth GL_ARB_compute_shader GL_ARB_compute_variable_group_size GL_ARB_conditional_render_inverted GL_ARB_copy_buffer GL_ARB_copy_image GL_ARB_cull_distance GL_ARB_debug_output GL_ARB_depth_buffer_float GL_ARB_depth_clamp GL_ARB_depth_texture GL_ARB_derivative_control GL_ARB_direct_state_access GL_ARB_draw_buffers GL_ARB_draw_buffers_blend GL_ARB_draw_indirect GL_ARB_draw_elements_base_vertex GL_ARB_draw_instanced GL_ARB_enhanced_layouts GL_ARB_ES2_compatibility GL_ARB_ES3_compatibility GL_ARB_ES3_1_compatibility GL_ARB_ES3_2_compatibility GL_ARB_explicit_attrib_location GL_ARB_explicit_uniform_location GL_ARB_fragmen
+t_coord_conventions GL_ARB_fragment_layer_viewport GL_ARB_fragment_program GL_ARB_fragment_program_shadow GL_ARB_fragment_shader GL_ARB_fragment_shader_interlock GL_ARB_framebuffer_no_attachments GL_ARB_framebuffer_object GL_ARB_framebuffer_sRGB GL_ARB_geometry_shader4 GL_ARB_get_program_binary GL_ARB_get_texture_sub_image GL_ARB_gl_spirv GL_ARB_gpu_shader5 GL_ARB_gpu_shader_fp64 GL_ARB_gpu_shader_int64 GL_ARB_half_float_pixel GL_ARB_half_float_vertex GL_ARB_imaging GL_ARB_indirect_parameters GL_ARB_instanced_arrays GL_ARB_internalformat_query GL_ARB_internalformat_query2 GL_ARB_invalidate_subdata GL_ARB_map_buffer_alignment GL_ARB_map_buffer_range GL_ARB_multi_bind GL_ARB_multi_draw_indirect GL_ARB_multisample GL_ARB_multitexture GL_ARB_occlusion_query GL_ARB_occlusion_query2 GL_ARB_parallel_shader_compile GL_ARB_pipeline_statistics_query GL_ARB_pixel_buffer_object GL_ARB_point_parameters GL_ARB_point_sprite GL_ARB_polygon_offset_clamp GL_ARB_post_depth_coverage GL_ARB_program_interface_query GL_ARB_provoki
+ng_vertex GL_ARB_query_buffer_object GL_ARB_robust_buffer_access_behavior GL_ARB_robustness GL_ARB_sample_locations GL_ARB_sample_shading GL_ARB_sampler_objects GL_ARB_seamless_cube_map GL_ARB_seamless_cubemap_per_texture GL_ARB_separate_shader_objects GL_ARB_shader_atomic_counter_ops GL_ARB_shader_atomic_counters GL_ARB_shader_ballot GL_ARB_shader_bit_encoding GL_ARB_shader_clock GL_ARB_shader_draw_parameters GL_ARB_shader_group_vote GL_ARB_shader_image_load_store GL_ARB_shader_image_size GL_ARB_shader_objects GL_ARB_shader_precision GL_ARB_shader_storage_buffer_object GL_ARB_shader_subroutine GL_ARB_shader_texture_image_samples GL_ARB_shader_texture_lod GL_ARB_shading_language_100 GL_ARB_shader_viewport_layer_array GL_ARB_shading_language_420pack GL_ARB_shading_language_include GL_ARB_shading_language_packing GL_ARB_shadow GL_ARB_sparse_buffer GL_ARB_sparse_texture GL_ARB_sparse_texture2 GL_ARB_sparse_texture_clamp GL_ARB_spirv_extensions GL_ARB_stencil_texturing GL_ARB_sync GL_ARB_tessellation_shader GL_A
+RB_texture_barrier GL_ARB_texture_border_clamp GL_ARB_texture_buffer_object GL_ARB_texture_buffer_object_rgb32 GL_ARB_texture_buffer_range GL_ARB_texture_compression GL_ARB_texture_compression_bptc GL_ARB_texture_compression_rgtc GL_ARB_texture_cube_map GL_ARB_texture_cube_map_array GL_ARB_texture_env_add GL_ARB_texture_env_combine GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3 GL_ARB_texture_filter_anisotropic GL_ARB_texture_filter_minmax GL_ARB_texture_float GL_ARB_texture_gather GL_ARB_texture_mirror_clamp_to_edge GL_ARB_texture_mirrored_repeat GL_ARB_texture_multisample GL_ARB_texture_non_power_of_two GL_ARB_texture_query_levels GL_ARB_texture_query_lod GL_ARB_texture_rectangle GL_ARB_texture_rg GL_ARB_texture_rgb10_a2ui GL_ARB_texture_stencil8 GL_ARB_texture_storage GL_ARB_texture_storage_multisample GL_ARB_texture_swizzle GL_ARB_texture_view GL_ARB_timer_query GL_ARB_transform_feedback2 GL_ARB_transform_feedback3 GL_ARB_transform_feedback_instanced GL_ARB_transform_feedback_overflow_query GL_ARB_t
+ranspose_matrix GL_ARB_uniform_buffer_object GL_ARB_vertex_array_bgra GL_ARB_vertex_array_object GL_ARB_vertex_attrib_64bit GL_ARB_vertex_attrib_binding GL_ARB_vertex_buffer_object GL_ARB_vertex_program GL_ARB_vertex_shader GL_ARB_vertex_type_10f_11f_11f_rev GL_ARB_vertex_type_2_10_10_10_rev GL_ARB_viewport_array GL_ARB_window_pos GL_ATI_draw_buffers GL_ATI_texture_float GL_ATI_texture_mirror_once GL_S3_s3tc GL_EXT_texture_env_add GL_EXT_abgr GL_EXT_bgra GL_EXT_bindable_uniform GL_EXT_blend_color GL_EXT_blend_equation_separate GL_EXT_blend_func_separate GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_compiled_vertex_array GL_EXT_Cg_shader GL_EXT_depth_bounds_test GL_EXT_direct_state_access GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_draw_range_elements GL_EXT_fog_coord GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXTX_framebuffer_mixed_formats GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_framebuffer_object GL_EXT_framebuffer_sRGB GL_EXT_geometry_shader4 GL_EXT_gpu_program_parameters 
+GL_EXT_gpu_shader4 GL_EXT_multi_draw_arrays GL_EXT_multiview_texture_multisample GL_EXT_multiview_timer_query GL_EXT_packed_depth_stencil GL_EXT_packed_float GL_EXT_packed_pixels GL_EXT_pixel_buffer_object GL_EXT_point_parameters GL_EXT_polygon_offset_clamp GL_EXT_post_depth_coverage GL_EXT_provoking_vertex GL_EXT_raster_multisample GL_EXT_rescale_normal GL_EXT_secondary_color GL_EXT_separate_shader_objects GL_EXT_separate_specular_color GL_EXT_shader_image_load_formatted GL_EXT_shader_image_load_store GL_EXT_shader_integer_mix GL_EXT_shadow_funcs GL_EXT_sparse_texture2 GL_EXT_stencil_two_side GL_EXT_stencil_wrap GL_EXT_texture3D GL_EXT_texture_array GL_EXT_texture_buffer_object GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_latc GL_EXT_texture_compression_rgtc GL_EXT_texture_compression_s3tc GL_EXT_texture_cube_map GL_EXT_texture_edge_clamp GL_EXT_texture_env_combine GL_EXT_texture_env_dot3 GL_EXT_texture_filter_anisotropic GL_EXT_texture_filter_minmax GL_EXT_texture_integer GL_EXT_texture_lod G
+L_EXT_texture_lod_bias GL_EXT_texture_mirror_clamp GL_EXT_texture_object GL_EXT_texture_shadow_lod GL_EXT_texture_shared_exponent GL_EXT_texture_sRGB GL_EXT_texture_sRGB_R8 GL_EXT_texture_sRGB_decode GL_EXT_texture_storage GL_EXT_texture_swizzle GL_EXT_timer_query GL_EXT_transform_feedback2 GL_EXT_vertex_array GL_EXT_vertex_array_bgra GL_EXT_vertex_attrib_64bit GL_EXT_window_rectangles GL_EXT_x11_sync_object GL_EXT_import_sync_object GL_NV_robustness_video_memory_purge GL_IBM_rasterpos_clip GL_IBM_texture_mirrored_repeat GL_KHR_context_flush_control GL_KHR_debug GL_EXT_memory_object GL_EXT_memory_object_fd GL_NV_memory_object_sparse GL_KHR_parallel_shader_compile GL_KHR_no_error GL_KHR_robust_buffer_access_behavior GL_KHR_robustness GL_EXT_semaphore GL_EXT_semaphore_fd GL_NV_timeline_semaphore GL_KHR_shader_subgroup GL_KTX_buffer_region GL_NV_alpha_to_coverage_dither_control GL_NV_bindless_multi_draw_indirect GL_NV_bindless_multi_draw_indirect_count GL_NV_bindless_texture GL_NV_blend_equation_advanced GL_NV_
+blend_equation_advanced_coherent GL_NVX_blend_equation_advanced_multi_draw_buffers GL_NV_blend_minmax_factor GL_NV_blend_square GL_NV_clip_space_w_scaling GL_NV_command_list GL_NV_compute_program5 GL_NV_conditional_render GL_NV_conservative_raster GL_NV_conservative_raster_dilate GL_NV_conservative_raster_pre_snap_triangles GL_NV_copy_depth_to_color GL_NV_copy_image GL_NV_depth_buffer_float GL_NV_depth_clamp GL_NV_draw_texture GL_NV_draw_vulkan_image GL_NV_ES1_1_compatibility GL_NV_ES3_1_compatibility GL_NV_explicit_multisample GL_NV_feature_query GL_NV_fence GL_NV_fill_rectangle GL_NV_float_buffer GL_NV_fog_distance GL_NV_fragment_coverage_to_color GL_NV_fragment_program GL_NV_fragment_program_option GL_NV_fragment_program2 GL_NV_fragment_shader_interlock GL_NV_framebuffer_mixed_samples GL_NV_framebuffer_multisample_coverage GL_NV_geometry_shader4 GL_NV_geometry_shader_passthrough GL_NV_gpu_program4 GL_NV_internalformat_sample_query GL_NV_gpu_program4_1 GL_NV_gpu_program5 GL_NV_gpu_program5_mem_extended GL_
+NV_gpu_program_fp64 GL_NV_gpu_shader5 GL_NV_half_float GL_NV_light_max_exponent GL_NV_memory_attachment GL_NV_multisample_coverage GL_NV_multisample_filter_hint GL_NV_occlusion_query GL_NV_packed_depth_stencil GL_NV_parameter_buffer_object GL_NV_parameter_buffer_object2 GL_NV_path_rendering GL_NV_path_rendering_shared_edge GL_NV_pixel_data_range GL_NV_point_sprite GL_NV_primitive_restart GL_NV_query_resource GL_NV_query_resource_tag GL_NV_register_combiners GL_NV_register_combiners2 GL_NV_sample_locations GL_NV_sample_mask_override_coverage GL_NV_shader_atomic_counters GL_NV_shader_atomic_float GL_NV_shader_atomic_float64 GL_NV_shader_atomic_fp16_vector GL_NV_shader_atomic_int64 GL_NV_shader_buffer_load GL_NV_shader_storage_buffer_object GL_NV_shader_subgroup_partitioned GL_NV_stereo_view_rendering GL_NV_texgen_reflection GL_NV_texture_barrier GL_NV_texture_compression_vtc GL_NV_texture_env_combine4 GL_NV_texture_multisample GL_NV_texture_rectangle GL_NV_texture_rectangle_compressed GL_NV_texture_shader GL_N
+V_texture_shader2 GL_NV_texture_shader3 GL_NV_transform_feedback GL_NV_transform_feedback2 GL_NV_uniform_buffer_unified_memory GL_NV_vdpau_interop GL_NV_vdpau_interop2 GL_NV_vertex_array_range GL_NV_vertex_array_range2 GL_NV_vertex_attrib_integer_64bit GL_NV_vertex_buffer_unified_memory GL_NV_vertex_program GL_NV_vertex_program1_1 GL_NV_vertex_program2 GL_NV_vertex_program2_option GL_NV_vertex_program3 GL_NV_viewport_array2 GL_NV_viewport_swizzle GL_NVX_conditional_render GL_NV_gpu_multicast GL_NVX_progress_fence GL_NVX_gpu_memory_info GL_NVX_nvenc_interop GL_NV_shader_thread_group GL_NV_shader_thread_shuffle GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent GL_OVR_multiview GL_OVR_multiview2 GL_SGIS_generate_mipmap GL_SGIS_texture_lod GL_SGIX_depth_texture GL_SGIX_shadow GL_SUN_slice_accum
+OPENGL LOG: Creating OpenGL 4.5 graphics device ; Context level  <OpenGL 4.5> ; Context handle -1494524616
+Initialize mono
+Mono path[0] = '/home/lizband/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Managed'
+Mono path[1] = '/home/lizband/Unity/Hub/Editor/2020.3.22f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/home/lizband/Unity/Hub/Editor/2020.3.22f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56932
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /home/lizband/Unity/Hub/Editor/2020.3.22f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /home/lizband/Unity/Hub/Editor/2020.3.22f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: /home/lizband/Unity/Hub/Editor/2020.3.22f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.001450 seconds.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 104.65 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.691 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1691ms)
+		BeginReloadAssembly (32ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (605ms)
+			LoadAssemblies (31ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (182ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (293ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (105ms)
+				BeforeProcessingInitializeOnLoad (9ms)
+				ProcessInitializeOnLoadAttributes (142ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004653 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 107.79 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.553 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1554ms)
+		BeginReloadAssembly (142ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (1340ms)
+			LoadAssemblies (85ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (449ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (90ms)
+			SetupLoadedEditorAssemblies (564ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (108ms)
+				BeforeProcessingInitializeOnLoad (102ms)
+				ProcessInitializeOnLoadAttributes (319ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
+Refreshing native plugins compatible for Editor in 1.20 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4184 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 191.1 MB.
+System memory in use after: 191.2 MB.
+
+Unloading 35 unused Assets to reduce memory usage. Loaded Objects now: 4641.
+Total: 12.131574 ms (FindLiveObjects: 0.537759 ms CreateObjectMapping: 0.193362 ms MarkObjects: 11.108114 ms  DeleteObjects: 0.290295 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Resources/Old G10 Content/Sprites/Menus & Hud/spr_hud_textboxMaterial.mat
+  artifactKey: Guid(9de800a10e2f0b89ab61b4d53d4e57e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Menus & Hud/spr_hud_textboxMaterial.mat using Guid(9de800a10e2f0b89ab61b4d53d4e57e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee33019e6caea4e8aae0e456ea2ef35b') in 0.246312 seconds 
+  Import took 0.256193 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 554.872612 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Items/item_radio_front.png
+  artifactKey: Guid(78b8addbe91fc9066a07768d4d1881a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Items/item_radio_front.png using Guid(78b8addbe91fc9066a07768d4d1881a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a67552b6e294b3e592e66cf597b4d856') in 0.029544 seconds 
+  Import took 0.037727 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.608265 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Items/item_radio_sideflipped.png
+  artifactKey: Guid(3a5a7f3e248a06468a0076781f72f39c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Items/item_radio_sideflipped.png using Guid(3a5a7f3e248a06468a0076781f72f39c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22985317fa4ee428b503855565f0fbf5') in 0.011728 seconds 
+  Import took 0.022640 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.120535 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Items/item_radio_side.png
+  artifactKey: Guid(8c95bb795c1d8f6f2bfe72948c947197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Items/item_radio_side.png using Guid(8c95bb795c1d8f6f2bfe72948c947197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9b6d2f0d01f4cbb920dedf45970979a') in 0.011825 seconds 
+  Import took 0.022404 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.173259 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Items/item_forestruins_key_1.png
+  artifactKey: Guid(c8c5f9972301e11ec941f22b30758029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Items/item_forestruins_key_1.png using Guid(c8c5f9972301e11ec941f22b30758029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28ebff80c4b74925d1e61fe4fcc8d657') in 0.014532 seconds 
+  Import took 0.024170 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.885850 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Items/item_potion_bottle.png
+  artifactKey: Guid(4d284b2d2b8e9f6f7847b457f6877721) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Items/item_potion_bottle.png using Guid(4d284b2d2b8e9f6f7847b457f6877721) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '174a52360290b91fb35ad228f844cdce') in 0.013175 seconds 
+  Import took 0.023881 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.366295 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Items/ui_inventroy_icon_blank.png
+  artifactKey: Guid(11f9857110a398434a53c2531b480450) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Items/ui_inventroy_icon_blank.png using Guid(11f9857110a398434a53c2531b480450) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc4a709c0768caa537ced00cd7698957') in 0.012118 seconds 
+  Import took 0.023080 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.755329 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Items/ui_inventroy_icon_consumable.png
+  artifactKey: Guid(f4793608cf1a222d3832b99ea20f4e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Items/ui_inventroy_icon_consumable.png using Guid(f4793608cf1a222d3832b99ea20f4e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ab7caefa9271cc6ea2200d4b3345b7f') in 0.012364 seconds 
+  Import took 0.023036 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.097635 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Items/hud_inventory_defence_.png
+  artifactKey: Guid(c048607621f4f38d4bd3b3ad0fd3a789) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Items/hud_inventory_defence_.png using Guid(c048607621f4f38d4bd3b3ad0fd3a789) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4a9c5ccebf40e2b765c12de9f4a65c4') in 0.012926 seconds 
+  Import took 0.024269 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.929403 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Items/ui_inventroy_icon_defense.png
+  artifactKey: Guid(c048607621f4f38d4bd3b3ad0fd3a789) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Items/ui_inventroy_icon_defense.png using Guid(c048607621f4f38d4bd3b3ad0fd3a789) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58903626b8ac1743dd2937c7a20578f0') in 0.012105 seconds 
+  Import took 0.022201 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.837207 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Items/ui_inventroy_icon_item.png
+  artifactKey: Guid(ac32ab71333970dada5367ea2a20bd50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Items/ui_inventroy_icon_item.png using Guid(ac32ab71333970dada5367ea2a20bd50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eca0ab967ff2f3100937fd62a09ff986') in 0.009207 seconds 
+  Import took 0.017638 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.500764 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Items/ui_inventroy_icon_magic.png
+  artifactKey: Guid(e22d87d9e4099ed76a3d2e6a415111e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Items/ui_inventroy_icon_magic.png using Guid(e22d87d9e4099ed76a3d2e6a415111e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82e29897bf245df1fd4c481110fc30cb') in 0.011987 seconds 
+  Import took 0.022288 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.731835 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Items/ui_inventroy_icon_puzzle.png
+  artifactKey: Guid(9a6bb2d22966ab7b3aebe91c95ecaf97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Items/ui_inventroy_icon_puzzle.png using Guid(9a6bb2d22966ab7b3aebe91c95ecaf97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e6a68cbeca579f298fe767318ad1625') in 0.011379 seconds 
+  Import took 0.021405 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.779931 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Items/ui_inventroy_icon_weapon.png
+  artifactKey: Guid(e25b53a5f73e391c2bef5a08fea3c025) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Items/ui_inventroy_icon_weapon.png using Guid(e25b53a5f73e391c2bef5a08fea3c025) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10640209093809323271113e01764d5b') in 0.013503 seconds 
+  Import took 0.023128 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.835173 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Items/ui_inventroy_equipD.png
+  artifactKey: Guid(95118f8693b5ffa0d8ef2642ba1a40bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Items/ui_inventroy_equipD.png using Guid(95118f8693b5ffa0d8ef2642ba1a40bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e49b077f096c95fae1333352b2313ede') in 0.010284 seconds 
+  Import took 0.019819 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.634906 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Items/ui_inventroy_equip_m.png
+  artifactKey: Guid(5f3969a93be23a418b91018e1eda0b03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Items/ui_inventroy_equip_m.png using Guid(5f3969a93be23a418b91018e1eda0b03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29605fa4100e7e032a12b8cc4ac32467') in 0.011377 seconds 
+  Import took 0.021092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.366206 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Items/ui_inventroy_equip_d.png
+  artifactKey: Guid(95118f8693b5ffa0d8ef2642ba1a40bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Items/ui_inventroy_equip_d.png using Guid(95118f8693b5ffa0d8ef2642ba1a40bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e36fb144f086db552119354c221fffb0') in 0.013357 seconds 
+  Import took 0.024719 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.067225 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Items/ui_inventroy_equip_u.png
+  artifactKey: Guid(eb5117a386b7bde43b03148c23b72456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Items/ui_inventroy_equip_u.png using Guid(eb5117a386b7bde43b03148c23b72456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd9af70abdb61659321a3c3916c4c510') in 0.009435 seconds 
+  Import took 0.017915 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.630816 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Items/ui_inventroy_equip_w.png
+  artifactKey: Guid(89bd82997fbb37cb1b86583e059c1923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Items/ui_inventroy_equip_w.png using Guid(89bd82997fbb37cb1b86583e059c1923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47553fabad6e9acf35fc0b4c7e9e25e9') in 0.014760 seconds 
+  Import took 0.024632 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.943853 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Items/item_howelfen_lantern.png
+  artifactKey: Guid(7e0b1ff5e6a0464ba98722e7120d903f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Items/item_howelfen_lantern.png using Guid(7e0b1ff5e6a0464ba98722e7120d903f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72507acbd8cf3d3401533af146445b24') in 0.012959 seconds 
+  Import took 0.023714 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.028064 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Items/item_potion_health.png
+  artifactKey: Guid(3d823b9e0143c05059ccd154e97b972c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Items/item_potion_health.png using Guid(3d823b9e0143c05059ccd154e97b972c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '746a84b3ae5d790240d0a1be8df13f9a') in 0.011825 seconds 
+  Import took 0.022515 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.241697 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Items/item_shield_wooden.png
+  artifactKey: Guid(91e21204828d4cfd78705fbc56114b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Items/item_shield_wooden.png using Guid(91e21204828d4cfd78705fbc56114b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '420e2eaa7d241ec3d494d7daaff4d48c') in 0.015823 seconds 
+  Import took 0.023629 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.169905 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Items/item_stick.png
+  artifactKey: Guid(05ec28b9f0ff98cff9ce9247a2238510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Items/item_stick.png using Guid(05ec28b9f0ff98cff9ce9247a2238510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16d5c388ba24f8c4206936a285ce0340') in 0.014136 seconds 
+  Import took 0.023400 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.963793 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Items/item_sword.png
+  artifactKey: Guid(3a0fef0129b3c8fa6a6d47205c88fb95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Items/item_sword.png using Guid(3a0fef0129b3c8fa6a6d47205c88fb95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ea6bfbbbfcb450b8e7c2c2c75a6dd31') in 0.014316 seconds 
+  Import took 0.023100 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.782022 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Items/item_sword_training.png
+  artifactKey: Guid(9f4c8284d636187d2accb4785005776d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Items/item_sword_training.png using Guid(9f4c8284d636187d2accb4785005776d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3f6b579b7e8011460d9941abacefc7b') in 0.012434 seconds 
+  Import took 0.022180 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 56.178067 seconds.
+  path: Assets/Resources/Sprites/Items & Accessories/item_stick.png
+  artifactKey: Guid(05ec28b9f0ff98cff9ce9247a2238510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Items & Accessories/item_stick.png using Guid(05ec28b9f0ff98cff9ce9247a2238510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a7763582f3ad415ef18b3abcdef341f') in 0.010713 seconds 
+  Import took 0.020444 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.973482 seconds.
+  path: Assets/Resources/Sprites/Items & Accessories/item_sheild.png
+  artifactKey: Guid(91e21204828d4cfd78705fbc56114b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Items & Accessories/item_sheild.png using Guid(91e21204828d4cfd78705fbc56114b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adb099894ee7a42e64d7a5365ff3005e') in 0.012408 seconds 
+  Import took 0.022136 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.369300 seconds.
+  path: Assets/Resources/Sprites/Items & Accessories/item_shield.png
+  artifactKey: Guid(91e21204828d4cfd78705fbc56114b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Items & Accessories/item_shield.png using Guid(91e21204828d4cfd78705fbc56114b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02d480d4de47b7cbe4df423dd13a620f') in 0.011178 seconds 
+  Import took 0.020944 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.351869 seconds.
+  path: Assets/Resources/Sprites/Items & Accessories/item_bokken.png
+  artifactKey: Guid(9f4c8284d636187d2accb4785005776d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Items & Accessories/item_bokken.png using Guid(9f4c8284d636187d2accb4785005776d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a24dcf900ba99c8a747deb5f36e13874') in 0.010087 seconds 
+  Import took 0.018881 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 48.170550 seconds.
+  path: Assets/Resources/Sprites/Menus & UI/inventroy_equip_d.png
+  artifactKey: Guid(95118f8693b5ffa0d8ef2642ba1a40bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Menus & UI/inventroy_equip_d.png using Guid(95118f8693b5ffa0d8ef2642ba1a40bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6abc535e1623965b2b34d1ee6c6cf2a5') in 0.010154 seconds 
+  Import took 0.019866 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.242302 seconds.
+  path: Assets/Resources/Sprites/Menus & UI/menu_title_arrive_1.png
+  artifactKey: Guid(ff133ddfc529ed3fe8a277a88bceed60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Menus & UI/menu_title_arrive_1.png using Guid(ff133ddfc529ed3fe8a277a88bceed60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e3843535c2af84c78f8d008e2e9b8cd') in 0.014976 seconds 
+  Import took 0.024742 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.489605 seconds.
+  path: Assets/Resources/Sprites/Menus & UI/title_arrive_1.png
+  artifactKey: Guid(ff133ddfc529ed3fe8a277a88bceed60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Menus & UI/title_arrive_1.png using Guid(ff133ddfc529ed3fe8a277a88bceed60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7b23388e956b975feca7b2472695bed') in 0.014729 seconds 
+  Import took 0.024585 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.894045 seconds.
+  path: Assets/Resources/Sprites/Menus & UI/title_arrive_2.png
+  artifactKey: Guid(b326432931d627b469e006e0cfb16e16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Menus & UI/title_arrive_2.png using Guid(b326432931d627b469e006e0cfb16e16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36a14850935d731b9ad2424160aa6918') in 0.010748 seconds 
+  Import took 0.019598 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 83.466578 seconds.
+  path: Assets/Resources/Sprites/Menus & UI/inventroy_equip_m.png
+  artifactKey: Guid(5f3969a93be23a418b91018e1eda0b03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Menus & UI/inventroy_equip_m.png using Guid(5f3969a93be23a418b91018e1eda0b03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5cbbc0f8754d5c3b7e327affd2d7a5a') in 0.010338 seconds 
+  Import took 0.020230 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.733005 seconds.
+  path: Assets/Resources/Sprites/Menus & UI/inventroy_equip_u.png
+  artifactKey: Guid(eb5117a386b7bde43b03148c23b72456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Menus & UI/inventroy_equip_u.png using Guid(eb5117a386b7bde43b03148c23b72456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c55fdd5a8b309b29e695a6417e175b8') in 0.009916 seconds 
+  Import took 0.018649 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.461644 seconds.
+  path: Assets/Resources/Sprites/Menus & UI/inventroy_equip_w.png
+  artifactKey: Guid(89bd82997fbb37cb1b86583e059c1923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Menus & UI/inventroy_equip_w.png using Guid(89bd82997fbb37cb1b86583e059c1923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7157c69d7418cb29ac42b16ef9c6ef0') in 0.010458 seconds 
+  Import took 0.019265 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.196494 seconds.
+  path: Assets/Resources/Sprites/Menus & UI/inventroy_icon_blank.png
+  artifactKey: Guid(11f9857110a398434a53c2531b480450) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Menus & UI/inventroy_icon_blank.png using Guid(11f9857110a398434a53c2531b480450) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37d0c199a2a1beff64026bcf70ead969') in 0.010636 seconds 
+  Import took 0.020306 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.330864 seconds.
+  path: Assets/Resources/Sprites/Menus & UI/inventroy_icon_consumable.png
+  artifactKey: Guid(f4793608cf1a222d3832b99ea20f4e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Menus & UI/inventroy_icon_consumable.png using Guid(f4793608cf1a222d3832b99ea20f4e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3afbc4eb531d70084eca9d2262d21c0c') in 0.010793 seconds 
+  Import took 0.020440 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.260859 seconds.
+  path: Assets/Resources/Sprites/Menus & UI/inventroy_icon_defense.png
+  artifactKey: Guid(c048607621f4f38d4bd3b3ad0fd3a789) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Menus & UI/inventroy_icon_defense.png using Guid(c048607621f4f38d4bd3b3ad0fd3a789) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43bd11ef077f990d6accb27de2e80f48') in 0.010315 seconds 
+  Import took 0.020099 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.969485 seconds.
+  path: Assets/Resources/Sprites/Menus & UI/inventroy_icon_item.png
+  artifactKey: Guid(ac32ab71333970dada5367ea2a20bd50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Menus & UI/inventroy_icon_item.png using Guid(ac32ab71333970dada5367ea2a20bd50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07104d885b778a429934fdd610961b99') in 0.012772 seconds 
+  Import took 0.021641 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.221015 seconds.
+  path: Assets/Resources/Sprites/Menus & UI/inventroy_icon_magic.png
+  artifactKey: Guid(e22d87d9e4099ed76a3d2e6a415111e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Menus & UI/inventroy_icon_magic.png using Guid(e22d87d9e4099ed76a3d2e6a415111e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b36983a90829a64ac06dcc58178a2c2') in 0.014390 seconds 
+  Import took 0.023394 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.183877 seconds.
+  path: Assets/Resources/Sprites/Menus & UI/inventroy_icon_puzzle.png
+  artifactKey: Guid(9a6bb2d22966ab7b3aebe91c95ecaf97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Menus & UI/inventroy_icon_puzzle.png using Guid(9a6bb2d22966ab7b3aebe91c95ecaf97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58489295f2c320e3bb1d0aef2458d62c') in 0.011808 seconds 
+  Import took 0.020668 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.595305 seconds.
+  path: Assets/Resources/Sprites/Menus & UI/inventroy_icon_weapon.png
+  artifactKey: Guid(e25b53a5f73e391c2bef5a08fea3c025) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Sprites/Menus & UI/inventroy_icon_weapon.png using Guid(e25b53a5f73e391c2bef5a08fea3c025) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c587b1bcf30a23eee22e83c451eae411') in 0.011344 seconds 
+  Import took 0.020085 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.651716 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_barley_idle.png
+  artifactKey: Guid(ba8c69837e61ebedcb4f178e67842139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_barley_idle.png using Guid(ba8c69837e61ebedcb4f178e67842139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1838d7a9b2aed951fc14eec09faa5966') in 0.014032 seconds 
+  Import took 0.023980 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_sam_idle.png
+  artifactKey: Guid(432b06f87d728f5578550bf7a4840fb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_sam_idle.png using Guid(432b06f87d728f5578550bf7a4840fb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca6d0cd67a93e0111289c4bf576133c4') in 0.015125 seconds 
+  Import took 0.023070 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_casey_2_idle.png
+  artifactKey: Guid(3cd0f7ed568e60e4db5b661bbdc176a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_casey_2_idle.png using Guid(3cd0f7ed568e60e4db5b661bbdc176a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ca7b40959849e68c1206b0edcaf8c53') in 0.010741 seconds 
+  Import took 0.017551 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_none.png
+  artifactKey: Guid(07689cd2c6f2e6721a7cd9b0576a9738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_none.png using Guid(07689cd2c6f2e6721a7cd9b0576a9738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd90a0710f78325b1fd7bf6155ea59f0') in 0.011374 seconds 
+  Import took 0.018357 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_liz.png
+  artifactKey: Guid(d4d9f5689adedab47878c620f8f53540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_liz.png using Guid(d4d9f5689adedab47878c620f8f53540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b16dd521600daffb0706d0811123c2e') in 0.012409 seconds 
+  Import took 0.019022 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_librarian_idle.png
+  artifactKey: Guid(fe6831ad6392e4861a9124138fced3ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_librarian_idle.png using Guid(fe6831ad6392e4861a9124138fced3ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50aa547c998c053198b9b2db7f44f695') in 0.009739 seconds 
+  Import took 0.016177 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_margo_idle.png
+  artifactKey: Guid(f291f4d1f4d38633a8fffd45f1c5f855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_margo_idle.png using Guid(f291f4d1f4d38633a8fffd45f1c5f855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de0d4f19d4be94f570381212c2c054ec') in 0.009675 seconds 
+  Import took 0.016094 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_miyu_idle.png
+  artifactKey: Guid(7dedf03d075ce479c885b059395bd886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_miyu_idle.png using Guid(7dedf03d075ce479c885b059395bd886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1798323158f070fcf5cba6fd9d307bb6') in 0.009799 seconds 
+  Import took 0.015965 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_deskDemon_idle.png
+  artifactKey: Guid(05ae7e056948d511685499c56f55dd64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_deskDemon_idle.png using Guid(05ae7e056948d511685499c56f55dd64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd18acf6c637ad48a851c6e31c179e47') in 0.009703 seconds 
+  Import took 0.015901 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_fox_idle.png
+  artifactKey: Guid(323e5a9daadfc106aa3fb3e6b2033318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_fox_idle.png using Guid(323e5a9daadfc106aa3fb3e6b2033318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5469bdac89387498174cc4b7e1ad52ff') in 0.009797 seconds 
+  Import took 0.016039 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_dragonLord_idle.png
+  artifactKey: Guid(22a70327547b14c41b2ce9bb62577f1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_dragonLord_idle.png using Guid(22a70327547b14c41b2ce9bb62577f1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ea474f9fbffc435461862233ffd1293') in 0.010129 seconds 
+  Import took 0.016360 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_fox_idle 1.png
+  artifactKey: Guid(89bc5ba76cd1932088ec4f9ce470886a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_fox_idle 1.png using Guid(89bc5ba76cd1932088ec4f9ce470886a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e9c502b25651175cc28f3b26d79d872') in 0.010231 seconds 
+  Import took 0.016419 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_sam_2_idle.png
+  artifactKey: Guid(ab9c2af49ce843e75b2b7f79d4e56d6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_sam_2_idle.png using Guid(ab9c2af49ce843e75b2b7f79d4e56d6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3658ef51f42b70950bba6514a4d0a741') in 0.010008 seconds 
+  Import took 0.016358 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_casey_idle.png
+  artifactKey: Guid(149105c2e699c6553a10721d89e5493e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_casey_idle.png using Guid(149105c2e699c6553a10721d89e5493e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22e3b432e53eea7f3396f1c3ed3ec322') in 0.011711 seconds 
+  Import took 0.017925 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.968727 seconds.
+  path: Assets/Resources/Old G9 Content/Materials/OldBH/Circle.png
+  artifactKey: Guid(c5cd02edcefeb39f7a4887be9be50ffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G9 Content/Materials/OldBH/Circle.png using Guid(c5cd02edcefeb39f7a4887be9be50ffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe5a141864e2f090c08c2d6b0a36eed3') in 0.012104 seconds 
+  Import took 0.020916 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_readersLamp.png
+  artifactKey: Guid(99049490f9354786b91f8fd4a250389b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_readersLamp.png using Guid(99049490f9354786b91f8fd4a250389b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0b765eb904ba2aa9cf623648e2a77e5') in 0.026868 seconds 
+  Import took 0.034512 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_bookstackMessy.png
+  artifactKey: Guid(3cb2ba8709fc3af57862734755c60894) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_bookstackMessy.png using Guid(3cb2ba8709fc3af57862734755c60894) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18e33e4f703730b4c73fcfbbaa104e6f') in 0.009822 seconds 
+  Import took 0.017019 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_lanternOff.png
+  artifactKey: Guid(e590aaa969e763bad9f472a3576c3486) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_lanternOff.png using Guid(e590aaa969e763bad9f472a3576c3486) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31e0e48fa96f6e3331ea5259369c12f1') in 0.009535 seconds 
+  Import took 0.016221 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Resources/Unsorted/Materials/Fire/mat_fire_1_normal.png
+  artifactKey: Guid(18bcad91460a6927e9c23bceb2c0f2bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Unsorted/Materials/Fire/mat_fire_1_normal.png using Guid(18bcad91460a6927e9c23bceb2c0f2bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f4893d7c60461c4e95402761f5d0cee') in 0.008926 seconds 
+  Import took 0.015049 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_tracker_repair.png
+  artifactKey: Guid(27d1e8696594da652b69a8b73ed5632f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_tracker_repair.png using Guid(27d1e8696594da652b69a8b73ed5632f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ab97507f70ee53e9ee0f61760be6402') in 0.008781 seconds 
+  Import took 0.014980 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/System/light_ray.png
+  artifactKey: Guid(18900e34cf981c9bca4a253fecae9feb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/System/light_ray.png using Guid(18900e34cf981c9bca4a253fecae9feb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0519806105fdc95f0a62b81bcca2c3fd') in 0.007564 seconds 
+  Import took 0.013841 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_screwdriver.png
+  artifactKey: Guid(ea859458ae9bf02b6bb2d0209b1db2f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_screwdriver.png using Guid(ea859458ae9bf02b6bb2d0209b1db2f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f001202938f13bb4353342f6bd863115') in 0.015860 seconds 
+  Import took 0.022247 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/System/light_directionalSun.png
+  artifactKey: Guid(f88c6ec0c70ddfee28bc951816f31dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/System/light_directionalSun.png using Guid(f88c6ec0c70ddfee28bc951816f31dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e103152d558a97e2d2387d26392347a3') in 0.009291 seconds 
+  Import took 0.015420 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/general_savePoint.png
+  artifactKey: Guid(1c6a1b52981c83e9cb448682e6469f83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/general_savePoint.png using Guid(1c6a1b52981c83e9cb448682e6469f83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c57b1b932cd710ae00441c36759925a') in 0.010878 seconds 
+  Import took 0.016868 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_bookstackTidy.png
+  artifactKey: Guid(593a458604e3ac920a02204e13a1aaea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_bookstackTidy.png using Guid(593a458604e3ac920a02204e13a1aaea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cca6f164075e41e53e1651b44a343464') in 0.010200 seconds 
+  Import took 0.016150 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_meowWakizashi.png
+  artifactKey: Guid(2f109b43c5667e3ed8d477dd5350ce2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_meowWakizashi.png using Guid(2f109b43c5667e3ed8d477dd5350ce2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76b8d310587d1e1b30aefbccd67e8207') in 0.011455 seconds 
+  Import took 0.017528 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/System/light_directionalMoon.png
+  artifactKey: Guid(0a7e70cd72981233b9ffe1935e1fd011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/System/light_directionalMoon.png using Guid(0a7e70cd72981233b9ffe1935e1fd011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59f1480917dc7f8f831956c9d3f77124') in 0.009876 seconds 
+  Import took 0.015871 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Resources/Old G9 Content/Materials/OldBH/CurBHArea.png
+  artifactKey: Guid(266c905314e24fa3b881a92c75a42228) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G9 Content/Materials/OldBH/CurBHArea.png using Guid(266c905314e24fa3b881a92c75a42228) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6694d525822c1747e249529b34a9cd3a') in 0.009916 seconds 
+  Import took 0.015972 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_trainingDummy.png
+  artifactKey: Guid(bd8da2d95e2a0eea3ba02c7a0b071160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_trainingDummy.png using Guid(bd8da2d95e2a0eea3ba02c7a0b071160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '763afd246412ab24aedaf33afb5b3f5e') in 0.008805 seconds 
+  Import took 0.014984 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_chair.png
+  artifactKey: Guid(3118bff897f9343c088c0a7f09397fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_chair.png using Guid(3118bff897f9343c088c0a7f09397fd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a404ba4c8438ef09d62a2483a2759d74') in 0.008561 seconds 
+  Import took 0.014679 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/interactable_traingate_0.png
+  artifactKey: Guid(2de953afdb9c21b07a815905aff6a7b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/interactable_traingate_0.png using Guid(2de953afdb9c21b07a815905aff6a7b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fd19dff0e5c537cb3c0d17c57ad608b') in 0.011838 seconds 
+  Import took 0.018086 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_bed.png
+  artifactKey: Guid(2805166f9582a5a4aa310a73e934f33a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_bed.png using Guid(2805166f9582a5a4aa310a73e934f33a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50eaa9ea5ec859ca21f345ffe09d489d') in 0.010129 seconds 
+  Import took 0.016280 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Resources/Old G9 Content/Materials/OldBH/CurBHArea 1.png
+  artifactKey: Guid(30a2061e758ae91ebb926701c20a6ac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G9 Content/Materials/OldBH/CurBHArea 1.png using Guid(30a2061e758ae91ebb926701c20a6ac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13930fc1a82ee4a9092d4b817dcea6db') in 0.011953 seconds 
+  Import took 0.018096 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/interactable_forestRuins_lockplate_inactive.png
+  artifactKey: Guid(2f200f11e7f1e7009906f3ac2168f5a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/interactable_forestRuins_lockplate_inactive.png using Guid(2f200f11e7f1e7009906f3ac2168f5a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af8ccc8b72ffb06f577eb51174ae53b1') in 0.008336 seconds 
+  Import took 0.014418 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/interactable_forestRuins_pushbox.png
+  artifactKey: Guid(6b09724e4cfa12450ad79bb19976fd2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/interactable_forestRuins_pushbox.png using Guid(6b09724e4cfa12450ad79bb19976fd2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '706d3ca1f571e67eece247f94a047871') in 0.010036 seconds 
+  Import took 0.016377 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_candelabraOn.png
+  artifactKey: Guid(d615db2845967ea098ce4e6b45814f2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_candelabraOn.png using Guid(d615db2845967ea098ce4e6b45814f2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd732483f6721bf6e5f68676a4fd2c0d9') in 0.009888 seconds 
+  Import took 0.016184 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_bedCovers.png
+  artifactKey: Guid(28a386df74adea30a816cc1c72ea70e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_bedCovers.png using Guid(28a386df74adea30a816cc1c72ea70e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc7484a9eb9490ce410718d8df7c3d1a') in 0.010413 seconds 
+  Import took 0.016686 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/System/light_point.png
+  artifactKey: Guid(d2b5030bfb639f373b7ac40c6d208fbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/System/light_point.png using Guid(d2b5030bfb639f373b7ac40c6d208fbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '687afd09913ca8a85e7c92dd777d239c') in 0.012131 seconds 
+  Import took 0.018510 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_inkBottle.png
+  artifactKey: Guid(a7c4f2361664f6b1c86699eec729c101) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_inkBottle.png using Guid(a7c4f2361664f6b1c86699eec729c101) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e58535e0760fc02ab94279c3a48d3696') in 0.009856 seconds 
+  Import took 0.015978 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_potion.png
+  artifactKey: Guid(acae36201e692a39eaefb0316660a00f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_potion.png using Guid(acae36201e692a39eaefb0316660a00f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b989006d6cfcacdc0f3ef733dfe7d44') in 0.010772 seconds 
+  Import took 0.017068 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/interactable_traingate_1.png
+  artifactKey: Guid(943afed5866dd20caacb7883ff10a50e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/interactable_traingate_1.png using Guid(943afed5866dd20caacb7883ff10a50e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13051e04c4c47be2e53bf568cc5c6e1f') in 0.010854 seconds 
+  Import took 0.017063 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_bokken.png
+  artifactKey: Guid(eb0b242ad00946d9bb7d8fd643de2a2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_bokken.png using Guid(eb0b242ad00946d9bb7d8fd643de2a2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ebd4f9151a17128d765d20410217b0d') in 0.009470 seconds 
+  Import took 0.015609 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/interactable_forestRuins_lockplate_active.png
+  artifactKey: Guid(930f92b8dcb8c5b7793125a49536bdca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/interactable_forestRuins_lockplate_active.png using Guid(930f92b8dcb8c5b7793125a49536bdca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2aaf3a4ce99a438d1f750f6345911dd0') in 0.009495 seconds 
+  Import took 0.015643 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_bell.png
+  artifactKey: Guid(a4c24342284db897ebda4de8a5e187df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_bell.png using Guid(a4c24342284db897ebda4de8a5e187df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2292aeb215f629116728c5ac56392bf5') in 0.009642 seconds 
+  Import took 0.015778 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_dragonStaff.png
+  artifactKey: Guid(d9a4e1f423fe36130b9bf9227094c43e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_dragonStaff.png using Guid(d9a4e1f423fe36130b9bf9227094c43e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0aa039fff44768ac250776e8fa39b8f4') in 0.011461 seconds 
+  Import took 0.017738 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_confusingStoryJunk.png
+  artifactKey: Guid(882c4fe18a3673ab2bafc59a7b58147e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_confusingStoryJunk.png using Guid(882c4fe18a3673ab2bafc59a7b58147e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fd2a510e0317b914532455b058a4c07') in 0.011257 seconds 
+  Import took 0.017469 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000505 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/System/light_flame.png
+  artifactKey: Guid(9bee04021683ffad9a887c8afbb1d8f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/System/light_flame.png using Guid(9bee04021683ffad9a887c8afbb1d8f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4212280541d07c7cc2182206be2fa484') in 0.010712 seconds 
+  Import took 0.017032 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_screws.png
+  artifactKey: Guid(182f04089f89c6f548b5ae122f786ed9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_screws.png using Guid(182f04089f89c6f548b5ae122f786ed9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f62aebf410aaad11f04a4e6f42101cb') in 0.012303 seconds 
+  Import took 0.018353 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/general_doorShadow.png
+  artifactKey: Guid(7128709259ac384d6b414a2413b8a7ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/general_doorShadow.png using Guid(7128709259ac384d6b414a2413b8a7ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8bcdac0c6253e6da5f45b91421f8ec7') in 0.010287 seconds 
+  Import took 0.016278 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_sheild.png
+  artifactKey: Guid(15dbbbe5bc3df807392b60fa542d38e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_sheild.png using Guid(15dbbbe5bc3df807392b60fa542d38e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73f90d1ac4f16ca9143430d18d2cce9f') in 0.010808 seconds 
+  Import took 0.016956 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_potionLarge.png
+  artifactKey: Guid(87b6326953dc0f330b5e89440414116d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_potionLarge.png using Guid(87b6326953dc0f330b5e89440414116d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa216370ad3770098cb1174101e47f85') in 0.012852 seconds 
+  Import took 0.018963 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_wardStaff.png
+  artifactKey: Guid(23d385e91ec32ed428be40a1e8c59651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_wardStaff.png using Guid(23d385e91ec32ed428be40a1e8c59651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd32304787e309820e44762a2d7cd17e4') in 0.012156 seconds 
+  Import took 0.018365 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/interactable_traingate_2.png
+  artifactKey: Guid(6530f80c9b31fbe68a098db65513dbb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/interactable_traingate_2.png using Guid(6530f80c9b31fbe68a098db65513dbb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d6e4b555efc3e811132cb6b29321260') in 0.012281 seconds 
+  Import took 0.018542 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_potionSmall.png
+  artifactKey: Guid(1760370f65ccaf2f2b1bad18bb6be169) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_potionSmall.png using Guid(1760370f65ccaf2f2b1bad18bb6be169) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbd12080afe34764c336de89c77f6a5b') in 0.011334 seconds 
+  Import took 0.018034 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_shortRapier.png
+  artifactKey: Guid(f9cd6916191b1e160b4e53e8f433b468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_shortRapier.png using Guid(f9cd6916191b1e160b4e53e8f433b468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c2ad451b484c8d9073fe52efc15ba57') in 0.010157 seconds 
+  Import took 0.016949 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_candelabraOff.png
+  artifactKey: Guid(a54d0f8449a560ababbe2eba7be012c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_candelabraOff.png using Guid(a54d0f8449a560ababbe2eba7be012c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6787c2557e9d1637e94006addbbaed7') in 0.010773 seconds 
+  Import took 0.017207 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/decoration_train_seat.png
+  artifactKey: Guid(a23164eaa00ce70a6846851d3300220e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/decoration_train_seat.png using Guid(a23164eaa00ce70a6846851d3300220e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79ad15dfdb851a8e475b85bca1b585d1') in 0.010470 seconds 
+  Import took 0.016691 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_sword.png
+  artifactKey: Guid(40e65b23310cc4af5b27860e0d970ed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_sword.png using Guid(40e65b23310cc4af5b27860e0d970ed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1cc3bf9e2f80796cb51e1824ed74eaa') in 0.010215 seconds 
+  Import took 0.018216 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/decoration_forestRuins_banner.png
+  artifactKey: Guid(ed0983fc685fa38efbe80bc3275475b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/decoration_forestRuins_banner.png using Guid(ed0983fc685fa38efbe80bc3275475b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aab9e5c74ed74b4f020a9f32e18c8ed2') in 0.012036 seconds 
+  Import took 0.018123 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_bokkenSheath.png
+  artifactKey: Guid(e9e72d511d06f8ca4b9376701afb912b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/decoration_howelfen_bokkenSheath.png using Guid(e9e72d511d06f8ca4b9376701afb912b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c095b6721befe9255e4646e254acc02d') in 0.009566 seconds 
+  Import took 0.015575 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/System/light_directional.png
+  artifactKey: Guid(496e301307f22b13dbe66b90f41ba991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/System/light_directional.png using Guid(496e301307f22b13dbe66b90f41ba991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e279b7255749fdb7bcb4c819aebfbbe') in 0.010501 seconds 
+  Import took 0.016570 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.781680 seconds.
+  path: Assets/Resources/Unsorted/Materials/Fire/mat_fire_1_normal 1.png
+  artifactKey: Guid(e1f2ba688a705c9f7ad0842c1576df20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Unsorted/Materials/Fire/mat_fire_1_normal 1.png using Guid(e1f2ba688a705c9f7ad0842c1576df20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcdec40a8b8ce62221767c733ad40322') in 0.018937 seconds 
+  Import took 0.026788 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Resources/Old G9 Content/Materials/Stylized Water/noiseTexture.png
+  artifactKey: Guid(ba8851227eeab347ea4bac1cb9ff04e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G9 Content/Materials/Stylized Water/noiseTexture.png using Guid(ba8851227eeab347ea4bac1cb9ff04e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd9017da0aa33cec4956bde3599a0942') in 0.013462 seconds 
+  Import took 0.019908 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.019101 seconds.
+  path: Assets/Resources/Old G9 Content/Materials/Stylized Water/s_water.png
+  artifactKey: Guid(62af4ac1e5e72dd04ba4c7334ad364cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G9 Content/Materials/Stylized Water/s_water.png using Guid(62af4ac1e5e72dd04ba4c7334ad364cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c80b818f55eed6e4fc9ddca8c8e40301') in 0.015766 seconds 
+  Import took 0.025697 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.347528 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_cave_bords_1.png
+  artifactKey: Guid(15cce6d426974cfaa9e547d082c72512) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_cave_bords_1.png using Guid(15cce6d426974cfaa9e547d082c72512) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd87d472994215500364ff8ae679d92e') in 0.015094 seconds 
+  Import took 0.025345 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_forestRuins_shrine.png
+  artifactKey: Guid(f34bec1190e53071e97193cf2830424a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_forestRuins_shrine.png using Guid(f34bec1190e53071e97193cf2830424a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9379726cdc736a8bd328bf4272511da8') in 0.016955 seconds 
+  Import took 0.026107 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_forestRuins_collapsedDebri.png
+  artifactKey: Guid(93340e2a70951a9c3aeced091329dc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_forestRuins_collapsedDebri.png using Guid(93340e2a70951a9c3aeced091329dc13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '095721bb8145820971a7bcf47905fa83') in 0.021116 seconds 
+  Import took 0.029852 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_cave_bords_2.png
+  artifactKey: Guid(b9f87e037de8b3404844902ac05c1095) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_cave_bords_2.png using Guid(b9f87e037de8b3404844902ac05c1095) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c831a1f52074c5ba8873a5731a7caaf9') in 0.013737 seconds 
+  Import took 0.021115 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_forestRuins_headge.png
+  artifactKey: Guid(162df6c6578cdaa5298a05ff72149c76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_forestRuins_headge.png using Guid(162df6c6578cdaa5298a05ff72149c76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb7cfe270b08d0117689a017de88989f') in 0.010615 seconds 
+  Import took 0.016894 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_cave_rope_2.png
+  artifactKey: Guid(528b4529b006c39d8b3f7fad552f8255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_cave_rope_2.png using Guid(528b4529b006c39d8b3f7fad552f8255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20287fc4c0315e65bd3ece4c4aef372e') in 0.011377 seconds 
+  Import took 0.017466 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_forestRuins_dungeonDoor_open.png
+  artifactKey: Guid(cf4e687d49d7648408b542a459d824f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_forestRuins_dungeonDoor_open.png using Guid(cf4e687d49d7648408b542a459d824f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e12bd8a397fb3a60d98c9ac3e60fe99b') in 0.010873 seconds 
+  Import took 0.017012 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_houseOpen_doormask.png
+  artifactKey: Guid(fe6c7bca326e7d374a72c79bb2c39925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_houseOpen_doormask.png using Guid(fe6c7bca326e7d374a72c79bb2c39925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34dc70f7d585db8ffe6b2de72456e688') in 0.011094 seconds 
+  Import took 0.017497 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_castle_doorMask.png
+  artifactKey: Guid(3b184a15446e60e489eec8734c2a5af7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_castle_doorMask.png using Guid(3b184a15446e60e489eec8734c2a5af7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '483053db484ff7c91152265374402b09') in 0.011320 seconds 
+  Import took 0.017659 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_houseClosed.png
+  artifactKey: Guid(15ad27744fb4c5104bb9bbc0acfd5723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_houseClosed.png using Guid(15ad27744fb4c5104bb9bbc0acfd5723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '631bb5ba8c5e0efad9d00c02e58e2d26') in 0.011787 seconds 
+  Import took 0.018123 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_train_tireholds.png
+  artifactKey: Guid(f56dea1a40937e64dbe109d38f2c3a87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_train_tireholds.png using Guid(f56dea1a40937e64dbe109d38f2c3a87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27f3f5b1872e4abfacdb50fcc7fb549b') in 0.010615 seconds 
+  Import took 0.016889 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000392 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_shopMagic.png
+  artifactKey: Guid(9075b7ccfa92f72428064e59bbc74633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_shopMagic.png using Guid(9075b7ccfa92f72428064e59bbc74633) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dff55b8e345d5cb388bbe0a48d598e78') in 0.011822 seconds 
+  Import took 0.018257 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_fountainOn_5.png
+  artifactKey: Guid(6bad1c407d1f30bb5a965be02cb1cbe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_fountainOn_5.png using Guid(6bad1c407d1f30bb5a965be02cb1cbe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffdc6f4a490e4757b981caad9c727d70') in 0.011913 seconds 
+  Import took 0.018089 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_shopCombat_doormask.png
+  artifactKey: Guid(3f22b90005d59efa798f8e11747cf7b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_shopCombat_doormask.png using Guid(3f22b90005d59efa798f8e11747cf7b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05e8ff6c6a27d4e204a94dff01f3f24b') in 0.012327 seconds 
+  Import took 0.018423 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_deskVertical 2.png
+  artifactKey: Guid(ae0f7467fdf015529bb6bb1867d26d92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_deskVertical 2.png using Guid(ae0f7467fdf015529bb6bb1867d26d92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1eb443379326767c559229f07b3af8c') in 0.011504 seconds 
+  Import took 0.017528 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_gateClosed 2.png
+  artifactKey: Guid(9243d7f4c241e9e1585047eb9520c79a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_gateClosed 2.png using Guid(9243d7f4c241e9e1585047eb9520c79a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cc9bbeaa289e2ef30f8298a22a08f26') in 0.010629 seconds 
+  Import took 0.016744 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_castle.png
+  artifactKey: Guid(7691e7b6ab1256f6192be78fc955c5cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_castle.png using Guid(7691e7b6ab1256f6192be78fc955c5cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '237199eaeae90257a895286b74721f04') in 0.015038 seconds 
+  Import took 0.021263 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_houseOpen.png
+  artifactKey: Guid(a71cefc9fd9ad5f7d856b1e56d8014ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_houseOpen.png using Guid(a71cefc9fd9ad5f7d856b1e56d8014ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e3c66898d0819f520ff7bb84dc3a879') in 0.010776 seconds 
+  Import took 0.016999 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_fountainOn_1.png
+  artifactKey: Guid(12bdae848ef364cb093d7b010cb581fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_fountainOn_1.png using Guid(12bdae848ef364cb093d7b010cb581fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3719628009f81c9a44d8facdc22c7681') in 0.010997 seconds 
+  Import took 0.017397 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_train_pipes_0.png
+  artifactKey: Guid(c0af7f8ab3d87cbd683149bda1d7e96b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_train_pipes_0.png using Guid(c0af7f8ab3d87cbd683149bda1d7e96b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f8d9108a815d337aac7e70097e2e271') in 0.012366 seconds 
+  Import took 0.018565 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_gateClosed 1.png
+  artifactKey: Guid(7ac43652afadf5168b3afabac8cde6ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_gateClosed 1.png using Guid(7ac43652afadf5168b3afabac8cde6ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5d87841af0e743c1cc7ec3608f42b72') in 0.011980 seconds 
+  Import took 0.018135 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_fountainOn_4.png
+  artifactKey: Guid(1ebb4e3afae280efe9c77ee8ba24c728) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_fountainOn_4.png using Guid(1ebb4e3afae280efe9c77ee8ba24c728) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a9086c77012b3392bb2cf1669d6e646') in 0.011484 seconds 
+  Import took 0.017674 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_lampOn.png
+  artifactKey: Guid(f52aa52189aeb4b559aba524cfe11fca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_lampOn.png using Guid(f52aa52189aeb4b559aba524cfe11fca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5a9708c32674a686ea77eae76dae084') in 0.011369 seconds 
+  Import took 0.017585 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_gateOpen.png
+  artifactKey: Guid(815a0fd1c354337e3876e35fdda0681c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_gateOpen.png using Guid(815a0fd1c354337e3876e35fdda0681c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5d5235386d5fe0cef7d9fc0a32464d7') in 0.011064 seconds 
+  Import took 0.017184 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_shopMagic_doormask.png
+  artifactKey: Guid(9319d92634274072da001cc7b68925a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_shopMagic_doormask.png using Guid(9319d92634274072da001cc7b68925a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '019c8168d5d87f2878186a7950ebcdb4') in 0.010063 seconds 
+  Import took 0.016241 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_lampOff.png
+  artifactKey: Guid(8856e02ce92ec4e27bbe3568b81b9c3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_lampOff.png using Guid(8856e02ce92ec4e27bbe3568b81b9c3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76252e86cafd76a5e5114d5e9d5e9acc') in 0.010296 seconds 
+  Import took 0.016763 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_deskHorizontal.png
+  artifactKey: Guid(b32f62f566105a4cb936ba3f3cde1daa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_deskHorizontal.png using Guid(b32f62f566105a4cb936ba3f3cde1daa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd70adc038364c6795e8670bcd0c843fe') in 0.012575 seconds 
+  Import took 0.018618 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_cave_post.png
+  artifactKey: Guid(72e3304437e458c33bf2dde4d5537593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_cave_post.png using Guid(72e3304437e458c33bf2dde4d5537593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74f055e8e580fe154923054cb821cbdb') in 0.011058 seconds 
+  Import took 0.017170 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_library.png
+  artifactKey: Guid(78b2403e8ffd4e00ba48450d4ea934c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_library.png using Guid(78b2403e8ffd4e00ba48450d4ea934c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '775417120ade6499a797848c567cb8e8') in 0.012341 seconds 
+  Import took 0.019057 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_fountainOn_3.png
+  artifactKey: Guid(a78b433a20021b4d2a2ce8601503515a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_fountainOn_3.png using Guid(a78b433a20021b4d2a2ce8601503515a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4859e14b0d2784d50c1ee1cfe4cd169d') in 0.012139 seconds 
+  Import took 0.018249 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_forestRuins_fountainOld.png
+  artifactKey: Guid(42c9b2483f843a85aa830e2af129c587) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_forestRuins_fountainOld.png using Guid(42c9b2483f843a85aa830e2af129c587) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3546c87f8abe34640c331c40eb1b2560') in 0.012588 seconds 
+  Import took 0.018784 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_train_pillar.png
+  artifactKey: Guid(e50836e78016b48239e472a3c72f4fac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_train_pillar.png using Guid(e50836e78016b48239e472a3c72f4fac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a51ab79da1301dd5b5f7cf8e775c9688') in 0.011972 seconds 
+  Import took 0.018121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_train_wires.png
+  artifactKey: Guid(d9ff86fad6cd830d1a752ed672ce03b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_train_wires.png using Guid(d9ff86fad6cd830d1a752ed672ce03b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0e85ffcd1fa7aca96b7d73f580ff3ce') in 0.011458 seconds 
+  Import took 0.017672 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_deskVertical 1.png
+  artifactKey: Guid(b7012a4658099b023950c5d6ea2d08e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_deskVertical 1.png using Guid(b7012a4658099b023950c5d6ea2d08e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09693e033ca4254b3f19ec856c125dc7') in 0.009909 seconds 
+  Import took 0.016253 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000312 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_library_doormask.png
+  artifactKey: Guid(ab6c101e36e612358a8e816747e9e37a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_library_doormask.png using Guid(ab6c101e36e612358a8e816747e9e37a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '745a9fcfd428ed07e13d32255d466e6e') in 0.010281 seconds 
+  Import took 0.016685 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_gateClosed.png
+  artifactKey: Guid(31b47f5104adbe4a8b1e015968fc0f2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_gateClosed.png using Guid(31b47f5104adbe4a8b1e015968fc0f2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d2cb9a4ea46200e0debba7c9ae72639') in 0.009998 seconds 
+  Import took 0.016252 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_fountainOn_6.png
+  artifactKey: Guid(9c862a463c0ab80c6b106d565446a3be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_fountainOn_6.png using Guid(9c862a463c0ab80c6b106d565446a3be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7184b94bf79991e6c64a0ce73b3699e') in 0.012520 seconds 
+  Import took 0.018872 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_forestRuins_pillarParalax.png
+  artifactKey: Guid(2360f8d1a245c6dd8adec3a43a6d5257) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_forestRuins_pillarParalax.png using Guid(2360f8d1a245c6dd8adec3a43a6d5257) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05c4468505b52c5f03a433d6d010fb69') in 0.013153 seconds 
+  Import took 0.019314 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_shopCombat.png
+  artifactKey: Guid(8f8d9de84cdc4e8afa571ecdd60452c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_shopCombat.png using Guid(8f8d9de84cdc4e8afa571ecdd60452c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cbc858c28e0ed5e06355f2ced6378cf') in 0.010688 seconds 
+  Import took 0.016686 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_deskVertical.png
+  artifactKey: Guid(42e775e60cc9031bea0a32049e0d9c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_deskVertical.png using Guid(42e775e60cc9031bea0a32049e0d9c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '408eb41a9ffb60954db56cf9e323080e') in 0.010080 seconds 
+  Import took 0.016118 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_cave_rope_1.png
+  artifactKey: Guid(6b3598cba17be1ddc89811168d6ae1fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_cave_rope_1.png using Guid(6b3598cba17be1ddc89811168d6ae1fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f4c62d09c9c43c5a4386f6cd34e4d73') in 0.010043 seconds 
+  Import took 0.016171 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_train_pipes_1.png
+  artifactKey: Guid(bef2bcc31144f7c319e90de7bc812c80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_train_pipes_1.png using Guid(bef2bcc31144f7c319e90de7bc812c80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d4e2b964eeb41e579fff9f3fce86012') in 0.012378 seconds 
+  Import took 0.018425 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_forestRuins_pillar.png
+  artifactKey: Guid(42edad2fbdaa57d6a85396ed8d4d0893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_forestRuins_pillar.png using Guid(42edad2fbdaa57d6a85396ed8d4d0893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95151f4f275615b0dcce82b1e3356fdb') in 0.010725 seconds 
+  Import took 0.016960 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_train.png
+  artifactKey: Guid(d3bdd7586f94e2a588c48156b0edd565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_train.png using Guid(d3bdd7586f94e2a588c48156b0edd565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95803b3420a51deede09d20317eabca3') in 0.011957 seconds 
+  Import took 0.018130 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_forestRuins_bookcaseSide.png
+  artifactKey: Guid(453f16d7823c3021884512519be2477f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_forestRuins_bookcaseSide.png using Guid(453f16d7823c3021884512519be2477f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff4608a9f2e0954c579b629b1b7d2ede') in 0.010554 seconds 
+  Import took 0.016769 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_forestRuins_dungeonDoor_locked.png
+  artifactKey: Guid(9b0132eb44cfdb07397dad4dda496817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_forestRuins_dungeonDoor_locked.png using Guid(9b0132eb44cfdb07397dad4dda496817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '894a7b332e084ebeba6e1655ae6ea4b5') in 0.010928 seconds 
+  Import took 0.016972 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_forestRuins_shrinepitfall.png
+  artifactKey: Guid(589230fec2342d49da2f24cf556e777e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_forestRuins_shrinepitfall.png using Guid(589230fec2342d49da2f24cf556e777e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8439abd0fd5a25febc8d7665ba7a5559') in 0.011555 seconds 
+  Import took 0.017785 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_fountainOn_2.png
+  artifactKey: Guid(1d6a531f06e710c73ad0082d86a8b6ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Level/structure_howelfen_fountainOn_2.png using Guid(1d6a531f06e710c73ad0082d86a8b6ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '529bbb7c87468ec899ed5cc050971bc7') in 0.011001 seconds 
+  Import took 0.017402 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.609180 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_character_fox_idle.png
+  artifactKey: Guid(89bc5ba76cd1932088ec4f9ce470886a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_character_fox_idle.png using Guid(89bc5ba76cd1932088ec4f9ce470886a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1f9b439d553684c005eb58a1f059baf') in 0.011061 seconds 
+  Import took 0.019292 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.541599 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_character_miyu_idle.png
+  artifactKey: Guid(7dedf03d075ce479c885b059395bd886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_character_miyu_idle.png using Guid(7dedf03d075ce479c885b059395bd886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32b8a1a5df43bdfa5dea2cde68710b1e') in 0.011581 seconds 
+  Import took 0.019630 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.879943 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_character_sam_1_idle.png
+  artifactKey: Guid(ab9c2af49ce843e75b2b7f79d4e56d6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_character_sam_1_idle.png using Guid(ab9c2af49ce843e75b2b7f79d4e56d6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9fd91f32e4c7be337cd217fa3f7bfaa') in 0.017193 seconds 
+  Import took 0.026839 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.806742 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_character_sam_0_idle.png
+  artifactKey: Guid(432b06f87d728f5578550bf7a4840fb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_character_sam_0_idle.png using Guid(432b06f87d728f5578550bf7a4840fb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88dd3cbf38fe80550ef5828256a15e4e') in 0.014420 seconds 
+  Import took 0.024281 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.628855 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_entity_barley_idle.png
+  artifactKey: Guid(ba8c69837e61ebedcb4f178e67842139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_entity_barley_idle.png using Guid(ba8c69837e61ebedcb4f178e67842139) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '762727b9e5728dd205440a44bd28301f') in 0.015365 seconds 
+  Import took 0.025231 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.690829 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_character_casey_2_idle.png
+  artifactKey: Guid(3cd0f7ed568e60e4db5b661bbdc176a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_character_casey_2_idle.png using Guid(3cd0f7ed568e60e4db5b661bbdc176a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d81dc33bd4afb0ff913afb26cfa24e1') in 0.015224 seconds 
+  Import took 0.024956 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.631960 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_character_casey_1_idle.png
+  artifactKey: Guid(149105c2e699c6553a10721d89e5493e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_character_casey_1_idle.png using Guid(149105c2e699c6553a10721d89e5493e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6d82f7199e33b67d6f90e960c8bd7a3') in 0.014777 seconds 
+  Import took 0.024757 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.201351 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_character_fox_1_idle.png
+  artifactKey: Guid(89bc5ba76cd1932088ec4f9ce470886a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_character_fox_1_idle.png using Guid(89bc5ba76cd1932088ec4f9ce470886a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '699005723498b2d6a0cf007451d3ee35') in 0.015433 seconds 
+  Import took 0.025067 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.862184 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_character_miyu_1_idle.png
+  artifactKey: Guid(7dedf03d075ce479c885b059395bd886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_character_miyu_1_idle.png using Guid(7dedf03d075ce479c885b059395bd886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '139f4364008000ac2441e0fb1c0f9fd4') in 0.017425 seconds 
+  Import took 0.027301 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.761526 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_character_sam_idle.png
+  artifactKey: Guid(432b06f87d728f5578550bf7a4840fb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_character_sam_idle.png using Guid(432b06f87d728f5578550bf7a4840fb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ac7ee79a1e87a0083b1fbbf610d6699') in 0.016052 seconds 
+  Import took 0.025947 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.857907 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_character_sam_1idle.png
+  artifactKey: Guid(432b06f87d728f5578550bf7a4840fb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_character_sam_1idle.png using Guid(432b06f87d728f5578550bf7a4840fb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1f0a7079ad1097baa0bb99c51aaf32e') in 0.016412 seconds 
+  Import took 0.026249 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.126839 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_character_sam_2_idle.png
+  artifactKey: Guid(ab9c2af49ce843e75b2b7f79d4e56d6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_character_sam_2_idle.png using Guid(ab9c2af49ce843e75b2b7f79d4e56d6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70ce15cfe12496f97654f2116f6f33af') in 0.014917 seconds 
+  Import took 0.024517 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.184016 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_character_sam_1_idle.png
+  artifactKey: Guid(432b06f87d728f5578550bf7a4840fb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_character_sam_1_idle.png using Guid(432b06f87d728f5578550bf7a4840fb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30e4b8b310fc018e626fb1a14af6e625') in 0.015021 seconds 
+  Import took 0.024735 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.818833 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_entity_deskDemon_idle.png
+  artifactKey: Guid(05ae7e056948d511685499c56f55dd64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_entity_deskDemon_idle.png using Guid(05ae7e056948d511685499c56f55dd64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20ef2ad80504c8de6e9f7a11695a93c9') in 0.015652 seconds 
+  Import took 0.025526 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.617566 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_entity_dragonLord_idle.png
+  artifactKey: Guid(22a70327547b14c41b2ce9bb62577f1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_entity_dragonLord_idle.png using Guid(22a70327547b14c41b2ce9bb62577f1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '247cfb3d120e837340b7dc0eed23285b') in 0.015665 seconds 
+  Import took 0.025667 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.787804 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_entity_librarian_idle.png
+  artifactKey: Guid(fe6831ad6392e4861a9124138fced3ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_entity_librarian_idle.png using Guid(fe6831ad6392e4861a9124138fced3ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fef4e5a4f048952cc24c5bd9cea86557') in 0.014322 seconds 
+  Import took 0.024040 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.324570 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_entity_margo_idle.png
+  artifactKey: Guid(f291f4d1f4d38633a8fffd45f1c5f855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Portraits/portrait_entity_margo_idle.png using Guid(f291f4d1f4d38633a8fffd45f1c5f855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af1422d330e01d81c4e659d19ae69a77') in 0.015151 seconds 
+  Import took 0.024803 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 53.680891 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Triggers/trigger_collsion.png
+  artifactKey: Guid(9bdf5e93b068ea90db7ece05ccbb0a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Triggers/trigger_collsion.png using Guid(9bdf5e93b068ea90db7ece05ccbb0a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e2ca083ceb431e9d91b0186bf3ad823') in 0.013314 seconds 
+  Import took 0.023164 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.367289 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Triggers/trigger_effectForce.png
+  artifactKey: Guid(a0864e3be4af196f098261da22861dd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Triggers/trigger_effectForce.png using Guid(a0864e3be4af196f098261da22861dd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faf3ce4013d45a3e128047d803253eea') in 0.015028 seconds 
+  Import took 0.024845 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.216275 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Triggers/trigger_effectforce.png
+  artifactKey: Guid(a0864e3be4af196f098261da22861dd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Triggers/trigger_effectforce.png using Guid(a0864e3be4af196f098261da22861dd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cb37e714fc035282a9b33637174368f') in 0.021261 seconds 
+  Import took 0.031129 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.901396 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Triggers/trigger_effectvolume.png
+  artifactKey: Guid(398c39b018ec1d3648b850c1c598dddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Triggers/trigger_effectvolume.png using Guid(398c39b018ec1d3648b850c1c598dddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f49ed4de7533820595c6f6871d8ef6e2') in 0.021788 seconds 
+  Import took 0.031839 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.811138 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Triggers/trigger_warpEnter.png
+  artifactKey: Guid(51f03e834f0fca042a999a5872b59cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Triggers/trigger_warpEnter.png using Guid(51f03e834f0fca042a999a5872b59cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2240beeacde9b01f8873fb9a877d4f3') in 0.013371 seconds 
+  Import took 0.023245 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.820784 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Triggers/trigger_partiesPlus.png
+  artifactKey: Guid(0d6e6119d263b248db8f4e4143f5e38c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Triggers/trigger_partiesPlus.png using Guid(0d6e6119d263b248db8f4e4143f5e38c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cb2496e8a2ce0e5239551ac89ec44ee') in 0.013896 seconds 
+  Import took 0.023737 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.655233 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Triggers/trigger_partiesplus.png
+  artifactKey: Guid(0d6e6119d263b248db8f4e4143f5e38c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Triggers/trigger_partiesplus.png using Guid(0d6e6119d263b248db8f4e4143f5e38c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc98ac8ed51374670b928428bc62af09') in 0.014952 seconds 
+  Import took 0.024690 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.147442 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Triggers/trigger_savepoint.png
+  artifactKey: Guid(1f28fa4cecb68a4a497d7c24ccb50ea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Triggers/trigger_savepoint.png using Guid(1f28fa4cecb68a4a497d7c24ccb50ea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1ae1309d30073389fae757c7e3e1d74') in 0.013984 seconds 
+  Import took 0.023912 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.894275 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Triggers/trigger_warpenter.png
+  artifactKey: Guid(51f03e834f0fca042a999a5872b59cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Triggers/trigger_warpenter.png using Guid(51f03e834f0fca042a999a5872b59cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '886499947755dc1604aa9c8a2852a822') in 0.014904 seconds 
+  Import took 0.024812 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.334599 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Triggers/trigger_warpExit.png
+  artifactKey: Guid(cf0bfeb309618edf58433be2bf5a2630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Triggers/trigger_warpExit.png using Guid(cf0bfeb309618edf58433be2bf5a2630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '551a690b815b8ba5acaa9c6b6f3e12a3') in 0.012480 seconds 
+  Import took 0.022328 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.335385 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Triggers/trigger_warpexit.png
+  artifactKey: Guid(cf0bfeb309618edf58433be2bf5a2630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Triggers/trigger_warpexit.png using Guid(cf0bfeb309618edf58433be2bf5a2630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea5f79e1fc4089cf8a26f8ca09b13291') in 0.012877 seconds 
+  Import took 0.022852 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 56.290595 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Menus & Hud/battle_activebattlezone.png
+  artifactKey: Guid(654ae1e3931dbd6c7822f64a7d298815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Menus & Hud/battle_activebattlezone.png using Guid(654ae1e3931dbd6c7822f64a7d298815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49509ec2f294c77bc513a7ac11d01641') in 0.015597 seconds 
+  Import took 0.025653 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.140962 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Menus & Hud/battle_actionbox.png
+  artifactKey: Guid(c1fb3e44ac06fd641ac6d2c6c7c744e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Menus & Hud/battle_actionbox.png using Guid(c1fb3e44ac06fd641ac6d2c6c7c744e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '420cccecf952e111e32cb95a94e08d52') in 0.014341 seconds 
+  Import took 0.024568 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.664656 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Menus & Hud/ui_hud_shelf.png
+  artifactKey: Guid(07ff61373d6ab9c6085e4e61723ced1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Menus & Hud/ui_hud_shelf.png using Guid(07ff61373d6ab9c6085e4e61723ced1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f260e5e76a6a3fa02ca3d89c312ee1d') in 0.022527 seconds 
+  Import took 0.031394 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.941909 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Menus & Hud/ui_hud_shelf_casey.png
+  artifactKey: Guid(8d11a9717b263bd97974a9194943d530) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Menus & Hud/ui_hud_shelf_casey.png using Guid(8d11a9717b263bd97974a9194943d530) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '565caf3d3516fe3c01ede72c62490d49') in 0.012724 seconds 
+  Import took 0.022559 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.197469 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Menus & Hud/ui_hud_shelf_fox.png
+  artifactKey: Guid(f45cb904eef2169e5bf96522ab54be32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Menus & Hud/ui_hud_shelf_fox.png using Guid(f45cb904eef2169e5bf96522ab54be32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '691158adda6807ee1491b72fc479697b') in 0.016113 seconds 
+  Import took 0.025977 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.831236 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Menus & Hud/ui_hud_shelf_miyu.png
+  artifactKey: Guid(025a684d695bcdd9fa9436e6854f0708) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Menus & Hud/ui_hud_shelf_miyu.png using Guid(025a684d695bcdd9fa9436e6854f0708) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9735cd4e0ec5b50fdc64913f323ed0b8') in 0.015969 seconds 
+  Import took 0.025992 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.284230 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Menus & Hud/ui_hud_shelf_sam.png
+  artifactKey: Guid(6f1fe84ca059e22c7a2ddc18edfaedb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Menus & Hud/ui_hud_shelf_sam.png using Guid(6f1fe84ca059e22c7a2ddc18edfaedb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '839f54b0d3759f04eedf418e08f6f982') in 0.016055 seconds 
+  Import took 0.025936 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.681326 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Menus & Hud/ui_textbox.png
+  artifactKey: Guid(ea3c3873183aae79786f19d233a2d41e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Menus & Hud/ui_textbox.png using Guid(ea3c3873183aae79786f19d233a2d41e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f63930d293068e31ddc0ed2607f0c61') in 0.013692 seconds 
+  Import took 0.023475 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.193374 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Menus & Hud/ui_hud_shelf_empty.png
+  artifactKey: Guid(6a675df401c5e1bbf9024af536a3f512) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Menus & Hud/ui_hud_shelf_empty.png using Guid(6a675df401c5e1bbf9024af536a3f512) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aff2ef9825ff60b0285085fe71ce6fc9') in 0.013091 seconds 
+  Import took 0.023029 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.251680 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Menus & Hud/battle_background_1.png
+  artifactKey: Guid(e1a46d09405eab8cb831b92a2e9c2b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Menus & Hud/battle_background_1.png using Guid(e1a46d09405eab8cb831b92a2e9c2b15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8949e312b1fed0de765ee7e6586bfc0') in 0.014297 seconds 
+  Import took 0.024183 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.270804 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Menus & Hud/title_controls_1.png
+  artifactKey: Guid(82c914d5fa8da74a6881e3cedfeb712c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Menus & Hud/title_controls_1.png using Guid(82c914d5fa8da74a6881e3cedfeb712c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f331da8500dbc193e6034788cb31b31') in 0.015103 seconds 
+  Import took 0.024942 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.278377 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Menus & Hud/title_controls_2.png
+  artifactKey: Guid(7a83214a66bce6d48bde100ad2371086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Menus & Hud/title_controls_2.png using Guid(7a83214a66bce6d48bde100ad2371086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e07940927ba6508f2e58bcd4b7b90de3') in 0.013794 seconds 
+  Import took 0.023777 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 46.760009 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Menus & Hud/ui_inventory_slot_1.png
+  artifactKey: Guid(d9f78c2cfb89f15998a40ce0c93b8aee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Menus & Hud/ui_inventory_slot_1.png using Guid(d9f78c2cfb89f15998a40ce0c93b8aee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b413c38fc1888e76b5448aa271e18113') in 0.018089 seconds 
+  Import took 0.028089 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.013818 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Menus & Hud/ui_inventory_slot_2.png
+  artifactKey: Guid(b483d562db30355569e5fbec76598a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Menus & Hud/ui_inventory_slot_2.png using Guid(b483d562db30355569e5fbec76598a50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '953788ff4dbb5700c8c0412bf836cc6c') in 0.012379 seconds 
+  Import took 0.022355 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.031310 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Menus & Hud/ui_inventory_slot_3.png
+  artifactKey: Guid(34d0d1f6f7abea601a8223a082e4da1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Menus & Hud/ui_inventory_slot_3.png using Guid(34d0d1f6f7abea601a8223a082e4da1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e079531b1870defa41ab3de686b9f646') in 0.012758 seconds 
+  Import took 0.022624 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.804629 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Menus & Hud/ui_inventory.png
+  artifactKey: Guid(386123c587074d98f8cd0bb8aec06cc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Menus & Hud/ui_inventory.png using Guid(386123c587074d98f8cd0bb8aec06cc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f763ff16b00f094ddaf9ed2daf483ea') in 0.014920 seconds 
+  Import took 0.024844 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.732915 seconds.
+  path: Assets/Resources/Old G10 Content/Sprites/Menus & Hud/ui_hud_shelf_fox_2.png
+  artifactKey: Guid(11ddb1f50faa45f2890ac5e9f99ccec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Old G10 Content/Sprites/Menus & Hud/ui_hud_shelf_fox_2.png using Guid(11ddb1f50faa45f2890ac5e9f99ccec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3059fbb6554aeed460bb8886c32a7f99') in 0.013513 seconds 
+  Import took 0.023327 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 110.120468 seconds.
+  path: Assets/Resources/Tilesets/AutumnForest Cave
+  artifactKey: Guid(5425feb9df9681ce4800433e695cad97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Tilesets/AutumnForest Cave using Guid(5425feb9df9681ce4800433e695cad97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ae17947ff4563f9e7afab8521519b44') in 0.001395 seconds 
+  Import took 0.011058 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.223340 seconds.
+  path: Assets/Resources/Tilesets/AutumnForest Outdoors
+  artifactKey: Guid(350e08b911faa312483915e1edcd3186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Tilesets/AutumnForest Outdoors using Guid(350e08b911faa312483915e1edcd3186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc890658d526591297fea6ee72b1cdf9') in 0.001364 seconds 
+  Import took 0.010693 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.464102 seconds.
+  path: Assets/Resources/Tilesets/Other Train
+  artifactKey: Guid(6ecc054a2cba09252a4d2c8fa8043f9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Tilesets/Other Train using Guid(6ecc054a2cba09252a4d2c8fa8043f9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71dbb0badd4bb848b65ba27fab07b5e3') in 0.001385 seconds 
+  Import took 0.011092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 110.717346 seconds.
+  path: Assets/Resources/Unsorted/Old prefabs
+  artifactKey: Guid(e15bd322d8d4faf96827f85cf13f5074) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Unsorted/Old prefabs using Guid(e15bd322d8d4faf96827f85cf13f5074) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6082d8fb276f3a143f274d3823d0bcfd') in 0.001502 seconds 
+  Import took 0.011273 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004965 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.21 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.465 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1466ms)
+		BeginReloadAssembly (145ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (64ms)
+		EndReloadAssembly (1244ms)
+			LoadAssemblies (87ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (454ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (73ms)
+			SetupLoadedEditorAssemblies (432ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (92ms)
+				ProcessInitializeOnLoadAttributes (305ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (20ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.23 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4022 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 183.1 MB.
+System memory in use after: 183.2 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 4842.
+Total: 8.171677 ms (FindLiveObjects: 0.956524 ms CreateObjectMapping: 0.249077 ms MarkObjects: 6.824881 ms  DeleteObjects: 0.139792 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 48.163602 seconds.
+  path: Assets/Resources/Unsorted/Materials/Fire
+  artifactKey: Guid(0589078fc9561390d87f1889fe785ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Unsorted/Materials/Fire using Guid(0589078fc9561390d87f1889fe785ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '865f0c3d9db4f19e2c1530f96493808e') in 0.009512 seconds 
+  Import took 0.019899 seconds .
+
