@@ -150,6 +150,7 @@
      <Compile Include="Assets/Resources/Unsorted/Scripts/One Time Use/OTU_Title_SaveInfo.cs" />
      <Compile Include="Assets/Resources/Unsorted/Scripts/Depreciated &amp; Awaiting Update/Removed/Title_Quit.cs" />
      <Compile Include="Assets/Resources/Unsorted/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Unused or Unknown/OLDItemPickup.cs" />
+     <Compile Include="Assets/Resources/Scripts/OTU_System_TransitionManager2.cs" />
      <Compile Include="Assets/Resources/Unsorted/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Battle_Turn_Manager.cs" />
      <Compile Include="Assets/Resources/Unsorted/Scripts/DA_Entity_Follower.cs" />
      <Compile Include="Assets/Resources/Unsorted/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Hud_SI_hand_controller.cs" />
@@ -159,6 +160,7 @@
      <Compile Include="Assets/Resources/Unsorted/Scripts/Depreciated &amp; Awaiting Update/OLDG9/System/SystemEntityID.cs" />
      <Compile Include="Assets/Resources/Unsorted/Scripts/Depreciated &amp; Awaiting Update/OLDG9/Trigger_DestroyOnInteract.cs" />
      <Compile Include="Assets/Resources/Unsorted/Scripts/Depreciated &amp; Awaiting Update/OLDG9/System/SystemPersistantData.cs" />
+     <Compile Include="Assets/Resources/Scripts/OTU_Title_Retroduction.cs" />
      <None Include="Assets/Packages/TextMesh Pro/Resources/Shaders/TMPro.cginc" />
      <None Include="Assets/Packages/TextMesh Pro/Resources/Shaders/TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets/Packages/TextMesh Pro/Resources/Shaders/TMP_Bitmap.shader" />
