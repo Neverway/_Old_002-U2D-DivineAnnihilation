@@ -117,9 +117,9 @@ public class OTU_System_InventoryManager : MonoBehaviour
         for (int i = 0; i < 4 + 1; i++)
         {
             itemSlots[i].gameObject.transform.GetChild(1).GetComponent<Text>().text = saveManager.activeSave2.items[i];
-            itemSlots[i].gameObject.transform.GetChild(0).GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Items/" + saveManager.activeSave2.itemIcons[i]) as Sprite;
+            itemSlots[i].gameObject.transform.GetChild(0).GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Menus & UI/" + saveManager.activeSave2.itemIcons[i]) as Sprite;
             equipmentSlots[i].gameObject.transform.GetChild(1).GetComponent<Text>().text = saveManager.activeSave2.equipment[i];
-            equipmentSlots[i].gameObject.transform.GetChild(0).GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Items/" + saveManager.activeSave2.equipmentIcons[i]) as Sprite;
+            equipmentSlots[i].gameObject.transform.GetChild(0).GetComponent<Image>().sprite = Resources.Load<Sprite>("Sprites/Menus & UI/" + saveManager.activeSave2.equipmentIcons[i]) as Sprite;
         }
     }
 
@@ -495,7 +495,7 @@ public class OTU_System_InventoryManager : MonoBehaviour
                 //Instantiate(itemPickupPrefab, GameObject.FindWithTag("Player").transform, false);
 
                 saveManager.activeSave2.items[itemsMenuController.currentSelection] = "---";
-                saveManager.activeSave2.itemIcons[itemsMenuController.currentSelection] = "hud_inventory_blank";
+                saveManager.activeSave2.itemIcons[itemsMenuController.currentSelection] = "inventroy_icon_blank";
                 saveManager.activeSave2.itemCategories[itemsMenuController.currentSelection] = "";
                 saveManager.activeSave2.itemDescriptions[itemsMenuController.currentSelection] = "";
                 saveManager.activeSave2.itemDiscardable[itemsMenuController.currentSelection] = "false";
@@ -516,7 +516,7 @@ public class OTU_System_InventoryManager : MonoBehaviour
                 //Instantiate(itemPickupPrefab, GameObject.FindWithTag("Player").transform, true);
 
                 saveManager.activeSave2.equipment[equipmentMenuController.currentSelection] = "---";
-                saveManager.activeSave2.equipmentIcons[equipmentMenuController.currentSelection] = "hud_inventory_blank";
+                saveManager.activeSave2.equipmentIcons[equipmentMenuController.currentSelection] = "inventroy_icon_blank";
                 saveManager.activeSave2.equipmentCategories[equipmentMenuController.currentSelection] = "";
                 saveManager.activeSave2.equipmentDescriptions[equipmentMenuController.currentSelection] = "";
                 saveManager.activeSave2.equipmentDiscardable[equipmentMenuController.currentSelection] = "false";
