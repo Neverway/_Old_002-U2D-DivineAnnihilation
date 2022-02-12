@@ -21,6 +21,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	"process_id" : 46982,
 =======
 	"process_id" : 179054,
@@ -93,6 +94,9 @@
 =======
 	"process_id" : 3671,
 >>>>>>> d0e1de580 (Added new intro sequence (everything else is non-functional))
+=======
+	"process_id" : 98543,
+>>>>>>> be1d8925d (Updated title with transition and stuff, Updated autumn forrest tileset, Added howelfen sign to c1s1)
 	"version" : "2020.3.22f1",
 	"app_path" : "/home/lizband/Unity/Hub/Editor/2020.3.22f1/Editor/Unity",
 	"app_contents_path" : "/home/lizband/Unity/Hub/Editor/2020.3.22f1/Editor/Data"

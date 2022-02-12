@@ -164,11 +164,15 @@ MonoBehaviour:
 =======
     width: 1920
     height: 937
-  m_MinSize: {x: 677, y: 342}
-  m_MaxSize: {x: 12002, y: 8042}
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
+<<<<<<< HEAD
   controlID: 23778
 >>>>>>> d0e1de580 (Added new intro sequence (everything else is non-functional))
+=======
+  controlID: 15267
+>>>>>>> be1d8925d (Updated title with transition and stuff, Updated autumn forrest tileset, Added howelfen sign to c1s1)
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -190,6 +194,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -791,9 +796,12 @@ MonoBehaviour:
 =======
     x: 359
 >>>>>>> d0e1de580 (Added new intro sequence (everything else is non-functional))
+=======
+    x: 244
+>>>>>>> be1d8925d (Updated title with transition and stuff, Updated autumn forrest tileset, Added howelfen sign to c1s1)
     y: 83
-    width: 1252
-    height: 638
+    width: 1079
+    height: 645
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -801,11 +809,11 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1097, y: 617}
+  m_TargetSize: {x: 1079, y: 607}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
-  m_MaximizeOnPlay: 0
+  m_MaximizeOnPlay: 1
   m_UseMipMap: 0
   m_VSyncEnabled: 1
   m_Gizmos: 0
@@ -907,10 +915,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -548.5
-    m_HBaseRangeMax: 548.5
-    m_VBaseRangeMin: -308.5
-    m_VBaseRangeMax: 308.5
+    m_HBaseRangeMin: -539.5
+    m_HBaseRangeMax: 539.5
+    m_VBaseRangeMin: -303.5
+    m_VBaseRangeMax: 303.5
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -919,7 +927,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -928,23 +936,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1252
-      height: 617
+      width: 1079
+      height: 624
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 626, y: 308.5}
+    m_Translation: {x: 539.5, y: 312}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -626
-      y: -308.5
-      width: 1252
-      height: 617
+      x: -539.5
+      y: -312
+      width: 1079
+      height: 624
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1252, y: 638}
+  m_LastWindowPixelSize: {x: 1079, y: 645}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 0
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -971,6 +979,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
     width: 1920
     height: 949
@@ -1051,12 +1060,19 @@ MonoBehaviour:
 >>>>>>> 7814dd707 (Updated Template_Overworld, Added level warp triggers)
 =======
     width: 1613
+=======
+    width: 1325
+>>>>>>> be1d8925d (Updated title with transition and stuff, Updated autumn forrest tileset, Added howelfen sign to c1s1)
     height: 937
-  m_MinSize: {x: 402, y: 342}
-  m_MaxSize: {x: 8002, y: 8042}
+  m_MinSize: {x: 403, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 23779
 >>>>>>> d0e1de580 (Added new intro sequence (everything else is non-functional))
+=======
+  controlID: 15247
+>>>>>>> be1d8925d (Updated title with transition and stuff, Updated autumn forrest tileset, Added howelfen sign to c1s1)
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1078,6 +1094,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1187,6 +1204,14 @@ MonoBehaviour:
   vertical: 0
   controlID: 23780
 >>>>>>> d0e1de580 (Added new intro sequence (everything else is non-functional))
+=======
+    width: 1325
+    height: 666
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
+  vertical: 0
+  controlID: 15248
+>>>>>>> be1d8925d (Updated title with transition and stuff, Updated autumn forrest tileset, Added howelfen sign to c1s1)
 --- !u!114 &5
 =======
   controlID: 242
@@ -1321,6 +1346,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 304
 <<<<<<< HEAD
     height: 579
@@ -1426,6 +1452,12 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
 >>>>>>> d0e1de580 (Added new intro sequence (everything else is non-functional))
+=======
+    width: 244
+    height: 666
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+>>>>>>> be1d8925d (Updated title with transition and stuff, Updated autumn forrest tileset, Added howelfen sign to c1s1)
   m_ActualView: {fileID: 6}
 >>>>>>> 7df09d4b8 (Updated C1S2 to G10,  Fixed save chapter not updating properly, Fixed inventory discarding, Fixed entity variables being stuck as read only, Updated prefabs list, Fixed Solution file missing DASDK scripts)
   m_Panes:
@@ -3548,6 +3580,7 @@ MonoBehaviour:
 >>>>>>> d10c8aeb8 (Added player health, Added game over on no health, Updated game over screen, Updated lighting systems, Updated C1S1 lighting 1/2)
 =======
     x: 0
+<<<<<<< HEAD
     y: 730
     width: 1406
     height: 250
@@ -3568,9 +3601,96 @@ MonoBehaviour:
 --- !u!114 &13
 =======
     x: 359
+=======
     y: 83
-    width: 1252
-    height: 638
+    width: 243
+    height: 645
+  m_ViewDataDictionary: {fileID: 0}
+  m_SceneHierarchy:
+    m_TreeViewState:
+      scrollPos: {x: 0, y: 420}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 782fffff2059fffffa7dffff1c8effff9690ffff4aa4ffff44d8ffff02daffff88efffff58f0ffff48f1ffff14fbfffff4ffffff005900000a5d0000ecaf00003eb50000c6b7000060b9000084b900008eba000088bc000092be000098be000004e1000056e60000a0eb0000b2ed0000d4ed0000a8ef0000caef0000aa920100009401002e9b0100649f01002ca0010082a0010012a4010058a4010070a40100aea4010068a50100781d02006e2202004c260200bc7d0200127e0200687f02005a810200e08202009686020064870200c48a02008c8b0200e68b02006a8f02003a920200aca503008ab30300
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 5}
+      m_SearchString: 
+    m_ExpandedScenes: []
+    m_CurrenRootInstanceID: 0
+    m_LockTracker:
+      m_IsLocked: 0
+    m_CurrentSortingName: TransformSorting
+  m_WindowGUID: b3c3c82aface5440998d4e0912a0a5d9
+--- !u!114 &7
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: GameView
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 244
+    y: 0
+    width: 1081
+    height: 666
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 2}
+  m_Panes:
+  - {fileID: 8}
+  - {fileID: 2}
+  - {fileID: 9}
+  - {fileID: 10}
+  - {fileID: 11}
+  m_Selected: 1
+  m_LastSelected: 0
+--- !u!114 &8
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12013, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Scene
+    m_Image: {fileID: 2593428753322112591, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 244
+>>>>>>> be1d8925d (Updated title with transition and stuff, Updated autumn forrest tileset, Added howelfen sign to c1s1)
+    y: 83
+    width: 1079
+    height: 645
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 55094fe50bf2ff576811963c8c00f2e8
@@ -3583,9 +3703,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.5815847, y: -0.4509369, z: 0.83016634}
+    m_Target: {x: 29.690845, y: 5.4391756, z: -1.78555}
     speed: 2
-    m_Value: {x: 0.5815847, y: -0.4509369, z: 0.83016634}
+    m_Value: {x: 29.690845, y: 5.4391756, z: -1.78555}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -3636,16 +3756,16 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 10.12141
+    m_Target: 16.125525
     speed: 2
-    m_Value: 10.12141
+    m_Value: 16.125525
   m_Ortho:
     m_Target: 1
     speed: 2
     m_Value: 1
   m_CameraSettings:
-    m_Speed: 1
-    m_SpeedNormalized: 0.5
+    m_Speed: 1.1804098
+    m_SpeedNormalized: 0.5899999
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -3686,6 +3806,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1920
     y: 813
     width: 1535
@@ -3696,6 +3817,12 @@ MonoBehaviour:
     width: 1252
     height: 638
 >>>>>>> d0e1de580 (Added new intro sequence (everything else is non-functional))
+=======
+    x: 311
+    y: 83
+    width: 1331
+    height: 645
+>>>>>>> be1d8925d (Updated title with transition and stuff, Updated autumn forrest tileset, Added howelfen sign to c1s1)
   m_ViewDataDictionary: {fileID: 0}
   m_ViewTransforms:
     m_KeySerializationHelper:
@@ -3711,8 +3838,12 @@ MonoBehaviour:
     - {fileID: 2066373182823137395, guid: 70ebd91cb82548a0aa718e0eabc5d1dc, type: 2}
 =======
     - {fileID: 5794090558448576681, guid: ec28a986818cae06d9036ba7fbc7c227, type: 2}
+<<<<<<< HEAD
     - {fileID: -3178904408791582979, guid: 8e2f8966e5c0b721fa885dc64e98d140, type: 2}
 >>>>>>> d0e1de580 (Added new intro sequence (everything else is non-functional))
+=======
+    - {fileID: 2203959104419011452, guid: 49bc6874444070690a60be4cae1e167c, type: 2}
+>>>>>>> be1d8925d (Updated title with transition and stuff, Updated autumn forrest tileset, Added howelfen sign to c1s1)
     m_ValueSerializationHelper:
     - e00: 0.87473685
       e01: 0
@@ -3893,14 +4024,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 1.0741085
+    - e00: 1
       e01: 0
       e02: 0
-      e03: 122.739655
+      e03: 0
       e10: 0
-      e11: 1.0741085
+      e11: 1
       e12: 0
-      e13: 220.58789
+      e13: 0
       e20: 0
       e21: 0
       e22: 1
@@ -3910,6 +4041,7 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_AnimatorController: {fileID: 9100000, guid: 3e75189684fc1a4b3a190287119ceaba,
     type: 2}
@@ -3921,6 +4053,12 @@ MonoBehaviour:
   m_BreadCrumbs:
   - m_Target: {fileID: -3178904408791582979, guid: 8e2f8966e5c0b721fa885dc64e98d140,
 >>>>>>> d0e1de580 (Added new intro sequence (everything else is non-functional))
+=======
+  m_AnimatorController: {fileID: 9100000, guid: 49bc6874444070690a60be4cae1e167c,
+    type: 2}
+  m_BreadCrumbs:
+  - m_Target: {fileID: 2203959104419011452, guid: 49bc6874444070690a60be4cae1e167c,
+>>>>>>> be1d8925d (Updated title with transition and stuff, Updated autumn forrest tileset, Added howelfen sign to c1s1)
       type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
@@ -4086,24 +4224,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 659
-    width: 1613
-    height: 278
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 14}
+    y: 666
+    width: 1325
+    height: 271
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
   - {fileID: 14}
   - {fileID: 15}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -4140,9 +4278,9 @@ MonoBehaviour:
 >>>>>>> 50289e0ec (Updated lighting renderer, Updated Engine to Unity 2020.3.20f1)
 =======
     x: 0
-    y: 742
-    width: 1612
-    height: 257
+    y: 749
+    width: 1324
+    height: 250
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -4157,23 +4295,23 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Resources/Scripts
+    - Assets/Resources/Sprites/Level
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Resources/Scripts
+  - Assets/Resources/Sprites/Level
   m_LastFoldersGridSize: 16
   m_LastProjectPath: /home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine
     Annihilation
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 55}
-    m_SelectedIDs: 4a5b0000
-    m_LastClickedID: 23370
-    m_ExpandedIDs: 00000000085b00000a5b00000c5b00000e5b0000105b0000125b0000145b000000ca9a3b
+    scrollPos: {x: 0, y: 62}
+    m_SelectedIDs: 167f0000
+    m_LastClickedID: 32534
+    m_ExpandedIDs: 0000000056620000586200005a6200005c6200005e6200006062000062620000d477000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -4201,7 +4339,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000085b00000a5b00000c5b00000e5b0000105b0000125b0000145b000000ca9a3b
+    m_ExpandedIDs: 0000000056620000586200005a6200005c6200005e620000606200006262000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -4226,10 +4364,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 485afdff
-    m_LastClickedInstanceID: -173496
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c62300004c560000000000009e5d00002c6b000004710000ce620000
+    m_ExpandedInstanceIDs: c62300004c560000000000009e5d00002c6b000004710000ce620000c8600000be600000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -4253,7 +4391,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 394.5}
     m_GridSize: 16
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 244
@@ -4285,6 +4423,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -4322,6 +4461,11 @@ MonoBehaviour:
     width: 1612
     height: 257
 >>>>>>> d0e1de580 (Added new intro sequence (everything else is non-functional))
+=======
+    y: 750
+    width: 1531
+    height: 249
+>>>>>>> be1d8925d (Updated title with transition and stuff, Updated autumn forrest tileset, Added howelfen sign to c1s1)
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &15
 MonoBehaviour:
@@ -4348,13 +4492,13 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 742
-    width: 1612
-    height: 257
+    y: 749
+    width: 1643
+    height: 250
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 121674
+  m_LastSelectedObjectID: 128194
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -4372,12 +4516,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1613
+    x: 1325
     y: 0
-    width: 307
+    width: 595
     height: 937
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -4406,9 +4550,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1613
+    x: 1325
     y: 83
-    width: 306
+    width: 594
     height: 916
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
@@ -4462,6 +4606,7 @@ MonoBehaviour:
   m_LastInspectedObjectInstanceID: -1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 3a2a4e8db (Fixed followers jittering when getting to close to player character)
   m_LastVerticalScrollValue: 0
 >>>>>>> 042f27346 (Added Miyu walk animation, Fixed character followers, Added C1S1 wake-up event 1/2)
@@ -4474,6 +4619,9 @@ MonoBehaviour:
 =======
   m_LastVerticalScrollValue: 45
 >>>>>>> d0e1de580 (Added new intro sequence (everything else is non-functional))
+=======
+  m_LastVerticalScrollValue: 0
+>>>>>>> be1d8925d (Updated title with transition and stuff, Updated autumn forrest tileset, Added howelfen sign to c1s1)
   m_GlobalObjectId: 
   m_LockTracker:
     m_IsLocked: 0
@@ -4498,16 +4646,16 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1523
+    x: 1396
     y: 83
-    width: 396
+    width: 523
     height: 916
   m_ViewDataDictionary: {fileID: 0}
   m_PreviewResizer:
     m_CachedPref: 50
     m_ControlHash: 1964396721
     m_PrefName: Preview_TilemapBrushInspector
-  m_Palette: {fileID: 3737502903375264434, guid: 062920b8a9d8962969318624218e0790,
+  m_Palette: {fileID: 4399313176961203403, guid: a19e34e89079910dcb17659766d624ce,
     type: 3}
   m_DrawGizmos: 0
 --- !u!114 &19
