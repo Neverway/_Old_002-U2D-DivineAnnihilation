@@ -27,18 +27,21 @@ public class OTU_System_TransitionManager2 : MonoBehaviour
     void Start()
     {
         inputManager = FindObjectOfType<OTU_System_InputManager>();
+        fadeTransitionTarget = GameObject.FindWithTag("Fade Screen").GetComponent<Image>();
         TransitionFade("fadein", 2f); // Fade the title screen in
     }
 
 
     public void TransitionFade(string forceMode, float fadespeed)
     {
+        fadeTransitionTarget = GameObject.FindWithTag("Fade Screen").GetComponent<Image>();
         // Set either the default fade speed, or the set speed if specified
-        if(fadespeed != null) { fadeTransitionTarget.GetComponent<Animator>().speed = fadespeed; }                   
+        if(fadespeed != 0) { fadeTransitionTarget.GetComponent<Animator>().speed = fadespeed; }                   
         else { fadeTransitionTarget.GetComponent<Animator>().speed = fadeSpeed; }
 
         // Overwrite modes that will only play one part of the fade transition
         if (forceMode == "fadein") { fadeTransitionTarget.GetComponent<Animator>().Play("fadein"); }
         else if (forceMode == "fadeout") { fadeTransitionTarget.GetComponent<Animator>().Play("fadeout"); }
+        else { fadeTransitionTarget.GetComponent<Animator>().Play("fade"); }
     }
 }
