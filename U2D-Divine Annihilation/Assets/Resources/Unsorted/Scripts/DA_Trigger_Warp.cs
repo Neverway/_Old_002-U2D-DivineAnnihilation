@@ -20,11 +20,11 @@ public class DA_Trigger_Warp : MonoBehaviour
     // Reference variables
     private Transform exitPointTarget;
     private Transform playerTarget;
-    private OTU_System_TransitionManager transitionManager;
+    private OTU_System_TransitionManager2 transitionManager;
 
     void Start()
     {
-        transitionManager = FindObjectOfType<OTU_System_TransitionManager>();
+        transitionManager = FindObjectOfType<OTU_System_TransitionManager2>();
         exitPointTarget = gameObject.transform.parent.GetChild(1);
     }
 
@@ -41,7 +41,7 @@ public class DA_Trigger_Warp : MonoBehaviour
             playerTarget = other.transform;
             if (playTransition)
             {
-                transitionManager.StartCoroutine("TriggerFade");
+                transitionManager.TransitionFade("",0);
                 StartCoroutine("Teleport");
             }
             else

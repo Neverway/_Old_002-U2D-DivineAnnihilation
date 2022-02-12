@@ -4,15 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - SI Pickup
-  - SI Hand
-  - UI Choice Box
   - Loading Screen
-  - ABZEnemy
   - Effect Mask
   - Entity Shadow
-  - DestroyPersistentOverworldObjects
   - FX water
+  - Night Light
+  - Fade Screen
   layers:
   - Default
   - TransparentFX
