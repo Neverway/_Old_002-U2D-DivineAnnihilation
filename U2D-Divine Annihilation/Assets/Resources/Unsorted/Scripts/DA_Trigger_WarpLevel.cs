@@ -19,19 +19,19 @@ public class DA_Trigger_WarpLevel : MonoBehaviour
     public float nextRoomY;
     public string loadRoom;
     private OTU_System_SaveManager saveManager;
-    private OTU_System_TransitionManager transitionManager;
+    private OTU_System_TransitionManager2 transitionManager;
 
 
     void Start()
     {
         saveManager = FindObjectOfType<OTU_System_SaveManager>();   // Find the dialogue manager script
-        transitionManager = FindObjectOfType<OTU_System_TransitionManager>();   // Find the dialogue manager script
+        transitionManager = FindObjectOfType<OTU_System_TransitionManager2>();   // Find the dialogue manager script
     }
 
 
     IEnumerator ChangeScene()
     {
-        yield return new WaitForSeconds(transitionManager.fadeStayDelay);     // The delay until it is accepting input again
+        yield return new WaitForSeconds(1);     // The delay until it is accepting input again
         PlayerPrefs.SetInt("LoadingNewRoom", 1);
         saveManager.activeSave2.scene = loadRoom;
         SceneManager.LoadScene(loadRoom);
@@ -42,7 +42,7 @@ public class DA_Trigger_WarpLevel : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            transitionManager.FadeIn("");
+            transitionManager.TransitionFade("fadeout",0);
             PlayerPrefs.SetFloat("NextRoomX", nextRoomX);
             PlayerPrefs.SetFloat("NextRoomY", nextRoomY);
             StartCoroutine("ChangeScene");
