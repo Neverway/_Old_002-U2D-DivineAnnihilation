@@ -6622,6 +6622,8 @@ MonoBehaviour:
   idleRight: {fileID: 0}
   walkSpeed: 5
   sprintSpeed: 7
+  stopRange: 1.5
+  nextWaypointDistance: 3
   shelfSprite: {fileID: 21300000, guid: f45cb904eef2169e5bf96522ab54be32, type: 3}
   HUD: {fileID: 3955809788688571928}
   canMove: 1
@@ -21524,7 +21526,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 99629c922734e7570b494eaefa6cd3d9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0064d6fd127fe838382a30b3627216fd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -27468,7 +27470,7 @@ SpriteRenderer:
   m_Size: {x: 3, y: 4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
 --- !u!331 &966342453299612874

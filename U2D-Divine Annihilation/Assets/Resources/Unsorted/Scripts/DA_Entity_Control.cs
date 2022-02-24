@@ -36,6 +36,7 @@ public class DA_Entity_Control : MonoBehaviour
 
     // Base sprint variables
     public float sprintSpeed = 7f;
+    public float dodgeSpeed = 8.25f;
 
     // Follower variables
     private Transform target;
@@ -53,6 +54,13 @@ public class DA_Entity_Control : MonoBehaviour
     public bool canMove = true;
     public bool alternateCanMove = true;
     private Vector2 movement;
+    private Vector2 dodgeMovement;
+    public bool dodgeCooldown;
+    public float dodgeDuration;
+    public float tapSpeed = 0.5f; //in seconds
+    private float BlastTapTime = 0;
+    private float LlastTapTime = 0;
+    private float RlastTapTime = 0;
 
     // Character variables
     public bool isFollower;
@@ -155,6 +163,15 @@ public class DA_Entity_Control : MonoBehaviour
         }
     }
 
+    IEnumerator DodgeRoll()
+    {
+        yield return new WaitForSeconds(dodgeDuration);
+        dodgeMovement = new Vector2(0,0);
+        dodgeCooldown = true;
+        yield return new WaitForSeconds(dodgeDuration+0.5f);
+        dodgeCooldown = false;
+    }
+
 
     void UpdatePath()
     {
@@ -197,7 +214,14 @@ public class DA_Entity_Control : MonoBehaviour
 
     void FixedUpdate()
     {
-        Rigidbody.MovePosition(Rigidbody.position + movement * currentSpeed * Time.fixedDeltaTime);    // Update the movement for the character
+        if (dodgeMovement.x == 0 && dodgeMovement.y == 0)
+        {
+            Rigidbody.MovePosition(Rigidbody.position + movement * currentSpeed * Time.fixedDeltaTime);    // Update the movement for the character
+        }
+        else
+        {
+            Rigidbody.MovePosition(Rigidbody.position + dodgeMovement * dodgeSpeed * Time.fixedDeltaTime);    // Update the movement for the character
+        }
     }
 
     void PlayerEntity()
@@ -274,6 +298,52 @@ public class DA_Entity_Control : MonoBehaviour
             //animator.speed = 1;
         }
 
+        // Roll
+        if(Input.GetKeyDown(inputManager.controls["Action"]) && dodgeMovement.x == 0 && dodgeMovement.y == 0 && !dodgeCooldown)
+        {
+            if((Time.time - BlastTapTime) < tapSpeed)
+            { 
+                // Check facing direction
+                StartCoroutine("DodgeRoll");
+                dodgeDuration = 0.25f;
+                if (animator.GetFloat("LastX") <= -0.1){dodgeMovement.x = -1;}
+                else if (animator.GetFloat("LastX") >= 0.1){dodgeMovement.x = 1;}
+                if (animator.GetFloat("LastY") <= -0.1){dodgeMovement.y = -1;}
+                else if (animator.GetFloat("LastY") >= 0.1){dodgeMovement.y = 1;}
+            }
+
+            BlastTapTime = Time.time; 
+        }
+        
+        if(Input.GetKeyDown(inputManager.controls["L"]) && dodgeMovement.x == 0 && dodgeMovement.y == 0 && !dodgeCooldown)
+        {
+            if((Time.time - LlastTapTime) < tapSpeed)
+            { 
+                // Check facing direction
+                StartCoroutine("DodgeRoll");
+                dodgeDuration = 0.15f;
+                if (animator.GetFloat("LastX") <= -0.1){dodgeMovement.y = -1;}
+                else if (animator.GetFloat("LastX") >= 0.1){dodgeMovement.y = 1;}
+                if (animator.GetFloat("LastY") <= -0.1){dodgeMovement.x = -1;}
+                else if (animator.GetFloat("LastY") >= 0.1){dodgeMovement.x = -1;}
+            }
+            LlastTapTime = Time.time; 
+        }
+        
+        if(Input.GetKeyDown(inputManager.controls["R"]) && dodgeMovement.x == 0 && dodgeMovement.y == 0 && !dodgeCooldown)
+        {
+            if((Time.time - RlastTapTime) < tapSpeed)
+            { 
+                // Check facing direction
+                StartCoroutine("DodgeRoll");
+                dodgeDuration = 0.15f;
+                if (animator.GetFloat("LastX") <= -0.1){dodgeMovement.y = 1;}
+                else if (animator.GetFloat("LastX") >= 0.1){dodgeMovement.y = -1;}
+                if (animator.GetFloat("LastY") <= -0.1){dodgeMovement.x = 1;}
+                else if (animator.GetFloat("LastY") >= 0.1){dodgeMovement.x = 1;}
+            }
+            RlastTapTime = Time.time; 
+        }
 
         // can/can't move check
         if (!menuManager.menuActive && alternateCanMove)
