@@ -35,6 +35,9 @@ public class OTU_System_InputManager : MonoBehaviour
         controls.Add("Special 2", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Special 2", "Alpha2")));
         controls.Add("Special 3", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Special 3", "Alpha3")));
         controls.Add("Special 4", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Special 4", "Alpha4")));
+        
+        controls.Add("L", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("L", "A")));
+        controls.Add("R", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("R", "D")));
 
 
         // Temporary storage of controls for the controler bindings menu
@@ -52,5 +55,8 @@ public class OTU_System_InputManager : MonoBehaviour
         controlsBuffered.Add("Special 2Buffered", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Special 2", "Alpha2")));
         controlsBuffered.Add("Special 3Buffered", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Special 3", "Alpha3")));
         controlsBuffered.Add("Special 4Buffered", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Special 4", "Alpha4")));
+
+        controlsBuffered.Add("LBuffered", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("L", "A")));
+        controlsBuffered.Add("RBuffered", (KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("R", "D")));
     }
 }
