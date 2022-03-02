@@ -1,0 +1,344 @@
+140445164284424
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+102
+13
+choiceValue
+0
+0
+140445164284640
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+104
+17
+isFollower
+0
+0
+140445164284856
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+107
+17
+seeker
+0
+0
+140445164285072
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+108
+17
+rigidbody2d
+0
+0
+140445164285288
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+120
+13
+choiceValue
+0
+0
+140445164285504
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+125
+13
+choiceValue
+0
+0
+140445164285720
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+158
+13
+seeker
+0
+0
+140445164285936
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+160
+13
+seeker
+0
+0
+140445164286152
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+160
+30
+rigidbody2d
+0
+0
+140445164286368
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+160
+52
+target
+0
+0
+140445164286584
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+169
+13
+path
+0
+0
+140445164286800
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+170
+13
+currentWaypoint
+0
+0
+140445164287016
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+392
+9
+target
+0
+0
+140445164287232
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+394
+13
+path
+0
+0
+140445164287448
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+399
+13
+reachedEndOfPath
+0
+0
+140445164287664
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+404
+13
+currentWaypoint
+0
+0
+140445164287880
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+404
+32
+path
+0
+0
+140445164288096
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+406
+13
+reachedEndOfPath
+0
+0
+140445164288312
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+412
+13
+reachedEndOfPath
+0
+0
+140445164288528
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+418
+34
+rigidbody2d
+0
+0
+140445164288744
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+418
+56
+target
+0
+0
+140445164288960
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+418
+76
+senseRange
+0
+0
+140445164289176
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+418
+107
+rigidbody2d
+0
+0
+140445164289392
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+418
+129
+target
+0
+0
+140445164289608
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+418
+149
+stopRange
+0
+0
+140445164289824
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+420
+47
+path
+0
+0
+140445164290040
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+420
+63
+currentWaypoint
+0
+0
+140445164290256
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+420
+82
+rigidbody2d
+0
+0
+140445164290472
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+422
+17
+rigidbody2d
+0
+0
+140445164290688
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+424
+51
+rigidbody2d
+0
+0
+140445164290904
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+424
+73
+path
+0
+0
+140445164291120
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+424
+89
+currentWaypoint
+0
+0
+140445164291336
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+426
+32
+nextWaypointDistance
+0
+0
+140445164291552
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+428
+21
+currentWaypoint
+0
+0
+140445164291768
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+434
+34
+rigidbody2d
+0
+0
+140445164291984
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+434
+56
+target
+0
+0
+140445164292200
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+434
+76
+senseRange
+0
+0
+140445164292416
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+436
+17
+rigidbody2d
+0
+0
+140445164292632
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+436
+62
+target
+0
+0
+140445164292848
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+436
+91
+target
+0
+0
+140445164293064
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+452
+42
+enemysPartyMembers
+0
+0
+140445164293280
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+453
+42
+enemysPartyMembers
+0
+0
+140445164293496
+7136607203321344161
+/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/Assets/Resources/Unsorted/Scripts/DA_Entity_Control1.cs
+454
+42
+enemysPartyMembers
+0
+0

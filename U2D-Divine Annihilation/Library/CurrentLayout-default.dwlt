@@ -15,11 +15,11 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
     x: 0
-    y: 28
-    width: 1366
-    height: 675
+    y: 25
+    width: 1920
+    height: 987
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
@@ -44,8 +44,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1366
-    height: 675
+    width: 1920
+    height: 987
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -69,7 +69,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1366
+    width: 1920
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -93,8 +93,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 655
-    width: 1366
+    y: 967
+    width: 1920
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -120,6 +120,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -264,6 +265,14 @@ MonoBehaviour:
   vertical: 1
   controlID: 22673
 >>>>>>> 892ab2df9 (Added dodging, Updated C1S3 to G11, Added deep woods to C1S3)
+=======
+    width: 1920
+    height: 937
+  m_MinSize: {x: 578, y: 492}
+  m_MaxSize: {x: 14001, y: 14042}
+  vertical: 1
+  controlID: 11887
+>>>>>>> 211b440b6 (Added left and right roll animations, Added interact action menu, Added foliage tileset, Updated C1S3)
 --- !u!114 &6
 >>>>>>> 7df09d4b8 (Updated C1S2 to G10,  Fixed save chapter not updating properly, Fixed inventory discarding, Fixed entity variables being stuck as read only, Updated prefabs list, Fixed Solution file missing DASDK scripts)
 MonoBehaviour:
@@ -786,12 +795,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1366
-    height: 625
-  m_MinSize: {x: 644, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+    width: 1920
+    height: 937
+  m_MinSize: {x: 578, y: 492}
+  m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
-  controlID: 22674
+  controlID: 11888
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -811,12 +820,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1125
-    height: 625
-  m_MinSize: {x: 403, y: 492}
+    width: 1533
+    height: 937
+  m_MinSize: {x: 303, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 22675
+  controlID: 11889
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -836,12 +845,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1125
-    height: 354
-  m_MinSize: {x: 403, y: 221}
+    width: 1533
+    height: 591
+  m_MinSize: {x: 303, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 22676
+  controlID: 11890
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -859,8 +868,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 201
-    height: 354
+    width: 281
+    height: 591
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
@@ -878,26 +887,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
+  m_Name: GameView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 201
+    x: 281
     y: 0
-    width: 924
-    height: 354
-  m_MinSize: {x: 202, y: 221}
+    width: 1252
+    height: 591
+  m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 15}
+  m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 15}
   - {fileID: 16}
   - {fileID: 17}
   - {fileID: 18}
   - {fileID: 13}
-  m_Selected: 0
-  m_LastSelected: 4
+  m_Selected: 4
+  m_LastSelected: 1
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -914,9 +923,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 354
-    width: 1125
-    height: 271
+    y: 591
+    width: 1533
+    height: 346
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 19}
@@ -937,11 +946,12 @@ MonoBehaviour:
   m_EditorHideFlags: 1
 >>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GridPaintPaletteWindow
+  m_Name: InspectorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1016,11 +1026,15 @@ MonoBehaviour:
 =======
     x: 1125
 >>>>>>> 892ab2df9 (Added dodging, Updated C1S3 to G11, Added deep woods to C1S3)
+=======
+    x: 1533
+>>>>>>> 211b440b6 (Added left and right roll animations, Added interact action menu, Added foliage tileset, Updated C1S3)
     y: 0
-    width: 241
-    height: 625
-  m_MinSize: {x: 241, y: 221}
+    width: 387
+    height: 937
+  m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 9983efb1e (sorted project resources)
@@ -1032,12 +1046,15 @@ MonoBehaviour:
 =======
   m_ActualView: {fileID: 23}
 >>>>>>> 892ab2df9 (Added dodging, Updated C1S3 to G11, Added deep woods to C1S3)
+=======
+  m_ActualView: {fileID: 22}
+>>>>>>> 211b440b6 (Added left and right roll animations, Added interact action menu, Added foliage tileset, Updated C1S3)
   m_Panes:
   - {fileID: 22}
   - {fileID: 23}
   - {fileID: 24}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1068,6 +1085,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1216,6 +1234,12 @@ MonoBehaviour:
     width: 1226
     height: 645
 >>>>>>> 892ab2df9 (Added dodging, Updated C1S3 to G11, Added deep woods to C1S3)
+=======
+    x: 281
+    y: 83
+    width: 1250
+    height: 570
+>>>>>>> 211b440b6 (Added left and right roll animations, Added interact action menu, Added foliage tileset, Updated C1S3)
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -1486,7 +1510,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -1512,6 +1536,7 @@ MonoBehaviour:
 >>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
 =======
       y: 21
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1633,12 +1658,19 @@ MonoBehaviour:
     m_Scale: {x: 0.8305556, y: 0.83055556}
     m_Translation: {x: 960, y: 448.5}
 >>>>>>> 892ab2df9 (Added dodging, Updated C1S3 to G11, Added deep woods to C1S3)
+=======
+      width: 1250
+      height: 549
+    m_Scale: {x: 0.5083333, y: 0.5083333}
+    m_Translation: {x: 625, y: 274.5}
+>>>>>>> 211b440b6 (Added left and right roll animations, Added interact action menu, Added foliage tileset, Updated C1S3)
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1830,13 +1862,21 @@ MonoBehaviour:
 >>>>>>> be1d8925d (Updated title with transition and stuff, Updated autumn forrest tileset, Added howelfen sign to c1s1)
 =======
       x: -1155.8528
+=======
+      x: -1229.5082
+>>>>>>> 211b440b6 (Added left and right roll animations, Added interact action menu, Added foliage tileset, Updated C1S3)
       y: -540
-      width: 2311.7056
+      width: 2459.0164
       height: 1080
     m_MinimalGUI: 1
+<<<<<<< HEAD
   m_defaultScale: 0.83055556
   m_LastWindowPixelSize: {x: 1920, y: 918}
 >>>>>>> 892ab2df9 (Added dodging, Updated C1S3 to G11, Added deep woods to C1S3)
+=======
+  m_defaultScale: 0.5083333
+  m_LastWindowPixelSize: {x: 1250, y: 570}
+>>>>>>> 211b440b6 (Added left and right roll animations, Added interact action menu, Added foliage tileset, Updated C1S3)
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -3666,15 +3706,15 @@ MonoBehaviour:
     x: 339
 =======
     y: 83
-    width: 200
-    height: 333
+    width: 280
+    height: 570
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 88180000
+      m_SelectedIDs: 946e0000
       m_LastClickedID: 0
-      m_ExpandedIDs: 7684fdff2885fdffce85fdff22d8fdfff0d8fdff9edffdffd4fcfdffb200feff8801feff6604feff5822feffaa23feff9a86feff5098feffbe9bfeffe29ffeff5ebbfeff60bcfeff5a46ffff7647ffff5c5dffff1260ffff14fbffff7cd60000aed6000062d7000012de000026df000048df000070e0000014fa000046fa000084020100a60201008a290100bc290100663201008832010096650100b466010072670100f26c0100aa6d0100f8c9010032ca010046cb010026e10100b6fd01007eff0200b8ff0200cc000300
+      m_ExpandedIDs: 8cf5ffffc6f6ffff14fbffff789100009a910000c6920000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -3719,11 +3759,15 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 201
 >>>>>>> 892ab2df9 (Added dodging, Updated C1S3 to G11, Added deep woods to C1S3)
+=======
+    x: 281
+>>>>>>> 211b440b6 (Added left and right roll animations, Added interact action menu, Added foliage tileset, Updated C1S3)
     y: 83
-    width: 922
-    height: 333
+    width: 1250
+    height: 570
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 55094fe50bf2ff576811963c8c00f2e8
@@ -3736,9 +3780,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 357.17926, y: -68.09165, z: -35.197803}
+    m_Target: {x: 0.42483947, y: 2.0854702, z: -12.566625}
     speed: 2
-    m_Value: {x: 357.257, y: -68.730156, z: -34.978188}
+    m_Value: {x: 0.42483947, y: 2.0854702, z: -12.566625}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -3789,9 +3833,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 50.9999
+    m_Target: 4.170726
     speed: 2
-    m_Value: 48.803734
+    m_Value: 4.170726
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -3843,6 +3887,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1920
     y: 813
     width: 1535
@@ -3853,6 +3898,12 @@ MonoBehaviour:
     width: 1441
     height: 645
 >>>>>>> 892ab2df9 (Added dodging, Updated C1S3 to G11, Added deep woods to C1S3)
+=======
+    x: 281
+    y: 83
+    width: 1250
+    height: 570
+>>>>>>> 211b440b6 (Added left and right roll animations, Added interact action menu, Added foliage tileset, Updated C1S3)
   m_ViewDataDictionary: {fileID: 0}
   m_ViewTransforms:
     m_KeySerializationHelper:
@@ -3891,6 +3942,7 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
+<<<<<<< HEAD
     - e00: 1
       e01: 0
       e02: 0
@@ -3899,6 +3951,16 @@ MonoBehaviour:
       e11: 1
       e12: 0
       e13: 0
+=======
+    - e00: 0.9194795
+      e01: 0
+      e02: 0
+      e03: -40.151794
+      e10: 0
+      e11: 0.9194795
+      e12: 0
+      e13: -55.07364
+>>>>>>> 211b440b6 (Added left and right roll animations, Added interact action menu, Added foliage tileset, Updated C1S3)
       e20: 0
       e21: 0
       e22: 1
@@ -4119,6 +4181,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7df09d4b8 (Updated C1S2 to G10,  Fixed save chapter not updating properly, Fixed inventory discarding, Fixed entity variables being stuck as read only, Updated prefabs list, Fixed Solution file missing DASDK scripts)
     x: 1920
@@ -4150,6 +4213,12 @@ MonoBehaviour:
     width: 1441
     height: 645
 >>>>>>> 892ab2df9 (Added dodging, Updated C1S3 to G11, Added deep woods to C1S3)
+=======
+    x: 281
+    y: 83
+    width: 1250
+    height: 425
+>>>>>>> 211b440b6 (Added left and right roll animations, Added interact action menu, Added foliage tileset, Updated C1S3)
   m_ViewDataDictionary: {fileID: 0}
 <<<<<<< HEAD
 =======
@@ -4194,6 +4263,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     x: 1920
@@ -4259,6 +4329,12 @@ MonoBehaviour:
     width: 1531
     height: 320
 >>>>>>> 9983efb1e (sorted project resources)
+=======
+    x: 281
+    y: 83
+    width: 1250
+    height: 425
+>>>>>>> 211b440b6 (Added left and right roll animations, Added interact action menu, Added foliage tileset, Updated C1S3)
   m_ViewDataDictionary: {fileID: 0}
 <<<<<<< HEAD
 --- !u!114 &20
@@ -4292,9 +4368,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 437
-    width: 1124
-    height: 250
+    y: 674
+    width: 1532
+    height: 325
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -4309,23 +4385,23 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Resources/Unsorted/Scripts
+    - Assets/Resources/Sprites/Entities/Animations/Character_Fox
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Resources/Unsorted/Scripts
+  - Assets/Resources/Sprites/Entities/Animations/Character_Fox
   m_LastFoldersGridSize: 16
   m_LastProjectPath: /home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine
     Annihilation
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 167}
-    m_SelectedIDs: 7a5e0000
-    m_LastClickedID: 24186
-    m_ExpandedIDs: 00000000765e0000785e00007a5e00007c5e00007e5e0000805e0000825e0000c061000000ca9a3b
+    scrollPos: {x: 0, y: 4}
+    m_SelectedIDs: 64990000
+    m_LastClickedID: 39268
+    m_ExpandedIDs: 00000000107f0000127f0000147f0000167f0000187f00001a7f00001c7f0000327f0000609900006299000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -4353,7 +4429,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000765e0000785e00007a5e00007c5e00007e5e0000805e0000825e000000ca9a3b
+    m_ExpandedIDs: 00000000107f0000127f0000147f0000167f0000187f00001a7f00001c7f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -4380,7 +4456,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c62300004c5600009e5d00002c6b000004710000ce620000c8600000be600000a4620000402101004899000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -4417,6 +4493,35 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12071, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Animation
+    m_Image: {fileID: -8166618308981325432, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 674
+    width: 1532
+    height: 325
+  m_ViewDataDictionary: {fileID: 0}
+  m_LockTracker:
+    m_IsLocked: 0
+  m_LastSelectedObjectID: -68038
+--- !u!114 &21
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -4432,35 +4537,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 749
-    width: 1643
+    width: 1532
     height: 250
   m_ViewDataDictionary: {fileID: 0}
---- !u!114 &21
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12071, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Animation
-    m_Image: {fileID: -8166618308981325432, guid: 0000000000000000d000000000000000,
-      type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 0
-    y: 749
-    width: 1324
-    height: 250
-  m_ViewDataDictionary: {fileID: 0}
+<<<<<<< HEAD
   m_LockTracker:
     m_IsLocked: 0
 <<<<<<< HEAD
@@ -4469,6 +4549,8 @@ MonoBehaviour:
 >>>>>>> d0e1de580 (Added new intro sequence (everything else is non-functional))
 =======
   m_LastSelectedObjectID: 78536
+=======
+>>>>>>> 211b440b6 (Added left and right roll animations, Added interact action menu, Added foliage tileset, Updated C1S3)
 --- !u!114 &22
 >>>>>>> 892ab2df9 (Added dodging, Updated C1S3 to G11, Added deep woods to C1S3)
 MonoBehaviour:
@@ -4491,6 +4573,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -4553,8 +4636,11 @@ MonoBehaviour:
 >>>>>>> be1d8925d (Updated title with transition and stuff, Updated autumn forrest tileset, Added howelfen sign to c1s1)
 =======
     x: 1623
+=======
+    x: 1533
+>>>>>>> 211b440b6 (Added left and right roll animations, Added interact action menu, Added foliage tileset, Updated C1S3)
     y: 83
-    width: 296
+    width: 386
     height: 916
 >>>>>>> 892ab2df9 (Added dodging, Updated C1S3 to G11, Added deep woods to C1S3)
   m_ViewDataDictionary: {fileID: 0}
@@ -4590,16 +4676,16 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1125
+    x: 1644
     y: 83
-    width: 240
-    height: 604
+    width: 275
+    height: 916
   m_ViewDataDictionary: {fileID: 0}
   m_PreviewResizer:
     m_CachedPref: 50
     m_ControlHash: 1964396721
     m_PrefName: Preview_TilemapBrushInspector
-  m_Palette: {fileID: 4399313176961203403, guid: a19e34e89079910dcb17659766d624ce,
+  m_Palette: {fileID: 3542645687871464157, guid: 3ee27d58f44c1ccb5981422508e35f7b,
     type: 3}
   m_DrawGizmos: 0
 <<<<<<< HEAD

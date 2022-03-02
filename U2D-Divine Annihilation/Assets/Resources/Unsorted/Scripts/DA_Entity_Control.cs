@@ -36,7 +36,7 @@ public class DA_Entity_Control : MonoBehaviour
 
     // Base sprint variables
     public float sprintSpeed = 7f;
-    public float dodgeSpeed = 8.25f;
+    public float dodgeSpeed = 11f;
 
     // Follower variables
     private Transform target;
@@ -57,7 +57,7 @@ public class DA_Entity_Control : MonoBehaviour
     private Vector2 dodgeMovement;
     public bool dodgeCooldown;
     public float dodgeDuration;
-    public float tapSpeed = 0.5f; //in seconds
+    public float tapSpeed = 0.23f; //in seconds
     private float BlastTapTime = 0;
     private float LlastTapTime = 0;
     private float RlastTapTime = 0;
@@ -168,7 +168,7 @@ public class DA_Entity_Control : MonoBehaviour
         yield return new WaitForSeconds(dodgeDuration);
         dodgeMovement = new Vector2(0,0);
         dodgeCooldown = true;
-        yield return new WaitForSeconds(dodgeDuration+0.5f);
+        yield return new WaitForSeconds(dodgeDuration+0.3f);
         dodgeCooldown = false;
     }
 
@@ -275,6 +275,53 @@ public class DA_Entity_Control : MonoBehaviour
                 saveManager.activeSave2.playerHealth += 1;
             }
 
+            // Roll
+            if(Input.GetKeyDown(inputManager.controls["Action"]) && dodgeMovement.x == 0 && dodgeMovement.y == 0 && !dodgeCooldown)
+            {
+                if((Time.time - BlastTapTime) < tapSpeed)
+                { 
+                    // Check facing direction
+                    dodgeDuration = 0.3f;
+                    StartCoroutine("DodgeRoll");
+                    if (animator.GetFloat("LastX") <= -0.1){dodgeMovement.x = -1;animator.Play("Roll Left");}
+                    else if (animator.GetFloat("LastX") >= 0.1){dodgeMovement.x = 1;animator.Play("Roll Right");}
+                    if (animator.GetFloat("LastY") <= -0.1){dodgeMovement.y = -1;}
+                    else if (animator.GetFloat("LastY") >= 0.1){dodgeMovement.y = 1;}
+                }
+
+                BlastTapTime = Time.time; 
+            }
+            
+            if(Input.GetKeyDown(inputManager.controls["L"]) && dodgeMovement.x == 0 && dodgeMovement.y == 0 && !dodgeCooldown)
+            {
+                if((Time.time - LlastTapTime) < tapSpeed)
+                { 
+                    // Check facing direction
+                    dodgeDuration = 0.15f;
+                    StartCoroutine("DodgeRoll");
+                    if (animator.GetFloat("LastX") <= -0.1){dodgeMovement.y = -1;}
+                    else if (animator.GetFloat("LastX") >= 0.1){dodgeMovement.y = 1; }
+                    if (animator.GetFloat("LastY") <= -0.1){dodgeMovement.x = -1;}
+                    else if (animator.GetFloat("LastY") >= 0.1){dodgeMovement.x = -1;}
+                }
+                LlastTapTime = Time.time; 
+            }
+            
+            if(Input.GetKeyDown(inputManager.controls["R"]) && dodgeMovement.x == 0 && dodgeMovement.y == 0 && !dodgeCooldown)
+            {
+                if((Time.time - RlastTapTime) < tapSpeed)
+                { 
+                    // Check facing direction
+                    dodgeDuration = 0.15f;
+                    StartCoroutine("DodgeRoll");
+                    if (animator.GetFloat("LastX") <= -0.1){dodgeMovement.y = 1;}
+                    else if (animator.GetFloat("LastX") >= 0.1){dodgeMovement.y = -1;}
+                    if (animator.GetFloat("LastY") <= -0.1){dodgeMovement.x = 1;}
+                    else if (animator.GetFloat("LastY") >= 0.1){dodgeMovement.x = 1;}
+                }
+                RlastTapTime = Time.time; 
+            }
+
         }
         else
         {
@@ -296,53 +343,6 @@ public class DA_Entity_Control : MonoBehaviour
         {
             currentSpeed = walkSpeed;
             //animator.speed = 1;
-        }
-
-        // Roll
-        if(Input.GetKeyDown(inputManager.controls["Action"]) && dodgeMovement.x == 0 && dodgeMovement.y == 0 && !dodgeCooldown)
-        {
-            if((Time.time - BlastTapTime) < tapSpeed)
-            { 
-                // Check facing direction
-                StartCoroutine("DodgeRoll");
-                dodgeDuration = 0.25f;
-                if (animator.GetFloat("LastX") <= -0.1){dodgeMovement.x = -1;}
-                else if (animator.GetFloat("LastX") >= 0.1){dodgeMovement.x = 1;}
-                if (animator.GetFloat("LastY") <= -0.1){dodgeMovement.y = -1;}
-                else if (animator.GetFloat("LastY") >= 0.1){dodgeMovement.y = 1;}
-            }
-
-            BlastTapTime = Time.time; 
-        }
-        
-        if(Input.GetKeyDown(inputManager.controls["L"]) && dodgeMovement.x == 0 && dodgeMovement.y == 0 && !dodgeCooldown)
-        {
-            if((Time.time - LlastTapTime) < tapSpeed)
-            { 
-                // Check facing direction
-                StartCoroutine("DodgeRoll");
-                dodgeDuration = 0.15f;
-                if (animator.GetFloat("LastX") <= -0.1){dodgeMovement.y = -1;}
-                else if (animator.GetFloat("LastX") >= 0.1){dodgeMovement.y = 1;}
-                if (animator.GetFloat("LastY") <= -0.1){dodgeMovement.x = -1;}
-                else if (animator.GetFloat("LastY") >= 0.1){dodgeMovement.x = -1;}
-            }
-            LlastTapTime = Time.time; 
-        }
-        
-        if(Input.GetKeyDown(inputManager.controls["R"]) && dodgeMovement.x == 0 && dodgeMovement.y == 0 && !dodgeCooldown)
-        {
-            if((Time.time - RlastTapTime) < tapSpeed)
-            { 
-                // Check facing direction
-                StartCoroutine("DodgeRoll");
-                dodgeDuration = 0.15f;
-                if (animator.GetFloat("LastX") <= -0.1){dodgeMovement.y = 1;}
-                else if (animator.GetFloat("LastX") >= 0.1){dodgeMovement.y = -1;}
-                if (animator.GetFloat("LastY") <= -0.1){dodgeMovement.x = 1;}
-                else if (animator.GetFloat("LastY") >= 0.1){dodgeMovement.x = 1;}
-            }
-            RlastTapTime = Time.time; 
         }
 
         // can/can't move check
