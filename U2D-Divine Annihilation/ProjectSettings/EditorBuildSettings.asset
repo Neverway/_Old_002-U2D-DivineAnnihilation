@@ -9,15 +9,45 @@ EditorBuildSettings:
     path: Assets/Resources/Scenes/Main_Title.unity
     guid: edbd3501b3bbaefaa86621af7e698e0a
   - enabled: 1
+    path: Assets/Resources/Scenes/Dev_MechanicsDemo.unity
+    guid: 09954846f916f8ae783ca0eaefab9924
+  - enabled: 1
+    path: Assets/Resources/Scenes/Main_GameOver.unity
+    guid: 8d8f05e5bea28c90784291bdac3e617f
+  - enabled: 0
     path: Assets/Resources/Scenes/C1S1.unity
     guid: 54e79f86a5944e96597d722ab8424c2e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Resources/Scenes/C1S2.unity
     guid: 7c19cc2fe7b025e2287fd71d03b9748d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Resources/Scenes/C1S3.unity
     guid: 9b5752d27a2e211329682eb5db19a67f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Resources/Scenes/C1S....unity
     guid: 90209f53353b12478874f80d7f72a3e1
+  - enabled: 0
+    path: Assets/Resources/Scenes/C1S#.unity
+    guid: 851a2a884f925ccefa048148e3719993
+  - enabled: 0
+    path: Assets/Resources/Scenes/Templates/C1S#.unity
+    guid: 9a1b2bd4846526fd882a62cd0767a6d3
+  - enabled: 0
+    path: Assets/Resources/Scenes/Old/C1S1 o.unity
+    guid: c2709604fe72d99b0aa91fdea61f765c
+  - enabled: 0
+    path: Assets/Resources/Scenes/Old/Main_Battle.unity
+    guid: 13be3416da3ab8a3ab153296c53ce8bb
+  - enabled: 0
+    path: Assets/Resources/Scenes/Old/Main_Title.unity
+    guid: 9ab875f48a88256f59055c7a63a21385
+  - enabled: 0
+    path: Assets/Resources/Scenes/Old/Template_Overworld.unity
+    guid: beb8d6238bb72cb9da73ff3a21e1c650
+  - enabled: 0
+    path: Assets/Resources/Scenes/Old/Testing_Overworld.unity
+    guid: 74c051bdd1c38e2c6b7ac6738c253654
+  - enabled: 0
+    path: Assets/Resources/Scenes/Old/G11/Main_Title 1.unity
+    guid: e26bf7894bd1dd9b7828548980643c2b
   m_configObjects: {}

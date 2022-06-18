@@ -1,22 +1,13 @@
 High
------
-Fix battle finish not saving pre-battle coordinates
-Add item pickups
-Add inventory menus
-Add inventory scrolling
-Add inventory saving
-Add inventory inspection (Use, Inspect)
-Add inventory items to battle menu
-
+=-------=
+Add OTU_Title_Start - Press start, do transition, enable menu
+Add OTU_Title_Main - Quit function
+Add OTU_Title_Saves - Load save info
+Add OTU_Title_Options_Keybind - Talk to NUPInput and bind keys
 
 Medium
--------
-Add options menu
-Fix enemy encounter collision
+=-------=
 
 
 Low
-----
-Add file selection icons
-Add Fox left and right walk animations
-Add battle encounter transtion
+=-------=
