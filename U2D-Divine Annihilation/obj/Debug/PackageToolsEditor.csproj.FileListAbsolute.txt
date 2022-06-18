@@ -1,4 +1,0 @@
-/home/lizband/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/obj/Debug/PackageToolsEditor.csprojAssemblyReference.cache
-/home/lizband/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/obj/Debug/PackageToolsEditor.csproj.CoreCompileInputs.cache
-/home/lizband/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/obj/Debug/PackageToolsEditor.dll
-/home/lizband/Documents/Neverway/Games/神の絶滅 Divine Annihilation/U2D-Divine Annihilation/obj/Debug/PackageToolsEditor.pdb

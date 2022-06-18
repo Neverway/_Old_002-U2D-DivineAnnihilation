@@ -1,2 +1,0 @@
-/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/obj/Debug/UnityEditor.TestRunner.csprojAssemblyReference.cache
-/home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine Annihilation/obj/Debug/UnityEditor.TestRunner.csproj.CoreCompileInputs.cache

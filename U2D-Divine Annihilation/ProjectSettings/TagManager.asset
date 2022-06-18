@@ -4,12 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Loading Screen
   - Effect Mask
   - Entity Shadow
   - FX water
   - Night Light
-  - Fade Screen
+  - UI Choice Box
+  - Transitions
   layers:
   - Default
   - TransparentFX
@@ -21,10 +21,10 @@ TagManager:
   - 
   - DA_trigger
   - DA_postprocessing
-  - DA_colliders
+  - DA_collider
   - DA_shadowcaster
-  - 
-  - 
+  - DA_collider_grounded
+  - DA_collider_airborn
   - 
   - 
   - 
