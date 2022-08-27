@@ -117,7 +117,7 @@ public class DA_G11_Entity_Player : MonoBehaviour
     {
         if (enablePlayerMovement) { PlayerMovement(); }
         else { PathfindingMovement(); }
-        PlayerHealthHandeler();
+        //PlayerHealthHandeler();
     }
     
 
@@ -275,15 +275,15 @@ public class DA_G11_Entity_Player : MonoBehaviour
         }
 
         // can/can't move check
-        if (!menuManager.menuActive) { canMove = true; }
-        else { canMove = false; }
+        //if (!menuManager.menuActive) { canMove = true; }
+        //else { canMove = false; }
 
         // Entity animator
         animator.SetFloat("MoveX", movement.x);
         animator.SetFloat("MoveY", movement.y);
     }
 
-
+/*
     private void PlayerHealthHandeler()
     {
         if (saveManager.activeSave2.playerHealth <= 0 && firstPass)
@@ -296,7 +296,7 @@ public class DA_G11_Entity_Player : MonoBehaviour
             firstPass = false;
         }
     }
-
+*/
 
     public void PlayerCameraNoise(float amplitude)
     {

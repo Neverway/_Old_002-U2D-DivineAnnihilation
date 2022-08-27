@@ -29,6 +29,7 @@ public class DAG12_System_MenuManager : MonoBehaviour
     //=-----------------=
     private NUPTopdownController topdownController;
     private DAG12_System_PauseManager pauseManager;
+    private DAG12_System_TextboxManager textboxManager;
 
 
     //=-----------------=
@@ -38,11 +39,12 @@ public class DAG12_System_MenuManager : MonoBehaviour
     {
         topdownController = FindObjectOfType<NUPTopdownController>();
         pauseManager = FindObjectOfType<DAG12_System_PauseManager>();
+        textboxManager = FindObjectOfType<DAG12_System_TextboxManager>();
     }
 
     private void Update()
     {
-        if (pauseManager.pauseMenuOpen)
+        if (pauseManager.pauseMenuOpen || textboxManager.textboxOpen)
         {
             if (topdownController.canMove)
             {
@@ -51,7 +53,7 @@ public class DAG12_System_MenuManager : MonoBehaviour
                 topdownController.canMove = false;
             }
         }
-        else if (!pauseManager.pauseMenuOpen)
+        else if (!pauseManager.pauseMenuOpen && !textboxManager.textboxOpen)
         {
             if (playerWasAbleToMove)
             {
