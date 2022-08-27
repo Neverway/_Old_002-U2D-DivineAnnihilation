@@ -20,8 +20,9 @@ public class DAG12_Trigger_Interact : MonoBehaviour
     public TextboxData[] textboxData;
 
     [Header ("Trigger Data")]
-    [SerializeField] private UnityEvent OnFinish;
+    public UnityEvent OnFinish;
     [SerializeField] private bool eventTrigger; // If true, activation will not require interaction, only collision with the player
+    public bool triggerEnabled = true;
 
 
     //=-----------------=
@@ -50,7 +51,7 @@ public class DAG12_Trigger_Interact : MonoBehaviour
     {
         if (inTrigger)
         {
-            if (!eventTrigger && Input.GetKeyDown(inputManager.controls["Interact"]) || eventTrigger)
+            if (!eventTrigger && Input.GetKeyDown(inputManager.controls["Interact"]) && !textboxManager.textboxOpen && triggerEnabled || eventTrigger && !textboxManager.textboxOpen && triggerEnabled)
             {
                 SendTextboxDataArray();
             }
@@ -88,6 +89,7 @@ public class DAG12_Trigger_Interact : MonoBehaviour
             textboxManager.textboxData[i].linePortrait = textboxData[i].linePortrait;
             textboxManager.textboxData[i].lineSpeed = textboxData[i].lineSpeed;
         }
+        textboxManager.debugActivate = true;
     }
     
     

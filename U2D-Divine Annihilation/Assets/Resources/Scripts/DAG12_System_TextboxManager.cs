@@ -3,7 +3,9 @@
 // Purpose: 
 // Applied to: 
 // Editor script: 
-// Notes: 
+// Notes: textboxdata array starts at 16 length because an error is thrown if
+// the first textboxdata sent to it from a trigger is higher than the starting
+// length. I have no idea why this happens, but it's now a problem for future me.
 //
 //=============================================================================
 
@@ -23,7 +25,7 @@ public class DAG12_System_TextboxManager : MonoBehaviour
     //=-----------------=
     // Private variables
     //=-----------------=
-    private bool active;
+    public bool textboxOpen;
     private int currentLine = 0;    // (0 indexed, 0 = 1st slot in the array) Used for determining the current position in the textboxData array
     private string currentOutput;   // The current text that is being displayed in the textbox's main content area, used for to display letter by letter text
     public float defaultTextSpeed = 0.2f;
@@ -44,6 +46,8 @@ public class DAG12_System_TextboxManager : MonoBehaviour
     private GameObject nextIndicator;   // 
     private GameObject doneIndicator;   // 
 
+    private NUPInput inputManager;
+
 
     //=-----------------=
     // Mono Functions
@@ -58,6 +62,8 @@ public class DAG12_System_TextboxManager : MonoBehaviour
 
         nextIndicator = transform.GetChild(0).gameObject.transform.GetChild(4).gameObject;
         doneIndicator = transform.GetChild(0).gameObject.transform.GetChild(5).gameObject;
+
+        inputManager = FindObjectOfType<NUPInput>();
     }
 
     public IEnumerator DrawText(string _input, float _speed)
@@ -102,7 +108,7 @@ public class DAG12_System_TextboxManager : MonoBehaviour
 
         if (debugActivate)
         {
-            if (!active)
+            if (!textboxOpen)
             {
                 TextboxActivate();
             }
@@ -111,6 +117,11 @@ public class DAG12_System_TextboxManager : MonoBehaviour
                 TextboxNext();
             }
             debugActivate = false;
+        }
+
+        if (Input.GetKeyDown(inputManager.controls["Interact"]) && textboxOpen)
+        {
+            TextboxNext();
         }
     }
     
@@ -165,15 +176,19 @@ public class DAG12_System_TextboxManager : MonoBehaviour
         currentOutput = "";
         currentLine = 0;
         transform.GetChild(0).gameObject.SetActive(true);
-        active = true;
+        textboxOpen = true;
     }
     
     public void CloseTextbox()
     {
         currentOutput = "";
         currentLine = 0;
+
+        // May move these somewhere else since this makes the textbox manager dependent on an interact trigger
+        currentTrigger.GetComponent<DAG12_Trigger_Interact>().OnFinish.Invoke();
+
         transform.GetChild(0).gameObject.SetActive(false);
-        active = false;
+        textboxOpen = false;
     }
     
     
