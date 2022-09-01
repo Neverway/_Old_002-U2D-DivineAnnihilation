@@ -15,6 +15,7 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 25
     width: 1920
     height: 987
@@ -22,6 +23,15 @@ MonoBehaviour:
   m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 542}
+=======
+    y: 50
+    width: 1920
+    height: 1002
+  m_ShowMode: 4
+  m_Title: Game
+  m_RootView: {fileID: 2}
+  m_MinSize: {x: 875, y: 392}
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -45,8 +55,13 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1920
+<<<<<<< HEAD
     height: 987
   m_MinSize: {x: 875, y: 542}
+=======
+    height: 1002
+  m_MinSize: {x: 875, y: 392}
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -93,15 +108,22 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 967
+=======
+    y: 982
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
     width: 1920
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
+=======
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -120,6 +142,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -779,6 +802,15 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &11
+=======
+    width: 1920
+    height: 952
+  m_MinSize: {x: 579, y: 342}
+  m_MaxSize: {x: 12004, y: 8042}
+  vertical: 1
+  controlID: 226
+--- !u!114 &6
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -788,7 +820,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
   m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -800,11 +835,19 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1920
+<<<<<<< HEAD
     height: 937
   m_MinSize: {x: 679, y: 342}
   m_MaxSize: {x: 12004, y: 8042}
   vertical: 0
   controlID: 39636
+=======
+    height: 952
+  m_MinSize: {x: 579, y: 342}
+  m_MaxSize: {x: 12004, y: 8042}
+  vertical: 0
+  controlID: 227
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -825,11 +868,19 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1532
+<<<<<<< HEAD
     height: 937
   m_MinSize: {x: 403, y: 342}
   m_MaxSize: {x: 8003, y: 8042}
   vertical: 1
   controlID: 45379
+=======
+    height: 952
+  m_MinSize: {x: 303, y: 342}
+  m_MaxSize: {x: 8003, y: 8042}
+  vertical: 1
+  controlID: 228
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -850,11 +901,19 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1532
+<<<<<<< HEAD
     height: 530
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
   controlID: 45380
+=======
+    height: 680
+  m_MinSize: {x: 303, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
+  vertical: 0
+  controlID: 184
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -872,8 +931,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 282
     height: 530
+=======
+    width: 394
+    height: 680
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
@@ -891,11 +955,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
   m_Name: SceneView
+=======
+  m_Name: GameView
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 282
     y: 0
     width: 1250
@@ -911,6 +980,22 @@ MonoBehaviour:
   - {fileID: 13}
   m_Selected: 0
   m_LastSelected: 1
+=======
+    x: 394
+    y: 0
+    width: 1138
+    height: 680
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 13}
+  m_Panes:
+  - {fileID: 15}
+  - {fileID: 13}
+  - {fileID: 16}
+  - {fileID: 17}
+  m_Selected: 1
+  m_LastSelected: 0
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -921,12 +1006,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
   m_Name: AnimationWindow
+=======
+  m_Name: AudioMixerWindow
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 530
     width: 1532
     height: 407
@@ -938,6 +1028,20 @@ MonoBehaviour:
   - {fileID: 21}
   - {fileID: 20}
   m_Selected: 2
+=======
+    y: 680
+    width: 1532
+    height: 272
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 21}
+  m_Panes:
+  - {fileID: 18}
+  - {fileID: 19}
+  - {fileID: 20}
+  - {fileID: 21}
+  m_Selected: 3
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
   m_LastSelected: 1
 --- !u!114 &12
 MonoBehaviour:
@@ -948,13 +1052,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
+<<<<<<< HEAD
 >>>>>>> 2c8967d2b (Added battle targeting, Fixed battle background animations, Updated battle UI)
+=======
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: InspectorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1057,6 +1165,15 @@ MonoBehaviour:
 =======
   m_ActualView: {fileID: 22}
 >>>>>>> 211b440b6 (Added left and right roll animations, Added interact action menu, Added foliage tileset, Updated C1S3)
+=======
+    x: 1532
+    y: 0
+    width: 388
+    height: 952
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 22}
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
   m_Panes:
   - {fileID: 22}
   - {fileID: 23}
@@ -1072,6 +1189,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_EditorHideFlags: 1
 <<<<<<< HEAD
 =======
@@ -1081,6 +1199,9 @@ MonoBehaviour:
 =======
   m_EditorHideFlags: 0
 >>>>>>> 892ab2df9 (Added dodging, Updated C1S3 to G11, Added deep woods to C1S3)
+=======
+  m_EditorHideFlags: 0
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
   m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -1088,6 +1209,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Game
+<<<<<<< HEAD
     m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
@@ -1255,6 +1377,16 @@ MonoBehaviour:
     width: 1185
     height: 645
 >>>>>>> fe51ed161 (Backup commit before I break everything with a refactor)
+=======
+    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1760
+    y: 83
+    width: 1136
+    height: 659
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -1262,6 +1394,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1347,6 +1480,9 @@ MonoBehaviour:
 =======
   m_TargetSize: {x: 1920, y: 1080}
 >>>>>>> 892ab2df9 (Added dodging, Updated C1S3 to G11, Added deep woods to C1S3)
+=======
+  m_TargetSize: {x: 1920, y: 1080}
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1361,6 +1497,7 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1512,11 +1649,16 @@ MonoBehaviour:
     m_VBaseRangeMax: 199.5
 >>>>>>> be1d8925d (Updated title with transition and stuff, Updated autumn forrest tileset, Added howelfen sign to c1s1)
 =======
+=======
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
     m_HBaseRangeMin: -960
     m_HBaseRangeMax: 960
     m_VBaseRangeMin: -540
     m_VBaseRangeMax: 540
+<<<<<<< HEAD
 >>>>>>> 892ab2df9 (Added dodging, Updated C1S3 to G11, Added deep woods to C1S3)
+=======
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1525,7 +1667,11 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
+<<<<<<< HEAD
     m_EnableMouseInput: 0
+=======
+    m_EnableMouseInput: 1
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -1533,6 +1679,7 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1685,12 +1832,20 @@ MonoBehaviour:
 >>>>>>> 211b440b6 (Added left and right roll animations, Added interact action menu, Added foliage tileset, Updated C1S3)
 =======
 >>>>>>> fe51ed161 (Backup commit before I break everything with a refactor)
+=======
+      y: 21
+      width: 1136
+      height: 638
+    m_Scale: {x: 0.59074074, y: 0.59074074}
+    m_Translation: {x: 568, y: 319}
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1908,11 +2063,21 @@ MonoBehaviour:
   m_defaultScale: 0.83055556
   m_LastWindowPixelSize: {x: 1920, y: 918}
 >>>>>>> fe51ed161 (Backup commit before I break everything with a refactor)
+=======
+      x: -961.5047
+      y: -540
+      width: 1923.0094
+      height: 1080
+    m_MinimalGUI: 1
+  m_defaultScale: 0.59074074
+  m_LastWindowPixelSize: {x: 1136, y: 659}
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1928,6 +2093,9 @@ MonoBehaviour:
 =======
 --- !u!114 &13
 >>>>>>> be1d8925d (Updated title with transition and stuff, Updated autumn forrest tileset, Added howelfen sign to c1s1)
+=======
+--- !u!114 &14
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1943,6 +2111,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Hierarchy
+<<<<<<< HEAD
     m_Image: {fileID: 7966133145522015247, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
@@ -2139,10 +2308,21 @@ MonoBehaviour:
     width: 200
     height: 424
 >>>>>>> be1d8925d (Updated title with transition and stuff, Updated autumn forrest tileset, Added howelfen sign to c1s1)
+=======
+    m_Image: {fileID: 7966133145522015247, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1366
+    y: 83
+    width: 393
+    height: 659
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
       m_SelectedIDs: 
       m_LastClickedID: 0
@@ -2169,6 +2349,11 @@ MonoBehaviour:
       m_LastClickedID: 57750
       m_ExpandedIDs: 3c55ffffea68ffff0869ffff3a69ffffd4b7ffff7eb9ffffb0baffff5ec7ffff62c7ffff64c7ffff98c7ffff9ac7ffff14fbffff8e5a00008ec3000012cc000010d1000012de000048df0000dae0000030e100000ae20000dae300003ce5000036e600007ae60000
 >>>>>>> be1d8925d (Updated title with transition and stuff, Updated autumn forrest tileset, Added howelfen sign to c1s1)
+=======
+      m_SelectedIDs: 42450000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 46fbffff
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2184,7 +2369,11 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
+<<<<<<< HEAD
         m_ClientGUIView: {fileID: 8}
+=======
+        m_ClientGUIView: {fileID: 9}
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -2192,7 +2381,11 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: b3c3c82aface5440998d4e0912a0a5d9
+<<<<<<< HEAD
 --- !u!114 &14
+=======
+--- !u!114 &15
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2202,8 +2395,11 @@ MonoBehaviour:
   m_Enabled: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
+=======
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
   m_EditorHideFlags: 1
   m_Script: {fileID: 12013, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -2212,6 +2408,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Scene
+<<<<<<< HEAD
     m_Image: {fileID: 2593428753322112591, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
@@ -2328,19 +2525,37 @@ MonoBehaviour:
     width: 1269
     height: 645
 >>>>>>> d0e1de580 (Added new intro sequence (everything else is non-functional))
+=======
+    m_Image: {fileID: 2593428753322112591, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1793
+    y: 83
+    width: 1125
+    height: 542
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 55094fe50bf2ff576811963c8c00f2e8
   m_Gizmos: 1
+<<<<<<< HEAD
 >>>>>>> 9b6d5a586 (Finished event triggers (Way too much stuff to type here), Cleaned-up prefabs, Added dev tileset)
   m_OverrideSceneCullingMask: 6917529027641081856
   m_SceneIsLit: 1
   m_SceneLighting: 1
   m_2DMode: 0
+=======
+  m_OverrideSceneCullingMask: 6917529027641081856
+  m_SceneIsLit: 1
+  m_SceneLighting: 1
+  m_2DMode: 1
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -4150,6 +4365,117 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
+=======
+    m_Target: {x: 1.9079065, y: 0.18490508, z: -0.23596928}
+    speed: 2
+    m_Value: {x: 1.9079065, y: 0.18490508, z: -0.23596928}
+  m_RenderMode: 0
+  m_CameraMode:
+    drawMode: 0
+    name: Shaded
+    section: Shading Mode
+  m_ValidateTrueMetals: 0
+  m_DoValidateTrueMetals: 0
+  m_ExposureSliderValue: 0
+  m_SceneViewState:
+    m_AlwaysRefresh: 0
+    showFog: 1
+    showSkybox: 1
+    showFlares: 1
+    showImageEffects: 1
+    showParticleSystems: 1
+    showVisualEffectGraphs: 1
+    m_FxEnabled: 1
+  m_Grid:
+    xGrid:
+      m_Fade:
+        m_Target: 0
+        speed: 2
+        m_Value: 0
+      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
+      m_Pivot: {x: 0, y: 0, z: 0}
+      m_Size: {x: 0, y: 0}
+    yGrid:
+      m_Fade:
+        m_Target: 0
+        speed: 2
+        m_Value: 0
+      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
+      m_Pivot: {x: 0, y: 0, z: 0}
+      m_Size: {x: 1, y: 1}
+    zGrid:
+      m_Fade:
+        m_Target: 0
+        speed: 2
+        m_Value: 0
+      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
+      m_Pivot: {x: 0, y: 0, z: 0}
+      m_Size: {x: 1, y: 1}
+    m_ShowGrid: 0
+    m_GridAxis: 1
+    m_gridOpacity: 0.5
+  m_Rotation:
+    m_Target: {x: 0, y: 0, z: 0, w: 1}
+    speed: 2
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
+  m_Size:
+    m_Target: 9.064957
+    speed: 2
+    m_Value: 9.064957
+  m_Ortho:
+    m_Target: 1
+    speed: 2
+    m_Value: 1
+  m_CameraSettings:
+    m_Speed: 1.9600191
+    m_SpeedNormalized: 0.97999954
+    m_SpeedMin: 0.001
+    m_SpeedMax: 2
+    m_EasingEnabled: 1
+    m_EasingDuration: 0.4
+    m_AccelerationEnabled: 1
+    m_FieldOfViewHorizontalOrVertical: 60
+    m_NearClip: 0.03
+    m_FarClip: 10000
+    m_DynamicClip: 1
+    m_OcclusionCulling: 0
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewOrtho: 0
+  m_ReplacementShader: {fileID: 0}
+  m_ReplacementString: 
+  m_SceneVisActive: 1
+  m_LastLockedObject: {fileID: 0}
+  m_ViewIsLockedToObject: 0
+--- !u!114 &16
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12914, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Animator
+    m_Image: {fileID: -1673928668082335149, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1793
+    y: 83
+    width: 1125
+    height: 660
+  m_ViewDataDictionary: {fileID: 0}
+  m_ViewTransforms:
+    m_KeySerializationHelper:
+    - {fileID: -1297399999584036618, guid: 3e75189684fc1a4b3a190287119ceaba, type: 2}
+    m_ValueSerializationHelper:
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
     - e00: 1
       e01: 0
       e02: 0
@@ -4166,6 +4492,7 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
+<<<<<<< HEAD
     - e00: 1
       e01: 0
       e02: 0
@@ -4188,6 +4515,12 @@ MonoBehaviour:
   m_BreadCrumbs:
   - m_Target: {fileID: -1297399999584036618, guid: 3e75189684fc1a4b3a190287119ceaba,
       type: 2}
+=======
+  m_PreviewAnimator: {fileID: 0}
+  m_AnimatorController: {fileID: 9100000, guid: 3e75189684fc1a4b3a190287119ceaba, type: 2}
+  m_BreadCrumbs:
+  - m_Target: {fileID: -1297399999584036618, guid: 3e75189684fc1a4b3a190287119ceaba, type: 2}
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -4197,6 +4530,7 @@ MonoBehaviour:
   m_MiniTool: 0
   m_LockTracker:
     m_IsLocked: 0
+<<<<<<< HEAD
   m_CurrentEditor: 1
   m_LayerEditor:
     m_SelectedLayerIndex: 0
@@ -4213,6 +4547,12 @@ MonoBehaviour:
 =======
 --- !u!114 &17
 >>>>>>> 892ab2df9 (Added dodging, Updated C1S3 to G11, Added deep woods to C1S3)
+=======
+  m_CurrentEditor: 0
+  m_LayerEditor:
+    m_SelectedLayerIndex: 0
+--- !u!114 &17
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4221,12 +4561,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
   m_Script: {fileID: 12071, guid: 0000000000000000e000000000000000, type: 0}
+=======
+  m_Script: {fileID: 11500000, guid: f817a38900380be47942905e17e7d39b, type: 3}
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
   m_Name: 
   m_EditorClassIdentifier: 
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
+<<<<<<< HEAD
     m_Text: Animation
     m_Image: {fileID: -8166618308981325432, guid: 0000000000000000d000000000000000,
       type: 0}
@@ -4275,6 +4620,18 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
 <<<<<<< HEAD
 =======
+=======
+    m_Text: Timeline
+    m_Image: {fileID: -9173288242387172643, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1793
+    y: 83
+    width: 1125
+    height: 660
+  m_ViewDataDictionary: {fileID: 0}
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
   m_Preferences:
     playRangeLoopMode: 1
     editType: 0
@@ -4286,6 +4643,7 @@ MonoBehaviour:
   m_SequencePath:
     m_SelectionRoot: 0
     m_SubElements: []
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> d0e1de580 (Added new intro sequence (everything else is non-functional))
@@ -4400,6 +4758,9 @@ MonoBehaviour:
 =======
 --- !u!114 &19
 >>>>>>> 892ab2df9 (Added dodging, Updated C1S3 to G11, Added deep woods to C1S3)
+=======
+--- !u!114 &18
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4415,6 +4776,7 @@ MonoBehaviour:
   m_MaxSize: {x: 10000, y: 10000}
   m_TitleContent:
     m_Text: Project
+<<<<<<< HEAD
     m_Image: {fileID: -5467254957812901981, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
@@ -4424,6 +4786,16 @@ MonoBehaviour:
     y: 613
     width: 1531
     height: 386
+=======
+    m_Image: {fileID: -5467254957812901981, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1366
+    y: 764
+    width: 1390
+    height: 250
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -4438,12 +4810,17 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/Resources/Sprites/Items & Accessories
+=======
+    - Assets/Resources/Scripts
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
+<<<<<<< HEAD
   - Assets/Resources/Sprites/Items & Accessories
   m_LastFoldersGridSize: 16
   m_LastProjectPath: /home/lizband/Desktop/NAS/Neverway/Games/ID-002 DivineAnnihilation/U2D-Divine
@@ -4455,6 +4832,18 @@ MonoBehaviour:
     m_SelectedIDs: ae700000
     m_LastClickedID: 28846
     m_ExpandedIDs: 000000005c7000005e7000006070000062700000647000006670000068700000a0700000aa70000000ca9a3b
+=======
+  - Assets/Resources/Scripts
+  m_LastFoldersGridSize: 16
+  m_LastProjectPath: /home/lizband/Desktop/NAS/Neverway/Games/002_DA/U2D-Divine Annihilation
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 49}
+    m_SelectedIDs: d8450000
+    m_LastClickedID: 17880
+    m_ExpandedIDs: 00000000ba450000
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -4482,7 +4871,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 000000005c7000005e700000607000006270000064700000667000006870000000ca9a3b
+=======
+    m_ExpandedIDs: 00000000ba450000
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -4507,10 +4900,17 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 6aecf9ff
     m_LastClickedInstanceID: -398230
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c62300004c5600009e5d00002c6b000004710000ce620000c8600000be600000a46200004021010048990000000000008c640000
+=======
+    m_SelectedInstanceIDs: a6430000
+    m_LastClickedInstanceID: 17318
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c62300004c5600009e5d00002c6b000004710000ce620000c8600000be600000a46200004021010048990000000000008c64000094b70000c6a7fdff
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -4538,6 +4938,34 @@ MonoBehaviour:
     m_GridSize: 16
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 244
+<<<<<<< HEAD
+=======
+--- !u!114 &19
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Console
+    m_Image: {fileID: -4327648978806127646, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1366
+    y: 763
+    width: 1531
+    height: 251
+  m_ViewDataDictionary: {fileID: 0}
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -4554,6 +4982,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Animation
+<<<<<<< HEAD
     m_Image: {fileID: -8166618308981325432, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
@@ -4567,6 +4996,20 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_LastSelectedObjectID: -389690
+=======
+    m_Image: {fileID: -8166618308981325432, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1366
+    y: 635
+    width: 1531
+    height: 404
+  m_ViewDataDictionary: {fileID: 0}
+  m_LockTracker:
+    m_IsLocked: 0
+  m_LastSelectedObjectID: 17318
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
 --- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -4575,13 +5018,19 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+<<<<<<< HEAD
   m_EditorHideFlags: 1
   m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
+=======
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12373, guid: 0000000000000000e000000000000000, type: 0}
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
   m_Name: 
   m_EditorClassIdentifier: 
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
+<<<<<<< HEAD
     m_Text: Console
     m_Image: {fileID: -4327648978806127646, guid: 0000000000000000d000000000000000,
       type: 0}
@@ -4606,6 +5055,167 @@ MonoBehaviour:
 >>>>>>> 211b440b6 (Added left and right roll animations, Added interact action menu, Added foliage tileset, Updated C1S3)
 --- !u!114 &22
 >>>>>>> 892ab2df9 (Added dodging, Updated C1S3 to G11, Added deep woods to C1S3)
+=======
+    m_Text: Audio Mixer
+    m_Image: {fileID: 2344599766593239149, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1366
+    y: 763
+    width: 1531
+    height: 251
+  m_ViewDataDictionary: {fileID: 0}
+  m_MixersTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 42450000
+    m_LastClickedID: 17730
+    m_ExpandedIDs: 12eb343c
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 0
+      m_ClientGUIView: {fileID: 0}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_LayoutStripsOnTop:
+    m_VerticalSplitter:
+      ID: 0
+      splitterInitialOffset: 0
+      currentActiveSplitter: -1
+      realSizes:
+      - 65
+      - 35
+      relativeSizes:
+      - 0.65
+      - 0.35000002
+      minSizes:
+      - 85
+      - 105
+      maxSizes:
+      - 0
+      - 0
+      lastTotalSize: 0
+      splitSize: 6
+      xOffset: 0
+      m_Version: 1
+      oldRealSizes: 
+      oldMinSizes: 
+      oldMaxSizes: 
+      oldSplitSize: 0
+    m_HorizontalSplitter:
+      ID: 0
+      splitterInitialOffset: 0
+      currentActiveSplitter: -1
+      realSizes:
+      - 60
+      - 60
+      - 60
+      - 60
+      relativeSizes:
+      - 0.25
+      - 0.25
+      - 0.25
+      - 0.25
+      minSizes:
+      - 85
+      - 85
+      - 85
+      - 85
+      maxSizes:
+      - 0
+      - 0
+      - 0
+      - 0
+      lastTotalSize: 0
+      splitSize: 6
+      xOffset: 0
+      m_Version: 1
+      oldRealSizes: 
+      oldMinSizes: 
+      oldMaxSizes: 
+      oldSplitSize: 0
+  m_LayoutStripsOnRight:
+    m_VerticalSplitter:
+      ID: 0
+      splitterInitialOffset: 0
+      currentActiveSplitter: -1
+      realSizes:
+      - 60
+      - 60
+      - 60
+      - 60
+      relativeSizes:
+      - 0.25
+      - 0.25
+      - 0.25
+      - 0.25
+      minSizes:
+      - 100
+      - 85
+      - 85
+      - 85
+      maxSizes:
+      - 0
+      - 0
+      - 0
+      - 0
+      lastTotalSize: 0
+      splitSize: 6
+      xOffset: 0
+      m_Version: 1
+      oldRealSizes: 
+      oldMinSizes: 
+      oldMaxSizes: 
+      oldSplitSize: 0
+    m_HorizontalSplitter:
+      ID: 241
+      splitterInitialOffset: 0
+      currentActiveSplitter: -1
+      realSizes:
+      - 459
+      - 1072
+      relativeSizes:
+      - 0.3
+      - 0.7
+      minSizes:
+      - 160
+      - 160
+      maxSizes:
+      - 0
+      - 0
+      lastTotalSize: 1531
+      splitSize: 6
+      xOffset: 0
+      m_Version: 1
+      oldRealSizes: 
+      oldMinSizes: 
+      oldMaxSizes: 
+      oldSplitSize: 0
+  m_SectionOrder: 00000000030000000100000002000000
+  m_LayoutMode: 1
+  m_SortGroupsAlphabetically: 0
+  m_ShowReferencedBuses: 1
+  m_ShowBusConnections: 0
+  m_ShowBusConnectionsOfSelection: 0
+--- !u!114 &22
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4621,6 +5231,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Inspector
+<<<<<<< HEAD
     m_Image: {fileID: -2667387946076563598, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
@@ -4700,6 +5311,16 @@ MonoBehaviour:
     width: 387
     height: 916
 >>>>>>> 892ab2df9 (Added dodging, Updated C1S3 to G11, Added deep woods to C1S3)
+=======
+    m_Image: {fileID: -2667387946076563598, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 2898
+    y: 83
+    width: 387
+    height: 931
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
@@ -4742,6 +5363,7 @@ MonoBehaviour:
     m_CachedPref: 50
     m_ControlHash: 1964396721
     m_PrefName: Preview_TilemapBrushInspector
+<<<<<<< HEAD
   m_Palette: {fileID: 3542645687871464157, guid: 3ee27d58f44c1ccb5981422508e35f7b,
     type: 3}
   m_DrawGizmos: 0
@@ -4767,6 +5389,11 @@ MonoBehaviour:
 =======
 --- !u!114 &24
 >>>>>>> 892ab2df9 (Added dodging, Updated C1S3 to G11, Added deep woods to C1S3)
+=======
+  m_Palette: {fileID: 3542645687871464157, guid: 3ee27d58f44c1ccb5981422508e35f7b, type: 3}
+  m_DrawGizmos: 0
+--- !u!114 &24
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4793,6 +5420,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &23
 >>>>>>> be6f19bda (Updated test level, Updated/Fixed player party system, Added party disbanding, Added framework for game event handler)
 =======
@@ -4801,6 +5429,9 @@ MonoBehaviour:
 =======
 --- !u!114 &25
 >>>>>>> 892ab2df9 (Added dodging, Updated C1S3 to G11, Added deep woods to C1S3)
+=======
+--- !u!114 &25
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

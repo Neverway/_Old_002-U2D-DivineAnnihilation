@@ -25,6 +25,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	"process_id" : 46982,
 =======
 	"process_id" : 179054,
@@ -113,4 +114,10 @@
 	"app_path" : "/home/lizband/Unity/Hub/Editor/2020.3.22f1/Editor/Unity",
 	"app_contents_path" : "/home/lizband/Unity/Hub/Editor/2020.3.22f1/Editor/Data"
 >>>>>>> 741f5210d (Added battle encounters, Added dev menu, Added battle party setup, Updated Unity Editor version to 2020.3.22f1)
+=======
+	"process_id" : 9096,
+	"version" : "2020.3.22f1",
+	"app_path" : "/home/lizband/Unity/Hub/Editor/2020.3.22f1/Editor/Unity",
+	"app_contents_path" : "/home/lizband/Unity/Hub/Editor/2020.3.22f1/Editor/Data"
+>>>>>>> 3283f4185 (G13 init commit, added title and file select)
 }
