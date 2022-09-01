@@ -3,13 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Effect Mask
-  - Entity Shadow
-  - FX water
-  - Night Light
-  - UI Choice Box
-  - Transitions
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -19,12 +13,12 @@ TagManager:
   - UI
   - 
   - 
-  - DA_trigger
-  - DA_postprocessing
-  - DA_collider
-  - DA_shadowcaster
-  - DA_collider_grounded
-  - DA_collider_airborn
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -44,21 +38,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Tiles
-    uniqueID: 1944063517
-    locked: 0
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Entity
-    uniqueID: 4091518363
-    locked: 0
-  - name: Mask
-    uniqueID: 1800356901
-    locked: 0
-  - name: Triggers & Icons
-    uniqueID: 3583088903
-    locked: 0
-  - name: UI
-    uniqueID: 1050991465
     locked: 0
