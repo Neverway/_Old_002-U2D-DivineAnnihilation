@@ -16,6 +16,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 25
     width: 1920
     height: 987
@@ -25,13 +26,20 @@ MonoBehaviour:
   m_MinSize: {x: 875, y: 542}
 =======
     y: 50
+=======
+    y: 25
+>>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
     width: 1920
     height: 1002
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Scene
   m_RootView: {fileID: 2}
+<<<<<<< HEAD
   m_MinSize: {x: 875, y: 392}
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
+=======
+  m_MinSize: {x: 875, y: 542}
+>>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -60,8 +68,12 @@ MonoBehaviour:
   m_MinSize: {x: 875, y: 542}
 =======
     height: 1002
+<<<<<<< HEAD
   m_MinSize: {x: 875, y: 392}
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
+=======
+  m_MinSize: {x: 875, y: 542}
+>>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -805,10 +817,10 @@ MonoBehaviour:
 =======
     width: 1920
     height: 952
-  m_MinSize: {x: 579, y: 342}
-  m_MaxSize: {x: 12004, y: 8042}
+  m_MinSize: {x: 678, y: 342}
+  m_MaxSize: {x: 12003, y: 8042}
   vertical: 1
-  controlID: 226
+  controlID: 21
 --- !u!114 &6
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
 MonoBehaviour:
@@ -843,11 +855,15 @@ MonoBehaviour:
   controlID: 39636
 =======
     height: 952
-  m_MinSize: {x: 579, y: 342}
-  m_MaxSize: {x: 12004, y: 8042}
+  m_MinSize: {x: 678, y: 342}
+  m_MaxSize: {x: 12003, y: 8042}
   vertical: 0
+<<<<<<< HEAD
   controlID: 227
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
+=======
+  controlID: 22
+>>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -876,11 +892,15 @@ MonoBehaviour:
   controlID: 45379
 =======
     height: 952
-  m_MinSize: {x: 303, y: 342}
+  m_MinSize: {x: 403, y: 342}
   m_MaxSize: {x: 8003, y: 8042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 228
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
+=======
+  controlID: 23
+>>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -902,6 +922,7 @@ MonoBehaviour:
     y: 0
     width: 1532
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 530
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
@@ -914,6 +935,13 @@ MonoBehaviour:
   vertical: 0
   controlID: 184
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
+=======
+    height: 573
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
+  vertical: 0
+  controlID: 24
+>>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -932,12 +960,17 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 282
     height: 530
 =======
     width: 394
     height: 680
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
+=======
+    width: 282
+    height: 573
+>>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
@@ -956,14 +989,19 @@ MonoBehaviour:
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Name: SceneView
 =======
   m_Name: GameView
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
+=======
+  m_Name: SceneView
+>>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
     x: 282
     y: 0
@@ -982,20 +1020,28 @@ MonoBehaviour:
   m_LastSelected: 1
 =======
     x: 394
+=======
+    x: 282
+>>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
     y: 0
-    width: 1138
-    height: 680
-  m_MinSize: {x: 102, y: 121}
+    width: 1250
+    height: 573
+  m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 13}
+  m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
   - {fileID: 13}
   - {fileID: 16}
   - {fileID: 17}
+<<<<<<< HEAD
   m_Selected: 1
   m_LastSelected: 0
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
+=======
+  m_Selected: 0
+  m_LastSelected: 1
+>>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1007,15 +1053,20 @@ MonoBehaviour:
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Name: AnimationWindow
 =======
   m_Name: AudioMixerWindow
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
+=======
+  m_Name: ConsoleWindow
+>>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
     y: 530
     width: 1532
@@ -1030,19 +1081,27 @@ MonoBehaviour:
   m_Selected: 2
 =======
     y: 680
+=======
+    y: 573
+>>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
     width: 1532
-    height: 272
+    height: 379
   m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 21}
+  m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 18}
   - {fileID: 19}
   - {fileID: 20}
   - {fileID: 21}
+<<<<<<< HEAD
   m_Selected: 3
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
   m_LastSelected: 1
+=======
+  m_Selected: 1
+  m_LastSelected: 0
+>>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1170,8 +1229,8 @@ MonoBehaviour:
     y: 0
     width: 388
     height: 952
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 22}
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
   m_Panes:
@@ -1382,11 +1441,16 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1760
+    x: 1648
     y: 83
+<<<<<<< HEAD
     width: 1136
     height: 659
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
+=======
+    width: 1248
+    height: 552
+>>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -1394,6 +1458,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1483,6 +1548,9 @@ MonoBehaviour:
 =======
   m_TargetSize: {x: 1920, y: 1080}
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
+=======
+  m_TargetSize: {x: 944, y: 531}
+>>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1491,12 +1559,13 @@ MonoBehaviour:
   m_VSyncEnabled: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 03000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 01000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1659,6 +1728,12 @@ MonoBehaviour:
 >>>>>>> 892ab2df9 (Added dodging, Updated C1S3 to G11, Added deep woods to C1S3)
 =======
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
+=======
+    m_HBaseRangeMin: -472
+    m_HBaseRangeMax: 472
+    m_VBaseRangeMin: -265.5
+    m_VBaseRangeMax: 265.5
+>>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1668,10 +1743,14 @@ MonoBehaviour:
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_EnableMouseInput: 0
 =======
     m_EnableMouseInput: 1
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
+=======
+    m_EnableMouseInput: 0
+>>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -1834,17 +1913,25 @@ MonoBehaviour:
 >>>>>>> fe51ed161 (Backup commit before I break everything with a refactor)
 =======
       y: 21
+<<<<<<< HEAD
       width: 1136
       height: 638
     m_Scale: {x: 0.59074074, y: 0.59074074}
     m_Translation: {x: 568, y: 319}
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
+=======
+      width: 1248
+      height: 531
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 624, y: 265.5}
+>>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2072,6 +2159,15 @@ MonoBehaviour:
   m_defaultScale: 0.59074074
   m_LastWindowPixelSize: {x: 1136, y: 659}
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
+=======
+      x: -624
+      y: -265.5
+      width: 1248
+      height: 531
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 1248, y: 552}
+>>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -2315,13 +2411,19 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1366
     y: 83
+<<<<<<< HEAD
     width: 393
     height: 659
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
+=======
+    width: 281
+    height: 552
+>>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       m_SelectedIDs: 
@@ -2354,6 +2456,11 @@ MonoBehaviour:
       m_LastClickedID: 0
       m_ExpandedIDs: 46fbffff
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
+=======
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 18faffff44fbffff5e5000007e5000002c510000
+>>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2530,11 +2637,16 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1793
+    x: 1648
     y: 83
+<<<<<<< HEAD
     width: 1125
     height: 542
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
+=======
+    width: 1248
+    height: 552
+>>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 55094fe50bf2ff576811963c8c00f2e8
@@ -2555,6 +2667,7 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -4367,8 +4480,11 @@ MonoBehaviour:
       e33: 1
 =======
     m_Target: {x: 1.9079065, y: 0.18490508, z: -0.23596928}
+=======
+    m_Target: {x: 1.1638001, y: -0.46733773, z: -2.9989955}
+>>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
     speed: 2
-    m_Value: {x: 1.9079065, y: 0.18490508, z: -0.23596928}
+    m_Value: {x: 1.1638001, y: -0.46733773, z: -2.9989955}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -4419,9 +4535,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 9.064957
+    m_Target: 6.314285
     speed: 2
-    m_Value: 9.064957
+    m_Value: 6.314285
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -4466,24 +4582,75 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1793
+    x: 1677
     y: 83
-    width: 1125
+    width: 1219
     height: 660
   m_ViewDataDictionary: {fileID: 0}
   m_ViewTransforms:
     m_KeySerializationHelper:
     - {fileID: -1297399999584036618, guid: 3e75189684fc1a4b3a190287119ceaba, type: 2}
+    - {fileID: -4642497758664726619, guid: 4212f1ec60298b178a839a09649e571e, type: 2}
+    - {fileID: -5653624978984808096, guid: 3e75189684fc1a4b3a190287119ceaba, type: 2}
+    - {fileID: -6313624972319152173, guid: 3e75189684fc1a4b3a190287119ceaba, type: 2}
     m_ValueSerializationHelper:
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
     - e00: 1
       e01: 0
       e02: 0
-      e03: 0
+      e03: 9.5
       e10: 0
       e11: 1
       e12: 0
-      e13: 0
+      e13: -32
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 1.2553405
+      e01: 0
+      e02: 0
+      e03: -229.85278
+      e10: 0
+      e11: 1.2553405
+      e12: 0
+      e13: 61.78659
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 1
+      e01: 0
+      e02: 0
+      e03: 225.75
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 198
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 1
+      e01: 0
+      e02: 0
+      e03: 225.75
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 198
       e20: 0
       e21: 0
       e22: 1
@@ -4521,6 +4688,8 @@ MonoBehaviour:
   m_BreadCrumbs:
   - m_Target: {fileID: -1297399999584036618, guid: 3e75189684fc1a4b3a190287119ceaba, type: 2}
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
+    m_ScrollPosition: {x: 0, y: 0}
+  - m_Target: {fileID: -6313624972319152173, guid: 3e75189684fc1a4b3a190287119ceaba, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -4626,9 +4795,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1793
+    x: 1677
     y: 83
-    width: 1125
+    width: 1219
     height: 660
   m_ViewDataDictionary: {fileID: 0}
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
@@ -4792,10 +4961,16 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 1366
+<<<<<<< HEAD
     y: 764
     width: 1390
     height: 250
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
+=======
+    y: 656
+    width: 1531
+    height: 358
+>>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -4811,15 +4986,20 @@ MonoBehaviour:
     m_SearchArea: 1
     m_Folders:
 <<<<<<< HEAD
+<<<<<<< HEAD
     - Assets/Resources/Sprites/Items & Accessories
 =======
     - Assets/Resources/Scripts
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
+=======
+    - Assets/Packages/NUP Topdown 2D
+>>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
+<<<<<<< HEAD
 <<<<<<< HEAD
   - Assets/Resources/Sprites/Items & Accessories
   m_LastFoldersGridSize: 16
@@ -4834,16 +5014,26 @@ MonoBehaviour:
     m_ExpandedIDs: 000000005c7000005e7000006070000062700000647000006670000068700000a0700000aa70000000ca9a3b
 =======
   - Assets/Resources/Scripts
+=======
+  - Assets/Packages/NUP Topdown 2D
+>>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
   m_LastFoldersGridSize: 16
   m_LastProjectPath: /home/lizband/Desktop/NAS/Neverway/Games/002_DA/U2D-Divine Annihilation
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 49}
     m_SelectedIDs: d8450000
     m_LastClickedID: 17880
     m_ExpandedIDs: 00000000ba450000
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
+=======
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 9e510000
+    m_LastClickedID: 20894
+    m_ExpandedIDs: 00000000225000003c5000003e50000000ca9a3b
+>>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -4872,10 +5062,14 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 000000005c7000005e700000607000006270000064700000667000006870000000ca9a3b
 =======
     m_ExpandedIDs: 00000000ba450000
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
+=======
+    m_ExpandedIDs: 0000000022500000
+>>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -4901,6 +5095,7 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 6aecf9ff
     m_LastClickedInstanceID: -398230
     m_HadKeyboardFocusLastEvent: 0
@@ -4908,6 +5103,10 @@ MonoBehaviour:
 =======
     m_SelectedInstanceIDs: a6430000
     m_LastClickedInstanceID: 17318
+=======
+    m_SelectedInstanceIDs: ca500000
+    m_LastClickedInstanceID: 20682
+>>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300004c5600009e5d00002c6b000004710000ce620000c8600000be600000a46200004021010048990000000000008c64000094b70000c6a7fdff
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
@@ -4926,7 +5125,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 11}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -4961,9 +5160,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 1366
-    y: 763
+    y: 656
     width: 1531
-    height: 251
+    height: 358
   m_ViewDataDictionary: {fileID: 0}
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
 --- !u!114 &20
@@ -5008,8 +5207,12 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
+<<<<<<< HEAD
   m_LastSelectedObjectID: 17318
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
+=======
+  m_LastSelectedObjectID: 20682
+>>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
 --- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -5062,14 +5265,14 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 1366
-    y: 763
-    width: 1531
-    height: 251
+    y: 799
+    width: 1376
+    height: 215
   m_ViewDataDictionary: {fileID: 0}
   m_MixersTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 42450000
-    m_LastClickedID: 17730
+    m_SelectedIDs: 
+    m_LastClickedID: 18318
     m_ExpandedIDs: 12eb343c
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -5185,12 +5388,12 @@ MonoBehaviour:
       oldMaxSizes: 
       oldSplitSize: 0
     m_HorizontalSplitter:
-      ID: 241
+      ID: 153
       splitterInitialOffset: 0
       currentActiveSplitter: -1
       realSizes:
-      - 459
-      - 1072
+      - 413
+      - 963
       relativeSizes:
       - 0.3
       - 0.7
@@ -5200,7 +5403,7 @@ MonoBehaviour:
       maxSizes:
       - 0
       - 0
-      lastTotalSize: 1531
+      lastTotalSize: 1376
       splitSize: 6
       xOffset: 0
       m_Version: 1
@@ -5329,7 +5532,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 360
   m_GlobalObjectId: 
   m_LockTracker:
     m_IsLocked: 0
@@ -5354,15 +5557,16 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1532
+    x: 2782
     y: 83
-    width: 387
-    height: 916
+    width: 503
+    height: 931
   m_ViewDataDictionary: {fileID: 0}
   m_PreviewResizer:
     m_CachedPref: 50
     m_ControlHash: 1964396721
     m_PrefName: Preview_TilemapBrushInspector
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_Palette: {fileID: 3542645687871464157, guid: 3ee27d58f44c1ccb5981422508e35f7b,
     type: 3}
@@ -5391,6 +5595,9 @@ MonoBehaviour:
 >>>>>>> 892ab2df9 (Added dodging, Updated C1S3 to G11, Added deep woods to C1S3)
 =======
   m_Palette: {fileID: 3542645687871464157, guid: 3ee27d58f44c1ccb5981422508e35f7b, type: 3}
+=======
+  m_Palette: {fileID: 3737502903375264434, guid: 062920b8a9d8962969318624218e0790, type: 3}
+>>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
   m_DrawGizmos: 0
 --- !u!114 &24
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)

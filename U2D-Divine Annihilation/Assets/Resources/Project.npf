@@ -1,0 +1,6 @@
+Layer Notes
+
+DA_Trigger - Used for easily disabling triggers in developer mode
+DA_collider - Area boundary, collides with entities regardless of if they are in the air
+DA_collider_grounded - Used for stopping entities from walking into pits, collide with grounded entities
+DA_collider_airborn - Used for collisions with airborn entities

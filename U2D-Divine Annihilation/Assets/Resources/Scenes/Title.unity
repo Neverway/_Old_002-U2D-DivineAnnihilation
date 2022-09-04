@@ -13326,6 +13326,16 @@ MonoBehaviour:
     controllerKey: None
     keyboardAndMouseAxis: 
     controllerAxis: 
+  - actionName: Menu Horizontal
+    keyboardAndMouseKey: None
+    controllerKey: None
+    keyboardAndMouseAxis: Dpad X
+    controllerAxis: LeftStick X
+  - actionName: Menu Vertical
+    keyboardAndMouseKey: None
+    controllerKey: None
+    keyboardAndMouseAxis: Dpad Y
+    controllerAxis: LeftStick Y
   - actionName: Up
     keyboardAndMouseKey: UpArrow
     controllerKey: None
@@ -13346,6 +13356,16 @@ MonoBehaviour:
     controllerKey: None
     keyboardAndMouseAxis: 
     controllerAxis: 
+  - actionName: Horizontal
+    keyboardAndMouseKey: None
+    controllerKey: None
+    keyboardAndMouseAxis: Dpad X
+    controllerAxis: LeftStick X
+  - actionName: Vertical
+    keyboardAndMouseKey: None
+    controllerKey: None
+    keyboardAndMouseAxis: Dpad Y
+    controllerAxis: LeftStick Y
   - actionName: Interact
     keyboardAndMouseKey: Z
     controllerKey: JoystickButton0

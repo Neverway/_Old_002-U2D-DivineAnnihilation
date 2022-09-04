@@ -9,6 +9,7 @@
 //=============================================================================
 
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -214,5 +215,8 @@ public class NUPInput : MonoBehaviour
         [Header("Axis Inputs")]
         public string keyboardAndMouseAxis;
         public string controllerAxis;
+        
+        [Header("READ-ONLY")]
+        public bool wasHeld;
     }
 }

@@ -13,10 +13,10 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - DA_trigger
+  - DA_collider
+  - DA_collider_ground
+  - DA_collider_airborn
   - 
   - 
   - 
@@ -38,6 +38,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Tiles
+    uniqueID: 1925170773
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Entity
+    uniqueID: 58790729
+    locked: 0
+  - name: Mask
+    uniqueID: 1034945815
+    locked: 0
+  - name: Triggers
+    uniqueID: 3530615539
     locked: 0
