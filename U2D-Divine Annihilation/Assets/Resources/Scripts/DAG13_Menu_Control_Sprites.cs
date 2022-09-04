@@ -8,6 +8,7 @@
 //=============================================================================
 
 using System;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
@@ -39,6 +40,7 @@ public class DAG13_Menu_Control_Sprites : MonoBehaviour
     //=-----------------=
     private int scrollIndex;
     private int indexLimit;
+    private bool acceptingInput = true;
 
 
     //=-----------------=
@@ -50,10 +52,22 @@ public class DAG13_Menu_Control_Sprites : MonoBehaviour
     //=-----------------=
     // Mono Functions
     //=-----------------=
+    private void OnDisable()
+    {
+	    StopCoroutine(RepeatPressDelay());
+	    acceptingInput = true;
+    }
+    
     private void Start()
     {
 	    input = FindObjectOfType<NUPInput>();
 	    indexLimit = spriteOptions.Length-1;
+    }
+
+    private IEnumerator RepeatPressDelay()
+    {
+	    yield return new WaitForSeconds(0.15f);
+	    acceptingInput = true;
     }
 
     private void Update()
@@ -73,34 +87,46 @@ public class DAG13_Menu_Control_Sprites : MonoBehaviour
 	    // Scroll up and down through the menu
 	    if (!horizontalScrolling)
 		{
-			if (input.GetKeyDown("Menu Up"))
+			if (input.GetKeyDown("Menu Up") || input.GetAxis("Menu Vertical") < -0.01f)
 			{
+				if (!acceptingInput) { return; }
+				acceptingInput = false;
 				if (scrollIndex > 0 && !wrapAroundScrolling) { scrollIndex--; PlayAudio("Scroll"); }
 				else if (scrollIndex == 0 && wrapAroundScrolling) { scrollIndex = indexLimit; PlayAudio("Scroll"); }
 				spriteOptions[scrollIndex].onHovered.Invoke();
+				StartCoroutine(RepeatPressDelay());
 			}
-			else if (input.GetKeyDown("Menu Down"))
+			else if (input.GetKeyDown("Menu Down") || input.GetAxis("Menu Vertical") > 0.01f)
 			{
+				if (!acceptingInput) { return; }
+				acceptingInput = false;
 				if (scrollIndex < indexLimit && !wrapAroundScrolling) { scrollIndex++; PlayAudio("Scroll"); }
 				else if (scrollIndex == indexLimit && wrapAroundScrolling) { scrollIndex = 0; PlayAudio("Scroll"); }
 				spriteOptions[scrollIndex].onHovered.Invoke();
+				StartCoroutine(RepeatPressDelay());
 			}
 		}
 	    
 	    // Scroll left and right through the menu
 		else
 		{
-			if (input.GetKeyDown("Menu Left"))
+			if (input.GetKeyDown("Menu Left") || input.GetAxis("Menu Horizontal") < -0.01f)
 			{
+				if (!acceptingInput) { return; }
+				acceptingInput = false;
 				if (scrollIndex > 0 && !wrapAroundScrolling) { scrollIndex--; PlayAudio("Scroll"); }
 				else if (scrollIndex == 0 && wrapAroundScrolling) { scrollIndex = indexLimit; PlayAudio("Scroll"); }
 				spriteOptions[scrollIndex].onHovered.Invoke();
+				StartCoroutine(RepeatPressDelay());
 			}
-			else if (input.GetKeyDown("Menu Right"))
+			else if (input.GetKeyDown("Menu Right") || input.GetAxis("Menu Horizontal") > 0.01f)
 			{
+				if (!acceptingInput) { return; }
+				acceptingInput = false;
 				if (scrollIndex < indexLimit && !wrapAroundScrolling) { scrollIndex++; PlayAudio("Scroll"); }
 				else if (scrollIndex == indexLimit && wrapAroundScrolling) { scrollIndex = 0; PlayAudio("Scroll"); }
 				spriteOptions[scrollIndex].onHovered.Invoke();
+				StartCoroutine(RepeatPressDelay());
 			}
 		}
     }
@@ -126,8 +152,15 @@ public class DAG13_Menu_Control_Sprites : MonoBehaviour
     // Handel selecting a menu option or hitting the back button
     private void SelectControl()
     {
-	    if (input.GetKeyDown("Interact")) { PlayAudio("Select"); spriteOptions[scrollIndex].onSelected.Invoke(); }
-	    else if (input.GetKeyDown("Action")) { onBack.Invoke(); }
+	    if (input.GetKeyDown("Interact"))
+	    {
+		    PlayAudio("Select"); 
+		    spriteOptions[scrollIndex].onSelected.Invoke();
+	    }
+	    else if (input.GetKeyDown("Action"))
+	    {
+		    onBack.Invoke();
+	    }
     }
 
     private void PlayAudio(string audioSource)
