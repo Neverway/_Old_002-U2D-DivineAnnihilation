@@ -22,7 +22,6 @@ public class DAG13_System_MenuManager : MonoBehaviour
     // Private variables
     //=-----------------=
     private bool entitiesPaused;
-    private bool playerWasAbleToMove;
 
 
     //=-----------------=
@@ -76,8 +75,7 @@ public class DAG13_System_MenuManager : MonoBehaviour
 	    entitiesPaused = true;
 	    
 	    // Pause player movement
-	    playerWasAbleToMove = playerCharacter.canMove;
-	    playerCharacter.canMove = false;
+	    playerCharacter.SetNewMovement(0,0,0);
     }
 
     private void UnPauseEntities()
@@ -87,7 +85,7 @@ public class DAG13_System_MenuManager : MonoBehaviour
 	    entitiesPaused = false;
 	    
 	    // UnPause player movement
-	    playerCharacter.canMove = playerWasAbleToMove;
+	    playerCharacter.ResetMovement();
     }
 
 

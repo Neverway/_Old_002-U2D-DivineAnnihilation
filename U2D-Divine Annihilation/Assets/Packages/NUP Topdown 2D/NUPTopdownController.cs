@@ -177,7 +177,7 @@ public class NUPTopdownController : MonoBehaviour
     //=-----------------=
     public void SetNewMovement(float _horizontalMovement, float _verticalMovement, float _movementSpeed)
     {
-        // Disable current movement so it doesn't imediately overwrite our new movement
+        // Disable current movement so it doesn't immediately overwrite our new movement
         if (canMove) { canMove = false; couldMove = true;}
         else couldMove = false;
         if (canSprint) { canSprint = false; couldSprint = true; }
@@ -187,16 +187,28 @@ public class NUPTopdownController : MonoBehaviour
         horizontalMovement = _horizontalMovement;
         verticalMovement = _verticalMovement;
         movementSpeed = _movementSpeed;
+
+        if (useBuiltInAnimationTags)
+        {
+            animator.SetFloat("MoveX", horizontalMovement);
+            animator.SetFloat("MoveY", verticalMovement);
+        }
     }
 
     public void ResetMovement()
     {
-        // Disable current movement so it doesn't imediately overwrite our new movement
+        // Disable current movement so it doesn't immediately overwrite our new movement
         if (couldMove) { canMove = true; }
         if (couldSprint) { canSprint = true;}
 
         // Set new movement
         movementSpeed = walkSpeed;
+
+        if (useBuiltInAnimationTags)
+        {
+            animator.SetFloat("MoveX", horizontalMovement);
+            animator.SetFloat("MoveY", verticalMovement);
+        }
     }
 
     public void SetGrounded(bool _grounded)
