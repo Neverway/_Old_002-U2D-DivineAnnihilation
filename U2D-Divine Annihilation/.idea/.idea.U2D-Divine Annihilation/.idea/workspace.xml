@@ -5,25 +5,17 @@
       <change beforePath="$PROJECT_DIR$/../Divine Annihilation - G12 Story draft" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Other Files/Create Assets.odt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Other Files/To-Do" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.U2D-Divine Annihilation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.U2D-Divine Annihilation/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scenes/C1S1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scenes/C1S1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scripts/DAG13_TextboxData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scripts/DAG13_TextboxData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scripts/DAG13_Trigger_Interact.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scripts/DAG13_Trigger_Interact.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/NUP Topdown 2D/NUPTopdownController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/NUP Topdown 2D/NUPTopdownController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scripts/DAG13_System_MenuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scripts/DAG13_System_MenuManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ArtifactDB-lock" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB-lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ProtocolInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ProtocolInstance.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB-lock" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB-lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/2a/2a6366886401885fc9e2737c36aa435e.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/2a/2a6366886401885fc9e2737c36aa435e.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/6b/6be3d07fde38f1444f536d87f33dea55.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/6b/6be3d07fde38f1444f536d87f33dea55.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/Assembly-CSharp.dll.hash" beforeDir="false" afterPath="$PROJECT_DIR$/Temp/Assembly-CSharp.dll.hash" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Temp/CompilationLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Temp/CompilationLog.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" beforeDir="false" afterPath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +116,7 @@
       <workItem from="1662266825938" duration="653000" />
       <workItem from="1662267557601" duration="850000" />
       <workItem from="1662311576836" duration="19212000" />
-      <workItem from="1662360630471" duration="4567000" />
+      <workItem from="1662360630471" duration="4838000" />
     </task>
     <servers />
   </component>
