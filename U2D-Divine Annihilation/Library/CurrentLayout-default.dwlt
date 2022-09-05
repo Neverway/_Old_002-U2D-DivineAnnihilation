@@ -32,7 +32,7 @@ MonoBehaviour:
     width: 1920
     height: 1002
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Project
   m_RootView: {fileID: 2}
 <<<<<<< HEAD
   m_MinSize: {x: 875, y: 392}
@@ -69,11 +69,15 @@ MonoBehaviour:
 =======
     height: 1002
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_MinSize: {x: 875, y: 392}
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
 =======
   m_MinSize: {x: 875, y: 542}
 >>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
+=======
+  m_MinSize: {x: 875, y: 300}
+>>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -817,10 +821,10 @@ MonoBehaviour:
 =======
     width: 1920
     height: 952
-  m_MinSize: {x: 678, y: 342}
-  m_MaxSize: {x: 12003, y: 8042}
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 1
-  controlID: 21
+  controlID: 20
 --- !u!114 &6
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
 MonoBehaviour:
@@ -855,15 +859,19 @@ MonoBehaviour:
   controlID: 39636
 =======
     height: 952
-  m_MinSize: {x: 678, y: 342}
-  m_MaxSize: {x: 12003, y: 8042}
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
   controlID: 227
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
 =======
   controlID: 22
 >>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
+=======
+  controlID: 21
+>>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -883,6 +891,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1532
 <<<<<<< HEAD
     height: 937
@@ -891,16 +900,23 @@ MonoBehaviour:
   vertical: 1
   controlID: 45379
 =======
+=======
+    width: 1264
+>>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
     height: 952
-  m_MinSize: {x: 403, y: 342}
-  m_MaxSize: {x: 8003, y: 8042}
+  m_MinSize: {x: 403, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
   controlID: 228
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
 =======
   controlID: 23
 >>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
+=======
+  controlID: 22
+>>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -920,6 +936,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1532
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -942,6 +959,14 @@ MonoBehaviour:
   vertical: 0
   controlID: 24
 >>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
+=======
+    width: 1264
+    height: 564
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
+  vertical: 0
+  controlID: 23
+>>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -961,6 +986,7 @@ MonoBehaviour:
     y: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 282
     height: 530
 =======
@@ -971,6 +997,10 @@ MonoBehaviour:
     width: 282
     height: 573
 >>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
+=======
+    width: 287
+    height: 564
+>>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
@@ -1003,6 +1033,7 @@ MonoBehaviour:
     serializedVersion: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 282
     y: 0
     width: 1250
@@ -1023,11 +1054,14 @@ MonoBehaviour:
 =======
     x: 282
 >>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
+=======
+    x: 287
+>>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
     y: 0
-    width: 1250
-    height: 573
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+    width: 977
+    height: 564
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -1054,6 +1088,7 @@ MonoBehaviour:
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Name: AnimationWindow
 =======
   m_Name: AudioMixerWindow
@@ -1061,11 +1096,15 @@ MonoBehaviour:
 =======
   m_Name: ConsoleWindow
 >>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
+=======
+  m_Name: ProjectBrowser
+>>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     y: 530
@@ -1089,11 +1128,20 @@ MonoBehaviour:
   m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 19}
+=======
+    y: 564
+    width: 1264
+    height: 388
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 18}
+>>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
   m_Panes:
   - {fileID: 18}
   - {fileID: 19}
   - {fileID: 20}
   - {fileID: 21}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_Selected: 3
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
@@ -1102,6 +1150,10 @@ MonoBehaviour:
   m_Selected: 1
   m_LastSelected: 0
 >>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
+=======
+  m_Selected: 0
+  m_LastSelected: 1
+>>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1121,6 +1173,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1226,11 +1279,14 @@ MonoBehaviour:
 >>>>>>> 211b440b6 (Added left and right roll animations, Added interact action menu, Added foliage tileset, Updated C1S3)
 =======
     x: 1532
+=======
+    x: 1264
+>>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
     y: 0
-    width: 388
+    width: 656
     height: 952
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 22}
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
   m_Panes:
@@ -1441,14 +1497,18 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1648
+    x: 1653
     y: 83
+<<<<<<< HEAD
 <<<<<<< HEAD
     width: 1136
     height: 659
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
 =======
     width: 1248
+=======
+    width: 975
+>>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
     height: 552
 >>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
   m_ViewDataDictionary: {fileID: 0}
@@ -1889,6 +1949,7 @@ MonoBehaviour:
 =======
       y: 21
 <<<<<<< HEAD
+<<<<<<< HEAD
       width: 710
       height: 403
     m_Scale: {x: 1, y: 1}
@@ -1925,12 +1986,19 @@ MonoBehaviour:
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 624, y: 265.5}
 >>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
+=======
+      width: 975
+      height: 531
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 487.5, y: 265.5}
+>>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2161,13 +2229,20 @@ MonoBehaviour:
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
 =======
       x: -624
+=======
+      x: -487.5
+>>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
       y: -265.5
-      width: 1248
+      width: 975
       height: 531
     m_MinimalGUI: 1
   m_defaultScale: 1
+<<<<<<< HEAD
   m_LastWindowPixelSize: {x: 1248, y: 552}
 >>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
+=======
+  m_LastWindowPixelSize: {x: 975, y: 552}
+>>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -2412,6 +2487,7 @@ MonoBehaviour:
     x: 1366
     y: 83
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 393
     height: 659
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
@@ -2419,10 +2495,15 @@ MonoBehaviour:
     width: 281
     height: 552
 >>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
+=======
+    width: 286
+    height: 543
+>>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2461,6 +2542,11 @@ MonoBehaviour:
       m_LastClickedID: 0
       m_ExpandedIDs: 18faffff44fbffff5e5000007e5000002c510000
 >>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
+=======
+      m_SelectedIDs: 4a260100
+      m_LastClickedID: 0
+      m_ExpandedIDs: d47afdfffa7afdff287bfdffa27bfdffd07bfdfff47bfdffd47efdff7857ffff107fffff0890ffffd490ffff44fbffffae44000064450000365d0000306000006e610000
+>>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2637,8 +2723,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1648
+    x: 1653
     y: 83
+<<<<<<< HEAD
 <<<<<<< HEAD
     width: 1125
     height: 542
@@ -2658,6 +2745,14 @@ MonoBehaviour:
   m_SceneLighting: 1
   m_2DMode: 0
 =======
+=======
+    width: 975
+    height: 543
+  m_ViewDataDictionary: {fileID: 0}
+  m_ShowContextualTools: 0
+  m_WindowGUID: 55094fe50bf2ff576811963c8c00f2e8
+  m_Gizmos: 0
+>>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
   m_OverrideSceneCullingMask: 6917529027641081856
   m_SceneIsLit: 1
   m_SceneLighting: 1
@@ -2667,6 +2762,7 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -4483,8 +4579,11 @@ MonoBehaviour:
 =======
     m_Target: {x: 1.1638001, y: -0.46733773, z: -2.9989955}
 >>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
+=======
+    m_Target: {x: 2.499774, y: 0.5327484, z: -2.4699745}
+>>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
     speed: 2
-    m_Value: {x: 1.1638001, y: -0.46733773, z: -2.9989955}
+    m_Value: {x: 2.499774, y: 0.5327484, z: -2.4699745}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -4521,13 +4620,13 @@ MonoBehaviour:
       m_Size: {x: 1, y: 1}
     zGrid:
       m_Fade:
-        m_Target: 0
+        m_Target: 1
         speed: 2
-        m_Value: 0
+        m_Value: 1
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
-    m_ShowGrid: 0
+    m_ShowGrid: 1
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
@@ -4535,9 +4634,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 6.314285
+    m_Target: 9.946152
     speed: 2
-    m_Value: 6.314285
+    m_Value: 9.946152
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -4962,6 +5061,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1366
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 764
     width: 1390
     height: 250
@@ -4971,6 +5071,11 @@ MonoBehaviour:
     width: 1531
     height: 358
 >>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
+=======
+    y: 647
+    width: 1263
+    height: 367
+>>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -4987,6 +5092,7 @@ MonoBehaviour:
     m_Folders:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     - Assets/Resources/Sprites/Items & Accessories
 =======
     - Assets/Resources/Scripts
@@ -4994,11 +5100,15 @@ MonoBehaviour:
 =======
     - Assets/Packages/NUP Topdown 2D
 >>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
+=======
+    - Assets/Resources/Scripts
+>>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   - Assets/Resources/Sprites/Items & Accessories
@@ -5017,11 +5127,15 @@ MonoBehaviour:
 =======
   - Assets/Packages/NUP Topdown 2D
 >>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
+=======
+  - Assets/Resources/Scripts
+>>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
   m_LastFoldersGridSize: 16
   m_LastProjectPath: /home/lizband/Desktop/NAS/Neverway/Games/002_DA/U2D-Divine Annihilation
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
 <<<<<<< HEAD
     scrollPos: {x: 0, y: 49}
     m_SelectedIDs: d8450000
@@ -5034,6 +5148,12 @@ MonoBehaviour:
     m_LastClickedID: 20894
     m_ExpandedIDs: 00000000225000003c5000003e50000000ca9a3b
 >>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
+=======
+    scrollPos: {x: 0, y: 78}
+    m_SelectedIDs: 62470000
+    m_LastClickedID: 18274
+    m_ExpandedIDs: 000000001847000044470000464700006647000000ca9a3b
+>>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -5063,6 +5183,7 @@ MonoBehaviour:
     m_LastClickedID: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 000000005c7000005e700000607000006270000064700000667000006870000000ca9a3b
 =======
     m_ExpandedIDs: 00000000ba450000
@@ -5070,6 +5191,9 @@ MonoBehaviour:
 =======
     m_ExpandedIDs: 0000000022500000
 >>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
+=======
+    m_ExpandedIDs: 0000000018470000
+>>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -5096,6 +5220,7 @@ MonoBehaviour:
   m_ListAreaState:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 6aecf9ff
     m_LastClickedInstanceID: -398230
     m_HadKeyboardFocusLastEvent: 0
@@ -5107,23 +5232,27 @@ MonoBehaviour:
     m_SelectedInstanceIDs: ca500000
     m_LastClickedInstanceID: 20682
 >>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
+=======
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+>>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300004c5600009e5d00002c6b000004710000ce620000c8600000be600000a46200004021010048990000000000008c64000094b70000c6a7fdff
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: DAG13_System_MenuManager
+      m_OriginalName: DAG13_System_MenuManager
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 75338
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 11}
     m_CreateAssetUtility:
@@ -5161,7 +5290,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1366
     y: 656
-    width: 1531
+    width: 1263
     height: 358
   m_ViewDataDictionary: {fileID: 0}
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
@@ -5208,11 +5337,15 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LastSelectedObjectID: 17318
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
 =======
   m_LastSelectedObjectID: 20682
 >>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
+=======
+  m_LastSelectedObjectID: -88862
+>>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
 --- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -5519,9 +5652,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2898
+    x: 2630
     y: 83
-    width: 387
+    width: 655
     height: 931
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
   m_ViewDataDictionary: {fileID: 0}
@@ -5532,7 +5665,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 360
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_LockTracker:
     m_IsLocked: 0

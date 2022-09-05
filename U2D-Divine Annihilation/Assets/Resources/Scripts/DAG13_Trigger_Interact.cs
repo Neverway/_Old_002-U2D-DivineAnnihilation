@@ -18,6 +18,7 @@
 //=============================================================================
 
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -33,6 +34,7 @@ public class DAG13_Trigger_Interact : MonoBehaviour
     // Private variables
     //=-----------------=
     public bool inTrigger;
+    public bool active;
 
 
     //=-----------------=
@@ -51,9 +53,15 @@ public class DAG13_Trigger_Interact : MonoBehaviour
 	    textboxManager = FindObjectOfType<DAG13_System_TextboxManager>();
     }
 
+    private IEnumerator ActivationDelay()
+    {
+	    yield return new WaitForSeconds(0.5f);
+	    active = false;
+    }
+
     private void Update()
     {
-	    if (!inTrigger || !input.GetKeyDown("Interact")) return;
+	    if (!inTrigger || !input.GetKeyDown("Interact") || textboxManager.active || active) return;
 	    TransmitDataToTextboxManager();
     }
 
@@ -75,10 +83,16 @@ public class DAG13_Trigger_Interact : MonoBehaviour
     //=-----------------=
     private void TransmitDataToTextboxManager()
     {
+	    active = true;
 	    textboxManager.textboxData = textboxData;
+	    textboxManager.StartTextbox();
     }
     
     //=-----------------=
     // External Functions
     //=-----------------=
+    public void Reactivate()
+    {
+	    StartCoroutine(ActivationDelay());
+    }
 }
