@@ -22,6 +22,7 @@ public class DAG13_System_MenuManager : MonoBehaviour
     // Private variables
     //=-----------------=
     private bool entitiesPaused;
+    private bool playerWasAbleToMove;
 
 
     //=-----------------=
@@ -70,12 +71,23 @@ public class DAG13_System_MenuManager : MonoBehaviour
 
     private void PauseEntities()
     {
+	    // Keep the function from firing more than once
+	    if (entitiesPaused) return;
+	    entitiesPaused = true;
 	    
+	    // Pause player movement
+	    playerWasAbleToMove = playerCharacter.canMove;
+	    playerCharacter.canMove = false;
     }
 
     private void UnPauseEntities()
     {
+	    // Keep the function from firing more than once
+	    if (!entitiesPaused) return;
+	    entitiesPaused = false;
 	    
+	    // UnPause player movement
+	    playerCharacter.canMove = playerWasAbleToMove;
     }
 
 
