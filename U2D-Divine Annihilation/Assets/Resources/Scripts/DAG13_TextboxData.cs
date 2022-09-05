@@ -49,13 +49,16 @@ public class DAG13_TextboxData
     [Serializable]
     public class TextboxLine
     {
-	    [Tooltip("Name of the character that's talking. (Leave blank to switch to a monologue textbox)")]
+	    [Tooltip("Name of the character that's talking (Leave blank to switch to a monologue textbox)")]
 	    public string name;
-	    [Tooltip("Sprite of the character that's talking. (Won't display if textbox is in monologue mode)")]
+	    
+	    [Tooltip("Sprite of the character that's talking (Won't display if textbox is in monologue mode)")]
 	    public Sprite[] portrait;
-	    [Tooltip("Text that appears in the textbox.")][TextArea]
+	    
+	    [Tooltip("Text that appears in the textbox")][TextArea]
 	    public string textContent;
-	    [Tooltip("Events to fire once this line has finished appearing.")]
+	    
+	    [Tooltip("Events to fire once this line has finished appearing")]
 	    public UnityEvent onFinishLine;
     }
 }
