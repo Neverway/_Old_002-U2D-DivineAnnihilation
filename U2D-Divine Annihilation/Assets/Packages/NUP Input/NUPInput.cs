@@ -45,7 +45,7 @@ public class NUPInput : MonoBehaviour
     //=-----------------=
     // Mono Functions
     //=-----------------=
-    private void Start()
+    private void Awake()
     {
         InitializeControls();
     }
@@ -56,6 +56,10 @@ public class NUPInput : MonoBehaviour
     //=-----------------=
     private void InitializeControls()
     {
+        deviceKeyboardAndMouseKey.Clear();
+            deviceControllerKey.Clear();
+            deviceKeyboardAndMouseAxis.Clear();
+            deviceControllerAxis.Clear();
         // Cycle through each action in the Actions array
         foreach (var action in actions)
         {

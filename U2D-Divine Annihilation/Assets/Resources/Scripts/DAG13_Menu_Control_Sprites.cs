@@ -66,7 +66,7 @@ public class DAG13_Menu_Control_Sprites : MonoBehaviour
 
     private IEnumerator RepeatPressDelay()
     {
-	    yield return new WaitForSeconds(0.15f);
+	    yield return new WaitForSeconds(0.2f);
 	    acceptingInput = true;
     }
 
@@ -87,7 +87,7 @@ public class DAG13_Menu_Control_Sprites : MonoBehaviour
 	    // Scroll up and down through the menu
 	    if (!horizontalScrolling)
 		{
-			if (input.GetKeyDown("Menu Up") || input.GetAxis("Menu Vertical") < -0.01f)
+			if (input.GetKey("Menu Up") || input.GetAxis("Menu Vertical") < -0.01f)
 			{
 				if (!acceptingInput) { return; }
 				acceptingInput = false;
@@ -96,7 +96,7 @@ public class DAG13_Menu_Control_Sprites : MonoBehaviour
 				spriteOptions[scrollIndex].onHovered.Invoke();
 				StartCoroutine(RepeatPressDelay());
 			}
-			else if (input.GetKeyDown("Menu Down") || input.GetAxis("Menu Vertical") > 0.01f)
+			else if (input.GetKey("Menu Down") || input.GetAxis("Menu Vertical") > 0.01f)
 			{
 				if (!acceptingInput) { return; }
 				acceptingInput = false;
@@ -110,7 +110,7 @@ public class DAG13_Menu_Control_Sprites : MonoBehaviour
 	    // Scroll left and right through the menu
 		else
 		{
-			if (input.GetKeyDown("Menu Left") || input.GetAxis("Menu Horizontal") < -0.01f)
+			if (input.GetKey("Menu Left") || input.GetAxis("Menu Horizontal") < -0.01f)
 			{
 				if (!acceptingInput) { return; }
 				acceptingInput = false;
@@ -119,7 +119,7 @@ public class DAG13_Menu_Control_Sprites : MonoBehaviour
 				spriteOptions[scrollIndex].onHovered.Invoke();
 				StartCoroutine(RepeatPressDelay());
 			}
-			else if (input.GetKeyDown("Menu Right") || input.GetAxis("Menu Horizontal") > 0.01f)
+			else if (input.GetKey("Menu Right") || input.GetAxis("Menu Horizontal") > 0.01f)
 			{
 				if (!acceptingInput) { return; }
 				acceptingInput = false;

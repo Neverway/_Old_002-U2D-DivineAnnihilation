@@ -67,7 +67,7 @@ public class DAG13_Menu_Control_Text : MonoBehaviour
 
     private IEnumerator RepeatPressDelay()
     {
-	    yield return new WaitForSeconds(0.15f);
+	    yield return new WaitForSeconds(0.2f);
 	    acceptingInput = true;
     }
 
