@@ -44,7 +44,7 @@ public class DAG13_Trigger_Interact : MonoBehaviour
     // Reference variables
     //=-----------------=
     private NUPInput input;
-    private DAG13_System_TextboxManager textboxManager;
+    private DAG13_UI_TextboxManager textboxManager;
 
 
     //=-----------------=
@@ -54,7 +54,7 @@ public class DAG13_Trigger_Interact : MonoBehaviour
     {
 	    // Find references
 	    input = FindObjectOfType<NUPInput>();
-	    textboxManager = FindObjectOfType<DAG13_System_TextboxManager>();
+	    textboxManager = FindObjectOfType<DAG13_UI_TextboxManager>();
     }
 
     private IEnumerator ActivationDelay()

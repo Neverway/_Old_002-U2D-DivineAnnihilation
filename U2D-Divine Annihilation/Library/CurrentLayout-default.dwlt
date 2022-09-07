@@ -32,7 +32,7 @@ MonoBehaviour:
     width: 1920
     height: 1002
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Scene
   m_RootView: {fileID: 2}
 <<<<<<< HEAD
   m_MinSize: {x: 875, y: 392}
@@ -70,6 +70,7 @@ MonoBehaviour:
     height: 1002
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_MinSize: {x: 875, y: 392}
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
 =======
@@ -78,6 +79,9 @@ MonoBehaviour:
 =======
   m_MinSize: {x: 875, y: 300}
 >>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
+=======
+  m_MinSize: {x: 875, y: 542}
+>>>>>>> 157013fc9 (Added fade transition manager, Added room warp trigger, Added textbox default chatter sound)
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -171,7 +175,11 @@ MonoBehaviour:
   m_MaxSize: {x: 14002, y: 14042}
 <<<<<<< HEAD
   vertical: 1
+<<<<<<< HEAD
   controlID: 21
+=======
+  controlID: 24
+>>>>>>> 157013fc9 (Added fade transition manager, Added room warp trigger, Added textbox default chatter sound)
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -260,7 +268,11 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
+<<<<<<< HEAD
   controlID: 22
+=======
+  controlID: 25
+>>>>>>> 157013fc9 (Added fade transition manager, Added room warp trigger, Added textbox default chatter sound)
 --- !u!114 &7
 >>>>>>> 50289e0ec (Updated lighting renderer, Updated Engine to Unity 2020.3.20f1)
 =======
@@ -344,6 +356,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1526
     height: 949
 <<<<<<< HEAD
@@ -356,6 +369,10 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 342}
   m_MaxSize: {x: 8003, y: 8042}
 =======
+=======
+    width: 1532
+    height: 952
+>>>>>>> 157013fc9 (Added fade transition manager, Added room warp trigger, Added textbox default chatter sound)
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
 >>>>>>> b6ad5fb96 (Fixed an issue where data could be lost when re-loading the title scene)
@@ -374,6 +391,7 @@ MonoBehaviour:
   m_MaxSize: {x: 10001, y: 14042}
 >>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
   vertical: 1
+<<<<<<< HEAD
   controlID: 22
 >>>>>>> 09a7c315c (Fixed file not loading players saved position)
 =======
@@ -410,6 +428,9 @@ MonoBehaviour:
 =======
   controlID: 23
 >>>>>>> 7814dd707 (Updated Template_Overworld, Added level warp triggers)
+=======
+  controlID: 26
+>>>>>>> 157013fc9 (Added fade transition manager, Added room warp trigger, Added textbox default chatter sound)
 --- !u!114 &8
 >>>>>>> 50289e0ec (Updated lighting renderer, Updated Engine to Unity 2020.3.20f1)
 =======
@@ -451,6 +472,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1531
     height: 578
   m_MinSize: {x: 402, y: 221}
@@ -472,6 +494,10 @@ MonoBehaviour:
 =======
     width: 1044
     height: 397
+=======
+    width: 1532
+    height: 680
+>>>>>>> 157013fc9 (Added fade transition manager, Added room warp trigger, Added textbox default chatter sound)
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
 =======
@@ -481,6 +507,7 @@ MonoBehaviour:
   m_MaxSize: {x: 8002, y: 4021}
 >>>>>>> f4d67cc80 (Added shop triggers and GUI, Updated C1S1, Fixed Autumn Forest Indoor tileset)
   vertical: 0
+<<<<<<< HEAD
   controlID: 23
 >>>>>>> 09a7c315c (Fixed file not loading players saved position)
 =======
@@ -519,6 +546,9 @@ MonoBehaviour:
 =======
   controlID: 24
 >>>>>>> 7814dd707 (Updated Template_Overworld, Added level warp triggers)
+=======
+  controlID: 27
+>>>>>>> 157013fc9 (Added fade transition manager, Added room warp trigger, Added textbox default chatter sound)
 --- !u!114 &9
 >>>>>>> 50289e0ec (Updated lighting renderer, Updated Engine to Unity 2020.3.20f1)
 =======
@@ -549,6 +579,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -603,6 +634,10 @@ MonoBehaviour:
 =======
     width: 328
     height: 678
+=======
+    width: 282
+    height: 680
+>>>>>>> 157013fc9 (Added fade transition manager, Added room warp trigger, Added textbox default chatter sound)
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
@@ -644,6 +679,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 272
     y: 0
 <<<<<<< HEAD
@@ -704,6 +740,15 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
+=======
+    x: 282
+    y: 0
+    width: 1250
+    height: 680
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 15}
+>>>>>>> 157013fc9 (Added fade transition manager, Added room warp trigger, Added textbox default chatter sound)
   m_Panes:
   - {fileID: 14}
   - {fileID: 12}
@@ -735,6 +780,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 578
     width: 1531
     height: 371
@@ -750,6 +796,11 @@ MonoBehaviour:
     y: 662
     width: 1526
     height: 287
+=======
+    y: 680
+    width: 1532
+    height: 272
+>>>>>>> 157013fc9 (Added fade transition manager, Added room warp trigger, Added textbox default chatter sound)
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 16}
@@ -982,6 +1033,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 0
     y: 0
 <<<<<<< HEAD
@@ -1002,6 +1054,13 @@ MonoBehaviour:
     height: 564
 >>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
   m_MinSize: {x: 201, y: 221}
+=======
+    x: 1532
+    y: 0
+    width: 388
+    height: 952
+  m_MinSize: {x: 276, y: 71}
+>>>>>>> 157013fc9 (Added fade transition manager, Added room warp trigger, Added textbox default chatter sound)
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
@@ -1497,8 +1556,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1653
+    x: 1648
     y: 83
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     width: 1136
@@ -1511,6 +1571,10 @@ MonoBehaviour:
 >>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
     height: 552
 >>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
+=======
+    width: 1248
+    height: 659
+>>>>>>> 157013fc9 (Added fade transition manager, Added room warp trigger, Added textbox default chatter sound)
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -1518,6 +1582,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1611,6 +1676,9 @@ MonoBehaviour:
 =======
   m_TargetSize: {x: 944, y: 531}
 >>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
+=======
+  m_TargetSize: {x: 1134, y: 638}
+>>>>>>> 157013fc9 (Added fade transition manager, Added room warp trigger, Added textbox default chatter sound)
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1625,6 +1693,7 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1794,6 +1863,12 @@ MonoBehaviour:
     m_VBaseRangeMin: -265.5
     m_VBaseRangeMax: 265.5
 >>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
+=======
+    m_HBaseRangeMin: -567
+    m_HBaseRangeMax: 567
+    m_VBaseRangeMin: -319
+    m_VBaseRangeMax: 319
+>>>>>>> 157013fc9 (Added fade transition manager, Added room warp trigger, Added textbox default chatter sound)
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1804,6 +1879,7 @@ MonoBehaviour:
     m_IgnoreScrollWheelUntilClicked: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_EnableMouseInput: 0
 =======
     m_EnableMouseInput: 1
@@ -1811,6 +1887,9 @@ MonoBehaviour:
 =======
     m_EnableMouseInput: 0
 >>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
+=======
+    m_EnableMouseInput: 1
+>>>>>>> 157013fc9 (Added fade transition manager, Added room warp trigger, Added textbox default chatter sound)
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -1837,6 +1916,7 @@ MonoBehaviour:
 >>>>>>> f11f4a8bf (Added "Game has been saved" text to save points)
 =======
       y: 21
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1992,12 +2072,19 @@ MonoBehaviour:
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 487.5, y: 265.5}
 >>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
+=======
+      width: 1248
+      height: 638
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 624, y: 319}
+>>>>>>> 157013fc9 (Added fade transition manager, Added room warp trigger, Added textbox default chatter sound)
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2243,6 +2330,15 @@ MonoBehaviour:
 =======
   m_LastWindowPixelSize: {x: 975, y: 552}
 >>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
+=======
+      x: -624
+      y: -319
+      width: 1248
+      height: 638
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 1248, y: 659}
+>>>>>>> 157013fc9 (Added fade transition manager, Added room warp trigger, Added textbox default chatter sound)
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -2488,6 +2584,7 @@ MonoBehaviour:
     y: 83
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 393
     height: 659
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
@@ -2547,6 +2644,17 @@ MonoBehaviour:
       m_LastClickedID: 0
       m_ExpandedIDs: d47afdfffa7afdff287bfdffa27bfdffd07bfdfff47bfdffd47efdff7857ffff107fffff0890ffffd490ffff44fbffffae44000064450000365d0000306000006e610000
 >>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
+=======
+    width: 281
+    height: 659
+  m_ViewDataDictionary: {fileID: 0}
+  m_SceneHierarchy:
+    m_TreeViewState:
+      scrollPos: {x: 0, y: 18}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 7281feffa298feff94d8feff3eecfeff6aecfeff8eecfeff7aedfeffbc71ffffbe71ffffc071ffffda71ffffe071ffffe671ffff22dcffff44fbffff90440000cc440000d4440000d84400009c450000b0450000be450000a8bb0000bcbb0000c0bb0000f0bb00000cc1000048c100005ec1000066c100006ac100002cc200009ac20000b4c20000d0c20000
+>>>>>>> 157013fc9 (Added fade transition manager, Added room warp trigger, Added textbox default chatter sound)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2607,6 +2715,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -4233,6 +4342,15 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 55094fe50bf2ff576811963c8c00f2e8
+=======
+    x: 1648
+    y: 83
+    width: 1248
+    height: 659
+  m_ViewDataDictionary: {fileID: 0}
+  m_ShowContextualTools: 0
+  m_WindowGUID: 55094fe50bf2ff576811963c8c00f2e8
+>>>>>>> 157013fc9 (Added fade transition manager, Added room warp trigger, Added textbox default chatter sound)
   m_Gizmos: 1
   m_OverrideSceneCullingMask: 6917529027641081856
   m_SceneIsLit: 1
@@ -4242,6 +4360,7 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: -16.424114, y: 44.99472, z: -9.50837}
     speed: 2
     m_Value: {x: -16.424114, y: 44.99472, z: -9.50837}
@@ -4582,8 +4701,11 @@ MonoBehaviour:
 =======
     m_Target: {x: 2.499774, y: 0.5327484, z: -2.4699745}
 >>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
+=======
+    m_Target: {x: 5.937235, y: -12.9217, z: -25.399757}
+>>>>>>> 157013fc9 (Added fade transition manager, Added room warp trigger, Added textbox default chatter sound)
     speed: 2
-    m_Value: {x: 2.499774, y: 0.5327484, z: -2.4699745}
+    m_Value: {x: 5.937235, y: -12.9217, z: -25.399757}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -4620,13 +4742,13 @@ MonoBehaviour:
       m_Size: {x: 1, y: 1}
     zGrid:
       m_Fade:
-        m_Target: 1
+        m_Target: 0
         speed: 2
-        m_Value: 1
+        m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
-    m_ShowGrid: 1
+    m_ShowGrid: 0
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
@@ -4634,9 +4756,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 9.946152
+    m_Target: 14.67452
     speed: 2
-    m_Value: 9.946152
+    m_Value: 14.67452
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -4654,7 +4776,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewRotation: {x: 0.14120623, y: 0.11799953, z: -0.016587624, w: 0.9827856}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -5062,6 +5184,7 @@ MonoBehaviour:
     x: 1366
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 764
     width: 1390
     height: 250
@@ -5076,6 +5199,11 @@ MonoBehaviour:
     width: 1263
     height: 367
 >>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
+=======
+    y: 763
+    width: 1531
+    height: 251
+>>>>>>> 157013fc9 (Added fade transition manager, Added room warp trigger, Added textbox default chatter sound)
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -5093,6 +5221,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     - Assets/Resources/Sprites/Items & Accessories
 =======
     - Assets/Resources/Scripts
@@ -5103,11 +5232,15 @@ MonoBehaviour:
 =======
     - Assets/Resources/Scripts
 >>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
+=======
+    - Assets/Resources/Scenes
+>>>>>>> 157013fc9 (Added fade transition manager, Added room warp trigger, Added textbox default chatter sound)
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -5130,11 +5263,15 @@ MonoBehaviour:
 =======
   - Assets/Resources/Scripts
 >>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
+=======
+  - Assets/Resources/Scenes
+>>>>>>> 157013fc9 (Added fade transition manager, Added room warp trigger, Added textbox default chatter sound)
   m_LastFoldersGridSize: 16
   m_LastProjectPath: /home/lizband/Desktop/NAS/Neverway/Games/002_DA/U2D-Divine Annihilation
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     scrollPos: {x: 0, y: 49}
@@ -5154,6 +5291,12 @@ MonoBehaviour:
     m_LastClickedID: 18274
     m_ExpandedIDs: 000000001847000044470000464700006647000000ca9a3b
 >>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
+=======
+    scrollPos: {x: 0, y: 57}
+    m_SelectedIDs: c0470000
+    m_LastClickedID: 18368
+    m_ExpandedIDs: 000000008c470000b2470000b4470000c447000000ca9a3b
+>>>>>>> 157013fc9 (Added fade transition manager, Added room warp trigger, Added textbox default chatter sound)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -5184,6 +5327,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 000000005c7000005e700000607000006270000064700000667000006870000000ca9a3b
 =======
     m_ExpandedIDs: 00000000ba450000
@@ -5194,6 +5338,9 @@ MonoBehaviour:
 =======
     m_ExpandedIDs: 0000000018470000
 >>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
+=======
+    m_ExpandedIDs: 000000008c470000
+>>>>>>> 157013fc9 (Added fade transition manager, Added room warp trigger, Added textbox default chatter sound)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -5241,15 +5388,15 @@ MonoBehaviour:
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: DAG13_System_MenuManager
-      m_OriginalName: DAG13_System_MenuManager
+      m_Name: NUP Topdown 2D
+      m_OriginalName: NUP Topdown 2D
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 75338
+      m_UserData: 23448
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -5289,9 +5436,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 1366
-    y: 656
-    width: 1263
-    height: 358
+    y: 763
+    width: 1531
+    height: 251
   m_ViewDataDictionary: {fileID: 0}
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
 --- !u!114 &20
@@ -5338,6 +5485,7 @@ MonoBehaviour:
     m_IsLocked: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LastSelectedObjectID: 17318
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
 =======
@@ -5346,6 +5494,9 @@ MonoBehaviour:
 =======
   m_LastSelectedObjectID: -88862
 >>>>>>> 21da665d6 (Added TMP richtext parser to textbox manager)
+=======
+  m_LastSelectedObjectID: -9182
+>>>>>>> 157013fc9 (Added fade transition manager, Added room warp trigger, Added textbox default chatter sound)
 --- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -5652,9 +5803,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2630
+    x: 2898
     y: 83
-    width: 655
+    width: 387
     height: 931
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)
   m_ViewDataDictionary: {fileID: 0}
@@ -5690,15 +5841,16 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2782
+    x: 2898
     y: 83
-    width: 503
+    width: 387
     height: 931
   m_ViewDataDictionary: {fileID: 0}
   m_PreviewResizer:
     m_CachedPref: 50
     m_ControlHash: 1964396721
     m_PrefName: Preview_TilemapBrushInspector
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   m_Palette: {fileID: 3542645687871464157, guid: 3ee27d58f44c1ccb5981422508e35f7b,
@@ -5731,6 +5883,9 @@ MonoBehaviour:
 =======
   m_Palette: {fileID: 3737502903375264434, guid: 062920b8a9d8962969318624218e0790, type: 3}
 >>>>>>> d8b46f911 (Added player walking, sprinting, and rolling)
+=======
+  m_Palette: {fileID: 6060271963503355366, guid: dbd6d3b119bb737639de5962e474dea1, type: 3}
+>>>>>>> 157013fc9 (Added fade transition manager, Added room warp trigger, Added textbox default chatter sound)
   m_DrawGizmos: 0
 --- !u!114 &24
 >>>>>>> 3283f4185 (G13 init commit, added title and file select)

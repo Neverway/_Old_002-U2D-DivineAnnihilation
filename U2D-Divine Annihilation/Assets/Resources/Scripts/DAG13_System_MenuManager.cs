@@ -28,7 +28,7 @@ public class DAG13_System_MenuManager : MonoBehaviour
     // Reference variables
     //=-----------------=
     private NUPTopdownController playerCharacter;
-    private DAG13_System_TextboxManager textboxManager;
+    private DAG13_UI_TextboxManager textboxManager;
 
 
     //=-----------------=
@@ -36,7 +36,7 @@ public class DAG13_System_MenuManager : MonoBehaviour
     //=-----------------=
     private void Start()
     {
-	    textboxManager = FindObjectOfType<DAG13_System_TextboxManager>();
+	    textboxManager = FindObjectOfType<DAG13_UI_TextboxManager>();
 	    playerCharacter = FindObjectOfType<NUPTopdownController>();
     }
 
@@ -58,6 +58,8 @@ public class DAG13_System_MenuManager : MonoBehaviour
     //=-----------------=
     private bool IsMenuOpen()
     {
+	    if (textboxManager == null) return false;
+	    
 	    if (textboxManager.active)
 	    {
 		    return true;
