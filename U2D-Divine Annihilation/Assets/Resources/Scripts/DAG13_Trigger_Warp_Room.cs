@@ -22,7 +22,6 @@ public class DAG13_Trigger_Warp_Room : MonoBehaviour
     //=-----------------=
     // Private variables
     //=-----------------=
-    private bool inTrigger; // Is true if the player is in the trigger
 
 
     //=-----------------=
@@ -45,23 +44,12 @@ public class DAG13_Trigger_Warp_Room : MonoBehaviour
 	    _player.transform.position = exitPoint.position;
     }
 
-    private void Update()
-    {
-	
-    }
-
     private void OnTriggerEnter2D(Collider2D other)
     {
 	    if (!other.CompareTag("Player")) return;
 	    if (transitionManager != null)
 		    transitionManager.FadeTransition(0, 0);
 	    StartCoroutine(WarpOnObscured(other.gameObject));
-    }
-    
-    private void OnTriggerExit2D(Collider2D other)
-    {
-	    if (!other.CompareTag("Player")) return;
-	    inTrigger = false;
     }
     
     
