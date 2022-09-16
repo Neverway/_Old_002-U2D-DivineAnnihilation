@@ -66,12 +66,10 @@ public class DAG13_UI_TransitionManager : MonoBehaviour
 		    {
 			    case true:
 			    {
-				    print("case true");
 				    blackoutImage.color = new Color(0, 0, 0, imageColor.a+fadeSpeed);
 				    break;
 			    }
 			    default:
-				    print("case false");
 				    fadeoutActive = false;
 				    break;
 		    }
@@ -84,12 +82,10 @@ public class DAG13_UI_TransitionManager : MonoBehaviour
 		    {
 			    case true:
 			    {
-				    print("case true");
 				    blackoutImage.color = new Color(0, 0, 0, imageColor.a-fadeSpeed);
 				    break;
 			    }
 			    default:
-				    print("case false");
 				    fadeinActive = false;
 				    break;
 		    }
